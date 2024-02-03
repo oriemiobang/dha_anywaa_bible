@@ -18,7 +18,7 @@ class _AccountState extends State<Account> {
         // ),
         Text(
       'Your Text here',
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(),
     );
   }
 }

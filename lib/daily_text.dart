@@ -10,6 +10,6 @@ class DailyText extends StatefulWidget {
 class _DailyTextState extends State<DailyText> {
   @override
   Widget build(BuildContext context) {
-    return Text('Read your bible today', style: TextStyle(color: Colors.white));
+    return Text('Read your bible today');
   }
 }

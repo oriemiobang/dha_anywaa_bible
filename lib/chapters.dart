@@ -56,7 +56,9 @@ class _ChaptersState extends State<Chapters> {
       'Nyään Na Met Mar Yecu Krictø enø akäl Ithiöpia, ni ö gööre moe ni løøi ri'
       'gööre mo dha Amäära kiper Anywaae moa en Ithiöpia, ni pwödi ni ö wøk na'
       'buk ri kwään cwiiri ma 1965.',
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(
+          // fontFamily: 'UntitledSerif',
+          ),
     );
   }
 }

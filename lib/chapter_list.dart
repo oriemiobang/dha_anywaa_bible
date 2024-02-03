@@ -44,7 +44,6 @@ class _ChapterListState extends State<ChapterList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 9, 13, 57),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         // leading: IconButton(
@@ -74,11 +73,9 @@ class _ChapterListState extends State<ChapterList> {
                     },
                     icon: Icon(
                       Icons.arrow_back_rounded,
-                      color: Colors.white,
                     )),
                 Text('Weeli',
                     style: TextStyle(
-                      color: Colors.white,
                       fontSize: 19,
                     )),
               ],
@@ -96,7 +93,6 @@ class _ChapterListState extends State<ChapterList> {
                     child: Center(
                       child: Icon(
                         Icons.search,
-                        color: Colors.white,
                         size: 30,
                       ),
                     )),
@@ -119,7 +115,8 @@ class _ChapterListState extends State<ChapterList> {
                         label: Text(
                           'Search',
                           style: TextStyle(
-                              color: Color.fromARGB(217, 193, 190, 190)),
+                              // color: Color.fromARGB(217, 193, 190, 190)
+                              ),
                         ),
                         // icon: Container(
                         //     height: 50,
@@ -146,9 +143,9 @@ class _ChapterListState extends State<ChapterList> {
       ),
       body: SingleChildScrollView(
         child: ExpansionPanelList(
-          expandIconColor: const Color.fromARGB(255, 9, 13, 57),
+          expandIconColor: Colors.transparent,
           elevation: 0,
-          dividerColor: const Color.fromARGB(255, 9, 13, 57),
+          dividerColor: Colors.transparent,
           expansionCallback: (int index, bool isExpanded) {
             setState(() {
               if (currentOpenedPanelIndex != -1) {
@@ -169,15 +166,15 @@ class _ChapterListState extends State<ChapterList> {
           children: _chapters.map((chapter) {
             int index = _chapters.indexOf(chapter);
             return ExpansionPanel(
-              backgroundColor: const Color.fromARGB(255, 9, 13, 57),
+              backgroundColor: Colors.transparent,
               canTapOnHeader: true,
               headerBuilder: (BuildContext context, bool isExpanded) {
                 return ListTile(
                   title: Text(chapter.title),
-                  tileColor: const Color.fromARGB(255, 9, 13, 57),
-                  textColor: Colors.white,
-                  iconColor: Colors.white,
-                  splashColor: const Color.fromARGB(255, 9, 13, 57),
+                  // tileColor: const Color.fromARGB(255, 9, 13, 57),
+                  // textColor: Colors.white,
+                  // iconColor: Colors.white,
+                  // splashColor: const Color.fromARGB(255, 9, 13, 57),
                 );
               },
               body: GridView.count(
@@ -185,14 +182,13 @@ class _ChapterListState extends State<ChapterList> {
                 crossAxisCount: 6,
                 children: List.generate(chapter.number, (index) {
                   return Card(
-                    color: Color.fromARGB(136, 67, 65, 58),
+                    // color: Color.fromARGB(136, 67, 65, 58),
                     child: Center(
                       child: TextButton(
                         child: index == 0
                             ? Text(
                                 'Bwödhï',
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 15),
+                                style: TextStyle(fontSize: 15),
                               )
                             : Text('${index}',
                                 style: TextStyle(

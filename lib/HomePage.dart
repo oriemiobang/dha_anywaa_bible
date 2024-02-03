@@ -5,6 +5,7 @@ import 'package:dha_anywaa_bible/account.dart';
 import 'package:dha_anywaa_bible/chapter_list.dart';
 import 'package:dha_anywaa_bible/chapters.dart';
 import 'package:dha_anywaa_bible/daily_text.dart';
+import 'package:dha_anywaa_bible/setting.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
@@ -77,28 +78,56 @@ class _MyHomePageState extends State<HomePage> {
           return AppBar(
             title: Text(
               'Wang Cay',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
             forceMaterialTransparency: true,
           );
         case 1:
-          return AppBar(forceMaterialTransparency: true, actions: [
-            IconButton(
-              icon: Icon(
-                Icons.search,
-                color: const Color.fromARGB(255, 227, 171, 2),
+          return AppBar(
+              forceMaterialTransparency: true,
+              title: SizedBox(
+                width: 150,
+                child: TextButton(
+                  onPressed: () {
+                    setState(() {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ChapterList()),
+                      );
+                    });
+                  },
+                  child: Center(
+                    child: Container(
+                      width: 150,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(0, 75, 75, 75),
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Text(
+                        'hello',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 17),
+                      ),
+                    ),
+                  ),
+                ),
               ),
-              onPressed: () {},
-            ),
-          ]);
+              actions: [
+                TextButton(onPressed: () {}, child: Text('Any')),
+                IconButton(
+                  icon: Icon(
+                    Icons.search,
+                    color: const Color.fromARGB(255, 227, 171, 2),
+                  ),
+                  onPressed: () {},
+                ),
+              ]);
         case 2:
           return AppBar(
-            foregroundColor: Colors.white,
             title: Text(
               'My profile',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(),
             ),
             forceMaterialTransparency: true,
           );
@@ -110,9 +139,10 @@ class _MyHomePageState extends State<HomePage> {
     }
 
     return Scaffold(
+      // backgroundColor: Theme.of(context).colorScheme.background,
       drawer: _selectedIndex == 2
           ? Drawer(
-              backgroundColor: Color.fromARGB(255, 25, 31, 44),
+              // backgroundColor: Color.fromARGB(255, 25, 31, 44),
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
@@ -121,48 +151,54 @@ class _MyHomePageState extends State<HomePage> {
                     child: Text(''),
                   ),
                   ListTile(
-                    leading: Icon(Icons.settings, color: Colors.white),
+                    leading: Icon(Icons.settings),
+                    onTap: () {
+                      setState(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Setting()),
+                        );
+                      });
+                    },
                     title: Text(
                       'Settings',
-                      style: TextStyle(color: Colors.white),
                     ),
                   ),
                   ListTile(
-                    leading: Icon(Icons.share, color: Colors.white),
+                    leading: Icon(Icons.share),
                     title: Text(
                       'Share',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(),
                     ),
                   ),
                   ListTile(
-                    leading: Icon(Icons.help_outline, color: Colors.white),
+                    leading: Icon(Icons.help_outline),
                     title: Text(
                       'Get help',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(),
                     ),
                   ),
                   ListTile(
-                    leading:
-                        Icon(Icons.attribution_outlined, color: Colors.white),
+                    leading: Icon(Icons.attribution_outlined),
                     title: Text(
                       'About',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(),
                     ),
                   ),
                   ListTile(
                     leading: Icon(
                       Icons.menu_book_rounded,
-                      color: Colors.white,
                     ),
                     title: Text(
                       'About the publisher',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(),
                     ),
                   ),
                 ],
               ),
             )
           : null,
+
       // backgroundColor: const Color.fromARGB(255, 9, 13, 57),
       appBar: buildAppBar(),
       body: ListView(
@@ -174,54 +210,15 @@ class _MyHomePageState extends State<HomePage> {
                 child: _widgetOptions.elementAt(_selectedIndex)),
           ]),
       bottomNavigationBar: AnimatedContainer(
-        height: isVisible ? 96 : 50,
+        height: isVisible ? 50 : 0,
         duration: Duration(milliseconds: 200),
         child: Wrap(children: [
-          Container(
-            child: TextButton(
-              onPressed: () {
-                setState(() {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ChapterList()),
-                  );
-                });
-              },
-              child: Center(
-                child: !isVisible
-                    ? Container(
-                        child: TextButton(
-                          onPressed: () {
-                            setState(() {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ChapterList()),
-                              );
-                            });
-                          },
-                          child: Text(
-                            'hello',
-                          ),
-                        ),
-                      )
-                    : Container(
-                        width: 200,
-                        height: 40,
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(155, 75, 75, 75),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: Center(
-                          child: Text(
-                            'hello',
-                          ),
-                        ),
-                      ),
-              ),
-            ),
-          ),
           BottomNavigationBar(
-            backgroundColor: const Color.fromARGB(255, 9, 13, 57),
+            useLegacyColorScheme: true,
+            elevation: 0,
+            // backgroundColor: Colors.transparent,
+
+            // backgroundColor: const Color.fromARGB(255, 9, 13, 57),
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
@@ -244,7 +241,7 @@ class _MyHomePageState extends State<HomePage> {
                   label: ''),
             ],
             currentIndex: _selectedIndex,
-            unselectedItemColor: Colors.white,
+            // unselectedItemColor: Colors.white,
             selectedItemColor: const Color.fromARGB(255, 227, 171, 2),
             onTap: _onItemTapped,
           ),
