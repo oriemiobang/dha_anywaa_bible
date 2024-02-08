@@ -76,6 +76,9 @@ class _MyHomePageState extends State<HomePage> {
       switch (_selectedIndex) {
         case 0:
           return AppBar(
+            backgroundColor: Colors.transparent,
+
+            // backgroundColor: Colors.transparent,
             title: Text(
               'Wang Cay',
               style: TextStyle(fontWeight: FontWeight.bold),
@@ -105,7 +108,7 @@ class _MyHomePageState extends State<HomePage> {
                           color: Color.fromARGB(0, 75, 75, 75),
                           borderRadius: BorderRadius.circular(15)),
                       child: Text(
-                        'hello',
+                        'Wiloolo',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 17),
                       ),
@@ -114,7 +117,7 @@ class _MyHomePageState extends State<HomePage> {
                 ),
               ),
               actions: [
-                TextButton(onPressed: () {}, child: Text('Any')),
+                TextButton(onPressed: () {}, child: Text('ANY')),
                 IconButton(
                   icon: Icon(
                     Icons.search,

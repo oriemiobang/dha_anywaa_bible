@@ -1,0 +1,2192 @@
+{
+    "id": "Wïl",
+    "version": "ANY",
+    "name": "Wïlöölö",
+    "intro": ["Luubö Mo Cäänö Kaper Wëël Wïlöölö","Wïlöölö beeye wëëlö mana näk bwödhi ki røk weeli moa en yi Wëël Jwøk. Wïlöölö tielø 1 — 11 cäänö kaper gïïa tïïc Jwøki dïkwøŋ kanya cwääc maal ki piny, ki dhaanhø ki jammi bëët. \n\n'Ba dïcwøø ki dhaagø na cwääc Jwøki dïkwøŋ, luum Jwøk adhalge, ni jïëcge ki luum anägö ni bääcge; ni put thøø tägö bäät piny ki køørge. Ni ö nyïïkwaacge thuwø ni dhalge luum Jwøk, ni ö bëët raay ni nyaae bäät piny bäre.\n\n 'Ba kanya ö Jwøki na joot bëët raay mar jiy, cwïnye apädhö kiper mana cwääc dhaanhø; ni kööe, ni «Aani, jiy moa cwääa raanynya raanynyø bäät piny, ni beege ki lääy ki weny bëët.» (6:7) 'Ba jøøa bëëdö yïth nïraka, da dhaanhø rege mo bëëtö mare beer mo nyeŋŋe cwøl ni Nöa. Jwøk Nöa aköömme ki man tëëŋ dëëre ki jääy mo dwøŋ, nee eni, ki jø paare, ki wïth lääy mo oriewi-riewi ma thwønh ki maath nee cige yi jääy ki eni nee kwøwge.\n\n 'Ba Nöa, gïïa caan Jwøki jïre bëët atïïe. Køøre Jwøk jwïïö aput jääŋŋö bäät piny bäre, ni ö gïïa kwøwi bëët ni thøwge. 'Ba Nöa, ki jø paare, ki wïth lääy moa ci yi jääy, gena kwøw. Kanyøgø Jwøk atudö ki luubö ki Nöa, ki wääte, ki nyïïkwaaye kiper gïïo tïïe kiperge. \n\n'Ba ki køør nïr Nöa, jiy acäŋ nyaay ni thööth, ni wïl wïthge ki luum Jwøk. 'Ba kanya tïm jiyi ni ge manynya man gëëtge ki øt pööki mo bäär, Jwøk aöö ni kier wï dhøk marge, ni putge tïïc manøgø wec, ni keethge bäät piny bäre.\n\n Wïlöölö tiel 12 — 50 cäänö kaper dhaanhø mana cwøl Jwøki nee tïme na wï jur mo nyään. Ni ŋatøgø nyeŋŋe bee Abram. Jwøk Abram acwöl wøk ki yi poge ni tude ki luubö ki gø, ni wiil nyeŋ gø ni Eeberam, na näk tiere beeye ni «Kwar jiy mo thööth.»\n\n 'Ba Jwøk luubö mana tuude acäŋ nwøyø ki Aydhak wär Eeberam, ki Jeekap wär Aydhak, ni kööe, ni «Aani, u tïïa tïïö nou thööth, ni cïba ŋöömö jïïu, ni ö wïth juurre bëët ni gwïëdhi ki køørï ki nyïïkwaayï.» (12:2; 13:15) 'Ba Jwøk nyeŋ Jeekap awiile ni cak gø ni Icriel.\n\n 'Ba Jeekap, ni beeye Icriel, wääde mo cwøl ni Jocep aŋeew uutwänni, ni kïthi Ijep. 'Ba ki køør mana tïïc Jwøki, Jocep atïmö na kwäärö mar Ijep, ni ö wänni ki uutwänni ni jïtge ki køny ki køøre ki man ba thøwge ki kääa dwøŋ na tägö wï ŋöömö.\n\n Wëëlö man, luup jiy mo thööth ena yie. 'Ba Jwøk bee eni na pere leth yi wëëlö man. Beeye Jwøk na tïïc jammi bëët, ni bee eni na mëër ki jammi moa cwääe; ni kanya bääc jiyi, bee eni na Jwøk na cäŋ määnyö ki jöö man duu jiy baŋe ki gø."],
+    "text": [
+        {
+            "id": 1,
+            "name": "Wïlöölö",
+            "text": [{
+                "id": 1,
+                "title": "Gïna Tïïc Jwøki Wïlöölö",
+                "reference":"",
+                "text": "Wïlöölö Jwøk maal ki piny acwääe."
+            },{
+                "id": 2,
+                "title": "",
+                "reference":"",
+                "text": "Ni bëët pinynyi jaak ni bäŋ gïrpiny yie; ni piny bëëdö na kut bäre, ni muudhö ena bäät pïï; ni Jwïëc Jwøk bëëdö ni määdö bäät pïï."
+            },{
+                "id": 3,
+                "title": "",
+                "reference":"",
+                "text": "Ni kö Jwøki, ni «Beerra man jït pinynyi ki tar.» Køøre piny aput jïtö ki tar. "
+            },{
+                "id": 4,
+                "title": "",
+                "reference":"",
+                "text":  "Ni ö Jwøki ni joot gø ni tar beeye gïn mo beer. Køøre Jwøk tar ki muudhö apääŋŋe."
+            },{
+                "id": 5,
+                "title": "",
+                "reference":"",
+                "text": "Ni ö Jwøki ni cwøl tar ni dïcäŋ, ni cwøl muudhö ni wäär. Ni tïme ni da abøøya ka amöölla. Ni beeye dïcäŋ mana dïkwøŋ."
+            },
+            {
+                "id": 6,
+                "title": "",
+                "reference":"",
+                "text": "Køøre Jwøk aköö, ni «Beerra man tïm maalli ni dagø yïthakic pïï nee pïï pääŋŋe ki dïge.»"
+            },
+            {
+                "id": 7,
+                "title": "",
+                "reference":"",
+                "text": "Ni ö Jwøki ni tïïc maal, ni pääŋ pïï ki dïge moa en piny ko maal ki pïï moa en løø maal løøga. Ni ö gïïögø ni thurge karge."
+            },
+            {
+                "id": 8,
+                "title": "",
+                "reference":"",
+                "text":  "Ni ö Jwøki ni cwøl kuna en maal ni maal. Ni tïm pinynyi ni da abøøya ka amöölla. Ni beeye riet nïne."
+            },
+            {
+                "id": 9,
+                "title": "",
+                "reference":"",
+                "text":   "Ni kö Jwøki, ni «Beerra man ö pïïyi moa en ko maalli piny ni cooŋge rege kanya ciel nee piny jïte ki kany mo otal.» Ni ö gïnögø ni thur kare."
+            },
+            {
+                "id": 10,
+                "title": "",
+                "reference":"",
+                "text":  "Køøre Jwøk kanya näk otal acwøle ni piny, ni ö pïïyi moa näk rege ege cooŋ kanya ciel ni cwøl ge ni näm. Ni ö Jwøki ni joot gïnögø na gïn mo beer."
+            },
+            {
+                "id": 11,
+                "title": "",
+                "reference":"",
+                "text":  "Ni kö Jwøki, ni «Beerra man tuc bäät pinynyi ki luum, ki gïïa marr bëët mo duunnö ki köödhi, ki jenni mo nyöödö ki nyïëdi mo duunnö ki köödhi. Beerra man jït jenni ki nyïëdi ki køør teeŋ wï jaath man nø bäät piny.» Køøre gïïögø athur karge."
+            },
+            {
+                "id": 12,
+                "title": "",
+                "reference":"",
+                "text":  "Ni ö pinynyi ni tuue ki luum ki jenni ki gïïa marr bëët. Ni ö teeŋ wï gïna marri man nø ni jïte ki nyïëdi ki køør teeŋ wï tuuŋ man nø. Ni ö jenni ni jïtge ki nyïëdi ki køør teeŋ wï jaath man nø. Køøre Jwøk gïnögø ajoode na gïn mo beer."
+            },
+            {
+                "id": 13,
+                "title": "",
+                "reference":"",
+                "text": "Ni tïme ni da abøøya ka amöölla. Ni beeye dää nïne."
+            },
+            {
+                "id": 14,
+                "title": "",
+                "reference":"",
+                "text":  "Køøre Jwøk aköö, ni «Beerra man dee gïï mo tar mo rieny maal kiper nee dïcäŋ ki wäär pääŋge; nee tïmge na nyuuthe kiper nïne, ki cwiiri, ki kwöra näk owäŋŋö yi cwiir."
+            },
+            {
+                "id": 15,
+                "title": "",
+                "reference":"",
+                "text":  "Beerra man bëëtge na tar mo rieny maal kiper nee cïpge ki tar bäät piny.» Køøre gïnögø aput thur kare."
+            },
+            {
+                "id": 16,
+                "title": "",
+                "reference":"",
+                "text": "Ni ö Jwøki ni cwääc gïïa tar na näk ariiø na døøŋŋø døc. Ni tar mana dwøŋŋa eni beeye mana bëën dïcäŋŋi. Ni ö mana thiinhnhi ni tïme ni wäär bëënna gøøni. Ni ö Jwøki ni cwääc ceer thuwø."
+            },
+            {
+                "id": 17,
+                "title": "",
+                "reference":"",
+                "text": "Gïïögø acïp Jwøki maal kiper nee cïpge ki tar bäät piny,"
+            },
+            {
+                "id": 18,
+                "title": "",
+                "reference":"",
+                "text":  "kiper nee dïcäŋ ki wäär käärge na kare nee tar pääge ki muudhö. Ni ö Jwøki ni neen gïïögø ni joot ge ni beyø."
+            },
+            {
+                "id": 19,
+                "title": "",
+                "reference":"",
+                "text":  "Ni tïme ni da abøøya ka amöölla. Ni beeye ŋweer nïne."
+            },
+            {
+                "id": 20,
+                "title": "",
+                "reference":"",
+                "text":  "Køøre Jwøk aköö, ni «Beerra man jït yïth nämmi ki gïï mo thööth mo dëëtge da jwïëy; ni jït maalli bäre ki weny mo määdö yie.»"
+            },
+            {
+                "id": 21,
+                "title": "",
+                "reference":"",
+                "text":  "Ni ö Jwøki ni cwääc lääya døøŋŋø yi naama dwøŋ, ki gïïa näk dëëtge da jwïëy bëët ni wø cäädhi yïth pïï; ni cwääc geni ni thööth na wï tuuŋ man nø. Ni cwääc weny bëët thuwø ki køør wï tuuŋ man nø. Ni ö gïïögø ni jooti ya Jwøki na gïï mo beyø."
+            },
+            {
+                "id":22,
+                "title": "",
+                "reference": "",
+                "text": "Ni ö Jwøki ni gwïëth geni ni kööe, ni «Nyöödu, ni nyaayu, ni pääŋŋu yïth näpa døøŋŋø bëët. Beerra man ö wenynyi ni nyaacge bäät piny thuwø.»"
+            },
+            {
+                "id": 23,
+                "title": "",
+                "reference": "",
+                "text": "Ni tïme ni da abøøya ka amöölla. Ni beeye bïï nïne."
+            },
+            {
+                "id": 24,
+                "title": "",
+                "reference": "",
+                "text": "Køøre Jwøk aköö, ni «Beerra man jït pinynyi ki gïï ma teeŋi mo kwøw, teeŋ ka lääc paac, ki gïï mo muulö, ki lääc paap ki køør wï tuuŋ man nø.» Køøre gïnögø athur kare."
+            },
+            {
+                "id": 25,
+                "title": "",
+                "reference": "",
+                "text": "Ni ö Jwøki ni cwääc lääc paap bäät piny na wï tuuŋ man nø, ki lääc paac na wï tuuŋ man nø, ki gïïa näk muulö bäät piny bëët na wï tuuŋ man nø. Ni ö Jwøki ni joot gïnögø na gïn mo beer."
+            },
+            {
+                "id": 26,
+                "title": "",
+                "reference":"",
+                "text": "Køør manøgø nø Jwøk aköö, «Beerra man cwääø ki dhaanhø mo rööma øøni mo kïte caala øøni. Eno bëëdö ni jïre da teek bäät rec naam, ki wec maal, ki lääc paac, këël bäät piny bäre ki gïïa näk muulö bëët bäät piny.»"
+            },
+            {
+                "id": 27,
+                "title": "",
+                "reference":"",
+                "text":  "Ni ö Jwøki ni cwääc dhaanhø ni röömi ki eni, ni cwääc gøøni ni caala kïte. Ni cwääc geni na dïcwøø ki dhaagø."
+            },
+            {
+                "id": 28,
+                "title": "",
+                "reference": "",
+                "text": "Ni ö Jwøki ni gwïëth geni, ni kööe jïge, ni «Nyöödu ni nyaayu, ni pääŋŋu piny, ni dïïmmu gø, ni bëëdu ni jïïu da teek bäät rec naam ki wec maal ki gïïa näk dëëtge da jwïëy bëët mo bäät piny.»"
+            },
+            {
+                "id": 29,
+                "title": "",
+                "reference": "",
+                "text": "Køøre Jwøk aköö, «Ennø, gïïa näk kännö ki nyïëdi bëët moa näk otuy bäät piny bäre acïba jïïu, ki jenni bëët moa näk nyïïge duunnö ki köödhi, kiper nee tïmge na cam jïïu;"
+            },
+            {
+                "id": 30,
+                "title": "",
+                "reference":"",
+                "text": "ni cïba gïïa marr bëët na cam jï lääy mo bäät piny bëët, ki wec maal bëët, ki gïïa näk cäädhö bëët na näk dëëtge da jwïëy.» Ni ö gïïögø ni thurge karge."
+            },
+            {
+                "id": 31,
+                "title": "",
+                "reference": "",
+                "text":"Køøre Jwøk gïïa tïïe bëët aneene, ni joot ge ni beyø døc. Ni tïme ni da abøøya ka amöölla. Ni beeye bïcier nïne."
+            }]
+        },
+        {
+            "id": 2,
+            "name": "Wïlöölö",
+            "text":[{
+                "id": 1,
+                "title": "Kanya Ö Jwøki Na Cwääc Dhaanhø",
+                "reference": "",
+                "text": "Køøre nø, maal ki piny athum ki cwääc, këël gïïa thööth na en yïthge bëët."
+            }, 
+            {
+                "id": 2,
+                "title": "",
+                "reference": "",
+                "text": "'Ba na tïme na bïriet nïne, ni Jwøk tïïe moe moa tïïe bëët ee nø thöör, eni ree ajwöme ri bïriet nïne kanya løny tïïe moe bëët moa tïïe."
+            },
+            {
+                "id": 3,
+                "title": "",
+                "reference": "",
+                "text": "Køøre Jwøk bïriet nïne agwïëdhe, ni tïïc gø ni ena kur keere na mare, kiper beeye dïcäŋ mana jwöm ree yie ki tïïc kanya løny tïïe moe ki jammi bëët moa cwääe."
+            },
+            {
+                "id": 4,
+                "title": "",
+                "reference": "",
+                "text": "Man beeye luum cwääc mana cwääc maal ki piny ki gø. Kanya ö Wuuö Jwøki na cwääc maal ki piny,"
+            },
+            {
+                "id": 5,
+                "title": "",
+                "reference": "",
+                "text":  "kar kaaca poot bäŋ teeŋ gïn mo thiinh mo cwøl na abuŋŋö mo otuy yïth ŋøøm bäät piny; ni bäŋ teeŋ gïn mo marr mo otuy bäät ŋøøm, kiper Wuuö Jwøk gïn cwøl ni køth en poot käre jääŋŋö bäät piny. Kar kaaca thuwø poot bäŋ dhaanhø mo purö wïth ŋøøm."
+            },{
+                "id": 6,
+                "title": "",
+                "reference": "",
+                "text":   "'Ba da rwöc mo wø ööa wøk ki yïth ŋøøm mo jwøya piny bäre."
+            },{
+                "id": 7,
+                "title": "",
+                "reference": "",
+                "text":  "Ni ö Wuuö Jwøki ni cwääc dhaanhø ri ŋøøp piny, ni kooth jam kwøw um dhaanhø, ni tïm dhaanhe ni ree da jwïëy mo kwøw."
+            },
+            {
+                "id": 8,
+                "title": "",
+                "reference": "",
+                "text":  "Ni ö Wuuö Jwøki ni piith ajïniina yi kanya cwøl ni Ëden na en jï løø kur tuul-cäŋ. Ni cïp dhaanhø mana cwääe kaace."
+            },
+            {
+                "id": 9,
+                "title": "",
+                "reference": "",
+                "text":  "Ni ö Wuuö Jwøki ni wëëk ŋøøpøgø tuuö ki teeŋ jenni bëët mo nëëni ni mïërö, ni beyø kiper cam. Ni jaadha näk jaath kwøw thuwø ena dï ajïniinøgø; këël jaadha näk jaath wø ŋäc gïn mo beer ki gïn mo raac ki køøre ena kaace thuwø."
+            },
+            {
+                "id": 10,
+                "title": "",
+                "reference": "",
+                "text":  "Yi kar kanyøgø da naam mo wø kwönnö ki yi Ëden mo jwøya ajïniinøgø. Ni ö naamøgø ni pääŋ ree keere ni tïme na näm aŋween."
+            },
+            {
+                "id": 11,
+                "title": "",
+                "reference": "",
+                "text":    "Ni nyeŋ mana dïkwøŋ cwøl ni Picön, ni caatha deŋ ŋööm Ëwlath bäre kanya näk yie da warkey."
+            },
+            {
+                "id": 12,
+                "title": "",
+                "reference": "",
+                "text":  "Ni warkey mar paanøgø beer; ni paanøgø yie da gïn mo cwøl ni bedöla, na näk dwøø mo ŋwääi ni met, ki cöyam, na näk waŋ kïdi mo pere leth."
+            },
+            {
+                "id": 13,
+                "title": "",
+                "reference": "",
+                "text":  "Ni nyeŋ riet naam maya cwøl ni Giyön, ni caatha deŋ ŋööm Kuuc bäre."
+            },
+            {
+                "id": 14,
+                "title": "",
+                "reference": "",
+                "text":  "Ni nyeŋ dää naam maya cwøl ni Thëgerø, ni cøøa ya Aciria jï løø kur tuul-cäŋ. Ni ŋweer naam cwøl ni Upareeti."
+            },
+            {
+                "id": 15,
+                "title": "",
+                "reference": "",
+                "text": "Ni ö Wuuö Jwøki ni lwør dhaanhø ni kïth gø ya ajïniinna en Ëden kiper nee puure nee gwøe."
+            },{
+                "id": 16,
+                "title": "",
+                "reference": "",
+                "text":  "Ni ö Wuuö Jwøki ni kööm dhaanhø ni kööe, ni «Løny jïrï ki man cämï ri nyïïjenni bëët jaak moa en ya ajïniina."
+            },
+            {
+                "id": 17,
+                "title": "",
+                "reference": "",
+                "text":  "'Ba jaath wø ŋäc gïn mo beer ki gïn mo raac ki køøre, kär nyïïe camï. Kiper dïcäŋo kööï ni nyaare camï camø, ï puta thøø møn.»"
+            },
+            {
+                "id": 18,
+                "title": "",
+                "reference": "",
+                "text": "Køøre Wuuö Jwøk aköö, ni «Ba doo beer ki man bëët dhaanhe keere. Beerra man cwääa ki ŋat mo kønya gø mo orømø kipere.»"
+            },
+            {
+                "id": 19,
+                "title": "",
+                "reference": "",
+                "text":  "'Ba Wuuö Jwøk lääc paap ki wec maal bëët ee nø cwääc ri ŋøøp piny. Ni käl geni baŋ dhaanhø kiper nee nyeŋ mo cak geni ki gøøni nee neene. Køøre dhaanhø nyeŋ gïïa näk kwøw bëët acaae, ni nyeŋ moa cak ge ki geni aput tïmö na nyeŋ moge."
+            },
+            {
+                "id": 20,
+                "title": "",
+                "reference": "",
+                "text":  "Ni ö dhaanhe ni cak nyeŋ lääc paac bëët ki nyeŋ wec maal ki nyeŋ lääc paap bëët. 'Ba kar kaaca poot bäŋ kunyi mo orømø mo onø joot kiper Adam."
+            },
+            {
+                "id": 21,
+                "title": "",
+                "reference": "",
+                "text":  "Køøre Wuuö Jwøk nyeŋ dhaanhø amooe ki niine mo thööth døc ni bute. Ni ö Wuuö Jwøki ni kän wøk ki cöön ŋëëdö aciel røk ŋëët dhaanhø, ni kïth kar ŋëëdö ki rïŋ dëël."
+            },
+            {
+                "id": 22,
+                "title": "",
+                "reference": "",
+                "text": "Ni ö Wuuö Jwøki ni tïïc ŋëëdö mana käl ri dhaanhø na dhaagø, ni kïth gø baŋ dhaanhø."
+            },
+            {
+                "id": 23,
+                "title": "",
+                "reference": "",
+                "text": "Køøre dhaanhø aköö, ni «Man ennø, beeye cöö mana ö wøk ri cuu 'moa; ni beeye dëël mana käl rïŋ dëëra. Eno cwøl na dhaagø, kiper eni käl wøk ka dëër dïcwøø.»"
+            },
+            {
+                "id": 24,
+                "title": "",
+                "reference": "",
+                "text": "Kiper manøgø nø, dïcwøø wänni ki menni owiie ni dwätge na aciel ki cïïe, ni tïmge na dëël aciel."
+            },
+            {
+                "id": 25,
+                "title": "",
+                "reference": "",
+                "text": "'Ba kar kaaca dhaanhø ki cïïe ge bëëdö ni ge cäädhi ka dëëtge jaak, ni bäŋ laac wïc jïge."
+            }]},
+        {
+            "id": 3,
+            "name":"Wïlöölö",
+            "text": [
+                {
+                    "id": 1,
+                    "title": "Kanya Täk Bääyö Mar Dhaanhø",
+                    "reference": "",
+                    "text":  "'Ba ki dëët lääy bëët moa cwääc Wuuö Jwøki bäät piny, thwöl atïmö ni rieka waŋe. Køøre dhaagø apëënynye ni kööe, «?Aŋø, ka adïëri møn, Jwøk aköö ki uuni ni käru cämö ri nyïïjenni moa en ya ajïniina bëët?»"
+                },{
+                    "id": 2,
+                    "title": "",
+                    "reference": "",
+                    "text":  "Ni kö dhaage jï thwöl, ni «Løny jïwa ki man cämwa ri nyïïjenni moa en ya ajïniina."
+                },
+                {
+                    "id": 3,
+                    "title": "",
+                    "reference": "",
+                    "text":  "'Ba Jwøk aköö, ni ‹Käru cämö ri nyïï jaath mana en dï ajïniina wala u maara gø gut ki ceŋŋu, kiper nee u ba thøwu.› »"
+                },{
+                    "id": 4,
+                    "title": "",
+                    "reference": "",
+                    "text":  "Ni kö thwölli jï dhaagø, ni «Ka adïëri møn, u ba thøw."
+                },{
+                    "id": 5,
+                    "title": "",
+                    "reference": "",
+                    "text": "Kiper ŋäc Jwøki ni dïcäŋo cämu ri nyïï jaath manøgø, nyeŋŋu rege japge jabø, ni tïmu nou caala Jwøk, ni gïna beer ki gïna raac ŋäyu.»"
+                },{
+                    "id": 6,
+                    "title": "",
+                    "reference": "",
+                    "text": "'Ba kanya ö dhaage na neen jaath na gïn mo orømø ki cam, ni nëëni na gïn mo mïërö ki nyeŋŋe, na jaath mo beer mo døøya waŋ dhaanhø mo riek, ena lwötö ri nyi gø ni cam gø, ni mëëk mør cwøre thuwø; ni ö cwøre ni cam gø."
+                },{
+                    "id": 7,
+                    "title": "",
+                    "reference": "",
+                    "text": "Køøre ge karge riet nyeŋge rege ajapge, ni putge gø joot ni ge bëëdö ka dëëtge; ni kwönyge dëëtge ki bøøk jenni, ni twöge gø dëëtge."
+                },{
+                    "id": 8,
+                    "title": "",
+                    "reference": "",
+                    "text": "Kanyøgø tiet Wuuö Jwøk awïnyge ni cäädhö ya ajïniina kany wø kwöc cäŋŋi. Køøre dhaanhø ki cïïe dëëtge akange dï jenni moa en ya ajïniina kiper mana nut Wuuö Jwøki."
+                },{
+                    "id": 9,
+                    "title": "",
+                    "reference": "",
+                    "text": "Kanyøgø Wuuö Jwøk dhaanhø acwøle ni kööe jïgø, ni «Ï enï kaa ŋø?»"
+                },{
+                    "id": 10,
+                    "title": "",
+                    "reference": "",
+                    "text": "Ni kö dhaanhe, ni «Tietï awïnynya ya ajïniina, ni lwäya kiper a bëëdö ka dëëra; køøre raa akana.»"
+                },{
+                    "id": 11,
+                    "title": "",
+                    "reference": "",
+                    "text": "Ni kö Jwøki, «?Aŋø, ocaana ŋa jïrï niï bëëdö ka dëërï? ?Aŋø, ïïna cämö ri nyïï jaath mana köömma ïïni ki gøøni ni kär camï?»"
+                },{
+                    "id": 12,
+                    "title": "",
+                    "reference": "",
+                    "text": "Ni kö dhaanhe, ni «Dhaagø mana cïpï jïra kiper nee bëëde ki aani, aana mooe ki nyi jaath ni cama gø.»"
+                },{
+                    "id": 13,
+                    "title": "",
+                    "reference": "",
+                    "text": "Kanyøgø Wuuö Jwøk aköö jï dhaagø, na «?Agïnaŋø ni iï tïïö en?» Ni kö dhaage, ni «Aana cøøk thwölli ni cäma.»"
+                },{
+                    "id": 14,
+                    "title": "",
+                    "reference": "",
+                    "text": "Køøre Wuuö Jwøk aköö jï thwöl, ni «Kiper mana tïïyï teeŋ gïnögø, acïëni oen bäätï keerï dï lääc paac, ki lääc paap bëët. Ïïno cäädhi ki bäp yiï, ni tïmï niï cama tør ki yïth nïr kwøw moï bëët."
+                },{
+                    "id": 15,
+                    "title": "",
+                    "reference": "",
+                    "text": "Yïthakiyu ki dhaagø omooa ki män, ni mooa yïthakic nyïïï ki nyïïe ki män thuwø. Eni wïïï onyadhe, ni ö ïïni ni dwøŋï opuny tiere.»"
+                },{
+                    "id": 16,
+                    "title": "",
+                    "reference": "",
+                    "text": "Ni kö Wuuö Jwøki jï dhaagø, ni «Rääm marï omeeda døc ri nyöödö marï; ï jïtö ki rääm ri lwaar marï ko obwöre. Cwïnyï otïmö ni ena køør cwørï, ni tïmï niï bëënna gø.»"
+                },{
+                    "id": 17,
+                    "title": "",
+                    "reference": "",
+                    "text": "Ni kö Wuuö Jwøki jï Adam, ni «Kiper mana leŋï dwør cïïï, ni camï nyi jaath mana köömma ïïni ki gø, na kööa, ni ‹Kärï cämö ri gø›, «Ŋøøm aciena kiperï; cam marï ojootï ki køør öölö mo teek døc yïth nïr kwøw moï bëët."
+                },{
+                    "id": 18,
+                    "title": "",
+                    "reference": "",
+                    "text": "Koodhi ki luum otuy bäät piny kiperï; ni tïmï niï cama gïïo tuy yïth ŋøøm."
+                },{
+                    "id": 19,
+                    "title": "",
+                    "reference": "",
+                    "text":"Cam marï ojootï ki køør kwäk marï këël mano tïme ni ŋuuda thøø marï no døøï yi ŋöömö, kiper ï käla ree. Ï käla ri ŋöömö; køøre ï døøa yi ŋöömö.»"
+                },{
+                    "id": 20,
+                    "title": "",
+                    "reference": "",
+                    "text":"Kanyøgø nø dhaanhø nyeŋ cïïe acaae ni Iip, kiper ena mïïö mar jøøa kwøw bëët."
+                },{
+                    "id": 21,
+                    "title": "",
+                    "reference": "",
+                    "text":"Ni ö Wuuö Jwøki ni tïïe ki dum pïën jï Adam ki cïïe, ni røø gø dëëtge."
+                },{
+                    "id": 22,
+                    "title": "",
+                    "reference": "",
+                    "text":"Køøre Wuuö Jwøk aköö, «Ennø dhaanhø atïmö ni caala øøni, ni gïna beer ki gïna raac ŋääe. 'Ba ennø, kany mør eni cäŋa lwötö thuwø ri jaadha näk jaath kwøw, ni cam gø, ni kwøe ni bëëde na bäre bäre.»"
+                },{
+                    "id": 23,
+                    "title": "",
+                    "reference": "",
+                    "text":"Kiper manøgø nø, Wuuö Jwøk dhaanhø ariem wøk ki ya ajïniinna en Ëden, kiper nee tïme ni puura ŋøøm moa käl yïthge."
+                },{
+                    "id": 24,
+                    "title": "",
+                    "reference": "",
+                    "text":"'Ba kar kanya ö Wuuö Jwøki na riem dhaanhø wøk, eni nyïïatwiet maal mo cwøl ni kirubël, ko opëëllö mo leebe liel ki maac, mo løøŋŋa ree ki kwöre bëët, acïp jï løø kur tuul-cäŋ ya ajïniinna en Ëden, kiper nee jöör jaath kwøw nee koorge."
+                }
+            ]
+
+        },{
+            "id": 4,
+            "name":"Wïlöölö",
+            "text":[
+                {
+                    "id": 1,
+                    "title":  "Luum Keen Ki Eebel",
+                    "reference": "",
+                    "text": " 1 Køøre Adam aci baŋ cïïe ma Iip, ni jït yie ki dhaanhø ni nywøl Keen, ni kö Iipi, ni «Aana jïtö ki nyilaal ma dïcwøø ki baŋ Wuuö Jwøk.»"
+                },{
+                    "id": 2,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 2 Ni cäŋ coki ma Eebel nywøllø. Ni ö Eebelli ni tïme na dïkwääc dïëk. 'Ba Keen atïmö na ŋat puur."
+                },{
+                    "id": 3,
+                    "title": "",
+                    "reference": "",
+                    "text":" 3 Kar kanyøgø Keen akännö ki caammi moa ciek na puure ni cïp gø na muuce jï Wuuö Jwøk."
+                },{
+                    "id": 4,
+                    "title": "",
+                    "reference": "",
+                    "text": " 4 Ni ö Eebelli ni känne ki kure røk rïŋ moa beyø mo kaai mo dïëk moe. Ni ö Wuuö Jwøki ni jïëc mar Eebel ko olämme moe."
+                },{
+                    "id": 5,
+                    "title": "",
+                    "reference": "",
+                    "text": " 5 'Ba mar Keen ki muuce moe käre jïëö. Køøre Keen agootø døc ni tïm täärnyïme ni cøl."
+                },{
+                    "id": 6,
+                    "title": "",
+                    "reference": "",
+                    "text": " 6 'Ba Wuuö Jwøk aköö jï Keen, «?Aperŋø ni gootï en? ?Aperŋø na tïm täärnyïmï  ni cøl?"
+                },{
+                    "id": 7,
+                    "title": "",
+                    "reference": "",
+                    "text": " 7 ?Aŋø, ni näk mo marï beer, täärnyïmï ba doo bëëdö ni leer? 'Ba ni näk mo marï ba beer, raay bëëdö no omøør piny dhi øtø marï; ni manynya ïïni. 'Ba gïna diï tïïö beeye ki man böötï gø.»"
+                },{
+                    "id": 8,
+                    "title": "",
+                    "reference": "",
+                    "text":" 8 Køøre Keen acäänö ki coki ma Eebel nee cige yi pwödhö. 'Ba kanya enge yi pwödhö, Keen aö maal ni 'näk coki ma Eebel."
+                },{
+                    "id": 9,
+                    "title": "",
+                    "reference": "",
+                    "text": " 9 Køøre Wuuö Jwøk aköö jï Keen, «?Coku ma Eebel en kaa ŋø?» Ni kö Keenni, «?Aŋø, ŋääa? ?Aŋø, beeye aani na dïkuri mar coka?»"
+                },{
+                    "id": 10,
+                    "title": "",
+                    "reference": "",
+                    "text": " 10 Ni kö Wuuö Jwøki, na «?Agïnaŋø na tïïyï enø? Dwør rem coku ajwöŋ baŋa ki tiet ŋøøm piny."
+                },{
+                    "id": 11,
+                    "title": "",
+                    "reference": "",
+                    "text": " 11 Ennø ïïna cien bäät ŋøøm, ni beeye ŋøøpa øc rem coku piny yie mana kønynyï piny ki cerï."
+                },{
+                    "id": 12,
+                    "title": "",
+                    "reference": "",
+                    "text": " 12 Kany wäro puurï ŋøøm, bäŋ gïn mo ciek yie jïrï na bäre. Ïïno tïmö na ŋat mo thääyö mo wïïrö jaak bäät piny.»"
+                },{
+                    "id": 13,
+                    "title": "",
+                    "reference": "",
+                    "text": " 13 Ni kö Keenni jï Wuuö Jwøk, na «Ajäla manøgø kee dwøŋ døc kiree kipera."
+                },{
+                    "id": 14,
+                    "title": "",
+                    "reference": "",
+                    "text": " 14 Neenï, ennø dïcäŋi en aana riemï wøk ki yïth ŋøøm; ni bëëda naa ba en buutï këët. Ni tïma ni aana dhaanhø maa thääyö jaak mo wïïrö bäät piny; ni kanymør ŋato wäro joot aani jaak a di nääö.»"
+                },{
+                    "id": 15,
+                    "title": "",
+                    "reference": "",
+                    "text":  " 15 'Ba Wuuö Jwøk aköö jïgø, ni «Ŋato köö jaak ni Keen nääe nääö, kwör di coolø dëëre kwöre abïriiø.» Ni ö Wuuö Jwøki ni muuny dëër Keen ki nyuudhi, kiper nee ŋato wäro joot gø nee ba nääe."
+                },{
+                    "id": 16,
+                    "title": "",
+                    "reference": "",
+                    "text": " 16 Køøre Keen aay nyïm Wuuö Jwøk ni ci kun bëëde yi ŋööm Nøt na en løø Ëden jï løø kur tuul-cäŋ."
+                },{
+                    "id": 17,
+                    "title": "",
+                    "reference": "",
+                    "text": " 17 Kanyøgø Keen aci baŋ cïïe, ni jït yie ki dhaanhø ni nywøl Inøk. Ni ö Keenni ni gëëde ki pääny, ni caa nyeŋ gø ri nyeŋ wääde ma Inøk."
+                },{
+                    "id": 18,
+                    "title": "",
+                    "reference": "",
+                    "text": " 18 'Ba Inøk Irat anywøle, ni ö Irati ni nywøl Mëjël, ni ö Mëjëlli ni nywøl Matucaël, ni ö Matucaëlli ni nywøl Lamek."
+                },{
+                    "id": 19,
+                    "title": "",
+                    "reference": "",
+                    "text": " 19 Ni ö Lameki ni nyöömme ki mään ariiø, ni nyeŋ dhaagø maya cwøl ni Ada, ni nyeŋ maya cwøl ni Dhëla."
+                },{
+                    "id": 20,
+                    "title": "",
+                    "reference": "",
+                    "text": " 20 Ni ö Ada ni nywøl Jabal. Ni ö Jaballi ni tïme na kwar jø wø bëëdö yïth oduŋkaare na näk jïge da dhäk ki dïëk."
+                },{
+                    "id": 21,
+                    "title": "",
+                    "reference": "",
+                    "text": " 21 Ni nyeŋ coki cwøl ni Jubal. Jubal beeye kwar jø wø pöödö ki thøme ni wø kudhö ko opele." 
+                },{
+                    "id": 22,
+                    "title": "",
+                    "reference": "",
+                    "text": " 22 'Ba Dhëla Tubalkeen anywøle, ni ö Tubalkeenni ni tïme na ŋat thäth ki jap jwëëlli ki jap nywïëny bëët. 'Ba coki mana näk dhaagø nyeŋŋe cwøl ni Nayma."
+                },{
+                    "id": 23,
+                    "title": "",
+                    "reference": "",
+                    "text": " 23 Køøre Lamek aköö ki määre, «Nya, Ada ki Dhëla, beerra man leŋŋu dwøra. U na määra, beerra man cegu ïthu ki luup 'moa. Aana nägö ki dhaanhø kiper mana këël aani, ni 'näga ki nyilaal kiper mana gøøc aani."
+                },{
+                    "id": 24,
+                    "title": "",
+                    "reference": "",
+                    "text": " 24 Ni näk mo kwör Keen di coolø ki kwöre abïriiø, aani na näk Lamek kwöra tïmö ni cool ki kwöre ma pïërabïriiø ka abïriiø.»"
+                },{
+                    "id": 25,
+                    "title": "",
+                    "reference": "",
+                    "text": " 25 Køøre Adam acäŋ ci baŋ cïïe ni nyööt cïïe ki nyilaal ma dïcwøø, ni cak nyeŋ gø ni Cëth; ni kö Iipi, ni «Jwøk acäŋ cïpö ki dhaanhø mør jïra na kar Eebel na 'näk Keenni.»"
+                },{
+                    "id": 26,
+                    "title": "",
+                    "reference": "",
+                    "text":" 26 Ni ö Cëthi ni nyööte ki nyilaal ma dïcwøø ni cak nyeŋ gø ni Ënöc. Køør manøgø nø, jiy aput tägö ki man lamge nyeŋ Wuuö Jwøk."  
+                }
+            ]
+        },{
+            "id": 5,
+            "name":"Wïlöölö",
+            "text":[
+                {
+                    "id": 1,
+                    "title":  "Luum Nyïïkwaac Adam",
+                    "reference": "",
+                    "text": " 1 Man beeye luum nyïïkwaac Adam. Dïcäŋa ö Wuuö Jwøki na cwääc dhaanhø, eni dhaanhø acwääe ni rööma Jwøk."
+                },{
+                    "id": 2,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 2 Ni cwääc geni na thwønh ki maath, ni gwïëth geni, ni cwøl geni na jiy dïcäŋa cwääc geni yie."
+                },{
+                    "id": 3,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 3 Kar kanya tïm cwiic Adammi na dïpa  ki pïëradäk, ena nyöötö ki wääde mo rööma eni mo ee caalø, ni cak nyeŋ gø ni Cëth."
+                },{
+                    "id": 4,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 4 Ni cwiiri moa beet Adammi kanya nø nywøl wääde ma Cëth beege cwiiri ma dïpe abära; ni cäŋ nyöödö thuwø ki wääte ki nyïïe møøk."
+                },{
+                    "id": 5,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 5 'Ba cwiic Adam bëët moa beede beege cwiiri ma dïpe abïŋween ki pïëradäk. Køøre ena thøw."
+                },{
+                    "id": 6,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 6 Ni ö Cëthi ni bëëde ki cwiiri ma dïpa ka abïïc, ni nywøl wääde ma Ënöc."
+                },{
+                    "id": 7,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 7 Køør kanya ö Cëthi na nywøl wääde ma Ënöc, ena cäŋ bëëtö ki cwiiri ma dïpe abära ka abïriiø, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 8,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 8 'Ba cwiiri bëët moa beet Cëthi beege cwiiri ma dïpe abïŋween ka apaar kurriiø. Køøre ena thøw."
+                },{
+                    "id": 9,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 9 Ni ö Ënöci ni bëëde ki cwiiri ma pïërabïŋween, ni nywøl wääde ma Keenan."
+                },{
+                    "id": 10,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 10 Køør kanya ö Ënöci na nywøl wääde ma Keenan, ena cäŋ bëëtö ki cwiiri ma dïpe abära ka apaar kurbïïc, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 11,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 11 'Ba cwiiri bëët moa beet Ënöci beege cwiiri ma dïpe abïŋween ka abïïc. Køøre ena thøw."
+                },{
+                    "id": 12,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 12 Ni ö Keenanni ni bëëde ki cwiiri ma pïërabïriiø, ni nywøl wääde ma Maalalel."
+                },{
+                    "id": 13,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 13 Køør kanya ö Keenanni na nywøl wääde ma Maalalel, ena cäŋ bëëtö ki cwiiri ma dïpe abära ki pïëraŋween, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 14,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 14 'Ba cwiiri bëët moa beet Keenanni beege cwiiri ma dïpe abïŋween ka apaar. Køøre ena thøw."
+                },{
+                    "id": 15,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 15 Ni ö Maalalelli ni bëëde ki cwiiri ma pïërabïciel ka abïïc, ni nywøl wääde ma Jaret."
+                },{
+                    "id": 16,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 16 Køør kanya ö Maalalelli na nywøl wääde ma Jaret, Maalalel abëëdö ki cwiiri ma dïpe abära ki pïëradäk, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 17,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 17 'Ba cwiiri bëët moa beet Maalalelli beege cwiiri ma dïpe abära ki pïërabïŋween ka abïïc. Køøre ena thøw."
+                },{
+                    "id": 18,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 18 Ni ö Jareti ni bëëde ki cwiiri ma dïpa ki pïërabïciel kurriiø, ni nywøl wääde ma Inøk." 
+                },{
+                    "id": 19,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 19 Køør kanya ö Jareti na nywøl wääde ma Inøk, ena cäŋ bëëtö ki cwiiri ma dïpe abära, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 20,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 20 'Ba cwiiri bëët moa beet Jareti beege cwiiri ma dïpe abïŋween ki pïërabïciel kurriiø. Køøre ena thøw."
+                },{
+                    "id": 21,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 21 Ni ö Inøki ni bëëde ki cwiiri ma pïërabïciel kurbïïc, ni nywøl wääde ma Mathucala."
+                },{
+                    "id": 22,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 22 Køør kanya ö Inøki na nywøl wääde ma Mathucala, ena cäŋ bëëtö ki cwiiri ma dïpe adäk ni bëëde ni caatha køør Jwøk, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 23,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 23 'Ba cwiiri bëët moa beet Inøki beege cwiiri ma dïpe adäk ki pïërabïciel kurbïïc."
+                },{
+                    "id": 24,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 24 Ni ö Inøki ni bëëde ni caatha køør Jwøk, ni kär kare joodø, kiper ena lwør Jwøki."
+                },{
+                    "id": 25,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 25 Ni ö Mathucala ni bëëde ki cwiiri ma dïpa ki pïërabära ka abïriiø, ni nywøl wääde ma Lamek."
+                },{
+                    "id": 26,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 26 Køør kanya ö Mathucala na nywøl wääde ma Lamek, ena cäŋ bëëtö ki cwiiri ma dïpe abïriiø ki pïërabära kurriiø, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 27,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 27 'Ba cwiiri bëët moa beet Mathucala beege cwiiri ma dïpe abïŋween ki pïërabïciel ka abïŋween. Køøre ena thøw."
+                },{
+                    "id": 28,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 28 Ni ö Lameki ni bëëde ki cwiiri ma dïpa ki pïërabära kurriiø, ni nyööte ki wääde."
+                },{
+                    "id": 29,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 29 Køøre nyeŋ gø acaae ni Nöa, ni kööe, ni «Ŋati en beeye ŋato jïtø ki cøm cwïny ki køøre ri öölö marø mana joodø ki køør tïïc mana leth kany wø puurø ŋöömö mana cien Wuuö Jwøki.»"
+                },{
+                    "id": 30,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 30 Køør kanya ö Lameki na nywøl wääde ma Nöa, ena cäŋ bëëtö ki cwiiri ma dïpe abïïc ki pïërabïŋween kurbïïc, ni nyööde ki wääte ki nyïïe møøk." 
+                },{
+                    "id": 31,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 31 'Ba cwiiri bëët moa beet Lameki beege cwiiri ma dïpe abïriiø ki pïërabïriiø ka abïriiø. Køøre ena thøw."
+                },{
+                    "id": 32,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 32 Ni ö Nöa ni bëëde ki cwiiri ma dïpe  abïïyö; køøre Cëm ki Kaam ki Jaapeth anywøle."
+                }
+            ] 
+        },{
+            "id":6,
+            "name":"Wïlöölö",
+            "text":[
+                {
+                    "id": 1,
+                    "title":  "Kanya Kath Rääö Mar Dhaanhø Bäät Piny",
+                    "reference": "",
+                    "text":" 1 'Ba kar kanya tïm jiyi ni ge nyaay bäät piny, ni jïge da nyïïge ma nyïïakuue mo ege nywølø,"
+                },
+                {
+                    "id": 2,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 2 jiy moa näk wäät Jwøk, nyïï jiy møga ajootge ni mïërö, ni ö ŋati man nø ni lwør mana jiere jaak, ni nywømge dëëtge."
+                },
+                {
+                    "id": 3,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 3 Køøre Wuuö Jwøk aköö, ni «Jwïëy 'moa ba doo bëëdö ri dhaanhø na bäre bäre, kiper ena dëël jaak. 'Ba aŋuun cwiiri moe tïmö na dïpa ki pïërariiø.»"
+                },
+                {
+                    "id": 4,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 4 Kar kaaca jiy møøk mo cwøl ni Nëpilim bëëdö ni nutö bäät piny, ni bëëtge ni ge poot nutö thuwø yïth nïra ö jøøa näk wäät Jwøki na cige na nywømge nyïï jiy møga, ni nyöötge ko obwöre ki geni. Jøøgø beege jiy moa teek moa nyeŋge ŋäc cøøn dïkwøŋ."
+                },
+                {
+                    "id": 5,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 5 Ni ö Wuuö Jwøki ni joot rääö mar dhaanhø no opällö bäät piny, ni gïï wø caar dhaanhe bëët ki cwïnye beege gïï mo reyø keerge."
+                },{
+                    "id": 6,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 6 Ni ö Wuuö Jwøki ni päth cwïnye døc kiper mana cwääc dhaanhø bäät piny, ni bëëde ni cwïnye kïmmö."
+                },{
+                    "id": 7,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 7 Ni kö Wuuö Jwøki, «Aani dhaanhø mana cwääa raanynya raanynyø bäät piny, ki mano täge ki dhaanhø këël mano këët ri lääy, ki gïï wø muuli, ki wec maal bëët; kiper cwïnya apädhö kiper mana cwääa geni.»"
+                },{
+                    "id": 8,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 8 'Ba Nöa beeye ŋata tïm yi Wuuö Jwøki ni met ki gøøni."
+                },{
+                    "id": 9,
+                    "title":  "Kanya Ö Jwøki Na Jier Nöa Nee Tëëŋe Ki Jääy",
+                    "reference": "",
+                    "text":  " 9 Man beeye luum nyïïkwaac Nöa. Nöa beeye dhaanhø mo mare beer ri jøøa bëëdö kar kaaca, ni bäŋ gïn mo jøøŋŋi ri bëëtö mare. Ena bëëdö ni caatha køør Jwøk."
+                },{
+                    "id": 10,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 10 Ni ö eni ni nyööde ki wääte adäk; ni nyeŋge beege Cëm ki Kaam ki Jaapeth."
+                },{
+                    "id": 11,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 11 'Ba kar kanyøgøøni piny atïmö ni päŋ ki raay nyïm Jwøk, ni tïm pinynyi ni päŋ bäre ki gïï mo leth mo wø tïïc jiyi."
+                },{
+                    "id": 12,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 12 Ni ö Jwøki ni neen bäät piny, ni joot gø ni päŋ ki raay; kiper jiy bëët jöör bëëtö marge ege raanynyø bäät piny."
+                },{
+                    "id": 13,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 13 Køøre Jwøk aköö jï Nöa, «Aani, aŋuun bëëtö mar jiy bëët anø ŋøla; kiper piny apäŋ ki gïï mo leth ki køør gïïa tïïcge.'Ba ennø, ge raanynya raanynyø ki piny bëët na aciel."
+                },{
+                    "id": 14,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 14 Beerra man tëëŋŋï dëërï ki jääy ri jaadha cwøl ni göper; ni tïïï ki uudi yi jääy, ni rwøthï yie ki ŋääe wøk bäre ki dwøø."
+                },{
+                    "id": 15,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 15 Ni jöö mano tïïyï jääy ki gø beeye en; bär mar jääy wär näk ma gööye ma dïpe adäk, ni päl yie beeye gööye ma pïërabïïc, ni ö bär mar wïïe maal ki piny ni tïme na gööye ma pïëradägö."
+                },{
+                    "id": 16,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 16 Køøre wï jääy wär mooyï ki rëëbi, ni wëënnï yïthakic wïïe maal ki kööre piny ki gööyö aciel. Ni kølï dhi jääy tier-buute. Ni tïïyï yi jääy ni yïthe adäk, ni maya ena piny, ni rietge ena bääte maal, ni dääge ena maal bäätge." 
+                },{
+                    "id": 17,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 17 Ennø, aani jwïïö jääŋŋa jääŋŋö bäät piny, kiper nee gïn ma dëël jaak mo ree da jwïëy mo kwøw bäät piny nee raanynya. Ni ö gïïa kwøw bëët moa en bäät piny ni putge thøø."
+                },{
+                    "id": 18,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 18 'Ba aani aano tudö ki luubö ki ïïni. Ïïno ci yi jääy, ïïni, ki wäätï, ki cïïï, ki määr wäätï bëët na aciel."
+                },{
+                    "id": 19,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 19 Ri gïïa näk dëëtge da jwïëy bëët na kwøw, wärï kädï ka ariiø ri wï tuuŋ man nø ni kïthï ge yi jääy, kiper nee bëëtge ni kwøw buutï. Beerra man kälï geni na thwønh ki maath."
+                },{
+                    "id": 20,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 20 Ki røk weny ri wï tuuŋ man nø, ki røk lääy ri wï tuuŋ man nø, ki røk gïï wø muuli bäät piny ri wï tuuŋ man nø, geno ö baŋï no oriewi riewi ni öge baŋï yi jääy, nee kwøwge buutï."
+                },{
+                    "id": 21,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 21 'Ba ïïni wärï kädï ki cam jïrï røk caammi bëët mo wø cam. Ni cooŋï gø kanya ciel kiper dëërï, ni tïme na cam jïrï ki jïge thuwø.»"
+                },{
+                    "id": 22,
+                    "title":  "",
+                    "reference": "",
+                    "text":" 22 Ni ö Nöa ni tïïc gïïögø; ni put gïïögø tïïc ki køør luup bëët moa köömmi ya Jwøki ki geni."
+                }
+            ]
+        },{
+            "id": 7,
+            "name":"Wïlöölö",
+            "text": [
+                {
+                    "id": 1,
+                    "title":  "Kanya Ö Jwïïö Bäät Piny",
+                    "reference": "",
+                    "text": " 1 Køøre Wuuö Jwøk aköö jï Nöa, ni «Ïïni ki jø paarï bëët, cou yi jääy, kiper beeye ïïna ŋata jooda keere ni mare beer ri beenhnhø man bäre."
+                },{
+                    "id": 2,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 2 Beerra man kädï jïrï røk lääy moa beyø ki thwönhi abïriiø ki mädhi abïriiø, ni kädï røk lääy moa ba beyø no oriewi riewi na thwønh ki maath."
+                },{
+                    "id": 3,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 3 Ni kädï thuwø røk wec maal ki thwönhi abïriiø ki mädhi abïriiø, kiper nee nyïëdi moge bëëtge ni kwøw buutï bäät piny bäre."
+                },{
+                    "id": 4,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 4 Kiper køør nïne abïriiø aani køth jääŋŋa jääŋŋö bäät piny, ni pädhe ki cääŋŋe ma pïëraŋween ki wärre ma pïëraŋween; ni ö gïïa cwääa bëët na näk kwøw ni puta geni raanynyø bäät piny.»"
+                },{
+                    "id": 5,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 5 Ni ö Nöa ni tïïc gïnögø ki køør luup bëët moa köömmi ya Wuuö Jwøki ki geni."
+                },{
+                    "id": 6,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 6 'Ba kar kanya ö jwïïö na mac bäät piny, cwiic Nöa kar kaaca beege cwiiri ma dïpe abïciel."
+                },{
+                    "id": 7,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 7 Ni ö Nöa ki wääte ki cïïe ki määr wääte ni cige yi jääy na aciel ki eni, kiper nee bøthge ki jwïïö."
+                },{
+                    "id": 8,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 8 Ni ö teeŋ lääy moa beyø ki teeŋ lääy moa ba beyø ki teeŋ weny ki teeŋ gïï wø muuli bëët bäät piny,"
+                },{
+                    "id": 9,
+                    "title":  "",
+                    "reference": "",
+                    "text":   " 9 ni cige yi jääy baŋ Nöa no oriewi riewi na thwønh ki maath, kaawat mana ö Jwøki na kööm Nöa."
+                },{
+                    "id": 10,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 10 'Ba na tïme na køør nïne abïriiø moa wäŋ Jwøki, jwïïö aput ö bäät piny."
+                },{
+                    "id": 11,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 11 Kanya tïm cwiic Nöa na dïpe abïciel, ni nïr dwääy mo riet dwäde apaar ka abïriiø, dïcäŋöca piny bäre aput mudö ki jwïïö, ni ö maalli ni put dhee jap,"
+                },{
+                    "id": 12,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 12 ni ö køthi mo päl døc ni pädhe bäät piny bäre ki cääŋŋe ma pïëraŋween ki wärre ma pïëraŋween."
+                },{
+                    "id": 13,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 13 Ni ö Nöa ki cïïe, ki wääte na näk Cëm ki Kaam ki Jaapeth, ki määr wääte dääi ni putge ci yi jääy dïcäŋöca kiree,"
+                },{
+                    "id": 14,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 14 ni beege geni ki teeŋ wïth lääc paap bëët, ki teeŋ wïth lääc paac bëët, ki teeŋ wïth gïï wø muuli bëët bäät piny, ki teeŋ wïth weny bëët."
+                },{
+                    "id": 15,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 15 Ni ö gïïögø na näk dëëtge da jwïëy bëët ni cige yi jääy baŋ Nöa no oriewi riewi,"
+                },{
+                    "id":16,
+                    "title": "",
+                    "reference": "",
+                    "text": " 16 na thwønh ki maath, kaawat mana ö Jwøki na kööm Nöa. Ni ö Wuuö Jwøki ni cïëk jääy bäät Nöa."
+                },{
+                    "id": 17,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 17 Ni ö jwïïö ni put nyaay bäät piny ki nïne ma pïëraŋween, ni ö pïïyi ni meetge rege, ni tïïcge jääy ni thäärö, ni tïme ni kare bäär ki piny."
+                },{
+                    "id": 18,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 18 Ni ö pïïyi ni kathge døc, ni meetge rege ni thaar bäät piny bäre, ni tïm jääyi ni thäärö bäät pïï."
+                },{
+                    "id": 19,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 19 Ni ö pïïyi ni cäŋge kadhø døc bäät piny; ni ö kïte moa bäyö bëët dï piny bäre ni mwønyi ya pïïyi."
+                },{
+                    "id": 20,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 20 Ni ö pïïyi ni nyänh maal, ni dööŋ kïte piny tiet pïï, kany mo ni rømi jïtö ki gööye ma apaar kurbïïc."
+                },{
+                    "id": 21,
+                    "title":  "",
+                    "reference": "",
+                    "text": " 21 Køøre gïïa näk kwøw bëët ni wø cäädhi bäät piny athøw; ni beege weny ki lääc paac ki lääc paap ki gïï wø muuli bëët bäät piny, ki jiy bëët."
+                },{
+                    "id": 22,
+                    "title": "",
+                    "reference": "",
+                    "text": " 22 Ni ö gïïa kwøw na en bäät piny bëët na näk dëëtge da jwïëy ni thøwge bëët."
+                },{
+                    "id": 23,
+                    "title":  "",
+                    "reference": "",
+                    "text":  " 23 Ni ö Jwøki ni raany gïïa kwøw bëët bäät piny, ki mana täge ri dhaanhø, këël mana këët ri lääy ki gïï wø muuli ki wec maal; gïïögø bëët araanynyi bäät piny. Ni ö Nöa keere ni dööŋe, ki jøøa en buute yi jääy."
+                },{
+                    "id": 24,
+                    "title":"",
+                    "reference": "",
+                    "text":" 24 Køøre pïï abëëdö bäät piny ni piny ee maaø ki nïne ma dïpa ki pïërabïïc."
+
+                }
+            ]
+        },{
+            "id": 8,
+            "name":"Wïlöölö",
+            "text": [{
+                "id": 1,
+                "title":  "Kanya Døø Jwïïö Piny",
+                "reference": "",
+                "text": " 1 'Ba Jwøk wïïe kär wïl ki Nöa ki lääc paap bëët ki lääc paac bëët moa en buute yi jääy. Ni ö Jwøki ni wëëk jamø kwönnö bäät piny; ni ö pïïyi ni døøkge."
+            },{
+                "id": 2,
+                "title":  "",
+                "reference": "",
+                "text": " 2 Ni ö pï jwïïö ni cuŋge, ni ö kwöra käl kuunhnhi yïthge maal ni cïëgi, ni ö køthi mana pädhö ni cööe."
+            },{
+                "id": 3,
+                "title":  "",
+                "reference": "",
+                "text": " 3 Kanyøgø pïï aput tägö ki man døøkge bäät piny ki yïth nïne bëët; ni put pïïyi døø døc køør nïne ma dïpa ki pïërabïïc."
+            },{
+                "id": 4,
+                "title":  "",
+                "reference": "",
+                "text": " 4 'Ba kanya tïme na ri bïriet dwäde ni nïr dwääy apaar ka abïriiø, jääy ajïtö ki kany mo cuŋŋe yie bäät kïdi mo cwøl na Ararat."
+            },{
+                "id": 5,
+                "title":  "",
+                "reference": "",
+                "text":  " 5 Ni tïm pïïyi ni cäätha piny këël mana këët ri paac dwäde. 'Ba na tïme na ri paac dwäde, ni dïcäŋa täk nïr dwääy yie na aciel, wïth kïte atïmö ni nëënö wøk."
+            },{
+                "id": 6,
+                "title":  "",
+                "reference": "",
+                "text": " 6 'Ba na tïme na køør nïne ma pïëraŋween, Nöa dha awëërnyeŋ mana tïïe ri jääy ajabe;"
+            },{
+                "id": 7,
+                "title":  "",
+                "reference": "",
+                "text": " 7 ni jääŋ agaak wøk, ni aae ni määde jaak, ni cøøa kun ni cøøa kun këël mana tal pïïyi bäät piny."
+            },{
+                "id": 8,
+                "title":  "",
+                "reference": "",
+                "text":  " 8 Køøre Nöa akuuru na en buute ajääŋŋe wøk kiper nee pïï liee ki man näk mo odwön bäät piny."
+            },{
+                "id": 9,
+                "title":  "",
+                "reference": "",
+                "text": " 9 'Ba akuuru bäŋ kany mo ee joodø mo këël tiete piny yie; køøre ena duu baŋ Nöa yi jääy, kiper atïmö ni pïï poot dagø dï piny bäre. Ni ö Nöa ni rwaak cere wøk baŋ gø ni mak gø ni käl gø baŋe yi jääy."
+            },{
+                "id": 10,
+                "title":  "",
+                "reference": "",
+                "text":  " 10 Kanyøgø ena kurö ki nïne abïriiø møøk ni cäŋ akuuru jääŋŋö wøk ki yi jääy."
+            },{
+                "id": 11,
+                "title":  "",
+                "reference": "",
+                "text":  " 11 Ni duu akuuru baŋe kanya tïme na kur abøøya, ni käädö ki ïth jaath mo marr ki dhee; ni puti ya Nöa ŋäc ni pïï onø dwön bäät piny."
+            },{
+                "id": 12,
+                "title":  "",
+                "reference": "",
+                "text":  " 12 Køøre Nöa acäŋ kurö ki nïne abïriiø møøk ni cäŋ akuuru jääŋŋö wøk, 'ba akuuru kär duu baŋ Nöa këët."
+            },{
+                "id": 13,
+                "title":  "",
+                "reference": "",
+                "text":  " 13 'Ba kanya tïm cwiic Nöa moa beede na dïpe abïciel ka aciel, kanya täk nïr dwääyi mana dïkwøŋ na aciel, pïï adwön bäät piny. Køøre Nöa wï jääy ajabe, ni  räŋŋe ni joot piny bäre ni cäätha kur talø."
+            },{
+                "id": 14,
+                "title":  "",
+                "reference": "",
+                "text":  " 14 'Ba na tïme na ri riet dwäde, ni nïr dwääy pïërariiø ka abïriiø, piny atal."
+            },{
+                "id": 15,
+                "title":  "",
+                "reference": "",
+                "text":  " 15 Køøre Jwøk acäänö ki Nöa, ni kööe,"
+            },{
+                "id": 16,
+                "title":  "",
+                "reference": "",
+                "text": " 16 ni «Ci wøk ki yi jääy, ïïni ki cïïï ki wäätï ki määr wäätï ni en buutï."
+            },{
+                "id": 17,
+                "title":  "",
+                "reference": "",
+                "text":  " 17 Ni kälï gïïa näk kwøw bëët wøk na en buutï thuwø, na näk weny ki lääy ki gïï wø muuli bäät piny bëët, kiper nee nyöötge ni tïmge ni thööth, ni jïtge ki nyïëdi, ni nyaacge bäät piny.»"
+            },{
+                "id": 18,
+                "title":  "",
+                "reference": "",
+                "text":  " 18 Køøre Nöa aci wøk ki yi jääy; ni ö wääte ki cïïe ki määr wääte ni cige wøk ki eni."
+            },{
+                "id": 19,
+                "title":  "",
+                "reference": "",
+                "text":  " 19 Ni ö lääyi bëët, ki gïï wø muuli, ki weny bëët, na näk gïï wø cäädhi bäät ŋøøm bëët, ni cige wøk  ki yi jääy na wï tuuŋ man nø."
+            },{
+                "id": 20,
+                "title":  "",
+                "reference": "",
+                "text": " 20 Køøre Nöa atïïö ki gïn wø cïp olämme bääte jï Wuuö Jwøk, ni lwöte røk lääya beyø bëët ki røk weny moa beyø bëët, ni waaŋ geni no olämme bäät gïn wø cïp olämme bääte."
+            },{
+                "id": 21,
+                "title":  "",
+                "reference": "",
+                "text":  " 21 Ni ö Wuuö Jwøki ni ŋwääc gïna duuŋ ni met, ni kööe ki cwïnye, ni «Aani køør man nø, piny ba cäŋa ciennø këët kiper gïna tïïc dhaanhe. Kiper acaac dhaanhø man wø caare ki cwïnye ki mana täge thïnhö cøøn beeye acaara mo raac cooth. Aani thuwø gïïa näk kwøw bëët ba cäŋa raanynyø këët kaawat mana tïïa en."
+            },{
+                "id": 22,
+                "title":  "",
+                "reference": "",
+                "text":    " 22 «'Ba ennø, kaawat man bëët pinynyi ni nut en, kar pïïdhö ki kar kac, ki lïëth piny ki ŋec piny, oput bëëtö ni nut cooth. Ni ö dhi køthi ka arïïa ni bëëtge ni dagø cooth; ni put waŋcäŋŋi ki wäär bëëdö ni ba cuŋ këët.»"
+            }
+        ]
+        },{
+            "id": 9,
+            "name":"Wïlöölö",
+            "text": [
+                {
+                    "id": 1,
+                    "title":  "Luumma Tuut Jwøki Ki Nöa",
+                    "reference": "",
+                    "text":  " 1 Køøre Jwøk Nöa agwïëdhe ki wääte, ni kööe jïge, ni «Nyöödu ni nyaayu ni pääŋŋu piny."
+                },{
+                    "id": 2,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 2 Ni ö lääyi mo bäät piny bëët ki wec maal bëët këël gïï wø muuli bäät ŋøøm bëët ki rec naam bëët ni bëëtge ni lwäär ki uuni, ni tïmge ni ge böö ki uuni. Geno bëëdö ni ena ceŋŋu."
+
+                },{
+                    "id": 3,
+                    "title":"",
+                    "reference": "",
+                    "text":   " 3 Gïï wø cäädhi na kwøw bëët otïmö na cam jïïu. Gena cïba jïïu kaawat mana cïba gïïa näk otuy na marr bëët jïïu."
+                },{
+                    "id": 4,
+                    "title":"",
+                    "reference": "",
+                    "text":   " 4 «'Ba rïŋö mo remø mare poot ena dëëre kär cammu, kiper remø beeye jwïëy moe."
+                },{
+                    "id": 5,
+                    "title":"",
+                    "reference": "",
+                    "text": " 5 Ka adïëri møn, kwör rem kwøw maru coola coolø dëët lääy bëët. Ni coola gø thuwø dëët jiy bëët. Kwör rem kwøw mar dhaanhø coola coolø dëër ŋati man nø."
+                },{
+                    "id": 6,
+                    "title":"",
+                    "reference": "",
+                    "text": " 6 «Ŋat mo kønynya rem dhaanhø piny jaak, remme okøny dhaanhe mørri piny thuwø; kiper Jwøk dhaanhø acwääe ki kïdö mo caala mare."
+                },{
+                    "id": 7,
+                    "title":"",
+                    "reference": "",
+                    "text": " 7 'Ba uuni, jïtu ki nyïëdi ni nyaayu, ni pääŋŋu piny nou thööth døc ni nyaayu yie.»"
+                },{
+                    "id": 8,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 8 Køøre Jwøk acäänö ki Nöa ki wääte na en buute, ni kööe,"
+                },{
+                    "id": 9,
+                    "title":"",
+                    "reference": "",
+                    "text":   " 9 ni «Ennø, aani a tudö ki luubö ki uuni ki nyïïkwaayu moo ööi køøru."
+                },{
+                    "id": 10,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 10 Ni tuuda gø thuwø ki gïïa kwøw bëët na en buutu, ni beege weny ki lääc paac ki lääc paap bëët na en buutu, na näk gïïa ö wøk bëët ki yi jääy ki uuni na aciel, këël mana këët ri lääc bäät piny bëët."
+                },{
+                    "id": 11,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 11 Luubö mara tuuda tuudö ki uuni. Køør man en nø gïïa kwøw bëët bäät piny ba doo ränynyö këët ki jwïïö, ni doo bäŋ jwïïö mo duui këët mo caala man mo raanynya piny bäre.»"
+                },{
+                    "id": 12,
+                    "title":"",
+                    "reference": "",
+                    "text": " 12 Ni kö Jwøki, ni «Man beeye nyuudhi mar luumma tuuda yaakiyø ki uuni ki gïïa näk kwøw bëët na en buutu, kiper beenhnhø bäre thuwø mano ööi yi nyïme."
+                },{
+                    "id": 13,
+                    "title":"",
+                    "reference": "",
+                    "text": " 13 Aani daanø mara acïba yi pöölö maal, nee tïme na nyuudhi mar luumma tuuda yaakicwa ki piny."
+                },{
+                    "id": 14,
+                    "title":"",
+                    "reference": "",
+                    "text": " 14 Køøre kany wäro käla pøøl bäät piny, daanø puta nëënnö yïth pøøl."
+                },{
+                    "id": 15,
+                    "title":"",
+                    "reference": "",
+                    "text": " 15 Ni ö aani ni para wïïa ki luumma tuuda na en yïthakiyø ki uuni ki gïïa kwøw bëët, ni pïï ba cäŋ duuö këët na jwïïö kuna raany gïïa kwøw bëët."
+                },{
+                    "id": 16,
+                    "title":"",
+                    "reference": "",
+                    "text": " 16 Kany wäro tïme ni daanø ena yi pöölö maal, eni neena neenø, ni puta wïïa par ki luumma tuut na näk bäŋ cuŋŋe na en yïthakicwa, a na Jwøk, ki gïïa näk kwøw bëët na en bäät piny.»"
+                },{
+                    "id": 17,
+                    "title":"",
+                    "reference": "",
+                    "text": " 17 Ni kö Jwøki jï Nöa, ni «Man beeye nyuudhi mar luumma tuuda na tïïa nee bëëde yïthakicwa ki gïïa näk kwøw bëët na en bäät piny.»"
+                },{
+                    "id": 18,
+                    "title":"Gïïa Car Nöa Kiper Wääte",
+                    "reference": "",
+                    "text":" 18 'Ba wäät Nöa na ö wøk ki yi jääy kar kaaca beege Cëm ki Kaam ki Jaapeth. Ni ö Kaammi ni tïme na wää Keenanni."
+                },{
+                    "id": 19,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 19 Ni jøøgø na adäk yøø beege jøøa näk wäät Nöa, ni jiy moa nyaay bäät piny bëët käla rege."
+                },{
+                    "id": 20,
+                    "title":"",
+                    "reference": "",
+                    "text": " 20 Køøre Nöa na näk ŋat puur atägö ki man piith pwöth omøki."
+                },{
+                    "id": 21,
+                    "title":"",
+                    "reference": "",
+                    "text": " 21 Kanyøgø ena mädhö ki køøŋ nyïïomøki ni meere, ni käl abïïe wøk dëëre, ni dööŋe ki dëëre yo oduŋkaara mare."
+                },{
+                    "id": 22,
+                    "title":"",
+                    "reference": "",
+                    "text": " 22 Ni ö Kaammi na näk wää Keenanni ni raŋ jï wänni jaak ni bëëdö ka dëëre, ni døø wøk ni caan gø jï nyïïmenni riet."
+                },{
+                    "id": 23,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 23 'Ba Cëm ki Jaapeth alwötö ka abïï ni kïthge gø göökge, ni cääthge ni ŋäthge ege løø, ni cige ni rïëpge wääge na näk bëëdö ka dëëre; ni løøge nyïmge wøk kiper nee wääge na näk bëëdö ka dëëre nee ba neenge."
+                },{
+                    "id": 24,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 24 Kanya ö Nöa na pääe ni lëëny wïïe ki meec køøŋø, gïna tïïc wääde mana thiinh dëëre awïnynye."
+                },{
+                    "id": 25,
+                    "title":"",
+                    "reference": "",
+                    "text":   " 25 Køøre ena köö, na «Acïëni oen bäät Keenan, ni tïme ni kadha laŋ mare dï laaŋe mo nyïïmenni.»"
+                },{
+                    "id": 26,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 26 Ni cäŋ köö thuwø, ni «Pwøc oen jï Wuuö Jwøk, na näk Jwø Cëm; beerra man tïm Keenanni na laŋŋø mare."
+                },{
+                    "id": 27,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 27 Beerra man ö Jwøki ni wëëk Jaapeth nyaay, ni bëëde yïth oduŋkaare mo Cëm, ni tïm Keenanni na laŋŋø marge.»"
+                },{
+                    "id": 28,
+                    "title":"",
+                    "reference": "",
+                    "text":  " 28 'Ba Nöa abëëdö ki cwiiri ma dïpe adäk ki pïërabïïc køør jwïïö."
+                },{
+                    "id": 29,
+                    "title":"",
+                    "reference": "",
+                    "text":   " 29 Ni cwiiri moa beet Nöa bëët beege cwiiri ma dïpe abïŋween ki pïërabïïc. Køøre ena thøw."
+                }
+            ]
+        },{
+            "id": 10,
+            "name":"Wïlöölö",
+            "text":[{
+                "id": 1,
+                "title":"Luum Nyïïkwaac Nöa",
+                "reference": "",
+                "text":  " 1 Man beeye luum nyïïkwaac Cëm ki Kaam ki Jaapeth na näk wäät Nöa. Kanya tïme na køør jwïïö gena nyöödö, ni jïtge ko obwöre."
+            },{
+                "id": 2,
+                "title":"Nyïïkwaac Jaapeth",
+                "reference": "(1 Luup Nyeye 1:5-7)",
+                "text":  " 2 Wäät Jaapeth beege Gömër, ki Magöök, ki Madë, ki Jawan, ki Tubal, ki Möcak, ki Tëra." 
+            },{
+                "id": 3,
+                "title":"",
+                "reference": "",
+                "text":  " 3 Ni wäät Gömër beege Ackena, ki Ripath, ki Tögarma."
+            },{
+                "id": 4,
+                "title":"",
+                "reference": "",
+                "text": " 4 Ni ö wäät Jawanni ni näkge beege Elica, ki Tarcëc, ki Kitim, ki Rödanim."
+            },{
+                "id": 5,
+                "title":"",
+                "reference": "",
+                "text":   " 5 'Ba ki røk jøøgø, jø wø bëëdö bäät näm dëëtge apääŋge yïth ŋøøm moge, ni jøøi nø ŋäya dhøk marge, ni ge bëëdö na wï tuuŋ man nø, na teeŋ wï jur man nø."
+            },{
+                "id": 6,
+                "title":"Nyïïkwaac Kaam",
+                "reference": "(1 Luup Nyeye 1:8-16)",
+                "text":  " 6 Wäät Kaam beege Kuuc, ki Micram, ki Put, ki Keenan."
+            },{
+                "id": 7,
+                "title":"",
+                "reference": "",
+                "text":  " 7 Ni wäät Kuuc beege Ceba, ki Ëwlath, ki Cabta, ki Raama,  ki Cabteka; ni ö wäät Raama ni näkge beege Cïïba ki Didan."
+            },{
+                "id": 8,
+                "title":"",
+                "reference": "",
+                "text":  " 8 Kuuc Namrut anywøle, ni ö Namruti ni tïme ni beeye ŋata kwøŋ bëëtö no oteeø bäät piny."
+            },{
+                "id": 9,
+                "title":"",
+                "reference": "",
+                "text":  " 9 Ni tïme na ŋat mo thöör ŋääe døc nyïm Wuuö Jwøk. Kiper manøgø nø, jiy atïmö ni ŋääta ree, ni köge, ni «Ï caala Namrut, ŋata näk dïthöödhi nyïm Wuuö Jwøk.»"
+            },{
+                "id": 10,
+                "title":"",
+                "reference": "",
+                "text":  " 10 Ni ŋøøm moe tägi ka Babel ki Ërëk ki Akat ki Kalnë, mïëya en yi Cinaar."
+            },{
+                "id": 11,
+                "title":"",
+                "reference": "",
+                "text":   " 11 Ni tïŋŋe yi ŋöömmögø, ni aae ni pööth Aciria, ni geer Nineba ki Rööböth-Ir ki Kala,"
+            },{
+                "id": 12,
+                "title":"",
+                "reference": "",
+                "text":   " 12 ni geer Rëcën na en yïthakic Nineba ki Kala, ni tïmge na pääny aciel mo dwøŋ døc."
+            },{
+                "id": 13,
+                "title":"",
+                "reference": "",
+                "text":  " 13 'Ba Micram beeye na kwar jø Ludim, ki jø Anamim, ki jø Laabim, ki jø Neptalëm,"
+            },{
+                "id": 14,
+                "title":"",
+                "reference": "",
+                "text":  " 14 ki jø Petruc, ki jø Kaclu, ki jø Kaptör, na näk jøøa käl jø Pilitinni dëëtge."
+            },{
+                "id": 15,
+                "title":"",
+                "reference": "",
+                "text":  " 15 Keenan wääde ma Caydan na näk kanynye anywøle, ni nywøl Këth thuwø."
+            },{
+                "id": 16,
+                "title":"",
+                "reference": "",
+                "text": " 16 Ni ö jø Jeebuc ki jø Amör ki jø Gërgëca,"
+            },{
+                "id": 17,
+                "title":"",
+                "reference": "",
+                "text":  " 17 ki jø Ëwi ki jø Aruk ki jø Cini,"
+            },{
+                "id": 18,
+                "title": "",
+                "reference": "",
+                "text":" 18 ki jø Arbat ki jø Dhemari ki jø Amath ni kälge ree. Køøre cään tuuŋ jø Keenan anyaay ni keethge. "
+            },{
+                "id": 19,
+                "title": "",
+                "reference": "",
+                "text": " 19 Ni ö ŋøømmi mo jø Keenan ni nyaacge, ni tägi ka Caydan ni cøøa jï kuna en Gërar këël mana këët Geedha, ni pööth jï kuna en Cødam ki Gømöra ka Adama ki Dheböym këël mana këët Laca."
+            },{
+                "id": 20,
+                "title": "",
+                "reference": "",
+                "text": " 20 Moøgø beege nyïïkwaac Kaam; ni jøøi nø bëëdö na wï tuuŋ man nø, ni ge ŋäya dhøk marge, ni ge bëëdö yïth ŋøøm moge na teeŋ wï jur man nø."
+            },{
+                "id": 21,
+                "title": "Nyïïkwaac Cëm",
+                "reference": "(Wïlöölö 11:10-27; 1 Luup Nyeye 1:17-27)",
+                "text":" 21 Køøre thuwø Cëm, na näk kwar jø Eber, anyöötö ko obwöre. Cëm beeye cok Jaapethi, ni dwøŋŋa eni ki coki ma Jaapeth."
+            },{
+                "id": 22,
+                "title": "",
+                "reference": "",
+                "text": " 22 Wäät Cëm beege Ilam ki Acör ki Arpakat ki Lut ka Aram."
+            },{
+                "id": 23,
+                "title": "",
+                "reference": "",
+                "text": " 23 Ni ö wäät Arammi ni näkge Uc ki Uul ki Gëthër ki Möcak."
+            },{
+                "id": 24,
+                "title": "",
+                "reference": "",
+                "text":" 24 Ni ö Arpakat ni nywøl Ceela, ni ö Ceela ni nywøl Eber."
+            },{
+                "id": 25,
+                "title": "",
+                "reference": "",
+                "text": " 25 Ni ö Eberri ni nyööte ki wääte ariiø; ni nyeŋ wääde maya cwøl ni Pelek kiper na tïme na ree kar kaaca, jiy akeethø dï piny; ni ö nyeŋ coki ni cwøli ni Jöktan."
+            },{
+                "id": 26,
+                "title": "",
+                "reference": "",
+                "text": " 26 Ni ö Jöktanni ni nywøl Almödat ki Calëp ki Acremöt ki Jerak,"
+            },{
+                "id": 27,
+                "title": "",
+                "reference": "",
+                "text":" 27 ka Adöram ka Udhal ki Dekla,"
+            },{
+                "id": 28,
+                "title": "",
+                "reference": "",
+                "text":  " 28 ko Obal ka Abimaal ki Cïïba;"
+            },{
+                "id": 29,
+                "title": "",
+                "reference": "",
+                "text":  " 29 ko Öpïr ki Ëwlath ki Jöbap. Jøøgø bëët beege wäät Jöktan."
+            },{
+                "id":30,
+                "title": "",
+                "reference": "",
+                "text":   " 30 Ŋøøm moa bëëtge yïthge atägö ki kanya cwøl ni Mëca ni pïïe jï kuna en Cipar, paana näk po kïte, na en jï løø kur tuul-cäŋ."
+            },{
+                "id": 31,
+                "title": "",
+                "reference": "",
+                "text": " 31 Jøøgø bëët beege nyïïkwaac Cëm, ni jøøi nø bëëdö na wï tuuŋ man nø, ni ge ŋäya dhøk marge, ni ge bëëdö yïth ŋøøm moge na teeŋ wï jur man nø."
+            },{
+                "id": 32,
+                "title": "",
+                "reference": "",
+                "text":  " 32 'Ba moøgø beege nyïïkwaac Nöa ki køør tuuŋ marge, ni jøøi nø bëëdö na teeŋ wï jur man nø. Ki røk jøøgø wïth juurre anyaay bäät piny bäre køør jwïïö."
+            }
+        ]
+        },{
+            "id": 11,
+            "name":"Wïlöölö",
+            "text":[
+                {
+                    "id": 1,
+                    "title": "Kanya Ö Jwøki Na Keeth Dhøk Jiy",
+                    "reference": "",
+                    "text": " 1 'Ba kar kanyøgøøni jø bäät piny bëët atïmö ni cäänö ka dhøk aciel, ni luup moge dïët na aciel bëët."
+                },{
+                    "id": 2,
+                    "title": "",
+                    "reference": "",
+                    "text": "2 'Ba kanya paanyge dëëtge jï løø kur tuul-cäŋ, gena aay ni jïtge ki gool yi ŋööm Cinaar ni bëëtge yie."
+                },{
+                    "id": 3,
+                    "title": "",
+                    "reference": "",
+                    "text": " 3 Kanyøgø gena cäänö yïthakicge keerge, ni köge, ni «Øøni nø, beerra man tïïø ki thuube ni bulø geni ni beyø døøc.» Køøre gena jïtö ki thuube mo gëëtge ki ge na kar kïte, ni jïtge ko odhöönh mo nwaaŋ na gïn caamge thuube ki gø."
+                },{
+                    "id": 4,
+                    "title": "",
+                    "reference": "",
+                    "text": "  4Ni köge, ni «Øøni nø, beerra man gëënnø dëëtø ki pääny ki øt pööki mo wïïe guta maal, kiper nee nyeŋŋø wïnye, kiper nøø ba keethø bäät piny bäre.»"
+                },{
+                    "id": 5,
+                    "title": "",
+                    "reference": "",
+                    "text": "5 'Ba Wuuö Jwøk aö piny kuna neen pääny ki pööki mana geer jiyi."
+                },{
+                    "id": 6,
+                    "title": "",
+                    "reference": "",
+                    "text": " 6 Køøre Wuuö Jwøk aköö, «Ennø, jøøi gena tuuŋ aciel, ni dhøk marge aciel bëët. Teeŋ gïn ennø atäkge ki man tïïcge gø; ni gïn wø caarge jaak yi nyïme nee tïïcge, ba dhäthi jïge møn.» "
+                },{
+                    "id": 7,
+                    "title": "",
+                    "reference": "",
+                    "text": " 7Ni kö Wuuö Jwøki, «Øøni nø, beerra man cøø piny baŋge ni kierø wï dhøk marge kaace, kiper nee ŋati man nø nee dhi wati maya ba wïnynye.»"
+                },{
+                    "id": 8,
+                    "title": "",
+                    "reference": "",
+                    "text": " 8 Køøre gena keeth Wuuö Jwøki kaace bëët dï piny bäre, ni kärge päänyögø geerø këët."
+                },{
+                    "id": 9,
+                    "title": "",
+                    "reference": "",
+                    "text": " 9Kiper manøgønø, nyeŋ kaace acwøl ni Babel, kiper kaace beeye kanya ö Wuuö Jwøki na kier wï dhøk mar jø bäät piny bëët yie, ni wëëk geni keethø kaace bëët dï piny bäre."
+                },{
+                    "id": 10,
+                    "title": "Luum Nyïïkwaac Cëm",
+                    "reference": "(Wïlöölö 10:21-31; 1 Luup Nyeye 1:17-27)",
+                    "text": " 10 Man beeye luum nyïïkwaac Cëm. Kanya tïme na køør cwiiri ariiø mo jwïïö, ni Cëm cwiiri moe dïpa, ena nyöötö ki wääde mo nyeŋŋe cwøl ni Arpakat."
+                },{
+                    "id": 11,
+                    "title": "",
+                    "reference": "",
+                    "text": "11 'Ba køør kanya ö Cëmmi, ni nywøl wääde ma Arpakat, ena cäŋ bëëtö ki cwiiri ma dïpe abïc, ni nyööde ki wääte ki nyïïe møøk.' "
+                },{
+                    "id": 12,
+                    "title": "",
+                    "reference": "",
+                    "text": "12 Ni ö Arpakati ni bëëde ki cwiiri ma pïëradäk kurbïïc, ni nywøl wääde ma Ceela."
+                },{
+                    "id": 13,
+                    "title": "",
+                    "reference": "",
+                    "text": " 13 Køør kanya ö Arpakati na nywøl wääde ma Ceela, ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ka adäk, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 14,
+                    "title": "",
+                    "reference": "",
+                    "text": " 14 Ni ö Ceela ni bëëde ki cwiiri ma pïëradäk, ni nywøl wääde ma Eber."
+                },{
+                    "id": 15,
+                    "title": "",
+                    "reference": "",
+                    "text": " 15 Køør kanya ö Ceela na nywøl wääde ma Eber, ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ka adäk, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 16,
+                    "title": "",
+                    "reference": "",
+                    "text": " 16 Ni ö Eberri ni bëëde ki cwiiri ma pïëradäk kurŋween, ni nywøl wääde ma Pelek."
+                },{
+                    "id": 17,
+                    "title": "",
+                    "reference": "",
+                    "text": " 17 Køør kanya ö Eberri na nywøl wääde ma Pelek, ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ki pïëradäk, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 18,
+                    "title": "",
+                    "reference": "",
+                    "text": "18Ni ö Peleki ni bëëde ki cwiiri ma pïëradäk, ni nywøl wääde ma Reew."
+                },{
+                    "id": 19,
+                    "title": "",
+                    "reference": "",
+                    "text": " 19 Køør kanya ö Peleki na nywøl wääde ma Reew, ena cäŋ bëëtö ki cwiiri ma dïpe ariiø ka abïŋween, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 20,
+                    "title": "",
+                    "reference": "",
+                    "text": " 20 Ni ö Reewi ni bëëde ki cwiiri ma pïëradäk kurriiø, ni nywøl wääde ma Ceeruk."
+                },{
+                    "id": 21,
+                    "title": "",
+                    "reference": "",
+                    "text": " 21 Køør kanya ö Reewi na nywøl wääde ma Ceeruk, ena cäŋ bëëtö ki cwiiri ma dïpe ariiø ka abïriiø, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 22,
+                    "title": "",
+                    "reference": "",
+                    "text": "22 Ni ö Ceeruki ni bëëde ki cwiiri ma pïëradäk, ni nywøl wääde ma Neeyör."
+                },{
+                    "id": 23,
+                    "title": "",
+                    "reference": "",
+                    "text": " 23 Køør kanya ö Ceeruki na nywøl wääde ma Neeyör, ena cäŋ bëëtö ki cwiiri ma dïpe ariiø, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 24,
+                    "title": "",
+                    "reference": "",
+                    "text": " 24 Ni ö Neeyörri ni bëëde ki cwiiri ma pïërariiø ka abïŋween, ni nywøl wääde ma Teera."
+                },{
+                    "id": 25,
+                    "title": "",
+                    "reference": "",
+                    "text": " 25 Køør kanya ö Neeyörri na nywøl wääde ma Teera, ena cäŋ bëëtö ki cwiiri ma dïpa ka apaar ka abïŋween, ni nyööde ki wääte ki nyïïe møøk."
+                },{
+                    "id": 26,
+                    "title": "",
+                    "reference": "",
+                    "text": "26 Ni ö Teera ni bëëde ki cwiiri ma pïërabïriiø, ni nywøl wääte ma Abram ki Neeyör ki Aaren. Luum Teera Wää Abram"
+                },{
+                    "id": 27,
+                    "title": "",
+                    "reference": "",
+                    "text": "27'Ba man beeye luum nyïïkwaac Teera. Teera anyöötö ni nywøl wääte na näk Abram ki Neeyör ka Aaren; ni ö Aarenni ni nywøl wääde ma Løøt."
+                },{
+                    "id": 28,
+                    "title": "",
+                    "reference": "",
+                    "text": " 28 'Ba Aaren athøw ni wänni ma Teera poot nut ni kwøw. Ni eni thøøa yi Ur yi ŋöömma nywøli yie na näk po jø Kaldia."
+                },{
+                    "id": 29,
+                    "title": "",
+                    "reference": "",
+                    "text": " 29Ni ö Abrammi ki Neeyör ni nyöömge dëëtge ki mään. Ni nyeŋ cï Abram cwøl ni Caray, ni ö nyeŋ cï Neeyör ni cwøli ni Milka. Milka beeye nyi Aaren. Aaren beeye wää Milka ki Icka."
+                },{
+                    "id": 30,
+                    "title": "",
+                    "reference": "",
+                    "text": " 30 'Ba Caray atïmö na bwøc, ni jïre bäŋ nyilaal. "
+                },{
+                    "id": 31,
+                    "title": "",
+                    "reference": "",
+                    "text": "31Køøre Teera wääde ma Abram ki nyïïkwaare ma Løøt wär Aaren ki cï nyaare ma Caray na näk cï wääde ma Abram alwøre, ni tïŋge na aciel bëët ki yi Ur po jø Kaldia, ni ge cøøa ŋööm Keenan. 'Ba na pïïcge paana cwøl na Aaren, gena put bëëte kaace."
+                },{
+                    "id": 32,
+                    "title": "",
+                    "reference": "",
+                    "text": "32 'Ba cwiiri bëët moa beet Teera beege cwiiri ma dïpe ariiø ka abïïc. Køøre Teera athøø Aaren."
+                }
+                
+            ]
+        },{
+            "id": 12,
+            "name":"Wïlöölö",
+            "text": [
+                {
+                    "id": 1,
+                    "title": " Kanya Ö Jwøki Na Cwøl Abram",
+                    "reference": "",
+                    "text": " 1 Wuuö Jwøk acäänö ka Abram, ni kööe, ni «Wec pou ki tuuŋu ki dhi øt wäru, ni ciï yi ŋöömmo nyoodha jïrï."
+                },{
+                    "id": 2, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 2 «Ïïno tïïa na wï jur mo dwøŋ, ni gwïëdha ïïni, ni tïŋa nyeŋŋï maal, ni jït jiyi ki gwïëth ki køørï."
+                },{
+                    "id": 3, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 3 Ni jøw wäro gwïëth ïïni, gwïëdha gwïëdhö; ni ŋat wäro cien ïïni, ciena cienø thuwø. 'Ba wïth tuŋi bëët mo bäät piny ogwïëth ki køørï.»"
+                },{
+                    "id": 4, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 4Køøre Abram atïŋŋö kaawat mana caani ya Wuuö Jwøki jïre. Ni ö Løøti thuwø ni aae ki eni. 'Ba kanya tïŋ Abrammi ki yi Aaren, cwiiri moe kar kaaca beege cwiiri ma pïërabïriiø kurbïïc."
+                },{
+                    "id": 5, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 5Ni ö Abrammi ni lwør cïïe ma Caray, ki ö coki ma Løøt, ki jammi moge bëët moa jootge, ki jiy bëët moa jootge Aaren; ni aacge ni ge cøøa ŋööm Keenan. Køøre gena pïï yi ŋööm Keenan."
+                },{
+                    "id": 6, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 6 Ni ö Abrammi ni pöödhe ki dï ŋöömmögø këël mana pïïe kanya cwøl ni Cekam na en jaadha dwøŋŋi yie mar Mörë. 'Ba yi kar kanyøgø jø Keenan oløny ni bëëdö yi ŋöömmögø."
+                },{
+                    "id": 7, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 7 Kanyøgø Wuuö Jwøk ree anyoodhe jï Abram ni kööe, ni «Aani ŋøøpi ii cïba cïbö jï nyïïkwaayï.» Køøre Abram atïïö ki gïn wø cïp olämme bääte jï Wuuö Jwøk na nyooth ree jïgø."
+                },{
+                    "id": 8, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 8 Køøre ena tïŋŋö ki kaace ni cøøa ri kïdi mana en Bëthël, na en jï løø kur tuul-cäŋ. Ni gur oduŋkaara mare piny, ni Bëthël ee wii jï løø kur pänh-cäŋ, ni Gaay ee wii jï løø kur tuul-cäŋ. Køøre ena tïïö ki gïn wø cïp olämme bääte kaace jï Wuuö Jwøk, ni wøør nyeŋ Wuuö Jwøk."
+                },{
+                    "id": 9, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 9 Ni ö Abrammi ni cäŋ tïŋŋö kaace, ni aae ni coonya kanya cwøl ni Nëgëp."
+                },{
+                    "id": 10, 
+                    "title":"Kanya Aa Abrammi Ijep",
+                    "reference":"",
+                    "text":" 10 Kanyøgø piny atïmö ni da käc. Køøre Abram aci Ijep nee bëëde kaace na wëëllö, kiper käc atïmö ni dwøŋ døc."
+                },{
+                    "id": 11, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 11 'Ba kanya tïme ni kare cään ki man pïïe Ijep, ena köö jï cïïe ma Caray, ni «Kawaane ennø, ŋääa ni ïïna dhaagø mo kïte mïërö."
+                },{
+                    "id": 12, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 12 Kanymør no ö jø Ijepi noo jootge ïïni, ge köö, ni ‹Man beeye cïïe;› køøre a 'näkge nääö, ni wecge ïïni niï kwøw."
+                },{
+                    "id": 13, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 13 Beerra man kööï ni ïïna coka, kiper nee bäŋe gïn mo tägi dëëra, naa kwøa ki køørï.»"
+                },{
+                    "id": 14, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 14 'Ba kanya pïïc Abrammi Ijep, jø Ijep Caray ajootge na dhaagø mo kïte mïërö."
+                },{
+                    "id": 15, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 15 Ni ö jø kööre mo Peerø ni jootge nyijøøgø, ni pwøcge gø døc buut Peerø, ni ö nyijøøgø ni käli ni kïthi po Peerø."
+                },{
+                    "id": 16, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 16 Ni ö Peerø ni tïïe ki gïn mo beer jï Abram kiper nyijøøgø; ni ö Abrammi ni jïte ki dïëk ki dhäk ka arëëni, ki jø tïïc ma mään ki cwøw, ka arëëni ma mädhi, ka athïrööle."
+                },{
+                    "id": 17, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 17 'Ba Wuuö Jwøk täwe mo leth døc akïth bäät Peerø ki jø paan dwøŋ mare ki køør Caray cï Abram."
+                },{
+                    "id": 18, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 18 Køøre Peerø Abram acwøle, ni kööe, na «?Agïnaŋø na tïïyï dëëra en? ?Aperŋø na ba caanï gø jïra en ni nyijøøgø cïïï?"
+                },{
+                    "id": 19, 
+                    "title":"",
+                    "reference":"",
+                    "text":" 19 ?Aŋø na kööï ni ena coku en, ni puta eni lwør na dhaagø jïra? 'Ba cïïï ennø, lwørï ni aayï ki gø.» "
+                },{
+                    "id": 20,
+                    "title": "",
+                    "reference":"",
+                    "text":" 20Ni ö Peerø ni kööm jiye kiper Abram. Ni ö jiye ni jiethge Abram ge ki cïïe ki gïïa en jïre bëët."
+                }
+            ]
+        },{
+            "id": 13,
+            "name":"Wïlöölö",
+            "text":[{
+                "id": 1,
+                "title":"Kanya Keeth Abrammi Ki Løøt",
+                "reference":"",
+                "text":" 1 Køøre Abram aö wøk ki Ijep ki cïïe ki gïïa en jïre bëët, ni aae ni cøøa kanya cwøl ni Nëgëp; ni ö Løøti ni aae ki eni ciel."
+            },{
+                "id": 2,
+                "title":"",
+                "reference":"",
+                "text":" 2 Kar kaace Abram ena dhaanhø mo okwär døc, ni jïre da lääc paac mo thööth ki warkey mo päl."
+            },{
+                "id": 3,
+                "title":"",
+                "reference":"",
+                "text":" 3 Ni ö eni ni tïŋŋe ki Nëgëp ni cäädhe këël mana pïïe Bëthël, kanya kwøŋ twïër mare tïïc yie yaakic Bëthël ki Gaay,"
+            },{
+                "id": 4,
+                "title":"",
+                "reference":"",
+                "text":" 4 ni beeye kanya kwøŋ tïïö yie ki gïn wø cïp olämme bääte. Køøre Abram nyeŋ Wuuö Jwøk awøøre kaace."
+            },{
+                "id": 5,
+                "title":"",
+                "reference":"",
+                "text":" 5 'Ba Løøt na aay ka Abram bëët, jïre da pïïth dïëk ki pïïth dhäk ko oduŋkaare thuwø. "
+            },{
+                "id": 6,
+                "title":"",
+                "reference":"",
+                "text":" 6 'Ba kaace yi ŋöömma pïge piny yie kär rømø kiperge ki lääy moge bëët; kiper gïïa käärge thööth, ni tïme ni ba løny jïge ki man bëëtge na aciel."
+            },{
+                "id": 7,
+                "title":"",
+                "reference":"",
+                "text":" 7 Kanyøgøøni atïmö ni da män yïthakic jø kwaath mo Abram ki jø kwaath mo Løøt. Kar kaaca jø Keenan ki jø Përec oløny ni bëëdö yi ŋöömmögø."
+            },{
+                "id": 8,
+                "title":"",
+                "reference":"",
+                "text":" 8 Ni kö Abrammi jï Løøt, ni «Beerra man bëëdø ni bäŋ män yïthakiyø ki ïïni, wala yïthakic jø kwaath 'moa ki jø kwaath moï, kiper øøna tuuŋ."
+            },{
+                "id": 9,
+                "title":"",
+                "reference":"",
+                "text":"9 ?Aŋø, piny ba nëëni jïrï ni laac jaak ice? Beerra man paanyï riï buuta; ni näk miï jiera bäät caam, a cøøa bäät cwïïc. Ni näk miï jiera bäät cwïïc, a cøøa bäät caam.»"
+            },{
+                "id": 10,
+                "title":"",
+                "reference":"",
+                "text":" 10 Kanyøgø Løøt wïïe atïŋ maal ni raŋ gool mar Jördan, no ojwøc pïïyi bäre, ni poot caala ajïniina mar Wuuö Jwøk, ni caala ŋööm Ijep mana en buut Dhöär, ni manøgø beeye kanya poode ni Wuuö Jwøk Cødam ki Gømöra poot käre raanynyø."
+            },{
+                "id": 11,
+                "title":"",
+                "reference":"",
+                "text":" 11 Køøre Løøt gool mar Jördan bäre ajiere jïre; ni put Løøti tägö ki wääth ni cøøa jï løø kur tuul-cäŋ. Ni put tïmö ni beeye keethø marge."
+            },{
+                "id": 12,
+                "title":"",
+                "reference":"",
+                "text":" 12 Ni ö Abrammi ni put bëëte yi ŋööm Keenan, ni ö Løøti ni bëëde yïth päänye mo gool mar Jördan, ni daaŋ twëëre moe këël mana pïïe buut Cødam."
+            },{
+                "id": 13,
+                "title":"",
+                "reference":"",
+                "text":" 13 'Ba jø Cødam bëëdö na jø raay mo tïïö ki gïï mo reyø døc nyïm Wuuö Jwøk."
+            },{
+                "id": 14,
+                "title":"",
+                "reference":"",
+                "text":" 14 Køøre kanya ö Løøti na pääge ka Abram, Wuuö Jwøk aköö jï Abram, ni «Tïŋ wïïï maal ki kanyo enï yie enø, ni neenï but piny karge bëët ki jï løø kur tuul-cäŋ ki jï løø kur pänh-cäŋ;"
+            },{
+                "id": 15,
+                "title":"",
+                "reference":"",
+                "text":" 15 kiper ŋøøpo nëëni jïrï bëët yøø ocïba jïrï na bäre bäre këël nyïïkwaayï mo ööi køørï."
+            },{
+                "id": 16,
+                "title":"",
+                "reference":"",
+                "text":" 16 Ni tïïa kwään nyïïkwaayï ni thööth ni caala tør bäät piny; køøre ni näk da dhaanhø mo løny jïre ki man kwaan tør bäät piny, løny thuwø ki man kwaan nyïïkwaayï."
+            },{
+                "id": 17,
+                "title":"",
+                "reference":"",
+                "text":" 17 Ö maal, ni caathï dï ŋöömmögø bäre; kiper cïba cïbö jïrï.»"
+            },{
+                "id": 18,
+                "title":"",
+                "reference":"",
+                "text":" 18 Køøre Abram twïër mare adaae ni aae ni bëëde buut jera døøŋŋø mo Mamrë na en Keeprön, ni tïïe ki gïn wø cïp olämme bääte kaace jï Wuuö Jwøk."
+            }
+        ]
+        },{
+            "id": 14,
+            "name":"Wïlöölö",
+            "text":[{
+                "id": 1,
+                "title":"Kanya Ö Abrammi Na Duu Løøt Kanya Maai Ri Leny",
+                "reference":"",
+                "text":" 1 'Ba ki yïth nïra bëët Amrapëlli na nyeny Cinaar, ki Aryök nyeny Elacar, ki Kedör-Laömer nyeny Ilam, ki Tidal nyeny Göyim, da gïn maa tägö."
+            },{
+                "id": 2,
+                "title":"",
+                "reference":"",
+                "text":" 2 Nyeye moøgø aci baŋ leny ki Bera nyeny Cødam, ki Birca nyeny Gømöra, ki Cenaap nyeny Adama, ki Cëmëber nyeny Dheböym ki nyeny Bëla paana cwøl ni Dhöär."
+            },{
+                "id": 3,
+                "title":"",
+                "reference":"",
+                "text":" 3 Nyeye moøgø na abïïc yøø dëëtge adwalge na aciel kiper leny yi Gool mar Cidim na tïmö na Naam Acäbö."
+            },{
+                "id": 4,
+                "title":"",
+                "reference":"",
+                "text":" 4 Kiper gena kwøŋ bëëdö tier nyeya ma Kedör-Laömer ki cwiiri apaar kurriiø. 'Ba na tïme na ri cwiiri apaar kurdäk gena gëëmö ki gø."
+            },{
+                "id": 5,
+                "title":"",
+                "reference":"",
+                "text":" 5 'Ba kanya tïme na ri cwiiri apaar kurŋween, Kedör-Laömer ki nyeye moa en ree, gena cøø ni dïïmge jø Rapayim yi Actharöth-Karnayim, ni dïïmge jø Dhudhim yi Kaam ki jø Ëmim yi Caawe-Kiryatayim,"
+            },{
+                "id": 6,
+                "title":"",
+                "reference":"",
+                "text":" 6 ni dïïmge jø Öör poge ma Cëër na näk po kïte, këël mana këët El-Paran na en deŋ paap."
+            },{
+                "id": 7,
+                "title":"",
+                "reference":"",
+                "text":" 7 Køøre dëëtge aløkge ni cige ya Ayn-Micpath na näk Kadëc, ni dïïmge mïëri bëët mo jø Amalëk, ni dïïmge jø Amör thuwø ni wø bëëdö yi Acëcön-Tamar."
+            },{
+                "id": 8,
+                "title":"",
+                "reference":"",
+                "text":" 8 Kanyøgøøni nyeny Cødam, ki nyeny Gømöra, ki nyeny Adama, ki nyeny Dheböym, ki nyeny Bëla na näk Dhöär, gena ö wøk ni jiiŋge dëëtge kiper leny yi gool mar Cidim; "
+            },{
+                "id": 9,
+                "title":"",
+                "reference":"",
+                "text":" 9 nee këëtge ki KedörLaömer nyeny Ilam, ki Tidal nyeny Göyim, ka Amrapël nyeny Cinaar ki Aryök nyeny Elacar, ni nyeye aŋween këëdi ka nyeye abïïc."
+            },{
+                "id": 10,
+                "title":"",
+                "reference":"",
+                "text":" 10 'Ba yi gool mar Cidim da aguule mo thööth mo päŋ ko odhöönh mo nwaaŋ. Kanya ö nyeny Cødam ki nyeny Gømöra na bwøkge, gena reeŋø ni päthge yïth aguule. 'Ba moa bøth areeŋø ni pïïcge bäät kïte."
+            },{
+                "id": 11,
+                "title":"",
+                "reference":"",
+                "text":" 11 Køøre nyeye moa näk aŋween jap jø Cødam bëët ki jap jø Gømöra ki caammi moge bëët alwørge ni aacge."
+            },{
+                "id": 12,
+                "title":"",
+                "reference":"",
+                "text":" 12 Ni makge Løøt thuwø o cöök Abrammi, ni lwørge jammi moe ni aacge. Kiper Løøt kar kaaca bëëdö Cødam."
+            },{
+                "id": 13,
+                "title":"",
+                "reference":"",
+                "text":" 13 'Ba ŋat mør mo obøth aöö ni caan gø jï Abram na näk nyï Ibaru. Kar kaaca Abram bëëdö buut jera døøŋŋø mo Mamrë nyï Amör na näk cöök Ëcköl ka Anër. Jøøgø gena dwätö ka Abram ni tïmge ni ge ena løøe."
+            },{
+                "id": 14,
+                "title":"",
+                "reference":"",
+                "text":" 14 'Ba kanya wïnynyi Abrammi ni o coki amak ri leny, jiye ma dïpe adäk ka apaar ka abära moa nywøl paare na näk opwönynyö abwødhe kiper leny; ni aacge ni ge määnyö këël mana këëtge Daan. "
+            },{
+                "id": 15,
+                "title":"",
+                "reference":"",
+                "text":" 15 Ni ö Abrammi ni pääŋ jiye ki dï wäär, ni ö eni ki jiye ni tukge jøøgø, ni böötge geni ni riemge geni këël mana këëtge Ööba na en ŋää Damacka. "
+            },{
+                "id": 16,
+                "title":"",
+                "reference":"",
+                "text":" 16 Køøre jammi bëët aduue, ni lwør o coki ma Løøt ki jape ki mään ki jiy, ni duu geni bëët. "
+            },{
+                "id": 17,
+                "title":"Kanya Ö Melkidhedeki na Gwïëth Abram",
+                "reference":"",
+                "text":" 17 Kanya duu Abrammi ki kuna dïïm Kedör-Laömer ki nyeye moa en ree, nyeny jø Cødam aci wøk baŋ gø kuna jøl gø yi gool mar Caawe na näk gool mar nyeya. "
+            },{
+                "id": 18,
+                "title":"",
+                "reference":"",
+                "text":" 18 Ni ö Melkidhedeki nyeny Calem ni känne ki dääpe ki køøŋø. Melkidhedek beeye kwääy lam thuwø mar Jwøa Dwøŋ ni en Maal. "
+            },{
+                "id": 19,
+                "title":"",
+                "reference":"",
+                "text":"  19 Eni Abram agwïëdhe, ni kööe, ni «Gwïëth oen bäät Abram na näk dhaanh Jwøa Dwøŋ ni en Maal, Jwøa en maalli cere ki piny;"
+            },{
+                "id": 20,
+                "title":"",
+                "reference":"",
+                "text":" 20 ni ö pwøci ni en jï Jwøa Dwøŋ ni en Maal, Jwøa cïp nyïïmän moï cerï.» Køøre Abram acïpö jï Melkidhedek ki paac wïth jammi bëët."
+            },{
+                "id": 21,
+                "title":"",
+                "reference":"",
+                "text":" 21Ni kö nyeny Cødam jï Abram, ni «Mëëk a jiya keerge, ni lwørï jammi na moï.»"
+            },{
+                "id": 22,
+                "title":"",
+                "reference":"",
+                "text":" 22 'Ba Abram aköö jï nyeny Cødam, ni «Aano nø kööŋ ŋëët Wuuö Jwøk, Jwøa Dwøŋ ni en Maal, Jwøa en maalli cere ki piny,"
+            },{
+                "id": 23,
+                "title":"",
+                "reference":"",
+                "text":" 23 ni aani a ba doo løny ki man käda ki gïn mo thiinh, këël waarø wala thøør warø wala nyi gïn mør jaak ma marï; kiper kanymør ï köö jaak, na  ‹Abram tïïya aani na kwäärö ki jammi.›"
+            },{
+                "id": 24,
+                "title":"",
+                "reference":"",
+                "text":" 24 Aani bäŋ gïn mo lwøra, 'ba beeye gïïa cam jiya keerge. 'Ba kiper kur jøøa aay ki aani, na näk Anër ki Ëcköl ki Mamrë, beerra man lwørge kurge.»"
+            }
+        ]
+        },{
+            "id": 15, 
+            "name": "Wïlöölö",
+            "text":[{
+                "id":1,
+                "title":"Kanya Ö Jwøki Na Buuk Lwiidhø Ki Ŋöömö Jï Abram",
+                "reference":"",
+                "text":" 1 Køør gïïögø bëët dwør Wuuö Jwøk aö bäät Abram ki yïth lääk, ni kööe, na «Abram, kärï lwäyö; aani, aana kwöt leny man wø gëëŋ ïïni; ïïno ŋada ki gïn mo dwøŋ.»"
+            },{
+                "id":2,
+                "title":"",
+                "reference":"",
+                "text":" 2 Ni kö Abrammi, «?Wui Kwäärö Wuuö Jwøk, agïnaŋø noo cïpï jïra? Kiper aani jïra bäŋ nyilaal, ni ŋato dööŋ na lwiidhø wï paara beeye Eliëdher nyï Damacka.»"
+            },{
+                "id":3,
+                "title":"",
+                "reference":"",
+                "text":" 3 Ni cäŋ Abrammi köö, ni «Kiper mana näk a kärï mooø ki nyilaal, neenï, laŋŋa nywøl paara beeye noo dööŋ na lwiidhø wï paara.»"
+            },{
+                "id":4,
+                "title":"",
+                "reference":"",
+                "text":" 4 Køøre dwør Wuuö Jwøk aö bääte, ni kööe, ni «Ŋati en ba dööŋ na lwiidhø wï paarï; 'ba ïïno jïti ki dhaanhø mo käla dëërï kiree, ni put dööŋö na lwiidhø wï paarï.»"
+            },{
+                "id":5,
+                "title":"",
+                "reference":"",
+                "text":" 5 Ni ö Wuuö Jwøki ni käl Abram wøk ki yi øtø ni kööe, ni «Raŋ maal ni kwaanï ceer, ni näk mo løny jïrï ki man kwaanï ge bëët.» Ni kö Wuuö Jwøki jï Abram, ni «Nyïïkwaayï thuwø otïmö ni caala geni.»"
+            },{
+                "id":6,
+                "title":"",
+                "reference":"",
+                "text":" 6 Ni ö Abrammi ni ŋääth Wuuö Jwøk, ni ö Wuuö Jwøki ni jïëc Abram ni ena dhaanhø mo mare beer ki køør ŋäädhe mare."
+            },{
+                "id":7,
+                "title":"",
+                "reference":"",
+                "text":" 7 Ni kö Wuuö Jwøki jï Abram, ni «Beeye aani na Wuuö Jwøk na käl ïïni wøk ki yi Ur po jø Kaldia, kiper nee ŋöömmi cïba jïrï nee tïme na moï.»"
+            },{
+                "id":8,
+                "title":"",
+                "reference":"",
+                "text":" 8 Ni kö Abrammi, ni «?Wui Kwäärö Wuuö Jwøk, oŋääa gø nidïï ki man näk tïmö na 'moa?»"
+            },{
+                "id":9,
+                "title":"",
+                "reference":"",
+                "text":" 9 Ni kö Wuuö Jwøki jï Abram, ni «Kännï jïra ki dhieŋ mo cwiiye adäk, ka ateea ma maath mo cwiiye adäk, ki nywø røømmø mo cwiiye adäk, ka akuuru mar paac ki mar paap.»"
+            },{
+                "id":10,
+                "title":"",
+                "reference":"",
+                "text":" 10 Køøre gïïögø bëët akäl Abrammi jï Wuuö Jwøk, ni ŋøør ge ki dïge, ni peeth thääŋ man nø piny ni dïët ki thääŋ maya. 'Ba akuyi käre ŋørø."
+            },{
+                "id":11,
+                "title":"",
+                "reference":"",
+                "text":" 11 Køøre weny alööny piny nee rïŋ camge, ni ö Abrammi ni riem geni."
+            },{
+                "id":12,
+                "title":"",
+                "reference":"",
+                "text":" 12 Køøre kanya tïme ni cäŋ kwaara piny, Abram nyeŋŋe ajïtö ki niine ni bute døc, ni ö muudhö mo cøl døc ki lwär mo päl ni öge bääte."
+            },{
+                "id":13,
+                "title":"",
+                "reference":"",
+                "text":" 13 Ni kö Jwøki jï Abram, ni «Wär ŋäyï møn ni nyïïkwaayï obëëdö na wëëlle yi ŋöömma näk paa marge, ni tïnyge jøøgø ni gena laaŋe, ni ö nyïïkwaayï ni caari ki cwiiri ma dïpe aŋween. "
+            },{
+                "id":14,
+                "title":"",
+                "reference":"",
+                "text":" 14 'Ba aani thuwø jø otïnyge ojääla; køøre nyïïkwaayï ööa wøk paanøgø ni jïge da jammi mo thööth."
+            },{
+                "id":15,
+                "title":"",
+                "reference":"",
+                "text":" 15 'Ba ïïni, ïïno thøw ni läpï køør kwäyu ni yiï met; ni koony ïïni ni jalø mana jalï ki gø poot beer. "
+            },{
+                "id":16,
+                "title":"",
+                "reference":"",
+                "text":"16 'Ba nyïïkwaayï oruu paanøgø këël ŋweer beenhnhe, køøre geno duu kany, kiper raay mo jø Amör poot kär këët kanya manynyi ki man raany ge.»"
+            },{
+                "id":17,
+                "title":"",
+                "reference":"",
+                "text":" 17 'Ba kanya päth cäŋŋi, piny atïmö ni cøl døc, ni ö maaci mo duuŋ yi dak ka ameet mo liel ni pööthge ki dïër yïthakic thäk lääya näk oŋørø ki dïge."
+            },{
+                "id":18,
+                "title":"",
+                "reference":"",
+                "text":" 18 Dïcäŋöca Wuuö Jwøk atudö ki luubö ka Abram, ni kööe, ni «Ŋöömö man acïba jï nyïïkwaayï, ki mano täge ki naam jø Ijep këël mano këët naama dwøŋ, na näk Upareeti,"
+            },{
+                "id":19,
+                "title":"",
+                "reference":"",
+                "text":" 19 ni beeye ŋøøp jø Këën, ki jø Kënec, ki jø Kadmön, 20 ki jø Këth, ki jø Përec, ki jø Rapayim, 21 ki jø Amör, ki jø Keenan, ki jø Gërgëca, ki jø Jeebuc.» "
+            }
+        ]
+        },{
+            "id": 16,
+            "name": "Wïlöölö",
+            "text":[
+                {
+                    "id":1,
+                    "title":"Kanya Ö Abrammi Na Joot Icmiel Ki Eegar Laŋ Caray",
+                    "reference":"",
+                    "text":" 1 'Ba Caray na näk cï Abram bäŋ obwöre mo ege nywølø ka Abram. 'Ba jïre da laŋŋø ma nyi jø Ijep mo nyeŋŋe cwøl ni Eegar."
+                },{
+                    "id":2,
+                    "title":"",
+                    "reference":"",
+                    "text":" 2 Ni kö Caray jï Abram, ni «Ennø, Wuuö Jwøk aana mäne ki man nyööda ko obwöre. Beerra man ciï baŋ dhaaŋŋa näk laŋŋø mara; kanymør aano jïti ko obwöre ki køøre.» Køøre Abram dwør cïïe ma Caray aleŋe."
+                },{
+                    "id":3,
+                    "title":"",
+                    "reference":"",
+                    "text":" 3 Ni ö Caray cï Abram ni lwør Eegar nyi jø Ijep na näk laŋŋø mare, ni cïp gø jï cwøre ma Abram nee tïme na cïïe. Ni gïnögø tägi ka køør cwiiri apaar moa beet Abrammi yi ŋööm Keenan."
+                },{
+                    "id":4,
+                    "title":"",
+                    "reference":"",
+                    "text":" 4 Ni ö Abrammi ni ci baŋ Eegar, ni jït yi Eegarri ki dhaanhø. 'Ba kanya ö Eegarri na joot gø ni yie da dhaanhø, ena tägö ki man raŋ Caray na tïnynye ni ee taaø."
+                },{
+                    "id":5,
+                    "title":"",
+                    "reference":"",
+                    "text":" 5 Køøre Caray aköö jï Abram, ni «Bääyö mana baac Eegarri dëëra en, tiere käla baŋï, kiper nyaana näk laŋŋø mara acïba jïrï na cïïï; 'ba kanya joot gø ni yie da dhaanhø, aana raŋŋe naa ee taaø. Beerra man ö Wuuö Jwøki ni ŋøl luubö manøgø yïthakiyø ki ïïni.»"
+                },{
+                    "id":6,
+                    "title":"",
+                    "reference":"",
+                    "text":" 6 'Ba Abram aköö jï Caray, ni «Kare møn, laŋŋø manøgø ena cerï; gïna caarï ni beerra eni jaak ki jïrï wär tïïyï dëëre.» Køøre Caray laŋŋøgø aput caannø ki caannø mo leth, ni ö nyaanøgø ni put päär wøk buute. "
+                },{
+                    "id":7,
+                    "title":"",
+                    "reference":"",
+                    "text":" 7 Kanyøgøøni Eegar ajoot nyïïatwielli mar Wuuö Jwøk ni ena buut jøøro dï paap, ni jøøro manøgø ena jööra näk cøøa paana cwøl ni Cur. "
+                },{
+                    "id":8,
+                    "title":"",
+                    "reference":"",
+                    "text":" 8 Ni kö nyïïatwielli jïre, ni «?Eegar laŋ Caray, ï kälï kaa? ?Ï ciï kaa ŋø?» Ni dwøk gø jïgø, na «A päny wøk ki Caray ŋata tïnynya.»"
+                },{
+                    "id":9,
+                    "title":"",
+                    "reference":"",
+                    "text":" 9 'Ba nyïïatwiel Wuuö Jwøk aköö jïre, ni «Døø baŋ Caray na tïnynyï, ni cïpï dëërï jïre ni bëëdï niï ena tiere.»"
+                },{
+                    "id":10,
+                    "title":"",
+                    "reference":"",
+                    "text":" 10 Ni kö nyïïatwiel Wuuö Jwøki jïre thuwø, ni «Nyïïkwaayï otïïa ni thööth, ni nyaacge këël mano tïmge ni ba løny ki kwaan.»"
+                },{
+                    "id":11,
+                    "title":"",
+                    "reference":"",
+                    "text":" 11 Ni cäŋ nyïïatwiel Wuuö Jwøki köö jïre, ni «Neenï, yiï oløny ni da dhaanhø; ïïno lwaar ki gø na dïcwøø; ni cagï nyeŋŋe ni Icmiel, kiper Wuuö Jwøk gïïa jwørï bëët awïnynye"
+                },{
+                    "id":12,
+                    "title":"",
+                    "reference":"",
+                    "text":" 12 'Ba eno bëëdö na dhaanhø mo caala arëën-paap, ni bëëde na dhaanhø mo manynya leny ki jiy bëët, ni tïm jiyi bëët ni manynya leny ki eni thuwø; 'ba eno bëëdö no opääö ki tuuŋge.» "
+                },{
+                    "id":13,
+                    "title":"",
+                    "reference":"",
+                    "text":" 13 Køøre Eegar nyeŋ Wuuö Jwøk na cäänö ki eni acaae, ni kööe, ni «Ïïna El-Röi,» ni kööe, na «?Aŋø, ki køør mana jooda Jwøk kany en, a poot bëëdö naa kwøw møn?»"
+                },{
+                    "id":14,
+                    "title":"",
+                    "reference":"",
+                    "text":" 14 Kiper manøgø nø, iith mana en kaace aput cwøl ni BëërLaay-Röi; ni iidhøgø ena yaakic Kadëc ki Berët."
+                },{
+                    "id":15,
+                    "title":"",
+                    "reference":"",
+                    "text":" 15 'Ba Eegar alwaar ki dhaanhø ma dïcwøø ni jït Abrammi ki wääde; ni ö Abrammi ni cak nyeŋ wääde na lwaar Eegarri ki gø ni Icmiel."
+                },{
+                    "id":16,
+                    "title":"",
+                    "reference":"",
+                    "text":" 16 Kar kanya ö Abrammi na joot wääde ma Icmiel na lwaar Eegarri ki gø, Abram cwiiye oløny na pïërabära ka abïciel."
+                }
+            ]
+        }]}
+       
+
+        
+
+
+
+
+ 
+
+
+
+
+
+
+        
+
+ 
+        
+
+
+
+
+
+
+ 
+
+
+        
+           
+        
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

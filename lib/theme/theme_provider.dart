@@ -1,24 +1,3 @@
-// import 'package:dha_anywaa_bible/theme/theme.dart';
-// import 'package:flutter/material.dart';
-
-// class ThemeProvider with ChangeNotifier {
-//   ThemeData _themeData = lightMode;
-//   ThemeData get themeData => _themeData;
-//   set themeData(ThemeData themeData) {
-//     _themeData = themeData;
-//     notifyListeners();
-//   }
-
-//   void toggleTheme() {
-//     if (_themeData == lightMode) {
-//       _themeData = darkMode;
-//     } else {
-//       _themeData = lightMode;
-//     }
-//     notifyListeners();
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -35,17 +14,28 @@ class UiProvider extends ChangeNotifier {
   }
 
   final darkTheme = ThemeData(
+      textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
+          bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
+      fontFamily: 'UntitledSerif',
+      appBarTheme: AppBarTheme(color: Colors.transparent),
+      textButtonTheme: const TextButtonThemeData(
+          style: ButtonStyle(
+              foregroundColor: MaterialStatePropertyAll(Colors.white))),
+      buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
       // fontFamily: 'UntitledSerif',
-      primaryColor: Color.fromARGB(255, 1, 11, 36),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      primaryColor: const Color.fromARGB(255, 1, 11, 36),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Color.fromARGB(255, 1, 11, 36)),
-      scaffoldBackgroundColor: Color.fromARGB(255, 1, 11, 36),
+      scaffoldBackgroundColor: const Color.fromARGB(255, 1, 11, 36),
       brightness: Brightness.dark,
-      primaryColorDark: Color.fromARGB(255, 1, 11, 36));
+      primaryColorDark: const Color.fromARGB(255, 1, 11, 36));
   final lightTheme = ThemeData(
+      fontFamily: 'UntitledSerif',
+
       // fontFamily: 'UntitledSerif',
       primaryColor: Colors.white,
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Colors.white,
       ),
       brightness: Brightness.light,
