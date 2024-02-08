@@ -8,6 +8,8 @@ import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
+// import 'package:share_plus/share_plus.dart';
+// import 'package:share/share.dart';
 
 import 'package:flutter/rendering.dart';
 
@@ -86,7 +88,11 @@ class _MyHomePageState extends State<HomePage> {
                         : Color.fromARGB(162, 95, 90, 74),
                     borderRadius: BorderRadius.circular(50)),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: ()  {
+                    // setState(() {
+                    // await Share.share('Hello there');
+                    // });
+                  },
                   icon: Icon(
                     Icons.share,
                     color: currentTheme == Brightness.light

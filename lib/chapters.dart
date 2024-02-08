@@ -142,16 +142,20 @@ class _ChaptersState extends State<Chapters> {
                             children: [
                               Text(
                                 '${book.text[firstIndex].text[index].id}',
-                                style: TextStyle(color: Colors.grey),
+                                style: const TextStyle(color: Colors.grey),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10,
                               ),
                               Expanded(
-                                child: Text(
-                                    '${book.text[firstIndex].text[index].text}\n',
-                                    style:
-                                        TextStyle(fontFamily: 'UntitledSerif')),
+                                child: RichText(
+                                  text: TextSpan(
+                                      text:
+                                          '${book.text[firstIndex].text[index].text}\n'),
+                                  selectionRegistrar:
+                                      SelectionContainer.maybeOf(context),
+                                  selectionColor: const Color(0xAF6694e8),
+                                ),
                               ),
                             ],
                           )
