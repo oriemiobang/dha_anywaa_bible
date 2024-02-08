@@ -72,15 +72,33 @@ class _MyHomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    Brightness currentTheme = Theme.of(context).brightness;
     PreferredSizeWidget buildAppBar() {
       switch (_selectedIndex) {
         case 0:
           return AppBar(
             backgroundColor: Colors.transparent,
-
+            actions: [
+              Container(
+                decoration: BoxDecoration(
+                    color: currentTheme == Brightness.light
+                        ? Color.fromARGB(255, 231, 235, 254)
+                        : Color.fromARGB(162, 95, 90, 74),
+                    borderRadius: BorderRadius.circular(50)),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.share,
+                    color: currentTheme == Brightness.light
+                        ? Color.fromARGB(255, 1, 17, 57)
+                        : Colors.amber,
+                  ),
+                ),
+              )
+            ],
             // backgroundColor: Colors.transparent,
             title: Text(
-              'Wang Cay',
+              'Dïcänyï',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
@@ -225,7 +243,9 @@ class _MyHomePageState extends State<HomePage> {
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.wb_sunny_outlined,
+                  currentTheme == Brightness.light
+                      ? Icons.wb_sunny_outlined
+                      : Icons.nights_stay_outlined,
                   // color: Colors.white,
                 ),
                 label: '',
