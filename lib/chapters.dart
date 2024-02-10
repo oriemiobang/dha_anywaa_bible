@@ -69,7 +69,7 @@ class _ChaptersState extends State<Chapters> {
       }
       return SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             for (int firstIndex = 0;
                 firstIndex < book.text.length;
@@ -92,37 +92,44 @@ class _ChaptersState extends State<Chapters> {
                   //   style: TextStyle(letterSpacing: 1),
                   // ),
                   Text(
-                    '\n\n${book.text[firstIndex].name}',
+                    '\n\n\n\n${book.text[firstIndex].name}',
                     style: const TextStyle(
                       color: Colors.grey,
-                      fontSize: 17,
+                      fontSize: 27,
                     ),
                   ),
                   Text(
                     '${book.text[firstIndex].id}',
                     style: const TextStyle(
-                        fontSize: 50, fontWeight: FontWeight.bold),
+                        fontSize: 76, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 6,
                   ),
                   for (int index = 0;
                       index < book.text[firstIndex].text.length;
                       index++)
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                      padding: const EdgeInsets.fromLTRB(2, 0, 4, 2),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        // fit: StackFit.values[1],
+                        // mainAxisAlignment: MainAxisAlignment.start,
+                        // crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           book.text[firstIndex].text[index].title != ""
                               ? Center(
                                   child: Text(
-                                    '\n${book.text[firstIndex].text[index].title}',
+                                    '${book.text[firstIndex].text[index].title}',
                                     style: const TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 16),
+                                        fontSize: 18),
                                   ),
                                 )
                               : const Visibility(
                                   visible: false, child: Text('')),
+                          SizedBox(
+                            height: 5,
+                          ),
                           book.text[firstIndex].text[index].reference != ""
                               ? Center(
                                   child: Text(
@@ -134,7 +141,7 @@ class _ChaptersState extends State<Chapters> {
                                   ),
                                 )
                               : const SizedBox(
-                                  height: 10,
+                                  height: 5,
                                 ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -148,16 +155,15 @@ class _ChaptersState extends State<Chapters> {
                                 width: 10,
                               ),
                               Expanded(
-                                child: RichText(
-                                  text: TextSpan(
-                                      text:
-                                          '${book.text[firstIndex].text[index].text}\n'),
-                                  selectionRegistrar:
-                                      SelectionContainer.maybeOf(context),
-                                  selectionColor: const Color(0xAF6694e8),
+                                child: Text(
+                                  '${book.text[firstIndex].text[index].text}',
+                                  style: TextStyle(fontSize: 16.0),
                                 ),
                               ),
                             ],
+                          ),
+                          SizedBox(
+                            height: 3,
                           )
                         ],
                       ),
@@ -172,43 +178,3 @@ class _ChaptersState extends State<Chapters> {
     }
   }
 }
-
-
-  // @override
-  // Widget build(BuildContext context) {
-  //   try {
-  //     if (book == null) {
-  //       // Return a loading indicator or any other widget while data is being loaded.
-  //       return CircularProgressIndicator();
-  //     }
-
-  //     return SingleChildScrollView(
-  //       child: Column(
-  //         children: [
-  //           Text(
-  //             '${book.text[0].name}',
-  //             style: TextStyle(
-  //               fontSize: 17,
-  //             ),
-  //           ),
-  //           Text(
-  //             '${book.text[0].id}',
-  //             style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-  //           ),
-  //           Text(
-  //             '${book.text[0].text[0].title}',
-  //             style: TextStyle(fontWeight: FontWeight.bold),
-  //           ),
-  //           SizedBox(
-  //             height: 16,
-  //           ),
-  //           Text(
-  //               '${book.text[0].text[0].text} \n ${book.text[0].text[1].text}\n ${book.text[0].text[2].text}'),
-  //         ],
-  //       ),
-  //     );
-  //   } catch (e) {
-  //     print(e);
-  //     return Text('');
-  //   }
-  // }

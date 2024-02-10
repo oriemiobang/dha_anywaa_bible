@@ -12,6 +12,7 @@ import 'dart:ui';
 // import 'package:share/share.dart';
 
 import 'package:flutter/rendering.dart';
+// import 'package:share_plus/share_plus.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -88,9 +89,12 @@ class _MyHomePageState extends State<HomePage> {
                         : Color.fromARGB(162, 95, 90, 74),
                     borderRadius: BorderRadius.circular(50)),
                 child: IconButton(
-                  onPressed: ()  {
-                    // setState(() {
+                  onPressed: () async {
+                    // setState(() async{
                     // await Share.share('Hello there');
+                    // Share.share(
+                    // 'Check out my website [here](https://example.com)',
+                    // subject: 'Interesting Link');
                     // });
                   },
                   icon: Icon(
@@ -104,7 +108,7 @@ class _MyHomePageState extends State<HomePage> {
             ],
             // backgroundColor: Colors.transparent,
             title: Text(
-              'Dïcänyï',
+              'Dïcängï',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
@@ -132,7 +136,7 @@ class _MyHomePageState extends State<HomePage> {
                           color: Color.fromARGB(0, 75, 75, 75),
                           borderRadius: BorderRadius.circular(15)),
                       child: Text(
-                        'Wiloolo',
+                        'Wïlöölö',
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 17),
                       ),
@@ -153,7 +157,7 @@ class _MyHomePageState extends State<HomePage> {
         case 2:
           return AppBar(
             title: Text(
-              'My profile',
+              'Highlights',
               style: TextStyle(),
             ),
             forceMaterialTransparency: true,

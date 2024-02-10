@@ -19,6 +19,10 @@ class _ChooseBibleState extends State<ChooseBible> {
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           Text('Choose a language'),
           ListTile(
+            title: Text('Dha Anywaa'),
+            subtitle: Text('Weel jwok'),
+          ),
+          ListTile(
             title: Text('English'),
             subtitle: Text('King james'),
           ),

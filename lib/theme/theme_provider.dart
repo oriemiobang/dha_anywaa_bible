@@ -14,22 +14,29 @@ class UiProvider extends ChangeNotifier {
   }
 
   final darkTheme = ThemeData(
-      textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
-          bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
-      fontFamily: 'UntitledSerif',
-      appBarTheme: AppBarTheme(color: Colors.transparent),
-      textButtonTheme: const TextButtonThemeData(
-          style: ButtonStyle(
-              foregroundColor: MaterialStatePropertyAll(Colors.white))),
-      buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
-      // fontFamily: 'UntitledSerif',
-      primaryColor: const Color.fromARGB(255, 1, 11, 36),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-          backgroundColor: Color.fromARGB(255, 1, 11, 36)),
-      scaffoldBackgroundColor: const Color.fromARGB(255, 1, 11, 36),
-      brightness: Brightness.dark,
-      primaryColorDark: const Color.fromARGB(255, 1, 11, 36));
+    textTheme: const TextTheme(
+        bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
+        bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
+    fontFamily: 'UntitledSerif',
+    appBarTheme: AppBarTheme(color: Colors.transparent),
+    textButtonTheme: const TextButtonThemeData(
+        style: ButtonStyle(
+            foregroundColor: MaterialStatePropertyAll(Colors.white))),
+    buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
+    // fontFamily: 'UntitledSerif',
+    primaryColor: Color.fromARGB(255, 0, 4, 17),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: Color.fromARGB(255, 0, 4, 17),
+      //  Color.fromARGB(255, 1, 11, 36)
+    ),
+    scaffoldBackgroundColor: Color.fromARGB(255, 0, 4, 17),
+
+    //  const Color.fromARGB(255, 1, 11, 36)
+
+    brightness: Brightness.dark,
+    primaryColorDark: Color.fromARGB(255, 0, 4, 17),
+  );
+  //  const Color.fromARGB(255, 1, 11, 36));
   final lightTheme = ThemeData(
       fontFamily: 'UntitledSerif',
 

@@ -74,7 +74,10 @@ class _SettingState extends State<Setting> {
                 ),
                 ListTile(
                   // leading: Icon(Icons.book),
-                  title: Text('Untitled'),
+                  title: Text(
+                    'Untitled',
+                    style: TextStyle(fontFamily: 'UntitledSerif'),
+                  ),
                   onTap: () {
                     setState(() {
                       Navigator.push(
@@ -105,6 +108,7 @@ class _SettingState extends State<Setting> {
                 ),
                 Slider(
                     max: 30,
+                    min: 15,
                     divisions: 15,
                     value: _currentSliderValue,
                     onChanged: (double value) {

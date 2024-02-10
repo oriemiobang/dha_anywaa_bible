@@ -12,13 +12,53 @@ class Account extends StatefulWidget {
 class _AccountState extends State<Account> {
   @override
   Widget build(BuildContext context) {
+    Brightness currentTheme = Theme.of(context).brightness;
     return
         // appBar: AppBar(
         //   title: Text('demo'),
         // ),
-        Text(
-      'Your Text here',
-      style: TextStyle(),
+        Column(
+      children: [
+        Card(
+          color: currentTheme == Brightness.light
+              ? Colors.white
+              : const Color.fromARGB(255, 1, 11, 36),
+          child: ListTile(
+            title: Text(
+              'Køør kanya ö Eberri na nywøl wääde ma Pelek, '
+              ' ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ki pïëradäk, '
+              ' ni nyööde ki wääte ki nyïïe møøk.',
+              style: TextStyle(),
+            ),
+          ),
+        ),
+        Card(
+          color: currentTheme == Brightness.light
+              ? Colors.white
+              : const Color.fromARGB(255, 1, 11, 36),
+          child: ListTile(
+            title: Text(
+              'Køør kanya ö Eberri na nywøl wääde ma Pelek, '
+              ' ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ki pïëradäk, '
+              ' ni nyööde ki wääte ki nyïïe møøk.',
+              style: TextStyle(),
+            ),
+          ),
+        ),
+        Card(
+          color: currentTheme == Brightness.light
+              ? Colors.white
+              : const Color.fromARGB(255, 1, 11, 36),
+          child: ListTile(
+            title: Text(
+              'Køør kanya ö Eberri na nywøl wääde ma Pelek, '
+              ' ena cäŋ bëëtö ki cwiiri ma dïpe aŋween ki pïëradäk, '
+              ' ni nyööde ki wääte ki nyïïe møøk.',
+              style: TextStyle(),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
