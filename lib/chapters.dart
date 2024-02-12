@@ -1,11 +1,13 @@
 import 'dart:convert';
 
 import 'package:dha_anywaa_bible/Book.dart';
+import 'package:dha_anywaa_bible/components/reference.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Chapters extends StatefulWidget {
-  static var book;
+  // static var book;
+  // static var englishBook;
 
   const Chapters({super.key});
 
@@ -14,42 +16,54 @@ class Chapters extends StatefulWidget {
 }
 
 const myjsonString = 'assets/fonts/chapters/Any/Genesis.json';
+const englishJsonString = 'assets/holybooks/Bible_KJV.json';
 
 class _ChaptersState extends State<Chapters> {
   Future<String> _loadData() async {
-    //  String data =
-    // final jsonResult = jsonDecode(data);
     return await rootBundle.loadString(myjsonString);
   }
 
-  // List list = [];
+  Future<String> _engLoadData() async {
+    return await rootBundle.loadString(englishJsonString);
+  }
+
   late Book book;
-  // final Book book = Book;
-  // String demo = " ";
+  late EnglishBook englishBook;
 
   Future loadData() async {
     try {
-      // print('object');
       String jsonString = await _loadData();
-
       final jsonResponse = json.decode(jsonString);
-      // print('object');
       setState(() {
         book = Book.fromJson(jsonResponse);
+      });
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  Future engLoadData() async {
+    try {
+      // print('object');
+      String engJsonString = await _engLoadData();
+      final engJsonResponse = json.decode(engJsonString);
+      print('object');
+      setState(() {
+        print('no error here');
+        englishBook = EnglishBook.fromJson(engJsonResponse);
+        print('OOPS');
         // print('object');
         // print(book.name);
         // print(book.intro[0]);
         // print(book.text[0].text[0].text);
-        // for (int i = 0; i < book.text[0].text.length; i++) {
-        //   print(book.text[0].text[i].text);
-        // }
-
-        // print(book.text[0].verses);
-        // list.add(book.text[0].text[0].text);
+        for (int i = 0; i < englishBook.text[0].text.length; i++) {
+          print(book.text[0].text[i].text);
+          print(englishBook.text[0].text[i].text);
+        }
       });
     } catch (e) {
-      // print('object');
-      // print(e);
+      print('objefjhfffffffhct');
+      print(e);
     }
   }
 
@@ -59,8 +73,17 @@ class _ChaptersState extends State<Chapters> {
   void initState() {
     super.initState();
     loadData();
+    engLoadData();
   }
 
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    // loadData().dispose();
+    super.dispose();
+  }
+
+  Color selectedColor = Colors.blue;
   @override
   Widget build(BuildContext context) {
     try {
@@ -92,7 +115,7 @@ class _ChaptersState extends State<Chapters> {
                   //   style: TextStyle(letterSpacing: 1),
                   // ),
                   Text(
-                    '\n\n\n\n${book.text[firstIndex].name}',
+                    '\n\n\n${book.text[firstIndex].name}',
                     style: const TextStyle(
                       color: Colors.grey,
                       fontSize: 27,
@@ -119,7 +142,7 @@ class _ChaptersState extends State<Chapters> {
                           book.text[firstIndex].text[index].title != ""
                               ? Center(
                                   child: Text(
-                                    '${book.text[firstIndex].text[index].title}',
+                                    '\n${book.text[firstIndex].text[index].title}',
                                     style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18),
@@ -128,20 +151,29 @@ class _ChaptersState extends State<Chapters> {
                               : const Visibility(
                                   visible: false, child: Text('')),
                           SizedBox(
-                            height: 5,
+                            height: 3,
                           ),
                           book.text[firstIndex].text[index].reference != ""
-                              ? Center(
-                                  child: Text(
-                                    '${book.text[firstIndex].text[index].reference}\n',
-                                    style: const TextStyle(
-                                        fontStyle: FontStyle.italic,
-                                        color:
-                                            Color.fromARGB(255, 194, 192, 192)),
+                              ? ListTile(
+                                  onTap: () {
+                                    showModalBottomSheet(
+                                        context: context,
+                                        builder: (BuildContext context) {
+                                          return Reference();
+                                        });
+                                  },
+                                  title: Center(
+                                    child: Text(
+                                      '${book.text[firstIndex].text[index].reference}\n',
+                                      style: const TextStyle(
+                                          fontStyle: FontStyle.italic,
+                                          color: Color.fromARGB(
+                                              255, 194, 192, 192)),
+                                    ),
                                   ),
                                 )
                               : const SizedBox(
-                                  height: 5,
+                                  height: 3,
                                 ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -155,15 +187,21 @@ class _ChaptersState extends State<Chapters> {
                                 width: 10,
                               ),
                               Expanded(
-                                child: Text(
+                                child: SelectableText(
                                   '${book.text[firstIndex].text[index].text}',
                                   style: TextStyle(fontSize: 16.0),
+                                  // selectioncolo,
+                                  onTap: () {
+                                    setState(() {
+                                      selectedColor = Colors.red;
+                                    });
+                                  },
                                 ),
                               ),
                             ],
                           ),
                           SizedBox(
-                            height: 3,
+                            height: 0,
                           )
                         ],
                       ),

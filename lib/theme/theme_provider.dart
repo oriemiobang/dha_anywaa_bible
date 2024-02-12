@@ -24,9 +24,11 @@ class UiProvider extends ChangeNotifier {
             foregroundColor: MaterialStatePropertyAll(Colors.white))),
     buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
     // fontFamily: 'UntitledSerif',
+    // scrollbarTheme: ScrollbarThemeData(color),
     primaryColor: Color.fromARGB(255, 0, 4, 17),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color.fromARGB(255, 0, 4, 17),
+
       //  Color.fromARGB(255, 1, 11, 36)
     ),
     scaffoldBackgroundColor: Color.fromARGB(255, 0, 4, 17),
@@ -38,9 +40,10 @@ class UiProvider extends ChangeNotifier {
   );
   //  const Color.fromARGB(255, 1, 11, 36));
   final lightTheme = ThemeData(
+      textTheme: const TextTheme(
+          bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
+          bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
       fontFamily: 'UntitledSerif',
-
-      // fontFamily: 'UntitledSerif',
       primaryColor: Colors.white,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Colors.white,

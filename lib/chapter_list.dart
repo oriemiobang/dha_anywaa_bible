@@ -25,15 +25,20 @@ class _ChapterListState extends State<ChapterList> {
     Chapter(title: 'Ciik kiper dilämmë', number: 28, isExpanded: false),
     Chapter(title: 'Kwaan jey', number: 37, isExpanded: false),
     Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
+    Chapter(title: 'Jøcua', number: 35, isExpanded: false),
+    Chapter(title: 'Pïëmme', number: 35, isExpanded: false),
+    Chapter(title: 'Ruuth', number: 35, isExpanded: false),
+    Chapter(title: '1 Camiel', number: 35, isExpanded: false),
+    Chapter(title: '2 Camiel', number: 35, isExpanded: false),
+    Chapter(title: '1 Nyeye', number: 35, isExpanded: false),
+    Chapter(title: '2 Nyeye', number: 35, isExpanded: false),
+    Chapter(title: '1 Luup Nyeye', number: 35, isExpanded: false),
+    Chapter(title: '2 Luup Nyeye', number: 35, isExpanded: false),
+    Chapter(title: 'Edhera', number: 35, isExpanded: false),
+    Chapter(title: 'Neemiya', number: 35, isExpanded: false),
+    Chapter(title: 'Acther', number: 35, isExpanded: false),
+    Chapter(title: 'Jööp', number: 35, isExpanded: false),
+    Chapter(title: 'Dut Pwøc', number: 35, isExpanded: false),
   ];
 
   int currentOpenedPanelIndex = -1;
@@ -74,7 +79,7 @@ class _ChapterListState extends State<ChapterList> {
                     icon: Icon(
                       Icons.arrow_back_rounded,
                     )),
-                Text('Weeli',
+                Text('weeli',
                     style: TextStyle(
                       fontSize: 19,
                     )),
@@ -113,7 +118,7 @@ class _ChapterListState extends State<ChapterList> {
                         focusedBorder: InputBorder.none,
                         fillColor: Color.fromARGB(155, 75, 75, 75),
                         label: Text(
-                          'Search',
+                          'Määnyï',
                           style: TextStyle(
                               // color: Color.fromARGB(217, 193, 190, 190)
                               ),
