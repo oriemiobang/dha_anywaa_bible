@@ -12,6 +12,7 @@ import 'dart:ui';
 // import 'package:share/share.dart';
 
 import 'package:flutter/rendering.dart';
+import 'package:share_plus/share_plus.dart';
 // import 'package:share_plus/share_plus.dart';
 
 class HomePage extends StatefulWidget {
@@ -90,12 +91,11 @@ class _MyHomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(50)),
                 child: IconButton(
                   onPressed: () async {
-                    // setState(() async{
-                    // await Share.share('Hello there');
-                    // Share.share(
-                    // 'Check out my website [here](https://example.com)',
-                    // subject: 'Interesting Link');
-                    // });
+                    try {
+                      await Share.share('Hello there', subject: 'any subject');
+                    } catch (e) {
+                      print('yeah an error: $e');
+                    }
                   },
                   icon: Icon(
                     Icons.share,

@@ -1,6 +1,12 @@
+import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
+import 'package:dha_anywaa_bible/classes/dailyText.dart';
+// import 'package:dha_anywaa_bible/main.dart';
 import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:workmanager/workmanager.dart';
 
 class DailyText extends StatefulWidget {
   const DailyText({super.key});
@@ -13,11 +19,18 @@ class _DailyTextState extends State<DailyText>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation _opacity;
-  CurvedAnimation? _curvedAnimation;
+
+  int myIndex = 3;
+  // CurvedAnimation? _curvedAnimation;
 
   @override
   void initState() {
+    // _addItem();
+    // _referesher();
+    // print('db length ${_items.length}');
+    // myManager();
     super.initState();
+    _getItem();
     _controller =
         AnimationController(vsync: this, duration: Duration(seconds: 7));
 
@@ -38,137 +51,65 @@ class _DailyTextState extends State<DailyText>
 
   UiProvider provider = UiProvider();
 
-  var dailyVerse = [
-    //  ø     ö     ï    ë  ä
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "Mana Nyooth 3:20",
-      "text": "'Ba neenï, a cuŋŋa dhi øtø,"
-          "naa dööŋö. 'Ba ni näk da ŋat mo wïnynya"
-          "dwøra, ni jap dhi øtø, a cøøa baŋe, ni"
-          "cäma ki eni, ni ö eni ni cäme ki aani"
-    },
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Mana Nyooth 3:21",
-      "text": "'Ba ŋato böödö, owëëga pïïn piny"
-          "bäät wälla, keda mara na bööda, ni pïïa"
-          "kanya ciel ki Wära bäät wälle."
-    },
-    //  ø     ö     ï    ë  ä
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": 'Jøøn 1: 1-5',
-      "text": " 1. Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
-          " kanya ciel ki Jwøk, ni Dwørøgøøni"
-          " beeye Jwøk.\n 2. Wïlöölö eni ena kanya"
-          " ciel ki Jwøk. 3 Ni jammi bëët cwääc"
-          " ka ree, ni bäŋ gïn mo ocwääö ri moa"
-          " cwääc bëët, ni eni tøør ree.\n 4. Ni kwøw"
-          " ena ree, ni kwøwøgøøni beeye na cïp"
-          " tar jï jiy.\n 5. Ni tayøgø meenya muudhö,"
-          " ni käri ya muudhe nää.",
-    },
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "Aydheea 41:10",
-      "text": "Kärï lwäyö, kiper a nut buutï,"
-          "ni ba bwøk cwïnyï, kiper aana"
-          "Jwøk marï."
-          "Ï tïïa tïïö niï teek, ni kønya ïïni,"
-          "ni jøla ïïni ki cer"
-    },
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Jøøn 16:33",
-      "text": "Man en a caana jïïu, nee bëët-mëër nee"
-          "jootu baŋa. Uuni, gïï mo leth ojwørru"
-          "yi pinyi en. 'Ba magu cwïnynyu, kiper"
-          "piny yaa nø böötö."
-    },
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "Pilipay 4:6-7",
-      "text": "6 Kär dee gïn lääŋŋu ki cwïnynyu, 'ba"
-          "ki yïth jammi bëët, gïn wäro manynyu"
-          "wäru pëënynyu ki Jwøk nou lämö, nou"
-          "kwaya eni, nou dwøga met ec baŋe.\n"
-          "7 'Ba leec cwïny man wø cïp Jwøki, na"
-          "näk ba løny ki par, cwïnynyu ogwøe"
-          "ka acaayu ki ri Krictø Jecu."
-    },
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Mana Nyooth 21:4",
-      "text": "Ba Jwøk ki dëëre obëëdö ki geni,\n 4 ni"
-          "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe"
-          "gø këët. Ni bäŋ kïmmö, wala oduuru"
-          "mo di gøø, wala rääm këët. Kiper japa"
-          "dïkwøŋ oaay.»"
-    },
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "1 Piter 5:6-7",
-      "text": "6 Kiper manøgønø, døøyu dëëtu mo"
-          "mwöl nou ena cer Jwøk na teek, kiper"
-          "nee u røønye kanya näk kare.\n 7 Cïbu"
-          "gïï wø pär cwïnynyu ki geni cere,"
-          "kiper eni lääŋŋa uuni"
-    },
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Pilipay 2:3-4",
-      "text": "atöör, 'ba beerra man caarru"
-          "gïr jiy møga, ni beyø geni ki uuni, nou"
-          "mwöl.\n 4 'Ba kär dee ŋat ŋäc dëëre keere."
-          "'Ba uuni, beerra man ŋäyu jiy møga"
-          "thuwø."
-    },
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "Röm 8:28",
-      "text": "'Ba ŋääø ni Jwøk tïïö ri jammi bëët"
-          "nee bëënyge jï jøw wø mëër ki eni, jøøa"
-          "näk ee cwølø keda mana manynye."
-    },
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Jøcua 1:9",
-      "text": "9 Ennø, a köömma"
-          "ïïni. Mak riï ni bëëdï niï teek; ni ba"
-          "bwøk cwïnyï ni ba lwäyï, kiper a na"
-          "Wuuö Jwøk na näk Jwøk marï, a ena"
-          "buutï kany wø ciï yie jaak."
-    },
-    {
-      "shortText": "Yïnu cwøl jwøki",
-      "verse": "Mathiew 6:31-34",
-      "text": "31 Kiper manøgønø, kär"
-          "dee gïn lääŋŋu, nou köö, na ‹?Agïnaŋø"
-          "noo camø?› Nou köö, na ‹?Agïnaŋø noo"
-          "maadhø?› Nou köö, na ‹?Agïnaŋø noo"
-          "røø dëëtø?›\n 32 Kiper gïïögø bëët cac"
-          "juurre cayø. 'Ba Wääu ni en maal ŋääe"
-          "nou can ki gïïögø bëët.\n 33 'Ba kwøŋu buc"
-          "Jwøk ki beeny Jwøk cayø. Køøre nø,"
-          "gïïögø bëët owëëk uuni thuwø.\n"
-          "34 «Kiper manøgønø, kär dee gïn"
-          "lääŋŋu kiper diøø. Kiper diøø dëëre"
-          "olääŋŋe keere. Cäŋ man nø da moe."
-    },
+  DailyVerse dailyText = DailyVerse();
 
-    {
-      "shortText": "Jwøk mëër ki ïnï",
-      "verse": "Röm 15:13",
-      "text": "13 'Ba Jwøk ni wø cïp ŋäädhe, cwïnynyu"
-          "opääŋe ki met ec mo päl ki mëër ki"
-          "køør mana jïëyu, kiper nee ŋäädhe"
-          "maru pälle ki køør teek Jwïëc Jwøk"
-          "na en kur keere"
-    },
-  ];
+  String currentText = "";
+  String currentVerse = "";
+  String currentShortText = "";
+
+  // late int currentIndex;
+  Future<int> _getItem() async {
+    final items = await SQLHelper.getItems();
+    if (items.isEmpty) {
+      _addItem();
+      print('there is an issue');
+    }
+
+    final item = await SQLHelper.getItem(1);
+
+    print('inner index: $item');
+    return item[0]['counter'];
+  }
+
+  Future<void> _addItem() async {
+    await SQLHelper.createItem(0);
+    final items = await SQLHelper.getItems();
+    print(' items: $items');
+  }
+
+  // void _referesher() async {
+  //   final item = await SQLHelper.getItem(2);
+  //   final items = await SQLHelper.getItems();
+  //   print('$items');
+  //   print(' the item ${item[0]['counter']}');
+
+  //   myIndex = item[0]['counter'];
+  //   SQLHelper.updateItem(1, 3);
+  // }
+
+  void info() async {
+    try {
+      // print('object');
+      // await SQLHelper.updateItem(1, 0);
+      // print('anoher obeject');
+
+      int myIndex = await _getItem();
+      // print('third object');
+
+      print('my index: $myIndex');
+      currentText = dailyText.dailyVerseList[myIndex]['text']!;
+      // print(' blala ${currentText}');
+      currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
+      currentShortText = dailyText.dailyVerseList[myIndex]['shortText']!;
+    } catch (e) {
+      print('error: $e');
+    }
+  }
+
   @override
-  Widget build(BuildContext context) {
+  build(BuildContext context) {
+    info();
+
     Brightness currentTheme = Theme.of(context).brightness;
     return Container(
         height: MediaQuery.of(context).size.height,
@@ -196,7 +137,7 @@ class _DailyTextState extends State<DailyText>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                _opacity.value < 0.5 ? " " : 'Jøøn 1: 1-5',
+                                _opacity.value < 0.5 ? " " : '$currentVerse',
                                 style: TextStyle(
                                     color: Color.fromARGB(255, 133, 130, 130),
                                     fontSize: 18),
@@ -206,16 +147,8 @@ class _DailyTextState extends State<DailyText>
                               ),
                               Text(
                                 _opacity.value < 0.5
-                                    ? "Jwøk mëër ki ïnï"
-                                    : " 1. Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
-                                        " kanya ciel ki Jwøk, ni Dwørøgøøni"
-                                        " beeye Jwøk.\n 2. Wïlöölö eni ena kanya"
-                                        " ciel ki Jwøk. 3 Ni jammi bëët cwääc"
-                                        " ka ree, ni bäŋ gïn mo ocwääö ri moa"
-                                        " cwääc bëët, ni eni tøør ree.\n 4. Ni kwøw"
-                                        " ena ree, ni kwøwøgøøni beeye na cïp"
-                                        " tar jï jiy.\n 5. Ni tayøgø meenya muudhö,"
-                                        " ni käri ya muudhe nää.",
+                                    ? currentShortText
+                                    : currentText,
                                 style: TextStyle(fontSize: 18),
                               ),
                             ],
@@ -442,7 +375,10 @@ class _DailyTextState extends State<DailyText>
                                               ),
                                             ),
                                             child: TextButton(
-                                                onPressed: () {},
+                                                onPressed: () {
+                                                  Share.share(
+                                                      '$currentVerse \n $currentText');
+                                                },
                                                 child: Text(
                                                   'Kwaayi',
                                                   style: TextStyle(

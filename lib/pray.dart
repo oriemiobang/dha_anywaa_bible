@@ -1,5 +1,6 @@
-import 'dart:async';
+// import 'dart:async';
 
+import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:flutter/material.dart';
 
 class Pray extends StatefulWidget {
@@ -7,6 +8,10 @@ class Pray extends StatefulWidget {
 
   @override
   State<Pray> createState() => _PrayState();
+  // int index = 0;
+  // void updateVerses() {
+
+  // }
 }
 
 class _PrayState extends State<Pray> {
@@ -79,49 +84,40 @@ class _PrayState extends State<Pray> {
     // {"verse": "12", "text": ""},
   ];
 
-  String currentMessage = '';
-  String currentVerse = '';
+  int index = 0;
+  String selectedVerse = '';
+  String selectedText = '';
+
   int currentIndex = 0;
-
-  @override
-  void initState() {
-    super.initState();
-    _updateMessage();
+  void getItem() async {
+    final item = await SQLHelper.getItem(1);
+    setState(() {
+      currentIndex = item[0]['counter'];
+    });
   }
 
-  _updateMessage() {
-    DateTime nowTime = DateTime.now();
-    print("Current Hour: ${nowTime.hour}");
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   updateVerses();
+  // }
 
-    if (nowTime.hour < 6 && nowTime.hour >= 12) {
-      setState(() {
-        currentMessage = prayer[currentIndex]['text']!;
-        currentVerse = prayer[currentIndex]['verse']!;
-      });
-
-      // Increment the index for the next message
-      currentIndex = (currentIndex + 1) % prayer.length;
-
-      print("Updated Message: $currentMessage");
-      print("Updated Verse: $currentVerse");
-    } else {
-      currentMessage = prayer[currentIndex]['text']!;
-      currentVerse = prayer[currentIndex]['verse']!;
-      print("Not in the morning hours. Skipping update.");
-    }
-
-    // Schedule the next update for the next morning
-    Duration timeUntilMorning = Duration(
-      hours: 24 - nowTime.hour,
-      minutes: 60 - nowTime.minute,
-      seconds: 60 - nowTime.second,
-    );
-
-    Timer(timeUntilMorning, _updateMessage);
-  }
+  // void updateVerses() {
+  //   if (index < prayer.length) {
+  //     setState(() {
+  //       selectedVerse = prayer[index]['verse']!;
+  //       selectedText = prayer[index]['text']!;
+  //     });
+  //     index++;
+  //   } else {
+  //     index = 0;
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
+    getItem();
     return Scaffold(
       appBar: AppBar(
         actions: [IconButton(onPressed: () {}, icon: Icon(Icons.share))],
@@ -141,7 +137,7 @@ class _PrayState extends State<Pray> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    prayer[3]['verse']!,
+                    prayer[currentIndex]['verse']!,
                     style: TextStyle(
                         color: Colors.grey, fontStyle: FontStyle.italic),
                   ),
@@ -149,7 +145,7 @@ class _PrayState extends State<Pray> {
                     height: 7,
                   ),
                   SelectableText(
-                    prayer[3]['text']!,
+                    prayer[currentIndex]['text']!,
                     style: TextStyle(fontSize: 18),
                   ),
                 ],

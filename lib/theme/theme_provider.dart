@@ -3,9 +3,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class UiProvider extends ChangeNotifier {
   bool _isDark = false;
+  // int _currentIndex = 0;
   bool get isDark => _isDark;
 
   late SharedPreferences storage;
+  // late SharedPreferences indexStorage;
 
   changeTheme() {
     _isDark = !isDark;

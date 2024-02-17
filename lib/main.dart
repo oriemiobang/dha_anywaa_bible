@@ -1,19 +1,80 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+// import 'package:dha_anywaa_bible/pray.dart';
+import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
+import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
+// import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:workmanager/workmanager.dart';
 import 'HomePage.dart';
+
+DailyVerse dailyVerse = DailyVerse();
+int currentIndex = 0;
+
+Future<void> _updateItem(int counter) async {
+  final items = await SQLHelper.getItems();
+  if (items.isNotEmpty) {
+    await SQLHelper.updateItem(1, counter);
+    print('list is empty');
+  }
+
+  print('is items empty?: ${items.isEmpty}');
+}
+
+void getItem() async {
+  final items = await SQLHelper.getItems();
+  if (items.isNotEmpty) {
+    final item = await SQLHelper.getItem(1);
+    currentIndex = item[0]['counter'];
+  }
+
+  print('is items empty??: ${items.isEmpty}');
+}
+
+void callbackDispatcher() {
+  Workmanager().executeTask((taskName, inputData) async {
+    getItem();
+    currentIndex = (currentIndex + 1) % dailyVerse.dailyVerseList.length;
+    await _updateItem(currentIndex);
+    print('index: $currentIndex');
+    print('task executed: $taskName');
+    return Future.value(true);
+  });
+}
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  Workmanager().initialize(callbackDispatcher);
   runApp(
     const MyApp(),
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Workmanager().registerPeriodicTask('uniqueName', 'taskName',
+        frequency: Duration(minutes: 15),
+        constraints: Constraints(networkType: NetworkType.not_required));
+    // myManager();
+  }
+
+  // void myManager() async {
+  //   await Workmanager().registerPeriodicTask(
+  //       '${DateTime.now().hour}', 'taskname',
+  //       constraints: Constraints(networkType: NetworkType.not_required));
+  // }
 
   // This widget is the root of your application.
   @override
