@@ -2,6 +2,8 @@
 
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Pray extends StatefulWidget {
   const Pray({super.key});
@@ -115,12 +117,21 @@ class _PrayState extends State<Pray> {
   //   }
   // }
 
+  late SharedPreferences myStorage;
+
   @override
   Widget build(BuildContext context) {
     getItem();
     return Scaffold(
       appBar: AppBar(
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.share))],
+        actions: [
+          IconButton(
+              onPressed: () async {
+                await Share.share(
+                    '${prayer[currentIndex]['verse']!}\n ${prayer[currentIndex]['text']!}');
+              },
+              icon: Icon(Icons.share))
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 50, left: 18, right: 18),

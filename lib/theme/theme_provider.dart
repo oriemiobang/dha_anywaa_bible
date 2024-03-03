@@ -21,9 +21,7 @@ class UiProvider extends ChangeNotifier {
         bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
     fontFamily: 'UntitledSerif',
     appBarTheme: AppBarTheme(color: Colors.transparent),
-    textButtonTheme: const TextButtonThemeData(
-        style: ButtonStyle(
-            foregroundColor: MaterialStatePropertyAll(Colors.white))),
+
     buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
     // fontFamily: 'UntitledSerif',
     // scrollbarTheme: ScrollbarThemeData(color),

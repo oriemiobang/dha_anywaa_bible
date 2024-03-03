@@ -1,10 +1,15 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+// import 'dart:ffi';
+
 import 'package:dha_anywaa_bible/choose_bible.dart';
-import 'package:dha_anywaa_bible/choose_font.dart';
+// import 'package:dha_anywaa_bible/choose_font.dart';
+import 'package:dha_anywaa_bible/classes/font_size.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class Setting extends StatefulWidget {
   const Setting({super.key});
@@ -18,6 +23,57 @@ class _SettingState extends State<Setting> {
 
   // }
   double _currentSliderValue = 15;
+  FontSize fontSize = FontSize();
+  SelectedFontStyle selectedFontStyle = SelectedFontStyle();
+  String currentFontStyle = '';
+  String fontName = '';
+
+  void getFont() async {
+    double savedFontSize = await fontSize.getFontSize();
+    String savedFontStyle = await selectedFontStyle.getFontStyle();
+
+    setState(() {
+      _currentSliderValue = savedFontSize;
+      currentFontStyle = savedFontStyle;
+      switch (currentFontStyle) {
+        //  Garamond    RobotoRegular  RobotoMono  RobotoSerif
+        case 'UntitledSerif':
+          fontName = 'Untitled';
+          break;
+        case 'RobotoRegular':
+          fontName = 'Roboto';
+          break;
+        case 'RobotoMono':
+          fontName = 'Roboto mono';
+          break;
+        case 'RobotoSerif':
+          fontName = 'Roboto serif';
+          break;
+        case 'Garamond':
+          fontName = 'Garamond';
+          break;
+      }
+    });
+    print('the font is saved');
+  }
+
+  // void getFont() async {
+  //   setState(() async {
+  //     _currentSliderValue = await fontSize.getFontSize();
+  //   });
+  //   print('the font is saved');
+  // }
+
+  void setFont(double font) async {
+    await fontSize.setFontSize(font);
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getFont();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -75,15 +131,17 @@ class _SettingState extends State<Setting> {
                 ListTile(
                   // leading: Icon(Icons.book),
                   title: Text(
-                    'Untitled',
+                    fontName,
                     style: TextStyle(fontFamily: 'UntitledSerif'),
                   ),
                   onTap: () {
                     setState(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ChooseFont()),
-                      );
+                      Navigator.pushNamed(context, '/chooseFont').then((_) {
+                        setState(() {
+                          getFont();
+                          // print('back');
+                        });
+                      });
                     });
                   },
 
@@ -113,7 +171,10 @@ class _SettingState extends State<Setting> {
                     value: _currentSliderValue,
                     onChanged: (double value) {
                       setState(() {
-                        _currentSliderValue = value;
+                        setFont(value);
+                        getFont();
+
+                        print(_currentSliderValue);
                       });
                     }),
                 Padding(
@@ -123,9 +184,12 @@ class _SettingState extends State<Setting> {
                     width: double.infinity,
                     decoration: BoxDecoration(color: Colors.transparent),
                     child: Text(
-                      'my name is oriemi and i love coding currently i'
-                      ' am working on dha anywaa bible',
-                      style: TextStyle(fontSize: _currentSliderValue),
+                      "Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
+                      " kanya ciel ki Jwøk, ni Dwørøgøøni"
+                      " beeye Jwøk.",
+                      style: TextStyle(
+                          fontSize: _currentSliderValue,
+                          fontFamily: currentFontStyle),
                     ),
                   ),
                 )

@@ -1,8 +1,12 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 // import 'package:dha_anywaa_bible/pray.dart';
+import 'package:dha_anywaa_bible/chapter_list.dart';
+import 'package:dha_anywaa_bible/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
+import 'package:dha_anywaa_bible/pray.dart';
+import 'package:dha_anywaa_bible/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
@@ -17,13 +21,13 @@ Future<void> _updateItem(int counter) async {
   final items = await SQLHelper.getItems();
   if (items.isNotEmpty) {
     await SQLHelper.updateItem(1, counter);
-    print('list is empty');
+    print('list aint\'t  empty');
   }
 
   print('is items empty?: ${items.isEmpty}');
 }
 
-void getItem() async {
+Future<void> getItem() async {
   final items = await SQLHelper.getItems();
   if (items.isNotEmpty) {
     final item = await SQLHelper.getItem(1);
@@ -35,8 +39,10 @@ void getItem() async {
 
 void callbackDispatcher() {
   Workmanager().executeTask((taskName, inputData) async {
-    getItem();
+    await getItem();
+    print('before incrementing: $currentIndex');
     currentIndex = (currentIndex + 1) % dailyVerse.dailyVerseList.length;
+    print('after incrementig: $currentIndex');
     await _updateItem(currentIndex);
     print('index: $currentIndex');
     print('task executed: $taskName');
@@ -86,12 +92,20 @@ class _MyAppState extends State<MyApp> {
         return MaterialApp(
           themeMode: notifier.isDark ? ThemeMode.dark : ThemeMode.light,
           darkTheme: notifier.isDark ? notifier.darkTheme : notifier.lightTheme,
+          initialRoute: '/',
+          routes: {
+            '/': (context) => HomePage(),
+            '/setting': (context) => Setting(),
+            '/chooseFont': (context) => ChooseFont(),
+            '/pray': (context) => Pray(),
+            '/chapterList': (context) => ChapterList()
+          },
 
           title: 'Weel jwok',
           // color: const Color.fromARGB(255, 2, 27, 48),
           debugShowCheckedModeBanner: false,
           // theme: Provider.of<ThemeProvider>(context).themeData,
-          home: HomePage(),
+          // home: HomePage(),
         );
       }),
     );

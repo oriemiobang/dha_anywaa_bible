@@ -4,6 +4,8 @@
 import 'package:dha_anywaa_bible/account.dart';
 import 'package:dha_anywaa_bible/chapter_list.dart';
 import 'package:dha_anywaa_bible/chapters.dart';
+import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
+import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:flutter/material.dart';
@@ -74,8 +76,33 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
+  DailyVerse dailyText = DailyVerse();
+  String currentText = "";
+  String currentVerse = "";
+
+  Future<int> _getItem() async {
+    final item = await SQLHelper.getItem(1);
+    print('inner index: $item');
+    return item[0]['counter'];
+  }
+
+  void info() async {
+    try {
+      int myIndex = await _getItem();
+      print('my index: $myIndex');
+      currentText = dailyText.dailyVerseList[myIndex]['text']!;
+      currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
+    } catch (e) {
+      print('error: $e');
+    }
+  }
+
+  static MyPageController myPageController = MyPageController();
+  PageController pageController = myPageController.controller;
+
   @override
   Widget build(BuildContext context) {
+    info();
     Brightness currentTheme = Theme.of(context).brightness;
     PreferredSizeWidget buildAppBar() {
       switch (_selectedIndex) {
@@ -92,7 +119,7 @@ class _MyHomePageState extends State<HomePage> {
                 child: IconButton(
                   onPressed: () async {
                     try {
-                      await Share.share('Hello there', subject: 'any subject');
+                      await Share.share('$currentVerse \n $currentText');
                     } catch (e) {
                       print('yeah an error: $e');
                     }
@@ -122,10 +149,7 @@ class _MyHomePageState extends State<HomePage> {
                 child: TextButton(
                   onPressed: () {
                     setState(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ChapterList()),
-                      );
+                      Navigator.pushNamed(context, '/chapterList');
                     });
                   },
                   child: Center(
@@ -241,9 +265,44 @@ class _MyHomePageState extends State<HomePage> {
                 child: _widgetOptions.elementAt(_selectedIndex)),
           ]),
       bottomNavigationBar: AnimatedContainer(
-        height: isVisible ? 50 : 0,
+        height: isVisible ? 105 : 60,
         duration: Duration(milliseconds: 200),
         child: Wrap(children: [
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Color.fromARGB(255, 58, 56, 56)),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        myPageController.handleController('previous');
+                      },
+                      icon: Icon(Icons.chevron_left_sharp),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        // showModalBottomSheet(
+                        //     context: context,
+                        //     builder: (BuildContext context) {
+                        //       return ChapterList();
+                        //     });
+                        Navigator.pushNamed(context, '/chapterList');
+                      },
+                      child: Text('Hello there'),
+                    ),
+                    IconButton(
+                      onPressed: () {
+                        myPageController.handleController('next');
+                      },
+                      icon: Icon(Icons.chevron_right),
+                    ),
+                  ]),
+            ),
+          ),
           BottomNavigationBar(
             useLegacyColorScheme: true,
             elevation: 0,

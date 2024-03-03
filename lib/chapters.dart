@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:dha_anywaa_bible/Book.dart';
+import 'package:dha_anywaa_bible/classes/font_size.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/components/reference.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,7 +18,7 @@ class Chapters extends StatefulWidget {
 }
 
 const myjsonString = 'assets/fonts/chapters/Any/Genesis.json';
-const englishJsonString = 'assets/holybooks/Bible_KJV.json';
+const englishJsonString = 'assets/holybooks/NT/MAT/KJV.json';
 
 class _ChaptersState extends State<Chapters> {
   Future<String> _loadData() async {
@@ -52,14 +54,15 @@ class _ChaptersState extends State<Chapters> {
         print('no error here');
         englishBook = EnglishBook.fromJson(engJsonResponse);
         print('OOPS');
+        print(englishBook.chapters[0].verses[0].text);
         // print('object');
         // print(book.name);
         // print(book.intro[0]);
         // print(book.text[0].text[0].text);
-        for (int i = 0; i < englishBook.text[0].text.length; i++) {
-          print(book.text[0].text[i].text);
-          print(englishBook.text[0].text[i].text);
-        }
+        // for (int i = 0; i < englishBook.text[0].text.length; i++) {
+        //   print(book.text[0].text[i].text);
+        //   print(englishBook.text[0].text[i].text);
+        // }
       });
     } catch (e) {
       print('objefjhfffffffhct');
@@ -67,6 +70,15 @@ class _ChaptersState extends State<Chapters> {
     }
   }
 
+  FontSize fontSize = FontSize();
+  SelectedFontStyle style = SelectedFontStyle();
+  double _currentFontSize = 0;
+  String currentFont = '';
+  void getFontSize() async {
+    _currentFontSize = await fontSize.getFontSize();
+    currentFont = await style.getFontStyle();
+    print('font in chapter: $currentFont');
+  }
   // void fetchdata(book) {}
 
   @override
@@ -74,6 +86,7 @@ class _ChaptersState extends State<Chapters> {
     super.initState();
     loadData();
     engLoadData();
+    getFontSize();
   }
 
   @override
@@ -84,135 +97,256 @@ class _ChaptersState extends State<Chapters> {
   }
 
   Color selectedColor = Colors.blue;
+  MyPageController myPageController = MyPageController();
+
+  final ScrollController _scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
+    getFontSize();
     try {
-      if (book == null) {
-        return CircularProgressIndicator();
-      }
-      return SingleChildScrollView(
-        child: Column(
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            for (int firstIndex = 0;
-                firstIndex < book.text.length;
-                firstIndex++)
-              Column(
-                children: [
-                  // Text(
-                  //   book.name,
-                  //   style: TextStyle(
-                  //       color: Colors.grey,
-                  //       fontWeight: FontWeight.bold,
-                  //       fontSize: 30),
-                  // ),
-                  // Text(
-                  //   '\n\n${book.intro[0]}\n',
-                  //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                  // ),
-                  // Text(
-                  //   '${book.intro[1]}',
-                  //   style: TextStyle(letterSpacing: 1),
-                  // ),
-                  Text(
-                    '\n\n\n${book.text[firstIndex].name}',
-                    style: const TextStyle(
-                      color: Colors.grey,
-                      fontSize: 27,
-                    ),
-                  ),
-                  Text(
-                    '${book.text[firstIndex].id}',
-                    style: const TextStyle(
-                        fontSize: 76, fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  for (int index = 0;
-                      index < book.text[firstIndex].text.length;
-                      index++)
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(2, 0, 4, 2),
+      PageController pageController = myPageController.controller;
+      // if (book == null) {
+      //   return CircularProgressIndicator();
+      // }
+      return SizedBox(
+        // color: Colors.black,
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: PageView.builder(
+            scrollBehavior: const ScrollBehavior(),
+            itemCount: englishBook.chapters.length,
+            controller: pageController,
+            itemBuilder: (BuildContext context, int index) {
+              var book = englishBook.chapters[index];
+              return ListView.builder(
+                  controller: _scrollController,
+                  itemCount: book.verses.length,
+                  itemBuilder: (BuildContext context, int listindex) {
+                    var chapter = book.verses[listindex];
+                    return Container(
+                      color: listindex == 4 ? Colors.green : Colors.transparent,
                       child: Column(
-                        // fit: StackFit.values[1],
-                        // mainAxisAlignment: MainAxisAlignment.start,
-                        // crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          book.text[firstIndex].text[index].title != ""
-                              ? Center(
-                                  child: Text(
-                                    '\n${book.text[firstIndex].text[index].title}',
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 18),
-                                  ),
+                          listindex == 0
+                              ? Text(
+                                  book.name,
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 30),
                                 )
                               : const Visibility(
                                   visible: false, child: Text('')),
-                          SizedBox(
-                            height: 3,
-                          ),
-                          book.text[firstIndex].text[index].reference != ""
-                              ? ListTile(
-                                  onTap: () {
-                                    showModalBottomSheet(
-                                        context: context,
-                                        builder: (BuildContext context) {
-                                          return Reference();
-                                        });
-                                  },
-                                  title: Center(
+                          Padding(
+                            padding: listindex == (book.verses.length - 1)
+                                ? const EdgeInsets.only(bottom: 300.0)
+                                : const EdgeInsets.all(0),
+                            child: Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                chapter.text != ''
+                                    ? Text(
+                                        chapter.id,
+                                        style: TextStyle(color: Colors.grey),
+                                      )
+                                    : const Visibility(
+                                        visible: false, child: Text('')),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Expanded(
                                     child: Text(
-                                      '${book.text[firstIndex].text[index].reference}\n',
-                                      style: const TextStyle(
-                                          fontStyle: FontStyle.italic,
-                                          color: Color.fromARGB(
-                                              255, 194, 192, 192)),
-                                    ),
-                                  ),
-                                )
-                              : const SizedBox(
-                                  height: 3,
-                                ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                '${book.text[firstIndex].text[index].id}',
-                                style: const TextStyle(color: Colors.grey),
-                              ),
-                              const SizedBox(
-                                width: 10,
-                              ),
-                              Expanded(
-                                child: SelectableText(
-                                  '${book.text[firstIndex].text[index].text}',
-                                  style: TextStyle(fontSize: 16.0),
-                                  // selectioncolo,
-                                  onTap: () {
-                                    setState(() {
-                                      selectedColor = Colors.red;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 0,
+                                  chapter.text,
+                                  style: TextStyle(
+                                      fontSize: _currentFontSize,
+                                      fontFamily: currentFont),
+                                ))
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    ),
-                ],
-              ),
-          ],
-        ),
+                    );
+                  });
+            }),
       );
+      // return ListView.builder(
+      //     controller: _scrollController,
+      //     shrinkWrap: true,
+      //     itemCount: englishBook.books.length,
+      //     itemBuilder: (context, bookIndex) {
+      //       var engBook = englishBook.books[bookIndex];
+      //       return ListView(
+      //         controller: _scrollController,
+      //         shrinkWrap: true,
+      //         children: [
+      //           Text(
+      //             engBook.name,
+      //           ),
+      //           ListView.builder(
+      //               controller: _scrollController,
+      //               shrinkWrap: true,
+      //               physics: NeverScrollableScrollPhysics(),
+      //               itemCount: engBook.chapters.length,
+      //               itemBuilder: (context, chaperIndex) {
+      //                 var chapter = engBook.chapters[chaperIndex];
+
+      //                 return ListTile(
+      //                   title: Text(chapter.name),
+      //                   subtitle: ListView.builder(
+      //                       shrinkWrap: true,
+      //                       physics: NeverScrollableScrollPhysics(),
+      //                       itemCount: chapter.verses.length,
+      //                       itemBuilder: (context, verseIndex) {
+      //                         var verse = chapter.verses[verseIndex];
+      //                         return ListTile(
+      //                           title: Text(verse.text),
+      //                         );
+      //                       }),
+      //                 );
+      //               }),
+      //         ],
+      //       );
+      //     });
+      // SingleChildScrollView(
+      //   child: Column(
+      //     // crossAxisAlignment: CrossAxisAlignment.stretch,
+      //     children: [
+      //       for (int firstIndex = 0;
+      //           firstIndex < book.text.length;
+      //           firstIndex++)
+      //         Column(
+      //           children: [
+      //             // Text(
+      //             //   book.name,
+      //             //   style: TextStyle(
+      //             //       color: Colors.grey,
+      //             //       fontWeight: FontWeight.bold,
+      //             //       fontSize: 30),
+      //             // ),
+      //             // Text(
+      //             //   '\n\n${book.intro[0]}\n',
+      //             //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+      //             // ),
+      //             // Text(
+      //             //   '${book.intro[1]}',
+      //             //   style: TextStyle(letterSpacing: 1),
+      //             // ),
+      //             Text(
+      //               '\n\n\n${book.text[firstIndex].name}',
+      //               style: const TextStyle(
+      //                 color: Colors.grey,
+      //                 fontSize: 27,
+      //               ),
+      //             ),
+      //             Text(
+      //               '${book.text[firstIndex].id}',
+      //               style: const TextStyle(
+      //                   fontSize: 76, fontWeight: FontWeight.bold),
+      //             ),
+      //             SizedBox(
+      //               height: 6,
+      //             ),
+      //             for (int index = 0;
+      //                 index < book.text[firstIndex].text.length;
+      //                 index++)
+      //               Padding(
+      //                 padding: const EdgeInsets.fromLTRB(2, 0, 4, 2),
+      //                 child: Column(
+      //                   // fit: StackFit.values[1],
+      //                   // mainAxisAlignment: MainAxisAlignment.start,
+      //                   // crossAxisAlignment: CrossAxisAlignment.start,
+      //                   children: [
+      //                     book.text[firstIndex].text[index].title != ""
+      //                         ? Center(
+      //                             child: Text(
+      //                               '\n${book.text[firstIndex].text[index].title}',
+      //                               style: const TextStyle(
+      //                                   fontWeight: FontWeight.bold,
+      //                                   fontSize: 18),
+      //                             ),
+      //                           )
+      //                         : const Visibility(
+      //                             visible: false, child: Text('')),
+      //                     SizedBox(
+      //                       height: 3,
+      //                     ),
+      //                     book.text[firstIndex].text[index].reference != ""
+      //                         ? ListTile(
+      //                             onTap: () {
+      //                               showModalBottomSheet(
+      //                                   context: context,
+      //                                   builder: (BuildContext context) {
+      //                                     return Reference();
+      //                                   });
+      //                             },
+      //                             title: Center(
+      //                               child: Text(
+      //                                 '${book.text[firstIndex].text[index].reference}\n',
+      //                                 style: const TextStyle(
+      //                                     fontStyle: FontStyle.italic,
+      //                                     color: Color.fromARGB(
+      //                                         255, 194, 192, 192)),
+      //                               ),
+      //                             ),
+      //                           )
+      //                         : const SizedBox(
+      //                             height: 3,
+      //                           ),
+      //                     Row(
+      //                       mainAxisAlignment: MainAxisAlignment.start,
+      //                       crossAxisAlignment: CrossAxisAlignment.start,
+      //                       children: [
+      //                         Text(
+      //                           '${book.text[firstIndex].text[index].id}',
+      //                           style: const TextStyle(color: Colors.grey),
+      //                         ),
+      //                         const SizedBox(
+      //                           width: 10,
+      //                         ),
+      //                         Expanded(
+      //                           child: SelectableText(
+      //                             '${book.text[firstIndex].text[index].text}',
+      //                             style: TextStyle(
+      //                                 fontSize: _currentFontSize,
+      //                                 fontFamily: currentFont),
+      //                             // selectioncolo,
+      //                             onTap: () {
+      //                               setState(() {
+      //                                 selectedColor = Colors.red;
+      //                               });
+      //                             },
+      //                           ),
+      //                         ),
+      //                       ],
+      //                     ),
+      //                     SizedBox(
+      //                       height: 0,
+      //                     )
+      //                   ],
+      //                 ),
+      //               ),
+      //           ],
+      //         ),
+      //     ],
+      //   ),
+      // );
     } catch (e) {
       return const Text('');
     }
   }
+}
+
+class MyPageController {
+  void handleController(String situation) {
+    print(situation);
+    if (situation == 'next') {
+      controller.nextPage(duration: Duration.zero, curve: Curves.linear);
+    } else if (situation == 'previous') {
+      controller.previousPage(duration: Duration.zero, curve: Curves.linear);
+    }
+    print(situation);
+  }
+
+  PageController controller = PageController();
 }

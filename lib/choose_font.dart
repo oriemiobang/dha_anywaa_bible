@@ -1,3 +1,4 @@
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:flutter/material.dart';
 
 class ChooseFont extends StatefulWidget {
@@ -8,30 +9,108 @@ class ChooseFont extends StatefulWidget {
 }
 
 class _ChooseBibleState extends State<ChooseFont> {
+  String selectedFont = 'Untitled Serif';
+  SelectedFontStyle selectedFontStyle = SelectedFontStyle();
+
+  void setSelectedFont() async {
+    final fontstyle = await selectedFontStyle.getFontStyle();
+    setState(() {
+      selectedFont = fontstyle;
+    });
+  }
+
+  void setFontStyle(String font) async {
+    await selectedFontStyle.setFontStyle(font);
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    setSelectedFont();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select font type'),
       ),
-      body: const Padding(
+      body: Padding(
         padding: EdgeInsets.all(8),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           // Text('Choose a language'),
           ListTile(
-            title: Text('Untitled Serif'),
+            onTap: () {
+              setState(() {
+                selectedFont = 'UntitledSerif';
+                setFontStyle('UntitledSerif');
+              });
+            },
+            leading: selectedFont == 'UntitledSerif'
+                ? Icon(Icons.check)
+                : Icon(null),
+            title: Text(
+              'Untitled Serif',
+              style: TextStyle(fontFamily: 'UntitledSerif', fontSize: 17),
+            ),
           ),
           ListTile(
-            title: Text('Gentuim Plus'),
+            onTap: () {
+              setState(() {
+                selectedFont = 'Garamond';
+                setFontStyle('Garamond');
+              });
+            },
+            leading:
+                selectedFont == 'Garamond' ? Icon(Icons.check) : Icon(null),
+            title: Text(
+              'Garamond',
+              style: TextStyle(fontFamily: 'Garamond', fontSize: 17),
+            ),
           ),
           ListTile(
-            title: Text('Roboto Serif'),
+            onTap: () {
+              setState(() {
+                selectedFont = 'RobotoSerif';
+                setFontStyle('RobotoSerif');
+              });
+            },
+            leading:
+                selectedFont == 'RobotoSerif' ? Icon(Icons.check) : Icon(null),
+            title: Text(
+              'Roboto Serif',
+              style: TextStyle(fontFamily: 'RobotoSerif', fontSize: 17),
+            ),
           ),
           ListTile(
-            title: Text('Robobto Sans'),
+            onTap: () {
+              setState(() {
+                selectedFont = 'RobotoRegular';
+                setFontStyle('RobotoRegular');
+              });
+            },
+            leading: selectedFont == 'RobotoRegular'
+                ? Icon(Icons.check)
+                : Icon(null),
+            title: Text(
+              'Roboto Sans',
+              style: TextStyle(fontFamily: 'RobotoRegular', fontSize: 17),
+            ),
           ),
           ListTile(
-            title: Text('Robobto Sans Mono'),
+            onTap: () {
+              setState(() {
+                selectedFont = 'RobotoMono';
+                setFontStyle('RobotoMono');
+              });
+            },
+            leading:
+                selectedFont == 'RobotoMono' ? Icon(Icons.check) : Icon(null),
+            title: Text(
+              'Roboto Sans Mono',
+              style: TextStyle(fontFamily: 'RobotoMono', fontSize: 17),
+            ),
           ),
         ]),
       ),

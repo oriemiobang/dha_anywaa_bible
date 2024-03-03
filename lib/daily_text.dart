@@ -285,7 +285,7 @@ class _DailyTextState extends State<DailyText>
                                                 SizedBox(
                                                   width: 10,
                                                 ),
-                                                Text('Maa wëëlö wïï')
+                                                Text('Maa tier wëëlö wïï')
                                               ]),
                                           SizedBox(
                                             height: 13,

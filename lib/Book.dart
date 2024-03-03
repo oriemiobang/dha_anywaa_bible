@@ -63,48 +63,65 @@ class Verse {
 
 // =====================english book ========================
 
-class EnglishBook {
-  List<EnglishChapter> text;
-
-  EnglishBook({required this.text});
-
-  factory EnglishBook.fromJson(Map<String, dynamic> json) {
-    var list = json['text'] as List;
-    List<EnglishChapter> chaptersList = list
-        .map<EnglishChapter>((chapters) => EnglishChapter.fromJson(chapters))
-        .toList();
-    return EnglishBook(text: chaptersList);
+class EnglishVerses {
+  String text;
+  String id;
+  EnglishVerses(this.text, this.id);
+  factory EnglishVerses.fromJson(Map<String, dynamic> json) {
+    return EnglishVerses(json['text'] ?? '', json['ID'] ?? '');
   }
 }
 
 class EnglishChapter {
+  List<EnglishVerses> verses;
   String id;
   String name;
-  List<EnglishVerse> text;
-  EnglishChapter({required this.id, required this.name, required this.text});
+
+  EnglishChapter({required this.verses, required this.id, required this.name});
 
   factory EnglishChapter.fromJson(Map<String, dynamic> json) {
-    var myVerse = json['text'] as List;
-    List<EnglishVerse> verseList =
-        myVerse.map((verses) => EnglishVerse.fromJson(verses)).toList();
+    var list = json['text'] as List;
+    List<EnglishVerses> chaptersList =
+        list.map((verses) => EnglishVerses.fromJson(verses)).toList();
     return EnglishChapter(
-      id: json["id"] as String,
-      name: json["name"] as String,
-      text: verseList,
-    );
+        name: json['name'] ?? '', id: json['ID'] ?? '', verses: chaptersList);
   }
 }
 
-class EnglishVerse {
+class EnglishBook {
+  List<EnglishChapter> chapters;
   String id;
-  String text;
+  String version;
+  String name;
 
-  EnglishVerse({required this.id, required this.text});
+  EnglishBook(
+      {required this.chapters,
+      required this.id,
+      required this.version,
+      required this.name});
 
-  factory EnglishVerse.fromJson(Map<String, dynamic> json) {
-    return EnglishVerse(
-      id: json["id"] as String,
-      text: json['text'] as String,
-    );
+  factory EnglishBook.fromJson(Map<String, dynamic> json) {
+    var list = json['text'] as List;
+    List<EnglishChapter> chaptersList =
+        list.map((chapters) => EnglishChapter.fromJson(chapters)).toList();
+    return EnglishBook(
+        name: json['name'] ?? '',
+        id: json['ID'] ?? '',
+        version: json['version'] ?? '',
+        chapters: chaptersList);
   }
 }
+
+// class EnglishBible {
+//   List<EnglishBook> books;
+//   EnglishBible({required this.books});
+//   factory EnglishBible.fromJson(List<dynamic> json) {
+//     var books = json.map((book) => EnglishBook.fromJson(book)).toList();
+//     return EnglishBible(books: books);
+//   }
+// }
+
+// class BibleEnglish {
+//   EnglishBible? englishBible;
+//   BibleEnglish({this.englishBible});
+// }
