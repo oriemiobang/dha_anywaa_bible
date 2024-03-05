@@ -6,6 +6,7 @@ import 'package:dha_anywaa_bible/chapter_list.dart';
 import 'package:dha_anywaa_bible/chapters.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:flutter/material.dart';
@@ -36,11 +37,13 @@ class _MyHomePageState extends State<HomePage> {
 
   ScrollController controller = ScrollController();
   bool isVisible = true;
+  SelectedFontStyle selectedFontStyle = SelectedFontStyle();
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    languageVerson();
     controller.addListener(listen);
   }
 
@@ -97,8 +100,14 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
-  static MyPageController myPageController = MyPageController();
-  PageController pageController = myPageController.controller;
+  String _currentVersion = '';
+
+  void languageVerson() async {
+    final currentVersion = await selectedFontStyle.getLanguageVersion();
+    setState(() {
+      _currentVersion = currentVersion.split(' ')[0];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -169,7 +178,17 @@ class _MyHomePageState extends State<HomePage> {
                 ),
               ),
               actions: [
-                TextButton(onPressed: () {}, child: Text('ANY')),
+                TextButton(
+                
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/chooseBible').then((_) {
+                      setState(() {
+                        languageVerson();
+                      });
+                    });
+                  },
+                  child: Text(_currentVersion),
+                ),
                 IconButton(
                   icon: Icon(
                     Icons.search,
@@ -265,44 +284,48 @@ class _MyHomePageState extends State<HomePage> {
                 child: _widgetOptions.elementAt(_selectedIndex)),
           ]),
       bottomNavigationBar: AnimatedContainer(
-        height: isVisible ? 105 : 60,
+        height: isVisible ? 50 : 0,
         duration: Duration(milliseconds: 200),
         child: Wrap(children: [
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 58, 56, 56)),
-              child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(
-                      onPressed: () {
-                        myPageController.handleController('previous');
-                      },
-                      icon: Icon(Icons.chevron_left_sharp),
-                    ),
-                    TextButton(
-                      onPressed: () {
-                        // showModalBottomSheet(
-                        //     context: context,
-                        //     builder: (BuildContext context) {
-                        //       return ChapterList();
-                        //     });
-                        Navigator.pushNamed(context, '/chapterList');
-                      },
-                      child: Text('Hello there'),
-                    ),
-                    IconButton(
-                      onPressed: () {
-                        myPageController.handleController('next');
-                      },
-                      icon: Icon(Icons.chevron_right),
-                    ),
-                  ]),
-            ),
-          ),
+          // Padding(
+          // padding: const EdgeInsets.all(10.0),
+          // child: Container(
+          // decoration: BoxDecoration(
+          // borderRadius: BorderRadius.circular(20),
+          // color: Color.fromARGB(255, 58, 56, 56)),
+          // child: Row(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //         children: [
+          //           IconButton(
+          //             onPressed: () {
+          //               myPageController.handleController('previous');
+          //             },
+          //             icon: Icon(Icons.chevron_left_sharp),
+          //           ),
+          //           TextButton(
+          //             onPressed: () {
+          //               // showModalBottomSheet(
+          //               //     context: context,
+          //               //     builder: (BuildContext context) {
+          //               //       return ChapterList();
+          //               //     });
+          //               Navigator.pushNamed(context, '/chapterList').then((_) {
+          //                 setState(() {
+          //                   // print('back');
+          //                 });
+          //               });
+          //             },
+          //             child: Text('Hello there'),
+          //           ),
+          //           IconButton(
+          //             onPressed: () {
+          //               myPageController.handleController('next');
+          //             },
+          //             icon: Icon(Icons.chevron_right),
+          //           ),
+          //         ]),
+          //   ),
+          // ),
           BottomNavigationBar(
             useLegacyColorScheme: true,
             elevation: 0,

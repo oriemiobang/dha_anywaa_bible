@@ -2,6 +2,8 @@
 
 // import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/chapter_list.dart';
+import 'package:dha_anywaa_bible/chapters.dart';
+import 'package:dha_anywaa_bible/choose_bible.dart';
 import 'package:dha_anywaa_bible/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
@@ -98,7 +100,9 @@ class _MyAppState extends State<MyApp> {
             '/setting': (context) => Setting(),
             '/chooseFont': (context) => ChooseFont(),
             '/pray': (context) => Pray(),
-            '/chapterList': (context) => ChapterList()
+            '/chapters': (context) => Chapters(),
+            '/chapterList': (context) => ChapterList(),
+            '/chooseBible': (context) => ChooseBible()
           },
 
           title: 'Weel jwok',

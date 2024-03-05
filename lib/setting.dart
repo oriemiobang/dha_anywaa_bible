@@ -68,11 +68,27 @@ class _SettingState extends State<Setting> {
     await fontSize.setFontSize(font);
   }
 
+  String versionAbbrev = '';
+  String versionName = '';
+
+  void getLanguageVersion() async {
+    String languageVersion = await selectedFontStyle.getLanguageVersion();
+    final version = languageVersion.split(' ');
+
+    setState(() {
+      versionAbbrev = version[0];
+      versionName = languageVersion.substring(versionAbbrev.length + 1);
+      print(versionAbbrev);
+      print(versionName);
+    });
+  }
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     getFont();
+    getLanguageVersion();
   }
 
   @override
@@ -109,17 +125,16 @@ class _SettingState extends State<Setting> {
                 ),
                 ListTile(
                   // leading: Icon(Icons.book),
-                  title: Text('Dha anywaa'),
+                  title: Text(versionAbbrev),
                   onTap: () {
                     setState(() {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ChooseBible()),
-                      );
+                      Navigator.pushNamed(context, '/chooseBible').then((_) {
+                        getLanguageVersion();
+                      });
                     });
                   },
                   subtitle: Text(
-                    'Weel jwok',
+                    versionName,
                     style: TextStyle(color: Colors.grey),
                   ),
                   trailing: Icon(Icons.arrow_forward_ios_rounded),
@@ -139,7 +154,8 @@ class _SettingState extends State<Setting> {
                       Navigator.pushNamed(context, '/chooseFont').then((_) {
                         setState(() {
                           getFont();
-                          // print('back');
+
+                          print('back');
                         });
                       });
                     });

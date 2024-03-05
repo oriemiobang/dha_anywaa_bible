@@ -1,10 +1,12 @@
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 // import 'package:dha_anywaa_bible/main.dart';
 import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:once/once.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:workmanager/workmanager.dart';
 
@@ -21,10 +23,20 @@ class _DailyTextState extends State<DailyText>
   late Animation _opacity;
 
   int myIndex = 3;
+  int counter = 0;
+  SelectedFontStyle selectedFontStyle = SelectedFontStyle();
+
   // CurvedAnimation? _curvedAnimation;
 
   @override
   void initState() {
+    Once.runOnce('key', callback: () {
+      selectedFontStyle.setBibleVersion('OT/GEN/KJV.json');
+      selectedFontStyle.setFontStyle('UntitledSerif');
+      selectedFontStyle.setPage(0);
+      selectedFontStyle.setLanguageVersion('KJV');
+    });
+    // styleReferesh();
     // _addItem();
     // _referesher();
     // print('db length ${_items.length}');

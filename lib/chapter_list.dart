@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_final_fields
 
 // import 'package:dha_anywaa_bible/components/numbers.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:flutter/material.dart';
 
 class Chapter {
@@ -20,28 +21,6 @@ class ChapterList extends StatefulWidget {
 }
 
 class _ChapterListState extends State<ChapterList> {
-  List<Chapter> _chapters = [
-    Chapter(title: 'Wïlöölö', number: 51, isExpanded: false),
-    Chapter(title: 'Bwøth Wøk', number: 41, isExpanded: false),
-    Chapter(title: 'Ciik kiper dilämmë', number: 28, isExpanded: false),
-    Chapter(title: 'Kwaan jey', number: 37, isExpanded: false),
-    Chapter(title: 'Tiet ciik', number: 35, isExpanded: false),
-    Chapter(title: 'Jøcua', number: 35, isExpanded: false),
-    Chapter(title: 'Pïëmme', number: 35, isExpanded: false),
-    Chapter(title: 'Ruuth', number: 35, isExpanded: false),
-    Chapter(title: '1 Camiel', number: 35, isExpanded: false),
-    Chapter(title: '2 Camiel', number: 35, isExpanded: false),
-    Chapter(title: '1 Nyeye', number: 35, isExpanded: false),
-    Chapter(title: '2 Nyeye', number: 35, isExpanded: false),
-    Chapter(title: '1 Luup Nyeye', number: 35, isExpanded: false),
-    Chapter(title: '2 Luup Nyeye', number: 35, isExpanded: false),
-    Chapter(title: 'Edhera', number: 35, isExpanded: false),
-    Chapter(title: 'Neemiya', number: 35, isExpanded: false),
-    Chapter(title: 'Acther', number: 35, isExpanded: false),
-    Chapter(title: 'Jööp', number: 35, isExpanded: false),
-    Chapter(title: 'Dut Pwøc', number: 35, isExpanded: false),
-  ];
-
   List<Map<String, String>> chapAbbrev = [
     {'title': 'Genesis', 'number': '50', 'abbrev': 'GEN'},
     {'title': 'Exodus', 'number': '40', 'abbrev': 'EXO'},
@@ -116,8 +95,52 @@ class _ChapterListState extends State<ChapterList> {
 
   // List<bool> _isExpanded = [false, false, false];
 
+  SelectedFontStyle style = SelectedFontStyle();
+  String bibleVersion = '';
+  int chapter = 0;
+  SelectedFontStyle selectedFontStyle = SelectedFontStyle()..init();
+
+  List<Map<String, String>> _foundBook = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    _foundBook = chapAbbrev;
+    getLanguageVersion();
+    super.initState();
+  }
+
+  String version = '';
+  void getLanguageVersion() async {
+    final languageVersion = await style.getLanguageVersion();
+    String currentVersion = languageVersion.split(' ')[0];
+
+    setState(() {
+      version = currentVersion;
+    });
+  }
+
+  void _runFilter(String enteredKeyword) {
+    List<Map<String, String>> result = [];
+    if (enteredKeyword.isEmpty) {
+      result = chapAbbrev;
+      print('no change');
+    } else {
+      print('change');
+      result = chapAbbrev
+          .where((book) => book['title']!
+              .toLowerCase()
+              .contains(enteredKeyword.toLowerCase()))
+          .toList();
+    }
+    setState(() {
+      _foundBook = result;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    Brightness currentTheme = Theme.of(context).brightness;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -175,7 +198,8 @@ class _ChapterListState extends State<ChapterList> {
                     child: Container(
                       height: 50,
                       width: double.infinity,
-                      child: TextFormField(
+                      child: TextField(
+                        onChanged: (value) => _runFilter(value),
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
                               borderSide: BorderSide.none,
@@ -217,44 +241,65 @@ class _ChapterListState extends State<ChapterList> {
           ),
         ),
         body: ListView.builder(
-            itemCount: chapAbbrev.length,
-            itemBuilder: (context, index) {
+            shrinkWrap: true,
+            // key: ValueKey(_foundBook[index]['title']),
+            itemCount: _foundBook.length,
+            itemBuilder: (context, listviewindex) {
               return ListTile(
-                title: Text('${chapAbbrev[index]['title']}'),
+                key: ValueKey(_foundBook[listviewindex]['title']),
+                title: Text('${_foundBook[listviewindex]['title']}'),
                 onTap: () {
                   showModalBottomSheet(
+                      // isScrollControlled: true,
                       context: context,
                       builder: (BuildContext context) {
-                        return ListView(
-                          children: [
-                            Text('${chapAbbrev[index]['title']}'),
-                            Divider(),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  top: 20, left: 10, right: 10, bottom: 40),
-                              child: GridView.count(
-                                shrinkWrap: true,
-                                crossAxisCount: 6,
-                                children: List.generate(
-                                    int.parse('${chapAbbrev[index]['number']}'),
-                                    (index) {
-                                  return Card(
-                                    // color: Color.fromARGB(136, 67, 65, 58),
-                                    child: Center(
-                                      child: TextButton(
-                                        child: Text('${index + 1}',
-                                            style: TextStyle(
-                                                fontSize: 16,
-                                                color: Color.fromARGB(
-                                                    255, 250, 219, 124))),
-                                        onPressed: () {},
-                                      ),
+                        return Scaffold(
+                          appBar: AppBar(
+                              // centerTitle: true,
+                              title: Text(
+                            '${_foundBook[listviewindex]['title']}',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )),
+                          body: Padding(
+                            padding: const EdgeInsets.only(
+                                top: 20, left: 10, right: 10, bottom: 40),
+                            child: GridView.count(
+                              physics: ScrollPhysics(
+                                  parent: AlwaysScrollableScrollPhysics()),
+                              shrinkWrap: true,
+                              crossAxisCount: 6,
+                              children: List.generate(
+                                  int.parse(
+                                      '${_foundBook[listviewindex]['number']}'),
+                                  (index) {
+                                return Card(
+                                  // color: Color.fromARGB(136, 67, 65, 58),
+                                  child: Center(
+                                    child: TextButton(
+                                      child: Text('${index + 1}',
+                                          style: TextStyle(
+                                              fontSize: 16,
+                                              color: Color.fromARGB(
+                                                  255, 250, 219, 124))),
+                                      onPressed: () async {
+                                        getLanguageVersion();
+                                        bibleVersion = listviewindex > 38
+                                            ? 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                            : 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json';
+                                        style.setBibleVersion(bibleVersion);
+                                        setState(() {
+                                          chapter = index;
+                                        });
+                                        selectedFontStyle.setPage(chapter);
+                                        Navigator.pop(context);
+                                        Navigator.pop(context, chapter);
+                                      },
                                     ),
-                                  );
-                                }),
-                              ),
+                                  ),
+                                );
+                              }),
                             ),
-                          ],
+                          ),
                         );
                       });
                 },

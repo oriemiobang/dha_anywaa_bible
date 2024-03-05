@@ -44,6 +44,7 @@ dependencies:
   share_plus: ^7.2.2
   workmanager: ^0.5.2
   sqflite: ^2.3.2
+  once: ^1.6.1
   # share_plus: ^7.2.2
   # share_plus: ^7.2.2
 
@@ -143,6 +144,7 @@ flutter:
     - assets/holybooks/NT/MAT/
     - assets/holybooks/NT/MRK/
     - assets/holybooks/NT/PHM/
+    - assets/holybooks/NT/PHP/
     - assets/holybooks/NT/REV/
     - assets/holybooks/NT/ROM/
     - assets/holybooks/NT/TIT/
