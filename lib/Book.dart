@@ -66,9 +66,11 @@ class Verse {
 class EnglishVerses {
   String text;
   String id;
-  EnglishVerses(this.text, this.id);
+  List? comment;
+  EnglishVerses(this.text, this.id, this.comment);
   factory EnglishVerses.fromJson(Map<String, dynamic> json) {
-    return EnglishVerses(json['text'] ?? '', json['ID'] ?? '');
+    return EnglishVerses(
+        json['text'] ?? '', json['ID'] ?? '', json['comments'] ?? []);
   }
 }
 
@@ -76,15 +78,21 @@ class EnglishChapter {
   List<EnglishVerses> verses;
   String id;
   String name;
+  String? title;
 
-  EnglishChapter({required this.verses, required this.id, required this.name});
+  EnglishChapter(
+      {required this.verses, required this.id, required this.name, this.title});
 
   factory EnglishChapter.fromJson(Map<String, dynamic> json) {
     var list = json['text'] as List;
     List<EnglishVerses> chaptersList =
         list.map((verses) => EnglishVerses.fromJson(verses)).toList();
     return EnglishChapter(
-        name: json['name'] ?? '', id: json['ID'] ?? '', verses: chaptersList);
+      name: json['name'] ?? '',
+      id: json['ID'] ?? '',
+      verses: chaptersList,
+      title: json['title'] ?? '',
+    );
   }
 }
 
@@ -94,11 +102,12 @@ class EnglishBook {
   String version;
   String name;
 
-  EnglishBook(
-      {required this.chapters,
-      required this.id,
-      required this.version,
-      required this.name});
+  EnglishBook({
+    required this.chapters,
+    required this.id,
+    required this.version,
+    required this.name,
+  });
 
   factory EnglishBook.fromJson(Map<String, dynamic> json) {
     var list = json['text'] as List;
@@ -111,6 +120,42 @@ class EnglishBook {
         chapters: chaptersList);
   }
 }
+
+// =================amharic bible ==================
+
+class AmharicVerses {
+  String chapter;
+  String title;
+  List verses;
+  AmharicVerses(this.chapter, this.title, this.verses);
+  factory AmharicVerses.fromJson(Map<String, dynamic> json) {
+    return AmharicVerses(
+        json['chapter'] ?? '', json['title'] ?? '', json['verses'] ?? []);
+  }
+}
+
+class AmharicChapters {
+  List<AmharicVerses> chapters;
+  String abbv;
+  String title;
+
+  AmharicChapters(
+      {required this.chapters, required this.abbv, required this.title});
+
+  factory AmharicChapters.fromJson(Map<String, dynamic> json) {
+    var list = json['chapters'] as List;
+    List<AmharicVerses> chaptersList =
+        list.map((verses) => AmharicVerses.fromJson(verses)).toList();
+    return AmharicChapters(
+      title: json['title'] ?? '',
+      abbv: json['abbv'] ?? '',
+      chapters: chaptersList,
+    );
+  }
+}
+
+
+
 
 // class EnglishBible {
 //   List<EnglishBook> books;

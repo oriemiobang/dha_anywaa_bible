@@ -1,12 +1,17 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 // import 'package:dha_anywaa_bible/main.dart';
+import 'dart:convert';
+
+import 'package:dha_anywaa_bible/Book.dart';
 import 'package:dha_anywaa_bible/account.dart';
 import 'package:dha_anywaa_bible/chapter_list.dart';
-import 'package:dha_anywaa_bible/chapters.dart';
+
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
+import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
+import 'package:dha_anywaa_bible/classes/highlights.dart';
 import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +20,8 @@ import 'dart:ui';
 // import 'package:share/share.dart';
 
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:share_plus/share_plus.dart';
 // import 'package:share_plus/share_plus.dart';
 
@@ -26,8 +33,153 @@ class HomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<HomePage> {
+  String myjsonString = 'assets/fonts/chapters/Any/Genesis.json';
+  String englishJsonString = 'assets/holybooks/$bibleVersion';
+  String amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+  Future<String> _loadData() async {
+    return await rootBundle.loadString(myjsonString);
+  }
+
+  Future<String> _engLoadData() async {
+    return await rootBundle.loadString(englishJsonString);
+  }
+
+  Future<String> _amhLoadData() async {
+    return await rootBundle.loadString(amharicJsonString);
+  }
+
+  Book? book;
+  EnglishBook? englishBook;
+  AmharicChapters? amharicBook;
+
+  Future loadData() async {
+    try {
+      String jsonString = await _loadData();
+      final jsonResponse = json.decode(jsonString);
+      setState(() {
+        book = Book.fromJson(jsonResponse);
+      });
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  Future engLoadData() async {
+    try {
+      String engJsonString = await _engLoadData();
+      final engJsonResponse = json.decode(engJsonString);
+      setState(() {
+        englishBook = EnglishBook.fromJson(engJsonResponse);
+        title = englishBook!.name;
+      });
+    } catch (e) {
+      print('english problem');
+      print(e);
+    }
+  }
+
+  Future amhLoadData() async {
+    try {
+      String amhJsonString = await _amhLoadData();
+      final amhJsonResponse = json.decode(amhJsonString);
+      setState(() {
+        amharicBook = AmharicChapters.fromJson(amhJsonResponse);
+        title = amharicBook!.title;
+        // print('${amharicBook.chapters[0].verses[1]}');
+      });
+    } catch (e) {
+      print('amharic problem');
+      print(e);
+    }
+  }
+
+  FontSize fontSize = FontSize();
+  SelectedFontStyle style = SelectedFontStyle()..init();
+  double _currentFontSize = 0;
+  String currentFont = '';
+  static String bibleVersion = '';
+  static String amhBibleVersion = '';
+  static int mypage = 0;
+  void getFontSize() async {
+    var fontsize = await fontSize.getFontSize();
+    var fontStyle = await style.getFontStyle();
+    print('my font size $fontsize');
+    print('my font fontStyle $fontStyle');
+    setState(() {
+      _currentFontSize = fontsize;
+      currentFont = fontStyle;
+    });
+
+    // style.setBibleVersion('NT/1CO/KJV.json');
+
+    // bibleVersion = style.bibleVersion;
+    // print('font in chapter: $currentFont');
+
+    // print('bible version in chapter: $bibleVersion');
+  }
+
+  String _language = '';
+
+  void getBibleVersion() async {
+    // print('no wahala here');
+    bibleVersion = await style.getBibleVersion();
+    final language = await style.getLanguageVersion();
+    // print(language);
+
+    if (language.split(' ')[0] == 'AMH') {
+      setState(() {
+        amhBibleVersion = bibleVersion;
+        // print(amhBibleVersion);
+        amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+        amhLoadData();
+      });
+    } else {
+      setState(() {
+        englishJsonString = 'assets/holybooks/$bibleVersion';
+        // print(bibleVersion);
+        // loadData();
+        engLoadData();
+      });
+    }
+    // print('bible version in chapter: $bibleVersion');
+    int currentPage = await style.getPage();
+    // print('object');
+    // String currentBook = style.bibleVersion;
+    // print('2');
+    setState(() {
+      getFontSize();
+      languageVerson();
+      _language = language.split(' ')[0];
+      // bibleVersion = currentBook;
+
+      mypage = currentPage;
+      // print('currentPage: $currentPage');
+      pageController = PageController(initialPage: mypage);
+
+      // print('currentPage: $currentPage');
+    });
+    // pageController.jumpToPage(page);
+
+    // print('bible version in chapter: $currentBook');
+  }
+  // void fetchdata(book) {}
+
+  @override
+  void initState() {
+    print('we are back');
+    getBibleVersion();
+    super.initState();
+
+    controller.addListener(listen);
+
+    print('we are back');
+  }
+
+  Color selectedColor = Colors.blue;
+  late PageController pageController;
+
+  //=====================================================
   int _selectedIndex = 0;
-  List<Widget> _widgetOptions = [DailyText(), Chapters(), Account()];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -38,14 +190,6 @@ class _MyHomePageState extends State<HomePage> {
   ScrollController controller = ScrollController();
   bool isVisible = true;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    languageVerson();
-    controller.addListener(listen);
-  }
 
   @override
   void dispose() {
@@ -73,28 +217,34 @@ class _MyHomePageState extends State<HomePage> {
   listen() {
     final direction = controller.position.userScrollDirection;
     if (direction == ScrollDirection.forward) {
-      show();
+      // print(controller.position.atEdge);
+      // show();
     } else if (direction == ScrollDirection.reverse) {
-      hide();
+      // print(controller.position.atEdge);
+      // hide();
     }
   }
 
   DailyVerse dailyText = DailyVerse();
   String currentText = "";
   String currentVerse = "";
+  String title = "";
+  bool atEnd = false;
+  bool atBeggining = false;
 
   Future<int> _getItem() async {
     final item = await SQLHelper.getItem(1);
-    print('inner index: $item');
+    // print('inner index: $item');
     return item[0]['counter'];
   }
 
   void info() async {
     try {
       int myIndex = await _getItem();
-      print('my index: $myIndex');
+      // print('my index: $myIndex');
       currentText = dailyText.dailyVerseList[myIndex]['text']!;
       currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
+      // setState(() {});
     } catch (e) {
       print('error: $e');
     }
@@ -106,12 +256,15 @@ class _MyHomePageState extends State<HomePage> {
     final currentVersion = await selectedFontStyle.getLanguageVersion();
     setState(() {
       _currentVersion = currentVersion.split(' ')[0];
+      ;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    info();
+    // info();
+
+    // getBibleVersion();
     Brightness currentTheme = Theme.of(context).brightness;
     PreferredSizeWidget buildAppBar() {
       switch (_selectedIndex) {
@@ -153,41 +306,53 @@ class _MyHomePageState extends State<HomePage> {
         case 1:
           return AppBar(
               forceMaterialTransparency: true,
-              title: SizedBox(
-                width: 150,
-                child: TextButton(
-                  onPressed: () {
-                    setState(() {
-                      Navigator.pushNamed(context, '/chapterList');
-                    });
-                  },
-                  child: Center(
-                    child: Container(
-                      width: 150,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(0, 75, 75, 75),
-                          borderRadius: BorderRadius.circular(15)),
-                      child: Text(
-                        'Wïlöölö',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 17),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              // title: SizedBox(
+              //   width: 150,
+              //   child: TextButton(
+              //     onPressed: () {
+              //       setState(() {
+              //         Navigator.pushNamed(context, '/chapterList').then((_) {});
+              //       });
+              //     },
+              //     child: Center(
+              //       child: Container(
+              //         width: 150,
+              //         height: 40,
+              //         decoration: BoxDecoration(
+              //             color: Color.fromARGB(0, 75, 75, 75),
+              //             borderRadius: BorderRadius.circular(15)),
+              //         child: Text(
+              //           'Wïlöölö',
+              //           style: TextStyle(
+              //               fontWeight: FontWeight.bold, fontSize: 17),
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
               actions: [
                 TextButton(
-                
                   onPressed: () {
                     Navigator.pushNamed(context, '/chooseBible').then((_) {
                       setState(() {
                         languageVerson();
+                        setState(() {
+                          getBibleVersion();
+                        });
+                        // _selectedIndex = 0;
+                        // _selectedIndex = 1;
+                        // chaptersState.initState();
+                        // chaptersState.getBibleVersion();
                       });
                     });
                   },
-                  child: Text(_currentVersion),
+                  child: Text(
+                    _currentVersion,
+                    style: TextStyle(
+                        color: currentTheme == Brightness.dark
+                            ? Colors.white
+                            : Colors.black),
+                  ),
                 ),
                 IconButton(
                   icon: Icon(
@@ -211,6 +376,10 @@ class _MyHomePageState extends State<HomePage> {
           );
       }
     }
+
+    // if (englishBook == null || amharicBook == null) {
+    //   setState(() {});
+    // }
 
     return Scaffold(
       // backgroundColor: Theme.of(context).colorScheme.background,
@@ -273,59 +442,399 @@ class _MyHomePageState extends State<HomePage> {
             )
           : null,
 
+      body: _selectedIndex == 1
+          ? _language == 'AMH'
+              ? amharicBook == null
+                  ? Center(
+                      child: SpinKitWaveSpinner(
+                        color: const Color.fromARGB(255, 13, 33, 65),
+                        size: 50.0,
+                      ),
+                    )
+                  : PageView.builder(
+                      key: UniqueKey(),
+                      controller: pageController,
+                      onPageChanged: (index) {
+                        style.setPage(index);
+                        setState(() {
+                          getBibleVersion();
+                          if (amharicBook!.chapters.length - 1 == index) {
+                            atEnd = true;
+                            print('end');
+                          } else if (index == 0) {
+                            print('beginning');
+                            atBeggining = true;
+                          } else {
+                            atEnd = false;
+                            atBeggining = false;
+                          }
+                          // title = amharicBook!.title;
+                        });
+                      },
+                      itemCount: amharicBook!.chapters.length,
+                      itemBuilder: (BuildContext context, int pageIndex) {
+                        var amhbook = amharicBook!.chapters[pageIndex];
+                        return Padding(
+                          padding: const EdgeInsets.only(
+                              top: 8, left: 10, bottom: 0, right: 9),
+                          child: ListView.builder(
+                              key: UniqueKey(),
+                              controller: controller,
+                              itemCount: amharicBook!
+                                  .chapters[pageIndex].verses.length,
+                              itemBuilder:
+                                  (BuildContext context, int listIndex) {
+                                var amhchapters = amharicBook!
+                                    .chapters[pageIndex].verses[listIndex];
+                                return Container(
+                                  // padding: EdgeInsets.all(10),
+                                  child: Column(
+                                    children: [
+                                      listIndex == 0
+                                          ? Text(
+                                              amharicBook!.title,
+                                              style: const TextStyle(
+                                                  fontSize: 22,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.grey),
+                                            )
+                                          : Visibility(
+                                              visible: false, child: Text('')),
+                                      listIndex == 0
+                                          ? Text(
+                                              amhbook.chapter,
+                                              style: const TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 72),
+                                            )
+                                          : Visibility(
+                                              visible: false,
+                                              child: Text('data')),
+                                      Padding(
+                                        padding: amhbook.verses.length - 1 ==
+                                                listIndex
+                                            ? const EdgeInsets.only(bottom: 80)
+                                            : EdgeInsets.zero,
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            Highlight.createItem(amhchapters,
+                                                '${amharicBook!.title} ${amhbook.chapter}: ${listIndex + 1}');
+                                          },
+                                          child: RichText(
+                                              text: TextSpan(
+                                                  style: DefaultTextStyle.of(
+                                                          context)
+                                                      .style,
+                                                  children: [
+                                                TextSpan(
+                                                    text: '${listIndex + 1}  ',
+                                                    style: TextStyle(
+                                                        fontFamily: currentFont,
+                                                        fontSize:
+                                                            _currentFontSize,
+                                                        color: Colors.grey)),
+                                                TextSpan(
+                                                    text: amhchapters,
+                                                    style: TextStyle(
+                                                        fontFamily: currentFont,
+                                                        fontSize:
+                                                            _currentFontSize))
+                                              ])),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 7,
+                                      )
+                                    ],
+                                  ),
+                                );
+                              }),
+                        );
+                      })
+              : englishBook == null
+                  ? Center(
+                      child: SpinKitWaveSpinner(
+                        color: const Color.fromARGB(255, 13, 33, 65),
+                        size: 50.0,
+                      ),
+                    )
+                  : PageView.builder(
+                      key: UniqueKey(),
+                      // physics: NeverScrollableScrollPhysics(),
+                      onPageChanged: (index) {
+                        style.setPage(index);
+                        setState(() {
+                          getBibleVersion();
+
+                          if (englishBook!.chapters.length - 1 == index) {
+                            atEnd = true;
+                            print('end');
+                          } else if (index == 0) {
+                            print('beginning');
+                            atBeggining = true;
+                          } else {
+                            atEnd = false;
+                            atBeggining = false;
+                          }
+                        });
+                      },
+                      scrollBehavior: const ScrollBehavior(),
+                      // scrollBehavior: const ScrollBehavior(),
+                      itemCount: englishBook!.chapters.length,
+                      controller: pageController,
+                      itemBuilder: (BuildContext context, int index) {
+                        var book = englishBook!.chapters[index];
+                        return Padding(
+                          padding: const EdgeInsets.all(10),
+                          child: ListView.builder(
+                              key: UniqueKey(),
+                              itemCount: book.verses.length,
+                              shrinkWrap: true,
+                              // controller: controller,
+                              itemBuilder:
+                                  (BuildContext context, int listindex) {
+                                var chapter = book.verses[listindex];
+                                var chapterNumber = book.name.split(
+                                    ' ')[book.name.split(' ').length - 1];
+                                String first = book.name.split(' ').length > 2
+                                    ? book.name.split(' ')[0]
+                                    : '';
+                                print(book.name.split(' '));
+                                var chapterName =
+                                    '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
+                                return Container(
+                                  // color: listindex == 4 ? Colors.green : Colors.transparent,
+                                  child: Column(
+                                    children: [
+                                      listindex == 0
+                                          ? Text(
+                                              chapterName,
+                                              style: const TextStyle(
+                                                  fontSize: 22,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.grey),
+                                            )
+                                          : SizedBox(),
+                                      listindex == 0
+                                          ? Text(
+                                              chapterNumber,
+                                              style: const TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 72),
+                                            )
+                                          : const Visibility(
+                                              visible: false, child: Text('')),
+                                      listindex == 0
+                                          ? SizedBox(
+                                              height: 20,
+                                            )
+                                          : const Visibility(
+                                              visible: false, child: Text('')),
+                                      (book.title!.isNotEmpty && listindex == 0)
+                                          ? Text(
+                                              '${book.title}\n',
+                                              style: TextStyle(
+                                                fontStyle: FontStyle.italic,
+                                                fontSize: 17,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
+                                          : Visibility(
+                                              visible: false,
+                                              child: Text(''),
+                                            ),
+                                      Row(
+                                        // mainAxisAlignment: MainAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          chapter.text != ''
+                                              ? Text(
+                                                  chapter.id,
+                                                  style: TextStyle(
+                                                      color: Colors.grey),
+                                                )
+                                              : const Visibility(
+                                                  visible: false,
+                                                  child: Text('')),
+                                          const SizedBox(
+                                            width: 10,
+                                          ),
+                                          chapter.text != ''
+                                              ? Expanded(
+                                                  child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    GestureDetector(
+                                                      onTap: () {
+                                                        Highlight.createItem(
+                                                            chapter.text,
+                                                            '${chapterName} ${chapterNumber}: ${chapter.id}');
+                                                      },
+                                                      child: RichText(
+                                                          text: TextSpan(
+                                                              style: DefaultTextStyle
+                                                                      .of(context)
+                                                                  .style,
+                                                              children: [
+                                                            // TextSpan(
+                                                            //     text: '${chapter.id} ',
+                                                            //     style: TextStyle(
+                                                            //         fontFamily: currentFont,
+                                                            //         fontSize:
+                                                            //             _currentFontSize,
+                                                            //         color: Colors.grey)),
+                                                            TextSpan(
+                                                                text: chapter
+                                                                    .text,
+                                                                style: TextStyle(
+                                                                    fontFamily:
+                                                                        currentFont,
+                                                                    fontSize:
+                                                                        _currentFontSize))
+                                                          ])),
+                                                    ),
+                                                    chapter.comment!.isNotEmpty
+                                                        ? Text(
+                                                            '${chapter.comment![0]}',
+                                                            style: TextStyle(
+                                                                color:
+                                                                    Colors.grey,
+                                                                fontStyle:
+                                                                    FontStyle
+                                                                        .italic),
+                                                          )
+                                                        : Visibility(
+                                                            child: Text(''),
+                                                            visible: false,
+                                                          )
+                                                  ],
+                                                ))
+                                              : Visibility(
+                                                  child: Text(''),
+                                                  visible: false,
+                                                )
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 4.5,
+                                      ),
+                                      listindex == (book.verses.length - 1)
+                                          ? Padding(
+                                              padding:
+                                                  EdgeInsets.only(bottom: 50),
+                                              //         child: TextButton(
+                                              //           onPressed: () async {
+                                              //             int refresh =
+                                              //                 await Navigator.push(
+                                              //                     context,
+                                              //                     MaterialPageRoute(
+                                              //                         builder: (context) =>
+                                              //                             ChapterList()));
+
+                                              //             if (refresh == refresh) {
+                                              //               setState(() {
+                                              //                 mypage = refresh;
+                                              //                 getBibleVersion();
+                                              //                 pageController
+                                              //                     .jumpToPage(refresh);
+                                              //               });
+                                              //             }
+                                              //           },
+                                              //           child: const Text('data'),
+                                              //         ),
+                                            )
+                                          : Visibility(
+                                              visible: false, child: Text(''))
+                                    ],
+                                  ),
+                                );
+                              }),
+                        );
+                      })
+          : (_selectedIndex == 0 ? DailyText() : Account()),
+
       // backgroundColor: const Color.fromARGB(255, 9, 13, 57),
       appBar: buildAppBar(),
-      body: ListView(
-          controller: controller,
-          // constrain
-          children: [
-            Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: _widgetOptions.elementAt(_selectedIndex)),
-          ]),
+
       bottomNavigationBar: AnimatedContainer(
-        height: isVisible ? 50 : 0,
-        duration: Duration(milliseconds: 200),
+        height: isVisible
+            ? _selectedIndex == 1
+                ? 120
+                : 50
+            : 50,
+        duration: Duration(milliseconds: 0),
         child: Wrap(children: [
-          // Padding(
-          // padding: const EdgeInsets.all(10.0),
-          // child: Container(
-          // decoration: BoxDecoration(
-          // borderRadius: BorderRadius.circular(20),
-          // color: Color.fromARGB(255, 58, 56, 56)),
-          // child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          //         children: [
-          //           IconButton(
-          //             onPressed: () {
-          //               myPageController.handleController('previous');
-          //             },
-          //             icon: Icon(Icons.chevron_left_sharp),
-          //           ),
-          //           TextButton(
-          //             onPressed: () {
-          //               // showModalBottomSheet(
-          //               //     context: context,
-          //               //     builder: (BuildContext context) {
-          //               //       return ChapterList();
-          //               //     });
-          //               Navigator.pushNamed(context, '/chapterList').then((_) {
-          //                 setState(() {
-          //                   // print('back');
-          //                 });
-          //               });
-          //             },
-          //             child: Text('Hello there'),
-          //           ),
-          //           IconButton(
-          //             onPressed: () {
-          //               myPageController.handleController('next');
-          //             },
-          //             icon: Icon(Icons.chevron_right),
-          //           ),
-          //         ]),
-          //   ),
-          // ),
+          _selectedIndex == 1
+              ? Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: !isVisible
+                            ? Colors.transparent
+                            : Color.fromARGB(125, 71, 68, 68)),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          isVisible
+                              ? !atBeggining
+                                  ? IconButton(
+                                      onPressed: () {
+                                        pageController.previousPage(
+                                            duration: Duration(microseconds: 1),
+                                            curve: Curves.linear);
+                                      },
+                                      icon: Icon(
+                                        Icons.chevron_left_sharp,
+                                        size: 40,
+                                      ),
+                                    )
+                                  : Visibility(visible: false, child: Text(''))
+                              : Visibility(visible: false, child: Text('')),
+                          TextButton(
+                            onPressed: () async {
+                              int refresh = await Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ChapterList()));
+
+                              if (refresh == refresh) {
+                                setState(() {
+                                  mypage = refresh;
+                                  getBibleVersion();
+                                  pageController.jumpToPage(refresh);
+                                });
+                              }
+                            },
+                            child: Text(title,
+                                style: TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                    color: currentTheme == Brightness.dark
+                                        ? Colors.white
+                                        : Colors.black)),
+                          ),
+                          isVisible
+                              ? (!atEnd)
+                                  ? IconButton(
+                                      onPressed: () {
+                                        pageController.nextPage(
+                                            duration: Duration(microseconds: 1),
+                                            curve: Curves.linear);
+                                      },
+                                      icon: Icon(
+                                        Icons.chevron_right,
+                                        size: 40,
+                                      ),
+                                    )
+                                  : Visibility(visible: false, child: Text(''))
+                              : Visibility(visible: false, child: Text('')),
+                        ]),
+                  ),
+                )
+              : Visibility(visible: false, child: Text('')),
           BottomNavigationBar(
             useLegacyColorScheme: true,
             elevation: 0,

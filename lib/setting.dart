@@ -103,9 +103,9 @@ class _SettingState extends State<Setting> {
             builder: (context, UiProvider notifier, child) {
           return Padding(
             padding: const EdgeInsets.all(5.0),
-            child: Column(
+            child: ListView(
               // mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ListTile(
                   leading: Icon(
