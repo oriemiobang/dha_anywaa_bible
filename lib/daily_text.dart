@@ -1,12 +1,13 @@
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
+import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 // import 'package:dha_anywaa_bible/main.dart';
 import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:once/once.dart';
+// import 'package:once/once.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:workmanager/workmanager.dart';
 
@@ -25,22 +26,12 @@ class _DailyTextState extends State<DailyText>
   int myIndex = 3;
   int counter = 0;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
+  FontSize fontSize = FontSize();
 
   // CurvedAnimation? _curvedAnimation;
 
   @override
   void initState() {
-    Once.runOnce('key', callback: () {
-      selectedFontStyle.setBibleVersion('OT/GEN/KJV.json');
-      selectedFontStyle.setFontStyle('UntitledSerif');
-      selectedFontStyle.setPage(15);
-      selectedFontStyle.setLanguageVersion('KJV');
-    });
-    // styleReferesh();
-    // _addItem();
-    // _referesher();
-    // print('db length ${_items.length}');
-    // myManager();
     super.initState();
     _getItem();
     _controller =
@@ -176,167 +167,73 @@ class _DailyTextState extends State<DailyText>
                     ],
                   ),
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Center(
-                    child: AnimatedBuilder(
-                      animation: _opacity,
-                      builder: (BuildContext context, child) {
-                        return Opacity(
-                          opacity: _opacity.value,
-                          child: _opacity.value < 0.6
-                              ? Container()
-                              : Row(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  //  ø     ö     ï    ë  ä
+                Center(
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Center(
+                      child: AnimatedBuilder(
+                        animation: _opacity,
+                        builder: (BuildContext context, child) {
+                          return Opacity(
+                            opacity: _opacity.value,
+                            child: _opacity.value < 0.6
+                                ? Container()
+                                : Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    //  ø     ö     ï    ë  ä
 
-                                  children: [
-                                    Card(
-                                      elevation: 3,
-                                      child: Container(
-                                        width: 270,
-                                        height: 130,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(10)),
-                                          color: currentTheme == Brightness.dark
-                                              ? Color.fromARGB(255, 1, 10, 34)
-                                              : Colors.white,
-                                        ),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            const Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                // MainAxisAlignment.spaceAround,
-                                                children: [
-                                                  Icon(
-                                                    Icons.waving_hand,
-                                                    color: Colors.amber,
-                                                  ),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Text(
-                                                    'Lam mar Dïcängï',
-                                                    style:
-                                                        TextStyle(fontSize: 18),
-                                                  )
-                                                ]),
-                                            SizedBox(
-                                              height: 15,
-                                            ),
-                                            Container(
-                                              width: 120,
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(40)),
-                                                border: Border.all(
-                                                  width: 1,
-                                                  color: currentTheme ==
-                                                          Brightness.light
-                                                      ? const Color.fromARGB(
-                                                          255, 1, 11, 36)
-                                                      : Color.fromARGB(
-                                                          255, 243, 179, 83),
-                                                ),
-                                              ),
-                                              child: TextButton(
-                                                  onPressed: () {
-                                                    setState(() {
-                                                      Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                            builder:
-                                                                (context) =>
-                                                                    Pray()),
-                                                      );
-                                                    });
-                                                  },
-                                                  child: Text(
-                                                    'Lämï',
-                                                    style: TextStyle(
-                                                      color: currentTheme ==
-                                                              Brightness.light
-                                                          ? const Color
-                                                              .fromARGB(
-                                                              255, 1, 11, 36)
-                                                          : Color.fromARGB(255,
-                                                              243, 179, 83),
+                                    children: [
+                                      Card(
+                                        elevation: 3,
+                                        child: Container(
+                                          width: 270,
+                                          height: 130,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(10)),
+                                            color: currentTheme ==
+                                                    Brightness.dark
+                                                ? Color.fromARGB(255, 1, 10, 34)
+                                                : Colors.white,
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              const Row(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  // MainAxisAlignment.spaceAround,
+                                                  children: [
+                                                    Icon(
+                                                      Icons.waving_hand,
+                                                      color: Colors.amber,
                                                     ),
-                                                  )),
-                                            )
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Card(
-                                      elevation: 3,
-                                      child: Container(
-                                        width: 270,
-                                        height: 130,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(10)),
-                                          color: currentTheme == Brightness.dark
-                                              ? Color.fromARGB(255, 1, 10, 34)
-                                              : Colors.white,
-                                        ),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                children: [
-                                                  Icon(
-                                                    Icons.menu_book_rounded,
-                                                    color: Colors.amber,
-                                                  ),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Text(
-                                                    'Maa tier wëëlö wïï',
-                                                    style:
-                                                        TextStyle(fontSize: 18),
-                                                  )
-                                                ]),
-                                            SizedBox(
-                                              height: 13,
-                                            ),
-                                            Container(
-                                              width: 120,
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(40)),
-                                                border: Border.all(
-                                                  width: 1,
-                                                  color: currentTheme ==
-                                                          Brightness.light
-                                                      ? const Color.fromARGB(
-                                                          255, 1, 11, 36)
-                                                      : Color.fromARGB(
-                                                          255, 243, 179, 83),
-                                                ),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Text(
+                                                      'Lam mar Dïcängï',
+                                                      style: TextStyle(
+                                                          fontSize: 18),
+                                                    )
+                                                  ]),
+                                              SizedBox(
+                                                height: 15,
                                               ),
-                                              child: TextButton(
-                                                onPressed: () {},
-                                                child: Text(
-                                                  'Tägï',
-                                                  style: TextStyle(
+                                              Container(
+                                                width: 120,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(40)),
+                                                  border: Border.all(
+                                                    width: 1,
                                                     color: currentTheme ==
                                                             Brightness.light
                                                         ? const Color.fromARGB(
@@ -345,73 +242,100 @@ class _DailyTextState extends State<DailyText>
                                                             255, 243, 179, 83),
                                                   ),
                                                 ),
-                                              ),
-                                            )
-                                          ],
+                                                child: TextButton(
+                                                    onPressed: () {
+                                                      setState(() {
+                                                        Navigator.push(
+                                                          context,
+                                                          MaterialPageRoute(
+                                                              builder:
+                                                                  (context) =>
+                                                                      Pray()),
+                                                        );
+                                                      });
+                                                    },
+                                                    child: Text(
+                                                      'Lämï',
+                                                      style: TextStyle(
+                                                        color: currentTheme ==
+                                                                Brightness.light
+                                                            ? const Color
+                                                                .fromARGB(
+                                                                255, 1, 11, 36)
+                                                            : Color.fromARGB(
+                                                                255,
+                                                                243,
+                                                                179,
+                                                                83),
+                                                      ),
+                                                    )),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Card(
-                                      elevation: 3,
-                                      child: Container(
-                                        width: 270,
-                                        height: 130,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(10)),
-                                          color: currentTheme == Brightness.dark
-                                              ? Color.fromARGB(255, 1, 10, 34)
-                                              : Colors.white,
-                                        ),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            const Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Icon(Icons.share,
-                                                      color: Colors.amber),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Text(
-                                                    'Kwaac dwør jwøk',
-                                                    style:
-                                                        TextStyle(fontSize: 18),
-                                                  )
-                                                ]),
-                                            SizedBox(
-                                              height: 13,
-                                            ),
-                                            Container(
-                                              width: 120,
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.all(
-                                                    Radius.circular(40)),
-                                                border: Border.all(
-                                                  width: 1,
-                                                  color: currentTheme ==
-                                                          Brightness.light
-                                                      ? const Color.fromARGB(
-                                                          255, 1, 11, 36)
-                                                      : Color.fromARGB(
-                                                          255, 243, 179, 83),
-                                                ),
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Card(
+                                        elevation: 3,
+                                        child: Container(
+                                          width: 270,
+                                          height: 130,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(10)),
+                                            color: currentTheme ==
+                                                    Brightness.dark
+                                                ? Color.fromARGB(255, 1, 10, 34)
+                                                : Colors.white,
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              Row(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  children: [
+                                                    Icon(
+                                                      Icons.menu_book_rounded,
+                                                      color: Colors.amber,
+                                                    ),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Text(
+                                                      'Maa tier wëëlö wïï',
+                                                      style: TextStyle(
+                                                          fontSize: 18),
+                                                    )
+                                                  ]),
+                                              SizedBox(
+                                                height: 13,
                                               ),
-                                              child: TextButton(
-                                                  onPressed: () {
-                                                    Share.share(
-                                                        '$currentVerse \n $currentText');
-                                                  },
+                                              Container(
+                                                width: 120,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(40)),
+                                                  border: Border.all(
+                                                    width: 1,
+                                                    color: currentTheme ==
+                                                            Brightness.light
+                                                        ? const Color.fromARGB(
+                                                            255, 1, 11, 36)
+                                                        : Color.fromARGB(
+                                                            255, 243, 179, 83),
+                                                  ),
+                                                ),
+                                                child: TextButton(
+                                                  onPressed: () {},
                                                   child: Text(
-                                                    'Kwaayi',
+                                                    'Tägï',
                                                     style: TextStyle(
                                                       color: currentTheme ==
                                                               Brightness.light
@@ -421,16 +345,99 @@ class _DailyTextState extends State<DailyText>
                                                           : Color.fromARGB(255,
                                                               243, 179, 83),
                                                     ),
-                                                  )),
-                                            )
-                                          ],
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                        );
-                      },
+                                      SizedBox(
+                                        width: 20,
+                                      ),
+                                      Card(
+                                        elevation: 3,
+                                        child: Container(
+                                          width: 270,
+                                          height: 130,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.all(
+                                                Radius.circular(10)),
+                                            color: currentTheme ==
+                                                    Brightness.dark
+                                                ? Color.fromARGB(255, 1, 10, 34)
+                                                : Colors.white,
+                                          ),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            children: [
+                                              const Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  children: [
+                                                    Icon(Icons.share,
+                                                        color: Colors.amber),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Text(
+                                                      'Kwaac dwør jwøk',
+                                                      style: TextStyle(
+                                                          fontSize: 18),
+                                                    )
+                                                  ]),
+                                              SizedBox(
+                                                height: 13,
+                                              ),
+                                              Container(
+                                                width: 120,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(40)),
+                                                  border: Border.all(
+                                                    width: 1,
+                                                    color: currentTheme ==
+                                                            Brightness.light
+                                                        ? const Color.fromARGB(
+                                                            255, 1, 11, 36)
+                                                        : Color.fromARGB(
+                                                            255, 243, 179, 83),
+                                                  ),
+                                                ),
+                                                child: TextButton(
+                                                    onPressed: () {
+                                                      Share.share(
+                                                          '$currentVerse \n $currentText');
+                                                    },
+                                                    child: Text(
+                                                      'Kwaayi',
+                                                      style: TextStyle(
+                                                        color: currentTheme ==
+                                                                Brightness.light
+                                                            ? const Color
+                                                                .fromARGB(
+                                                                255, 1, 11, 36)
+                                                            : Color.fromARGB(
+                                                                255,
+                                                                243,
+                                                                179,
+                                                                83),
+                                                      ),
+                                                    )),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                          );
+                        },
+                      ),
                     ),
                   ),
                 )

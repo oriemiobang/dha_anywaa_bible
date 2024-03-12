@@ -2,7 +2,7 @@
 
 // import 'dart:ffi';
 
-import 'package:dha_anywaa_bible/choose_bible.dart';
+// import 'package:dha_anywaa_bible/choose_bible.dart';
 // import 'package:dha_anywaa_bible/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';

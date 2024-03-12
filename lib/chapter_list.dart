@@ -536,7 +536,7 @@ class _ChapterListState extends State<ChapterList> {
 
   @override
   Widget build(BuildContext context) {
-    Brightness currentTheme = Theme.of(context).brightness;
+    // Brightness currentTheme = Theme.of(context).brightness;
     return Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -649,6 +649,7 @@ class _ChapterListState extends State<ChapterList> {
                     : Text('${_foundBook[listviewindex]['title']}'),
                 onTap: () {
                   showModalBottomSheet(
+                      // showDragHandle: true,
                       // isScrollControlled: true,
                       context: context,
                       builder: (BuildContext context) {

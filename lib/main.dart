@@ -7,11 +7,14 @@ import 'package:dha_anywaa_bible/choose_bible.dart';
 import 'package:dha_anywaa_bible/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
-import 'package:dha_anywaa_bible/daily_text.dart';
+import 'package:dha_anywaa_bible/classes/font_size.dart';
+import 'package:dha_anywaa_bible/classes/font_style.dart';
+// import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:once/once.dart';
 // import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanager/workmanager.dart';
@@ -69,6 +72,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  FontSize fontSize = FontSize();
+  SelectedFontStyle style = SelectedFontStyle()..init();
   @override
   void initState() {
     // TODO: implement initState
@@ -76,14 +81,15 @@ class _MyAppState extends State<MyApp> {
     Workmanager().registerPeriodicTask('uniqueName', 'taskName',
         frequency: Duration(minutes: 15),
         constraints: Constraints(networkType: NetworkType.not_required));
+    Once.runOnce('key', callback: () {
+      style.setBibleVersion('OT/GEN/ERV.json');
+      style.setFontStyle('UntitledSerif');
+      style.setPage(0);
+      fontSize.setFontSize(16);
+      style.setLanguageVersion('ERV');
+    });
     // myManager();
   }
-
-  // void myManager() async {
-  //   await Workmanager().registerPeriodicTask(
-  //       '${DateTime.now().hour}', 'taskname',
-  //       constraints: Constraints(networkType: NetworkType.not_required));
-  // }
 
   // This widget is the root of your application.
   @override

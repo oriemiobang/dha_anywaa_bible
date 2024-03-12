@@ -124,12 +124,13 @@ class _MyHomePageState extends State<HomePage> {
     // print('no wahala here');
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
+    int currentPage = await style.getPage();
     // print(language);
 
     if (language.split(' ')[0] == 'AMH') {
       setState(() {
         amhBibleVersion = bibleVersion;
-        // print(amhBibleVersion);
+        print(amhBibleVersion);
         amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
         amhLoadData();
       });
@@ -142,7 +143,7 @@ class _MyHomePageState extends State<HomePage> {
       });
     }
     // print('bible version in chapter: $bibleVersion');
-    int currentPage = await style.getPage();
+
     // print('object');
     // String currentBook = style.bibleVersion;
     // print('2');
@@ -166,13 +167,11 @@ class _MyHomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    print('we are back');
-    getBibleVersion();
     super.initState();
-
     controller.addListener(listen);
-
     print('we are back');
+    info();
+    getBibleVersion();
   }
 
   Color selectedColor = Colors.blue;
@@ -184,6 +183,8 @@ class _MyHomePageState extends State<HomePage> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      info();
+      getBibleVersion();
     });
   }
 
@@ -262,9 +263,6 @@ class _MyHomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // info();
-
-    // getBibleVersion();
     Brightness currentTheme = Theme.of(context).brightness;
     PreferredSizeWidget buildAppBar() {
       switch (_selectedIndex) {
@@ -273,24 +271,29 @@ class _MyHomePageState extends State<HomePage> {
             backgroundColor: Colors.transparent,
             actions: [
               Container(
+                height: 37,
+                width: 37,
                 decoration: BoxDecoration(
-                    color: currentTheme == Brightness.light
-                        ? Color.fromARGB(255, 231, 235, 254)
-                        : Color.fromARGB(162, 95, 90, 74),
-                    borderRadius: BorderRadius.circular(50)),
-                child: IconButton(
-                  onPressed: () async {
-                    try {
-                      await Share.share('$currentVerse \n $currentText');
-                    } catch (e) {
-                      print('yeah an error: $e');
-                    }
-                  },
-                  icon: Icon(
-                    Icons.share,
-                    color: currentTheme == Brightness.light
-                        ? Color.fromARGB(255, 1, 17, 57)
-                        : Colors.amber,
+                  color: currentTheme == Brightness.light
+                      ? Color.fromARGB(255, 231, 235, 254)
+                      : Color.fromARGB(162, 95, 90, 74),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+                child: Center(
+                  child: IconButton(
+                    onPressed: () async {
+                      try {
+                        await Share.share('$currentVerse \n $currentText');
+                      } catch (e) {
+                        print('yeah an error: $e');
+                      }
+                    },
+                    icon: Icon(
+                      Icons.share,
+                      color: currentTheme == Brightness.light
+                          ? Color.fromARGB(255, 1, 17, 57)
+                          : Colors.amber,
+                    ),
                   ),
                 ),
               )
@@ -339,10 +342,6 @@ class _MyHomePageState extends State<HomePage> {
                         setState(() {
                           getBibleVersion();
                         });
-                        // _selectedIndex = 0;
-                        // _selectedIndex = 1;
-                        // chaptersState.initState();
-                        // chaptersState.getBibleVersion();
                       });
                     });
                   },
@@ -377,20 +376,13 @@ class _MyHomePageState extends State<HomePage> {
       }
     }
 
-    // if (englishBook == null || amharicBook == null) {
-    //   setState(() {});
-    // }
-
     return Scaffold(
-      // backgroundColor: Theme.of(context).colorScheme.background,
       drawer: _selectedIndex == 2
           ? Drawer(
-              // backgroundColor: Color.fromARGB(255, 25, 31, 44),
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
                   DrawerHeader(
-                    // decoration: BoxDecoration(color: Colors.white),
                     child: Text(''),
                   ),
                   ListTile(
@@ -400,7 +392,10 @@ class _MyHomePageState extends State<HomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => Setting()),
-                        );
+                        ).then((value) {
+                          getBibleVersion();
+                          print(value);
+                        });
                       });
                     },
                     title: Text(
@@ -441,7 +436,6 @@ class _MyHomePageState extends State<HomePage> {
               ),
             )
           : null,
-
       body: _selectedIndex == 1
           ? _language == 'AMH'
               ? amharicBook == null
@@ -474,6 +468,7 @@ class _MyHomePageState extends State<HomePage> {
                       itemCount: amharicBook!.chapters.length,
                       itemBuilder: (BuildContext context, int pageIndex) {
                         var amhbook = amharicBook!.chapters[pageIndex];
+
                         return Padding(
                           padding: const EdgeInsets.only(
                               top: 8, left: 10, bottom: 0, right: 9),
@@ -486,8 +481,13 @@ class _MyHomePageState extends State<HomePage> {
                                   (BuildContext context, int listIndex) {
                                 var amhchapters = amharicBook!
                                     .chapters[pageIndex].verses[listIndex];
+                                var nextAmhChapter = amhchapters;
+                                if (amhbook.verses.length - 1 > listIndex) {
+                                  nextAmhChapter = amharicBook!
+                                      .chapters[pageIndex]
+                                      .verses[listIndex + 1];
+                                }
                                 return Container(
-                                  // padding: EdgeInsets.all(10),
                                   child: Column(
                                     children: [
                                       listIndex == 0
@@ -521,25 +521,54 @@ class _MyHomePageState extends State<HomePage> {
                                                 '${amharicBook!.title} ${amhbook.chapter}: ${listIndex + 1}');
                                           },
                                           child: RichText(
-                                              text: TextSpan(
-                                                  style: DefaultTextStyle.of(
-                                                          context)
+                                            text: TextSpan(
+                                              style:
+                                                  DefaultTextStyle.of(context)
                                                       .style,
-                                                  children: [
+                                              children: [
                                                 TextSpan(
-                                                    text: '${listIndex + 1}  ',
-                                                    style: TextStyle(
-                                                        fontFamily: currentFont,
-                                                        fontSize:
-                                                            _currentFontSize,
-                                                        color: Colors.grey)),
+                                                  text: nextAmhChapter == '' &&
+                                                          amhchapters != ''
+                                                      ? '${listIndex + 1} - ${listIndex + 2}  '
+                                                      : amhchapters != ''
+                                                          ? '${listIndex + 1}  '
+                                                          : '',
+                                                  style: TextStyle(
+                                                      fontFamily: currentFont,
+                                                      fontSize:
+                                                          _currentFontSize,
+                                                      color: Colors.grey),
+                                                ),
                                                 TextSpan(
-                                                    text: amhchapters,
-                                                    style: TextStyle(
-                                                        fontFamily: currentFont,
-                                                        fontSize:
-                                                            _currentFontSize))
-                                              ])),
+                                                  text: amhchapters,
+                                                  style: TextStyle(
+                                                      fontFamily: currentFont,
+                                                      fontSize:
+                                                          _currentFontSize),
+                                                ),
+                                                // amhchapters == ''
+                                                //     ? TextSpan(
+                                                //         text:
+                                                //             '${listIndex + 1}',
+                                                //         style: TextStyle(
+                                                //             fontFamily:
+                                                //                 currentFont,
+                                                //             color: Colors.grey,
+                                                //             fontSize:
+                                                //                 _currentFontSize),
+                                                //       )
+                                                // : TextSpan(
+                                                //     text: '',
+                                                //     style: TextStyle(
+                                                //         fontFamily:
+                                                //             currentFont,
+                                                //         color: Colors.grey,
+                                                //         fontSize:
+                                                //             _currentFontSize),
+                                                //   ),
+                                              ],
+                                            ),
+                                          ),
                                         ),
                                       ),
                                       SizedBox(
@@ -579,7 +608,6 @@ class _MyHomePageState extends State<HomePage> {
                         });
                       },
                       scrollBehavior: const ScrollBehavior(),
-                      // scrollBehavior: const ScrollBehavior(),
                       itemCount: englishBook!.chapters.length,
                       controller: pageController,
                       itemBuilder: (BuildContext context, int index) {
@@ -590,7 +618,7 @@ class _MyHomePageState extends State<HomePage> {
                               key: UniqueKey(),
                               itemCount: book.verses.length,
                               shrinkWrap: true,
-                              // controller: controller,
+                              controller: controller,
                               itemBuilder:
                                   (BuildContext context, int listindex) {
                                 var chapter = book.verses[listindex];
@@ -603,7 +631,6 @@ class _MyHomePageState extends State<HomePage> {
                                 var chapterName =
                                     '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
                                 return Container(
-                                  // color: listindex == 4 ? Colors.green : Colors.transparent,
                                   child: Column(
                                     children: [
                                       listindex == 0
@@ -644,7 +671,6 @@ class _MyHomePageState extends State<HomePage> {
                                               child: Text(''),
                                             ),
                                       Row(
-                                        // mainAxisAlignment: MainAxisAlignment.start,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
@@ -668,6 +694,16 @@ class _MyHomePageState extends State<HomePage> {
                                                   children: [
                                                     GestureDetector(
                                                       onTap: () {
+                                                        // Scaffold.of(context)
+                                                        //     .showBottomSheet(
+                                                        //         (context) =>
+                                                        //             Container(
+                                                        //               height:
+                                                        //                   200,
+                                                        //               width: double
+                                                        //                   .infinity,
+                                                        //             ));
+
                                                         Highlight.createItem(
                                                             chapter.text,
                                                             '${chapterName} ${chapterNumber}: ${chapter.id}');
@@ -678,13 +714,6 @@ class _MyHomePageState extends State<HomePage> {
                                                                       .of(context)
                                                                   .style,
                                                               children: [
-                                                            // TextSpan(
-                                                            //     text: '${chapter.id} ',
-                                                            //     style: TextStyle(
-                                                            //         fontFamily: currentFont,
-                                                            //         fontSize:
-                                                            //             _currentFontSize,
-                                                            //         color: Colors.grey)),
                                                             TextSpan(
                                                                 text: chapter
                                                                     .text,
@@ -724,29 +753,11 @@ class _MyHomePageState extends State<HomePage> {
                                           ? Padding(
                                               padding:
                                                   EdgeInsets.only(bottom: 50),
-                                              //         child: TextButton(
-                                              //           onPressed: () async {
-                                              //             int refresh =
-                                              //                 await Navigator.push(
-                                              //                     context,
-                                              //                     MaterialPageRoute(
-                                              //                         builder: (context) =>
-                                              //                             ChapterList()));
-
-                                              //             if (refresh == refresh) {
-                                              //               setState(() {
-                                              //                 mypage = refresh;
-                                              //                 getBibleVersion();
-                                              //                 pageController
-                                              //                     .jumpToPage(refresh);
-                                              //               });
-                                              //             }
-                                              //           },
-                                              //           child: const Text('data'),
-                                              //         ),
                                             )
                                           : Visibility(
-                                              visible: false, child: Text(''))
+                                              visible: false,
+                                              child: Text(''),
+                                            ),
                                     ],
                                   ),
                                 );
@@ -754,10 +765,7 @@ class _MyHomePageState extends State<HomePage> {
                         );
                       })
           : (_selectedIndex == 0 ? DailyText() : Account()),
-
-      // backgroundColor: const Color.fromARGB(255, 9, 13, 57),
       appBar: buildAppBar(),
-
       bottomNavigationBar: AnimatedContainer(
         height: isVisible
             ? _selectedIndex == 1
@@ -859,7 +867,7 @@ class _MyHomePageState extends State<HomePage> {
                   label: ''),
               BottomNavigationBarItem(
                   icon: Icon(
-                    Icons.person,
+                    Icons.bookmark,
                     // color: Colors.white,
                   ),
                   label: ''),
@@ -871,6 +879,11 @@ class _MyHomePageState extends State<HomePage> {
           ),
         ]),
       ),
+      // bottomSheet: Container(
+      //   height: 60,
+      //   width: 60,
+      //   color: Colors.white,
+      // ),
     );
   }
 }

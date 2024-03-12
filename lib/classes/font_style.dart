@@ -8,7 +8,7 @@ class SelectedFontStyle {
   String get bibleVersion => _bibleVersion;
   int _page = 0;
   int get page => _page;
-  String _languageVersion = '';
+  // String _languageVersion = '';
 
   late SharedPreferences preference;
 

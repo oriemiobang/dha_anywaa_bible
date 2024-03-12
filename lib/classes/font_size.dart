@@ -4,7 +4,7 @@ class FontSize {
   Future<double> getFontSize() async {
     final prefs = await SharedPreferences.getInstance();
     final fontSize = prefs.getDouble('fontSize');
-    return fontSize ?? 15;
+    return fontSize ?? 16;
   }
 
   Future<void> setFontSize(double value) async {

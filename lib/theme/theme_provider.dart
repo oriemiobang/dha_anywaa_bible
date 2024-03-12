@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UiProvider extends ChangeNotifier {
-  bool _isDark = false;
+  bool _isDark = true;
   // int _currentIndex = 0;
   bool get isDark => _isDark;
 
@@ -52,7 +52,7 @@ class UiProvider extends ChangeNotifier {
       primaryColorDark: Colors.white);
   init() async {
     storage = await SharedPreferences.getInstance();
-    _isDark = storage.getBool('isDark') ?? false;
+    _isDark = storage.getBool('isDark') ?? true;
     notifyListeners();
   }
 }

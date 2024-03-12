@@ -12,16 +12,16 @@ class ChooseBible extends StatefulWidget {
 
 class _ChooseBibleState extends State<ChooseBible> {
   List<Map<String, dynamic>> bibleVersons = [
-    {
-      'name': 'Dha anywaa',
-      'abbrev': 'ANY',
-      'description': 'The Bible was translated into the Anyua language so that the word of God could reach the Anyua people.'
-          '\nThe translation took place in Akobo, Sudan, in 1948. It began with the New Testament.'
-          '\n\nIn 1962, the translation was completed in Sudan and published by the Bible Society in America, written in Latin.'
-          ' Later, in 1965, it was brought to Ethiopia and written in the Amharic script, making it accessible to the Anyua people in Ethiopia.'
-          '\n\nAfter several years, the entire Bible was translated into the Anyua language.',
-      'isExpanded': false,
-    },
+    // {
+    //   'name': 'Dha anywaa',
+    //   'abbrev': 'ANY',
+    //   'description': 'The Bible was translated into the Anyua language so that the word of God could reach the Anyua people.'
+    //       '\nThe translation took place in Akobo, Sudan, in 1948. It began with the New Testament.'
+    //       '\n\nIn 1962, the translation was completed in Sudan and published by the Bible Society in America, written in Latin.'
+    //       ' Later, in 1965, it was brought to Ethiopia and written in the Amharic script, making it accessible to the Anyua people in Ethiopia.'
+    //       '\n\nAfter several years, the entire Bible was translated into the Anyua language.',
+    //   'isExpanded': false,
+    // },
     {
       'name': 'Amharic',
       'abbrev': 'AMH',
@@ -110,18 +110,14 @@ class _ChooseBibleState extends State<ChooseBible> {
       if (value == 'AMH') {
         print('_ is present');
         print(currentVersion);
+        print(splitVersion[1]);
 
         for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
-          if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1] &&
-              chapIndex < 39) {
-            print('${chapAbbrev[chapIndex]['amharic']}');
+          if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1].toString()) {
+            print('${chapAbbrev[chapIndex]['amharic']}  fff');
             selectedFontStyle
                 .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
-          } else if (chapAbbrev[chapIndex]['abrrev'] == splitVersion[1] &&
-              chapIndex > 39) {
-            print('${chapAbbrev[chapIndex]['amharic']}');
-            selectedFontStyle
-                .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
+            print('${chapAbbrev[chapIndex]['amharic']}  fff');
           }
         }
       } else if (value == 'ANY') {
@@ -139,7 +135,7 @@ class _ChooseBibleState extends State<ChooseBible> {
                   'OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
               print('OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json jkj');
             } else if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
-                chapIndex > 39) {
+                chapIndex >= 39) {
               print('3 probelm');
               selectedFontStyle.setBibleVersion(
                   'NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
@@ -686,6 +682,8 @@ class _ChooseBibleState extends State<ChooseBible> {
                         _updateVersion(currentAbbrev);
                         _currentLanguageVersion = item['abbrev'];
                       });
+
+                      Navigator.pop(context);
                     },
                   ),
                   body: ListTile(
