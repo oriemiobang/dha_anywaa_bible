@@ -39,16 +39,16 @@ class DailyVerse {
     {
       "shortText": "Yïnu cwøl jwøki",
       "verse": "Mana Nyooth 3:20",
-      "text": "'Ba neenï, a cuŋŋa dhi øtø,"
-          "naa dööŋö. 'Ba ni näk da ŋat mo wïnynya"
-          "dwøra, ni jap dhi øtø, a cøøa baŋe, ni"
+      "text": "'Ba neenï, a cuŋŋa dhi øtø, "
+          "naa dööŋö. 'Ba ni näk da ŋat mo wïnynya "
+          "dwøra, ni jap dhi øtø, a cøøa baŋe, ni "
           "cäma ki eni, ni ö eni ni cäme ki aani"
     },
     {
       "shortText": "Jwøk mëër ki ïnï",
       "verse": "Mana Nyooth 3:21",
-      "text": "'Ba ŋato böödö, owëëga pïïn piny"
-          "bäät wälla, keda mara na bööda, ni pïïa"
+      "text": "'Ba ŋato böödö, owëëga pïïn piny "
+          "bäät wälla, keda mara na bööda, ni pïïa "
           "kanya ciel ki Wära bäät wälle."
     },
     //  ø     ö     ï    ë  ä
@@ -68,38 +68,38 @@ class DailyVerse {
     {
       "shortText": "Yïnu cwøl jwøki",
       "verse": "Aydheea 41:10",
-      "text": "Kärï lwäyö, kiper a nut buutï,"
-          "ni ba bwøk cwïnyï, kiper aana"
-          "Jwøk marï."
-          "Ï tïïa tïïö niï teek, ni kønya ïïni,"
+      "text": "Kärï lwäyö, kiper a nut buutï, "
+          "ni ba bwøk cwïnyï, kiper aana "
+          "Jwøk marï. "
+          "Ï tïïa tïïö niï teek, ni kønya ïïni, "
           "ni jøla ïïni ki cer"
     },
     {
       "shortText": "Jwøk mëër ki ïnï",
       "verse": "Jøøn 16:33",
-      "text": "Man en a caana jïïu, nee bëët-mëër nee"
-          "jootu baŋa. Uuni, gïï mo leth ojwørru"
-          "yi pinyi en. 'Ba magu cwïnynyu, kiper"
+      "text": "Man en a caana jïïu, nee bëët-mëër nee "
+          "jootu baŋa. Uuni, gïï mo leth ojwørru "
+          "yi pinyi en. 'Ba magu cwïnynyu, kiper "
           "piny yaa nø böötö."
     },
     {
       "shortText": "Yïnu cwøl jwøki",
       "verse": "Pilipay 4:6-7",
-      "text": "6 Kär dee gïn lääŋŋu ki cwïnynyu, 'ba"
-          "ki yïth jammi bëët, gïn wäro manynyu"
-          "wäru pëënynyu ki Jwøk nou lämö, nou"
+      "text": "6 Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
+          "ki yïth jammi bëët, gïn wäro manynyu "
+          "wäru pëënynyu ki Jwøk nou lämö, nou "
           "kwaya eni, nou dwøga met ec baŋe.\n"
-          "7 'Ba leec cwïny man wø cïp Jwøki, na"
-          "näk ba løny ki par, cwïnynyu ogwøe"
+          "7 'Ba leec cwïny man wø cïp Jwøki, na "
+          "näk ba løny ki par, cwïnynyu ogwøe "
           "ka acaayu ki ri Krictø Jecu."
     },
     {
       "shortText": "Jwøk mëër ki ïnï",
       "verse": "Mana Nyooth 21:4",
-      "text": "Ba Jwøk ki dëëre obëëdö ki geni,\n 4 ni"
-          "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe"
-          "gø këët. Ni bäŋ kïmmö, wala oduuru"
-          "mo di gøø, wala rääm këët. Kiper japa"
+      "text": "Ba Jwøk ki dëëre obëëdö ki geni,\n 4 ni "
+          "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe "
+          "gø këët. Ni bäŋ kïmmö, wala oduuru "
+          "mo di gøø, wala rääm këët. Kiper japa "
           "dïkwøŋ oaay.»"
     },
     // {

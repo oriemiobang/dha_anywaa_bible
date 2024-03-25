@@ -12,16 +12,16 @@ class ChooseBible extends StatefulWidget {
 
 class _ChooseBibleState extends State<ChooseBible> {
   List<Map<String, dynamic>> bibleVersons = [
-    // {
-    //   'name': 'Dha anywaa',
-    //   'abbrev': 'ANY',
-    //   'description': 'The Bible was translated into the Anyua language so that the word of God could reach the Anyua people.'
-    //       '\nThe translation took place in Akobo, Sudan, in 1948. It began with the New Testament.'
-    //       '\n\nIn 1962, the translation was completed in Sudan and published by the Bible Society in America, written in Latin.'
-    //       ' Later, in 1965, it was brought to Ethiopia and written in the Amharic script, making it accessible to the Anyua people in Ethiopia.'
-    //       '\n\nAfter several years, the entire Bible was translated into the Anyua language.',
-    //   'isExpanded': false,
-    // },
+    {
+      'name': 'Dha anywaa',
+      'abbrev': 'ANY',
+      'description': 'The Bible was translated into the Anyua language so that the word of God could reach the Anyua people.'
+          '\nThe translation took place in Akobo, Sudan, in 1948. It began with the New Testament.'
+          '\n\nIn 1962, the translation was completed in Sudan and published by the Bible Society in America, written in Latin.'
+          ' Later, in 1965, it was brought to Ethiopia and written in the Amharic script, making it accessible to the Anyua people in Ethiopia.'
+          '\n\nAfter several years, the entire Bible was translated into the Anyua language.',
+      'isExpanded': false,
+    },
     {
       'name': 'Amharic',
       'abbrev': 'AMH',
@@ -626,14 +626,14 @@ class _ChooseBibleState extends State<ChooseBible> {
     Brightness currentTheme = Theme.of(context).brightness;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Languages'),
+        title: const Text('Languages And Versions'),
       ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(8),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text('Choose a language'),
+            Text('    Choose your bible version'),
             ExpansionPanelList(
               // expandIconColor: _currentLanguageVersion == currentAbbrev
               //     ? Colors.amber

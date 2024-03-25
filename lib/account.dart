@@ -55,7 +55,6 @@ class _AccountState extends State<Account> {
                     key: Key(_highlights[index]['id'].toString()),
                     onDismissed: (direction) {
                       var hold = _highlights[index];
-                      int currentIndex = index;
 
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                           backgroundColor: Color.fromARGB(255, 0, 4, 17),

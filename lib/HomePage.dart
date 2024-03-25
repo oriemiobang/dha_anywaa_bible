@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last, unnecessary_brace_in_string_interps
 
 // import 'package:dha_anywaa_bible/main.dart';
 import 'dart:convert';
@@ -14,8 +14,10 @@ import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/classes/highlights.dart';
 import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/setting.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
+import 'package:fluttertoast/fluttertoast.dart';
 // import 'package:share_plus/share_plus.dart';
 // import 'package:share/share.dart';
 
@@ -121,6 +123,7 @@ class _MyHomePageState extends State<HomePage> {
   String _language = '';
 
   void getBibleVersion() async {
+    // englishBook.chapters[0].verses[0].text;
     // print('no wahala here');
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
@@ -148,6 +151,7 @@ class _MyHomePageState extends State<HomePage> {
     // String currentBook = style.bibleVersion;
     // print('2');
     setState(() {
+      pageIndex = currentPage;
       getFontSize();
       languageVerson();
       _language = language.split(' ')[0];
@@ -189,13 +193,16 @@ class _MyHomePageState extends State<HomePage> {
   }
 
   ScrollController controller = ScrollController();
+  ScrollController mycontroller = ScrollController();
   bool isVisible = true;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
+  UniqueKey key = UniqueKey();
 
   @override
   void dispose() {
     // TODO: implement dispose
     controller.removeListener(listen);
+    controller.dispose();
     super.dispose();
   }
 
@@ -219,19 +226,34 @@ class _MyHomePageState extends State<HomePage> {
     final direction = controller.position.userScrollDirection;
     if (direction == ScrollDirection.forward) {
       // print(controller.position.atEdge);
-      // show();
+      show();
     } else if (direction == ScrollDirection.reverse) {
       // print(controller.position.atEdge);
-      // hide();
+      hide();
     }
   }
 
   DailyVerse dailyText = DailyVerse();
   String currentText = "";
   String currentVerse = "";
+
   String title = "";
   bool atEnd = false;
   bool atBeggining = false;
+  bool thereIsComment = true;
+  int currentVerseIndex = 0;
+  int pageIndex = 0;
+  int colorIndex = 0;
+  int selectedColorIndex = -1;
+  List markedText = [];
+  List<Color> colorList = [
+    Colors.transparent,
+    Colors.amber,
+    const Color.fromARGB(233, 76, 175, 79),
+    const Color.fromARGB(214, 244, 67, 54),
+    Color.fromARGB(123, 30, 142, 233),
+    Color.fromARGB(229, 159, 30, 233),
+  ];
 
   Future<int> _getItem() async {
     final item = await SQLHelper.getItem(1);
@@ -259,6 +281,65 @@ class _MyHomePageState extends State<HomePage> {
       _currentVersion = currentVersion.split(' ')[0];
       ;
     });
+  }
+
+  void markText({index, chapterName, chapterNumber, chapterId, text}) {
+    Map currentDict = {
+      "chapterId": chapterId,
+      "chapterName": chapterName,
+      "chapterNumber": chapterNumber,
+      "text": text
+    };
+    bool isExist = markedText.any((dic) => mapEquals(dic, currentDict));
+    print(isExist);
+    setState(() {
+      if (isExist) {
+        // markedText.remove(index);
+        markedText.removeWhere((element) => element['text'] == '$text');
+      } else {
+        // markedText.add(index);
+        markedText.add({
+          "chapterId": chapterId,
+          "chapterName": chapterName,
+          "chapterNumber": chapterNumber,
+          "text": text
+        });
+      }
+
+      print(markedText);
+    });
+  }
+
+  void addBookmark(bookmarks) {
+    Highlight.createItem(bookmarks[0]['text'],
+        '${bookmarks[0]['chapterName']} ${bookmarks[0]['chapterNumber']}: ${bookmarks[0]['chapterId']}');
+
+    Fluttertoast.showToast(
+        msg: "Bookmark added",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Color.fromARGB(255, 0, 4, 17),
+        textColor: Colors.white,
+        fontSize: 16.0);
+  }
+
+  void copyVerse(markedText) {
+    Clipboard.setData(ClipboardData(text: markedText[0]['text']));
+
+    Fluttertoast.showToast(
+        msg: "Text copied!",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Color.fromARGB(255, 0, 4, 17),
+        textColor: Colors.white,
+        fontSize: 16.0);
+  }
+
+  void shareVerse(markedText) {
+    Share.share(
+        "${markedText[0]['text']}\n ${markedText[0]['chapterName']} ${markedText[0]['chapterNumber']}: ${markedText[0]['chapterId']}}");
   }
 
   @override
@@ -334,6 +415,24 @@ class _MyHomePageState extends State<HomePage> {
               //   ),
               // ),
               actions: [
+                _language == 'ERV'
+                    ? IconButton(
+                        onPressed: () {
+                          setState(() {
+                            thereIsComment = !thereIsComment;
+                          });
+                        },
+                        icon: thereIsComment
+                            ? Icon(
+                                Icons.comment,
+                                size: 18,
+                              )
+                            : Icon(
+                                Icons.comments_disabled,
+                                size: 18,
+                              ),
+                      )
+                    : Visibility(visible: false, child: Text('')),
                 TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/chooseBible').then((_) {
@@ -419,7 +518,7 @@ class _MyHomePageState extends State<HomePage> {
                   ListTile(
                     leading: Icon(Icons.attribution_outlined),
                     title: Text(
-                      'About',
+                      'About the app',
                       style: TextStyle(),
                     ),
                   ),
@@ -428,7 +527,7 @@ class _MyHomePageState extends State<HomePage> {
                       Icons.menu_book_rounded,
                     ),
                     title: Text(
-                      'About the publisher',
+                      'About the developer',
                       style: TextStyle(),
                     ),
                   ),
@@ -528,9 +627,12 @@ class _MyHomePageState extends State<HomePage> {
                                               children: [
                                                 TextSpan(
                                                   text: nextAmhChapter == '' &&
-                                                          amhchapters != ''
+                                                              amhchapters !=
+                                                                  '' ||
+                                                          nextAmhChapter == '-'
                                                       ? '${listIndex + 1} - ${listIndex + 2}  '
-                                                      : amhchapters != ''
+                                                      : amhchapters != '' &&
+                                                              amhchapters != '-'
                                                           ? '${listIndex + 1}  '
                                                           : '',
                                                   style: TextStyle(
@@ -539,13 +641,17 @@ class _MyHomePageState extends State<HomePage> {
                                                           _currentFontSize,
                                                       color: Colors.grey),
                                                 ),
-                                                TextSpan(
-                                                  text: amhchapters,
-                                                  style: TextStyle(
-                                                      fontFamily: currentFont,
-                                                      fontSize:
-                                                          _currentFontSize),
-                                                ),
+                                                amhchapters != '' &&
+                                                        amhchapters != '-'
+                                                    ? TextSpan(
+                                                        text: amhchapters,
+                                                        style: TextStyle(
+                                                            fontFamily:
+                                                                currentFont,
+                                                            fontSize:
+                                                                _currentFontSize),
+                                                      )
+                                                    : TextSpan(),
                                                 // amhchapters == ''
                                                 //     ? TextSpan(
                                                 //         text:
@@ -588,26 +694,26 @@ class _MyHomePageState extends State<HomePage> {
                       ),
                     )
                   : PageView.builder(
-                      key: UniqueKey(),
+                      key: key,
                       // physics: NeverScrollableScrollPhysics(),
                       onPageChanged: (index) {
                         style.setPage(index);
                         setState(() {
                           getBibleVersion();
 
-                          if (englishBook!.chapters.length - 1 == index) {
-                            atEnd = true;
-                            print('end');
-                          } else if (index == 0) {
-                            print('beginning');
-                            atBeggining = true;
-                          } else {
-                            atEnd = false;
-                            atBeggining = false;
-                          }
+                          // if (englishBook!.chapters.length - 1 == index) {
+                          //   atEnd = true;
+                          //   print('end');
+                          // } else if (index == 0) {
+                          //   print('beginning');
+                          //   atBeggining = true;
+                          // } else {
+                          //   atEnd = false;
+                          //   atBeggining = false;
+                          // }
                         });
                       },
-                      scrollBehavior: const ScrollBehavior(),
+                      // scrollBehavior: const ScrollBehavior(),
                       itemCount: englishBook!.chapters.length,
                       controller: pageController,
                       itemBuilder: (BuildContext context, int index) {
@@ -615,10 +721,11 @@ class _MyHomePageState extends State<HomePage> {
                         return Padding(
                           padding: const EdgeInsets.all(10),
                           child: ListView.builder(
-                              key: UniqueKey(),
+                              key: key,
                               itemCount: book.verses.length,
                               shrinkWrap: true,
                               controller: controller,
+                              // physics: ScrollPhysics(),
                               itemBuilder:
                                   (BuildContext context, int listindex) {
                                 var chapter = book.verses[listindex];
@@ -694,19 +801,19 @@ class _MyHomePageState extends State<HomePage> {
                                                   children: [
                                                     GestureDetector(
                                                       onTap: () {
-                                                        // Scaffold.of(context)
-                                                        //     .showBottomSheet(
-                                                        //         (context) =>
-                                                        //             Container(
-                                                        //               height:
-                                                        //                   200,
-                                                        //               width: double
-                                                        //                   .infinity,
-                                                        //             ));
-
-                                                        Highlight.createItem(
-                                                            chapter.text,
-                                                            '${chapterName} ${chapterNumber}: ${chapter.id}');
+                                                        currentVerseIndex =
+                                                            listindex;
+                                                        selectedColorIndex =
+                                                            listindex;
+                                                        markText(
+                                                            index: listindex,
+                                                            chapterName:
+                                                                chapterName,
+                                                            text: chapter.text,
+                                                            chapterNumber:
+                                                                chapterNumber,
+                                                            chapterId:
+                                                                chapter.id);
                                                       },
                                                       child: RichText(
                                                           text: TextSpan(
@@ -715,16 +822,36 @@ class _MyHomePageState extends State<HomePage> {
                                                                   .style,
                                                               children: [
                                                             TextSpan(
-                                                                text: chapter
-                                                                    .text,
-                                                                style: TextStyle(
-                                                                    fontFamily:
-                                                                        currentFont,
-                                                                    fontSize:
-                                                                        _currentFontSize))
+                                                              text:
+                                                                  chapter.text,
+                                                              style: TextStyle(
+                                                                  backgroundColor: selectedColorIndex ==
+                                                                          listindex
+                                                                      ? colorList[
+                                                                          colorIndex]
+                                                                      : null,
+                                                                  fontFamily:
+                                                                      currentFont,
+                                                                  fontSize:
+                                                                      _currentFontSize,
+                                                                  decoration: markedText
+                                                                          .contains(
+                                                                              listindex)
+                                                                      ? TextDecoration
+                                                                          .underline
+                                                                      : null,
+                                                                  decorationStyle: markedText
+                                                                          .contains(
+                                                                              listindex)
+                                                                      ? TextDecorationStyle
+                                                                          .dashed
+                                                                      : null),
+                                                            )
                                                           ])),
                                                     ),
-                                                    chapter.comment!.isNotEmpty
+                                                    chapter.comment!
+                                                                .isNotEmpty &&
+                                                            thereIsComment
                                                         ? Text(
                                                             '${chapter.comment![0]}',
                                                             style: TextStyle(
@@ -787,19 +914,17 @@ class _MyHomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           isVisible
-                              ? !atBeggining
-                                  ? IconButton(
-                                      onPressed: () {
-                                        pageController.previousPage(
-                                            duration: Duration(microseconds: 1),
-                                            curve: Curves.linear);
-                                      },
-                                      icon: Icon(
-                                        Icons.chevron_left_sharp,
-                                        size: 40,
-                                      ),
-                                    )
-                                  : Visibility(visible: false, child: Text(''))
+                              ? IconButton(
+                                  onPressed: () {
+                                    pageController.previousPage(
+                                        duration: Duration(microseconds: 1),
+                                        curve: Curves.linear);
+                                  },
+                                  icon: Icon(
+                                    Icons.chevron_left_sharp,
+                                    size: 40,
+                                  ),
+                                )
                               : Visibility(visible: false, child: Text('')),
                           TextButton(
                             onPressed: () async {
@@ -825,20 +950,18 @@ class _MyHomePageState extends State<HomePage> {
                                         : Colors.black)),
                           ),
                           isVisible
-                              ? (!atEnd)
-                                  ? IconButton(
-                                      onPressed: () {
-                                        pageController.nextPage(
-                                            duration: Duration(microseconds: 1),
-                                            curve: Curves.linear);
-                                      },
-                                      icon: Icon(
-                                        Icons.chevron_right,
-                                        size: 40,
-                                      ),
-                                    )
-                                  : Visibility(visible: false, child: Text(''))
-                              : Visibility(visible: false, child: Text('')),
+                              ? IconButton(
+                                  onPressed: () {
+                                    pageController.nextPage(
+                                        duration: Duration(microseconds: 1),
+                                        curve: Curves.linear);
+                                  },
+                                  icon: Icon(
+                                    Icons.chevron_right,
+                                    size: 40,
+                                  ),
+                                )
+                              : Visibility(visible: false, child: Text(''))
                         ]),
                   ),
                 )
@@ -879,11 +1002,198 @@ class _MyHomePageState extends State<HomePage> {
           ),
         ]),
       ),
-      // bottomSheet: Container(
-      //   height: 60,
-      //   width: 60,
-      //   color: Colors.white,
-      // ),
+      // floatingActionButton: markedText.isNotEmpty
+      //     ? Container(
+      //         color: Colors.white,
+      //         height: 150,
+      //         width: double.infinity,
+      //         child: FloatingActionButton(
+      //             backgroundColor: Colors.white, onPressed: () {}),
+      //       )
+      //     : null
+      bottomSheet: markedText.isNotEmpty
+          ? Container(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          addBookmark(markedText);
+                        },
+                        icon: Icon(Icons.bookmark_add),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          copyVerse(markedText);
+                        },
+                        icon: Icon(Icons.copy),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          shareVerse(markedText);
+                        },
+                        icon: Icon(Icons.share),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                        onPressed: () {
+                          // shareVerse(markedText);
+                          Navigator.pushNamed(context, '/differentVerse',
+                              arguments: [
+                                {
+                                  "pageIndex": pageIndex,
+                                  "listIndex": currentVerseIndex,
+                                  "title": title,
+                                  'version': _currentVersion
+                                }
+                              ]);
+                        },
+                        icon: Icon(Icons.table_rows_outlined),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      IconButton(
+                          onPressed: () {
+                            setState(() {
+                              markedText = [];
+                            });
+                          },
+                          icon: Icon(
+                            Icons.cancel_outlined,
+                            color: Colors.red,
+                          ))
+                    ],
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 0;
+                            });
+                          },
+                          child: Container(
+                            child: Icon(Icons.cancel),
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.transparent,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 1;
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.amber,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 2;
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.green,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 3;
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Colors.red,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 4;
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: const Color.fromARGB(255, 30, 142, 233),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            setState(() {
+                              colorIndex = 5;
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(255, 159, 30, 233),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              height: 110,
+              width: double.infinity,
+              color: Color.fromARGB(255, 0, 4, 17),
+            )
+          : null,
     );
   }
 }

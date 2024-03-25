@@ -21,7 +21,7 @@ class ChapterList extends StatefulWidget {
 }
 
 class _ChapterListState extends State<ChapterList> {
-  List<Map<String, String>> chapAbbrev = [
+  List<Map<String, String>> oldTestList = [
     {
       'title': 'Genesis',
       'amharic': '01_ኦሪት ዘፍጥረት.json',
@@ -295,6 +295,9 @@ class _ChapterListState extends State<ChapterList> {
       'number': '4',
       'abbrev': 'MAL'
     },
+  ];
+
+  List<Map<String, String>> newTestList = [
     {
       'title': 'Matthew',
       'amharic': '40_የማቴዎስ ወንጌል.json',
@@ -497,11 +500,13 @@ class _ChapterListState extends State<ChapterList> {
   SelectedFontStyle selectedFontStyle = SelectedFontStyle()..init();
 
   List<Map<String, String>> _foundBook = [];
+  List<Map<String, String>> _foundOldBook = [];
 
   @override
   void initState() {
     // TODO: implement initState
-    _foundBook = chapAbbrev;
+    _foundBook = newTestList;
+    _foundOldBook = oldTestList;
     getLanguageVersion();
     super.initState();
   }
@@ -518,12 +523,19 @@ class _ChapterListState extends State<ChapterList> {
 
   void _runFilter(String enteredKeyword) {
     List<Map<String, String>> result = [];
+    List<Map<String, String>> oldTestResult = [];
     if (enteredKeyword.isEmpty) {
-      result = chapAbbrev;
+      result = newTestList;
+      oldTestResult = oldTestList;
       print('no change');
     } else {
       print('change');
-      result = chapAbbrev
+      oldTestResult = oldTestList
+          .where((book) => book['title']!
+              .toLowerCase()
+              .contains(enteredKeyword.toLowerCase()))
+          .toList();
+      result = newTestList
           .where((book) => book['title']!
               .toLowerCase()
               .contains(enteredKeyword.toLowerCase()))
@@ -531,183 +543,325 @@ class _ChapterListState extends State<ChapterList> {
     }
     setState(() {
       _foundBook = result;
+      _foundOldBook = oldTestResult;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     // Brightness currentTheme = Theme.of(context).brightness;
-    return Scaffold(
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          // leading: IconButton(
+    return DefaultTabController(
+      animationDuration: Duration.zero,
+      initialIndex: 0,
+      length: 2,
+      child: Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            // leading: IconButton(
 
-          //     onPressed: () {
-          //       setState(() {
-          //         Navigator.pop(context);
-          //       });
-          //     },
-          //     icon: Icon(
-          //       Icons.arrow_back_rounded,
-          //       color: Colors.white,
-          //     )),
-          toolbarHeight: 100,
-          forceMaterialTransparency: true,
-          title: Column(
-            // mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  IconButton(
-                      onPressed: () {
-                        setState(() {
-                          Navigator.pop(context);
-                        });
-                      },
-                      icon: Icon(
-                        Icons.arrow_back_rounded,
-                      )),
-                  Text('weeli',
-                      style: TextStyle(
-                        fontSize: 19,
-                      )),
-                ],
-              ),
-              Row(
-                children: [
-                  Container(
-                      height: 50,
-                      width: 50,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(155, 75, 75, 75),
-                          borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(20),
-                              topLeft: Radius.circular(20))),
-                      child: Center(
-                        child: Icon(
-                          Icons.search,
-                          size: 30,
-                        ),
-                      )),
-                  Expanded(
-                    child: Container(
-                      height: 50,
-                      width: double.infinity,
-                      child: TextField(
-                        onChanged: (value) => _runFilter(value),
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                              borderSide: BorderSide.none,
-                              borderRadius: BorderRadius.only(
-                                  topRight: Radius.circular(20),
-                                  bottomRight: Radius.circular(20))),
-                          // labelText: 'Search',
-                          filled: true,
-                          // enabledBorder: InputBorder.none,
-                          focusedBorder: InputBorder.none,
-                          fillColor: Color.fromARGB(155, 75, 75, 75),
-                          label: Text(
-                            'Määnyï',
-                            style: TextStyle(
-                                // color: Color.fromARGB(217, 193, 190, 190)
-                                ),
+            //     onPressed: () {
+            //       setState(() {
+            //         Navigator.pop(context);
+            //       });
+            //     },
+            //     icon: Icon(
+            //       Icons.arrow_back_rounded,
+            //       color: Colors.white,
+            //     )),
+            toolbarHeight: 100,
+            forceMaterialTransparency: true,
+            title: Column(
+              // mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {
+                          setState(() {
+                            Navigator.pop(context);
+                          });
+                        },
+                        icon: Icon(
+                          Icons.arrow_back_rounded,
+                        )),
+                    Text('weeli',
+                        style: TextStyle(
+                          fontSize: 19,
+                        )),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                        height: 50,
+                        width: 50,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(155, 75, 75, 75),
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(20),
+                                topLeft: Radius.circular(20))),
+                        child: Center(
+                          child: Icon(
+                            Icons.search,
+                            size: 30,
                           ),
-                          // icon: Container(
-                          //     height: 50,
-                          //     width: 30,
-                          //     decoration: BoxDecoration(
-                          //         color: Color.fromARGB(155, 75, 75, 75),
-                          //         borderRadius: BorderRadius.only(
-                          //             bottomLeft: Radius.circular(20),
-                          //             topLeft: Radius.circular(20))),
-                          //     child: Icon(Icons.search))
-
-                          // icon: Icon(Icons.search),
-                          // label: Icon(Icons.search)
-
-                          // icon: Icon(Icons.search)
+                        )),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        width: double.infinity,
+                        child: TextField(
+                          onChanged: (value) => _runFilter(value),
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderSide: BorderSide.none,
+                                borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(20),
+                                    bottomRight: Radius.circular(20))),
+                            // labelText: 'Search',
+                            filled: true,
+                            // enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none,
+                            fillColor: Color.fromARGB(155, 75, 75, 75),
+                            label: Text(
+                              '',
+                              style: TextStyle(
+                                  // color: Color.fromARGB(217, 193, 190, 190)
+                                  ),
+                            ),
+                            // icon: Container(
+                            //     height: 50,
+                            //     width: 30,
+                            //     decoration: BoxDecoration(
+                            //         color: Color.fromARGB(155, 75, 75, 75),
+                            //         borderRadius: BorderRadius.only(
+                            //             bottomLeft: Radius.circular(20),
+                            //             topLeft: Radius.circular(20))),
+                            //     child: Icon(Icons.search))
+                            // icon: Icon(Icons.search),
+                            // label: Icon(Icons.search)
+                            // icon: Icon(Icons.search)
+                          ),
                         ),
                       ),
                     ),
+                  ],
+                ),
+              ],
+            ),
+            bottom: TabBar(
+                // dividerHeight: 17,
+                labelColor: Colors.amber,
+                indicatorColor: Colors.amber,
+                tabs: <Widget>[
+                  Tab(
+                    height: 80,
+                    child: ListTile(
+                      title: Text(
+                        'Old Testement',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18),
+                      ),
+                      subtitle: version == 'AMH'
+                          ? Text('ብሉይ ኪዳን', style: TextStyle(fontSize: 15))
+                          : Text(''),
+                    ),
                   ),
-                ],
-              )
-            ],
+                  Tab(
+                    height: 80,
+                    child: ListTile(
+                      title: Text(
+                        'New Testement',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 17.7),
+                      ),
+                      subtitle: version == 'AMH'
+                          ? Text('አዲስ ኪዳን', style: TextStyle(fontSize: 15))
+                          : Text(''),
+                    ),
+                  ),
+                ]),
           ),
-        ),
-        body: ListView.builder(
-            shrinkWrap: true,
-            // key: ValueKey(_foundBook[index]['title']),
-            itemCount: _foundBook.length,
-            itemBuilder: (context, listviewindex) {
-              return ListTile(
-                key: ValueKey(_foundBook[listviewindex]['title']),
-                title: version == 'AMH'
-                    ? Text(
-                        '${_foundBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}')
-                    : Text('${_foundBook[listviewindex]['title']}'),
-                onTap: () {
-                  showModalBottomSheet(
-                      // showDragHandle: true,
-                      // isScrollControlled: true,
-                      context: context,
-                      builder: (BuildContext context) {
-                        return Scaffold(
-                          appBar: AppBar(
-                              // centerTitle: true,
-                              title: Text(
-                            '${_foundBook[listviewindex]['title']}',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          )),
-                          body: Padding(
-                            padding: const EdgeInsets.only(
-                                top: 20, left: 10, right: 10, bottom: 40),
-                            child: GridView.count(
-                              physics: ScrollPhysics(
-                                  parent: AlwaysScrollableScrollPhysics()),
-                              shrinkWrap: true,
-                              crossAxisCount: 6,
-                              children: List.generate(
-                                  int.parse(
-                                      '${_foundBook[listviewindex]['number']}'),
-                                  (index) {
-                                return Card(
-                                  // color: Color.fromARGB(136, 67, 65, 58),
-                                  child: Center(
-                                    child: TextButton(
-                                      child: Text('${index + 1}',
-                                          style: TextStyle(
-                                              fontSize: 16,
-                                              color: Color.fromARGB(
-                                                  255, 250, 219, 124))),
-                                      onPressed: () async {
-                                        getLanguageVersion();
-                                        bibleVersion = listviewindex > 38
-                                            ? version != 'AMH'
-                                                ? 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                                : '${_foundBook[listviewindex]['amharic']}'
-                                            : version != 'AMH'
-                                                ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                                : '${_foundBook[listviewindex]['amharic']}';
-                                        style.setBibleVersion(bibleVersion);
-                                        setState(() {
-                                          chapter = index;
-                                        });
-                                        selectedFontStyle.setPage(chapter);
-                                        Navigator.pop(context);
-                                        Navigator.pop(context, chapter);
-                                      },
-                                    ),
-                                  ),
-                                );
-                              }),
-                            ),
-                          ),
-                        );
-                      });
-                },
-              );
-            }));
+          body: TabBarView(children: <Widget>[
+            oldTestement(),
+            newTestement(),
+          ])),
+    );
+  }
+
+  Widget oldTestement() {
+    return ListView.builder(
+        shrinkWrap: true,
+        // key: ValueKey(_foundBook[index]['title']),
+        itemCount: _foundOldBook.length,
+        itemBuilder: (context, listviewindex) {
+          return ListTile(
+            key: ValueKey(_foundOldBook[listviewindex]['title']),
+            trailing: version == 'AMH'
+                ? Text(
+                    '${_foundOldBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}',
+                    style: TextStyle(fontSize: 16),
+                  )
+                : Text(''),
+            title: Text(
+              '${_foundOldBook[listviewindex]['title']}',
+              style: TextStyle(fontSize: 19.5),
+            ),
+            onTap: () {
+              showModalBottomSheet(
+                  // showDragHandle: true,
+                  // isScrollControlled: true,
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        // centerTitle: true,
+                        title: Text(
+                          '${_foundOldBook[listviewindex]['title']}',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      body: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 20, left: 10, right: 10, bottom: 40),
+                        child: GridView.count(
+                          physics: ScrollPhysics(
+                              parent: AlwaysScrollableScrollPhysics()),
+                          shrinkWrap: true,
+                          crossAxisCount: 6,
+                          children: List.generate(
+                              int.parse(
+                                  '${_foundOldBook[listviewindex]['number']}'),
+                              (index) {
+                            return Card(
+                              // color: Color.fromARGB(136, 67, 65, 58),
+                              child: Center(
+                                child: TextButton(
+                                  child: Text('${index + 1}',
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color.fromARGB(
+                                              255, 250, 219, 124))),
+                                  onPressed: () async {
+                                    getLanguageVersion();
+                                    bibleVersion =
+                                        // listviewindex > 38
+                                        // ?
+                                        version != 'AMH'
+                                            ? 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json'
+                                            : '${_foundOldBook[listviewindex]['amharic']}';
+                                    // : version != 'AMH'
+                                    // ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                    // : '${_foundBook[listviewindex]['amharic']}';
+                                    style.setBibleVersion(bibleVersion);
+                                    setState(() {
+                                      chapter = index;
+                                    });
+                                    selectedFontStyle.setPage(chapter);
+                                    Navigator.pop(context);
+                                    Navigator.pop(context, chapter);
+                                  },
+                                ),
+                              ),
+                            );
+                          }),
+                        ),
+                      ),
+                    );
+                  });
+            },
+          );
+        });
+  }
+
+  Widget newTestement() {
+    return ListView.builder(
+        shrinkWrap: true,
+        // key: ValueKey(_foundBook[index]['title']),
+        itemCount: _foundBook.length,
+        itemBuilder: (context, listviewindex) {
+          return ListTile(
+            key: ValueKey(_foundBook[listviewindex]['title']),
+            title: version == 'AMH'
+                ? Text(
+                    '${_foundBook[listviewindex]['title']}',
+                    style: TextStyle(fontSize: 19.5),
+                  )
+                : Text(
+                    '${_foundBook[listviewindex]['title']}',
+                    style: TextStyle(fontSize: 19.5),
+                  ),
+            trailing: version == 'AMH'
+                ? Text(
+                    '${_foundBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}',
+                    style: TextStyle(fontSize: 16),
+                  )
+                : Text(''),
+            onTap: () {
+              showModalBottomSheet(
+                  // showDragHandle: true,
+                  // isScrollControlled: true,
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Scaffold(
+                      appBar: AppBar(
+                        // centerTitle: true,
+                        title: Text(
+                          '${_foundBook[listviewindex]['title']}',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      body: Padding(
+                        padding: const EdgeInsets.only(
+                            top: 20, left: 10, right: 10, bottom: 40),
+                        child: GridView.count(
+                          physics: ScrollPhysics(
+                              parent: AlwaysScrollableScrollPhysics()),
+                          shrinkWrap: true,
+                          crossAxisCount: 6,
+                          children: List.generate(
+                              int.parse(
+                                  '${_foundBook[listviewindex]['number']}'),
+                              (index) {
+                            return Card(
+                              // color: Color.fromARGB(136, 67, 65, 58),
+                              child: Center(
+                                child: TextButton(
+                                  child: Text('${index + 1}',
+                                      style: TextStyle(
+                                          fontSize: 16,
+                                          color: Color.fromARGB(
+                                              255, 250, 219, 124))),
+                                  onPressed: () async {
+                                    getLanguageVersion();
+                                    bibleVersion =
+                                        // = listviewindex > 38
+                                        // ?
+                                        version != 'AMH'
+                                            ? 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                            : '${_foundBook[listviewindex]['amharic']}';
+                                    // : version != 'AMH'
+                                    // ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                    // : '${_foundBook[listviewindex]['amharic']}';
+                                    style.setBibleVersion(bibleVersion);
+                                    setState(() {
+                                      chapter = index;
+                                    });
+                                    selectedFontStyle.setPage(chapter);
+                                    Navigator.pop(context);
+                                    Navigator.pop(context, chapter);
+                                  },
+                                ),
+                              ),
+                            );
+                          }),
+                        ),
+                      ),
+                    );
+                  });
+            },
+          );
+        });
   }
 }
