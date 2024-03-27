@@ -130,14 +130,14 @@ class _PrayState extends State<Pray> {
                 await Share.share(
                     '${prayer[currentIndex]['verse']!}\n ${prayer[currentIndex]['text']!}');
               },
-              icon: Icon(Icons.share))
+              icon: const Icon(Icons.share))
         ],
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 50, left: 18, right: 18),
         child: Column(
           children: [
-            Text(
+            const Text(
               'Lam mar dïcängï',
               style: TextStyle(fontSize: 28),
             ),
@@ -152,12 +152,12 @@ class _PrayState extends State<Pray> {
                     style: TextStyle(
                         color: Colors.grey, fontStyle: FontStyle.italic),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 7,
                   ),
                   SelectableText(
                     prayer[currentIndex]['text']!,
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                 ],
               ),

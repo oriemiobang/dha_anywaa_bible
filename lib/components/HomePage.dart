@@ -3,9 +3,9 @@
 // import 'package:dha_anywaa_bible/main.dart';
 import 'dart:convert';
 
-import 'package:dha_anywaa_bible/Book.dart';
-import 'package:dha_anywaa_bible/account.dart';
-import 'package:dha_anywaa_bible/chapter_list.dart';
+import 'package:dha_anywaa_bible/components/Book.dart';
+import 'package:dha_anywaa_bible/components/account.dart';
+import 'package:dha_anywaa_bible/components/chapter_list.dart';
 
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/color_highlight.dart';
@@ -13,20 +13,17 @@ import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/classes/highlights.dart';
-import 'package:dha_anywaa_bible/daily_text.dart';
-import 'package:dha_anywaa_bible/setting.dart';
+import 'package:dha_anywaa_bible/components/daily_text.dart';
+import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:fluttertoast/fluttertoast.dart';
-// import 'package:share_plus/share_plus.dart';
-// import 'package:share/share.dart';
 
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:share_plus/share_plus.dart';
-// import 'package:share_plus/share_plus.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -102,6 +99,7 @@ class _MyHomePageState extends State<HomePage> {
   String currentFont = '';
   static String bibleVersion = '';
   static String amhBibleVersion = '';
+  String _language = '';
   static int mypage = 0;
   void getFontSize() async {
     var fontsize = await fontSize.getFontSize();
@@ -112,24 +110,12 @@ class _MyHomePageState extends State<HomePage> {
       _currentFontSize = fontsize;
       currentFont = fontStyle;
     });
-
-    // style.setBibleVersion('NT/1CO/KJV.json');
-
-    // bibleVersion = style.bibleVersion;
-    // print('font in chapter: $currentFont');
-
-    // print('bible version in chapter: $bibleVersion');
   }
 
-  String _language = '';
-
   void getBibleVersion() async {
-    // englishBook.chapters[0].verses[0].text;
-    // print('no wahala here');
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
     int currentPage = await style.getPage();
-    // print(language);
 
     if (language.split(' ')[0] == 'AMH') {
       setState(() {
@@ -141,39 +127,23 @@ class _MyHomePageState extends State<HomePage> {
     } else {
       setState(() {
         englishJsonString = 'assets/holybooks/$bibleVersion';
-        // print(bibleVersion);
-        // loadData();
+
         engLoadData();
       });
     }
-    // print('bible version in chapter: $bibleVersion');
 
-    // print('object');
-    // String currentBook = style.bibleVersion;
-    // print('2');
     setState(() {
       pageIndex = currentPage;
       getFontSize();
       languageVerson();
       _language = language.split(' ')[0];
-      // bibleVersion = currentBook;
-
       mypage = currentPage;
-      // print('currentPage: $currentPage');
       pageController = PageController(initialPage: mypage);
-
-      // print('currentPage: $currentPage');
     });
-    // pageController.jumpToPage(page);
-
-    // print('bible version in chapter: $currentBook');
   }
-
-  // void fetchdata(book) {}
 
   Future<void> refresher() async {
     final highlight = await ColorHighlight.gethighlight();
-    // print(highlight[0]);
     setState(() {
       print(highlight);
       _highlight = highlight;
@@ -237,8 +207,9 @@ class _MyHomePageState extends State<HomePage> {
 
   listen() {
     final direction = controller.position.userScrollDirection;
-    if (direction == ScrollDirection.forward) {
+    if (direction == ScrollDirection.forward || controller.position.atEdge) {
       // print(controller.position.atEdge);
+
       show();
     } else if (direction == ScrollDirection.reverse) {
       // print(controller.position.atEdge);
@@ -396,85 +367,62 @@ class _MyHomePageState extends State<HomePage> {
             ],
             // backgroundColor: Colors.transparent,
             title: Text(
-              'Dïcängï',
+              _language == 'AMH'
+                  ? ''
+                  : _language == 'ANY'
+                      ? 'Dïcängï'
+                      : 'Today',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
             forceMaterialTransparency: true,
           );
         case 1:
-          return AppBar(
-              forceMaterialTransparency: true,
-              // title: SizedBox(
-              //   width: 150,
-              //   child: TextButton(
-              //     onPressed: () {
-              //       setState(() {
-              //         Navigator.pushNamed(context, '/chapterList').then((_) {});
-              //       });
-              //     },
-              //     child: Center(
-              //       child: Container(
-              //         width: 150,
-              //         height: 40,
-              //         decoration: BoxDecoration(
-              //             color: Color.fromARGB(0, 75, 75, 75),
-              //             borderRadius: BorderRadius.circular(15)),
-              //         child: Text(
-              //           'Wïlöölö',
-              //           style: TextStyle(
-              //               fontWeight: FontWeight.bold, fontSize: 17),
-              //         ),
-              //       ),
-              //     ),
-              //   ),
-              // ),
-              actions: [
-                _language == 'ERV'
-                    ? IconButton(
-                        onPressed: () {
-                          setState(() {
-                            thereIsComment = !thereIsComment;
-                          });
-                        },
-                        icon: thereIsComment
-                            ? Icon(
-                                Icons.comment,
-                                size: 18,
-                              )
-                            : Icon(
-                                Icons.comments_disabled,
-                                size: 18,
-                              ),
-                      )
-                    : Visibility(visible: false, child: Text('')),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/chooseBible').then((_) {
+          return AppBar(forceMaterialTransparency: true, actions: [
+            _language == 'ERV'
+                ? IconButton(
+                    onPressed: () {
                       setState(() {
-                        languageVerson();
-                        setState(() {
-                          getBibleVersion();
-                        });
+                        thereIsComment = !thereIsComment;
                       });
-                    });
-                  },
-                  child: Text(
-                    _currentVersion,
-                    style: TextStyle(
-                        color: currentTheme == Brightness.dark
-                            ? Colors.white
-                            : Colors.black),
-                  ),
-                ),
-                IconButton(
-                  icon: Icon(
-                    Icons.search,
-                    color: const Color.fromARGB(255, 227, 171, 2),
-                  ),
-                  onPressed: () {},
-                ),
-              ]);
+                    },
+                    icon: thereIsComment
+                        ? Icon(
+                            Icons.comment,
+                            size: 18,
+                          )
+                        : Icon(
+                            Icons.comments_disabled,
+                            size: 18,
+                          ),
+                  )
+                : Visibility(visible: false, child: Text('')),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/chooseBible').then((_) {
+                  setState(() {
+                    languageVerson();
+
+                    getBibleVersion();
+                  });
+                });
+              },
+              child: Text(
+                _currentVersion,
+                style: TextStyle(
+                    color: currentTheme == Brightness.dark
+                        ? Colors.white
+                        : Colors.black),
+              ),
+            ),
+            IconButton(
+              icon: Icon(
+                Icons.search,
+                color: const Color.fromARGB(255, 227, 171, 2),
+              ),
+              onPressed: () {},
+            ),
+          ]);
         case 2:
           return AppBar(
             title: Text(
@@ -568,15 +516,14 @@ class _MyHomePageState extends State<HomePage> {
                           getBibleVersion();
                           if (amharicBook!.chapters.length - 1 == index) {
                             atEnd = true;
-                            print('end');
+                            // print('end');
                           } else if (index == 0) {
-                            print('beginning');
+                            // print('beginning');
                             atBeggining = true;
                           } else {
                             atEnd = false;
                             atBeggining = false;
                           }
-                          // title = amharicBook!.title;
                         });
                       },
                       itemCount: amharicBook!.chapters.length,
@@ -631,8 +578,16 @@ class _MyHomePageState extends State<HomePage> {
                                             : EdgeInsets.zero,
                                         child: GestureDetector(
                                           onTap: () {
-                                            Highlight.createItem(amhchapters,
-                                                '${amharicBook!.title} ${amhbook.chapter}: ${listIndex + 1}');
+                                            currentBibleVerse = amhchapters;
+
+                                            currentVerseIndex = listIndex;
+
+                                            markText(
+                                                index: listIndex,
+                                                chapterName: amharicBook!.title,
+                                                text: amhchapters,
+                                                chapterNumber: amhbook.chapter,
+                                                chapterId: listIndex + 1);
                                           },
                                           child: RichText(
                                             text: TextSpan(
@@ -664,7 +619,22 @@ class _MyHomePageState extends State<HomePage> {
                                                             fontFamily:
                                                                 currentFont,
                                                             fontSize:
-                                                                _currentFontSize),
+                                                                _currentFontSize,
+                                                            backgroundColor: _highlight
+                                                                .map((verse) => verse[
+                                                                            'id'] ==
+                                                                        amhchapters
+                                                                    ? colorList[
+                                                                        verse[
+                                                                            'color']]
+                                                                    : null)
+                                                                .firstWhere(
+                                                                    (color) =>
+                                                                        color !=
+                                                                        null,
+                                                                    orElse: () =>
+                                                                        Colors
+                                                                            .transparent)),
                                                       )
                                                     : TextSpan(),
                                                 // amhchapters == ''
@@ -710,7 +680,6 @@ class _MyHomePageState extends State<HomePage> {
                     )
                   : PageView.builder(
                       key: key,
-                      // physics: NeverScrollableScrollPhysics(),
                       onPageChanged: (index) {
                         style.setPage(index);
                         setState(() {
@@ -816,7 +785,7 @@ class _MyHomePageState extends State<HomePage> {
                                                   children: [
                                                     GestureDetector(
                                                       onTap: () {
-                                                        print(_highlight);
+                                                        // print(_highlight);
                                                         currentBibleVerse =
                                                             '${book.id}${chapter.id}';
                                                         print(_highlight);
@@ -844,36 +813,30 @@ class _MyHomePageState extends State<HomePage> {
                                                               text:
                                                                   chapter.text,
                                                               style: TextStyle(
-                                                                //                                                   highlight
-                                                                // .firstWhere((verse) => verse['verse'] == chapter.text,
-                                                                //     orElse: () => null)
-                                                                // ?.['color'] ?? Colors.transparent,
-                                                                backgroundColor: _highlight
-                                                                    .map((verse) => verse['id'] ==
-                                                                            '${book.id}${chapter.id}'
-                                                                        ? colorList[verse[
-                                                                            'color']]
-                                                                        : null)
-                                                                    .firstWhere(
-                                                                        (color) =>
-                                                                            color !=
-                                                                            null,
-                                                                        orElse: () =>
-                                                                            Colors.transparent),
-
-                                                                fontFamily:
-                                                                    currentFont,
-                                                                fontSize:
-                                                                    _currentFontSize,
-                                                                // decoration: isExist
-                                                                //     ? TextDecoration
-                                                                //         .underline
-                                                                //     : null,
-                                                                // decorationStyle: isExist
-                                                                //     ? TextDecorationStyle
-                                                                //         .dashed
-                                                                //     : null
-                                                              ),
+                                                                  backgroundColor: _highlight
+                                                                      .map((verse) => verse['id'] ==
+                                                                              '${book.id}${chapter.id}'
+                                                                          ? colorList[verse[
+                                                                              'color']]
+                                                                          : null)
+                                                                      .firstWhere(
+                                                                          (color) =>
+                                                                              color !=
+                                                                              null,
+                                                                          orElse: () => Colors
+                                                                              .transparent),
+                                                                  fontFamily:
+                                                                      currentFont,
+                                                                  fontSize:
+                                                                      _currentFontSize,
+                                                                  decoration: isExist
+                                                                      ? TextDecoration
+                                                                          .underline
+                                                                      : null,
+                                                                  decorationStyle: isExist
+                                                                      ? TextDecorationStyle
+                                                                          .dashed
+                                                                      : null),
                                                             )
                                                           ])),
                                                     ),
@@ -907,7 +870,7 @@ class _MyHomePageState extends State<HomePage> {
                                       listindex == (book.verses.length - 1)
                                           ? Padding(
                                               padding:
-                                                  EdgeInsets.only(bottom: 50),
+                                                  EdgeInsets.only(bottom: 100),
                                             )
                                           : Visibility(
                                               visible: false,
@@ -997,48 +960,32 @@ class _MyHomePageState extends State<HomePage> {
           BottomNavigationBar(
             useLegacyColorScheme: true,
             elevation: 0,
-            // backgroundColor: Colors.transparent,
-
-            // backgroundColor: const Color.fromARGB(255, 9, 13, 57),
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(
                   currentTheme == Brightness.light
                       ? Icons.wb_sunny_outlined
                       : Icons.nights_stay_outlined,
-                  // color: Colors.white,
                 ),
                 label: '',
               ),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.menu_book_rounded,
-                    // color: Colors.white,
                   ),
                   label: ''),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.bookmark,
-                    // color: Colors.white,
                   ),
                   label: ''),
             ],
             currentIndex: _selectedIndex,
-            // unselectedItemColor: Colors.white,
             selectedItemColor: const Color.fromARGB(255, 227, 171, 2),
             onTap: _onItemTapped,
           ),
         ]),
       ),
-      // floatingActionButton: markedText.isNotEmpty
-      //     ? Container(
-      //         color: Colors.white,
-      //         height: 150,
-      //         width: double.infinity,
-      //         child: FloatingActionButton(
-      //             backgroundColor: Colors.white, onPressed: () {}),
-      //       )
-      //     : null
       bottomSheet: markedText.isNotEmpty
           ? Container(
               child: Column(
@@ -1074,7 +1021,6 @@ class _MyHomePageState extends State<HomePage> {
                       ),
                       IconButton(
                         onPressed: () {
-                          // shareVerse(markedText);
                           Navigator.pushNamed(context, '/differentVerse',
                               arguments: [
                                 {
@@ -1131,10 +1077,6 @@ class _MyHomePageState extends State<HomePage> {
                             setState(() {
                               ColorHighlight.createItem(currentBibleVerse, 0);
                               refresher();
-                              // highlight.add({
-                              //   'verse': currentBibleVerse,
-                              //   'color': const Color.fromARGB(175, 255, 193, 7)
-                              // });
                             });
                           },
                           child: Container(
@@ -1154,10 +1096,6 @@ class _MyHomePageState extends State<HomePage> {
                             setState(() {
                               ColorHighlight.createItem(currentBibleVerse, 1);
                               refresher();
-                              // highlight.add({
-                              //   'verse': currentBibleVerse,
-                              //   'color': Color.fromARGB(158, 76, 175, 79),
-                              // });
                             });
                           },
                           child: Container(
@@ -1177,10 +1115,6 @@ class _MyHomePageState extends State<HomePage> {
                             setState(() {
                               ColorHighlight.createItem(currentBibleVerse, 2);
                               refresher();
-                              // highlight.add({
-                              //   'verse': currentBibleVerse,
-                              //   'color': Color.fromARGB(174, 244, 67, 54),
-                              // });
                             });
                           },
                           child: Container(
@@ -1200,10 +1134,6 @@ class _MyHomePageState extends State<HomePage> {
                             setState(() {
                               ColorHighlight.createItem(currentBibleVerse, 3);
                               refresher();
-                              // highlight.add({
-                              //   'verse': currentBibleVerse,
-                              //   'color': Color.fromARGB(158, 30, 142, 233),
-                              // });
                             });
                           },
                           child: Container(
@@ -1223,10 +1153,6 @@ class _MyHomePageState extends State<HomePage> {
                             setState(() {
                               ColorHighlight.createItem(currentBibleVerse, 4);
                               refresher();
-                              // highlight.add({
-                              //   'verse': currentBibleVerse,
-                              //   'color': Color.fromARGB(150, 159, 30, 233),
-                              // });
                             });
                           },
                           child: Container(

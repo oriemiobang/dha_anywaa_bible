@@ -3,7 +3,7 @@ import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 // import 'package:dha_anywaa_bible/main.dart';
-import 'package:dha_anywaa_bible/pray.dart';
+import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
@@ -32,6 +32,7 @@ class _DailyTextState extends State<DailyText>
 
   @override
   void initState() {
+    getLang();
     super.initState();
     _getItem();
     _controller =
@@ -59,6 +60,7 @@ class _DailyTextState extends State<DailyText>
   String currentText = "";
   String currentVerse = "";
   String currentShortText = "";
+  String _languages = "";
 
   // late int currentIndex;
   Future<int> _getItem() async {
@@ -80,6 +82,12 @@ class _DailyTextState extends State<DailyText>
     print(' items: $items');
   }
 
+  void getLang() async {
+    String languages = await selectedFontStyle.getLanguageVersion();
+    setState(() {
+      _languages = languages;
+    });
+  }
   // void _referesher() async {
   //   final item = await SQLHelper.getItem(2);
   //   final items = await SQLHelper.getItems();
@@ -102,6 +110,7 @@ class _DailyTextState extends State<DailyText>
       print('my index: $myIndex');
       currentText = dailyText.dailyVerseList[myIndex]['text']!;
       // print(' blala ${currentText}');
+      print(currentText.length);
       currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
       currentShortText = dailyText.dailyVerseList[myIndex]['shortText']!;
     } catch (e) {
@@ -115,7 +124,7 @@ class _DailyTextState extends State<DailyText>
 
     Brightness currentTheme = Theme.of(context).brightness;
     return ListView(
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Container(
           height: MediaQuery.of(context).size.height,
@@ -156,8 +165,11 @@ class _DailyTextState extends State<DailyText>
                                       ? currentShortText
                                       : currentText,
                                   style: TextStyle(
-                                      fontSize:
-                                          currentText.length <= 125 ? 30 : 20),
+                                      fontSize: currentText.length <= 125
+                                          ? 40
+                                          : currentText.length > 310
+                                              ? 17
+                                              : 20),
                                 ),
                               ],
                             ),
@@ -189,11 +201,11 @@ class _DailyTextState extends State<DailyText>
                                       Card(
                                         elevation: 3,
                                         child: Container(
-                                          width: 270,
-                                          height: 130,
+                                          width: 160,
+                                          height: 100,
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
-                                                Radius.circular(10)),
+                                                Radius.circular(13)),
                                             color: currentTheme ==
                                                     Brightness.dark
                                                 ? Color.fromARGB(255, 1, 10, 34)
@@ -203,7 +215,7 @@ class _DailyTextState extends State<DailyText>
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
                                             children: [
-                                              const Row(
+                                              Row(
                                                   crossAxisAlignment:
                                                       CrossAxisAlignment.center,
                                                   mainAxisAlignment:
@@ -213,21 +225,27 @@ class _DailyTextState extends State<DailyText>
                                                     Icon(
                                                       Icons.waving_hand,
                                                       color: Colors.amber,
+                                                      size: 15,
                                                     ),
                                                     SizedBox(
                                                       width: 10,
                                                     ),
                                                     Text(
-                                                      'Lam mar Dïcängï',
+                                                      _languages == 'AMH'
+                                                          ? ''
+                                                          : _languages == 'ANY'
+                                                              ? 'Lam mar Dïcängï'
+                                                              : 'Today\'s prayer',
                                                       style: TextStyle(
-                                                          fontSize: 18),
+                                                          fontSize: 14),
                                                     )
                                                   ]),
                                               SizedBox(
                                                 height: 15,
                                               ),
                                               Container(
-                                                width: 120,
+                                                width: 90,
+                                                height: 40,
                                                 decoration: BoxDecoration(
                                                   borderRadius:
                                                       BorderRadius.all(
@@ -255,8 +273,13 @@ class _DailyTextState extends State<DailyText>
                                                       });
                                                     },
                                                     child: Text(
-                                                      'Lämï',
+                                                      _languages == 'AMH'
+                                                          ? ''
+                                                          : _languages == 'ANY'
+                                                              ? 'Lämï'
+                                                              : 'Pray',
                                                       style: TextStyle(
+                                                        fontSize: 16.5,
                                                         color: currentTheme ==
                                                                 Brightness.light
                                                             ? const Color
@@ -277,14 +300,92 @@ class _DailyTextState extends State<DailyText>
                                       SizedBox(
                                         width: 20,
                                       ),
+                                      // Card(
+                                      //   elevation: 3,
+                                      //   child: Container(
+                                      //     width: 270,
+                                      //     height: 130,
+                                      //     decoration: BoxDecoration(
+                                      //       borderRadius: BorderRadius.all(
+                                      //           Radius.circular(10)),
+                                      //       color: currentTheme ==
+                                      //               Brightness.dark
+                                      //           ? Color.fromARGB(255, 1, 10, 34)
+                                      //           : Colors.white,
+                                      //     ),
+                                      //     child: Column(
+                                      //       mainAxisAlignment:
+                                      //           MainAxisAlignment.center,
+                                      //       children: [
+                                      //         Row(
+                                      //             crossAxisAlignment:
+                                      //                 CrossAxisAlignment.center,
+                                      //             mainAxisAlignment:
+                                      //                 MainAxisAlignment.center,
+                                      //             children: [
+                                      //               Icon(
+                                      //                 Icons.menu_book_rounded,
+                                      //                 color: Colors.amber,
+                                      //               ),
+                                      //               SizedBox(
+                                      //                 width: 10,
+                                      //               ),
+                                      //               Text(
+                                      //                 'Maa tier wëëlö wïï',
+                                      //                 style: TextStyle(
+                                      //                     fontSize: 18),
+                                      //               )
+                                      //             ]),
+                                      //         SizedBox(
+                                      //           height: 13,
+                                      //         ),
+                                      //         Container(
+                                      //           width: 120,
+                                      //           decoration: BoxDecoration(
+                                      //             borderRadius:
+                                      //                 BorderRadius.all(
+                                      //                     Radius.circular(40)),
+                                      //             border: Border.all(
+                                      //               width: 1,
+                                      //               color: currentTheme ==
+                                      //                       Brightness.light
+                                      //                   ? const Color.fromARGB(
+                                      //                       255, 1, 11, 36)
+                                      //                   : Color.fromARGB(
+                                      //                       255, 243, 179, 83),
+                                      //             ),
+                                      //           ),
+                                      //           child: TextButton(
+                                      //             onPressed: () {},
+                                      //             child: Text(
+                                      //               'Tägï',
+                                      //               style: TextStyle(
+                                      //                 color: currentTheme ==
+                                      //                         Brightness.light
+                                      //                     ? const Color
+                                      //                         .fromARGB(
+                                      //                         255, 1, 11, 36)
+                                      //                     : Color.fromARGB(255,
+                                      //                         243, 179, 83),
+                                      //               ),
+                                      //             ),
+                                      //           ),
+                                      //         )
+                                      //       ],
+                                      //     ),
+                                      //   ),
+                                      // ),
+                                      // SizedBox(
+                                      // width: 20,
+                                      // ),
                                       Card(
                                         elevation: 3,
                                         child: Container(
-                                          width: 270,
-                                          height: 130,
+                                          width: 160,
+                                          height: 100,
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.all(
-                                                Radius.circular(10)),
+                                                Radius.circular(13)),
                                             color: currentTheme ==
                                                     Brightness.dark
                                                 ? Color.fromARGB(255, 1, 10, 34)
@@ -295,105 +396,35 @@ class _DailyTextState extends State<DailyText>
                                                 MainAxisAlignment.center,
                                             children: [
                                               Row(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
                                                   children: [
                                                     Icon(
-                                                      Icons.menu_book_rounded,
+                                                      Icons.share,
                                                       color: Colors.amber,
+                                                      size: 18,
                                                     ),
                                                     SizedBox(
                                                       width: 10,
                                                     ),
                                                     Text(
-                                                      'Maa tier wëëlö wïï',
+                                                      _languages == 'AMH'
+                                                          ? ''
+                                                          : _languages == 'ANY'
+                                                              ? 'Kwaac dwør jwøk'
+                                                              : 'Send God\'s word',
                                                       style: TextStyle(
-                                                          fontSize: 18),
+                                                          fontSize: 13),
                                                     )
                                                   ]),
                                               SizedBox(
                                                 height: 13,
                                               ),
                                               Container(
-                                                width: 120,
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(40)),
-                                                  border: Border.all(
-                                                    width: 1,
-                                                    color: currentTheme ==
-                                                            Brightness.light
-                                                        ? const Color.fromARGB(
-                                                            255, 1, 11, 36)
-                                                        : Color.fromARGB(
-                                                            255, 243, 179, 83),
-                                                  ),
-                                                ),
-                                                child: TextButton(
-                                                  onPressed: () {},
-                                                  child: Text(
-                                                    'Tägï',
-                                                    style: TextStyle(
-                                                      color: currentTheme ==
-                                                              Brightness.light
-                                                          ? const Color
-                                                              .fromARGB(
-                                                              255, 1, 11, 36)
-                                                          : Color.fromARGB(255,
-                                                              243, 179, 83),
-                                                    ),
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-                                      Card(
-                                        elevation: 3,
-                                        child: Container(
-                                          width: 270,
-                                          height: 130,
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(10)),
-                                            color: currentTheme ==
-                                                    Brightness.dark
-                                                ? Color.fromARGB(255, 1, 10, 34)
-                                                : Colors.white,
-                                          ),
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              const Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Icon(Icons.share,
-                                                        color: Colors.amber),
-                                                    SizedBox(
-                                                      width: 10,
-                                                    ),
-                                                    Text(
-                                                      'Kwaac dwør jwøk',
-                                                      style: TextStyle(
-                                                          fontSize: 18),
-                                                    )
-                                                  ]),
-                                              SizedBox(
-                                                height: 13,
-                                              ),
-                                              Container(
-                                                width: 120,
+                                                width: 90,
+                                                height: 40,
                                                 decoration: BoxDecoration(
                                                   borderRadius:
                                                       BorderRadius.all(
@@ -414,8 +445,13 @@ class _DailyTextState extends State<DailyText>
                                                           '$currentVerse \n $currentText');
                                                     },
                                                     child: Text(
-                                                      'Kwaayi',
+                                                      _languages == 'AMH'
+                                                          ? ''
+                                                          : _languages == 'ANY'
+                                                              ? 'Kwaayi'
+                                                              : 'Send',
                                                       style: TextStyle(
+                                                        fontSize: 16.5,
                                                         color: currentTheme ==
                                                                 Brightness.light
                                                             ? const Color

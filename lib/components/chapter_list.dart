@@ -490,9 +490,6 @@ class _ChapterListState extends State<ChapterList> {
   ];
 
   int currentOpenedPanelIndex = -1;
-  // bool previousOpenedPanel = false;
-
-  // List<bool> _isExpanded = [false, false, false];
 
   SelectedFontStyle style = SelectedFontStyle();
   String bibleVersion = '';
@@ -651,7 +648,6 @@ class _ChapterListState extends State<ChapterList> {
               ],
             ),
             bottom: TabBar(
-                // dividerHeight: 17,
                 labelColor: Colors.amber,
                 indicatorColor: Colors.amber,
                 tabs: <Widget>[
@@ -693,7 +689,6 @@ class _ChapterListState extends State<ChapterList> {
   Widget oldTestement() {
     return ListView.builder(
         shrinkWrap: true,
-        // key: ValueKey(_foundBook[index]['title']),
         itemCount: _foundOldBook.length,
         itemBuilder: (context, listviewindex) {
           return ListTile(
@@ -710,15 +705,14 @@ class _ChapterListState extends State<ChapterList> {
             ),
             onTap: () {
               showModalBottomSheet(
-                  // showDragHandle: true,
-                  // isScrollControlled: true,
                   context: context,
                   builder: (BuildContext context) {
                     return Scaffold(
                       appBar: AppBar(
-                        // centerTitle: true,
                         title: Text(
-                          '${_foundOldBook[listviewindex]['title']}',
+                          version == 'AMH'
+                              ? '${_foundOldBook[listviewindex]['title']} | ${_foundOldBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}'
+                              : '${_foundOldBook[listviewindex]['title']} ',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
@@ -735,7 +729,6 @@ class _ChapterListState extends State<ChapterList> {
                                   '${_foundOldBook[listviewindex]['number']}'),
                               (index) {
                             return Card(
-                              // color: Color.fromARGB(136, 67, 65, 58),
                               child: Center(
                                 child: TextButton(
                                   child: Text('${index + 1}',
@@ -745,15 +738,10 @@ class _ChapterListState extends State<ChapterList> {
                                               255, 250, 219, 124))),
                                   onPressed: () async {
                                     getLanguageVersion();
-                                    bibleVersion =
-                                        // listviewindex > 38
-                                        // ?
-                                        version != 'AMH'
-                                            ? 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json'
-                                            : '${_foundOldBook[listviewindex]['amharic']}';
-                                    // : version != 'AMH'
-                                    // ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                    // : '${_foundBook[listviewindex]['amharic']}';
+                                    bibleVersion = version != 'AMH'
+                                        ? 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json'
+                                        : '${_foundOldBook[listviewindex]['amharic']}';
+
                                     style.setBibleVersion(bibleVersion);
                                     setState(() {
                                       chapter = index;
@@ -800,8 +788,6 @@ class _ChapterListState extends State<ChapterList> {
                 : Text(''),
             onTap: () {
               showModalBottomSheet(
-                  // showDragHandle: true,
-                  // isScrollControlled: true,
                   context: context,
                   builder: (BuildContext context) {
                     return Scaffold(

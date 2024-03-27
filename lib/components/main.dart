@@ -1,18 +1,18 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 // import 'package:dha_anywaa_bible/pray.dart';
-import 'package:dha_anywaa_bible/chapter_list.dart';
+import 'package:dha_anywaa_bible/components/chapter_list.dart';
 
-import 'package:dha_anywaa_bible/choose_bible.dart';
-import 'package:dha_anywaa_bible/choose_font.dart';
+import 'package:dha_anywaa_bible/components/choose_bible.dart';
+import 'package:dha_anywaa_bible/components/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
-import 'package:dha_anywaa_bible/differentVerse.dart';
+import 'package:dha_anywaa_bible/components/differentVerse.dart';
 // import 'package:dha_anywaa_bible/daily_text.dart';
-import 'package:dha_anywaa_bible/pray.dart';
-import 'package:dha_anywaa_bible/setting.dart';
+import 'package:dha_anywaa_bible/components/pray.dart';
+import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -30,10 +30,10 @@ Future<void> _updateItem(int counter) async {
   final items = await SQLHelper.getItems();
   if (items.isNotEmpty) {
     await SQLHelper.updateItem(1, counter);
-    print('list aint\'t  empty');
+    // print('list aint\'t  empty');
   }
 
-  print('is items empty?: ${items.isEmpty}');
+  // print('is items empty?: ${items.isEmpty}');
 }
 
 Future<void> getItem() async {
@@ -43,7 +43,7 @@ Future<void> getItem() async {
     currentIndex = item[0]['counter'];
   }
 
-  print('is items empty??: ${items.isEmpty}');
+  // print('is items empty??: ${items.isEmpty}');
 }
 
 void callbackDispatcher() {

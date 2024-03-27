@@ -1,228 +1,240 @@
-// ignore_for_file: prefer_const_constructors
+import 'dart:convert';
 
+import 'package:dha_anywaa_bible/components/Book.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class ChooseBible extends StatefulWidget {
-  const ChooseBible({super.key});
+class DifferentVerse extends StatefulWidget {
+  const DifferentVerse({super.key});
 
   @override
-  State<ChooseBible> createState() => _ChooseBibleState();
+  State<DifferentVerse> createState() => _DifferentVerseState();
 }
 
-class _ChooseBibleState extends State<ChooseBible> {
-  List<Map<String, dynamic>> bibleVersons = [
-    {
-      'name': 'Dha anywaa',
-      'abbrev': 'ANY',
-      'description': 'The Bible was translated into the Anyua language so that the word of God could reach the Anyua people.'
-          '\nThe translation took place in Akobo, Sudan, in 1948. It began with the New Testament.'
-          '\n\nIn 1962, the translation was completed in Sudan and published by the Bible Society in America, written in Latin.'
-          ' Later, in 1965, it was brought to Ethiopia and written in the Amharic script, making it accessible to the Anyua people in Ethiopia.'
-          '\n\nAfter several years, the entire Bible was translated into the Anyua language.',
-      'isExpanded': false,
-    },
-    {
-      'name': 'Amharic',
-      'abbrev': 'AMH',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'Amplified Bible',
-      'abbrev': 'AMP',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'American Standard Version',
-      'abbrev': 'ASV',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'Catholic Public Domain Version',
-      'abbrev': 'CPDV',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'Easy-to-Read Version',
-      'abbrev': 'ERV',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'English Standard Version',
-      'abbrev': 'ESV',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'King James Version',
-      'abbrev': 'KJV',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'New American Standard Bible',
-      'abbrev': 'NASB',
-      'description': '',
-      'isExpanded': false,
-    },
-    {
-      'name': 'World English Bible',
-      'abbrev': 'WEB',
-      'description': '',
-      'isExpanded': false,
-    },
-  ];
+class _DifferentVerseState extends State<DifferentVerse> {
+  String englishJsonString = 'assets/holybooks/$bibleVersion';
+  String amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
 
-  void getLanguageVersion() async {
-    String currentLanguageVersion =
-        await selectedFontStyle.getLanguageVersion();
-    currentLanguageVersion = currentLanguageVersion.split(' ')[0];
-
-    setState(() {
-      _currentLanguageVersion = currentLanguageVersion;
-    });
+  Future<String> _engLoadData() async {
+    return await rootBundle.loadString(englishJsonString);
   }
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getLanguageVersion();
+  Future<String> _amhLoadData() async {
+    return await rootBundle.loadString(amharicJsonString);
   }
 
-  SelectedFontStyle selectedFontStyle = SelectedFontStyle();
-  String _currentLanguageVersion = '';
-  String currentAbbrev = '';
+  EnglishBook? englishBook;
+  AmharicChapters? amharicBook;
+  SelectedFontStyle style = SelectedFontStyle()..init();
+  static String bibleVersion = '';
+  static String amhBibleVersion = '';
+  String verseTitle = '';
+  int currentChapter = 0;
+  String currentVerse = '';
 
-  _updateVersion(value) async {
+// load english bible
+  Future engLoadData(args, myCurrentVersion) async {
     try {
-      final currentVersion = await selectedFontStyle.getBibleVersion();
+      String engJsonString = await _engLoadData();
+      final engJsonResponse = json.decode(engJsonString);
+      setState(() {
+        englishBook = EnglishBook.fromJson(engJsonResponse);
+        print(args[0]['pageIndex']);
+        int pageIndex = args[0]['pageIndex'];
+        int listIndex = args[0]['listIndex'];
+        String title = args[0]['title'];
 
-      // String v = currentVersion
-      var splitVersion = currentVersion.split('/');
-      print(splitVersion);
-      print(value);
-      if (value == 'AMH') {
-        print('_ is present');
-        print(currentVersion);
-        print(splitVersion[1]);
+        // ignore: unnecessary_null_comparison
+        if (englishBook!.chapters[pageIndex].verses != null) {
+          for (var verse in englishBook!.chapters[pageIndex].verses) {
+            if ("${listIndex + 1}" == verse.id && verse.text != "") {
+              versionsList.add({
+                'text': verse.text,
+                'version': myCurrentVersion,
+                'chapter': pageIndex + 1,
+                'verse': listIndex + 1,
+                'title': title
+              });
 
-        for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
-          if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1].toString()) {
-            print('${chapAbbrev[chapIndex]['amharic']}  fff');
-            selectedFontStyle
-                .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
-            print('${chapAbbrev[chapIndex]['amharic']}  fff');
-          }
-        }
-      } else if (value == 'ANY') {
-        print(value);
-      } else {
-        print('english $splitVersion');
-        print(value);
+              setState(() {
+                currentVerse = verse.id;
+                verseTitle = args[0]['title'];
+                currentChapter = args[0]['pageIndex'] + 1;
+              });
 
-        if (currentVersion.contains('_')) {
-          for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
-            if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
-                chapIndex < 39) {
-              print('1 problem');
-              selectedFontStyle.setBibleVersion(
-                  'OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
-              print('OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json jkj');
-            } else if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
-                chapIndex >= 39) {
-              print('3 probelm');
-              selectedFontStyle.setBibleVersion(
-                  'NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
-              print('NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json here');
+              break;
             }
           }
-        } else {
-          selectedFontStyle.setBibleVersion(
-              '${splitVersion[0]}/${splitVersion[1]}/$value.json');
-          print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
         }
-
-        print('ghghggh');
-        // print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
-      }
+      });
     } catch (e) {
-      print('Error $e');
+      print('english problem');
+      print(e);
     }
   }
 
-  List<Map<String, String>> chapAbbrev = [
+  Future amhLoadData(args) async {
+    try {
+      print('page index: ${args[0]['pageIndex']}');
+      String amhJsonString = await _amhLoadData();
+      final amhJsonResponse = json.decode(amhJsonString);
+      setState(() {
+        amharicBook = AmharicChapters.fromJson(amhJsonResponse);
+        int pageIndex = args[0]['pageIndex'];
+        int listIndex = args[0]['listIndex'];
+        String currentVersion = 'AMH';
+        String title = args[0]['title'];
+        String amhVerse = amharicBook?.chapters[pageIndex].verses[listIndex];
+
+        versionsList.add({
+          'text': amhVerse,
+          'version': currentVersion,
+          'chapter': pageIndex + 1,
+          'verse': listIndex + 1,
+          'title': title
+        });
+      });
+    } catch (e) {
+      print('amharic problem');
+      print(e);
+    }
+  }
+
+  void _refresher(args) async {
+    bibleVersion = await style.getBibleVersion();
+    List splitVersion = bibleVersion.split('/');
+
+    for (String version in versions) {
+      if (version == "AMH") {
+        if (bibleVersion.contains('_')) {
+          amharicJsonString = 'assets/holybooks/AM/$bibleVersion';
+          amhLoadData(arguments);
+        } else {
+          for (var book in bookList) {
+            if (book['abbrev'] == splitVersion[1]) {
+              amhBibleVersion = book['amharic']!;
+              break;
+            }
+          }
+          amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+          // print('amh: $amhBibleVersion');
+          amhLoadData(arguments);
+        }
+      } else {
+        String currentVersion = '';
+        if (bibleVersion.contains('_')) {
+          int myListIndex = int.parse(bibleVersion.split('_')[0]);
+          currentVersion = myListIndex <= 39
+              ? 'OT/${bookList[myListIndex - 1]['abbrev']}/$version.json'
+              : 'NT/${bookList[myListIndex - 1]['abbrev']}/$version.json';
+          englishJsonString = 'assets/holybooks/$currentVersion';
+          engLoadData(arguments, version);
+        } else {
+          currentVersion =
+              '${splitVersion[0]}/${splitVersion[1]}/$version.json';
+          setState(() {
+            bibleVersion = currentVersion;
+            englishJsonString = 'assets/holybooks/$currentVersion';
+
+            // print(currentVersion);
+            engLoadData(arguments, version);
+            // var currentText = englishBook?.chapters[0].verses[0].text;
+            // print(currentText);
+          });
+        }
+      }
+    }
+    setState(() {});
+  }
+
+  List versionsList = [];
+  List versions = [
+    "AMP",
+    "CPDV",
+    "ERV",
+    "ESV",
+    "ASV",
+    "KJV",
+    "NASB",
+    "WEB",
+    "AMH",
+  ];
+  Object? arguments;
+  @override
+  void initState() {
+    // TODO: implement initState
+    _refresher(arguments);
+    super.initState();
+  }
+
+  List<Map<String, String>> bookList = [
     {
       'title': 'Genesis',
-      'amharic': "01_ኦሪት ዘፍጥረት.json",
+      'amharic': '01_ኦሪት ዘፍጥረት.json',
       'anywaa': '',
       'number': '50',
       'abbrev': 'GEN'
     },
     {
       'title': 'Exodus',
-      'amharic': '"02_ኦሪት ዘጸአት.json"',
+      'amharic': '02_ኦሪት ዘጸአት.json',
       'anywaa': '',
       'number': '40',
       'abbrev': 'EXO'
     },
     {
       'title': 'Leviticus',
-      'amharic': "03_ኦሪት ዘሌዋውያን.json",
+      'amharic': '03_ኦሪት ዘሌዋውያን.json',
       'anywaa': '',
       'number': '27',
       'abbrev': 'LEV'
     },
     {
       'title': 'Numbers',
-      'amharic': "04_ኦሪት ዘኍልቍ.json",
+      'amharic': '04_ኦሪት ዘኍልቍ.json',
       'anywaa': '',
       'number': '36',
       'abbrev': 'NUM'
     },
     {
       'title': 'Deuteronomy',
-      'amharic': "05_ኦሪት ዘዳግም.json",
+      'amharic': '05_ኦሪት ዘዳግም.json',
       'anywaa': '',
       'number': '34',
       'abbrev': 'DEU'
     },
     {
       'title': 'Joshua',
-      'amharic': "06_መጽሐፈ ኢያሱ ወልደ ነዌ.json",
+      'amharic': '06_መጽሐፈ ኢያሱ ወልደ ነዌ.json',
       'anywaa': '',
       'number': '24',
       'abbrev': 'JOS'
     },
     {
       'title': "Judges",
-      'amharic': "07_መጽሐፈ መሣፍንት.json",
+      'amharic': '07_መጽሐፈ መሣፍንት.json',
       'anywaa': '',
       'number': '21',
       'abbrev': 'JDG'
     },
     {
       'title': "Ruth",
-      'amharic': "08_መጽሐፈ ሩት.json",
+      'amharic': '08_መጽሐፈ ሩት.json',
       'anywaa': '',
       'number': '4',
       'abbrev': 'RUT'
     },
     {
       'title': "1 Samuel",
-      'amharic': "09_መጽሐፈ ሳሙኤል ቀዳማዊ.json",
+      'amharic': '09_መጽሐፈ ሳሙኤል ቀዳማዊ.json',
       'anywaa': '',
       'number': '31',
       'abbrev': '1SA'
     },
     {
       'title': "2 Samuel",
-      'amharic': "10_መጽሐፈ ሳሙኤል ካል.json",
+      'amharic': '10_መጽሐፈ ሳሙኤል ካል.json',
       'anywaa': '',
       'number': '24',
       'abbrev': '2SA'
@@ -623,78 +635,33 @@ class _ChooseBibleState extends State<ChooseBible> {
 
   @override
   Widget build(BuildContext context) {
-    Brightness currentTheme = Theme.of(context).brightness;
+    var args = ModalRoute.of(context)?.settings.arguments;
+    arguments = args;
+    // _refresher(args);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Languages And Versions'),
+        title: Text('$verseTitle $currentChapter :$currentVerse'),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(8),
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text('    Choose your bible version'),
-            ExpansionPanelList(
-              // expandIconColor: _currentLanguageVersion == currentAbbrev
-              //     ? Colors.amber
-              //     : null,
-              dividerColor: Colors.transparent,
-              expansionCallback: (int index, bool isExpanded) {
-                setState(() {
-                  setState(() {
-                    bibleVersons[index]['isExpanded'] =
-                        !bibleVersons[index]['isExpanded'];
-                  });
-                });
-              },
-              children: bibleVersons.map<ExpansionPanel>((item) {
-                return ExpansionPanel(
-                  backgroundColor: currentTheme == Brightness.dark
-                      ? Color.fromARGB(255, 0, 4, 17)
-                      : Colors.white,
-                  headerBuilder: (BuildContext context, bool isExpanded) =>
-                      ListTile(
-                    leading: _currentLanguageVersion == item['abbrev']
-                        ? Icon(
-                            Icons.check,
-                            color: Colors.amber,
-                          )
-                        : Icon(null),
-                    title: Text(
-                      '${item['abbrev']}',
-                      style: TextStyle(
-                          color: _currentLanguageVersion == item['abbrev']
-                              ? Colors.amber
-                              : null),
-                    ),
-                    subtitle: Text(
-                      '${item['name']}',
-                      style: TextStyle(
-                          color: _currentLanguageVersion == item['abbrev']
-                              ? Colors.amber
-                              : Colors.grey),
-                    ),
-                    onTap: () {
-                      selectedFontStyle.setLanguageVersion(
-                          '${item['abbrev']} ${item['name']}');
-                      setState(() {
-                        currentAbbrev = item['abbrev'];
-                        _updateVersion(currentAbbrev);
-                        _currentLanguageVersion = item['abbrev'];
-                      });
-
-                      Navigator.pop(context);
-                    },
-                  ),
-                  body: ListTile(
-                    title: Text('${item['description']}'),
-                  ),
-                  isExpanded: item['isExpanded'],
-                );
-              }).toList(),
-            ),
-          ]),
-        ),
+      body: Center(
+        child: ListView.builder(
+            itemCount: versionsList.length,
+            itemBuilder: (BuildContext context, int index) {
+              return ListTile(
+                title: Text(
+                  '${versionsList[index]['version']}',
+                  // ignore: prefer_const_constructors
+                  style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text(
+                  '${versionsList[index]['text']}',
+                  style: const TextStyle(fontSize: 17),
+                ),
+              );
+            }),
       ),
     );
   }
