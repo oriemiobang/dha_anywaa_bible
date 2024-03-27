@@ -29,8 +29,8 @@ class _DifferentVerseState extends State<DifferentVerse> {
   SelectedFontStyle style = SelectedFontStyle()..init();
   static String bibleVersion = '';
   static String amhBibleVersion = '';
-  String title = '';
-  String chapter = '';
+  String verseTitle = '';
+  int currentChapter = 0;
   String currentVerse = '';
 //  String NASB = '';
 //     "KJV",
@@ -67,8 +67,10 @@ class _DifferentVerseState extends State<DifferentVerse> {
 
               setState(() {
                 currentVerse = verse.id;
-                title = args[0]['title'];
-                print(args[0]['title']);
+                verseTitle = args[0]['title'];
+                currentChapter = args[0]['pageIndex'] + 1;
+                // print(args[0]['title']);
+                // print(args[0]['pageIndex'] + 1);
                 // chapter = args[0]['pageIndex'] + 1;
               });
 
@@ -126,13 +128,13 @@ class _DifferentVerseState extends State<DifferentVerse> {
   List versionsList = [];
   List versions = [
     // "AMH",
-    "NASB",
-    "KJV",
-    "ERV",
     "AMP",
-    "ASV",
     "CPDV",
+    "ERV",
     "ESV",
+    "ASV",
+    "KJV",
+    "NASB",
     "WEB",
   ];
 
@@ -155,15 +157,24 @@ class _DifferentVerseState extends State<DifferentVerse> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('$title: $chapter: $currentVerse'),
+        title: Text('$verseTitle $currentChapter :$currentVerse'),
       ),
       body: Center(
         child: ListView.builder(
             itemCount: versionsList.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                title: Text('${versions[index]}'),
-                subtitle: Text('${versionsList[index]['text']}'),
+                title: Text(
+                  '${versions[index]}',
+                  style: TextStyle(
+                      fontSize: 19,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text(
+                  '${versionsList[index]['text']}',
+                  style: TextStyle(fontSize: 17),
+                ),
               );
             }),
       ),

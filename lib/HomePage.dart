@@ -8,6 +8,7 @@ import 'package:dha_anywaa_bible/account.dart';
 import 'package:dha_anywaa_bible/chapter_list.dart';
 
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
+import 'package:dha_anywaa_bible/classes/color_highlight.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
@@ -167,10 +168,21 @@ class _MyHomePageState extends State<HomePage> {
 
     // print('bible version in chapter: $currentBook');
   }
+
   // void fetchdata(book) {}
+
+  Future<void> refresher() async {
+    final highlight = await ColorHighlight.gethighlight();
+    // print(highlight[0]);
+    setState(() {
+      print(highlight);
+      _highlight = highlight;
+    });
+  }
 
   @override
   void initState() {
+    refresher();
     super.initState();
     controller.addListener(listen);
     print('we are back');
@@ -192,6 +204,7 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
+  ColorHighlight colorHighlight = ColorHighlight();
   ScrollController controller = ScrollController();
   ScrollController mycontroller = ScrollController();
   bool isVisible = true;
@@ -241,18 +254,20 @@ class _MyHomePageState extends State<HomePage> {
   bool atEnd = false;
   bool atBeggining = false;
   bool thereIsComment = true;
+  bool isExist = false;
   int currentVerseIndex = 0;
+  String currentBibleVerse = '';
   int pageIndex = 0;
   int colorIndex = 0;
   int selectedColorIndex = -1;
   List markedText = [];
+  List<Map<String, dynamic>> _highlight = [];
   List<Color> colorList = [
-    Colors.transparent,
-    Colors.amber,
-    const Color.fromARGB(233, 76, 175, 79),
-    const Color.fromARGB(214, 244, 67, 54),
-    Color.fromARGB(123, 30, 142, 233),
-    Color.fromARGB(229, 159, 30, 233),
+    const Color.fromARGB(175, 255, 193, 7),
+    Color.fromARGB(158, 76, 175, 79),
+    Color.fromARGB(174, 244, 67, 54),
+    Color.fromARGB(158, 30, 142, 233),
+    Color.fromARGB(150, 159, 30, 233),
   ];
 
   Future<int> _getItem() async {
@@ -290,7 +305,7 @@ class _MyHomePageState extends State<HomePage> {
       "chapterNumber": chapterNumber,
       "text": text
     };
-    bool isExist = markedText.any((dic) => mapEquals(dic, currentDict));
+    isExist = markedText.any((dic) => mapEquals(dic, currentDict));
     print(isExist);
     setState(() {
       if (isExist) {
@@ -545,7 +560,7 @@ class _MyHomePageState extends State<HomePage> {
                       ),
                     )
                   : PageView.builder(
-                      key: UniqueKey(),
+                      key: key,
                       controller: pageController,
                       onPageChanged: (index) {
                         style.setPage(index);
@@ -572,7 +587,7 @@ class _MyHomePageState extends State<HomePage> {
                           padding: const EdgeInsets.only(
                               top: 8, left: 10, bottom: 0, right: 9),
                           child: ListView.builder(
-                              key: UniqueKey(),
+                              key: key,
                               controller: controller,
                               itemCount: amharicBook!
                                   .chapters[pageIndex].verses.length,
@@ -801,6 +816,10 @@ class _MyHomePageState extends State<HomePage> {
                                                   children: [
                                                     GestureDetector(
                                                       onTap: () {
+                                                        print(_highlight);
+                                                        currentBibleVerse =
+                                                            '${book.id}${chapter.id}';
+                                                        print(_highlight);
                                                         currentVerseIndex =
                                                             listindex;
                                                         selectedColorIndex =
@@ -825,27 +844,36 @@ class _MyHomePageState extends State<HomePage> {
                                                               text:
                                                                   chapter.text,
                                                               style: TextStyle(
-                                                                  backgroundColor: selectedColorIndex ==
-                                                                          listindex
-                                                                      ? colorList[
-                                                                          colorIndex]
-                                                                      : null,
-                                                                  fontFamily:
-                                                                      currentFont,
-                                                                  fontSize:
-                                                                      _currentFontSize,
-                                                                  decoration: markedText
-                                                                          .contains(
-                                                                              listindex)
-                                                                      ? TextDecoration
-                                                                          .underline
-                                                                      : null,
-                                                                  decorationStyle: markedText
-                                                                          .contains(
-                                                                              listindex)
-                                                                      ? TextDecorationStyle
-                                                                          .dashed
-                                                                      : null),
+                                                                //                                                   highlight
+                                                                // .firstWhere((verse) => verse['verse'] == chapter.text,
+                                                                //     orElse: () => null)
+                                                                // ?.['color'] ?? Colors.transparent,
+                                                                backgroundColor: _highlight
+                                                                    .map((verse) => verse['id'] ==
+                                                                            '${book.id}${chapter.id}'
+                                                                        ? colorList[verse[
+                                                                            'color']]
+                                                                        : null)
+                                                                    .firstWhere(
+                                                                        (color) =>
+                                                                            color !=
+                                                                            null,
+                                                                        orElse: () =>
+                                                                            Colors.transparent),
+
+                                                                fontFamily:
+                                                                    currentFont,
+                                                                fontSize:
+                                                                    _currentFontSize,
+                                                                // decoration: isExist
+                                                                //     ? TextDecoration
+                                                                //         .underline
+                                                                //     : null,
+                                                                // decorationStyle: isExist
+                                                                //     ? TextDecorationStyle
+                                                                //         .dashed
+                                                                //     : null
+                                                              ),
                                                             )
                                                           ])),
                                                     ),
@@ -1081,7 +1109,8 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 0;
+                              ColorHighlight.deleteItem(currentBibleVerse);
+                              refresher();
                             });
                           },
                           child: Container(
@@ -1100,7 +1129,12 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 1;
+                              ColorHighlight.createItem(currentBibleVerse, 0);
+                              refresher();
+                              // highlight.add({
+                              //   'verse': currentBibleVerse,
+                              //   'color': const Color.fromARGB(175, 255, 193, 7)
+                              // });
                             });
                           },
                           child: Container(
@@ -1118,7 +1152,12 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 2;
+                              ColorHighlight.createItem(currentBibleVerse, 1);
+                              refresher();
+                              // highlight.add({
+                              //   'verse': currentBibleVerse,
+                              //   'color': Color.fromARGB(158, 76, 175, 79),
+                              // });
                             });
                           },
                           child: Container(
@@ -1136,7 +1175,12 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 3;
+                              ColorHighlight.createItem(currentBibleVerse, 2);
+                              refresher();
+                              // highlight.add({
+                              //   'verse': currentBibleVerse,
+                              //   'color': Color.fromARGB(174, 244, 67, 54),
+                              // });
                             });
                           },
                           child: Container(
@@ -1154,7 +1198,12 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 4;
+                              ColorHighlight.createItem(currentBibleVerse, 3);
+                              refresher();
+                              // highlight.add({
+                              //   'verse': currentBibleVerse,
+                              //   'color': Color.fromARGB(158, 30, 142, 233),
+                              // });
                             });
                           },
                           child: Container(
@@ -1172,7 +1221,12 @@ class _MyHomePageState extends State<HomePage> {
                         TextButton(
                           onPressed: () {
                             setState(() {
-                              colorIndex = 5;
+                              ColorHighlight.createItem(currentBibleVerse, 4);
+                              refresher();
+                              // highlight.add({
+                              //   'verse': currentBibleVerse,
+                              //   'color': Color.fromARGB(150, 159, 30, 233),
+                              // });
                             });
                           },
                           child: Container(

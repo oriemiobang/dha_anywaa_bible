@@ -15,6 +15,8 @@ import 'package:dha_anywaa_bible/pray.dart';
 import 'package:dha_anywaa_bible/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:once/once.dart';
 // import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -57,9 +59,11 @@ void callbackDispatcher() {
   });
 }
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Workmanager().initialize(callbackDispatcher);
+  await Hive.initFlutter();
+  await Hive.openBox('highlightText');
   runApp(
     const MyApp(),
   );
