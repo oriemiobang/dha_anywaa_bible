@@ -16,6 +16,7 @@ import 'package:dha_anywaa_bible/classes/highlights.dart';
 import 'package:dha_anywaa_bible/components/daily_text.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:flutter/foundation.dart';
+import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -169,6 +170,10 @@ class _MyHomePageState extends State<HomePage> {
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      if (_selectedIndex != 1) {
+        markedText = [];
+      }
+      print(_highlight);
       info();
       getBibleVersion();
     });
@@ -231,14 +236,21 @@ class _MyHomePageState extends State<HomePage> {
   int pageIndex = 0;
   int colorIndex = 0;
   int selectedColorIndex = -1;
+  String date = "";
   List markedText = [];
   List<Map<String, dynamic>> _highlight = [];
   List<Color> colorList = [
-    const Color.fromARGB(175, 255, 193, 7),
-    Color.fromARGB(158, 76, 175, 79),
-    Color.fromARGB(174, 244, 67, 54),
-    Color.fromARGB(158, 30, 142, 233),
-    Color.fromARGB(150, 159, 30, 233),
+    Color.fromARGB(102, 244, 67, 54),
+    Color.fromARGB(88, 233, 30, 98),
+    Color.fromARGB(93, 158, 158, 158),
+    Color.fromARGB(99, 76, 175, 79),
+    Color.fromARGB(106, 79, 33, 243),
+    Color.fromARGB(123, 159, 30, 233),
+    Color.fromARGB(113, 30, 142, 233),
+    Color.fromARGB(125, 255, 153, 0),
+    Color.fromARGB(146, 255, 193, 7),
+    Color.fromARGB(84, 130, 243, 134),
+    Color.fromARGB(94, 201, 125, 245)
   ];
 
   Future<int> _getItem() async {
@@ -269,49 +281,107 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
-  void markText({index, chapterName, chapterNumber, chapterId, text}) {
+  void markText({index, chapterName, chapterNumber, chapterId, text, textId}) {
     Map currentDict = {
       "chapterId": chapterId,
       "chapterName": chapterName,
       "chapterNumber": chapterNumber,
-      "text": text
+      "text": text,
+      'textId': textId
     };
     isExist = markedText.any((dic) => mapEquals(dic, currentDict));
     print(isExist);
-    setState(() {
-      if (isExist) {
-        // markedText.remove(index);
-        markedText.removeWhere((element) => element['text'] == '$text');
-      } else {
-        // markedText.add(index);
-        markedText.add({
-          "chapterId": chapterId,
-          "chapterName": chapterName,
-          "chapterNumber": chapterNumber,
-          "text": text
-        });
-      }
 
-      print(markedText);
+    if (isExist) {
+      // markedText.remove(index);
+      markedText.removeWhere((element) => element['text'] == '$text');
+    } else {
+      // markedText.add(index);
+      markedText.add({
+        "chapterId": chapterId,
+        "chapterName": chapterName,
+        "chapterNumber": chapterNumber,
+        "text": text,
+        'textId': textId
+      });
+    }
+    setState(() {});
+    // print(markedText);
+  }
+
+  void getCurrentDate() {
+    int hour = 0;
+    int minute = 0;
+    int second = 0;
+    final now = DateTime.now();
+    var formatter = DateFormat('MMMM dd yyyy');
+    var formattedDate = formatter.format(now);
+    hour = DateTime.now().hour > 12
+        ? DateTime.now().hour - 12
+        : DateTime.now().hour == 0
+            ? 12
+            : DateTime.now().hour;
+    minute = DateTime.now().minute;
+    second = DateTime.now().second;
+    String amOrPm = DateFormat('a').format(now);
+
+    formattedDate = '$formattedDate $hour:$minute:$second $amOrPm';
+    setState(() {
+      date = formattedDate;
     });
   }
 
   void addBookmark(bookmarks) {
-    Highlight.createItem(bookmarks[0]['text'],
-        '${bookmarks[0]['chapterName']} ${bookmarks[0]['chapterNumber']}: ${bookmarks[0]['chapterId']}');
+    if (bookmarks.length > 1) {
+      String textVerse = '';
+      String verseNumber = '';
 
-    Fluttertoast.showToast(
-        msg: "Bookmark added",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Color.fromARGB(255, 0, 4, 17),
-        textColor: Colors.white,
-        fontSize: 16.0);
+      for (var bookmark in bookmarks) {
+        textVerse = '${textVerse + bookmark['text']}\n';
+        verseNumber = '${verseNumber + bookmark['chapterId']}, ';
+      }
+      Highlight.createItem(
+          textVerse,
+          '${bookmarks[0]['chapterName']} ${bookmarks[0]['chapterNumber']}: ${verseNumber}',
+          date);
+      Fluttertoast.showToast(
+          msg: "Bookmarks added",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Color.fromARGB(255, 0, 4, 17),
+          textColor: Colors.white,
+          fontSize: 16.0);
+    } else {
+      Highlight.createItem(
+          bookmarks[0]['text'],
+          '${bookmarks[0]['chapterName']} ${bookmarks[0]['chapterNumber']}: ${bookmarks[0]['chapterId']}',
+          date);
+
+      Fluttertoast.showToast(
+          msg: "Bookmark added",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Color.fromARGB(255, 0, 4, 17),
+          textColor: Colors.white,
+          fontSize: 16.0);
+    }
+    getCurrentDate();
   }
 
   void copyVerse(markedText) {
-    Clipboard.setData(ClipboardData(text: markedText[0]['text']));
+    if (markedText.length > 1) {
+      String textVerse = '';
+      String verseNumber = '';
+      for (var currentMarkedText in markedText) {
+        textVerse = textVerse + currentMarkedText['text'] + '\n';
+        verseNumber = verseNumber + currentMarkedText['chapterId'] + ', ';
+      }
+      Clipboard.setData(ClipboardData(text: '$textVerse \n\n $verseNumber'));
+    } else {
+      Clipboard.setData(ClipboardData(text: markedText[0]['text']));
+    }
 
     Fluttertoast.showToast(
         msg: "Text copied!",
@@ -324,8 +394,19 @@ class _MyHomePageState extends State<HomePage> {
   }
 
   void shareVerse(markedText) {
-    Share.share(
-        "${markedText[0]['text']}\n ${markedText[0]['chapterName']} ${markedText[0]['chapterNumber']}: ${markedText[0]['chapterId']}}");
+    if (markedText.length > 1) {
+      String textVerse = '';
+      String verseNumber = '';
+      for (var currentMarkedText in markedText) {
+        textVerse = textVerse + currentMarkedText['text'] + '\n';
+        verseNumber = verseNumber + currentMarkedText['chapterId'] + ', ';
+      }
+      Share.share(
+          "$textVerse\n ${markedText[0]['chapterName']} ${markedText[0]['chapterNumber']}: $verseNumber");
+    } else {
+      Share.share(
+          "${markedText[0]['text']}\n ${markedText[0]['chapterName']} ${markedText[0]['chapterNumber']}: ${markedText[0]['chapterId']}}");
+    }
   }
 
   @override
@@ -368,11 +449,11 @@ class _MyHomePageState extends State<HomePage> {
             // backgroundColor: Colors.transparent,
             title: Text(
               _language == 'AMH'
-                  ? ''
+                  ? 'ዛሬ'
                   : _language == 'ANY'
                       ? 'Dïcängï'
                       : 'Today',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
             forceMaterialTransparency: true,
@@ -579,86 +660,72 @@ class _MyHomePageState extends State<HomePage> {
                                         child: GestureDetector(
                                           onTap: () {
                                             currentBibleVerse = amhchapters;
-
                                             currentVerseIndex = listIndex;
-
                                             markText(
                                                 index: listIndex,
                                                 chapterName: amharicBook!.title,
                                                 text: amhchapters,
                                                 chapterNumber: amhbook.chapter,
-                                                chapterId: listIndex + 1);
+                                                chapterId: '${listIndex + 1}',
+                                                textId: currentBibleVerse);
                                           },
-                                          child: RichText(
-                                            text: TextSpan(
-                                              style:
-                                                  DefaultTextStyle.of(context)
-                                                      .style,
-                                              children: [
-                                                TextSpan(
-                                                  text: nextAmhChapter == '' &&
-                                                              amhchapters !=
-                                                                  '' ||
-                                                          nextAmhChapter == '-'
-                                                      ? '${listIndex + 1} - ${listIndex + 2}  '
-                                                      : amhchapters != '' &&
-                                                              amhchapters != '-'
-                                                          ? '${listIndex + 1}  '
-                                                          : '',
-                                                  style: TextStyle(
-                                                      fontFamily: currentFont,
-                                                      fontSize:
-                                                          _currentFontSize,
-                                                      color: Colors.grey),
-                                                ),
-                                                amhchapters != '' &&
-                                                        amhchapters != '-'
-                                                    ? TextSpan(
-                                                        text: amhchapters,
-                                                        style: TextStyle(
-                                                            fontFamily:
-                                                                currentFont,
-                                                            fontSize:
-                                                                _currentFontSize,
-                                                            backgroundColor: _highlight
-                                                                .map((verse) => verse[
-                                                                            'id'] ==
-                                                                        amhchapters
-                                                                    ? colorList[
-                                                                        verse[
-                                                                            'color']]
-                                                                    : null)
-                                                                .firstWhere(
-                                                                    (color) =>
-                                                                        color !=
-                                                                        null,
-                                                                    orElse: () =>
-                                                                        Colors
-                                                                            .transparent)),
-                                                      )
-                                                    : TextSpan(),
-                                                // amhchapters == ''
-                                                //     ? TextSpan(
-                                                //         text:
-                                                //             '${listIndex + 1}',
-                                                //         style: TextStyle(
-                                                //             fontFamily:
-                                                //                 currentFont,
-                                                //             color: Colors.grey,
-                                                //             fontSize:
-                                                //                 _currentFontSize),
-                                                //       )
-                                                // : TextSpan(
-                                                //     text: '',
-                                                //     style: TextStyle(
-                                                //         fontFamily:
-                                                //             currentFont,
-                                                //         color: Colors.grey,
-                                                //         fontSize:
-                                                //             _currentFontSize),
-                                                //   ),
-                                              ],
-                                            ),
+                                          child: Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              amhchapters == '' ||
+                                                      amhchapters == '-'
+                                                  ? Visibility(
+                                                      visible: false,
+                                                      child: Text(''))
+                                                  : Text(
+                                                      '${listIndex + 1}  ',
+                                                      style: TextStyle(
+                                                          fontFamily:
+                                                              currentFont,
+                                                          fontSize:
+                                                              _currentFontSize,
+                                                          color: Colors.grey),
+                                                    ),
+                                              amhchapters == '' ||
+                                                      amhchapters == '-'
+                                                  ? Visibility(
+                                                      visible: false,
+                                                      child: Text(''))
+                                                  : Expanded(
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          style: DefaultTextStyle
+                                                                  .of(context)
+                                                              .style,
+                                                          children: [
+                                                            TextSpan(
+                                                              text: amhchapters,
+                                                              style: TextStyle(
+                                                                  fontFamily:
+                                                                      currentFont,
+                                                                  fontSize:
+                                                                      _currentFontSize,
+                                                                  backgroundColor: _highlight
+                                                                      .map((verse) => verse['id'] ==
+                                                                              amhchapters
+                                                                          ? colorList[verse[
+                                                                              'color']]
+                                                                          : null)
+                                                                      .firstWhere(
+                                                                          (color) =>
+                                                                              color !=
+                                                                              null,
+                                                                          orElse: () =>
+                                                                              Colors.transparent)),
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ),
+                                            ],
                                           ),
                                         ),
                                       ),
@@ -682,22 +749,11 @@ class _MyHomePageState extends State<HomePage> {
                       key: key,
                       onPageChanged: (index) {
                         style.setPage(index);
+                        markedText = [];
                         setState(() {
                           getBibleVersion();
-
-                          // if (englishBook!.chapters.length - 1 == index) {
-                          //   atEnd = true;
-                          //   print('end');
-                          // } else if (index == 0) {
-                          //   print('beginning');
-                          //   atBeggining = true;
-                          // } else {
-                          //   atEnd = false;
-                          //   atBeggining = false;
-                          // }
                         });
                       },
-                      // scrollBehavior: const ScrollBehavior(),
                       itemCount: englishBook!.chapters.length,
                       controller: pageController,
                       itemBuilder: (BuildContext context, int index) {
@@ -709,7 +765,6 @@ class _MyHomePageState extends State<HomePage> {
                               itemCount: book.verses.length,
                               shrinkWrap: true,
                               controller: controller,
-                              // physics: ScrollPhysics(),
                               itemBuilder:
                                   (BuildContext context, int listindex) {
                                 var chapter = book.verses[listindex];
@@ -793,6 +848,7 @@ class _MyHomePageState extends State<HomePage> {
                                                             listindex;
                                                         selectedColorIndex =
                                                             listindex;
+
                                                         markText(
                                                             index: listindex,
                                                             chapterName:
@@ -801,7 +857,14 @@ class _MyHomePageState extends State<HomePage> {
                                                             chapterNumber:
                                                                 chapterNumber,
                                                             chapterId:
-                                                                chapter.id);
+                                                                chapter.id,
+                                                            textId:
+                                                                currentBibleVerse);
+                                                        print(markedText
+                                                            .map((dic) =>
+                                                                dic['text'] ==
+                                                                chapter.text)
+                                                            .isNotEmpty);
                                                       },
                                                       child: RichText(
                                                           text: TextSpan(
@@ -813,30 +876,37 @@ class _MyHomePageState extends State<HomePage> {
                                                               text:
                                                                   chapter.text,
                                                               style: TextStyle(
-                                                                  backgroundColor: _highlight
-                                                                      .map((verse) => verse['id'] ==
-                                                                              '${book.id}${chapter.id}'
-                                                                          ? colorList[verse[
-                                                                              'color']]
-                                                                          : null)
-                                                                      .firstWhere(
-                                                                          (color) =>
-                                                                              color !=
-                                                                              null,
-                                                                          orElse: () => Colors
-                                                                              .transparent),
-                                                                  fontFamily:
-                                                                      currentFont,
-                                                                  fontSize:
-                                                                      _currentFontSize,
-                                                                  decoration: isExist
-                                                                      ? TextDecoration
-                                                                          .underline
-                                                                      : null,
-                                                                  decorationStyle: isExist
-                                                                      ? TextDecorationStyle
-                                                                          .dashed
-                                                                      : null),
+                                                                backgroundColor: _highlight
+                                                                    .map((verse) => verse['id'] ==
+                                                                            '${book.id}${chapter.id}'
+                                                                        ? colorList[verse[
+                                                                            'color']]
+                                                                        : null)
+                                                                    .firstWhere(
+                                                                        (color) =>
+                                                                            color !=
+                                                                            null,
+                                                                        orElse: () =>
+                                                                            Colors.transparent),
+                                                                fontFamily:
+                                                                    currentFont,
+                                                                fontSize:
+                                                                    _currentFontSize,
+                                                                // decoration: markedText
+                                                                //         .map((dic) =>
+                                                                //             dic['text'] ==
+                                                                //             chapter
+                                                                //                 .text)
+                                                                //         .isNotEmpty
+                                                                //     ? TextDecoration
+                                                                //         .underline
+                                                                //     : null,
+                                                                // decorationStyle: markedText
+                                                                //         .map((dic) => dic['text'] == chapter.text)
+                                                                //         .isNotEmpty
+                                                                //     ? TextDecorationStyle.dashed
+                                                                //     : null
+                                                              ),
                                                             )
                                                           ])),
                                                     ),
@@ -991,51 +1061,69 @@ class _MyHomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      IconButton(
-                        onPressed: () {
-                          addBookmark(markedText);
-                        },
-                        icon: Icon(Icons.bookmark_add),
+                      Row(
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              addBookmark(markedText);
+                              setState(() {
+                                markedText = [];
+                              });
+                            },
+                            icon: Icon(Icons.bookmark_add),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              copyVerse(markedText);
+                              setState(() {
+                                markedText = [];
+                              });
+                            },
+                            icon: Icon(Icons.copy),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              shareVerse(markedText);
+                              setState(() {
+                                markedText = [];
+                              });
+                            },
+                            icon: Icon(Icons.share),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/differentVerse',
+                                  arguments: [
+                                    {
+                                      "pageIndex": pageIndex,
+                                      "listIndex": currentVerseIndex,
+                                      "title": title,
+                                      'version': _currentVersion
+                                    }
+                                  ]);
+                              setState(() {
+                                markedText = [];
+                              });
+                            },
+                            icon: Icon(Icons.table_rows_outlined),
+                          ),
+                        ],
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          copyVerse(markedText);
-                        },
-                        icon: Icon(Icons.copy),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          shareVerse(markedText);
-                        },
-                        icon: Icon(Icons.share),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/differentVerse',
-                              arguments: [
-                                {
-                                  "pageIndex": pageIndex,
-                                  "listIndex": currentVerseIndex,
-                                  "title": title,
-                                  'version': _currentVersion
-                                }
-                              ]);
-                        },
-                        icon: Icon(Icons.table_rows_outlined),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
+
+                      // SizedBox(
+                      //   width: 10,
+                      // ),
                       IconButton(
                           onPressed: () {
                             setState(() {
@@ -1044,7 +1132,7 @@ class _MyHomePageState extends State<HomePage> {
                           },
                           icon: Icon(
                             Icons.cancel_outlined,
-                            color: Colors.red,
+                            color: Color.fromARGB(229, 238, 122, 113),
                           ))
                     ],
                   ),
@@ -1054,13 +1142,25 @@ class _MyHomePageState extends State<HomePage> {
                       children: [
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              for (Map currentMarkedText in markedText) {
+                                ColorHighlight.deleteItem(
+                                    currentMarkedText['textId']);
+                              }
+                            } else {
                               ColorHighlight.deleteItem(currentBibleVerse);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
                           child: Container(
-                            child: Icon(Icons.cancel),
+                            child: Icon(
+                              Icons.cancel,
+                              size: 40,
+                              color: Color.fromARGB(207, 158, 158, 158),
+                            ),
                             height: 40,
                             width: 40,
                             decoration: BoxDecoration(
@@ -1074,8 +1174,17 @@ class _MyHomePageState extends State<HomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              print('marked text lenght ${markedText.length}');
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 0);
+                              }
+                            } else {
                               ColorHighlight.createItem(currentBibleVerse, 0);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
@@ -1084,7 +1193,7 @@ class _MyHomePageState extends State<HomePage> {
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
-                              color: Colors.amber,
+                              color: Color.fromARGB(102, 244, 67, 54),
                             ),
                           ),
                         ),
@@ -1093,8 +1202,16 @@ class _MyHomePageState extends State<HomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 1);
+                              }
+                            } else {
                               ColorHighlight.createItem(currentBibleVerse, 1);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
@@ -1103,7 +1220,7 @@ class _MyHomePageState extends State<HomePage> {
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
-                              color: Colors.green,
+                              color: Color.fromARGB(88, 233, 30, 98),
                             ),
                           ),
                         ),
@@ -1112,8 +1229,16 @@ class _MyHomePageState extends State<HomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 2);
+                              }
+                            } else {
                               ColorHighlight.createItem(currentBibleVerse, 2);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
@@ -1122,7 +1247,7 @@ class _MyHomePageState extends State<HomePage> {
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
-                              color: Colors.red,
+                              color: Color.fromARGB(93, 158, 158, 158),
                             ),
                           ),
                         ),
@@ -1131,8 +1256,16 @@ class _MyHomePageState extends State<HomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 3);
+                              }
+                            } else {
                               ColorHighlight.createItem(currentBibleVerse, 3);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
@@ -1141,7 +1274,7 @@ class _MyHomePageState extends State<HomePage> {
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(255, 30, 142, 233),
+                              color: Color.fromARGB(99, 76, 175, 79),
                             ),
                           ),
                         ),
@@ -1150,8 +1283,16 @@ class _MyHomePageState extends State<HomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            setState(() {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 4);
+                              }
+                            } else {
                               ColorHighlight.createItem(currentBibleVerse, 4);
+                            }
+                            setState(() {
+                              markedText = [];
                               refresher();
                             });
                           },
@@ -1160,9 +1301,154 @@ class _MyHomePageState extends State<HomePage> {
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(25),
-                              color: Color.fromARGB(255, 159, 30, 233),
+                              color: Color.fromARGB(106, 79, 33, 243),
                             ),
                           ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 5);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 5);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(123, 159, 30, 233),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 6);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 6);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(113, 30, 142, 233),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 7);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 7);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(125, 255, 153, 0),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 8);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 8);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(146, 255, 193, 7),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 9);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 9);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              color: Color.fromARGB(84, 130, 243, 134),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            if (markedText.length > 1) {
+                              for (var currentMarkedText in markedText) {
+                                ColorHighlight.createItem(
+                                    currentMarkedText['textId'], 10);
+                              }
+                            } else {
+                              ColorHighlight.createItem(currentBibleVerse, 10);
+                            }
+                            setState(() {
+                              markedText = [];
+                              refresher();
+                            });
+                          },
+                          child: Container(
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25),
+                                  color: Color.fromARGB(94, 201, 125, 245))),
                         ),
                       ],
                     ),
@@ -1171,7 +1457,9 @@ class _MyHomePageState extends State<HomePage> {
               ),
               height: 110,
               width: double.infinity,
-              color: Color.fromARGB(255, 0, 4, 17),
+              color: currentTheme == Brightness.dark
+                  ? Color.fromARGB(255, 0, 4, 17)
+                  : Colors.white,
             )
           : null,
     );

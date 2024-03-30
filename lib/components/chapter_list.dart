@@ -494,6 +494,7 @@ class _ChapterListState extends State<ChapterList> {
   SelectedFontStyle style = SelectedFontStyle();
   String bibleVersion = '';
   int chapter = 0;
+  Brightness currentTheme = Brightness.dark;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle()..init();
 
   List<Map<String, String>> _foundBook = [];
@@ -546,7 +547,7 @@ class _ChapterListState extends State<ChapterList> {
 
   @override
   Widget build(BuildContext context) {
-    // Brightness currentTheme = Theme.of(context).brightness;
+    currentTheme = Theme.of(context).brightness;
     return DefaultTabController(
       animationDuration: Duration.zero,
       initialIndex: 0,
@@ -734,8 +735,10 @@ class _ChapterListState extends State<ChapterList> {
                                   child: Text('${index + 1}',
                                       style: TextStyle(
                                           fontSize: 16,
-                                          color: Color.fromARGB(
-                                              255, 250, 219, 124))),
+                                          color: currentTheme == Brightness.dark
+                                              ? Color.fromARGB(
+                                                  255, 250, 219, 124)
+                                              : Color.fromARGB(255, 0, 4, 17))),
                                   onPressed: () async {
                                     getLanguageVersion();
                                     bibleVersion = version != 'AMH'
@@ -794,7 +797,7 @@ class _ChapterListState extends State<ChapterList> {
                       appBar: AppBar(
                         // centerTitle: true,
                         title: Text(
-                          '${_foundBook[listviewindex]['title']}',
+                          '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
@@ -817,8 +820,11 @@ class _ChapterListState extends State<ChapterList> {
                                   child: Text('${index + 1}',
                                       style: TextStyle(
                                           fontSize: 16,
-                                          color: Color.fromARGB(
-                                              255, 250, 219, 124))),
+                                          color: currentTheme ==
+                                                  Brightness.light
+                                              ? Color.fromARGB(255, 0, 4, 17)
+                                              : Color.fromARGB(
+                                                  255, 250, 219, 124))),
                                   onPressed: () async {
                                     getLanguageVersion();
                                     bibleVersion =

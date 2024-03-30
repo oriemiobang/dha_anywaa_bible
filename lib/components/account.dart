@@ -57,12 +57,14 @@ class _AccountState extends State<Account> {
                       var hold = _highlights[index];
 
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          backgroundColor: Color.fromARGB(255, 0, 4, 17),
+                          backgroundColor: currentTheme == Brightness.dark
+                              ? Color.fromARGB(255, 0, 4, 17)
+                              : Colors.white,
                           content: ListTile(
                             trailing: TextButton(
                               onPressed: () {
                                 Highlight.createItem(
-                                    hold['verse'], hold['name']);
+                                    hold['verse'], hold['name'], hold['date']);
                                 refresher();
                               },
                               child: Text('undo'),
@@ -85,7 +87,7 @@ class _AccountState extends State<Account> {
                       // },
                       title: Text('${_highlights[index]['verse']}'),
                       subtitle: Text(
-                        '${_highlights[index]['name']}',
+                        '${_highlights[index]['name']}        ${_highlights[index]['date']}',
                         style: TextStyle(
                             color: Colors.grey, fontStyle: FontStyle.italic),
                       ),

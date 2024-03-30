@@ -16,6 +16,7 @@ class DailyVerse {
   void getLang() async {
     _language = await style.getLanguageVersion();
     print(_language.split(' ')[0]);
+    _language = _language.split(' ')[0];
   }
 
   SelectedFontStyle style = SelectedFontStyle()..init();
@@ -41,12 +42,13 @@ class DailyVerse {
               ? "Yïnu cwøl jwøki"
               : 'God wants you!',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'የዮሐንስ ራእይ 3:20'
           : _language == 'ANY'
               ? "Mana Nyooth 3:20"
               : 'Revelation 3 : 20',
       "text": _language == 'AMH'
-          ? ''
+          ? 'እነሆ በደጅ ቆሜ አንኳኳለሁ፤ ማንም ድምፄን ቢሰማ ደጁንም '
+              ' ቢከፍትልኝ፥ ወደ እርሱ እገባለሁ ከእርሱም ጋር እራት እበላለሁ እርሱም ከእኔ ጋር ይበላል።'
           : _language == 'ANY'
               ? "'Ba neenï, a cuŋŋa dhi øtø, "
                   "naa dööŋö. 'Ba ni näk da ŋat mo wïnynya "
@@ -63,12 +65,12 @@ class DailyVerse {
               ? "Ciri kir cïppï"
               : 'Never give up!',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'የዮሐንስ ራእይ 3:20'
           : _language == 'ANY'
               ? "Mana Nyooth 3:21"
               : 'Revelation 3 : 21',
       "text": _language == 'AMH'
-          ? ''
+          ? 'እኔ ደግሞ ድል እንደ ነሣሁ ከአባቴም ጋር በዙፋኑ ላይ እንደተቀመጥሁ፥ ድል ለነሣው ከእኔ ጋር በዙፋኔ ላይ ይቀመጥ ዘንድ እሰጠዋለሁ።'
           : _language == 'ANY'
               ? "'Ba ŋato böödö, owëëga pïïn piny "
                   "bäät wälla, keda mara na bööda, ni pïïa "
@@ -85,12 +87,16 @@ class DailyVerse {
               ? "Jwøk nut piny bärë!"
               : 'God is everywhere!',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'የዮሐንስ ወንጌል 1: 1-5'
           : _language == 'ANY'
               ? 'Jøøn 1: 1-5'
               : 'John 1: 1-5',
       "text": _language == 'AMH'
-          ? ''
+          ? 'መጀመሪያው ቃል ነበረ፥ ቃልም በእግዚአብሔር ዘንድ ነበረ፥ ቃልም እግዚአብሔር ነበረ። '
+              'ይህ በመጀመሪያው በእግዚአብሔር ዘንድ ነበረ። '
+              'ሁሉ በእርሱ ሆነ፥ ከሆነውም አንዳች ስንኳ ያለ እርሱ አልሆነም። '
+              'በእርሱ ሕይወት ነበረች፥ ሕይወትም የሰው ብርሃን ነበረች። '
+              'ብርሃንም በጨለማ ይበራል፥ ጨለማም አላሸነፈውም።'
           : _language == 'ANY'
               ? " 1. Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
                   " kanya ciel ki Jwøk, ni Dwørøgøøni"
@@ -116,12 +122,12 @@ class DailyVerse {
               ? "jwøk nuttö ki ïnï cooth"
               : 'God is always with you!',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'ትንቢተ ኢሳይያስ 41:10'
           : _language == 'ANY'
               ? "Aydheea 41:10"
               : 'Isaiah 41:10',
       "text": _language == 'AMH'
-          ? ''
+          ? ' እኔ ከአንተ ጋር ነኝና አትፍራ፤ እኔ አምላክህ ነኝና አትደንግጥ፤ አበረታሃለሁ፥ እረዳህማለሁ፥ በጽድቄም ቀኝ ደግፌ እይዝሃለሁ።'
           : _language == 'ANY'
               ? "Kärï lwäyö, kiper a nut buutï, "
                   "ni ba bwøk cwïnyï, kiper aana "
@@ -140,12 +146,12 @@ class DailyVerse {
               ? "Jwøk amëër."
               : 'God is love.',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'የዮሐንስ ወንጌል 16:33'
           : _language == 'ANY'
               ? "Jøøn 16:33"
               : 'John 16:33',
       "text": _language == 'AMH'
-          ? ''
+          ? 'በእኔ ሳላችሁ ሰላም እንዲሆንላችሁ ይህን ተናግሬአችኋለሁ። በዓለም ሳላችሁ መከራ አለባችሁ፤ ነገር ግን አይዞአችሁ፤ እኔ ዓለምን አሸንፌዋለሁ።'
           : _language == 'ANY'
               ? "Man en a caana jïïu, nee bëët-mëër nee "
                   "jootu baŋa. Uuni, gïï mo leth ojwørru "
@@ -162,12 +168,13 @@ class DailyVerse {
               ? "Yïnu cwøl jwøki"
               : 'God wants you',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'ወደ ፊልጵስዩስ ሰዎች 4:6-7'
           : _language == 'ANY'
               ? "Pilipay 4:6-7"
-              : 'Philippians 4 : 6-7',
+              : 'Philippians 4:6-7',
       "text": _language == 'AMH'
-          ? ''
+          ? 'ጌታ ቅርብ ነው። በነገር ሁሉ በጸሎትና በምልጃ ከምስጋና ጋር በእግዚአብሔር ዘንድ ልመናችሁን አስታውቁ እንጂ በአንዳች አትጨነቁ። '
+              'አእምሮንም ሁሉ የሚያልፍ የእግዚአብሔር ሰላም ልባችሁንና አሳባችሁን በክርስቶስ ኢየሱስ ይጠብቃል።'
           : _language == 'ANY'
               ? "6 Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
                   "ki yïth jammi bëët, gïn wäro manynyu "
@@ -189,12 +196,12 @@ class DailyVerse {
               ? "Jwøk mëër ki ïnï"
               : 'God loves you',
       "verse": _language == 'AMH'
-          ? ''
+          ? 'የዮሐንስ ራእይ 21:4'
           : _language == 'ANY'
               ? "Mana Nyooth 21:4"
               : 'Revelation 21 : 4',
       "text": _language == 'AMH'
-          ? ''
+          ? 'እንባዎችንም ሁሉ ከዓይኖቻቸው ያብሳል፥ ሞትም ከእንግዲህ ወዲህ አይሆንም፥ ኀዘንም ቢሆን ወይም ጩኸት ወይም ሥቃይ ከእንግዲህ ወዲህ አይሆንም፥ የቀደመው ሥርዓት አልፎአልና ብሎ ሲናገር ሰማሁ።'
           : _language == 'ANY'
               ? "Ba Jwøk ki dëëre obëëdö ki geni,\n 4 ni "
                   "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe "

@@ -49,6 +49,7 @@ dependencies:
   fluttertoast: ^8.2.4
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  intl: ^0.19.0
   
   
   # share_plus: ^7.2.2
@@ -69,11 +70,11 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/app_icon.png"
+  image_path: "assets/red_bible_icon.png"
   min_sdk_android: 21 # android min sdk min:16, default 21
   windows:
     generate: true
-    image_path: "assets/app_icon.png"
+    image_path: "assets/red_bible_icon.png"
     icon_size: 48 # min:48, max:256, default: 48
 
 

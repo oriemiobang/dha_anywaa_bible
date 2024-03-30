@@ -7,7 +7,8 @@ class Highlight {
     await database.execute("""CREATE TABLE highlight(
       id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
       verse TEXT,
-      name TEXT
+      name TEXT,
+      date TEXT
     );
 """);
   }
@@ -19,9 +20,9 @@ class Highlight {
     });
   }
 
-  static Future<int> createItem(String verse, String name) async {
+  static Future<int> createItem(String verse, String name, String date) async {
     final db = await Highlight.db();
-    final data = {'name': name, 'verse': verse};
+    final data = {'name': name, 'verse': verse, 'date': date};
     final id = await db.insert('highlight', data,
         conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;

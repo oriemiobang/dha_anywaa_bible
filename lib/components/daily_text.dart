@@ -33,6 +33,7 @@ class _DailyTextState extends State<DailyText>
   @override
   void initState() {
     getLang();
+    // print('daily');
     super.initState();
     _getItem();
     _controller =
@@ -67,25 +68,25 @@ class _DailyTextState extends State<DailyText>
     final items = await SQLHelper.getItems();
     if (items.isEmpty) {
       _addItem();
-      print('there is an issue');
+      // print('there is an issue');
     }
 
     final item = await SQLHelper.getItem(1);
 
-    print('inner index: $item');
+    // print('inner index: $item');
     return item[0]['counter'];
   }
 
   Future<void> _addItem() async {
     await SQLHelper.createItem(0);
     final items = await SQLHelper.getItems();
-    print(' items: $items');
+    // print(' items: $items');
   }
 
   void getLang() async {
     String languages = await selectedFontStyle.getLanguageVersion();
     setState(() {
-      _languages = languages;
+      _languages = languages.split(' ')[0];
     });
   }
   // void _referesher() async {
@@ -100,17 +101,18 @@ class _DailyTextState extends State<DailyText>
 
   void info() async {
     try {
+      dailyText = DailyVerse();
       // print('object');
       // await SQLHelper.updateItem(1, 0);
       // print('anoher obeject');
-
+      // getLang();
       int myIndex = await _getItem();
       // print('third object');
 
-      print('my index: $myIndex');
+      // print('my index: $myIndex');
       currentText = dailyText.dailyVerseList[myIndex]['text']!;
       // print(' blala ${currentText}');
-      print(currentText.length);
+      // print(currentText.length);
       currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
       currentShortText = dailyText.dailyVerseList[myIndex]['shortText']!;
     } catch (e) {
@@ -152,7 +154,7 @@ class _DailyTextState extends State<DailyText>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  _opacity.value < 0.5 ? " " : '$currentVerse',
+                                  _opacity.value < 0.5 ? " " : currentVerse,
                                   style: TextStyle(
                                       color: Color.fromARGB(255, 133, 130, 130),
                                       fontSize: 20),
@@ -165,11 +167,18 @@ class _DailyTextState extends State<DailyText>
                                       ? currentShortText
                                       : currentText,
                                   style: TextStyle(
-                                      fontSize: currentText.length <= 125
-                                          ? 40
-                                          : currentText.length > 310
-                                              ? 17
-                                              : 20),
+                                      fontSize:
+                                          // _languages == 'AMH'
+                                          //     ? 25:
+                                          currentText.length <= 125
+                                              ? _languages == 'AMH'
+                                                  ? 25
+                                                  : 50
+                                              : currentText.length > 310
+                                                  ? 18
+                                                  : _languages == 'AMH'
+                                                      ? 20
+                                                      : 25.5),
                                 ),
                               ],
                             ),
@@ -232,7 +241,7 @@ class _DailyTextState extends State<DailyText>
                                                     ),
                                                     Text(
                                                       _languages == 'AMH'
-                                                          ? ''
+                                                          ? 'የዛሬ ፀሎት'
                                                           : _languages == 'ANY'
                                                               ? 'Lam mar Dïcängï'
                                                               : 'Today\'s prayer',
@@ -274,7 +283,7 @@ class _DailyTextState extends State<DailyText>
                                                     },
                                                     child: Text(
                                                       _languages == 'AMH'
-                                                          ? ''
+                                                          ? 'ፀልይ'
                                                           : _languages == 'ANY'
                                                               ? 'Lämï'
                                                               : 'Pray',
@@ -411,10 +420,10 @@ class _DailyTextState extends State<DailyText>
                                                     ),
                                                     Text(
                                                       _languages == 'AMH'
-                                                          ? ''
+                                                          ? 'የእግዚአብሔርን ቃል አጋራ'
                                                           : _languages == 'ANY'
                                                               ? 'Kwaac dwør jwøk'
-                                                              : 'Send God\'s word',
+                                                              : 'Share God\'s word',
                                                       style: TextStyle(
                                                           fontSize: 13),
                                                     )
@@ -446,10 +455,10 @@ class _DailyTextState extends State<DailyText>
                                                     },
                                                     child: Text(
                                                       _languages == 'AMH'
-                                                          ? ''
+                                                          ? 'አጋራ'
                                                           : _languages == 'ANY'
                                                               ? 'Kwaayi'
-                                                              : 'Send',
+                                                              : 'Share',
                                                       style: TextStyle(
                                                         fontSize: 16.5,
                                                         color: currentTheme ==
