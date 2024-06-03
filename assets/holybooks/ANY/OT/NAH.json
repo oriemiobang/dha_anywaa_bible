@@ -1,0 +1,216 @@
+{
+    "textIntro": "Neeyam beeye nyïkuŋ Jwøk mo bäŋ gïn mo ŋäc kiper poge wala tuuŋge. 'Ba dwøl mana caane beeye gïna nyooth Wuuö Jwøki jïre, ni kööe ni Nineba na näk pääny mana dwøŋ mar jø Aciria oraany Wuuö Jwøki. Nyïkuŋ Jwøk ma Joona luum ajäla mar Wuuö Jwøk akøbe jï jø Nineba køør cwiiri ma dïpa ni Neeyam poodi, ni ö jø Nineba ni løkge cwïnyge ni kwierge gïïa reyø na tïïcge. 'Ba gena laar døø baŋ uutjïëth raay moa tïïcge; ni luubö mana caan Neeyam beeye ni jø Nineba di raanynyø ki køør gïïa reyø døc na tïïcge. Neeyam kär ci Nineba. 'Ba dwør Jwøk acaane yi ŋööm Juuda ni cøma cwïny jø Juuda ni kööe ni nyïïmän moge di raanynyø. ",
+    "introTitle": "Luubö Mo Cäänö Kaper Wëël Neeyam",
+    "chapterName": "Neeyam",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "OT:NAH.1",
+            "name": "Neeyam 1",
+            "text": [
+                {
+                    "text": "Man beeye wëëlö mar gïna nyooth jï Neeyam nyï Elköc, ni beeye dwøl mana caal tëër na cäänö kiper pääny Nineba.  ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luum Ajäla Mar Wuuö Jwøk Dëët Jø Nineba",
+                    "text": "Wuuö Jwøk beeye Jwøk mo cwïnye këënynyö, mo kwör di coolø. Wuuö Jwøk kwör di coolø, ni ena wää wëër. Wuuö Jwøk kwör di coolø dëët jø wø kwier eni, ni bëët wëërri mare bäät nyïïmän moe.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Wuuö Jwøk ba laar wëër, ni eni teek mare dwøŋ; 'ba Wuuö Jwøk jø raay ba wiie ni ba jääle. Kany wø cäädhe, piny puta jïtö ka apwøyaweerø ka atuunna, ni tïm pøølli na tør mar tiete.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Eni naama dwøŋ di jooø ni taal gø, ni taal näm bëët. Ni ö luumme mo pwöle mo Baacan ki jer Kïn Karmël ni talge, ni ö jer Lur Libaanø moa no oŋøøk ni talge.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kïte atïmö ni jäŋŋi nyïme, ni ö thuuri ni nigemwøny piny. Piny tïmö ni kwanynyi nyïme, këël ki jiy moa en bäät piny bëët.",
+                    "ID": "5"
+                },
+                {
+                    "text": "?Aŋa ni løny jïre ki man cuŋŋe ki wëër mare? ?Na aŋa ni løny jïre ki man jïëny wëër mare ni wø liel kaamar maac? Wëër mare liela nyïme kaamar maac, ni ö kïte ni piinge nyïme. ",
+                    "ID": "6"
+                },
+                {
+                    "text": "Wuuö Jwøk beer, ni ena teek mar jiye cäŋ gïï mo leth. Jiy mo wø kan rege buute di gwøø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba eni jø Nineba baabe baabø kaamar jwïïö, ni dïïr wïthge, ni riem geni na nyïïmän moe yi muudhö mo cøl kar thøø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Acaara mano caarge kiper Wuuö Jwøk raanynye raanynyø na bäre bäre, ni bäŋe nyïïmän mo cäŋ duu maal këët.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Geni, ge caala jiy mo omeer mo oŋiel køøŋe, ni ge caala koodhi mo otal mo owaaŋ maaci.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Wui Nineba, da ŋat mo öö ki riï mo cwïnye päŋ ki raay, mo cädö ki gïn mo raac dëër Wuuö Jwøk.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Man beeye mana caan Wuuö Jwøki: ni «Këël na bëët jø Nineba ni ge teek ni ge thööth døc, wïthge poot di dïïrö ni rwäänyge. U na jiya, këël na tïïa uuni nee dëëtu jïtge ki ŋwiili, uuni u ba tïïa nee dëëtu jïtge ki ŋwiili këët.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba ennø, aani teek marge na en bäätu na caal jaath puur man wø jøøny ŋut rwaath raanynya raanynyø, ni cööta thøøli moa twöc uuni ki ge.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Wuuö Jwøk akän wøk ki ciik kiperï, ï na Nineba: «Bäŋ jiy mo jootï këët mo öö ki dëërï mo käära nyeŋŋï. Aani juu moï ki kït gïï wø lam ni wø en yi øt juu moï raanynya raanynyø. Aani bwörö marï jiiŋŋa jiiŋŋø, kiper ï bäŋ karï këët.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Raŋŋu tiet dhaanhø ni ööi enø, ni cura bäät kïdi, na ŋat mo käla luubö mo nyään mo køpa luum bëët-mëër. Wui jø Juuda, bëëdu nou wøøra ajwöm mou, ni cïpu gïïa kööŋŋu ki ge jï Wuuö Jwøk. Kiper jø raay moøgø u ba cäŋge tugö këët. Geni wïthge di dïïrö na bäre bäre.",
+                    "ID": "15"
+                }
+            ]
+        },
+        {
+            "ID": "OT:NAH.2",
+            "name": "Neeyam 2",
+            "text": [
+                {
+                    "title": "Luum Ränynyö Mar Nineba ",
+                    "text": "Wui Nineba, ŋat mo keetha ïïni ööa baŋï! Koor kar gwøk røk, ni neetï nyeŋ jïëthe, ni twöyï riï, ni cooŋï jø leny moï!",
+                    "ID": "1"
+                },
+                {
+                    "text": "Wuuö Jwøk ajiem mar jø Juuda dwøge kare, kaawat mano dwøk ajiem mar jø Icriel kare, këël na bëëtge ni geno twier dïtwïëte, kaawat man wø tïïc dïlïm omøki ni nyïëdi jaaŋge jaaŋŋø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Jø leny moe käädö ki kööt leny mo kwayø, ni geno ruyö ka abïïe mo kwayø. Jïëth leny moge mo wø tut okwëënyi nagaaŋ kaamar maac kanyo rwänhge baŋ leny, ni ge wuyö ni tøøŋi moge ena ceŋge.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Jïëth leny moøgø mo wø tut okwëënyi rïïŋi ka ŋwïëc bøøl uutjïëthe,  ni bëëtge ni ge reŋŋa løøi ki løøi yïth kwöra laac dï paac, ni ge nikwiil kaamar ameethi, ni ge nimal kaamar agaackøth.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba wïth jø leny moe ocwøle ni bëëtge ni ge päänhnhö kanyo cäänhge baŋ leny. 'Ba jøw tuk geni ge laara läät dëër kiir, ni peerge gëëŋi bäät gïno toor kiir piny ki gø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni ö dhøk adïïre mo waŋ naam ni tucge, ni ö lwär mo dwøŋ ni täge paan dwøŋ.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni ö gwanynyø ni loonyi ni maai ki tøŋ, ni ö määr tïïci moe ni jwöŋge kaamar atuuy, ni ge pööta kööthge.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Nineba jiye thuma wøk, kaawat man wø ö pï puulli wø thumge wøk ki yi øøl. Këël jiy doo rëëdö, ni «Cuŋŋu! Cuŋŋu!» bäŋ ŋat mo løk ŋääe.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Twierru gwel-bïrö mare, ni twierru warkey mare, kiper teeŋ jammi moa perge leth ki teeŋ jap kwärö ba thum.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Nineba di twierø ni ränynye ni neeruuth, ni ö cwïny jiy ni bwøkge, ni ö nyeŋ cøŋge ni pöötge rege, ni ö pëët jiy ni nigelway, ni ö täärnyïmge bëët ni nigiduk.",
+                    "ID": "10"
+                },
+                {
+                    "text": "?Ennø, age pääny Nineba na caal kar bëët ŋuuwe, na kany wø bëët ŋuuwe yie mo ogäy, na kany wø bëët cïgïï ŋuuwi yie ki maath ŋuu, na kany wø bëët nyïïge yie no ogwøø?",
+                    "ID": "11"
+                },
+                {
+                    "text": "Cïgïï ŋuu wø dwar, ni nääe ki mo orømø jï nyïïe ni jeec møøk jï cïïe, ni pääŋ buur kar bëëtö marge ki dëët gïïa dware.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Neennu, mana caan Wuuö Jwøki, eni na wïth jammi bëët, bee en, ena köö, ni «Aani, a tïïö dëëtu ki gïrpiny. Aani jïëth leny mou mo wø tut okwëënyi waaŋa waaŋø ki maac, ni ö tøŋŋi ni thöör jø leny moï na caal ŋuuwe mo ogäy, ni tïïa japa twierru ni bäŋgø yi paac, ni bäŋe dööt jø wø jääŋŋi mo wïnynyi këët.»",
+                    "ID": "13"
+                }
+            ]
+        },
+        {
+            "ID": "OT:NAH.3",
+            "name": "Neeyam 3",
+            "text": [
+                {
+                    "text": "Wui, ï na pääny man wø køny rem jiy piny, otïmö ni raac jïrï. Dëërï opäŋ ki tööt ki twier jiy.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Wïny dööt nyïbuki, ki dööt tiet jïëth okwëënyi, ki dööt tiet okwëënyi, ki dööt jïëth okwëënyi!",
+                    "ID": "2"
+                },
+                {
+                    "text": "Jø leny mo bäät okwëënyi ge läännö ni ge rwøya okwëënyi; no opëëlle namal, ni tøøŋi nagaaŋ. Lwaa dhaanhø mo päl di nääö, ni bëët dëëtge na athwöe piny, ni kwään dëët jiy ba thum, ni jiy moo cør kaace, tietge di cwanynyø dëëtge.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba gïïa tägö bëët beeye kiper mana bëët Nineba ni caala dhaagø ma kääbi. Eni mïërö, ni tïïö ki jap ajuuk, ni bïth wïth juurre ki wïth jiy ki køør bëëtö mare manøgø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Neennu, mana caan Wuuö Jwøki, eni na wïth jammi bëët, bee en, ena köö, ni «Aani, a tïïö dëërï ki gïrpiny. Aani, abïïnï jaara maal ni pïïe wïïï, naa nyootha dëërï jï wïth juurre,  ni ö akwöp nyec ni jootge lään wïc marï.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Aani gïïa no okwäk wø leeŋ wïthur leeŋa bäätï, ni mara jar ïïni, ni tïïa ïïni na gïr apääda.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Jø oneen ïïni bëët nyeŋge putge løø wøk dëërï, ni köge, ni ‹Nineba anidwöt. ?Aŋa noo jwöŋi kipere?› ?'Ba ennø, aano jïta kaa ki ŋat mo cøma cwïnyï?»",
+                    "ID": "7"
+                },
+                {
+                    "text": "?Wui Nineba, ki jïrï ni beerra ïïni niï kaala Tëbic, pääny Ijep na en bäät Naam Nail, na näk orööc pïïyi, ni naam ee tïïö na gëëŋi, ni tïïc pïï na kiir mare?",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ithiöpia abëëdö na teek mare, këël ki Ijep, ni bëët teeki mare ni bäŋ cuŋŋe; ni ö Puti ki Libya ni bëëtge na jø køny gø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba jø Thëbic gena käl ni ge mak ka tøŋ, ni ö obwöre ni gøyi ki piny nyeŋ jïëthe ni pet ge na thäŋi, ni ö dïbwöthe moe ni pääŋŋi ki køør nyuuthe mo wø tïïc ki ri kwääk ki baw, ni twöc geni ko oguudi.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ï na Nineba thuwø, ï tïmö kaamar ŋat mo omeer ki køøŋø. Kar gwøk røk marï omanynyï niï kana riï ki nyïïmän moï.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kiiri mo pääny moï moa no ogeerø ni teek tïmö ni caala olaam mo nyïïe ociek, mo noo kenyi, nyïïe puta päth piny ni puti leeŋ dhøk.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ka adïëri møn, jø leny moï moø ni en yi paac marï yøø, gena mään. Dhøk kiir mo paac marï ojabø jaak. Dïdëëdi mo dhøk kiir moï othöör maaci.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Tööm dëërï ki pïï kiper kanyo bëët kiirri no ociel dïër. Tïïc kwör gwøk røk moï ni teek. Ci yo odhöönh ni cwöthï gø, ni tïïï ki thuube.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Jiy moï othöör maaci, ni ö tøŋŋi ni dïïr wïthge kaawat man wø tïïc bäänyö. Määny riï ki lwaak mo päl mo caala lwaa bäänyö, ni thööth kaamar lwaa omør.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Ka adïëri møn, jø gath moï atïïyï ni thööth ni kaala ceer mo maal, 'ba geni paac wø loonyge loonyø ni aacge, kaawat man wø tïïc lwaa bäänyö.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Kwääri moï ki jø kööre moï ge thööth ni caala bäänyö, ni thööthge caala lwaa bäänyö ni wø pï piny bäät kiiri mo pwöth kany wø näk da köö, ni kany wø tuul cäŋŋi, ge puta määtö, ni kany wø cige yie kuc.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Wui nyeny Aciria, dïbwöthe moï obuti ki niir thøø, ni ö jø kööre moï ni narge ki narø mo bäŋ cuŋŋe. Jiy moï okeethi bäät kïte, ni bäŋ ŋat mo cooŋ geni këët.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Rääö marï na caal ŋwellø ba jïti ki køny, ni ba løny ki man caŋŋe. Jø owïny gïr ränynyö marï bëët ceŋge paŋge paŋø bäätï, ?kiper gïï wø tïïyï na reyø cooth aŋa ni pööth wøk ki ge?",
+                    "ID": "19"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,402 @@
+{
+    "textIntro": "Luubö Mo Cäänö Kaper Wëël Thecalönika Wëëlö Aciel Man beeye wëëlö mana göör Pøølli kiper jø Krictø moa en Thecalönika. Thecalönika beeye pääny mana dwøŋ mar Macedönia na en tier Röm. Pøøl acooŋ Jwøk atääe yi pääny manøgø køør kanya ö eni na wec paac mana cwøl ni Pilipay. 'Ba na tïme na kany mo cään jø møøk røk jø Juuth agëëmö ki eni, ni beege jøøa näk okëëyö kiper mana thur pwöci mare kare mana pööe ki luum Krictø dï jiy moa näk patha jø Juuth ni wø lämö ki lam mar jø Juuth. 'Ba Pøøl atïïc ki teek ki man wec Thecalönika, ni wec gø ni ci Beria. 'Ba køøre na pïïe Körin, Timöthi ni wø tïïge ki gø ajääŋŋe køøre Thecalönika, ni duue ni caan bëët acooŋ Jwøk mar Thecalönika jïre. Wëëlö man agöör Pøølli baŋ jø Thecalönika ni cøma cwïny jø Krictø moa en kaace nee cäŋge cuŋŋö ni ge teek. Ni eni dwøga met ec kiper mana bëëtge ni ge poot cuŋŋa ri ŋäädhe ki mëër. Ni para wïthge ki bëëtö mare na beede kanya poode dïge. Ni eni dwøga løk pïëc mo pïëc moa ö maal ya acooŋ Jwøk kiper duun Krictø na køp, na «?Aŋø, jø Jwøk moa thøw ni Krictø poot kär duuö, ge poot jïtö ki kwøw mo bäŋ cuŋŋe mano tägi ri duun Krictø? ?A Krictø oduue yi wäne?» Pøøl tiet pïëc moøgø alame jïge nee bëëtge ni cwïnyge ege cïp piny ni ge koora duun Krictø ki ŋäädhe. ",
+    "introTitle": "Thecalönika",
+    "chapterName": "Wëëlö Mana Dïkwøŋ Mana Göör Pøølli Baŋ Jø Thecalönika",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "NT:1TH.1",
+            "name": "1 Thecalönika 1",
+            "text": [
+                {
+                    "title": "Määdhe ",
+                    "text": "Aana Pøøl ki Cilbana ki Timöthi, a göönna baŋ acooŋ Jwøk mar jø Thecalönika na en ri Jwøk na näk Wuuö, ki Kwäärö ma Jecu Krictø. Met ec ki bëët-mëër bëëde bäätu. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Ŋäädhe Mar Jø Thecalönika",
+                    "text": "'Ba met ec wø dwøkwa dwøgø cooth jï Jwøk kiperu bëët, ni wa cara nyeŋŋu cooth yïth laam mowa.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Ni wa lääŋŋa tïïc maru nyïm Jwøø na näk Wääø, ni wø tïïyu ki køør ŋäädhe, ni uuno ööl ki køør mëër, nou bëëdö ni dëëtu you maaø ri ŋäädhe mana ŋääthu Kwääyø ma Jecu Krictø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kiper ŋäcwa, nyïïmera, ni Jwøk mëër ki uuni, ni jier uuni.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper luumwa na nyään na met kär ö baŋu na luubö keere, 'ba aöö ki teek thuwø ki ri Jwïëc Jwøk na en kur keere, na caanwa na gïn mo ŋäcwa døøc. Ni ŋäyu gø ki man näk a teeŋ bëëtö mo nyïëdi na beetwa dïïu, na kønywa uuni.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni tïmu nou ŋwaala marwa ki mar Wuuö, ni jïëyu luummögø yïth gïïa leth døc, ni yïthu met ki met ec mana cïp Jwïëc Jwøki na en kur keere.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni tïmu ni uuna nyuudhi jï jøøa näk ojïëy bëët yi Macedönia ki ya Akeea.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kiper patha jø Macedönia ki jø Akeea keerge na wïny luum Wuuö baŋu, 'ba luum ŋäädhe maru na ŋääthu Jwøk, apööth kany mo bäär, ni bäŋ gïn mo caanwa kipere këët.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kiper geni ki dëëtge ge wø cäänö kiperwa, ni waana pänhnhu døc kanya bëëtwa dïïu, na ö uuni na løøu rou baŋ Jwøk, ni weyu juu, ni tïmu nou tïnynya Jwøk mana kwøw, na näk adïëri,",
+                    "ID": "9"
+                },
+                {
+                    "text": "nou koora duun Wääde ma Jecu ki maal, ŋata tïŋ maal ki yi thøø, ni beeye ŋato piem øøni ki wëër mano ööi.",
+                    "ID": "10"
+                }
+            ]
+        },
+        {
+            "ID": "NT:1TH.2",
+            "name": "1 Thecalönika 2",
+            "text": [
+                {
+                    "title": "Gïna Tïïc Pøølli Thecalönika ",
+                    "text": "Kiper ŋäyu ki dëëtu, nyïïmera, ni lïïmmö marwa na lïïmwa baŋu, kär cam paapi.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba waani, këël na jwørwa gïï mo leth ni caan wa døc yi Pilipay, kaawat mana ŋäyu gø, cwïnywa amakwa ki ri Jwøk marwa ki man køpwa luumma nyään na met na näk mar Jwøk jïïu, ni waano mänö døc ki man caanwa gø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kiper köömmö marwa mana köömwa uuni ki gø paa mar cwøk, wala gïn mo käla raay, wala gïn mo tïïc ka atade.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba wa wø cäänö kaawat mana ö Jwøki na jïëc waani ki man caanwa luumma nyään na met, ni paa nee yïth jiy døøcwa mo met, 'ba wa wø tïïya mo wø mïn yi Jwøki ki ge, ŋat wø pääny cwïnywa.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba wa kär cäänö ni wa mwøtha uuni ni wa lwøra japu ka atade, kaawat mana ŋäyu gø, ni Jwøk beeye lïŋï marwa.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni bäŋ pwøc mo ewa manynyø baŋ jiy, nee uuni wala jø møøk,",
+                    "ID": "6"
+                },
+                {
+                    "text": "këël na mïëre jïwa ki man caanwa gø, ni «Tïïyu gïn kiper mana näk waana nyïïatwiet Krictø.» 'Ba waana bëëdö ni wa mwöl dïïu, keda waŋø mo neeta nyïïkwaaye.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kiper mana mëërwa ki uuni døc, yïthwa met ki man nywaaø luumma nyään na met mar Jwøk ki uuni na aciel. Ni patha luum Jwøk keere, 'ba këël dëëtwa kiree, kiper uuna tïmö ni peru leth jïwa døc.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kiper wïthu kär wïl ki tïïc marwa na öölwa døc, nyïïmera. Waana tïïö ki wärre ki cääŋŋe bëët, kiper nou ba öölwa, kanya køpwa luumma nyään na met na näk mar Jwøk jïïu.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Ni uuna lïŋŋe ki Jwøk bëët kiper bëëtö marwa, ni bäŋ gïn mo wa doo jäälö ki gø, ni beeye bëëtö mo ena kur keere ni beer døc nyïmmu, u jøøa jïëy.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Kiper ŋäyu ni uuna köömwa døc, kaamar wuuö wø kööm nyïïe,",
+                    "ID": "11"
+                },
+                {
+                    "text": "ni cømwa cwïnynyu, ni caanwa gø jïïu, ki man bëëdu ki bëëtö mo beer mo orømø ki Jwøk, ŋat wø cøør uuni yi buye kiree ni mooc uuni ka ajiem.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni beeye wø pwøcwa Jwøk cooth thuwø, kiper kanya wïnynyu luum Jwøk baŋwa, aputu jïëc ni beeye luum Jwøk, ni näk adïëri møn, ni patha luum jiy jaak, ni beeye ni tïïö cwïnynyu, u na jïëy.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper uuni, nyïïmera, uuna tïmö ni maru röömi ki mo acook Jwøk moa en yi Judia ki nyeŋ Krictø Jecu. Kiper gïïa jwørru baŋ jø pou aciel ki moa jwørge baŋ jø Juuth,",
+                    "ID": "14"
+                },
+                {
+                    "text": "ni beege jøøa 'näk Kwäärö ma Jecu ge ki nyïïkuk Jwøk bëët, na riem waani wøk. Geni, ge wø raanynya cwïny Jwøk, ni tïmge ni ge män ki jiy bëët,",
+                    "ID": "15"
+                },
+                {
+                    "text": "kiper mana mänge waani ki man caanwa luum Jwøk jï juurre, nee ge piem. Ni beeye gïï wø tïïcge cooth ni ge meeta ray moge ni thööth. 'Ba ka aŋuudi, wëëc Jwøk arøm dëëtge. ",
+                    "ID": "16"
+                },
+                {
+                    "title": "Pøøl Manynya Lïïmmö Baŋ Jø Thecalönika",
+                    "text": "'Ba nyïïmera, kiper mana pääwa ki uuni ki kany mo thiinh, cwïnywa atïmö ni manynya gø døc ki man cäŋwa u neennø. Kiper tøørra dëëtwa keerge, ni patha cwïnywa.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Kiper cwïnywa manynya gø døc ki man öwa baŋu. Ka adïëri møn, a na Pøøl, beeye man wø manynya cooth cooth. 'Ba waano män Ceethanni.",
+                    "ID": "18"
+                },
+                {
+                    "text": "?Kiper agïnaŋø noo ŋääthwa? ?Na agïnaŋø noo mïn cwïnywa kipere? ?Na a rööny mane noo töötwa kipere nyïm Kwääyø ma Jecu, kanyo ööe? ?Aŋø, patha uuni?",
+                    "ID": "19"
+                },
+                {
+                    "text": "Ka adïëri møn beeye uuni na käl ajiem dëëtwa ki mïn ec.",
+                    "ID": "20"
+                }
+            ]
+        },
+        {
+            "ID": "NT:1TH.3",
+            "name": "1 Thecalönika 3",
+            "text": [
+                {
+                    "text": "'Ba na tïme ni ba maar lønyø jïwa ki man makwa cwïnywa këët, waana jïëy ki man dööŋwa yi Athen keerwa.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Ni jääŋwa cöögø ma Timöthi, na näk laŋ Jwøk ri luum Krictø na nyään na met, nou wëëk tëënnö ki ri ŋäädhe maru, ni kööm uuni",
+                    "ID": "2"
+                },
+                {
+                    "text": "nee bäŋe ya ŋat mo cwïnye dak kiper gïïö ni leth yøø. Kiper ŋäyu ki dëëtu ni manøgø beeye bëëtö marø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kiper kanya pootwa dïïu, acaanwa jïïu, ni gïï mo leth jwørø jwørø, kaawat mana nø täge enø, ni ŋäyu gø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper manøgønø, na tïm cwïnya ni ba maara mak këët, aana jääk baŋu, kiper bëët ŋäädhe maru nee wïnynya, kiper na lwäya ni kanymør ŋat wø pääny jiy, u ee päänynyö, ni tïm öölö marwa no oaay jaak.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kawaane, Timöthi aduu baŋwa, na öö ki baŋu, ni känne jïwa ki dwøl mo met kiper ŋäädhe maru ki mëër maru, ni caan gø ni cooth u lääŋŋa waani, ni yïthu met, ni cwïnynyu oäpö ki man jootu waani, keda man wø äp cwïnywa ki man jootwa uuni.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kiper manøgønø, nyïïmera, dï gïïögø bëët ni wø jwørwa ki mo wø kïmwa ki ge, cwïnywa apï piny ki bëëtö maru, kiper ŋäädhe maru.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kawaane, waana kwøw nø, ni näk mou puta bëëtö nou teek ki ri Wuuö.",
+                    "ID": "8"
+                },
+                {
+                    "text": "?'Ba a teeŋ met ec mo nyïëdi noo dwøkwa jï Jwøk kiperu kiper met ec mana päl na jootwa kiperu nyïm Jwøø?",
+                    "ID": "9"
+                },
+                {
+                    "text": "Ni wa lämö ki cwïnywa bäre ki yïth cääŋŋe ki wärre bëët, kiper nee wa cäŋwa røømmø ki uuni, nou kønywa ki gïno many ŋäädhe maru.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba kawaane, Jwøø na näk Wääø ki dëëre, ki Kwääyø ma Jecu, waano nyuunhnhe ki jöö man öwa baŋu ki gø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba Wuuö mëëyu omeede ni tïme ni päl ni mëërru ki røgu, ki jiy bëët, kaawat mana mëërwa ki uuni.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kiper manøgønø nee cwïnynyu tïïe ni ba jøøŋŋi ni ena kur keerge nyïm Jwøø na näk Wääø, yi cäŋo ö Kwääyø ma Jecu ki jiye bëët.",
+                    "ID": "13"
+                }
+            ]
+        },
+        {
+            "ID": "NT:1TH.4",
+            "name": "1 Thecalönika 4",
+            "text": [
+                {
+                    "title": "Bëëtö Man Wø Mïn Yi Jwøki Ki Gø ",
+                    "text": "'Ba nyïïmera, mana dööŋ keere nø, wa kwaya uuni ni wa köömma uuni ki ri Kwäärö ma Jecu, nou bëëdu ki bëëtö mana dou bëëdö ki gøøni, ni tïïyu gïïa met yi Jwøki ki ge, kaawat mana kwanynyu gø baŋwa. Ni putu gø tïïc ni cäätha nyïm kaawat man tïïyu gø enøgø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kiper gïïa pwönywa uuni ki ge ki køør Kwäärö ma Jecu, ŋäyu.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Ni beeye mana many Jwøki nou tïmu nou ena kur keeru, nou tïmu ni karu bäär ki käp,",
+                    "ID": "3"
+                },
+                {
+                    "text": "ni ö ŋati man nø dïïu ni kwänynye ki jöö man bëëde ki gø ki cïïe ki bëëtö mana en kur keere na mïërö,",
+                    "ID": "4"
+                },
+                {
+                    "text": "ni ba en ri bëët käp, kaawat man wø tïïc juurre, jø wø kuc Jwøk.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni bäŋe ya dhaanhø mo dhal luummögø, ni tïme ki gïn mo raac dëër coki kiper gïnögø. Kiper Wuuö kwöri wø coole kaper gïïögø bëët, keda mana kwøŋwa u köömmö døøc.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kiper Jwøk ø käre cwølø nøø tïmø ni ø reyø, 'ba nøø tïmø ni ø ena kur keerø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kiper manøgønø, ŋato taak luummögø, ba taak dhaanhø, 'ba taaga Jwøk, ŋat wø cïp Jwïëye na en kur keere jïïu.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kiper mëër man mëërru ki nyïïmëëe, u ba many ŋat göön baŋu kipere, kiper u ki dëëtu, uuna pwöny Jwøki ki man mëërru ki røgu.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Ni näk adïëri møn, nou wø mëër ki nyïïmëëe bëët moa en dï Macedönia bäre. 'Ba wa köömma uuni, nyïïmera, nee putu tïïc ni cäätha nyïm.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ni manynyu bëëtö mëëth, nou ŋäya bëëtö maru, nou tïïö ka ceŋŋu, kaawat mana köömwa uuni.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kiper manøgønø, nou wøør jøøa pathi, nee bäŋe gïn cannu. ",
+                    "ID": "12"
+                },
+                {
+                    "title": "Ööny Kwäärö",
+                    "text": "'Ba nyïïmera, wa ba many man kuyu gïno tägi kiper jøøa thøw, kiper nou ba kïmmu, kaamar jø møga moa näk jïge bäŋ ŋäädhe mar nyïm.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper mana jïëø ni Jecu athøw ni cäŋi tïŋ maal ki yi thøø, kaawat manøgø thuwø yøø jïëø, ni ki køør Jecu, Jwøk jøøa näk othøw okäle ki eni na aciel.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kiper beeye man caanwa jïïu en ki køør luum Kwäärö, ni ka adïëri møn, øøni noo dööŋ ni poot kwøw ii këël mano duu Kwäärö, paa ø noo bwödhö ki jøøa näk othøw.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kiper Kwäärö ki dëëre ööa piny ki maal, ki dwøl mo päl, ki dwør kwääy nyïïatwiet maal, ki dwør tuuŋ mar Jwøk. Ni ö jøøa thøw ri Krictø, ni kwøŋge ö maal.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre, ø noo dööŋ ni ø poot kwøw, øøno tïŋ maal ki geni na aciel yïth pøøl, nee ø røømmø ki Kwäärö yi jamø. Kanyøgø nø, øøno en buut Kwäärö cooth.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Kiper manøgø nø, cømmu cwïnynyu keeru ki ri luupögø.",
+                    "ID": "18"
+                }
+            ]
+        },
+        {
+            "ID": "NT:1TH.5",
+            "name": "1 Thecalönika 5",
+            "text": [
+                {
+                    "title": "Cäŋa Näk Cäŋ Kwäärö Ma Jecu ",
+                    "text": "'Ba ennø nyïïmera, ni näk per nïne ki kwöra wäŋŋi, u ba many man göön baŋu ki luubö kipere.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kiper uuni ki dëëtu, ŋäyu døøc, ni Cäŋ Kwäärö öö kaamar kuu ni wø ööi ki wäär.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyo kö jiyi ni «Kawaane nuta bëët-mëër ni bäŋ thøø këët,» kanyøgø beeye kanyo ö thøøe noo neelïm bäätge kaamar dhaagø mo yie da dhaanhø mo ogøøc mäc lwaarri, ni bäŋ ŋat mo bøth.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba nyïïmera, u ba en yi muudhö ki man thäŋ cwïnynyu ki cäŋöce noo caal kuu.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper uuna nyïï tar bëët, ni uuna nyïï cäŋ, ni ø paa mo wäär, wala mo muudhö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper manøgønø, kärø butø kaawat man wø tïïc jø møga. 'Ba beerra man bëëdø ni ø nëënö, ni dëëtø yøø gwøø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kiper jø wø buti, wø buti ka wäär, ni jø wø meeyi wø meer ka wäär.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kiper mana näk mo øøna nyïï dïcäŋ, beerra man gwøø dëëtø, ni kïthø kwöt nywïënyö mar ŋäädhe ki mëër kööthø, ni ö pïëmmi mana piem øøni ki gø ni wø ŋäädhø ni kïthø gø wïthø kaamar cöör nywïënyö.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kiper ø kär mëëŋ Jwøki wëër, 'ba beeye kiper nee pïëm man piem øøni ki gø nee joodø ki køør Kwääyø ma Jecu Krictø,",
+                    "ID": "9"
+                },
+                {
+                    "text": "ŋata thøw kiperø, kiper nøø tïmø ni ø bëëdö ka eni na aciel, nee øøno thøw wala ø kwøw.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Kiper manøgønø, cømmu cwïnynyu keeru, ni kääru dëëtu keeru, keda man tïïyu gø enøgø. ",
+                    "ID": "11"
+                },
+                {
+                    "title": "Pwöc Moa Näk Aŋuudi Ki Määdhe",
+                    "text": "'Ba nyïïmera, wa kwaya uuni ki man wøørru jøøgø ni tïïö dïïu yøø, ni enu ceŋge ki ri Wuuö, ni jøga uuni.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Wøørru geni døøc nou mëër ki geni, kiper tïïc marge. Ni bëëdu ki bëët-mëër ki dëëtu keeru.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba wa köömma uuni, nyïïmera, ki man köömmu jøø ni bëëdö jaak yøø, ni cømmu cwïny jøø ni cwïnyge lwäär yøø, ni kønynyu jøøa jägö, ni ba jøømmu ki geni bëët.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Caarru wïthu, nee bäŋe ya ŋat mo dwøk raay jï ŋato caan gïn mo raac dëëre, 'ba cooth manynyu gïn mo beer mo dou tïïö jï wat maya, ki jiy bëët.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Yïthu mïnge ki yïth nïne bëët.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni lämu cooth.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Ni dwøgu met ec ki yïth jammi bëët. Kiper beeye mana many Jwøki jïïu ki ri Krictø Jecu.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Ni kär nou bïpa Jwïëc Jwøk.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Ni ba taagu jiy mo køpa dwør Jwøk.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba jammi bëët wär päänynyu, ni magu gïno beer.",
+                    "ID": "21"
+                },
+                {
+                    "text": "Ni tïïyu karu ni bäär ki teeŋ raay bëët.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba Jwøk ki dëëre, ni wø cïp bëëtmëër, uuno tïïe nou ena kur keeru ki karu bäre, ni ö jwïëyu, ki kwøw maru, ki dëëtu, ni bëëtge na karge ni bäŋ ajäla røkge, kanyo ö Kwääyø ma Jecu Krictø.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba eni na cwøl uuni, dwøre ba dak. Otïïe.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Nyïïmera, lämu kiperwa.",
+                    "ID": "25"
+                },
+                {
+                    "text": "Määthu nyïïmëëe bëët ki nuum dhøk mana en kur keere na näk mar Jwøk.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba a köömma uuni ki ri Wuuö, ni wëëlö man en wär kwaannu jï nyïïmëëe bëët.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Met ec mar Kwääyø ma Jecu Krictø bëëde bäätu.",
+                    "ID": "28"
+                }
+            ]
+        }
+    ]
+}

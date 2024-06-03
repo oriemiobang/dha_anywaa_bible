@@ -14,6 +14,7 @@ import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/classes/highlights.dart';
 import 'package:dha_anywaa_bible/components/daily_text.dart';
+import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
@@ -36,6 +37,7 @@ class HomePage extends StatefulWidget {
 class _MyHomePageState extends State<HomePage> {
   String myjsonString = 'assets/fonts/chapters/Any/Genesis.json';
   String englishJsonString = 'assets/holybooks/$bibleVersion';
+  String anywaaJsonString = 'assets/holybooks/ANY/$bibleVersion';
   String amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
   Future<String> _loadData() async {
     return await rootBundle.loadString(myjsonString);
@@ -45,12 +47,18 @@ class _MyHomePageState extends State<HomePage> {
     return await rootBundle.loadString(englishJsonString);
   }
 
+  Future<String> _anywaaLoadData() async {
+    return await rootBundle.loadString(anywaaJsonString);
+  }
+
   Future<String> _amhLoadData() async {
     return await rootBundle.loadString(amharicJsonString);
   }
 
   Book? book;
   EnglishBook? englishBook;
+  AnywaaBook? anywaaBook;
+
   AmharicChapters? amharicBook;
 
   Future loadData() async {
@@ -79,6 +87,20 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
+  Future anywaaLoadData() async {
+    try {
+      String anyJsonString = await _anywaaLoadData();
+      final anyJsonResponse = json.decode(anyJsonString);
+      setState(() {
+        anywaaBook = AnywaaBook.fromJson(anyJsonResponse);
+        title = anywaaBook!.chapters[pageIndex].name;
+      });
+    } catch (e) {
+      print('dha anywaa problem');
+      print(e);
+    }
+  }
+
   Future amhLoadData() async {
     try {
       String amhJsonString = await _amhLoadData();
@@ -100,6 +122,7 @@ class _MyHomePageState extends State<HomePage> {
   String currentFont = '';
   static String bibleVersion = '';
   static String amhBibleVersion = '';
+  String myTitle = '';
   String _language = '';
   static int mypage = 0;
   void getFontSize() async {
@@ -125,12 +148,25 @@ class _MyHomePageState extends State<HomePage> {
         amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
         amhLoadData();
       });
-    } else {
+    } else if (language.split(' ')[0] == 'ANY') {
       setState(() {
-        englishJsonString = 'assets/holybooks/$bibleVersion';
+        print("here w ${language}");
+        print(bibleVersion);
+        anywaaJsonString = 'assets/holybooks/$bibleVersion';
 
-        engLoadData();
+        anywaaLoadData();
+        myTitle = anywaaBook!.chapters[pageIndex].name;
+        print(title);
       });
+    } else {
+      {
+        setState(() {
+          print("here we aare t ${language}");
+          englishJsonString = 'assets/holybooks/$bibleVersion';
+
+          engLoadData();
+        });
+      }
     }
 
     setState(() {
@@ -146,7 +182,7 @@ class _MyHomePageState extends State<HomePage> {
   Future<void> refresher() async {
     final highlight = await ColorHighlight.gethighlight();
     setState(() {
-      print(highlight);
+      // print(highlight);
       _highlight = highlight;
     });
   }
@@ -353,11 +389,24 @@ class _MyHomePageState extends State<HomePage> {
           textColor: Colors.white,
           fontSize: 16.0);
     } else {
+      // var bookmarkExist =
+      //     _highlight.map((e) => e['id'] == bookmarks['textId']).isNotEmpty;
+      // if (bookmarkExist) {
+      //   Fluttertoast.showToast(
+      //       msg: "Bookmark already added",
+      //       toastLength: Toast.LENGTH_SHORT,
+      //       gravity: ToastGravity.BOTTOM,
+      //       timeInSecForIosWeb: 1,
+      //       backgroundColor: Color.fromARGB(255, 0, 4, 17),
+      //       textColor: Colors.white,
+      //       fontSize: 16.0);
+      // } else {
       Highlight.createItem(
           bookmarks[0]['text'],
           '${bookmarks[0]['chapterName']} ${bookmarks[0]['chapterNumber']}: ${bookmarks[0]['chapterId']}',
           date);
 
+      // print(_highlight);
       Fluttertoast.showToast(
           msg: "Bookmark added",
           toastLength: Toast.LENGTH_SHORT,
@@ -366,6 +415,15 @@ class _MyHomePageState extends State<HomePage> {
           backgroundColor: Color.fromARGB(255, 0, 4, 17),
           textColor: Colors.white,
           fontSize: 16.0);
+      // }
+
+      // bool already = _highlight.any((dic) => mapEquals(dic,c ));
+
+      // print('$already exist');
+      // print(bookmarks);
+      // if (_highlight.any((element) => element = {})) {
+      //   print('yesss');
+      // }
     }
     getCurrentDate();
   }
@@ -446,21 +504,36 @@ class _MyHomePageState extends State<HomePage> {
                 ),
               )
             ],
+            title: TextButton(
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Pray()),
+                    );
+                  });
+                },
+                child: Text(
+                  _language == 'AMH'
+                      ? 'ፀልይ'
+                      : _language == 'ANY'
+                          ? 'Lämï'
+                          : 'Pray',
+                  style: TextStyle(
+                    fontSize: 20.5,
+                    color: currentTheme == Brightness.light
+                        ? const Color.fromARGB(255, 1, 11, 36)
+                        : Color.fromARGB(255, 243, 179, 83),
+                  ),
+                )),
             // backgroundColor: Colors.transparent,
-            title: Text(
-              _language == 'AMH'
-                  ? 'ዛሬ'
-                  : _language == 'ANY'
-                      ? 'Dïcängï'
-                      : 'Today',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-            ),
-            centerTitle: true,
+            // title:
+            // centerTitle: true,
             forceMaterialTransparency: true,
           );
         case 1:
           return AppBar(forceMaterialTransparency: true, actions: [
-            _language == 'ERV'
+            _language == 'ERV' || _language == 'ANY'
                 ? IconButton(
                     onPressed: () {
                       setState(() {
@@ -704,22 +777,35 @@ class _MyHomePageState extends State<HomePage> {
                                                             TextSpan(
                                                               text: amhchapters,
                                                               style: TextStyle(
-                                                                  fontFamily:
-                                                                      currentFont,
-                                                                  fontSize:
-                                                                      _currentFontSize,
-                                                                  backgroundColor: _highlight
-                                                                      .map((verse) => verse['id'] ==
-                                                                              amhchapters
-                                                                          ? colorList[verse[
-                                                                              'color']]
-                                                                          : null)
-                                                                      .firstWhere(
-                                                                          (color) =>
-                                                                              color !=
-                                                                              null,
-                                                                          orElse: () =>
-                                                                              Colors.transparent)),
+                                                                fontFamily:
+                                                                    currentFont,
+                                                                fontSize:
+                                                                    _currentFontSize,
+                                                                backgroundColor: _highlight
+                                                                    .map((verse) => verse['id'] ==
+                                                                            amhchapters
+                                                                        ? colorList[verse[
+                                                                            'color']]
+                                                                        : null)
+                                                                    .firstWhere(
+                                                                        (color) =>
+                                                                            color !=
+                                                                            null,
+                                                                        orElse: () =>
+                                                                            Colors.transparent),
+                                                                decoration: markedText.any((dic) =>
+                                                                        dic['text'] ==
+                                                                        amhchapters)
+                                                                    ? TextDecoration
+                                                                        .underline
+                                                                    : null,
+                                                                decorationStyle: markedText.any((dic) =>
+                                                                        dic['text'] ==
+                                                                        amhchapters)
+                                                                    ? TextDecorationStyle
+                                                                        .dashed
+                                                                    : null,
+                                                              ),
                                                             )
                                                           ],
                                                         ),
@@ -738,228 +824,484 @@ class _MyHomePageState extends State<HomePage> {
                               }),
                         );
                       })
-              : englishBook == null
+              : (anywaaBook == null && englishBook == null)
                   ? Center(
                       child: SpinKitWaveSpinner(
                         color: const Color.fromARGB(255, 13, 33, 65),
                         size: 50.0,
                       ),
                     )
-                  : PageView.builder(
-                      key: key,
-                      onPageChanged: (index) {
-                        style.setPage(index);
-                        markedText = [];
-                        setState(() {
-                          getBibleVersion();
-                        });
-                      },
-                      itemCount: englishBook!.chapters.length,
-                      controller: pageController,
-                      itemBuilder: (BuildContext context, int index) {
-                        var book = englishBook!.chapters[index];
-                        return Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: ListView.builder(
+                  : _language == 'ANY'
+                      ? anywaaBook == null
+                          ? Center(
+                              child: SpinKitWaveSpinner(
+                                color: const Color.fromARGB(255, 13, 33, 65),
+                                size: 50.0,
+                              ),
+                            )
+                          : PageView.builder(
                               key: key,
-                              itemCount: book.verses.length,
-                              shrinkWrap: true,
-                              controller: controller,
-                              itemBuilder:
-                                  (BuildContext context, int listindex) {
-                                var chapter = book.verses[listindex];
-                                var chapterNumber = book.name.split(
-                                    ' ')[book.name.split(' ').length - 1];
-                                String first = book.name.split(' ').length > 2
-                                    ? book.name.split(' ')[0]
-                                    : '';
-                                print(book.name.split(' '));
-                                var chapterName =
-                                    '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
-                                return Container(
-                                  child: Column(
-                                    children: [
-                                      listindex == 0
-                                          ? Text(
-                                              chapterName,
-                                              style: const TextStyle(
-                                                  fontSize: 22,
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.grey),
-                                            )
-                                          : SizedBox(),
-                                      listindex == 0
-                                          ? Text(
-                                              chapterNumber,
-                                              style: const TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 72),
-                                            )
-                                          : const Visibility(
-                                              visible: false, child: Text('')),
-                                      listindex == 0
-                                          ? SizedBox(
-                                              height: 20,
-                                            )
-                                          : const Visibility(
-                                              visible: false, child: Text('')),
-                                      (book.title!.isNotEmpty && listindex == 0)
-                                          ? Text(
-                                              '${book.title}\n',
-                                              style: TextStyle(
-                                                fontStyle: FontStyle.italic,
-                                                fontSize: 17,
-                                                fontWeight: FontWeight.bold,
+                              onPageChanged: (index) {
+                                style.setPage(index);
+                                markedText = [];
+                                setState(() {
+                                  getBibleVersion();
+                                });
+                              },
+                              itemCount: anywaaBook!.chapters.length,
+                              controller: pageController,
+                              itemBuilder: (BuildContext context, int index) {
+                                var book = anywaaBook!.chapters[index];
+                                return Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: ListView.builder(
+                                      key: key,
+                                      itemCount: book.verses.length,
+                                      shrinkWrap: true,
+                                      controller: controller,
+                                      itemBuilder: (BuildContext context,
+                                          int listindex) {
+                                        var chapter = book.verses[listindex];
+                                        var chapterNumber = book.name
+                                                .split(' ')[
+                                            book.name.split(' ').length - 1];
+                                        String first =
+                                            book.name.split(' ').length > 2
+                                                ? book.name.split(' ')[0]
+                                                : '';
+                                        print(book.name.split(' '));
+                                        var chapterName =
+                                            '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
+                                        return Container(
+                                          child: Column(
+                                            children: [
+                                              listindex == 0
+                                                  ? Text(
+                                                      chapterName,
+                                                      style: const TextStyle(
+                                                          fontSize: 22,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color: Colors.grey),
+                                                    )
+                                                  : SizedBox(),
+                                              Visibility(
+                                                  visible: listindex == 0,
+                                                  child: Text(
+                                                    chapterNumber,
+                                                    style: const TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 72),
+                                                  )),
+                                              listindex == 0
+                                                  ? SizedBox(
+                                                      height: 20,
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text('')),
+                                              (book.verses[listindex].title!
+                                                      .isNotEmpty)
+                                                  ? Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 30,
+                                                              right: 30,
+                                                              bottom: 6),
+                                                      child: Text(
+                                                        '\n${book.verses[listindex].title}',
+                                                        style: TextStyle(
+                                                          fontStyle:
+                                                              FontStyle.italic,
+                                                          fontSize: 18,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  : Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
+                                                    ),
+                                              Padding(
+                                                padding:
+                                                    EdgeInsets.only(bottom: 9),
+                                                child: Visibility(
+                                                    visible: book
+                                                        .verses[listindex]
+                                                        .reference!
+                                                        .isNotEmpty,
+                                                    child: Text(
+                                                      '${book.verses[listindex].reference}',
+                                                      style: TextStyle(
+                                                          fontSize: 15.5,
+                                                          color: Colors.grey),
+                                                    )),
                                               ),
-                                            )
-                                          : Visibility(
-                                              visible: false,
-                                              child: Text(''),
-                                            ),
-                                      Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                              Row(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  chapter.text != ''
+                                                      ? Text(
+                                                          chapter.id,
+                                                          style: TextStyle(
+                                                              color:
+                                                                  Colors.grey),
+                                                        )
+                                                      : const Visibility(
+                                                          visible: false,
+                                                          child: Text('')),
+                                                  const SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  chapter.text != ''
+                                                      ? Expanded(
+                                                          child: Column(
+                                                          crossAxisAlignment:
+                                                              CrossAxisAlignment
+                                                                  .start,
+                                                          children: [
+                                                            GestureDetector(
+                                                              onTap: () {
+                                                                // print(_highlight);
+                                                                currentBibleVerse =
+                                                                    '${book.id}${chapter.id}';
+                                                                print(
+                                                                    _highlight);
+                                                                currentVerseIndex =
+                                                                    listindex;
+                                                                selectedColorIndex =
+                                                                    listindex;
+
+                                                                markText(
+                                                                    index:
+                                                                        listindex,
+                                                                    chapterName:
+                                                                        chapterName,
+                                                                    text: chapter
+                                                                        .text,
+                                                                    chapterNumber:
+                                                                        chapterNumber,
+                                                                    chapterId:
+                                                                        chapter
+                                                                            .id,
+                                                                    textId:
+                                                                        currentBibleVerse);
+                                                                print(markedText
+                                                                    .map((dic) =>
+                                                                        dic['text'] ==
+                                                                        chapter
+                                                                            .text)
+                                                                    .isNotEmpty);
+                                                              },
+                                                              child: RichText(
+                                                                  text: TextSpan(
+                                                                      style: DefaultTextStyle.of(
+                                                                              context)
+                                                                          .style,
+                                                                      children: [
+                                                                    TextSpan(
+                                                                      text: chapter
+                                                                          .text,
+                                                                      style:
+                                                                          TextStyle(
+                                                                        backgroundColor: _highlight.map((verse) => verse['id'] == '${book.id}${chapter.id}' ? colorList[verse['color']] : null).firstWhere(
+                                                                            (color) =>
+                                                                                color !=
+                                                                                null,
+                                                                            orElse: () =>
+                                                                                Colors.transparent),
+                                                                        fontFamily:
+                                                                            currentFont,
+                                                                        fontSize:
+                                                                            _currentFontSize,
+                                                                        decoration: markedText.any((dic) =>
+                                                                                dic['text'] ==
+                                                                                chapter.text)
+                                                                            ? TextDecoration.underline
+                                                                            : null,
+                                                                        decorationStyle: markedText.any((dic) =>
+                                                                                dic['text'] ==
+                                                                                chapter.text)
+                                                                            ? TextDecorationStyle.dashed
+                                                                            : null,
+                                                                      ),
+                                                                    )
+                                                                  ])),
+                                                            ),
+                                                            Visibility(
+                                                              visible: chapter
+                                                                      .comment!
+                                                                      .isNotEmpty &&
+                                                                  thereIsComment,
+                                                              child: Text(
+                                                                '${chapter.comment}',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .grey,
+                                                                    fontStyle:
+                                                                        FontStyle
+                                                                            .italic),
+                                                              ),
+                                                              // visible: chapter
+                                                              //     .comment!
+                                                              //     .isNotEmpty,
+                                                            )
+                                                          ],
+                                                        ))
+                                                      : Visibility(
+                                                          child: Text(''),
+                                                          visible: false,
+                                                        )
+                                                ],
+                                              ),
+                                              SizedBox(
+                                                height: 0,
+                                              ),
+                                              listindex ==
+                                                      (book.verses.length - 1)
+                                                  ? Padding(
+                                                      padding: EdgeInsets.only(
+                                                          bottom: 100),
+                                                    )
+                                                  : Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
+                                                    ),
+                                            ],
+                                          ),
+                                        );
+                                      }),
+                                );
+                              })
+                      : PageView.builder(
+                          key: key,
+                          onPageChanged: (index) {
+                            style.setPage(index);
+                            markedText = [];
+                            setState(() {
+                              getBibleVersion();
+                            });
+                          },
+                          itemCount: englishBook!.chapters.length,
+                          controller: pageController,
+                          itemBuilder: (BuildContext context, int index) {
+                            var book = englishBook!.chapters[index];
+                            return Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: ListView.builder(
+                                  key: key,
+                                  itemCount: book.verses.length,
+                                  shrinkWrap: true,
+                                  controller: controller,
+                                  itemBuilder:
+                                      (BuildContext context, int listindex) {
+                                    var chapter = book.verses[listindex];
+                                    var chapterNumber = book.name.split(
+                                        ' ')[book.name.split(' ').length - 1];
+                                    String first =
+                                        book.name.split(' ').length > 2
+                                            ? book.name.split(' ')[0]
+                                            : '';
+                                    print(book.name.split(' '));
+                                    var chapterName =
+                                        '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
+                                    return Container(
+                                      child: Column(
                                         children: [
-                                          chapter.text != ''
+                                          listindex == 0
                                               ? Text(
-                                                  chapter.id,
-                                                  style: TextStyle(
+                                                  chapterName,
+                                                  style: const TextStyle(
+                                                      fontSize: 22,
+                                                      fontWeight:
+                                                          FontWeight.bold,
                                                       color: Colors.grey),
+                                                )
+                                              : SizedBox(),
+                                          listindex == 0
+                                              ? Text(
+                                                  chapterNumber,
+                                                  style: const TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 72),
                                                 )
                                               : const Visibility(
                                                   visible: false,
                                                   child: Text('')),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          chapter.text != ''
-                                              ? Expanded(
-                                                  child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    GestureDetector(
-                                                      onTap: () {
-                                                        // print(_highlight);
-                                                        currentBibleVerse =
-                                                            '${book.id}${chapter.id}';
-                                                        print(_highlight);
-                                                        currentVerseIndex =
-                                                            listindex;
-                                                        selectedColorIndex =
-                                                            listindex;
-
-                                                        markText(
-                                                            index: listindex,
-                                                            chapterName:
-                                                                chapterName,
-                                                            text: chapter.text,
-                                                            chapterNumber:
-                                                                chapterNumber,
-                                                            chapterId:
-                                                                chapter.id,
-                                                            textId:
-                                                                currentBibleVerse);
-                                                        print(markedText
-                                                            .map((dic) =>
-                                                                dic['text'] ==
-                                                                chapter.text)
-                                                            .isNotEmpty);
-                                                      },
-                                                      child: RichText(
-                                                          text: TextSpan(
-                                                              style: DefaultTextStyle
-                                                                      .of(context)
-                                                                  .style,
-                                                              children: [
-                                                            TextSpan(
-                                                              text:
-                                                                  chapter.text,
-                                                              style: TextStyle(
-                                                                backgroundColor: _highlight
-                                                                    .map((verse) => verse['id'] ==
-                                                                            '${book.id}${chapter.id}'
-                                                                        ? colorList[verse[
-                                                                            'color']]
-                                                                        : null)
-                                                                    .firstWhere(
-                                                                        (color) =>
-                                                                            color !=
-                                                                            null,
-                                                                        orElse: () =>
-                                                                            Colors.transparent),
-                                                                fontFamily:
-                                                                    currentFont,
-                                                                fontSize:
-                                                                    _currentFontSize,
-                                                                // decoration: markedText
-                                                                //         .map((dic) =>
-                                                                //             dic['text'] ==
-                                                                //             chapter
-                                                                //                 .text)
-                                                                //         .isNotEmpty
-                                                                //     ? TextDecoration
-                                                                //         .underline
-                                                                //     : null,
-                                                                // decorationStyle: markedText
-                                                                //         .map((dic) => dic['text'] == chapter.text)
-                                                                //         .isNotEmpty
-                                                                //     ? TextDecorationStyle.dashed
-                                                                //     : null
-                                                              ),
-                                                            )
-                                                          ])),
-                                                    ),
-                                                    chapter.comment!
-                                                                .isNotEmpty &&
-                                                            thereIsComment
-                                                        ? Text(
-                                                            '${chapter.comment![0]}',
-                                                            style: TextStyle(
-                                                                color:
-                                                                    Colors.grey,
-                                                                fontStyle:
-                                                                    FontStyle
-                                                                        .italic),
-                                                          )
-                                                        : Visibility(
-                                                            child: Text(''),
-                                                            visible: false,
-                                                          )
-                                                  ],
-                                                ))
-                                              : Visibility(
-                                                  child: Text(''),
-                                                  visible: false,
+                                          listindex == 0
+                                              ? SizedBox(
+                                                  height: 20,
                                                 )
+                                              : const Visibility(
+                                                  visible: false,
+                                                  child: Text('')),
+                                          (book.title!.isNotEmpty &&
+                                                  listindex == 0)
+                                              ? Text(
+                                                  '${book.title}\n',
+                                                  style: TextStyle(
+                                                    fontStyle: FontStyle.italic,
+                                                    fontSize: 17,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                )
+                                              : Visibility(
+                                                  visible: false,
+                                                  child: Text(''),
+                                                ),
+                                          Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              chapter.text != ''
+                                                  ? Text(
+                                                      chapter.id,
+                                                      style: TextStyle(
+                                                          color: Colors.grey),
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text('')),
+                                              const SizedBox(
+                                                width: 10,
+                                              ),
+                                              chapter.text != ''
+                                                  ? Expanded(
+                                                      child: Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        GestureDetector(
+                                                          onTap: () {
+                                                            // print(_highlight);
+                                                            currentBibleVerse =
+                                                                '${book.id}${chapter.id}';
+                                                            print(_highlight);
+                                                            currentVerseIndex =
+                                                                listindex;
+                                                            selectedColorIndex =
+                                                                listindex;
+
+                                                            markText(
+                                                                index:
+                                                                    listindex,
+                                                                chapterName:
+                                                                    chapterName,
+                                                                text: chapter
+                                                                    .text,
+                                                                chapterNumber:
+                                                                    chapterNumber,
+                                                                chapterId:
+                                                                    chapter.id,
+                                                                textId:
+                                                                    currentBibleVerse);
+                                                            print(markedText
+                                                                .map((dic) =>
+                                                                    dic['text'] ==
+                                                                    chapter
+                                                                        .text)
+                                                                .isNotEmpty);
+                                                          },
+                                                          child: RichText(
+                                                              text: TextSpan(
+                                                                  style: DefaultTextStyle.of(
+                                                                          context)
+                                                                      .style,
+                                                                  children: [
+                                                                TextSpan(
+                                                                  text: chapter
+                                                                      .text,
+                                                                  style:
+                                                                      TextStyle(
+                                                                    backgroundColor: _highlight
+                                                                        .map((verse) => verse['id'] ==
+                                                                                '${book.id}${chapter.id}'
+                                                                            ? colorList[verse[
+                                                                                'color']]
+                                                                            : null)
+                                                                        .firstWhere(
+                                                                            (color) =>
+                                                                                color !=
+                                                                                null,
+                                                                            orElse: () =>
+                                                                                Colors.transparent),
+                                                                    fontFamily:
+                                                                        currentFont,
+                                                                    fontSize:
+                                                                        _currentFontSize,
+                                                                    decoration: markedText.any((dic) =>
+                                                                            dic['text'] ==
+                                                                            chapter
+                                                                                .text)
+                                                                        ? TextDecoration
+                                                                            .underline
+                                                                        : null,
+                                                                    decorationStyle: markedText.any((dic) =>
+                                                                            dic['text'] ==
+                                                                            chapter
+                                                                                .text)
+                                                                        ? TextDecorationStyle
+                                                                            .dashed
+                                                                        : null,
+                                                                  ),
+                                                                )
+                                                              ])),
+                                                        ),
+                                                        chapter.comment!
+                                                                    .isNotEmpty &&
+                                                                thereIsComment
+                                                            ? Text(
+                                                                '${chapter.comment![0]}',
+                                                                style: TextStyle(
+                                                                    color: Colors
+                                                                        .grey,
+                                                                    fontStyle:
+                                                                        FontStyle
+                                                                            .italic),
+                                                              )
+                                                            : Visibility(
+                                                                child: Text(''),
+                                                                visible: false,
+                                                              )
+                                                      ],
+                                                    ))
+                                                  : Visibility(
+                                                      child: Text(''),
+                                                      visible: false,
+                                                    )
+                                            ],
+                                          ),
+                                          SizedBox(
+                                            height: 4.5,
+                                          ),
+                                          listindex == (book.verses.length - 1)
+                                              ? Padding(
+                                                  padding: EdgeInsets.only(
+                                                      bottom: 100),
+                                                )
+                                              : Visibility(
+                                                  visible: false,
+                                                  child: Text(''),
+                                                ),
                                         ],
                                       ),
-                                      SizedBox(
-                                        height: 4.5,
-                                      ),
-                                      listindex == (book.verses.length - 1)
-                                          ? Padding(
-                                              padding:
-                                                  EdgeInsets.only(bottom: 100),
-                                            )
-                                          : Visibility(
-                                              visible: false,
-                                              child: Text(''),
-                                            ),
-                                    ],
-                                  ),
-                                );
-                              }),
-                        );
-                      })
+                                    );
+                                  }),
+                            );
+                          })
           : (_selectedIndex == 0 ? DailyText() : Account()),
       appBar: buildAppBar(),
       bottomNavigationBar: AnimatedContainer(
         height: isVisible
             ? _selectedIndex == 1
-                ? 120
-                : 50
-            : 50,
+                ? 129
+                : 53
+            : 53,
         duration: Duration(milliseconds: 0),
         child: Wrap(children: [
           _selectedIndex == 1
@@ -1037,18 +1379,30 @@ class _MyHomePageState extends State<HomePage> {
                       ? Icons.wb_sunny_outlined
                       : Icons.nights_stay_outlined,
                 ),
-                label: '',
+                label: _language == 'AMH'
+                    ? 'ዛሬ'
+                    : _language == 'ANY'
+                        ? 'Dïcängï'
+                        : 'Today',
               ),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.menu_book_rounded,
                   ),
-                  label: ''),
+                  label: _language == 'AMH'
+                      ? 'መጽሃፍ ቅዱስ'
+                      : _language == 'ANY'
+                          ? 'Wëël Jwøk'
+                          : 'Bible'),
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.bookmark,
                   ),
-                  label: ''),
+                  label: _language == 'AMH'
+                      ? 'ቡክማርክ'
+                      : _language == 'ANY'
+                          ? 'Buk maak'
+                          : 'Bookmark'),
             ],
             currentIndex: _selectedIndex,
             selectedItemColor: const Color.fromARGB(255, 227, 171, 2),

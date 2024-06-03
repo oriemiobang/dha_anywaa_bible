@@ -1,0 +1,1538 @@
+{
+    "textIntro": "Wëël Daniel göör ni jø Juuda onø mak ki tøŋ ni geno nø kïth Babiløn. 'Ba Daniel ki nyïïawääte moa näk adäk ge ena dëët jøøa mak ki tøŋ enø na kïth Babiløn. 'Ba Daniel beeye dhaanhø mo bëëtö mare beer. Këël na poode ni thiinh, ena bëëdö ni dëëre ee koorø ki man bëëde ni kare bäär ki gïï mo reyø (1:8). Ena bëëdö ki bëëtö manøgø ki køør køny mar Jwøk. Ki køør bëëtö mare na beer, kanya tïme na jaal, acaan ni bäŋ gïn mo ojoodø mo obøth jïre (6:4-5). Wëëlö man opääŋŋö na kwöre ariiø. Luup moa dïkwøŋ cäänö kaper bëëtö mar Daniel po nyeya; ki kanya nyooth tiet lääk moa läk nyeya ki ge; ki kanya leeŋi yi buur ŋuuwe; ki kanya kweer nyïïawääte ki man wøørge kït gïrpiny mana tïïc nyeya nee wøør, ni leeŋ geni yi maa näk orubö ni wärri. Riet luup cäänö kaper gïïa nyooth Jwøki jï Daniel kiper jø Icriel ki wïth juurre møga kiper yi nyïm. Wëëlö man cøma cwïny jiy moa näk omaa ki tøŋ kiper nee ŋäcge man näk Jwøk cädö kiperge, ni gïna cïp Jwøki piny kiperge wëëge thur kare. ",
+    "introTitle": "Luubö Mo Cäänö Kaper Wëël Daniel",
+    "chapterName": "Daniel",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "OT:DAN.1",
+            "name": "Daniel 1",
+            "text": [
+                {
+                    "title": "Kanya Jier Daniel Ki Nyïïawääte Nee Ge Pwönynyi ",
+                    "text": "'Ba kanya tïme na ri dää cwiiri moa beet Jeyöakëmmi ni ena nyeny Juuda, Nabukedenecör nyeny Babiløn aö Jerucalem ni ciel gø dïër.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba Kwäärö Wuuö Jwøk Jeyöakëm nyeny Juuda acïp cer Nabukedenecör ki jap Øt Jwøk møøk, ni ö Nabukedenecörri ni kïth geni yi ŋööm Cinaar yi øt jwøe, ni kïth jap Øt Jwøk kar kän yi øt jwøe.",
+                    "ID": "2",
+                    "comment":"Cinaar beeye nyeŋ mør kiper ŋööm jø Babiløn."
+                },
+                {
+                    "text": "Køøre nyeya ma Nebukedenecör, Acpenath na bëëdö na wïth jø kööre moe aköömme ki man lwöte ki jø Icriel møøk røk jø dhi øt nyeya, ki røk dhøk uudi mo dïbwöthe,",
+                    "ID": "3"
+                },
+                {
+                    "text": "ni beege wøpe mo bäŋ möönynyö dëëtge, mo mïërö, mo wïthge kwel ni wïthge leer, mo nyeŋge reegø ki kwänynyö, ni tiet luup laara ci wïthge, mo orømø ki man tïïge paan dwøŋ. Ni tïïc geni nee pwönynyi ki göör luubö, ki dhøk mar jø Kaldia.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre nyeya acïp piny jïge ki cam ki køøŋø kiper yi cäŋ cooth ri cam mare ki ri køøŋø man wø maadhe, ni cïpe ki dwøl nee ge pwönynyi ki cwiiri adäk; køøre nø, ge tïmö ni ge tïnynya nyeya.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba ki røk jøøgø, jø Juuda beeye Daniel, ka Ananiya, ki Micaël, ka Adhariya.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Køøre ŋata bëëdö na wïth jø kööre acïpö ki nyeŋ mo nyään jïge; nyeŋ mana cïbe kiper Daniel beeye Belthacacör, ni mar Ananiya beeye Cidarak, ni mar Micaël beeye Micak, ni mar Adhariya beeye Abedenagø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba Daniel acuuŋö ki cwïnye ni eni dëëre ba dee døøc mo ba waany ki cam mar nyeya ki køøŋø man wø maadhe. Kanyøgø eni ŋata bëëdö na wïth jø kööre akwaae kiper nee eni wec ki man ba døøc dëëre mo ba waany ki jöö manøgø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kanyøgø Jwøk ŋata bëëdö na wïth jø kööre atïïe nee met ec mare ki mëër mare nyoodhe jï Daniel.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba ŋata bëëdö na wïth jø kööre aköö jï Daniel, ni «Aani, a lwäär ki kwääya ma nyeya, eni na cïp piny jïïu ki cam ki gïn maathu. ?Aŋø, per nee nyïmmu joode ni nëëni no oniköök ni ba caal nyïm wøpe moa näk tïëŋu? 'Ba u tïïya aani nee wïïa ŋul nyeya wøk.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre Daniel acäänö ki ŋat koor mana kwany ŋata bëëdö na wïth jø kööre, ŋat mo koora eni na Daniel, ka Ananiya, ki Micaël, ka Adhariya, ni kööe,",
+                    "ID": "11"
+                },
+                {
+                    "text": "ni «Ïïni, wa ni en cerï ii, pääny wa ki nïne apaar, ki man mooyï wa ko omarø nee camwa ki pïï mo maathwa.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Køøre nø, dëëtwa raŋï raŋø niï päära gø ki dëët wøpe moa bëëdö ni cama cam mar nyeya. Køøre nø, ki køør mano jootï, gïno tïïyï ki wa ni en cerï ennø, tïïyï tïïö.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kanyøgø ena put jïëy ki marge, ni pääny geni ki nïne apaar.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba kanya thum nïne apaarri, dëëtge anëënö ni pulli ni beyø geni ni kaala dëët wøpe bëët moa bëëdö ni cama cam mar nyeya.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kanyøgø ŋat koor manøgø cam mar nyeya mana dege camø ki køøŋø mana dege maadhø aput wec ni put bëëdö ni cïpa omarø jïge.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba wøpe moø na aŋween yøø, gena mooc Jwøki ki kwänynyö, ni tiet luup kwänynyö bëët moa no ogöör piny cøøa wïthge. Ni ö Danielli ni tïme ni løny jïre ki man ŋäc tiet jammi bëët mo wø nyooth ki yi wïc ki yïth lääk.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba kanya thum nïne moa kwaan nyeya ma Nabukedenecör ki man ö jøøgø nyïme, ŋata bëëdö na wïth jø kööre jøøgø akäl nyïm nyeya.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba kanya cään nyeya ki geni, ki røk jiy bëët ajoode ni bäŋ dhaanhø mo caala Daniel ka Ananiya ki Micaël ka Adhariya. Kanyøgø gena put tïmö ni ge tïnynya nyeya.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba jöör leec wïc bäre ki jöör ŋäc tiet luup moa ö nyeya na pëëny geni ki ge bëët, ajoode na ajuuk ki jø wø nyeŋge reegø ni wø pëënynye yi po nyec mare bäre ege kaalø kwöre apaar.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba Daniel aput bëëtö këël mana pïïe cwiir mana dïkwøŋ mana tïm Kiröci na nyeya yie.",
+                    "ID": "21"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.2",
+            "name": "Daniel 2",
+            "text": [
+                {
+                    "title": "Kanya Ö Nyeya Ma Nabukedenecör Na Läge ",
+                    "text": "'Ba kanya tïme na ri riet cwiiri moa beet Nabukedenecörri ni ena nyeya, ena lägö ki lääk, ni ö wïïe ni kier ree, ni dhäth nyeŋŋe ki gämmö.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Køøre nyeya acïpö ki dwøl na ajuuk, ki jøøa nyeŋge reegø, ki jø wø thöödhö ki war, ka ajuuk mo jø Kaldia cwøl ki man caange tier lääk mar nyeya jïre. 'Ba kanya öge na cuŋge nyïm nyeya,",
+                    "ID": "2"
+                },
+                {
+                    "text": "nyeya aköö jïge, ni «Aana lägö ki lääk, ni ö wïïa ni kier ree ki man ŋääa tier lääk.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgø ajuuk mo jø Kaldia gena put köö jï nyeya ki dhøk mar jø Aram, ni «Wui nyeya, ïïno bëëdö na bäre bäre! Caan lääk jïwa, wa na jiyi ii, køøre waani tier lääk caanwa caanø.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre aput nyeya dwøgø jï ajuuk mo jø Kaldia ni kööe, ni «Man beeye mana nø ŋøla ni yaa tïïö ni teek: Ni näk mo lääk mara ba caannu jïra ki tier gïna cääne kipere, uuni, u di ŋørø na bulli, ni ö uudi mou ni nyaay piny ni tïï na wïthur.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba ni näk mo lääk you caanø ki tier gïna cääne kipere, u jïtö ki muuce baŋa ki gïr mïn ec, ki wödö mo dwøŋ. Kiper manøgø nø, caannu lääk jïra ki tier gïna cääne kipere.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni løkge gø ri rietge ni köge, ni «Ï na nyeya en, beerra man caanï lääk jïwa, wa na jiyï ii; køøre waani tier gïna cääne kipere caanwa caanø.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ni dwøgi ya nyeya ni kööe, ni «Ka adïëri møn, aani, ŋääa nou thaya luubö jaak kiper mana jootu gø ni mana nø ŋøla yaa tïïö ni teek,",
+                    "ID": "8"
+                },
+                {
+                    "text": "ni ni näk mo lääk ba caannu jïra, tïmö ni da ciik aciel keere kiperu. Uuni dhøgu atuutu, u bëët, ki man caannu tööt ki luup mo reyø nyïma nee dee gïn mo ree wiile. Ennø, caannu lääk jïra kiper nee ŋääa ni løny jïïu ki man caannu tier gïna cääne kipere jïra.»",
+                    "ID": "9"
+                },
+                {
+                    "text": "Køøre aløk ajuuk mo jø Kaldia jï nyeya ni köge, ni «Bäŋ dhaanhø bäät ŋøøm mo løny jïre ki man caan gïnögø jïrï, ï na nyeya en; kiper ki mana bëëde cøøn bäŋ nyeya mo dwøŋ mo teek ma ajuuk moe ki jøøa nyeŋge reegø ka ajuuk mo jø Kaldia ee kwøŋ pëënynyö ki teeŋ gïnögø.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ni gïnögø na pëëny nyeya enø beeye gïn mo teek døc, ni bäŋ ŋat mo løny jïre ki man caan gø jï nyeya, ni näk mo paa juu ni wø näk kar bëëtö marge ba en dï jiy.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba kiper luummögø, nyeya aput wëër døc ni cwïnye okëënynyö, ni put cïpö ki dwøl nee jø Babiløn bëët moa nyeŋge reegø ni wø caan tiet lääk 'näk.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Køøre ciik manøgø akäl wøk kiper nee jøøa nyeŋge reegø moøgø 'näk; ni jääŋ jiy kuna manyge Daniel ki nyïïawääte kiper nee ge 'näk.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kanya ö Aryöki, eni na wïth jø koor mo nyeya, na nø cøøe nee jø Babiløn moa nyeŋge reegø nääe, Daniel acäänö ki eni ki jöör leec wïc, ki jöö ma kare.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Ni pëëny Aryök, ŋat wø käär teek nyeya, na «?Aperŋø na ö nyeya na käl teeŋ ciik manøgø wøk ni teek enø?» Køøre Aryök tier gïnögø alame jï Daniel.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Ni ö Danielli ni put cøø ni pëëny nyeya nee eni kwäänni ki nïne kiper nee lønye jïre ki man caan tier lääk jï nyeya. ",
+                    "ID": "16"
+                },
+                {
+                    "title": "Kanya Ö Jwøki Na Nyooth Lääk Ki Tier Gø Jï Daniel",
+                    "text": "Køøre Daniel aduu yi øtø mare ni caan tier gïnögø jï nyïïawäätge ma Ananiya, ki Micaël, ka Adhariya,",
+                    "ID": "17"
+                },
+                {
+                    "text": "kiper nee met yi Jwø maal pëënyge kiper gïnögø ni tiere okanø enø, nee eni na Daniel ki nyïïawäätge nee ba 'näk na aciel ki jø Babiløn moa nyeŋge reegø moøgø.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Kanyøgø gïnö ni tiere okanø enø aput nyooth jï Daniel ki wäär yïth lääk. Køøre Daniel Jwø maal aput pwøc,",
+                    "ID": "19"
+                },
+                {
+                    "text": "ni kööe, ni «Pwøc en ri nyeŋ Jwøk na bäre bäre, kiper leec wïc ki teek beege moe.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Bee eni ni wø wel nïne ki ruun. Bee eni ni wø dwøk nyeye piny, ni wø këël tiet nyeye piny. Bee eni ni wø cïp leec wïc jï jøøa wïthge leer, ni wø cïp kwänynyö jï jø wø ŋäc tiet luup. ",
+                    "ID": "21"
+                },
+                {
+                    "text": "Bee eni ni wø nyooth tiet gïï mo ena piny mo okanø; bee eni ni wø ŋäc gïï mo ena yi muudhö, ni tar bëëdö ka eni.",
+                    "ID": "22"
+                },
+                {
+                    "text": "Wui, ï na Jwø kwäya, a duua met ec jïrï ki pwøc, kiper aana mooyï ki leec wïc ki teek, ni ennø, aana tïïyï ki man ŋääa tier gïna pëënywa ïïni ki gø, kiper waana tïïyï ki man ŋäcwa tier lääk mar nyeya.» ",
+                    "ID": "23"
+                },
+                {
+                    "title": "Kanya Ö Danielli Na Caan Lääk Ki Tier Lääk",
+                    "text": "Kanyøgø Daniel aput ci baŋ Aryök, ŋata kwany nyeya ki man 'näk jø Babiløn moa nyeŋge reegø; ena cøø ni caan gïn en jïgø, ni «Kär jø Babiløn moa nyeŋge reegø 'nägï! Lwør aani ni kïthï aani nyïm nyeya, køøre aani tier lääk mare caana caanø.»",
+                    "ID": "24"
+                },
+                {
+                    "text": "Køøre Aryök Daniel aput kïth nyïm nyeya ni caan gïn en jïgø, ni «Aana jïtö ki dhaanhø dï jøøa no omaaø ki tøŋ røk jø Juuda mo løny jïre ki man caan tier lääk marï jïrï, ï na nyeya en!»",
+                    "ID": "25"
+                },
+                {
+                    "text": "Kanyøgø aput nyeya jøl ni pëëny Daniel, eni na näk nyeŋŋe Belthacacör, ni kööe, ni «?Løny jïrï ki man caanï lääk mana jooda ki tier gïna cääne kipere?»",
+                    "ID": "26"
+                },
+                {
+                    "text": "Ni løgi ya Danielli jï nyeya ni kööe, ni «Gïnögø ni tiere okanø enø, gïna pëënynyï, ï na nyeya, ba løny jï jøøa wïthge leer, ki jøøa nyeŋge reegø, ka ajuuk, ki jø adïëda ki man caange tier gø jïrï, ï na nyeya en.",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba da Jwøk mo ena maal ni wø nyooth tiet gïï mo okanø. Eni gïno tägi yi nyïm anyoodhe jïrï, ï na nyeya ma Nabukedenecör en. Lääk marï ki gïïa nyooth jïrï ki yi wïïï kanya bëëdï niï ena kar niine beege ii:",
+                    "ID": "28"
+                },
+                {
+                    "text": "«Wui ï na nyeya, kanya bëëdï niï ena kar niine, wïïï ree aløø baŋ gïïo tägi yi nyïm, ni ö eni ni wø nyooth gïï mo tietge okanø ni nyuth ïïni gïno tägi yi nyïm.",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba aani, gïnögø ni tiere okanø enø, anyooth jïra, ni paa kiper ni da leec wïc jïra mo dwøŋŋa eni mo kaala mar jiy bëët moi ni kwøw ii, 'ba beeye kiper nee tier gïna cääne kipere ŋäyï, ï na nyeya, na acaare moa en wïïï tietge ŋäyï.",
+                    "ID": "30"
+                },
+                {
+                    "text": "«Wui ï na nyeya en, ïïna räŋŋö ni neenï gïn mo dwøŋ mo otïïö na kït dhaanhø, ni beeye gïn mo päl, mo mïërö mare thääŋa ec, ni beeye gïn mo cuŋŋö nyïmï, ni kany wø neeni, lwär di kälö.",
+                    "ID": "31"
+                },
+                {
+                    "text": "Gïnögø no otïïö na kït dhaanhø enø, wïïe beeye warkey mana tøŋ, ni kööre ki bääte beeye gwelbïrö, ni yie ki ämme beeye jwïël,",
+                    "ID": "32"
+                },
+                {
+                    "text": "no otweege beeye nywïënyö, ni cääthe moe løøk mør otïïö ki nywïënyö, ni løøk mør otïïö ko odhöönh mo obulö.",
+                    "ID": "33"
+                },
+                {
+                    "text": "'Ba kanya bëëdï niï rääŋö, da thääŋ kïdi ma amuk mo kär gudö ki cenø, ni päth bäät cääthe mo gïnögø no otïïö na kït dhaanhø enø kwöra näk otïïö ki nywïënyö ko odhöönh, ni pet geni.",
+                    "ID": "34"
+                },
+                {
+                    "text": "Ni ö nywïënyö, ko odhöönh, ki jwïël, ki gwel-bïrö, ki warkey ni putge petø na thäŋi yie aciel, ni tïmge kaamar lethø mo ena yi laara ri jam arïïa, ni køøli ya jame, ni bäŋgø mo odööŋ rege. 'Ba thääŋ kïdi mana päth bäät gïnögø no otïïö na kït dhaanhø enø, aput tïmö na kïdi mo dwøŋ ni pääŋ piny bäre.",
+                    "ID": "35"
+                },
+                {
+                    "text": "«Manøgø beeye lääk; ennø, tier gïna cääne kipere caanwa caanø jïrï, ï na nyeya.",
+                    "ID": "36"
+                },
+                {
+                    "text": "Wui ï na nyeya en, beeye ïïni na nyeny nyeye. Jwø maal käädö mar nyec, ki teek, ki thwønh, ka ajiem acïbe jïrï,",
+                    "ID": "37"
+                },
+                {
+                    "text": "ni cïp jiy cerï yïth kwöro bëëtge yïthge, këël ki lääc paap ki wec maal, ni nø tïïc ïïni nee bëëtge ni ge ena cerï bëët. Wïc mana näk warkey beeye ïïni.",
+                    "ID": "38"
+                },
+                {
+                    "text": "«'Ba køørï da akwöm nyec mo ööa maal mo thiinhnha eni ki marï. Køør manøgø beeye dää akwöm nyec mo mar jwïël, mano käär piny bäre.",
+                    "ID": "39"
+                },
+                {
+                    "text": "Ka aŋuudi tïmö ni da ŋweer akwöm  nyec mo teek kaamar nywïënyö, kiper nywïënyö jammi bëët wø di petø ni ŋiith geni. Kaawat man wø ö nywïënyö wø pet jammi na thäŋi, akwöm nyec manøgø akwöp nyec moøgø bëët pete petø na thäŋi ni ŋiith ge.",
+                    "ID": "40"
+                },
+                {
+                    "text": "Kaawat mana raŋï gïnögø ni cääthe moe ki lweete løøk mør otïïö ko odhöönh mo obulö ni løøk mør otïïö ki nywïënyö, manøgø tïmö na akwöm nyec mo dëëre di pääŋŋö; 'ba poot da kur teek mo caala nywïënyö yie, kaawat mana jootï gø ni nywïënyö okuurö ko odhöönh.",
+                    "ID": "41"
+                },
+                {
+                    "text": "Kaawat mana bëëde ni lweet cääthe mo gïnögø løøk mør beeye nywïënyö ni løøk mør beeye odhöönh, akwöm nyec manøgø løøk mør tïmö ni teek, ni løøk mør jääk.",
+                    "ID": "42"
+                },
+                {
+                    "text": "Kaawat mana jootï nywïënyö no okuurö ko odhöönh, jiy obëëdö ni rege ege jääbö ki ri nywöm; 'ba bëëtö marge ba nyääyi, kaawat mana bëët nywïënyö ni kär nyääyö ko odhöönh.",
+                    "ID": "43"
+                },
+                {
+                    "text": "«'Ba noo tïme na yïth nïr nyeye moeke, Jwø maal da akwöm nyec mo këëlle piny mo ba ränynyi na bäre bäre; na akwöm nyec manøgø ba wëëk jiy møøk. Eni akwöm mo nyec moeke bëët di nyadhø ni dïïr wïthge; 'ba eni ki dëëre keere, bëëdö na bäre bäre.",
+                    "ID": "44"
+                },
+                {
+                    "text": "Man beeye tier gïna jootï kiper thääŋ kïdi mana muk ri kïdi mana näk kär gudö ki cenø, na pet nywïënyö, ki jwïël, ko odhöönh, ki gwel-bïrö, ki warkey. Jwøa dwøŋ gïïo tägi yi nyïm anyoodhe jïrï, ï na nyeya. 'Ba lääk beeye adïëri, ni tier gïna cääne kipere di ŋäädhö na kare.» ",
+                    "ID": "45"
+                },
+                {
+                    "title": "Kanya Røøny Daniel Ki Nyïïawääte",
+                    "text": "Kanyøgø nyeya ma Nabukedenecör cøŋŋe aput këël piny ni kuul wïïe piny nyïm Daniel ni wøøra gø. Ni cïpe ki dwøl nee cïpö ki muuy ki gïn wø jïye ŋwääi ni met jï Daniel.",
+                    "ID": "46"
+                },
+                {
+                    "text": "Ni kööe jï Daniel, ni «Ka adïëri møn, Jwøï beeye wïth juu, ni beeye kwääc nyeye ni wø nyooth gïï mo tietge okanø, kiper mana lønye jïrï ki mana caanï tier gïn no okanø en.»",
+                    "ID": "47"
+                },
+                {
+                    "text": "Køøre nyeya kar Daniel aput tïïc ni dwøŋ, ni mooc gø ki muuce mo thööth, ni tïïc gø nee ŋööm Babiløn bäre kääre, ni ena kwäärö thuwø mar jø Babiløn bëët moa nyeŋge reegø.",
+                    "ID": "48"
+                },
+                {
+                    "text": "Ni ö Danielli ni kwac nyeya, ni ö nyeya ni røøny Cidarak, ki Micak, ka Abedenagø na jø käär ŋööm Babiløn; 'ba eni na Daniel eni bëëdö cwöt.",
+                    "ID": "49"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.3",
+            "name": "Daniel 3",
+            "text": [
+                {
+                    "title": "Luum Kït Gïr Lam Mana Cwöth Piny ",
+                    "text": "Nyeya ma Nabukedenecör atïïö ki gïn ma kït gïrpiny mar warkey mo bäye beeye gööye ma pïërabïciel, ni bär mar deŋŋe beeye gööye abïciel; ni cwöth gø piny yi pwöl Dura yi ŋööm jø Babiløn.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Køøre eni na nyeya ma Nabukedenecör, ena jäägö ki dwøl ki man cooŋ kwääri, ki jø jääk, ki jø kööre, ki jø wø cïpi ka acaare, ki jø wø gwøk jap kwär, ki jø wø en løøe ceŋge, ki jø wø ŋøl luup, ki jø paac bëët moa näk ocuumö, nee öge ki man cïpge kït gïrpiny manøgø kur keere, gïna näk ee cwöth piny.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgø kwääri, ki jø jääk, ki jø kööre, ki jø wø cïpi ka acaare, ki jø wø gwøk jap kwär, ki jø wø en løøe ceŋge, ki jø wø ŋøl luup, ki jø paac bëët moa näk ocuumö, rege aputge cooŋ ki man cïpge kït gïrpiny manøgø kur keere, gïna cwöth nyeya piny ma Nabukedenecör; ni cuŋge nyïm kït gïrpiny manøgø na cwöth nyeya piny ma Nabukedenecör.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre nyïïatwiel marge luubö aput gøø piny ni dwøre ena maal: ni «Wui, u na wïth jiy ma teeŋi, ki u na wïth juurre, ki u na wïth dhøgi, man beeye gïna kööm uuni ki gø nou tïïyu:",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kanyo wïnynyu dwør tuuŋ ennø ki dwør opelø, ki dwør thoom, ki dwør thoomothïënhö, ki dwør buul, ki dööt wïth jap meeŋ bëët, cøŋŋu wär putu këël piny nou wøøra kït gïnögø no otïïö  ki warkey enø na cwöth nyeya piny ma Nabukedenecör.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba ŋato ba këël cøŋŋe piny ni wøør gø, eni put ka leeŋ yi maac mo orubö ni wärri.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kanyøgø nø, kanya ö jiyi bëët na wïnyge dwør tuuŋ, ki dwør opelø, ki dwør thoom, ki dwør thoom-othïënhö, ki dwør buul, ki dööt wïth jap meeŋ bëët, wïth jiy bëët, ki wïth juurre, ki wïth dhøgi, cøŋge aputge këël piny ni ge wøøra kït gïnögø no otïïö ki warkey enø na cwöth nyeya piny ma Nabukedenecör.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kar kaagø, da jø Kaldia ma ö nyïm ni ge kïtha bäät jø Juuth ki luubö.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni köge jï nyeya ma Nabukedenecör, ni «Wui nyeya, ïïno bëëdö na bäre bäre!",
+                    "ID": "9"
+                },
+                {
+                    "text": "Wui nyeya, ïïni, ïïno kän wøk ki ciik ni ŋato wïny dwør tuuŋ, ki dwør opelø, ki dwør thoom, ki dwør thoom-othïënhö, ki dwør buul, ki dööt wïth jap meeŋ bëët, eni cøŋŋe wär put këël piny ni wøøra kït gïna näk otïïö ki warkey.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba ŋato ba këël cøŋŋe piny ni wøør gø, eni put ka leeŋ yi maac mo orubö ni wärri.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba da jø Juuth mo iï røønyø na jø käär ŋööm Babiløn, ni beege Cidarak, ki Micak, ka Abedenagø. Wui, ï na nyeya, jøøi ii, luummï ba wïnyge. Geni juu moï ba tïnyge, ni kït gïna näk otïïö ki warkey na cwödhï piny ba wøørge.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgø Nabukedenecör dwøl aput cïp, ni eno wëër ni cwïnye okëënynyö, ki man øøm Cidarak, ki Micak, ka Abedenagø; køøre jøøgø akïth nyïme, eni na nyeya.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ni kööe jïge, ni «?Ï na Cidarak, ki ï na Micak, ki ï na Abedenagø, beeye adïëri døøc nou bëëdö ni juu 'moa ba tïnynyu, ni kït gïna noo tïïö ki warkey na näk yaa cwöth piny ba wøørru?",
+                    "ID": "14"
+                },
+                {
+                    "text": "Ennø, ni näk mo rou you jiiŋŋø, kanyo wïnynyu dwør tuuŋ, ki dwør opelø, ki dwør thoom, ki dwør thoom-othïënhö, ki dwør buul, ki dööt wïth jap meeŋ bëët, ni putu cøŋŋu këël piny ni wøørru kït gïna näk yaa tïïö ki warkey, wøp; 'ba ni näk mo ba wøørru, kawaane waane en u put ka leeŋ yi maac mo orubö ni wärri. ?'Ba a jwøa ŋø nø noo piem uuni cera?»",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba adwøk Cidarak, ki Micak, ka Abedenagø ni köge jï nyeya, ni «Wui, Nabukedenecör, wa ba many gø nee dëëtwa thääkwa nyïmï ki luummögø.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni näk mo wa leeŋa yi maaøgø no orubö ni wärri enø, Jwøk marwa ni tïnywa en, løny jïre ki man piem waani yie, ni wa pieme cerï, ï na nyeya.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba këël ni näk mo wa ba pieme, beer ki man ŋäyï gø, ï na nyeya, ki man näk mo juu moï ba tïnywa, ni ba løny ki man wøørwa kït gïna näk otïïö ki warkey na näk iï cwöth piny.» ",
+                    "ID": "18"
+                },
+                {
+                    "title": "Luum Jøøa Na Adäk Na Leeŋ Yi Maac",
+                    "text": "Kanyøgø Nabukedenecör wëër aput kadhø cwïnye, ni ö täärnyïme ni put ree wiil ni cøl ki Cidarak, ki Micak, ka Abedenagø. Ni cïpe ki dwøl nee maac rup døc ni wärri, nee lïëth mare pöödhe ki kwöre abïriiø ni kaala lïëth man wø bëëde.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Køøre eni, jiy møøk moa teek mo ena røk jø leny moe aköömme ki man twöcge Cidarak ki Micak ka Abedenagø kiper nee ge leeŋ yi maa no orubö ni wärri enø.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Kanyøgø jøøgø gena put twöc na abïïe moge ena dëëtge, këël ka abïïe moa näk ege meen wïthge, ni putge leeŋ yi maaøgø no orubö ni wärri enø.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba kiper mana näk dwør nyeya ee put joon døc, ni maaøgø bëëdö no oäpö ni lïëth døc, jøøa kïth Cidarak ki Micak ka Abedenagø yi maac, gena put leep maaci waaŋ.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba Cidarak ki Micak ka Abedenagø, ge na adäk yøø, gena put päth yi maaøgø ni wärri enø, ni ge poot no otwöö karge.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Kar kaagø nyeya ma Nabukedenecör yie aput thäŋŋö, ni päny maal ni yie orëëm, ni pëëny jø wø cïpi jïre ka acaare, na «?Aŋø, paa jiy adäk na bëëde na leeŋø yi maac no otwöö?»  Ni løkge gø jï nyeya ni köge, ni «Wui nyeya, beeye kare.»",
+                    "ID": "24"
+                },
+                {
+                    "text": "Ni dwøk gø ni kööe, ni «Neennu, jiy mo neeta ii gena aŋween mo ge kär twöö mo ge cäädhö dï maac mo bäŋ gïn mo leth mo otägö dëëtge; 'ba ŋweerge nëëni ni caala jwøk.»",
+                    "ID": "25"
+                },
+                {
+                    "text": "Kanyøgø Nabukedenecör anyiik buut dhi kanya näk maac orubö yie ni wärri, ni put dwøre tïŋ maal døc ni cwöte, ni «Cidarak ki Micak ka Abedenagø, u ni wø tïny Jwøa Dwøŋ ni en Maal, ööu wøk ni ööu kany!» Køøre Cidarak ki Micak ka Abedenagø, gena put ö wøk ki yi maac.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Ni ö kwääri ki jø jääk, ki jø kööre, ki jø wø cïpi ka acaare jï nyeya ni putge rege cooŋ kanya ciel lak jøøgø, ni jootge gø ni maac dëët jøøgø käre mooø ki ŋwellø, ni jïëc wïthge kär waaŋ, na abïïk dëëtge rege kärge miinynyø, ni dëëtge kär ŋwääö ki jïc maac.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Kanyøgø Nabukedenecör aput köö, ni «Pwøc en jï Jwø Cidarak, eni ki Micak ka Abedenagø, Jwøa jääŋ nyïïatwiel maal mare na piem jiye, jøøa ŋääth eni. Geni, dwør nyeya akwierge, ni per dëëtge kär leth jïge, ni kweerge ki man tïnyge jwøk mør wala ki man wøørge gø, 'ba beeye Jwøge keere.",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kiper manøgønø, aani, ciik man ŋøla beeye en: Noo dee jiy, ki wï jur, ki wïth dhøgi møøk mo cäänö ki luubö mo paa kare dëër Jwø Cidarak ki Micak ka Abedenagø, ge di tøyø na bulli, ni ö uudi moge ni tïï na wïthur. Kiper ki man bëëde cøøn en, bäŋ Jwøk mo jiy ee piemø ki øtjöö mo caala man nø.»",
+                    "ID": "29"
+                },
+                {
+                    "text": "Køøre nyeya kwär mar Cidarak ki Micak ka Abedenagø aput nyiik maal yi ŋööm jø Babiløn.",
+                    "ID": "30"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.4",
+            "name": "Daniel 4",
+            "text": [
+                {
+                    "title": "Kanya Ö Nabukedenecör Na Läge Ki Jaath ",
+                    "text": "Aani na nyeya ma Nabukedenecör, man beeye dwøra kiper wïth jiy, ki wïth juurre, ki wïth dhøgi, jø wø bëëdö bäät piny bäre: Bëët-mëër opälli jïïu.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Aani yia met ki man caana nyuuthe jïïu ki gïïa näk rëëma ec na tïïc Jwøki dëëra, Jwøa Dwøŋ ni en Maal.",
+                    "ID": "2"
+                },
+                {
+                    "text": "A teeŋ dööŋö mo nyïëdi na døøŋ nyuuthe moe ki gø! Naa teeŋ dööŋö mo nyïëdi mar gïïa tïïe na näk rëëma ec! Buc nyec mare beeye bura mo bëëdö na bäre bäre; ni teek mare këëta yïth beenhnhe bëët.",
+                    "ID": "3"
+                },
+                {
+                    "text": "A na Nabukedenecör en, kanya bëëda naa ena yo owinyø mara ni yia met jaak, ni aano dhøøŋ paan dwøŋ mara,",
+                    "ID": "4"
+                },
+                {
+                    "text": "aana lägö ki lääk, ni put aani tïïc naa lwäär. Kït gïïa jooda kanya bëëda naa ena bäät pëëm niine, ki gïïa nyooth ki yi wïïa, aana tïïcge naa lwäär.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kanyøgø aana jäägö ki dwøl nee jø Babiløn bëët moa nyeŋge reegø øømmi nee käl nyïma kiper nee tier gïna cään lääki kipere caange jïra.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Køøre ajuuk, ki jøøa nyeŋge reegø, ka ajuuk mo jø Kaldia, ki jø adïëda, gena öö, ni lama lääk jïge; 'ba kär løny jïge ki man caange tier lääk jïra.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba ka aŋuudi, Daniel, ni wø nyeŋŋe cwøl ni Belthacacör ki køør mana caa nyeŋŋe ri nyeŋ juu 'moa, eni na jwïëc juu mo ena kur keerge ena bääte, ena ö nyïma, ni caana lääk jïre ni kööa,",
+                    "ID": "8"
+                },
+                {
+                    "text": "ni «Wui Belthacacör, ï na kwääy ajuuk, aani ŋääa ni jwïëc juu mo ena kur keerge ena bäätï, ni bäŋ gïn mo tiere okanø mo dhäthö jïrï. 'Ba ennø, gïïa nyooth jïra ki yi lääk na jooda, ki tier gïna cääne kipere caanï jïra.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Gïïa nyooth jïra ki yi wïïa kanya bëëda naa ena bäät pëëm niine beege ii: Aani kanya räŋŋa, aana nëënnö ki jaath mo bäär døc yi ŋöömö.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Jaath manøgø apiith, ni døøŋ dëëre ni tïme ni teek, ni ö bärri mare ni pïïe maal; ni tïme ni nëënö teegi mo piny bäre.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Bøøge moe mïërö døc, ni nyïëdi moe thööth jaak, ni bëëdö na cam kiper gïïa nut bëët. Lääc paap ajïtö ki kar bëëtö tiere, ni ö wec maalli ni jïtge ki kar bëëtö bääte, ni tïme ni gïïa kwøw bëët cam marge jootge ri gø.",
+                    "ID": "12"
+                },
+                {
+                    "text": "«Aani, kanya bëëda naa raŋŋa gïïa nyooth jïra ki yi wïïa, naa ena bäät pëëm niine, aana nëënnö ki nyïïatwiel maal man wø kurö mo ööi ki maal.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ena rëëdö døc ni caan luupi ii: ni ‹Ŋødu jaadhøgø piny, ni ŋøøru bäädi moe; lweerru bøøge moe, ni kethu nyïïe. Beerra man aac lääc paapi tiere, ni ö wenynyi ni aacge bääte.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba gutö ki lweedi moe wär wiiu yïth ŋøøm, ni you meenø ki nywïënyö, ki jwïël, ni bëëde yi luuma nyään dï pwöla. Ni bëët dëëre ni thec ki thööy, ni eni nywääö ka lääy na aciel dï luum paap.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Beerra man ö acaara mare ni wiil ree ni paa acaac dhaanhø, ni tïme ni beeye acaac lääy noo en jïre, këël kanyo pööth cwiiri abïriiø bääte.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Luummögø beeye mana cem nyïïatwiet maalli, ge na jø koor, ni beeye mana ŋølge, ge na en kur keerge, kiper nee ŋäc jøøa kwøwi ki man näk mo Jwøa Dwøŋ ni en Maal jïre da teek bäät akwöm nyec mo jiy, ni løny ki man cïp gø jï ŋato manynye jaak, ni beeye ŋata kare bäŋgø dï jiy.›",
+                    "ID": "17"
+                },
+                {
+                    "text": "«Manøgø beeye lääk mana jooda, a na nyeya ma Nabukedenecör. 'Ba ennø, ï na Belthacacör en, caan tier lääk jïra; kiper ki man bëëde cøøn en, ki røk jøøa nyeŋge reegø ya akwöm nyec mara, bäŋ ŋat moo løny jïre ki man caan tier lääk manøgø jïra. 'Ba ïïni, løny jïrï, kiper jwïëc juu mo ena kur keerge ena bäätï.» ",
+                    "ID": "18"
+                },
+                {
+                    "title": "Kanya Ö Danielli Na Caan Tier Lääk",
+                    "text": "Kanyøgø Daniel, ni wø nyeŋŋe cwøl ni Belthacacör, amak apïte ki kany mo bäär mëëth, ni bëëde ni cwïnye pärö ki køør acaara mare. Ni luup nyeya ni kööe, ni «Belthacacör, lääk manøgø ki tier gïna cääne kipere, kär cwïnyï døøcge mo pärö.» Ni dwøgi ya Belthacacörri ni kööe, ni «Wui nyeya, doo beerra eni ki mana di lääki cäänö kiper jøøa män ki ïïni, ni tier gïna cään lääki kipere doo na poot cäänö kaper nyïïmän moï.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Jaath mana jootï na piith, ni døøŋ dëëre ni tïme ni teek, ni ö bäye ni pïïe maal ni nëënö dï piny bäre,",
+                    "ID": "20"
+                },
+                {
+                    "text": "na näk bøøge moe mïërö ni nyïïe thööth jaak, na bëëdö na cam kiper gïïa nut bëët, na jït lääc paapi ki kar bëëtö tiere, ni ö wec maalli ni jïtge ki kar bëëtö bääte,",
+                    "ID": "21"
+                },
+                {
+                    "text": "wui nyeya, jaath manøgø beeye ïïni. Kiper ïïna bëëdö ni karï dwøŋ, ni bëëdï niï teek, ni ö dööŋ karri marï ni døøŋŋe ni pïïe maal, ni ö pinynyi bäre ni en cerï.",
+                    "ID": "22"
+                },
+                {
+                    "text": "«Køør manøgø, ï na nyeya, ïïna nëënnö ki nyïïatwiel maal man wø kurö mo ööi ki maal ni kööe, ni ‹Ŋødu jaadhøgø piny ni raanynyu gø; 'ba gutö ki lweedi moe wär wiiu yïth ŋøøm  ni you meenø ki nywïënyö ki jwïël yi luum mo nyään yi pwöla, ni bëët dëëre ni thec ki thööy, ni eni nywääö ka lääy na aciel dï pwöla, këël kanyo pööth cwiiri abïriiø bääte.›",
+                    "ID": "23"
+                },
+                {
+                    "text": "«Wui ï na nyeya, man beeye tier lääk, ni beeye mana ŋøl Jwøa dwøŋŋi ni en maal ni beeye gïno pänh bäätï, ï na kwäärö mara ma nyeya,",
+                    "ID": "24"
+                },
+                {
+                    "text": "ki man näk miï riema wøk ki dï jiy, ni tïm kar bëëtö marï ni ena dï lääc paap, ni tïmï niï cama luum kaamar dhieŋ, ni bëët dëërï ni thec ki thööy ki cwiiri abïriiø, këël kanyo ŋäyï gø ki man näk mo Jwøa Dwøŋ ni en Maal jïre da teek bäät akwöm nyec mo jiy, ni løny ki man cïp gø jï ŋato manynye jaak.",
+                    "ID": "25"
+                },
+                {
+                    "text": "Dwøl mana caan ni gutö mar jaath ki lweedi moe wär wec, nyootha gø na akwöm nyec marï di duuö jïrï kanyo ŋäyï gø ni teek mar käär jiy ena maal.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Kiper manøgønø, ï na nyeya en, beerra man tïm gïno caana en ni yiï met ki gø. Ïïni wec gïïa bayï, ni bëëdï niï tïïya gïn mo beer, ni weyï raay moï, ni bëëdï niï nyootha køny jï jøøa no ocaarø. Kanymør ni kwärö marï løny ki man ruue.» ",
+                    "ID": "27"
+                },
+                {
+                    "title": "Kanya Ö Lääki Na Thur Kare",
+                    "text": "Gïï bëët ii, beege gïïa tägö dëër nyeya ma Nabukedenecör.",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kanya tïme na køør dwäde apaar kurriiø, ni eni na nyeya eni cäädhö maal bäät øt nyec paan dwøŋ mar Babiløn,",
+                    "ID": "29"
+                },
+                {
+                    "text": "ena köö, na «?Aŋø, man paa beeye Babiløn na dwøŋ na geera, ni beeye kar bëët nyec na geera ki teek mara na dwøŋ, na gïr ajiem mar dööŋ kar mara, a na nyeya?»",
+                    "ID": "30"
+                },
+                {
+                    "text": "'Ba kanya poot nyeya ni luummögø poot ena dhee, dwøl aput öö ki maal ni kööe, ni «Ï na nyeya ma Nabukedenecör, luummi en caan kaperï: Teek nyec marï akäl wøk baŋï,",
+                    "ID": "31"
+                },
+                {
+                    "text": "ni riem ïïni wøk ki dï jiy, ni tïm kar bëëtö marï ni ena dï lääc paap. Ïïni, ïïno cämö ki luum kaamar dhieŋ ki cwiiri abïriiø, këël kanyo ŋäyï gø ki man näk mo Jwøa Dwøŋ ni en Maal jïre da teek bäät akwöp nyec mo jiy, ni løny ki man cïp gø jï ŋato manynye jaak.»",
+                    "ID": "32"
+                },
+                {
+                    "text": "Ki nyi kany mo thiinh, luummögø na cäänö kiper Nabukedenecör enø aput thur kare; ni ö eni ni riemi wøk ki dï jiy, ni put tägö ki man cam luum kaamar dhieŋ, ni bëët dëëre ni thec ki thööy, këël mana døøŋ jïërri moe ni tïmge kaamar okwöre mo coor, ni tïm kwök lweete kaamar kwök lweet wenyø. ",
+                    "ID": "33"
+                },
+                {
+                    "title": "Kanya Ö Nabukedenecör Na Pwøc Jwøk",
+                    "text": "'Ba kanya thum cwiiri moøgø na abïriiø yøø, a na Nabukedenecör, nyeŋŋa ataa maal, ni ö acaara mara ni put duu baŋa, ni ö Jwøa dwøŋŋi ni en maal ni puta gø pwøc, ni wøøra eni, ni jiema eni, eni ni wø bëëdö na bäre bäre. Teek mare bëëdö na bäre bäre, ni buc nyec mare këëta yïth beenhnhe bëët,",
+                    "ID": "34"
+                },
+                {
+                    "text": "ni jø wø bëëdö wï ŋöömö geno kwaanø kaamar gïï mo bäŋgø. 'Ba eni man wø tïïe yïthakic lwaae mo maal ki yïthakic jø wø bëëdö wï ŋöömö wø tïïe ka køør man wø manynye, ni bäŋ ŋat mo løny jïre ki man gëëŋ cer gø, wala ki man kööe jï gø, na «?Agïnaŋø na tïïyï?»",
+                    "ID": "35"
+                },
+                {
+                    "text": "Teeŋ kar kanya duu acaara mara baŋa, nyec mara, ki wödö mara aput duu baŋa, ki nyeŋ ajiem mar akwöm nyec mara. Ni ö jø wø cïpi ka acaare jïra, ki jø kööre 'moa, ni täkge ki man manyge aani, ni ö nyeci mara ni døø kare, ni ö teek mørri mo dwøŋ ni meedi jïra.",
+                    "ID": "36"
+                },
+                {
+                    "text": "Kawaane a na  Nabukedenecör, a pwøya nyeya mar maal, ni tïŋa nyeŋŋe maal, ni jiema eni, kiper tïïe moe bëët beege adïëri, ni jïëth tïïe moe tiir, ni eni løny jïre ki man dwøk jiy piny mo wø bëëdö ni cwïnyge da atöör.",
+                    "ID": "37"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.5",
+            "name": "Daniel 5",
+            "text": [
+                {
+                    "title": "Kanya Ö Belthacör Na Tïïe Ka Ajwöm Cam ",
+                    "text": "Nyeya ma Belthacör atïïö ka ajwömcam mo dwøŋ kiper jø kööre moe ma kuma, ni bëëde ni mädhö ki køøŋ nyïïomøki nyïm jøøgø na kuma yøø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba Belthacör kanya bel køøŋ nyïïomøki, ena put cïpö ki dwøl nee athääk warkie ka athääk gwel-bïrö øømmi moa käl wänni wøk ma Nabukedenecör ki yi Øt Jwøk mana en Jerucalem, kiper nee eni na nyeya, ki jø kööre moe, ki määre, ko omëërri moe nee mäthge ki ge.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgø jiy athääk warkie aøømge moa käl wøk ki yi Øt Lam ni beeye Øt Jwøk mana en Jerucalem, ni ö nyeya, ki jø kööre moe, ki määre, ko omëërri moe ni mäthge ki ge.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanya mäthge, marge atïmö ni ge pwøya juu moa näk tïïc ka warkey, ki gwel-bïrö, ki jwïël, ki nywïënyö, ki jenni, ki kïte. ",
+                    "ID": "4"
+                },
+                {
+                    "title": "Kanya Ö Cenø Na Gööde Dëër Øtø",
+                    "text": "Ki nyi kany mo thiinh, lweet cer dhaanhø aput nëënnö ni göödö dëër øtø mar øt nyec mana näk opuuö, na dïët ki lamba, ni ö nyeya ni joot cenø ni göödö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Køøre nyeya täärnyïme aput niduk, ni put cwïnye tïmö ni pärö ka acaara mare, ni ö nyeŋ ocwiiye ni tïmge ni nhønhnhi, ni ö wïth cøŋŋe ni pöötge rege.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni ö eni na nyeya ni cwöte ki dwøl mo päl nee jøøa nyeŋge reegø, ka ajuuk mo jø Kaldia, ki jø adïëda, käli. Ni cään jø Babiløn moøgø na wïthge leer, ni kööe, ni «Nee da ŋat mo løny ki man kwaan gïn jïra no ogöörö en, ni caan tier gïna cääne kipere, eni dëëre di runynyö ka abïï ma abïcøle, ni kïth cwaage ki tiin warkey, ni tïme na dää kwääri moa näk teek ocïp ceŋge ni wø käär akwöm nyec man.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgø jic nyeya bëët moa wïthge leer gena öö, 'ba kär løny jïge ki man kwaange gïna näk ogöörö jï nyeya, wala ki man caange tier gïna cääne kipere.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba nyeya ma Belthacör cwïnye abëëdö ni pärö døc, ni ö täärnyïme ni put niduk døc, ni ö jø kööre moe ni put yïthge nithay.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba gwanynyø mii nyeya adøny kar ajwöma mar cam yi øtø kiper luup moa caan nyeya ki jø kööre moe. Ni ö gwanynyø ni cäänne ni kööe, ni «Wui nyeya, ïïno bëëdö na bäre bäre! Kär cwïnyï wëëk pärö ki køør acaara marï, ni ba wëëgï täärnyïmï niduk.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Da dhaanhø yi po nyec marï mo jwïëc juu mo ena kur keerge ena bääte. Ki yïth nïne moa beet wäru, ŋatøgø ajoot na ŋat mo kwel wïc, ki leec ŋeth, ki leec wïc mo caala leec wïc mar juu ena bääte, ni ö nyeya ma Nabukedenecör ni beeye wäru, wäru ma nyeya, ni røøny gø na kwäärö bäät ajuuk, ki jøøa nyeŋge reegø, ka ajuuk mo jø Kaldia, ki jø adïëda.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Ŋatøgø na Daniel enø, na nyeŋŋe cak nyeya ni Belthacacör, ajoot na ŋat mo jïre da jwïëy ma wøp, mo tiet jammi ŋääe, mo wïïe kwel, mo tiet lääk di caanø, mo tiet leere di lamø, mo tiet luup mo teek päde pädö. Ennø, beerra man cwøl Daniel nee tier gïna näk ogöörö caane.» ",
+                    "ID": "12"
+                },
+                {
+                    "title": "Kanya Ö Danielli Na Caan Tier Gïna Göör",
+                    "text": "Kanyøgø Daniel aput kïth nyïm nyeya, ni ö nyeya ni cääne ki gø ni kööe, ni «?Beeye ï Daniel na en røk jøøa mak ki tøŋ Juuda, na käl wära ma nyeya ki yi Juuda?",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ennø, gïrï awïnynya ki man näk mo jwïëc juu ena bäätï, ni ö kwel wïci, ki leec ŋeth, ki leec wïc mo opöödhö ni joodi baŋï.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kawaane waane en, jøøa wïthge leer,  ni beege jøøa nyeŋge reegø, gena käli ni öge nyïma kiper nee gïn no ogöörö en kwaange jïra ni caange tier gïna cääne kipere; 'ba kär løny jïge ki man caange luum gïna cääne kipere.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba aani ki dëëra, gïrï awïnynya ki man näk mo løny jïrï ki man caanï tier gïrpiny, ki man pätï tiet luup mo teek. 'Ba ennø, ni näk mo løny jïrï ki man kwaanï gïn no ogöörö en jïra, ni caanï tier gïna cääne kipere, ïïni dëërï di runynyö ka abïï ma abïcøle, ni kïth cwaagï ki tiin warkey, ni tïmï ni ïïna dää kwääri moa näk teek ocïp ceŋge ni wø käär akwöm nyec man.»",
+                    "ID": "16"
+                },
+                {
+                    "text": "Kanyøgø aløk Danielli nyïm nyeya ni kööe, ni «Muuce moï kanï kiper dëërï, wala jap met ec moï moøgø tïme ni cïpï jï ŋat mør; 'ba aani gïnögø no ogöörö enø, kwaana kwaanø jïrï, ï na nyeya, ni caana tier gïna cääne kipere.",
+                    "ID": "17"
+                },
+                {
+                    "text": "«Wui nyeya, Jwøa Dwøŋ ni en Maal wäru ma Nabukedenecör amooe ki teek nyec, ki dööŋ kar, ka ajiem, ki wödö.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba kiper dööŋ kar mana cïbe jï gø, wïth jiy bëët, ki wïth juurre bëët, ki teeŋ wïth dhøgi bëët, gena bëëdö ni ge lwäär ni dëëtge kwanynyi nyïme. Ni ŋata manynye nee nääe, nääe nääö, ni ŋata manynye nee bëëde ni kwøw, wiie wiiø, ni ŋata manynye nee cuume, cuume cuumö, ni ŋata manynye nee dwøk piny, dwøge piny.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba kanya tïm cwïnye ni ena maal ka atöör, ni jwïëy moe bëënna koorrø, ni töödö bäät jiy, ena käl wøk ki bäät wäl nyec mare, ni ö ajiemmi mare ni lwøri baŋe.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Eni thuwø, ena rïëm wøk ki dï jiy, ni ö acaara mare ni tïme ni caala mar lääc paap, ni ö kar bëëtö mare ni tïme ni ena dï arëëni mo paap. Ena bëëdö ni cama luum kaamar dhieŋ, ni bëët dëëre ni thec ki thööy, këël kanya ŋäc gø ki man näk mo Jwøa Dwøŋ ni en Maal jïre da teek bäät akwöp nyec mo jiy, ni løny jïre ki man cïp gø jï ŋato manynye jaak.",
+                    "ID": "21"
+                },
+                {
+                    "text": "«'Ba ï na wääde ma Belthacör, dëërï kärï dwøk piny, këël na bëëdï ni gïï bëët ii ŋäyï.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba ïïna tïmö niï tïŋa riï maal niï läädö ka Kwääc maal, ni ö jiyi ni øømge athääe mo Øt Lam mare, ni kälge ge nyïmï, ni ö ïïni ki jø kööre moï, ki määrï, kö omëërri moï ni bëëdu ni køøŋ nyïïomøki maathu ka geni; ni tïme nou pwøya juu moa näk tïïc ka gwel-bïrö, ki warkey, ki jwïël, ki nywïënyö, ki jenni, ki kïte, ni beege gïï mo ba rääŋö, mo ba wïnyö, ni bäŋ gïn ŋäcge. 'Ba Jwøk, na näk jwïëc kwøw moï ena cere, ki jïëth tïïe moï, kärï jiemø.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba bee eni na jääŋ cenø mana öö na göör gïn en.",
+                    "ID": "24"
+                },
+                {
+                    "text": "«Ennø, man beeye gïna göör piny: MENE, MENE, TEKEL, ki PARCIN.",
+                    "ID": "25"
+                },
+                {
+                    "text": "«Ni man beeye tier gïnögø: «MENE beeye kwäänö, ni tiere beeye ni Jwøk nïr akwöm nyec marï akwaane ni raany gø.",
+                    "ID": "26"
+                },
+                {
+                    "text": "«TEKEL beeye røm, ni tiere beeye ni ïïna røm ki gïr røm ni joot ïïni niï jööt.",
+                    "ID": "27"
+                },
+                {
+                    "text": "«PARCIN beeye pääŋŋö, ni tiere beeye na akwöm nyec marï di pääŋŋö ni mëëge jø Mëdön ki jø Parca.»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kanyøgø Belthacör aput cïpö ki dwøl, ni ö jiyi ni runyge dëër Daniel ka abïï ma abïcøle, ni kïthge cwaak gø ki tiin warkey, ni putge gööc piny ki luubö kipere ni ki mano täge ennø, ena jïtö ki teek ni ena dää kwääri mo wø käär akwöm nyec.",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba kanya tïme na dïwäänögø kiree, Belthacör aput 'näk, eni na nyeny jø Babiløn,",
+                    "ID": "30"
+                },
+                {
+                    "text": "ni ö Dariöci nyï Mëdön ni lwør nyec ni cwiiri moe pïërabïciel ka ariiø.",
+                    "ID": "31"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.6",
+            "name": "Daniel 6",
+            "text": [
+                {
+                    "title": "Kanya Leeŋ Daniel Yi Buur Ŋuuwe ",
+                    "text": "Kanyøgø anëënö ni beer jï Dariöc ki man kwänye ki jiy ma dïpa ki pïërariiø na dïbwöthe mo akwöm nyec mare kiper nee akwöm nyec mare  bëëde ni ena ceŋge;",
+                    "ID": "1"
+                },
+                {
+                    "text": "ni wïth jøøgø da kwääri adäk, na aciel rege beeye Daniel, ni luum dïbwöthe moøgø ena ceŋge, nee jap nyeya ba rwäänyge.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba Daniel manøgø atägö ki man nëëne ni ena maal ki kwääri moøgø ki dïbwöthe, kiper dëëre da jwïëy mo ena kur keere, ni ö nyeya ni cïp luum gø piny ki man røøny gø bäät akwöm nyec mare bäre.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kwääri moøgø ki dïbwöthe gena tägö ki man määnyge ki luubö mo kïthge bäät Daniel kiper bëëtö mare yi kwär mar akwöm nyec; 'ba geni bäŋ luubö mo ege joodø mo kïthge bäät gø, wala gïn mo obøth, kiper eni mare adïëri ni bäŋ tïïc mo ee taaø wala gïn mo obøth mo ojoodø baŋe.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre jøøgø gena köö, ni «Ø ba doo jïtö ki luubö mo kïthø bäät Daniel manøgø ni näk mo paa gïn mo ena ri ciik Jwøk mare.»",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kanyøgø kwääri moøgø ki dïbwöthe, gena ö baŋ nyeya ni rege ege kuurö na dhøk ni köge, ni «Wui nyeya ma Dariöc, ïïno bëëdö na bäre bäre!",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kwääri bëët mo akwöm nyec man, ki jø kööre, ki dïbwöthe, ki jø ŋøl luup, ki jøøa en løøe ceŋge, dhøkge akuurge na aciel kiper nee ï na nyeya niï kännï wøk ki ciik mo di cemø mo kïtha bäät tïïc, ni manøgø beeye ni ŋato lämö ki jwøk mør yïth nïne moø ni pïëradäk ni en nyïm yøø, wala lama dhaanhø mør ni paa ïïni, ï na nyeya en, eni wär put leeŋ yi buur ŋuuwe.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ennø, ï na nyeya en, kän wøk ki ciik mo gööra piny, ni kïthï ŋïï marï bääte kiper nee ba wiil, ni tïïyï ka køør ciik mo jø Mëdön ki mo jø Parca na ciik mo ba pät.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kanyøgø nyeya ma Dariöc ŋïï mare akïth bäät ciik manøgø mana göör piny.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba kanya ö Danielli na nø ŋäc gø ni wëël ciik ŋïï onø kïth bääte, ena put bëëtö ni dønynya yi øde mana en maal mana näk dhøk awëërnyeŋŋi moe ojabø jï løøa dïët ki Jerucalem, ni ki dïcäŋ aciel eni lämö ki kwöre adäk ni cøŋŋe ee këël piny, ni eni dwøga met ec jï Jwøk mare, kaawat man wø tïïe dïkwøŋ.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre jøøgø gena öö ni rege ege kuurö na dhøk, ni jootge Daniel ni lämö ni pëënynya Jwøe kiper køny.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Køøre jøøgø gena ci nyïm nyeya ni cäänge ki gø kiper ciik moa käl nyeya wøk, ni köge, na «?Aŋø, ï kär kän wøk ki ciik na bëëde ni ŋato lämö ki jwøk mør yïth nïne moø na pïëradäk yøø, wala lama dhaanhø mør ni paa ïïni, ï na nyeya en, eni wär put leeŋ yi buur ŋuuwe?» Ni løgi ya nyeya ni kööe, ni «Yaa, manøgø beeye ciik mo ocemø ni teek, no otïïö ki køør ciik mo jø Mëdön ki mo jø Parca na ciik mo ba pät.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni putge gø dwøgø nyïm nyeya ni köge, ni «Wui nyeya, Daniel na en røk jøøa mak ki tøŋ Juuda, ïïna taae, ni taak ciik moa göörï piny, ni eni poot bëëdö ni lämö ki dïcäŋ aciel kwöre adäk.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kanya ö nyeya na wïny luummögø ennø, kööre aput pädhö, ni løø wïïe baŋ acaara man piem Daniel ki gø, ni maaŋ dëëre nee jïte ki jöö man køny gø ki gø këël mana päth cäŋŋi.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre jøøgø aci baŋ nyeya ni rege ege kuurö na dhøk ni köge, ni «Wui nyeya, beerra man ŋäyï gø ki man näk mo ï na nyeya en teeŋ ciik mana kälï wøk ki køør ciik mo jø Mëdön ki ciik mo jø Parca ba løny ki man wiili.»",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kanyøgø nyeya aput cïpö ki dwøl, ni ö Danielli ni øømmi ni puti leeŋ yi buur ŋuuwe. Ni kö nyeya jï Daniel, ni «Jwøk marï ni wø tïnynyï cooth, eni ki dëëre ïïno pieme.»",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni ö kïdi ni puti øømmø ni dëët dhi buur ki gø, ni puti ya nyeya mwön ki ŋïï mare ki ŋïï mar jø kööre moe, nee bäŋe gïn mo wiil ree kiper Daniel.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Køøre nyeya adøø paan dwøŋ mare, ni thöör wäär bäre ni bäŋ gïn mo ee camø, ni bäŋ gïn mïn yie ki gø mo okäl baŋe, ni käre løny jïre ki man bute.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba kanya ruu øwi ennø, nyeya apäny maal ni laar ci bäät buur mar ŋuuwe. ",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba kanya tïm kare ni cään ki buur mana en Danielli yie, ena cwötö døc ki dwør pänh cwïny, ni kööe jï Daniel, ni «?Daniel, ï na dhaanh Jwøa kwøw, Jwøk marï ni wø tïnynyï cooth aløny jïre ki man piem ïïni dhøk ŋuuwe?»",
+                    "ID": "20"
+                },
+                {
+                    "text": "Ni dwøgi ya Danielli jï nyeya, ni «Wui nyeya, ïïno bëëdö na bäre bäre!",
+                    "ID": "21"
+                },
+                {
+                    "text": "Jwøk mara nyïïatwiel maal mare ajääŋŋe ni mec dhøk ŋuuwe, ni kärge dëëra mooø ki ŋwellø, kiper aana joot ni bäŋ gïn mo yaa baaø nyïme, ni bäŋ gïn mo raac mo yaa tïïö dëërï thuwø, ï na nyeya.»",
+                    "ID": "22"
+                },
+                {
+                    "text": "Kanyøgø nyeya yie atïmö ni met døc, ni put cïpö ki dwøl nee Daniel käl wøk ki yi buur. Køøre Daniel aput käl wøk ki yi buur, ni bäŋ ŋwellø mo ojoodø dëëre na bäre, kiper mana bëëde ni ŋäätha Jwøk mare.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Køøre nyeya aput cïpö ki dwøl, ni øøm jøøa kïth bäät Daniel ki luum tööt ni leeŋ geni yi buur ŋuuwe, geni ki määrge ko obwöre moge. 'Ba kanya pootge ni ge poot kär pïï tier buur piny, ŋuuwe aput päär bäätge ni put cuu moge bëët tøyø na thäŋi.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Køøre nyeya ma Dariöc aput gööt baŋ wïth jiy ki wïth juurre, ki wïth dhøgi, jø wø bëëdö yi ŋöömö bëët, ni kööe, «Bëët-mëër opälli jïïu!",
+                    "ID": "25"
+                },
+                {
+                    "text": "«Ennø, aana kän wøk ki ciik: Jiy bëët moa en ya akwöm nyec mara bëëtge ni ge lwäära Jwø Daniel ni dëëtge kwanynyi nyïme. «Kiper beeye Jwøa kwøw ni wø bëëdö na bäre bäre, ni buc nyec mare beeye man wø bëëdö ni ba ränynyi, ni teek mare bëëdö na bäre bäre.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Eni jiy di piemø ni køny geni, ni tïïe ki nyuuthe ki gïï mo rëëma ec maal ki piny, eni na piem Daniel ceŋ ŋuuwe.»",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba Daniel, ena bëëdö ni bëëtö mare beer yïth cwiiri moa beet nyeya ma Dariöc, ki yïth cwiiri moa beet nyeya ma Kiröc nyï Parca.",
+                    "ID": "28"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.7",
+            "name": "Daniel 7",
+            "text": [
+                {
+                    "title": "Kanya Ö Danielli Na Läge Ki Cwëënyi Aŋween ",
+                    "text": "Yi cwiir mana dïkwøŋ mana tïm Belthacörri ni ena nyeny Babiløn, Daniel alägö ki lääk ni jïte ki gïï mo onyoodhø jïre ki yi wïïe kanya bëëde ni ena bäät pëëm niine mare. Køøre eni lääk agöör piny, ni caan gø na ennø nø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Eni na Daniel ena köö, ni «Kanya bëëda naa neeta gïïa nyooth jïra ki yi wïïa ki wäär, ajooda ni jam maal kwödö ni cura but piny karge ŋweeri ni ge tuuŋŋa naama dwøŋ.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre cwëënyi aŋween mo døøŋŋø ma teeŋi aö wøk ki yi naama dwøŋ manøgø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "«Cwieny mana dïkwøŋ caala ŋuu, ni jïre da bwöm mo caala mo odhuuth. Aana bëëdö naa raŋŋa gø këël mana ö bwömmi moe ni pudhi wøk, no otïŋ maal no othïïŋö ni cuŋŋö ki tiel ariiø kaamar dhaanhø, ni cïp acaara mar dhaanhø jïre.",
+                    "ID": "4"
+                },
+                {
+                    "text": "«Køøre riet cwieny mør ajooda mo caala dïb, 'ba eno tïŋ maal ki bwøbe ki løøk aciel, ni dhee da ŋëëdi adäk ki yïthakic lage, ni caani jïre, ni ‹Ö maal ni cämï ki rïŋö mo päl.›",
+                    "ID": "5",
+                    "comment":"Dïb beeye cwieny mo dwøŋ mo kaala ŋuu, mo di lwäärö døc. Nyeŋ manøgø beeye dhi Ibaru."
+                },
+                {
+                    "text": "«Køør manøgø kanya bëëda naa poot rääŋö, aana nëënnö ki cwieny mør mo caala kwac, mo dïŋääe da bwöm aŋween mo caala mo wenyø; cwieny manøgø thuwø jïre da wïdhi aŋween, ni eno mooø ki teek mar käär jiy.",
+                    "ID": "6"
+                },
+                {
+                    "text": "«Køør manøgø kanya bëëda ki wäär naa poot raŋŋa gïïa nyooth jïra ki yi wïïa, aana nëënnö ki ŋweer cwëënyi mo cwïny bwøk ki gø, mo di lwäärö, mo teek døc, ni jïre da lak mo døøŋŋø ma nywïëny. Kany wø cäme, cam pete petø ni thenh thenh ni løøny geni, ni  nyør moa dööŋ ki tiete. Eni ba caal cwëënyi moa dïkwøŋ bëët, ni eni jïre da tuŋi apaar.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«'Ba kanya bëëda naa caara gïr tuŋi moøgø døc, ka adïëri møn, tuuŋ mør mo thiinh acäŋ tuyö yïthakic tuŋi møga, ni ö tuŋi adäk røk tuŋi moa dïkwøŋ ni pudhi wøk ki tietge nyïm manøgø, ni tuuŋ manøgø jïre da nyeŋ mo caala nyeŋ dhaanhø, ni jïre da dhøk mo cäänö ki luup dhwöle mo døøŋŋø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "«Kanya bëëda naa rääŋö, wäle acïp piny karge, ni ö Eni Na Nut Yïth Nïr Acääŋŋe ni pï piny bäät wälu mare. Abïï mana en dëëre tar ni caala piiø, ni jïëc wïïe caala jïëc røømmø mo pøøth. Wälu mare bëëdö ni wärri ki leep maac, ni tiet wälu liel ki maac.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Naam ma maac bëëdö ni kwödö ni ööa wøk ki nyïme, ni kum jiy ma kume tïnynya eni, ni kum jiy apaar kwöre ma kume apaar cuŋŋö nyïme, ni ö kwääy løøk ni pï piny, ni ö weeli ni jabi.",
+                    "ID": "10"
+                },
+                {
+                    "text": "«Køøre aana bëëdö naa poot rääŋö kiper luup dhwöle moa car tuuŋŋi. Aana bëëdö naa poot rääŋö këël mana ö cwienynyi manøgø ni nääi, ni ö rïŋ dëëre ni leeŋi yi maac mo wärri ni raanynyi.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba cwëënyi møga, teek marge akäl wøk baŋge, 'ba nïr kwøw moge ameet jïge kiper kany mo okwaanø.",
+                    "ID": "12"
+                },
+                {
+                    "text": "«Kanya bëëda ki wäär naa poot raŋŋa gïïa nyooth jïra ki yi wïïa, aana nëënnö ki ŋat mo caala Wär Dhaanhø mo öö ki yïth pøøl mo maal, ni ö baŋe, Eni Na Nut Yïth Nïr Acääŋŋe, ni wëëgi ciin nyïme.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ni cïp teek jïre ka ajiem ki nyec kiper nee wïth jiy bëët ki wïth juurre, ki wïth dhøgi bëët tïmge ni tïnynya eni. Teek mare mar käär jiy beeye teek mo bëëdö na bäre bäre, mo bäŋ cuŋŋe, ni buc nyec mare ba ränynyi. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Kanya Caan Tier Lääk Mana Nyooth Jï Daniel",
+                    "text": "«'Ba a na Daniel en, aana bëëdö ni jwïëy 'moa kïmmö, ni bëët gïïa nyooth jïra ki yi wïïa ni tuuŋŋa cwïnya.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Ni nyiiga buut dhaanhø aciel røk jiy mo cuŋŋö kaace, ni pëënynya eni ki tiet gïïögø bëët moa näk karge. Kanyøgø acaane jïra ni nyooth tier gïna cään gïïögø kiperge.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni kööe, ni ‹Cwëënyi moø ni døøŋŋø na aŋween yøø nyootha nyeye aŋween moo thïïŋ rege bäät piny.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba jic Jwøa Dwøŋ ni en Maal, buc nyec oci jïge, ni ö buc nyeci manøgø ni tïme na marge na bäre bäre, ki yïth beenhnhe bëët moo ööi.›",
+                    "ID": "18"
+                },
+                {
+                    "text": "«Køøre aana tïmö ni cwïnya manynya gø døc ki man ŋääa adïëri kiper ŋweer cwieny mana näk ba caal cwëënyi møga bëët, na näk di lwäärö døc, na näk lage beeye nywïëny, ni kwök lweete beeye jwïël, ni kany wø cäme, cam pete petø ni thenh thenh ni løøny geni, ni nyør moa dööŋ ki tiete.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Ni tïma thuwø ni cwïnya manynya man ŋääa gïr tuŋi moa näk apaar na en wïïe, ki gïr tuuŋ mana cäŋ tuyö, na päth tuŋi moa na adäk nyïme, na näk jïre da nyeŋ ki dhøk mo cäänö ki luup dhwöle ki gïï mo døøŋŋø, ni nëëni kere dwøŋŋa eni dï tuŋi møga.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Kanya bëëda naa poot rääŋö, tuuŋ manøgø da leny maa këële ki jø Jwøk ni bööt geni,",
+                    "ID": "21"
+                },
+                {
+                    "text": "këël kanya ö Eni Na Nut Yïth Nïr Acääŋŋe, eni na Jwøa Dwøŋ ni en Maal, na ööe ni ŋun jiye, ni beeye kanya ö kanya wäŋŋi ki man cïp buc nyec jïge, ge na jiye.",
+                    "ID": "22"
+                },
+                {
+                    "text": "«Køøre acaane jïra na ennø: ‹Ŋweer cwieny tïmö na ŋweer akwöp nyec bäät piny, mo ba caal akwöp nyec møga bëët, ni cam piny bäre, ni nyøøn gø piny ni pet gø na thäŋi.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba mar tuŋi moa näk apaar, nyeye apaar rege othïïŋge ya akwöm nyec manøgø, ni ö  nyeya mør ni thïïŋ ree køørge, ni eni ba caal nyeye moa dïkwøŋ, ni ö eni ni bööt nyeye adäk.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Ni cääne ki luup dëër Jwøa Dwøŋ ni en Maal, ni dïïm jiy moe, Eni na dwøŋ ni en maal, ni cäde ki man wiil kwöra wäŋŋi ki ciik, ni ö jic Jwøk ni cïbi cere ki cwiiri adäk ki thääŋö.",
+                    "ID": "25"
+                },
+                {
+                    "text": "« ‹'Ba kwääc løøk kanyo pï piny kiper ŋøl luup, teek mar nyenynyøgø di lwørø ni raanynyi na bäre bäre.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Køøre teek mar käär jiy, ki dööŋö bäre mar akwöp nyec mo bäät piny put ka cïp ceŋ jic Jwøa Dwøŋ ni en Maal. Buc nyec mar Jwøa Dwøŋ ni en Maal beeye bura mo bëëdö na bäre bäre, ni ö jøøa en teeki ceŋge ni tïnyge eni ni wïnyge mare.›",
+                    "ID": "27"
+                },
+                {
+                    "text": "«Kar kaagø gïna nyooth athum. 'Ba a na Daniel en, acaara mara abëëdö ni tuuŋŋa cwïnya, ni ö täärnyïma ni needuk; 'ba luubö manøgø abëëdö ni yaa kan cwïnya.»",
+                    "ID": "28"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.8",
+            "name": "Daniel 8",
+            "text": [
+                {
+                    "title": "Luum Nywø Røømmø Ki Nywø Ateea Mana Nyooth Jï Daniel ",
+                    "text": "Kanya tïme na ri dää cwiiri moa beet Belthacörri ni ena nyeya, a na Daniel, aana nyuunhnhi ki lääk køør lääk mana kwøŋ nyooth jïra dïkwøŋ.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba kanya bëëda naa raŋŋa gïna nyooth ki yi wïïa, ajooda naa ena yi kiira näk ogeerø ni teek yi pääny Cuca na en po jø Ilam, ni kanya raŋŋa gïna nyooth ki yi wïïa, ajooda naa ena deŋ naam man wø cwøl no Ulay.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre waŋa akëëlla dëëre ni jooda nywø røømmø mo cuŋŋö deŋ naamøgø, mo jïre da tuŋi ariiø. Tuŋi moøgø na ariiø yøø bäyö, 'ba aciel bäärra eni ki maya, ni mana bäär tuya ŋää cään.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Nywø røømmø manøgø ajooda ni cööba jï løø kur pänh-cäŋ, ki jï løø wï-piny ki jï løø tier-piny, ni bäŋ lääy mør mo oløny ki man cuŋŋe nyïm gø, ni bäŋ ŋat mo da gïn mo ee piemø cer teek mar gø; 'ba ena tïmö ni tïïya gïna met yie ki gø, ni døøc dëëre mo dwøŋ.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba kanya bëëda naa caara gïr gïnögø, aana nëënnö ki nywø ateea mo käla jï løø kur pänh-cäŋ ni ŋøla bäät piny bäre ni ŋøøm ba gude, na ateea manøgø yïthakic nyeŋŋe da tuuŋ mo nëënö jaak.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni ööe ni cääth baŋ nywø røømmø mana näk jïre da tuŋi ariiø na jooda ni cuŋŋö deŋ naam, ni läät baŋ gø ki wëër mo teek.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni jooda gø ni nyiiga buut nywø røømmø ni cwïnye okëënynyö ki gø, ni tuk nywø røømmø ni tëëŋ tuŋi mo gø wøk moa näk ariiø, 'ba nywø røømmø bäŋ teek jïre ki man cuŋŋe ki gø. Kanyøgø ena put ateea gøø piny ni nyør gø, ni bäŋ ŋat mo oløny jïre ki man piem nywø røømmø cer teek mar gø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Køøre nywø ateea manøgø dëëre aput døøc mo dwøŋ døc, 'ba kanya bëëde ni teek, tuuŋ mare mana dwøŋ atoor, ni ö kare ni twöe ki tuŋi aŋween mo nëënö jaak, ni wïthge ege løø but piny karge ŋweeri kwör wø kwön jam maalli ki yïthge.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba tuuŋ mo thiinh atuy ki ri tuuŋ aciel røk tuŋi moøgø, ni ö teeki mare ni nyaae ni cäätha jï løø tier-piny, ki jï løø kur tuul-cäŋ ki jï løø ŋøøp wø cwøl ni Mïërö.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Ena døøŋŋø këël mana put këët ri lwaa gïïa en maal, ni ö lwaa gïïa en maalli møøk ki ceer møøk ni leeŋ ge piny ni nyør ge.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Eni dëëre atïŋ maal ni døøc dëëre mo dwøŋ ni päär dëëre ki Kwääc lwaa gïïa en maal, ni ö olämme mo wø cïp cooth jï Kwääc lwaa gïïa en maal ni män ge, ni päät kar lam na en kur keere.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba kiper gïïa no obayø, lwaa gïïa en maal ko olämme mo wø cïp cooth acïp dhi cere, ni ö jammi bëët mo wø tïïe ni thurge karge, ni ö adïëri ni leeŋi piny.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Køøre aani dwør ŋat mo ena kur keere awïnynya ni cäänö, ni ö ŋat mør mo ena kur keere ni kööe jï mana cäänö, na «?A këël yi wäne no ö gïna nyooth noo thur kare, gïna cäänö kiper olämme mo wø cïp cooth, ki bääyö man wø käl ränynyö, ki cïp kar lam  na en kur keere, ki lwaa gïïa en maal ki man nyøri ki tiel?»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ni kööe jïra, ni «Thöödhö ki nïne ma kuma aciel ki dïpa ki pïërabïïc, no olämme mo wø cïp ka abøøya ka amöölla ba cïp yïthge. Køøre kar lam na en kur keere cäŋ ka dwøk kare ni beer.» ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Kanya Caan Tier Gïna Nyooth Jï Daniel",
+                    "text": "'Ba a na Daniel, kanya bëëda naa raŋŋa gïna nyooth, naa manynya gø nee tiere kwanya, ajooda ni da ŋat mo cuŋŋö nyïma mo caala dhaanhø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Ni puta dwør dhaanhø wïnynyö mo cwödö ya ageel naam wø cwøl no Ulay ni kööe, ni «Geebriel, caan tier gïna nyooth jï ŋati en nee ŋääe.»",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba kanya pïïe buut kanya cuŋŋa yie, aana lwäyö ni pädha ki täärnyïma. Ni kööe jïra, ni «Wär dhaanhø, wär ŋäyï ki man näk mo gïna nyooth cäänö kaper kanyo ŋuut pinynyi yie.»",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba kanya bëëde ni cäänö ki aani, nyeŋŋa aput gämmö døc ni täärnyïma poot yaa këël yïth ŋøøm; køøre aana gude ni tïŋ aani maal naa thïïŋ.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Ni kööe, ni «Neenï, aani gïïo tägi ya aŋuudi yïth nïr wëër caana caanø jïrï, kiper gïna nyooth cäänö kaper kanya wäŋŋi na näk aŋuudi.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Nywø røømmø mana jootï na näk jïre da tuŋi ariiø, nyootha nyeye mo jø Mëdön ki mo jø Parca.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Ni nywø ateea nyootha nyeny jø Gïrïïk, ni tuuŋ mana dwøŋ na en yïthakic nyeŋŋe nyootha nyeya mana dïkwøŋ.",
+                    "ID": "21"
+                },
+                {
+                    "text": "Ni tuŋi moa näk aŋween moa tuy kar tuuŋ mana toor, nyootha akwöp nyec aŋween mo rege pääŋge ka ri wï jur marge, 'ba ge ba teek ni caala akwöm nyec mana dïkwøŋ.",
+                    "ID": "22"
+                },
+                {
+                    "text": "«'Ba noo tïme ni ya aŋuun nyec marge, kanyo tïm jø bääö ni reyø døc, da nyeya mo ree di thïïŋö mo täärnyïme di lwäärö, na ŋat mo waŋe riek ki cwøk.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Eni teek mare tïmö ni dwøŋ døc, 'ba paa teek mare ki dëëre. Eni, räänyö mo dwøŋ tïïe tïïö, ni ö gïn wø tïïe jaak ni thur kare. Eni jiy moa teek, këël ki jic Jwøk raanynye raanynyø.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba ki jöör riek waŋe, cwøk otïïe ni thur kare jïre; ni døøc dëëre mo dwøŋ ki yi cwïnye, ni kanyo bëët jiyi ni bëëtö marge wøp jaak, wïth jiy mo thööth raanynye raanynyø, ni thïïŋ ree dëër Kwääc kwääri. 'Ba eni petø ni bäŋ cer dhaanhø ree.",
+                    "ID": "25"
+                },
+                {
+                    "text": "«Gïna nyooth manøgø na cäänö kiper olämme mo wø cïp ka abøøye ka amöölle na tiere nyooth jïrï beeye adïëri. 'Ba gïna nyooth manøgø wär kan cwïnyï, kiper cäänö kaper nïne mo poot ena yi nyïm kuya.»",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba a na Daniel, dëëra aput nidhooth piny, ni bëëda naa tuu ki nïne møøk. Køøre aana cäŋ ö maal ni døøa baŋ tïï nyeya, 'ba aani a bëëdö ni yia othäŋŋö jaak ki gïna nyooth, kiper tiere kär ci wïïa.",
+                    "ID": "27"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.9",
+            "name": "Daniel 9",
+            "text": [
+                {
+                    "title": "Lam Mar Daniel ",
+                    "text": "Kanya tïme na yi cwiir mana dïkwøŋ mar Dariöc wär Ayacewëëröc na käl røk jø Mëdön, ŋata røøny na nyeya mar akwöm nyec mar jø Babiløn,",
+                    "ID": "1"
+                },
+                {
+                    "text": "yi cwiir mana dïkwøŋ kanya bëëde na nyeya, a na Daniel en, da tier gïn maa kwanya yïth weet Jwøk ki køør luubö mana nyooth Wuuö Jwøki jï nyikuŋ Jwøk ma Jeremaya, ki man näk mo ränynyö mar Jerucalem thöödhö ki cwiiri ma pïërabïriiø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgø nyïma aputa løø baŋ Kwäärö Wuuö Jwøk ki lam, naa manynya eni ni mara kwac, naa lämö ki lam wödö ki cam, naa käära keece na abïïe, naa bëëdö yi bur.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Aana lämö jï Wuuö Jwøk, Jwøk mara, ni køba raay jïre ni kööa, ni «Wui Kwäärö Wuuö Jwøk, ï na Jwøa dwøŋ ni wø lwäärö ki eni, ï ni wø gwøk luumma tuutï, ki mëër man wø ba jøøl, ni tuutï ka jø wø mëër ki ïïni, ni wø gwøk ciik moï, ",
+                    "ID": "4"
+                },
+                {
+                    "text": "waani, waana gaa wøk, ni bääcwa ni tïïwa ki raay, ni gëëmwa, ni løøwa ŋäthwa baŋ gïïa cemï ki ciik moï.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Maya thuwø, dööt jiyï ma nyïïkuk Jwøk kärwa wïnynyö, jø wø køp luup ki nyeŋŋï jï nyeye mowa, ki jï kwääri mowa, ki jï wëëkwa, ki jï jiy bëët moa en yi ŋöömö.",
+                    "ID": "6"
+                },
+                {
+                    "text": "«Wui Kwäärö Wuuö Jwøk, ïïni bee ï wää bëënynyö, 'ba waani marwa beeye lään wïc, kaawat man bëëde dïcäŋi en, ni bee wa jø Juuda ki jø wø bëëdö Jerucalem, ki jø Icriel bëët moa en kwör mo cärö ki moa en kwör mo bäyö yïth mïëri bëët moa riemï ge yïthge, kiper ageeme moa tïïcge dëërï.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Wui Kwäärö Wuuö Jwøk, waani marwa beeye lään wïc møn, wa ki nyeye mowa, ki kwääri mowa, ki wëëkwa, kiper waana bääyö dëërï.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ï na Kwäärö Wuuö Jwøk, Jwøk marwa, marï beeye mëër ki wëën jiy, këël na bëëtwa ni wa gëëmö ki ïïni,",
+                    "ID": "9"
+                },
+                {
+                    "text": "ni kärwa dwørï wïnynyö, ï na Wuuö Jwøk, Jwøk marwa, ni kärwa cäädhö køør ciik moï na cïpï jïwa ki dhøk jiyï ma nyïïkuk Jwøk.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Dhaanh Icriel bäre ciik moï akaalge, ni løkge ŋäthge, ni kwierge dwørï. «Kiper manøgønø, acïëni ki kööŋ mar ajäla na näk ogöör piny yi wëël ciik Modhe, eni na dhaanh Jwøk, akïth bäätwa, kiper waana bääyö dëërï.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Ïïni luummï mana caanï dëëtwa ki dëët dïbwöthe mowa, mo wø käär waani, awëëgï thur kare ki man kännï bäätwa ki gïn mo leth mo dwøŋ; kiper ki yi piny bäre poot bäŋ teeŋ gïn mo otïïö mo caala teeŋ gïna tïïc dëër Jerucalem.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Gïï ni leth bëët ii aö bäätwa ki køør mana näk ogöörö yi wëël ciik Modhe; 'ba waani met yiï, ï na Wuuö Jwøk, Jwøk marwa, kärwa manynyø, ni kärwa røkwa løø ki yïth raay mowa, ki man luuwa wïthwa baŋ adïëri marï.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper manøgønø, ï na Wuuö Jwøk, ï kär dwiil ki man kälï gïna leth bäätwa, kiper ï na Wuuö Jwøk, Jwøk marwa, marï beer ki yïth jammi bëët mo wø tïïyï; 'ba waani dwørï kärwa wïnynyö.",
+                    "ID": "14"
+                },
+                {
+                    "text": "«'Ba ennø, wui ï na Kwäärö Wuuö Jwøk, Jwøk marwa, ï na käl jiyï wøk ki yi ŋööm Ijep ki køør teek badï, ï na tïïc nyeŋŋï nee wïnye kaawat man bëëde dïcäŋi en, waani, waana bääyö, ni tïïcwa gïï mo reyø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Wui Kwäärö Wuuö Jwøk, ki køør tïïe moï bëët na näk mo bëënynyö, ennø beerra man paanyï wëër marï bäät pääny marï ma Jerucalem, ni wø en bäät kïnna en kur keere; kiper Jerucalem ki jiy moï atïmö na gïr ajøøŋ jï jiy bëët moa en deŋwa ki køør gïïa bacwa ki raay mo kwäcwa.",
+                    "ID": "16"
+                },
+                {
+                    "text": "«'Ba ennø, ï na Jwøk marwa, beerra man wïnynyï lam mar dhaanhnhï man ki kwac mare. Ki køør nyeŋŋï, ï na Kwäärö Wuuö Jwøk, beerra man wëëgï täärnyïmï rieny bäät kar lam marï na näk oränynyö.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Wui ï na Jwøk mara, cek ïthï ni wïnynyï mara! Jap nyeŋŋï ni raŋï ränynyö marwa ki mar pääny man wø cwøl ri nyeŋŋï. Waani ï ba kwacwa kaper ni da gïn mo beer baŋwa; 'ba beeye kiper mëër marï na päl.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Wui Kwäärö Wuuö Jwøk, wïny marwa! Wui Kwäärö Wuuö Jwøk, wëën waani! Wui Kwäärö Wuuö Jwøk, cek ïthï ki marwa ni tïïï ki gïrpiny! Wui ï na Jwøk mara, ki køør nyeŋŋï, kärï ruu, kiper pääny marï ki jiy moï cwøla ri nyeŋŋï.» ",
+                    "ID": "19"
+                },
+                {
+                    "title": "Luum Cwiiri Abïriiø Kwöre Ma Pïërabïriiø",
+                    "text": "'Ba kanya bëëda naa cäänö naa lämö naa køpa raay 'moa ki mo jø powa ma jø Icriel, naa peedha kwac mara nyïm Wuuö Jwøk, Jwøk mara, kiper thuur mar Øt Jwøk na en kur keere,",
+                    "ID": "20"
+                },
+                {
+                    "text": "kanya bëëda naa poot cäänö ki yi lam, Geebriel, ŋata kwøŋa joot yïth lääk dïkwøŋ, amään baŋa døc kar kany  wø cïp olämi mar abøøya yie.",
+                    "ID": "21"
+                },
+                {
+                    "text": "Ni cïpe ki pwöc jïra ni kööe, ni «Daniel, aana öö ennø kuna mooa ïïni ki leec wïc, nee tiet luup kwanyï.",
+                    "ID": "22"
+                },
+                {
+                    "text": "Kanya tägï ki lam ennø, da luubö ma aöö, ni beeye mano caana jïrï en, kiper ïïna mëërö ki gø døc. Kiper manøgønø, caar luubö man ni ŋäyï tier gïna nyooth.",
+                    "ID": "23"
+                },
+                {
+                    "text": "«Cwiiri abïriiø kwöre ma pïërabïriiø akwaan kiper jø pou ki pääny maru na en kur keere, ki man mwön bääyö yïth cwiiri moøgø, ki man thum raayi, ki man tïïc okïdi kiper gïïa bayi, ki man ö bëënynyö mana näk bëëdö na bäre bäre, ki man thur gïna nyooth kare ki luupa køp nyïïkuk Jwøki, ki man ö kar lam na en kur keere na pere leth ni jøri ki maaw.",
+                    "ID": "24"
+                },
+                {
+                    "text": "«Kiper manøgønø, beerra man ŋäyï gø ni kwanyï tiere ki man näk mo luubö mana caan ki man dwøk Jerucalem kare ki man cäŋi geerrø, këël kanyo ö ŋata näk wïïe othïïmmö ki maaw, ŋato käär jiy, otïmö na cwiiri abïriiø kwöre abïriiø, ki cwiiri abïriiø kwöre ma pïërabïciel ka ariiø. Jerucalem cäŋ ka geerrø ni da nyeŋ jïëthe ki kwör gwøk røk mo teek. 'Ba kar kaace beeye nïr gïï mo leth.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba kanyo tïme na køør cwiiri abïriiø kwöre ma pïërabïciel ka ariiø, ŋata näk wïïe othïïmmö ki maaw di nääö ni bäŋ gïn mo dööŋ jïre, ni ö jø lenynyi mo kwäärö mør mo ena nyïm ni raanyge pääny ki kar lam na en kur keere. 'Ba aŋuunne öö kaamar jwïëö. Leny obëëdö ni cäätha nyïme jaak këël aŋuunne, ni ränynyö bëëdö no onøŋøl.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba kwäärö manøgø tudö ki luubö mo teek ma kar cwiiri abïriiø, ni tuude ka jiy mo thööth; 'ba noo tïme na thääŋ cwiiri abïriiø moøgø, eni, jiy di mänö ki man cïpö ko olämme ki muuce mo beel. 'Ba eni na käl ränynyö, gïna näk ec raac ki gø døc ocwöth piny wï Øt Jwøk, këël kanyo tïme na aŋuudi mano kïth ränynyö bääte mana näk oŋølø kipere.»",
+                    "ID": "27"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.10",
+            "name": "Daniel 10",
+            "text": [
+                {
+                    "title": "Kanya Ö Danielli Na Läge Ki Dhaanhø ",
+                    "text": "Kanya tïme na ri dää cwiiri moa beet Kiröci ni ena nyeny Parca, da dwøl moo nyoodhø jï Daniel ni wø nyeŋŋe cwøl ni Belthacacör, ni dwørøgø beeye adïëri ni cäänö kaper leny mo dwøŋ. 'Ba tier dwørøgø akwanye, ni nyooth jïre ka yïth lääk.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kar kaaca, a na Daniel, aana bëëdö naa kïmmö ki juu adäk.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Aana bëëdö ni bäŋ cam mo met mo yaa camø, ni bäŋ rïŋö wala køøŋø mo yaa gudö ki dhaa, ni bäŋ maaw mo yaa wïïr dëëra na bäre bäre këël kanya thum juuwi moøgø na adäk yøø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kanya tïm nïr dwääyi mana dïkwøŋ na pïërariiø ka aŋween, kanya bëëda naa ena bäät ageel naama dwøŋ ni wø cwøl ni Thëgerø,",
+                    "ID": "4"
+                },
+                {
+                    "text": "aani nyeŋŋa ataa maal ni räŋŋa, ni jooda dhaanhø mo oruyö ka abïï ma lïïna, mo piere ee töönynyö ki kaa warkey mana tøŋ mo käli ki yo Upath.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Eni dëëre bëëdö ni paŋŋi, ni täärnyïme nëëni kaamar agaackøth, ni nyeŋŋe caala ameethi mo liel, ni bäädi moe ko otweege, paŋŋi kaamar jwïël mo othoodhø, ni ni luube, dwøre caala dïlweel mar jiy mo thööth.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba a na Daniel, bee a keera na joot gïna nyooth, ni jiy moa nut buuta gïna nyooth kärge joodø; 'ba lwär mo dwøŋ aö bäätge, ni reŋge ni ge kana rege.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgø aana dööŋ a keera naa raŋŋa gïna nyooth manøgø ni thääŋ ec enø. Køøre aput tïmö ni bäŋ teek mo odööŋ dëëra, ni ö täärnyïma ni wiil ree kaamar nyïm dhaanhø mo othøw, ni bëëda ni bäŋ teek dëëra.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba aani dwør dhaanhø manøgø awïnynya, 'ba kanya wïnynya dwøre ennø mana caane, aani nyeŋŋa aput gämmö døc ni täärnyïma yaa këël piny yïth ŋøøm.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Kanyøgø cenø aana put gut ni cïp aani bäät cøŋŋa, ni ceŋŋa yaa këël piny  ni dëëra miel.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ni kööe jïra, ni «Wui Daniel, ï na näk dhaanhø mo owøørø døc, kwany tier luubö man døøc mano caana jïrï, ni cuŋŋï niï tiir, kiper ennø aani, a jääŋŋa baŋï.» 'Ba kanya nø caan luummögø jïra, aana put ö maal ni dëëra miel.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Ni kööe jïra, ni «Daniel, kärï lwäyö, kiper ki mana täge ki dïcäŋa dïkwøŋ na këëllï cwïnyï køør man ŋäyï tier gïna nyooth, ki mana dwøgï dëërï piny nyïm Jwøk marï, luup moï awïnynyi, ni beeye ni ööa ennø kiperge.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba nyïïatwiel maal man wø koor buc nyec mar Parca, dëëre athïïŋe dëëra ki nïne ma pïërariiø ka aciel. Køøre Mikaël, eni na kwäärö aciel dï kwääc nyïïatwiet maal, aö kuna køny aani, kiper aano maa piny kaace buut nyeny Parca.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba ennø, a ööi kaper nee gïno tägi dëët jiyï yïth nïro en nyïm nee tiere tïme ni ŋäyï, kiper gïna nyooth cäänö kaper nïne mo poot ena nyïm.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba kanya bëëde ni cäänna aani ki luupögø, wïïa aputa kuul piny ni dhaa kära jaalø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Køøre ŋat mo nëëni kaamar dhaanhø dhaa agude, ni puta dhaa jap ni cäänna ni kööa jïre, eni na cuŋŋö nyïma, ni «Wui kwääya, ki køør gïna nyooth manøgø, lwär mo dwøŋ aö bääta, ni bäŋe teek mo odööŋ dëëra.",
+                    "ID": "16"
+                },
+                {
+                    "text": "?A na laŋŋï en, lønye jïra nidïï ki man cääna ki teeŋ ïïni, ï na kwääya en? Kiper aani bäŋ teek mo odööŋ dëëra ennø, ni jwïëy mara teek.»",
+                    "ID": "17"
+                },
+                {
+                    "text": "Kanyøgø ŋatøgø ni caal dhaanhø enø, aana cäŋ gutö, ni mooc aani ki teek.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Ni kööe, ni «Wui dhaanhø, ï na näk owøørø døc, kärï lwäyö. Bëëdï ni dëërï jööt. Bëëdï niï teek, ni cwïnyï da cer.» 'Ba kanya nø cään aani ennø, aana put jïtö ki teek, ni kööa, ni «Kwääya, beerra man caanï gïna diï caanø, kiper ïïni, dëëra amooyï ki teek.»",
+                    "ID": "19"
+                },
+                {
+                    "text": "Kanyøgø ena köö, ni «?Gïna ööa baŋï kipere ŋäyï? 'Ba ennø, a døøa kuna këëda ki nyïïatwiel maal man wø koor Parca; 'ba kanyo cøøa, nyïïatwiel maal man wø koor po jø Gïrïïk luunynya öö.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba këël na näk enø nø, aani gïna näk ogöörö yi Wëël Adïëri caana caanø jïrï. 'Ba bäŋ ŋat mo cwak aani ki geni, ni näk mo paa Mikaël, eni na nyïïatwiel maal man wø koor jø Icriel.",
+                    "ID": "21"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.11",
+            "name": "Daniel 11",
+            "text": [
+                {
+                    "text": "«'Ba kanya tïme na yi cwiir mana dïkwøŋ mana tïm Dariöc nyï Mëdön ni ena nyeya, aana cuŋŋö kara naa cwaga eni naa gëëŋa eni. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luup Nyeya Mar Jï Løø Tier-Piny Ki Mar Jï Løø Wï-Piny",
+                    "text": "«'Ba ennø, adïëri caana caanø jïrï. Ka adïëri møn, nyeye adäk møøk rege thïïŋge thïïŋö yi Parca. 'Ba ŋweerge mano caath køørge okwär døc ni kaala møga bëët. 'Ba kanyo joot teek mare ennø ki køør kwärö mare, yïth jiy di theŋø ki man këëtge ka akwöm nyec mar jø Gïrïïk.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre nyeya mo teek, dëëre di thïïŋö ni käär piny ki teek mo dwøŋ, ni bëëde ni tïïya mano manynye jaak.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kanyo thïïŋ dëëre ennø, akwöm nyec mare di petø ni pääŋŋi na kwöre aŋween, no odïëdö ki but piny, ni ba ci jï jø okäl dëëre, ni jø oci teeki jïge, teek marge tïmö ni ba caal teek mana en jïre dïkwøŋ. Kiper akwöm nyec mare cööda wøk ni mëëgi jø møøk ni paa jø okäl dëëre.",
+                    "ID": "4"
+                },
+                {
+                    "text": "«'Ba nyeya mano en jï løø Tier-Piny tïmö ni teek. 'Ba dhaanhø aciel røk wïth jø leny moe, tïmö ni teek døc ni kaala eni, ni lwør akwöm nyec ni käär gø ki teek mo dwøŋ.",
+                    "ID": "5",
+                    "comment":"Nyeya mar jï løø Tier-Piny beeye nyeya mar Ijep."
+                },
+                {
+                    "text": "'Ba noo tïme na køør cwiiri møøk, nyeya mar jï løø Tier-Piny ki nyeya mar jï løø Wï-Piny dhøkge kuurge kuurö, ki køør mano ö nyeya mar jï løø Tier-Piny noo biel nyaare jï nyeya mar jï løø Wï-Piny ni marge tudö ki luum mëër. 'Ba nyaanøgø mëër mano tuut ki køøre ba thur kare, ni cwøre ki teek mare ba ruu. 'Ba nyaanøgø di nääö, ki cwøre, ki nyilaal mare, ki ŋato caam eni yïth nïne moøke.",
+                    "ID": "6",
+                    "comment":"Nyeya mar jï løø Wï-Piny beeye nyeya mar Ciria."
+                },
+                {
+                    "text": "«'Ba dhaanhø aciel røk tuuŋ nyaanøgø dëëre di thïïŋö na nyeya mar jï løø Tier-Piny ni tuk lwaa leny mo nyeny Wï-Piny ni døny kar gwøk røk mar gø. Eni këëdö ki geni ni bööde.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Eni thuwø juu moge mo tïïc ka nywïëny na kït gïï wø lam, ki jap paac mo perge leth mo tïïc ka gwel-bïrö ki warkey twiere twierø ni kïth geni Ijep. Køøre eni bëëdö ki cwiiri ni nyeny jï løø Wï-Piny ba tuue.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Køøre cään, nyeya mar jï løø Wï-Piny cøø ni tuk po nyec mar nyeny jï løø Tier-Piny; 'ba eni di dwøgø ki teek ni døø paac mare.",
+                    "ID": "9"
+                },
+                {
+                    "text": "«Køøre wääte dëëtge jiiŋge jiiŋŋø kiper leny, ni cooŋge wïth lwaa lenye mo thööth, ni ö dhaanhe acielli dïge ni baap geni kaamar jwïëö ni pöödhe ki leny këël mano pïïe kar gwøk røk mar ŋatøce.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba nyeny jï løø Tier- Piny cwïnye jïtö ki wëër mo dwøŋ, ni cøøe ni këëde ki nyeny jï løø Wï-Piny, ŋato cooŋ lwaa leny mo dwøŋ. 'Ba lwaa leny manøgø poot cïba cer ŋata këëtge ki gø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba kanyo ö lwaa leny manøgø noo maai ki tøŋ, nyeny jï løø Tier-Piny cwïnye jïtö ka atöör mo ena maal døc, ni 'näk jiy ma kume. 'Ba eni ba böödö.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kiper nyeny jï løø Wï-Piny cäŋa määnyö ki lwaa leny mør mo pälla eni ki mana dïkwøŋ. 'Ba kanyo tïme na køør cwiiri møøk, eni öö ki lwaa leny mo päl, mo dëëtge päŋ ki jap leny.",
+                    "ID": "13"
+                },
+                {
+                    "text": "«'Ba noo tïme na kar kaace, jiy mo thööth dëëtge othïïŋge dëër nyeny jï løø Tier-Piny, ni ö jiyi moa wïnni dëët jø pou ni thïïŋge rege, ni ge wëëga lääk thur karge. 'Ba marge ba thur kare.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre nyeny jï løø Wï-Piny öö ni thør dëër kiir ki ŋääe ni thøra gø maal, ni mak kiir mo ogeerø ni teek. 'Ba lwaa leny mar jï løø Tier-Piny ba cuŋŋi, këël lwaa leny mana no ojierø. Kiper tïmö ni bäŋ teek jïge ki man cuŋge.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba ŋato tuk paac tïmö ni tïïya mano met yie ki gø, ni bäŋ ŋat mo løny jïre ki man cuŋŋe ki gø. Eni tiere këëlle piny yi ŋööm wø cwøl ni Mïërö, ni cere da teek man raany paac ki gø.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre eni nyïme løøe baŋ man ööe ki lwaa leny mar akwöm nyec mare bäre, ni kuurge dhøkge ki nyeny jï løø Tier-Piny. Ni bëët baŋ gø ki nyey, kiper nee akwöm nyec mar gø jale. 'Ba acaara mana näk ee cïp piny ba thur kare, ni eni ba kønye.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Køøre eni nyïme løøe baŋ jø wø bëëdö bäät näm, ni mak jiy mo thööth. 'Ba kwääc lwaa leny, apääda mar gø raanynye raanynyø, ni dwøk apääda manøgø wï gø.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køør manøgø, nyïme løøe baŋ kiiri mo poge moa no ogeerø ni teek. 'Ba eni di böötö, ni ba joot këët.",
+                    "ID": "19"
+                },
+                {
+                    "text": "«'Ba da ŋat mo dëëre di thïïŋö kare, ni jääk wøk ki jiy baŋ ajwäk, nee kwärö mar akwöm nyec mare meede. 'Ba ki køør nïne mo nøk eni di nääö, ni paa nyïm jiy wala ri leny.",
+                    "ID": "20"
+                },
+                {
+                    "text": "«'Ba da dhaanhø mo ojarø mo dëëre di thïïŋö kar gø, na ŋat mo eni tøør ri tuuŋ nyec. Eni öö kany mo kär caarø ni mak nyec ki dhøk mo pøøth.",
+                    "ID": "21"
+                },
+                {
+                    "text": "Ni ö lwaa leny mo piny ee baabø ni gwaar ge nyïme kaamar jwïëö, ni raany geni, këël Kwääy Lam Mana Dwøŋ mar Jwøk.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba kanyo nø tude ki jiy, jøøgø cøøge cøøgø, ni thïïŋ dëëre, ni jïte ki teek këël na bëëde ni jiy moa en dëëre nøk.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Kanyo tïme ni mïëri moa no okwär ge bëëdö ka bëët-mëër, cøø ni tuk geni, ni tïïc gïn mo kär kwøŋ wëëkge tïïc wala kwäye. Ni ö jammi moa twier ki moa peec ni pääŋ ge yïthakic jiy moa en dëëre. Ni ö eni ni cïp piny ka acaara ki man raany kiiri moa no ogeerø ni teek; 'ba beeta kany mo thiinh keere.",
+                    "ID": "24"
+                },
+                {
+                    "text": "«'Ba eni cwïnye di mooø ki cer, ni cøm cwïnye, ni cøøe ki lwaa leny mo päl ki man këëde ki nyeny jï løø Tier-Piny.  'Ba nyeny jï løø Tier-Piny tøŋ di tïŋö ki lwaa leny mo päl mo teek døc. 'Ba eni ba løny ki man cuŋŋe, kiper acaay aranya onø cïp piny kipere.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba jø wø cämö buute ki came na met, eno raanyge, ni ö lwaa leny mare ni riemi, ni ö mo thööth ni nääi.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba nyeye moø na ariiø yøø, cwïnyge oløøge baŋ gïn mo raac, ni pïge piny kar acooŋa, ni ö ŋati man nø ni cään watge ki tööt. 'Ba bäŋ gïn mo thur kare. Kiper aŋuunne poot öö kanya no owäŋŋö.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Køøre nyeny jï løø Wï-Piny duua poge ni käädö ki jap kwärö mo thööth. 'Ba cwïnye bëëdö ni ee løø kuna raany lam mar jø Jwøk. Eni tïïö ki gïrpiny dëër lamøgø, ni ö eni ni døø poge.",
+                    "ID": "28"
+                },
+                {
+                    "text": "«Kanyo tïme na kanya wäŋŋi, eni cäŋa cøø ni tuk paana en jï løø Tier- Piny, 'ba kar kaagø, gïno tägi, tïmö ni ba caal mana dïkwøŋ.",
+                    "ID": "29"
+                },
+                {
+                    "text": "Kiper baabuure mo jø Kitim këëdö ki eni, ni ö eni ni bwøk cwïnye. Køøre eni duuö ni cwïnye da wëër ki lam mar jø Jwøk, ni tïïe ki gïrpiny dëër gø, ni duue ni nyooth mëër jï jøøa wec lamøgø.",
+                    "ID": "30"
+                },
+                {
+                    "text": "«Ni ö lwaa leny mana en dëëre ni thïïŋge dëëtge dëër kar lam na näk ogeerø ni teek, ni mänge olämme mo wø cïp cooth. Køøre geni gïna näk ec raac ki gø døc na näk gïr ränynyö, cwöthge piny.",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba eni jiy moa kwier lam mar jø Jwøk di cøøgø ki luup mo pøøth ki man käl geni løøe. 'Ba jiy moa ŋäc Jwøge ge bëëdö karge ni ge teek, ni dhäthge jïre.",
+                    "ID": "32"
+                },
+                {
+                    "text": "«'Ba dïbwöthe moa wïthge leer, ge cïpö ki pwöc jï jiy mo thööth. 'Ba geni, ge di nääö ri leny, ni waaŋ møøk ki maac, ni mak møøk ki tøŋ, ni twier møøk ki kany mo bäär mëëth.",
+                    "ID": "33"
+                },
+                {
+                    "text": "'Ba kanyo bëëtge ni ge thøwø, ge na jic Jwøk ge jïtö ki køny mo thiinh, ni ö jiyi mo thööth ni dwätge ki geni ki dhøk mo pøøth.",
+                    "ID": "34"
+                },
+                {
+                    "text": "'Ba jiy møøk røk jøøa wïthge leer, ge päänhnhö møn ki thøø, kiper nee jiy døøc mo waany, ni tar, ni tøŋ, këël kanyo pïïe ya aŋuunne. Kiper aŋuunne poot öö kanya no owäŋŋö. ",
+                    "ID": "35"
+                },
+                {
+                    "title": "Luum Nyeya Mano Tïŋ Dëëre Maal",
+                    "text": "«'Ba nyeya tïmö ni tïïya gïno met yie ki gø jaak, ni tïŋ dëëre maal ni dwøŋŋa eni bäät juu bëët, ni cääne ki luup mo thäŋa ec dëër Jwø wïth juu. Eni bëëdö ni bëëtö mare othur kare, këël kanyo ö kar wëër mar Jwøk noo pääŋe, kiper gïna no onøŋøl, tägö møn.",
+                    "ID": "36"
+                },
+                {
+                    "text": "Eni gïr juu mo kwäye ba kïth ïthe, wala jwøa mëër määnni ki gø, ni gïr jwøk mør jaak ba kïth ïthe. 'Ba eni dëëre døøye mo dwøŋ bäätge bëët.",
+                    "ID": "37"
+                },
+                {
+                    "text": "Ni ki mana dee ge wøørø, eni tïmö ni wøøra jwø wø gëëŋ kwör gwøk røk, na jwøk mo kuc kwäye noo wøøre ki warkey, ki gwel-bïrö, ki nyeŋ kïte mo perge leth, ki muuce mo perge leth.",
+                    "ID": "38"
+                },
+                {
+                    "text": "Ni ö eni ni tuk kwör gwøk røk moa teek ki køør køny mar jwøk mo path, ni ö eni ni wøør jø wø jïëc mare, ni tïïc geni na kwääri bäät jiy mo thööth, ni pääŋ ŋøøm jïge na gïr mïn ec.",
+                    "ID": "39"
+                },
+                {
+                    "text": "«'Ba noo tïme na aŋuun nïne, nyeny jï løø Tier-Piny cwïny nyeny jï løø Wï-Piny di cwøbø. Køøre nyeny jï løø Wï-Piny jïëth leny mo wø tut okwëënyi, ki jø wø këëdi ki bäät okwëënyi, ki baabuure mo thööth mo leny, di kälö kaamar atuunna, ni tuk mïëri, ni baap geni kaamar jwïëö.",
+                    "ID": "40"
+                },
+                {
+                    "text": "Ni ö eni thuwø ni tuk ŋööm wø cwøl ni Mïërö. Ni ö mïëri mo thööth ni päthge; 'ba Ëdöm, ki Möap, ki jøøa näk wïth jø Amön, ge di piemø dhi cere.",
+                    "ID": "41"
+                },
+                {
+                    "text": "'Ba eni cere kïthe dëët mïëri møøk, ni ŋööm Ijep ba bøth.",
+                    "ID": "42"
+                },
+                {
+                    "text": "'Ba eni jïtö ki teek bäät jap kwärö mo warkey, ki mo gwel-bïrö, ki bäät jammi moa perge leth bëët mo Ijep, ni ö jø Libya ki jø Ithiöpia ni caathge køøre.",
+                    "ID": "43",
+                    "comment":"Paani ni cwøl ni Ithiöpia en, ki dhi Ibaru cwøl ni Kuuc, ni kar kaaca rwöpa thääŋ Ithiöpia ki thääŋ paac man ni cwøl ni Cudan en yïth cwiiri moi."
+                },
+                {
+                    "text": "'Ba eni cwïnye otïmö ni pärö ki waac moo wïnyi ki jï løø kur tuulcäŋ, ki jï løø wï-piny, ni cøøe ki wëër mo dwøŋ ki man raany jiy mo thööth ni dïïra wïthge.",
+                    "ID": "44"
+                },
+                {
+                    "text": "Ni cwöth oduŋkaare mo nyec moe piny yïthakic naama dwøŋ ki Kïn Jwøk na mïërö na en kur keere. 'Ba eni poot thøw, ni bäŋ ŋat mo køny eni.",
+                    "ID": "45"
+                }
+            ]
+        },
+        {
+            "ID": "OT:DAN.12",
+            "name": "Daniel 12",
+            "text": [
+                {
+                    "title": "Luum Gïïo Tägi Ya Aŋuun Nïne ",
+                    "text": "«'Ba noo tïme na kar kaace, Mikaël, eni na nyïïatwiel maal mana dwøŋ ni wø koor jø pou ma jø Icriel, dëëre di thïïŋö. 'Ba kar kaace tïmö na kar jwør gïï mo leth, na gïï mo poot kär kwøŋ tägö cøøn ki mana täge ki kanya täk wï jur këël kar kaace. 'Ba kar kaace jø pou moo nyeŋge joot no ogöör piny yi wëëlö, ge di piemø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba jiy mo thööth moa no othøw no okoony piny yi ŋöömö, ge päy, ni møøk cøøa yi kwøw mana näk bëëdö na bäre bäre, ni møøk cøøa kar lään wïc ki kar ataa mo bëëdö na bäre bäre.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba jiy moa wïthge leer ge rieny ni caala tar mar maal. Ni ö jø wø bwøth jiy mo thööth jöör bëënynyö ni rienyge kaamar ceer na bäre bäre.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba ï na Daniel en, cïëk luup moa en yi wëëlö ni mwönï gø, këël kanyo tïme na aŋuun nïne. Jiy mo thööth oreŋ kun ki kun ni ge meeta kwänynyö.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre a na Daniel, aana räŋŋö, ni jooda jiy ariiø møøk ni ge cuŋŋö, na aciel cuŋŋa bäät naam jï løøi, ni maya cuŋŋa bäät naam løøga.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni kö acielli jï dhaanhø mo oruyö ka abïï ma lïïna mo ena bäät pïï yi naam, na «?A këël yi wäne noo ö gïïa näk rëëma ec noo ŋuutge?»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Køøre ŋata näk oruyö ka abïï ma lïïna na en bäät pïï yi naam, ceŋŋe karge riet athaaŋ maal. Ni wïnynya dwøre ni kööŋŋa ri Jwøa kwøw ni wø bëëdö na bäre bäre, ni kööe, ni «Beeye cwiiri adäk ki thääŋö. 'Ba kanyo ö bäät jic Jwøk no nigelway, beeye kanyo ö gïïögø noo ŋuutge.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Køøre aani gïnögø awïnynya, 'ba tiere kär ci wïïa. Køøre aana pëëö, ni «?Kwääya, aŋuun gïïögø otïme nidïï?»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni løk gø, ni «Daniel, aayï ki jöörï. Kiper luup moøgø ocïëgö no omwönö këël kanyo tïme na aŋuun nïne.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Jiy mo thööth di tïïö ni tøŋ, ni tar, ni waany. 'Ba jø raay ge bëëdö ni ge tïïya raay, ni bäŋ ŋat raay mo tiet gïïögø cøøa wïïe; 'ba jøøa wïthge leer, tiet gïïögø cøøa wïthge.",
+                    "ID": "10"
+                },
+                {
+                    "text": "«'Ba ki mano täge ki kanyo män olämme yie mo wø cïp cooth, ki kanyo ö gïna näk ec raac ki gø døc na näk gïr ränynyö noo cwödhi piny, thöödhö ki nïne ma kuma ki dïpe ariiø ki pïërabïŋween.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Gwïëth en bäät jø wø kurö ni cwïnyge ege maaø noo pïï ri nïne ma kuma ki dïpe adäk ki pïëradäk ka abïïc.",
+                    "ID": "12"
+                },
+                {
+                    "text": "«'Ba ïïni, cäädhï ki jöörï këël aŋuunne. Køøre ï cøøa kar jwöm mar thøø. 'Ba noo tïme na aŋuun piny, ï tïŋa maal ni jootï kurï mano mëëk ïïni.»",
+                    "ID": "13"
+                }
+            ]
+        }
+    ]
+}

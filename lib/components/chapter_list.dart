@@ -300,190 +300,217 @@ class _ChapterListState extends State<ChapterList> {
   List<Map<String, String>> newTestList = [
     {
       'title': 'Matthew',
+      'anyTitle': 'Mathiew',
       'amharic': '40_የማቴዎስ ወንጌል.json',
-      'anywaa': '',
+      'anywaa': 'MAT',
       'number': '28',
       'abbrev': 'MAT'
     },
     {
       'title': 'Mark',
+      'anyTitle': 'Maak',
       'amharic': '41_የማርቆስ ወንጌል.json',
-      'anywaa': '',
+      'anywaa': 'MRK',
       'number': '16',
       'abbrev': 'MRK'
     },
     {
       'title': 'Luke',
+      'anyTitle': 'Luk',
       'amharic': '42_የሉቃስ ወንጌል.json',
-      'anywaa': '',
+      'anywaa': 'LUK',
       'number': '24',
       'abbrev': 'LUK'
     },
     {
       'title': 'John',
+      'anyTitle': 'Jøøn',
       'amharic': '43_የዮሐንስ ወንጌል.json',
-      'anywaa': '',
+      'anywaa': 'JHN',
       'number': '21',
       'abbrev': 'JHN'
     },
     {
       'title': 'Acts',
+      'anyTitle': 'Moa Tïïc Nyïïatwieli',
       'amharic': '44_የሐዋርያት ሥራ.json',
-      'anywaa': '',
+      'anywaa': 'ACT',
       'number': '28',
       'abbrev': 'ACT'
     },
     {
       'title': 'Romans',
+      'anyTitle': 'Röm',
       'amharic': '45_ወደ ሮሜ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': 'ROM',
       'number': '16',
       'abbrev': 'ROM'
     },
     {
       'title': '1 Corinthians',
+      'anyTitle': '1 Körin',
       'amharic': '46_1ኛ ወደ ቆሮንቶስ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': '1CO',
       'number': '16',
       'abbrev': '1CO'
     },
     {
       'title': '2 Corinthians',
+      'anyTitle': '2 Körin',
       'amharic': '47_2ኛ ወደ ቆሮንቶስ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': '2CO',
       'number': '13',
       'abbrev': '2CO'
     },
     {
       'title': 'Galatians',
+      'anyTitle': 'Galeecia',
       'amharic': '48_ወደ ገላትያ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': 'GAL',
       'number': '6',
       'abbrev': 'GAL'
     },
     {
       'title': 'Ephesians',
+      'anyTitle': 'Epeca',
       'amharic': '49_ወደ ኤፌሶን ሰዎች.json',
-      'anywaa': '',
+      'anywaa': 'EPH',
       'number': '6',
       'abbrev': 'EPH'
     },
     {
       'title': 'Philippians',
+      'anyTitle': 'Pilipay',
       'amharic': '50_ወደ ፊልጵስዩስ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': 'PHP',
       'number': '4',
       'abbrev': 'PHP'
     },
     {
       'title': 'Colossians',
+      'anyTitle': 'Köløcia',
       'amharic': '51_ወደ ቆላስይስ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': 'COL',
       'number': '4',
       'abbrev': 'COL'
     },
     {
       'title': '1 Thessalonians',
+      'anyTitle': '1 Thecalönika',
       'amharic': '52_1ኛ ወደ ተሰሎንቄ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': '1TH',
       'number': '5',
       'abbrev': '1TH'
     },
     {
       'title': '2 Thessalonians',
+      'anyTitle': '2 Thecalönika',
       'amharic': '53_2ኛ ወደ ተሰሎንቄ ሰዎች.json',
-      'anywaa': '',
+      'anywaa': '2TH',
       'number': '3',
       'abbrev': '2TH'
     },
     {
       'title': '1 Timothy',
+      'anyTitle': '1 Timöthi',
       'amharic': '54_1ኛ ወደ ጢሞቴዎስ.json',
-      'anywaa': '',
+      'anywaa': '1TI',
       'number': '6',
       'abbrev': '1TI'
     },
     {
       'title': '2 Timothy',
+      'anyTitle': '2 Timöthi',
       'amharic': '55_2ኛ ወደ ጢሞቴዎስ.json',
-      'anywaa': '',
+      'anywaa': '2TI',
       'number': '4',
       'abbrev': '2TI'
     },
     {
       'title': 'Titus',
       'amharic': '56_ወደ ቲቶ.json',
-      'anywaa': '',
+      'anyTitle': 'Tayta',
+      'anywaa': 'TIT',
       'number': '3',
       'abbrev': 'TIT'
     },
     {
       'title': 'Philemon',
       'amharic': '57_ወደ ፊልሞና.json',
-      'anywaa': '',
+      'anyTitle': 'Piliman',
+      'anywaa': 'PHM',
       'number': '1',
       'abbrev': 'PHM'
     },
     {
       'title': 'Hebrews',
+      'anyTitle': 'Ibaru',
       'amharic': '58_ወደ ዕብራውያን.json',
-      'anywaa': '',
+      'anywaa': 'HEB',
       'number': '13',
       'abbrev': 'HEB'
     },
     {
       'title': 'James',
+      'anyTitle': 'Jeemeth',
       'amharic': '59_የያዕቆብ መልእክት.json',
-      'anywaa': '',
+      'anywaa': 'JAS',
       'number': '5',
       'abbrev': 'JAS'
     },
     {
       'title': '1 Peter',
+      'anyTitle': '1 Piter',
       'amharic': '60_1ኛ የጴጥሮስ መልእክት.json',
-      'anywaa': '',
+      'anywaa': '1PE',
       'number': '5',
       'abbrev': '1PE'
     },
     {
       'title': '2 Peter',
+      'anyTitle': '2 Piter',
       'amharic': '61_2ኛ የጴጥሮስ መልእክት.json',
-      'anywaa': '',
+      'anywaa': '2PE',
       'number': '3',
       'abbrev': '2PE'
     },
     {
       'title': '1 John',
+      'anyTitle': '1 Jøøn',
       'amharic': '62_1ኛ የዮሐንስ መልእክት.json',
-      'anywaa': '',
+      'anywaa': '1JN',
       'number': '5',
       'abbrev': '1JN'
     },
     {
       'title': '2 John',
+      'anyTitle': '2 Jøøn',
       'amharic': '63_2ኛ የዮሐንስ መልእክት.json',
-      'anywaa': '',
+      'anywaa': '2JN',
       'number': '1',
       'abbrev': '2JN'
     },
     {
       'title': '3 John',
+      'anyTitle': '3 Jøøn',
       'amharic': '64_3ኛ የዮሐንስ መልእክት.json',
-      'anywaa': '',
+      'anywaa': '3JN',
       'number': '1',
       'abbrev': '3JN'
     },
     {
       'title': 'Jude',
+      'anyTitle': 'Juut',
       'amharic': '65_የይሁዳ መልእክት.json',
-      'anywaa': '',
+      'anywaa': 'JUD',
       'number': '1',
       'abbrev': 'JUD'
     },
     {
       'title': 'Revelation',
+      'anyTitle': 'Mana Nyooth',
       'amharic': '66_የዮሐንስ ራእይ.json',
-      'anywaa': '',
+      'anywaa': 'REV',
       'number': '22',
       'abbrev': 'REV'
     }
@@ -551,7 +578,7 @@ class _ChapterListState extends State<ChapterList> {
     return DefaultTabController(
       animationDuration: Duration.zero,
       initialIndex: 0,
-      length: 2,
+      length: version == 'ANY' ? 1 : 2,
       child: Scaffold(
           appBar: AppBar(
             automaticallyImplyLeading: false,
@@ -648,42 +675,66 @@ class _ChapterListState extends State<ChapterList> {
                 ),
               ],
             ),
-            bottom: TabBar(
-                labelColor: Colors.amber,
-                indicatorColor: Colors.amber,
-                tabs: <Widget>[
-                  Tab(
-                    height: 80,
-                    child: ListTile(
-                      title: Text(
-                        'Old Testement',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18),
+            bottom: version == 'ANY'
+                ? TabBar(tabs: [
+                    Tab(
+                      height: 80,
+                      child: ListTile(
+                        title: Text(
+                          'Lumma nyaan ni met',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 19),
+                        ),
+                        subtitle: version == 'AMH'
+                            ? Text('ብሉይ ኪዳን',
+                                style:
+                                    TextStyle(fontSize: 15, color: Colors.grey))
+                            : version == 'ANY'
+                                ? Text('New testement')
+                                : Text(''),
                       ),
-                      subtitle: version == 'AMH'
-                          ? Text('ብሉይ ኪዳን', style: TextStyle(fontSize: 15))
-                          : Text(''),
                     ),
-                  ),
-                  Tab(
-                    height: 80,
-                    child: ListTile(
-                      title: Text(
-                        'New Testement',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 17.7),
-                      ),
-                      subtitle: version == 'AMH'
-                          ? Text('አዲስ ኪዳን', style: TextStyle(fontSize: 15))
-                          : Text(''),
-                    ),
-                  ),
-                ]),
+                  ])
+                : TabBar(
+                    labelColor: Colors.amber,
+                    indicatorColor: Colors.amber,
+                    tabs: <Widget>[
+                        Tab(
+                          height: 80,
+                          child: ListTile(
+                            title: Text(
+                              'Old Testement',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            subtitle: version == 'AMH'
+                                ? Text('ብሉይ ኪዳን',
+                                    style: TextStyle(fontSize: 15))
+                                : Text(''),
+                          ),
+                        ),
+                        Tab(
+                          height: 80,
+                          child: ListTile(
+                            title: Text(
+                              'New Testement',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17.7),
+                            ),
+                            subtitle: version == 'AMH'
+                                ? Text('አዲስ ኪዳን',
+                                    style: TextStyle(fontSize: 15))
+                                : Text(''),
+                          ),
+                        ),
+                      ]),
           ),
-          body: TabBarView(children: <Widget>[
-            oldTestement(),
-            newTestement(),
-          ])),
+          body: version == "ANY"
+              ? newTestement()
+              : TabBarView(children: <Widget>[
+                  oldTestement(),
+                  newTestement(),
+                ])),
     );
   }
 
@@ -779,16 +830,26 @@ class _ChapterListState extends State<ChapterList> {
                     '${_foundBook[listviewindex]['title']}',
                     style: TextStyle(fontSize: 19.5),
                   )
-                : Text(
-                    '${_foundBook[listviewindex]['title']}',
-                    style: TextStyle(fontSize: 19.5),
-                  ),
+                : version == 'ANY'
+                    ? Text(
+                        '${_foundBook[listviewindex]['anyTitle']}',
+                        style: TextStyle(fontSize: 19.5),
+                      )
+                    : Text(
+                        '${_foundBook[listviewindex]['title']}',
+                        style: TextStyle(fontSize: 19.5),
+                      ),
             trailing: version == 'AMH'
                 ? Text(
                     '${_foundBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}',
                     style: TextStyle(fontSize: 16),
                   )
-                : Text(''),
+                : version == 'ANY'
+                    ? Text(
+                        '${_foundBook[listviewindex]['title']}',
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      )
+                    : Text(''),
             onTap: () {
               showModalBottomSheet(
                   context: context,
@@ -796,10 +857,22 @@ class _ChapterListState extends State<ChapterList> {
                     return Scaffold(
                       appBar: AppBar(
                         // centerTitle: true,
-                        title: Text(
-                          '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
+                        title: version == 'ANY'
+                            ? Text(
+                                '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['anyTitle']}',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
+                            : version == 'ANY'
+                                ? Text(
+                                    '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  )
+                                : Text(
+                                    '${_foundBook[listviewindex]['title']}',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ),
                       ),
                       body: Padding(
                         padding: const EdgeInsets.only(
@@ -829,10 +902,14 @@ class _ChapterListState extends State<ChapterList> {
                                     getLanguageVersion();
                                     bibleVersion =
                                         // = listviewindex > 38
+                                        // dha_anywaa_bible\assets\holybooks\ANY\NT\MRK.json
                                         // ?
                                         version != 'AMH'
-                                            ? 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                            ? version == 'ANY'
+                                                ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
+                                                : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
                                             : '${_foundBook[listviewindex]['amharic']}';
+                                    print(bibleVersion);
                                     // : version != 'AMH'
                                     // ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
                                     // : '${_foundBook[listviewindex]['amharic']}';

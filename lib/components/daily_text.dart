@@ -188,304 +188,304 @@ class _DailyTextState extends State<DailyText>
                     ],
                   ),
                 ),
-                Center(
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Center(
-                      child: AnimatedBuilder(
-                        animation: _opacity,
-                        builder: (BuildContext context, child) {
-                          return Opacity(
-                            opacity: _opacity.value,
-                            child: _opacity.value < 0.6
-                                ? Container()
-                                : Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    //  ø     ö     ï    ë  ä
+                // Center(
+                //   child: SingleChildScrollView(
+                //     scrollDirection: Axis.horizontal,
+                //     child: Center(
+                //       child: AnimatedBuilder(
+                //         animation: _opacity,
+                //         builder: (BuildContext context, child) {
+                //           return Opacity(
+                //             opacity: _opacity.value,
+                //             child: _opacity.value < 0.6
+                //                 ? Container()
+                //                 : Row(
+                //                     crossAxisAlignment:
+                //                         CrossAxisAlignment.center,
+                //                     mainAxisAlignment:
+                //                         MainAxisAlignment.spaceBetween,
+                //                     //  ø     ö     ï    ë  ä
 
-                                    children: [
-                                      Card(
-                                        elevation: 3,
-                                        child: Container(
-                                          width: 160,
-                                          height: 100,
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(13)),
-                                            color: currentTheme ==
-                                                    Brightness.dark
-                                                ? Color.fromARGB(255, 1, 10, 34)
-                                                : Colors.white,
-                                          ),
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Row(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  // MainAxisAlignment.spaceAround,
-                                                  children: [
-                                                    Icon(
-                                                      Icons.waving_hand,
-                                                      color: Colors.amber,
-                                                      size: 15,
-                                                    ),
-                                                    SizedBox(
-                                                      width: 10,
-                                                    ),
-                                                    Text(
-                                                      _languages == 'AMH'
-                                                          ? 'የዛሬ ፀሎት'
-                                                          : _languages == 'ANY'
-                                                              ? 'Lam mar Dïcängï'
-                                                              : 'Today\'s prayer',
-                                                      style: TextStyle(
-                                                          fontSize: 14),
-                                                    )
-                                                  ]),
-                                              SizedBox(
-                                                height: 15,
-                                              ),
-                                              Container(
-                                                width: 90,
-                                                height: 40,
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(40)),
-                                                  border: Border.all(
-                                                    width: 1,
-                                                    color: currentTheme ==
-                                                            Brightness.light
-                                                        ? const Color.fromARGB(
-                                                            255, 1, 11, 36)
-                                                        : Color.fromARGB(
-                                                            255, 243, 179, 83),
-                                                  ),
-                                                ),
-                                                child: TextButton(
-                                                    onPressed: () {
-                                                      setState(() {
-                                                        Navigator.push(
-                                                          context,
-                                                          MaterialPageRoute(
-                                                              builder:
-                                                                  (context) =>
-                                                                      Pray()),
-                                                        );
-                                                      });
-                                                    },
-                                                    child: Text(
-                                                      _languages == 'AMH'
-                                                          ? 'ፀልይ'
-                                                          : _languages == 'ANY'
-                                                              ? 'Lämï'
-                                                              : 'Pray',
-                                                      style: TextStyle(
-                                                        fontSize: 16.5,
-                                                        color: currentTheme ==
-                                                                Brightness.light
-                                                            ? const Color
-                                                                .fromARGB(
-                                                                255, 1, 11, 36)
-                                                            : Color.fromARGB(
-                                                                255,
-                                                                243,
-                                                                179,
-                                                                83),
-                                                      ),
-                                                    )),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        width: 20,
-                                      ),
-                                      // Card(
-                                      //   elevation: 3,
-                                      //   child: Container(
-                                      //     width: 270,
-                                      //     height: 130,
-                                      //     decoration: BoxDecoration(
-                                      //       borderRadius: BorderRadius.all(
-                                      //           Radius.circular(10)),
-                                      //       color: currentTheme ==
-                                      //               Brightness.dark
-                                      //           ? Color.fromARGB(255, 1, 10, 34)
-                                      //           : Colors.white,
-                                      //     ),
-                                      //     child: Column(
-                                      //       mainAxisAlignment:
-                                      //           MainAxisAlignment.center,
-                                      //       children: [
-                                      //         Row(
-                                      //             crossAxisAlignment:
-                                      //                 CrossAxisAlignment.center,
-                                      //             mainAxisAlignment:
-                                      //                 MainAxisAlignment.center,
-                                      //             children: [
-                                      //               Icon(
-                                      //                 Icons.menu_book_rounded,
-                                      //                 color: Colors.amber,
-                                      //               ),
-                                      //               SizedBox(
-                                      //                 width: 10,
-                                      //               ),
-                                      //               Text(
-                                      //                 'Maa tier wëëlö wïï',
-                                      //                 style: TextStyle(
-                                      //                     fontSize: 18),
-                                      //               )
-                                      //             ]),
-                                      //         SizedBox(
-                                      //           height: 13,
-                                      //         ),
-                                      //         Container(
-                                      //           width: 120,
-                                      //           decoration: BoxDecoration(
-                                      //             borderRadius:
-                                      //                 BorderRadius.all(
-                                      //                     Radius.circular(40)),
-                                      //             border: Border.all(
-                                      //               width: 1,
-                                      //               color: currentTheme ==
-                                      //                       Brightness.light
-                                      //                   ? const Color.fromARGB(
-                                      //                       255, 1, 11, 36)
-                                      //                   : Color.fromARGB(
-                                      //                       255, 243, 179, 83),
-                                      //             ),
-                                      //           ),
-                                      //           child: TextButton(
-                                      //             onPressed: () {},
-                                      //             child: Text(
-                                      //               'Tägï',
-                                      //               style: TextStyle(
-                                      //                 color: currentTheme ==
-                                      //                         Brightness.light
-                                      //                     ? const Color
-                                      //                         .fromARGB(
-                                      //                         255, 1, 11, 36)
-                                      //                     : Color.fromARGB(255,
-                                      //                         243, 179, 83),
-                                      //               ),
-                                      //             ),
-                                      //           ),
-                                      //         )
-                                      //       ],
-                                      //     ),
-                                      //   ),
-                                      // ),
-                                      // SizedBox(
-                                      // width: 20,
-                                      // ),
-                                      Card(
-                                        elevation: 3,
-                                        child: Container(
-                                          width: 160,
-                                          height: 100,
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.all(
-                                                Radius.circular(13)),
-                                            color: currentTheme ==
-                                                    Brightness.dark
-                                                ? Color.fromARGB(255, 1, 10, 34)
-                                                : Colors.white,
-                                          ),
-                                          child: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Icon(
-                                                      Icons.share,
-                                                      color: Colors.amber,
-                                                      size: 18,
-                                                    ),
-                                                    SizedBox(
-                                                      width: 10,
-                                                    ),
-                                                    Text(
-                                                      _languages == 'AMH'
-                                                          ? 'የእግዚአብሔርን ቃል አጋራ'
-                                                          : _languages == 'ANY'
-                                                              ? 'Kwaac dwør jwøk'
-                                                              : 'Share God\'s word',
-                                                      style: TextStyle(
-                                                          fontSize: 13),
-                                                    )
-                                                  ]),
-                                              SizedBox(
-                                                height: 13,
-                                              ),
-                                              Container(
-                                                width: 90,
-                                                height: 40,
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.all(
-                                                          Radius.circular(40)),
-                                                  border: Border.all(
-                                                    width: 1,
-                                                    color: currentTheme ==
-                                                            Brightness.light
-                                                        ? const Color.fromARGB(
-                                                            255, 1, 11, 36)
-                                                        : Color.fromARGB(
-                                                            255, 243, 179, 83),
-                                                  ),
-                                                ),
-                                                child: TextButton(
-                                                    onPressed: () {
-                                                      Share.share(
-                                                          '$currentVerse \n $currentText');
-                                                    },
-                                                    child: Text(
-                                                      _languages == 'AMH'
-                                                          ? 'አጋራ'
-                                                          : _languages == 'ANY'
-                                                              ? 'Kwaayi'
-                                                              : 'Share',
-                                                      style: TextStyle(
-                                                        fontSize: 16.5,
-                                                        color: currentTheme ==
-                                                                Brightness.light
-                                                            ? const Color
-                                                                .fromARGB(
-                                                                255, 1, 11, 36)
-                                                            : Color.fromARGB(
-                                                                255,
-                                                                243,
-                                                                179,
-                                                                83),
-                                                      ),
-                                                    )),
-                                              )
-                                            ],
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
-                )
+                //                     children: [
+                //                       Card(
+                //                         elevation: 3,
+                //                         child: Container(
+                //                           width: 310,
+                //                           height: 170,
+                //                           decoration: BoxDecoration(
+                //                             borderRadius: BorderRadius.all(
+                //                                 Radius.circular(13)),
+                //                             color: currentTheme ==
+                //                                     Brightness.dark
+                //                                 ? Color.fromARGB(255, 1, 10, 34)
+                //                                 : Colors.white,
+                //                           ),
+                //                           child: Column(
+                //                             mainAxisAlignment:
+                //                                 MainAxisAlignment.center,
+                //                             children: [
+                //                               Row(
+                //                                   crossAxisAlignment:
+                //                                       CrossAxisAlignment.center,
+                //                                   mainAxisAlignment:
+                //                                       MainAxisAlignment.center,
+                //                                   // MainAxisAlignment.spaceAround,
+                //                                   children: [
+                //                                     Icon(
+                //                                       Icons.waving_hand,
+                //                                       color: Colors.amber,
+                //                                       size: 20,
+                //                                     ),
+                //                                     SizedBox(
+                //                                       width: 10,
+                //                                     ),
+                //                                     Text(
+                //                                       _languages == 'AMH'
+                //                                           ? 'የዛሬ ፀሎት'
+                //                                           : _languages == 'ANY'
+                //                                               ? 'Lam mar Dïcängï'
+                //                                               : 'Today\'s prayer',
+                //                                       style: TextStyle(
+                //                                           fontSize: 22),
+                //                                     )
+                //                                   ]),
+                //                               SizedBox(
+                //                                 height: 15,
+                //                               ),
+                //                               Container(
+                //                                 width: 120,
+                //                                 height: 50,
+                //                                 decoration: BoxDecoration(
+                //                                   borderRadius:
+                //                                       BorderRadius.all(
+                //                                           Radius.circular(40)),
+                //                                   border: Border.all(
+                //                                     width: 1,
+                //                                     color: currentTheme ==
+                //                                             Brightness.light
+                //                                         ? const Color.fromARGB(
+                //                                             255, 1, 11, 36)
+                //                                         : Color.fromARGB(
+                //                                             255, 243, 179, 83),
+                //                                   ),
+                //                                 ),
+                //                                 child: TextButton(
+                //                                     onPressed: () {
+                //                                       setState(() {
+                //                                         Navigator.push(
+                //                                           context,
+                //                                           MaterialPageRoute(
+                //                                               builder:
+                //                                                   (context) =>
+                //                                                       Pray()),
+                //                                         );
+                //                                       });
+                //                                     },
+                //                                     child: Text(
+                //                                       _languages == 'AMH'
+                //                                           ? 'ፀልይ'
+                //                                           : _languages == 'ANY'
+                //                                               ? 'Lämï'
+                //                                               : 'Pray',
+                //                                       style: TextStyle(
+                //                                         fontSize: 20.5,
+                //                                         color: currentTheme ==
+                //                                                 Brightness.light
+                //                                             ? const Color
+                //                                                 .fromARGB(
+                //                                                 255, 1, 11, 36)
+                //                                             : Color.fromARGB(
+                //                                                 255,
+                //                                                 243,
+                //                                                 179,
+                //                                                 83),
+                //                                       ),
+                //                                     )),
+                //                               )
+                //                             ],
+                //                           ),
+                //                         ),
+                //                       ),
+                //                       SizedBox(
+                //                         width: 20,
+                //                       ),
+                //                       // Card(
+                //                       //   elevation: 3,
+                //                       //   child: Container(
+                //                       //     width: 270,
+                //                       //     height: 130,
+                //                       //     decoration: BoxDecoration(
+                //                       //       borderRadius: BorderRadius.all(
+                //                       //           Radius.circular(10)),
+                //                       //       color: currentTheme ==
+                //                       //               Brightness.dark
+                //                       //           ? Color.fromARGB(255, 1, 10, 34)
+                //                       //           : Colors.white,
+                //                       //     ),
+                //                       //     child: Column(
+                //                       //       mainAxisAlignment:
+                //                       //           MainAxisAlignment.center,
+                //                       //       children: [
+                //                       //         Row(
+                //                       //             crossAxisAlignment:
+                //                       //                 CrossAxisAlignment.center,
+                //                       //             mainAxisAlignment:
+                //                       //                 MainAxisAlignment.center,
+                //                       //             children: [
+                //                       //               Icon(
+                //                       //                 Icons.menu_book_rounded,
+                //                       //                 color: Colors.amber,
+                //                       //               ),
+                //                       //               SizedBox(
+                //                       //                 width: 10,
+                //                       //               ),
+                //                       //               Text(
+                //                       //                 'Maa tier wëëlö wïï',
+                //                       //                 style: TextStyle(
+                //                       //                     fontSize: 18),
+                //                       //               )
+                //                       //             ]),
+                //                       //         SizedBox(
+                //                       //           height: 13,
+                //                       //         ),
+                //                       //         Container(
+                //                       //           width: 120,
+                //                       //           decoration: BoxDecoration(
+                //                       //             borderRadius:
+                //                       //                 BorderRadius.all(
+                //                       //                     Radius.circular(40)),
+                //                       //             border: Border.all(
+                //                       //               width: 1,
+                //                       //               color: currentTheme ==
+                //                       //                       Brightness.light
+                //                       //                   ? const Color.fromARGB(
+                //                       //                       255, 1, 11, 36)
+                //                       //                   : Color.fromARGB(
+                //                       //                       255, 243, 179, 83),
+                //                       //             ),
+                //                       //           ),
+                //                       //           child: TextButton(
+                //                       //             onPressed: () {},
+                //                       //             child: Text(
+                //                       //               'Tägï',
+                //                       //               style: TextStyle(
+                //                       //                 color: currentTheme ==
+                //                       //                         Brightness.light
+                //                       //                     ? const Color
+                //                       //                         .fromARGB(
+                //                       //                         255, 1, 11, 36)
+                //                       //                     : Color.fromARGB(255,
+                //                       //                         243, 179, 83),
+                //                       //               ),
+                //                       //             ),
+                //                       //           ),
+                //                       //         )
+                //                       //       ],
+                //                       //     ),
+                //                       //   ),
+                //                       // ),
+                //                       // SizedBox(
+                //                       // width: 20,
+                //                       // ),
+                //                       // Card(
+                //                       //   elevation: 3,
+                //                       //   child: Container(
+                //                       //     width: 160,
+                //                       //     height: 100,
+                //                       //     decoration: BoxDecoration(
+                //                       //       borderRadius: BorderRadius.all(
+                //                       //           Radius.circular(13)),
+                //                       //       color: currentTheme ==
+                //                       //               Brightness.dark
+                //                       //           ? Color.fromARGB(255, 1, 10, 34)
+                //                       //           : Colors.white,
+                //                       //     ),
+                //                       //     child: Column(
+                //                       //       mainAxisAlignment:
+                //                       //           MainAxisAlignment.center,
+                //                       //       children: [
+                //                       //         Row(
+                //                       //             mainAxisAlignment:
+                //                       //                 MainAxisAlignment.center,
+                //                       //             crossAxisAlignment:
+                //                       //                 CrossAxisAlignment.center,
+                //                       //             children: [
+                //                       //               Icon(
+                //                       //                 Icons.share,
+                //                       //                 color: Colors.amber,
+                //                       //                 size: 18,
+                //                       //               ),
+                //                       //               SizedBox(
+                //                       //                 width: 10,
+                //                       //               ),
+                //                       //               Text(
+                //                       //                 _languages == 'AMH'
+                //                       //                     ? 'የእግዚአብሔርን ቃል አጋራ'
+                //                       //                     : _languages == 'ANY'
+                //                       //                         ? 'Kwaac dwør jwøk'
+                //                       //                         : 'Share God\'s word',
+                //                       //                 style: TextStyle(
+                //                       //                     fontSize: 13),
+                //                       //               )
+                //                       //             ]),
+                //                       //         SizedBox(
+                //                       //           height: 13,
+                //                       //         ),
+                //                       //         Container(
+                //                       //           width: 90,
+                //                       //           height: 40,
+                //                       //           decoration: BoxDecoration(
+                //                       //             borderRadius:
+                //                       //                 BorderRadius.all(
+                //                       //                     Radius.circular(40)),
+                //                       //             border: Border.all(
+                //                       //               width: 1,
+                //                       //               color: currentTheme ==
+                //                       //                       Brightness.light
+                //                       //                   ? const Color.fromARGB(
+                //                       //                       255, 1, 11, 36)
+                //                       //                   : Color.fromARGB(
+                //                       //                       255, 243, 179, 83),
+                //                       //             ),
+                //                       //           ),
+                //                       //           child: TextButton(
+                //                       //               onPressed: () {
+                //                       //                 Share.share(
+                //                       //                     '$currentVerse \n $currentText');
+                //                       //               },
+                //                       //               child: Text(
+                //                       //                 _languages == 'AMH'
+                //                       //                     ? 'አጋራ'
+                //                       //                     : _languages == 'ANY'
+                //                       //                         ? 'Kwaayi'
+                //                       //                         : 'Share',
+                //                       //                 style: TextStyle(
+                //                       //                   fontSize: 16.5,
+                //                       //                   color: currentTheme ==
+                //                       //                           Brightness.light
+                //                       //                       ? const Color
+                //                       //                           .fromARGB(
+                //                       //                           255, 1, 11, 36)
+                //                       //                       : Color.fromARGB(
+                //                       //                           255,
+                //                       //                           243,
+                //                       //                           179,
+                //                       //                           83),
+                //                       //                 ),
+                //                       //               )),
+                //                       //         )
+                //                       //       ],
+                //                       //     ),
+                //                       //   ),
+                //                       // ),
+                //                     ],
+                //                   ),
+                //           );
+                //         },
+                //       ),
+                //     ),
+                //   ),
+                // )
               ],
             ),
           ),

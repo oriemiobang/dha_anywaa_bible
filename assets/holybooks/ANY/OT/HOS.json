@@ -1,0 +1,902 @@
+{
+    "textIntro": "Odheea beeye nyikuŋ Jwøk mo bëëdö yi buc nyec mar Icriel na en jï løø wï-piny yïth aŋuun cwiiri mana beet Icrielli ni poot na buc nyec. Yi wëëlö man, tiel moa en dhøk, ni beege Tielø 1-3, cäänö kaper Odheea ki jø paare mana tïmge na ŋïï kiper køp dwør Jwøk man wø caan Odheea jï jø poge. Wuuö Jwøk acäänö ko Odheea nee nyöömme ki dhaagø ma kääbi, ni tïïe na ŋïï kiper bëët jø Icriel na raac nyïm Jwøk. Køøre Wuuö Jwøk acäänö ko Odheea kiper nyeŋ moo cak nyeŋ nyïïe ki ge, ni beege nyeŋ mo nyootha gø ni Icriel di jäälö. Ni caani ya Wuuö Jwøki thuwø jïre ni mëëre ki cïïe manø ni bëëte raac enø, nee tïme na ŋïï mo nyootha mëër man wø bëët Wuuö Jwøki ni mëër ki jø Icriel këël na bëëtge ni bëëtge raac nyïm Jwøk. Tiel møga cäänö kaper luumma tuut Wuuö Jwøki ki jø Icriel. Ni luummögø caana gø ni jø Icriel ge doo bëëdö dëër Wuuö Jwøk ki yïth jammi bëët ki ri ŋäädhe, ni ö Wuuö Jwøki thuwø ni bëëde dïge. 'Ba Wuuö Jwøk ena bëëdö ni gwøga luumma tuut manøgø. 'Ba jø Icriel gena bëëdö ni ge raanynya luumma tuut manøgø cooth ki yïth nïne bëët. Geni, ge bëëdö ni ge ŋäätha teek mar jø leny moge ki teek mar wïth juurre møøk; ni wecge man göökge dëër Wuuö Jwøk kiper nee wï jur marge gwøk. Geni, gena tïmö ni ge lämö ki juu møøk, ni ge ŋäätha ge, ni ge cïpö ki caammi ki lääy mo thööth jïge na muuce. Yi wëëlö man cäänö kiper gootø mar Wuuö Jwøk mana goote ki jø buc nyec mar Icriel ki buc nyec mar Juuda, kiper mana raanyge luumma tuude ki geni. Kiper geni, geno bääyö, ni geno rømø ki man jääl geni. 'Ba këël na näk enøgønø, Wuuö Jwøk abëëdö ni poot mëër ki geni ki yïth jammi bëët moa tïïcge. Ni kööŋe ki man wëën geni nee ge cäŋ gwïëthö køør mano caarge wïthge noo døøge baŋ Wuuö Jwøk, kaa mana kööe, ni «Jiya 'duua baŋa, ni nyoodha mëër mara jïge ni yia met jaak, kiper wëër mara anø paanya bäätge.» (14:4) ",
+    "introTitle": "Luubö Mo Cäänö Kaper Wëël Odheea",
+    "chapterName": "Odheea",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "OT:HOS.1",
+            "name": "Odheea 1",
+            "text": [
+                {
+                    "text": "'Ba man beeye dwør Wuuö Jwøk mana ö bäät Odheea o Bëëri yïth nïra bëët Udhaya, ki Jötham, ki Eeyeth, ki Edhekaya ni gena nyeye mo Juuda, ni Jeröbäm o Jeyöac ena nyeya mar Icriel. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luum Cï Odheea Ko Obwöre Moe",
+                    "text": "'Ba kanya ö Wuuö Jwøki na täge ki cäänö ki ri Odheea, ena köö jï gø, ni «Ciï ni määnynyï riï ki dhaagø ma kääbi ni jïtï ko obwöre mo nywøl ka køør bëët käp, kiper jiy atïmö ni ge bëëdö ka bëët käp mo raac døc yi ŋöömö man, ni wecge aani, a na Wuuö Jwøk.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgø nø, Odheea acøø ni nywøm Gömër nyi Dibalëm, ni ö Gömërri ni jït yie ki dhaanhø ki gø, ni lwaare ki gø na dïcwøø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre Wuuö Jwøk aköö jï Odheea, ni «Cak nyeŋŋe ni Jedhriel, kiper ki kany mo cään dhi øt Jiyu raanynya raanynyø kiper remø mana køny piny päänya cwøl ni Jedhriel, ni ööa ni tïïa buc nyec mar dhi øt Icriel nee cuŋŋe.",
+                    "ID": "4",
+                    "comment":"edhriel tiere beeye ni Jwøk jøra köödhi, ni tiere kany beeye ni Jwøk jiye keethe keethø. \nGïna tïïc Jiyu yi päänya cwøl ni Jedhriel løny ki man joodi yi 2 Nyeya 10:1-11."
+                },
+                {
+                    "text": "'Ba noo tïme na dïcäŋeca, atheerø mar Icriel toora toorø yi goor Jedhriel.»",
+                    "ID": "5"
+                },
+                {
+                    "text": "Køøre Gömër yie acäŋ jïtö ki dhaanhø ni lwaare ki gø na nyakøø. Køøre Wuuö Jwøk aköö jï Odheea, ni «Cak nyeŋŋe ni Lö-ruama, kiper aani bäŋ bäth ec mo nyoodha nyoodhø jï dhi øt Icriel këët, ni ge ba wëënna këët.",
+                    "ID": "6",
+                    "comment":"Lö-ruama tiere beeye bäŋ bäth ec."
+                },
+                {
+                    "text": "'Ba aani, yia obäädha ki dhi øt Juuda, ni piema geni ki køør teek mara, a na Wuuö Jwøk, Jwøk marge, ni pïëm mara mano piema ge ki gø paa ka atheerø, wala ko opëëllö, wala leny, wala ko okwëënyi, wala ki jø wø këëdi ki bäät okwëënyi.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kanya ö Gömërri na ŋøl Löruama ki caak, yie acäŋ jïtö ki dhaanhø mør ni lwaare ki gø na dïcwøø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni kö Wuuö Jwøki, ni «Cak nyeŋŋe ni Lö-ammi, kiper u paa jiya, naa paa Jwøk maru.» ",
+                    "ID": "9",
+                    "comment":"Lö-ammi tiere beeye patha jiya."
+                },
+                {
+                    "title": "Luubö Mana Caan Ki Man Køny Jø Icriel",
+                    "text": "'Ba kwään jø Icriel poot tïmö ni caala akwöny deŋ naama dwøŋ ni wø ba løny ki røm wala ki kwaan; ni købi ki geni, ni «Uuna wäät Jwøa kwøw;» yi paac mana wara købi jïge yie, no «U patha jiya.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba nyïïkwaac Juuda ki nyïïkwaac Icriel rege odwalge na aciel, ni kwänyge dëëtge ki dïbwödhi aciel ma marge; ni putge ö maal ki yi ŋöömö mana path. 'Ba dïcäŋögø otïmö ni beeye cäŋ mo dwøŋ kiper pääny mana cwøl ni Jedhriel.",
+                    "ID": "11"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.2",
+            "name": "Odheea 2",
+            "text": [
+                {
+                    "text": "«Cwøllu nyïïmëëgu moa näk cwøw, ni ‹Jic Jwøk,› ni cwøllu nyïïmëëgu moa näk mään, ni ‹Jøøa nyooth bäth ec jïge.› ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luum Ajäla Mano Jääl Jø Icriel Ki Gø, Ki Køny Mano Cäŋ Tïïyö Kiperge",
+                    "text": "«Köömmu miiu, köömmu eni, kiper eni paa cïïa këët, naa patha cwøre këët thuwø. Beerra man wec gath-dëël mare man wø nëëni täärnyïme, ni daak bëët käp mare yïthakic thure.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba ni näk mo ba tïïe, eni wëëga wääth ki dëëre, ni put tïmö ni bëëdö ka dëëre ni caala dïcäŋa lwaarø ki gø. Eni tïïa tïïö ni caala paap mo otal, ni tïïa gø ni caala ŋöömö ma tëën, ni puta eni 'näk ki riew.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba aani thuwø bäŋ bäth ec mo nyoodha jï obwöre moe, kiper geno obwöre mo gena nyïï kääbi.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper miige bëëdö ni gatha dëëre, ni eni jayi ka jöö mo määnö. Kiper ena köö, na ‹A cäädhö køør omëërri 'moa, ni wø cïp cam jïra, ki pïï, ka abïï ma cuup, ka abïï ma lïïna, ki maaw, ki gïn maadha.›",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kiper manøgønø, øt jööre cïëga cïëgö ki koodhi; ni geera deŋŋe ki kiir nee øt jööre ba joode këët.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Eno rïïŋi køør omëërri moe ni ba mak ge; ni many omëërri moe ni ba joot ge. Køøre eno kööi, na ‹A døøa baŋ cwøra mana dïkwøŋ, kiper beerra bëëtö mara manece ki man ennø.›",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kiper kuue ki man näk mo bee aani ni wø mooc gø ki beel, ki køøŋø mo met, ki maaw, ni wø cïp gwet-bïrö ki warkey ni thööth jaak jïgø, jap wø kønyge dëëtge ki ge ki man jiiŋge jwøge man wø cwøl ni Baal.",
+                    "ID": "8"
+                },
+                {
+                    "text": "«Kiper manøgønø, beel 'moa wara warø baŋe ni 'käla ge kanyo ciekge, ni wara køøŋŋa na met ni 'käla gø dïcäŋo kee. Aani thuwø abïï cuup mara ka abïï lïïna mara, moa cïba jïre nee dëëre uume ki ge kiper wääth-dëël mare, wara warø baŋe ni 'käla ge.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba aani, lään wïc mare wëëga nëënne jï omëërri moe, ni bäŋ ŋat mo piema gø cera.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Aani thuwø ajwöm moe bëët mo wø wøøre ŋøla ŋølø, ni beege ajwöm moe mo wø wøøre ki yi cwiir, ki wödö mare man wø wøør päär mar dwääy ki gø, ki man wø wøør cääŋŋe mo jwöm, ka ajwöm moe møga bëët moa no ocïp piny nee wø wøør.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Jer omøki moe ki jer olämmi moe raanynya raanynyø, jer wø cääne kiperge, ni ‹Moi beege jammi moa maa ceŋ omëërri 'moa na cïpge jïra.› 'Ba geno tïïa na paap, ni puti ya lääc paapi cam ni thöörge ge.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba eno jääla kiper nïra beede ni lama jwø wø cwøl ni Baal, ni cïpö jïgø ko olämme; nïra beede ni wïïe owïl ki aani ni caatha køør omëërri moe, ni ïthe ee kïthö ki gwet-ïdhi, ni dëëre ee tïïö ni mïërö ki jap mïërö ma teeŋi. Luummögø caana aani, a na Wuuö Jwøk.",
+                    "ID": "13"
+                },
+                {
+                    "text": "«Kiper manøgønø, a cøøa kuna cäänna gø ki luup mo met, ni bwødha eni dïtëën ni cäänna gø ni met ec yaa nyoodhø jïre.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø pwöth omøki moe odwøga jïre kaace, ni tïïa goor Akör na dhi øtø mar ŋäädhe. Eno wär ki duut ni caala mana bëëde ni ena nyakøø, ki kanya ö eni na ö wøk ki yi ŋööm Ijep.",
+                    "ID": "15",
+                    "comment":"Akör ki dhi Ibaru tiere beeye gïn mo leth. Raŋ Jøcua 7:24"
+                },
+                {
+                    "text": "'Ba dïcäŋöca aano cwøle na ‹Acwørø›,  ni ba cwøl a këët ni ‹Kwääya›. Luummögø caana aani, a na Wuuö Jwøk.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Aani nyeŋ juuk wø cwøl ni Baal 'käla wøk dhee, nee nyeŋ juu moøge ba cøøri këët.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Dïcäŋöca a tudö ki luubö ki lääc paap, ki weny mo maal, ki gïï wø muuli ki yïth ŋøøm. Aani, atheerø, ko opëëllö, ki leny, raanynya raanynyø yi ŋöömö, ni wëëga jiya niine jaak ni bäŋ gïn lääŋge.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba ïïni, ï miia miiø jïra na bäre bäre; ka adïëri møn, ï miia miiø jïra ki ra adïëri mara, ki ŋøl ma kare, ki køør mëër mara ni wø ba jøøl, ki bäth ec mara.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Aani, ï miia miiø jïra ki ra adïëri, ni ö ïïni ni tïmï ni Wuuö Jwøk ŋäyï.",
+                    "ID": "20"
+                },
+                {
+                    "text": "«'Ba dïcäŋöca a na Wuuö Jwøk lam mar jiya ma jø Icriel oløøa. Maal otïïa nee køth jääŋŋe piny,",
+                    "ID": "21"
+                },
+                {
+                    "text": "ni ö pinynyi ni wëëk caammi tuuö, ni känne ki nyïëdi yi goor Jedhriel; ni beege beel ki kwøŋ ki mädhi.",
+                    "ID": "22"
+                },
+                {
+                    "text": "Jiya ma jø Icriel tietge okëëlla piny ni teek yi ŋöömö. Bäth ec mara onyoodha jï jøøa näk bäth ec kär nyoodhø jïge, ni kööa jï jøøa näk patha jiya, ni ‹Uuna jiy 'moa!› Ni köge jïra, ni ‹Ïïna Jwøk marwa!› »",
+                    "ID": "23"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.3",
+            "name": "Odheea 3",
+            "text": [
+                {
+                    "title": "Kanya Ö Odheea Na Duu Cïïe Baŋe ",
+                    "text": "Køøre Wuuö Jwøk aköö jïra, ni «Ciï ni cäŋï mëër marï nyoothø jï cïïï, këël na bëëde ni mëër ki cwøw møøk ni bëënna käp. Beerra man mëërï ki gø, kaawat mana tïïc Wuuö Jwøki ni bëëde ni mëër ki jø Icriel, këël na bëëtge ni ge lämö ki juu møøk, ni ge mëër ko omøki moa no omiiø na dhøgi na näk ocïbö no olämme.»",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kanyøgø nyaanøgø aputa wïïl wøk ki gwet-bïrö ma apaar kurbïïc mo røm ka rumi man wø cwøl ni cekel, ki beel mo wø cwøl ni gäbci mo røm ka rumi man wø cwøl ni kömer mo yie aciel ki thääŋö.",
+                    "ID": "2",
+                    "comment":"Gäbci ki dha Araba cwøl na agarbu \nKömer beeye rumi mo kanymør röömi ki yi baarmïïl"
+                },
+                {
+                    "text": "Køøre ena cäänna ni kööa, ni «Bëëdï ki aani nø ki nïne mo thööth, ni ba gathï dëërï, ni ba ciï baŋ dïcwøø mør këët ki man butï ki gø, ni ba butï ki aani thuwø.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kiper jø Icriel geno bëëdö ki kany mo bäär ni bäŋ nyeya ki kwäärö, wala olämme, wala kïte moa no ocwöth piny na gïï lam, wala ëëput mana näk gïr lam, wala juu møøk mo di lamø.",
+                    "ID": "4",
+                    "comment":"Ëëput beeye abïï man wø røc dïlämme ri tïïc mar Øt Jwøk."
+                },
+                {
+                    "text": "'Ba noo tïme na køør gïïögø, jø Icriel geno duui ni manyge Wuuö Jwøk, Jwøk marge, ni manyge nyeya marge ma nyikwaar Deebit. Geno duu baŋ Wuuö Jwøk ni dëëtge kwanynyi ki lwär kiper gwïëth mare mano en ya aŋuun nïne.",
+                    "ID": "5"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.4",
+            "name": "Odheea 4",
+            "text": [
+                {
+                    "title": "Luum Rääö Mar Jø Icriel ",
+                    "text": "Wui jø Icriel, cegu ïthu ki dwør Wuuö Jwøk, kiper Wuuö Jwøk jïre da løøk ki uuni, u ni bëëdö yi ŋöömö man en, ni luummaca bee en, ena köö, na «Atïmö ni bäŋ jø ŋäädhe, ni bäŋ mëër, ni bäŋ acaara ki man ŋäc Jwøk yi ŋöömö man.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba atïmö ni nuta acëënne, ki bëët tööt, ki 'näk jiy, ki bëët käw, ki bëët lugi. Jiy atïmö ni ge tïïya okiera, ni bëët remø ni øya piny cooth bäät rem møga.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kiper manøgønø, ŋöömö atal ni kïmme, ni ö jiyi moa bëëdö yie bëët ni öölge, ni rwöbe ka lääc paap ki wec maal bëët, ni ö reci moa en yi naama dwøŋ ni putge rwäänyö.",
+                    "ID": "3"
+                },
+                {
+                    "text": "«'Ba kär dee dhaanhø mo kïth bäät watge ki luubö, ni bäŋe ŋat mo jääl watge, kiper jø pou caala jiy mo wø pïëmö ki dïlämme.",
+                    "ID": "4"
+                },
+                {
+                    "text": "U bëëdö nou cwanynya tietu ki dïcäŋ ki wäär, ni ö nyïïkuk Jwøki ni cwanyge tietge ki uuni ciel. Kiper manøgønø, Icriel na caal miiu, raanynya raanynyø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Jiya araanynyi ki køør bäŋ kwänynyö. 'Ba kiper mana kweerru ki kwänynyö, u na dïlämme, aani thuwø, u kwiera kwierø ki man tïmu ni uuna dïlämme 'moa. Kiper mana wïl wïthu ki ciik 'moa, a na Jwøk maru, aani thuwø wïïa wïl ki nyïïkwaayu.",
+                    "ID": "6"
+                },
+                {
+                    "text": "«'Ba kanya nyaac dïlämme beeye kanya kaathge tïï raay dëëra. Aani, ajiem marge wiila wiilø na lään wïc.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Geni, ge bëëdö ni ge cama rïŋ mo lääy mo wø cïp no olämme mo raay mo jiya, ni yïthge met ki man bëët jiyi ni ge tïïö ki raay.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba gïno tägi bee en: Dïlämme jääla jäälö na aciel ki jiy kiper uutjïëthe moge, ni cunna geni ki køør tïïe moge.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Geno cämö, 'ba ge ba jäŋ; geno bëëdö ki bëët käp, 'ba ge ba nyaay, kiper wïthge awïl ki Wuuö Jwøk.",
+                    "ID": "10"
+                },
+                {
+                    "text": "«Tiet luup atïmö ni ba kwanyge kiper käp, ki maath kwøk nyïïomøki moa no oruu ki moa nyärö.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Jiy atïmö ni pëënynya dhi jaath mana no otieŋø na kït gïn wø lam, ni ö athøra ni løk pïëc marge. Gena tïïc jwïëc käpi nee gaage wøk, ni putge bëëtö ni ge tïïya tïï käp, ni tïm karge ni bäär ki Jwøk marge.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Geni, olämme moge wø cïpge cïbö wïth kïte, ni waaŋge olämme moge mo wø waaŋ bäre bäät thuuri ki tiet jenni moa no onigïït piny, kiper yïthge met ki tïïp moge. Kiper manøgønø, nyïïu ge bëëdö ki bëët käp, ni ö määr nyïïu ni bëëtge ni ge tïïya tïï luk.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Aani, nyïïu ba jääla kanyo bëëtge ki bëët käp, ni määr nyïïu ba jääla kanyo bëëtge ni ge tïïya tïï luk, kiper cwøw ki dëëtge kiree ge cäädhi na aciel ki kääpe, ni ge cïpö ko olämme ki kääpe mo wø bëëdö ni ge tïïya tïï käp kwör lam. Kiper manøgønø, jiy mo tiet luup ba kwanyge, ge ränynyö.",
+                    "ID": "14"
+                },
+                {
+                    "text": "«Wui, ï na Icriel, këël na bëëdï niï tïïya tïï käp, Juuda kär näk cäŋa bääyö. Ni ba cou Gëlgela,  wala maru ci maal Bëëth-Awëën, nou kööŋ, ni ‹Ŋëët Jwøa kwøw!›",
+                    "ID": "15"
+                },
+                {
+                    "text": "Jø Icriel wïnni kaamar nyirøøa mo wïnni. ?Aŋø, ennø, løny jï Wuuö Jwøk ki man kïth geni kar kwaath kaamar nyidiel mo ena yi pwöl kwaath mo yie laac?",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ipariem dëëre anø cïbe ki man lam kït gïï wø lam; wiiu eni kare!",
+                    "ID": "17"
+                },
+                {
+                    "text": "Këël kany wø bëëtge ni meerø oniwaany wïthge, ge poot bëëdö ni ge tïïö ki tïï käp jaak; ni dïbwöthe moge bëëdö ni mëër ki jïëth lään wïc marge.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba apwøyaweerø öö ni jwiec geni na bäre, ni ö olämme moge ni tïme ni duua lään wïc jïge.»",
+                    "ID": "19"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.5",
+            "name": "Odheea 5",
+            "text": [
+                {
+                    "title": "Luum Ajäla Mano Jääl Jø Icriel Ki Gø ",
+                    "text": "Wuuö Jwøk aköö, ni «U na dïlämme, wïnynyu gïn! U na jø Icriel, cegu ïthu! U na jø paan dwøŋ, cegu ïthu! Ajäla man bee maru, kiper u caala abëëbe bäät jø Micpa, ni bëëdu kaamar ajääpi mo opeerø bäät Kïn Tabör.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Ni jøøa reyø tïï 'näk ege kaadhø, 'ba geni bëët, ge jääla jäälö.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Aani bëët Ipariem ŋääa bäre, ni jø Icriel rege ba løny ki man kange gø ki aani; ennø, u na jø Ipariem, røgu anø løøu køør käp, ni ö Icrielli ni raany dëëre.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Gena män tïïe moge na reyø ki man duuge baŋ Jwøk marge. 'Ba kiper mana näk yïth cwïnyge päŋ ki jwïëc käp, gena put tïmö ni bäŋ kwänynyö man ŋäcge Wuuö Jwøk ki gø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba atöör mar jø Icriel adøø rege; jø Icriel ki jø Ipariem ge pädhö yïth raay moge, ni ö jø Juuda thuwø ni putge pädhö ki geni ciel.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba këël ge doo aay ni ge käädö ki dïëk ki dhäk, ni ge manynya Wuuö Jwøk, eni ba jootge, kiper ree ee nø paany dïge.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Gena tïmö ni ge tïïö ki riek waŋ dëër Wuuö Jwøk, ni ge nyöödö ko obwöre ma nyïïkwaalle. 'Ba geni ki pwöth moge geno ränynyi ki køør wödö man wø wøørge päär mar dwääy ki gø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«Koothu tuuŋ bäät jø Giba, ni koothu tuuŋ bäät jø Reema! Köögu nee wïny jø Bëëth-Awëën! Wui, jø tuuŋ Benjamen, tïŋŋu leny!",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kanyo tïme na dïcäŋ ajäla, Ipariem ränynyö. Aani, a caana gïn ma adïëri yïthakic wïth tuŋi mo Icriel.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Dïbwöthe mo Juuda atïmö kaamar jiy mo kïn keew ege daaø; 'ba wëër mara kønynya bäätge kaamar man wø pänh jwïïö.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Jø Ipariem adwøk piny ni ränyge ki køør ajäla, kiper mana bëëtge ni ge lama gïï mo oballe jaak.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Aana tïmö kaamar alweela ki baŋ jø Ipariem, ni tïma kaamar atwøda mo odheeth dëët jø Juuda.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba kanya ö jø Ipariemmi ki jø Juuda na jootge gø ni gïï mo leth opïï dëëtge, jø Ipariem nyïmge aløøge baŋ Aciria, ni jääkge baŋe, eni na nyeya mana dwøŋ kiper nee jïtge ki køny. 'Ba ba løny jï nyeny Aciria ki man køny ge ki gïïa leth na en bäätge. ",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper aani, a tïmö kaamar cïgïï ŋuu ki jï jø Ipariem, ni tïma thuwø kaamar ŋuu mo teek ki jï jø Juuda. Geni, ge peta petø ni thenh thenh ni puta aay; ge käla kälö ni bäŋ ŋat piem ge cera.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre a aay ni døøa kar bëëtö mara, këël kanyo ŋäcge gïïa reyø na tïïcge, ni duuge ni manyge täärnyïma. Kanyo enge yïth gïï mo leth, aano manyge døc.",
+                    "ID": "15"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.6",
+            "name": "Odheea 6",
+            "text": [
+                {
+                    "title": "Luum Løk Cwïny Mar Jø Icriel ",
+                    "text": "«Ööu, nøø døø baŋ Wuuö Jwøk, kiper eni, øøna tøye møn na thäŋi, 'ba ø cäŋe ka kønynyø. Eni, dëëtø amooe møn ki ŋwiili, 'ba ŋwiili 'moø cäŋe ka bäyö.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Eni dëëtø odwøk kare køør nïne ariiø, ni tïŋ ø maal ri dää nïne, nee ø bëëdø ni ø kwøw nyïme.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kiper manøgønø, beerra man ŋääø Wuuö Jwøk; beerra man reedhø ri man ŋääø eni. Öö mare caala man wø kwäär øwi, ni ö baŋø kaamar køth, ni caala køth mar dhi køth ni wø jwøc piny.» ",
+                    "ID": "3"
+                },
+                {
+                    "title": "Luum Bäŋ Cïp Cwïny Piny Mar Jwøk Kiper Jø Icriel ki Jø Tuuŋ Juuda",
+                    "text": "Wuuö Jwøk aköö, «?Wui, jø tuuŋ Ipariem, agïnaŋø noo tïïa ki uuni nø? Wui, jø tuuŋ Juuda, agïnaŋø noo tïïa ki uuni nø? Kiper mëër maru caala pøøl mo amöölla, ni caala thööy ni wø laar rwäänyö.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper manøgønø, uuna nø ŋøra na thäŋi ki køør ajäla mana caana ki dhøk nyïïkuk Jwøk, ni nø nääa uuni ki luubö mana cur dhaa; ni ö ajäla mara ni put nidaaŋ bäätu kaamar agaackøth.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper aani, yia wø met ki mëër mo ba jøøl ni kaala olämi man wø cïp, ni yia wø met ki man ŋäc aani, ni kaala olämi man wø waaŋ bäre.",
+                    "ID": "6"
+                },
+                {
+                    "text": "«'Ba kaawat mana tïïc kanya cwøl na Adam, geni luumma tuuda ki kwäcge akwierge, ni ge bëëdö ni nyeŋge ege døøc mo reegø ki aani, a na Jwøk.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Gelät bee pääny mar jø wø tïïö ki gïï mo reyø, ni dïëre ogääbö ki kwör tiel mo ree dhäämmö ki rem.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kaawat man wø møør dïtwïëte piny ni ge kurö ki dhaanhø, lwaa dïlämme atïmö na dïnäk jiy øtjöör Cekam; ka adïëri møn, gena tïïö ki gïï mo reyø døc.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Aani, gïn mo raac døc mo ec thäŋŋö ki gø ajooda dï jø Icriel. Jø Ipariem gena tïmö ni ge tïïya käp kaace, ni ö jø Icrielli ni putge nipäät.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba u na jø Juuda thuwø, da dïcäŋ mo mar ajäla mo yaa cïp piny kiperu. Køør manøgønø, aano ööi ni dwøga gum dëël mar jiya kare.",
+                    "ID": "11"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.7",
+            "name": "Odheea 7",
+            "text": [
+                {
+                    "text": "«'Ba kany wø manynya gø nee jø Icriel kønya, ni beege jø tuuŋ Ipariem, ki pääny marge ma Cameria, raay moge ki tïïe moge moa reyø puta nëënne.  Kiper ge bëëdö ka bëët tööt, ni kuuwe uudi tøcge tøyø, ni dïtwïëte bëëdö nyeŋ jïëthe ni ge twëëdö.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba ba caarge ki cwïnyge ki man näk mo japa reyø na tïïcge bëët wïïa para parø ki ge. Ge bëëdö ni geno ciel raayi moge dïër; ni raay moge ena nyïma naa raŋŋa geni.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Yi nyeya tïïcge tïïö ni met ki japa reyø moge, ni tïïcge yïth kwääri ni met ki tööt marge.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba gena jø luuy ge bëët, mo cwïnyge lïëth kaamar buur maa dääpe man wø äp ŋat wø budö, ni wø wec ni wärri jaak këël kanyo kïth dääpe yie.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba kanya tïme na cäŋ ajwöma mar nyeya marø, kwääri gena meer ki køøŋø døc ni bøølge, ni ö eni ni makge ceŋge na aciel ki jø abuua.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper cwïnyge lëënhnhö kaamar këënnö, kany wø manyge tïïö ki gïn mo raac; gootø marge bëëdö ni duuŋ ki wäär bäre, 'ba noo tïme na amöölla puta liel kaamar maac.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ge bëët, ge bëëdö ni cwïnyge lïëth kaamar këënnö; dïbwöthe moge athöörge ki 'näk, ni ö nyeye moge bëët ni bëëtge ni geno päänhnhö no othøw. Bäŋgø dëëtge mo ocwøl aani.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«Jø tuuŋ Ipariem dëëtge ajääpge ki wïth juurre, ni putge tïmö kaamar møø mo deel ka løøk aciel ni kär løø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Teek marge alwør jøøa pathi ni bäŋ gïn mo ŋäcge, këël mana tuc wïthge ki lwaar ni poot kucge.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba këël na bëët jø Icrielli na atöör marge okännö ka ajäla bäätge, ge kär jïëy ki man duuge baŋa, a na Wuuö Jwøk, Jwøk marge; naa kärge manynyø, këël na täk japøge bëët.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba jø tuuŋ Ipariem gena tïmö kaamar akuuru ma acaara mare thiinh, mo ba cädö na wøp. Geni jø Ijep cwølge cwølø ennø, ni ge cäŋa døø baŋ jø Aciria.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba kanyo aacge yie man, ajääp mara peera peerø bäätge, ni tuuda ge piny kaamar wec maal; ge jääla jäälö ki køør japa reyø na tïïcge.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Otïmö ni leth jïge, kiper mana paanyge rege buuta! Ränynyö oen bäätge kiper mana gëëmge ki aani! Gena manynya ki man piema geni, 'ba gena tïmö ni ge cara tööt kipera.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ge ba jwöŋi dëëra ki jwøk mo käla yïth cwïnyge kany wø gööge ko oduuru kwör niine moge. Kany wø lämge kiper caammi ki kwøk nyïïomøki, dëëtge ŋarge ŋarø, ni wecge aani.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba bee aani na pwöny geni, na mooc geni ki teek bäädi, 'ba ge poot tudö ki luup mo reyø kipera.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Gena kweer ki man duuge baŋa, a na Jwøa dwøŋ, ni tïm bëëtö marge no okööm kaamar atheerø mo ree täpö. 'Ba dïbwöthe moge geno 'näk ko opëëllö,  kiper cäänö marge man wø cäänge ni ge koorrø. 'Ba gïnögø oput duunnö ka abuua bäätge dï ŋööm Ijep.»",
+                    "ID": "16"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.8",
+            "name": "Odheea 8",
+            "text": [
+                {
+                    "title": "Luum Ajäla Mano Jääl Jø Icriel Ki Gø Kiper Mana Lämge Ki Juu Mo Patha Adïëri ",
+                    "text": "'Ba Wuuö Jwøk aköö, ni «Jek riï ki man koothï tuuŋ! Nyimän aöö kaamar coor nee tïïe ki gïn mo raac dëër ŋöömö mara, a na Wuuö Jwøk, kiper jø Icriel, luumma tuuda ki kwäcge akwierge, ni gëëmge ki ciik 'moa.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Jø Icriel ge wø jwöŋö dëëra ni köge, ‹Wui, ï na Jwøwa, ï ŋäcwa!›",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba jø Icriel, gena kweer ki gïna beer; 'ba køørge oŋwiec nyïïmänni.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Gena röönyö ki nyeye naa kärge pëënynyö, ni röönyge ki kwääri ni bäŋ gïn mo ŋääa kipere. Gena tïïö ki kït gïï wø lam kiper dëëtge, ni tïïcge ka gwet-bïrö ki warkie moge, 'ba geno put ränynyö ki køør japøgø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Wui, jø Cameria, kït gïn wø lam na näk otieŋø na nyirøøa yaa kwierø. Wëër mara liel bäät jiy kaamar maac. ?Aŋø, a këël yi wäne nø noo bëët jiyi ni dëëtge ba tïïcge ni waany?",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper japøgø tïïya jø Icrielli! Ni kït gïno no otïïö kaamar nyirøøa enø patha Jwøk; ena gïn mo tieŋa dhaanhe ma rëëmmö jaak. Ka adïëri møn, eni di tøyø ni put petø na thäŋi.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Jø Icriel apïïdhö ni tïme kede ge piitha jamø, ni ö gïïa kacge ni tïme kede apwøyaweerø. Beel moa näk cuŋŋö yi pwödhö atïmö na adibøøye, ni bäŋe nyeŋ mo ege joodø. 'Ba këël møøk doo jïtö, jiy mo path puta öö ni thöörge gø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«Ennø, jø Icriel anø cam, ni ge ena dï wïth juurre møøk, ni tïmge kaamar gïrpiny mo bäŋ gïn kønye këët.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kiper gena nø ci baŋ jø Aciria ni caala arëën mar paap mo thääyö keere jaak; ni ö jø Ipariem ni nø gathge mëër marge wøk.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba këël na bëëtge ni dëëtge ege gath wøk dï wïth juurre, aani, ge cäŋa ka cooŋ kanya ciel, ni ö geni ni putge gïï mo leth jwør cer nyeya mana teek.",
+                    "ID": "10"
+                },
+                {
+                    "text": "«'Ba këël na ö jø Ipariemmi na tïïcge gïï wø cïp olämme bääte mo wëën raay ni thööth, gïïögø atïmö na jap meetge bääyö marge ki ge.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Këël na gööra ciik mo pwöc 'moa mo thööth kiperge, ciik moøgø aneenge kede luup mo path mo bäŋ tietge.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Geni, gena cïpö ko olämme jïra ni camge rïŋ moge, 'ba a na Wuuö Jwøk, yia kär mïnnö ko olämme moøgø. Ennø, a tïmö naa lääŋŋa gïïa bacge, ni puta ge jääl kiper raay moge. Geni, ge døøa Ijep.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper jø Icriel wïthge awïl ki aani na cwääc geni, ni tïme ni ge geeya mïëri mo døøŋŋø,  ni ö jø Juuda ni tïïge ki päänye mo teek mo thööth. 'Ba aani maac ojääŋŋa bäät päänye moge, ni ö maaci ni put uudi moa no ogeerø ni teek thöör.»",
+                    "ID": "14"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.9",
+            "name": "Odheea 9",
+            "text": [
+                {
+                    "title": "Ajäla Mano Jääl Jø Icriel Ki Gø ",
+                    "text": "Wui jø Icriel, kär yïthu mïnnö; käru kanynyø kaamar wïth juurre møga. Kiper dëëtu agathu ki käp ni weyu Jwøk maru. Yïthu met ki jap käp mo wø magu yïth laare bëët.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba kwör wø dïn beel yïthge ki kwör wø biic nyïïjenni yïthge, u ba jïti ki jäŋ yïthge këët. Kwøk omøki tïmö ni ba jootu caar.",
+                    "ID": "2"
+                },
+                {
+                    "text": "U ba bëëdö yi ŋööm Wuuö Jwøk këët; u døøa Ijep, u na jø tuuŋ Ipariem, ni cämu ki caammi mo ba waany ya Aciria.",
+                    "ID": "3"
+                },
+                {
+                    "text": "U ba kuny piny këët ki muuce mo kwøŋ jï Wuuö Jwøk; olämme mou yi Jwøk ba tïïe ni met. Caammi mo wø cïpu no olämme caala mo wø cïp bäät thøø; ni jiy bëët moo cam ge tïmö ni ba waany. 'Ba caammi mou otïïyu kiperu keeru, ni ba kïthu ge yi Øt Wuuö Jwøk.",
+                    "ID": "4"
+                },
+                {
+                    "text": "?Agïnaŋø noo tïïyu yïth cääŋŋe moa no ocïp piny ni wø wøør jï Wuuö Jwøk?",
+                    "ID": "5"
+                },
+                {
+                    "text": "Uuni, u këël doo päär wøk nou ŋwieya ränynyö, u mak jø Ijepi maa ni gwaarge uuni, ni ö jø Mempici ni putge uuni 'näk ni koonyge uuni. Japa perge leth moa näk tïïc ka gwel-bïrö, bäätge tuy ko oŋöön; ni ö yïth oduŋkaare mou ni tucge ki koodhi.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Cäŋ ajäla oløny ni öö, cäŋo cool kwör yie dëët jiy kare acäännö; beerra man ŋäyu gïnögø, u na jø Icriel! U köö, ni «Nyikuŋ Jwøk man wïïe bäŋgø; ni ŋati ni dëëre da Jwïëc Jwøk en bøøl;» kiper raay mou atïmö ni thööth døc, ni ö männi maru ni kadhe.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Jwøk aana jääŋŋe na nyikuŋ Jwøk man koor uuni, u na jø tuuŋ Ipariem. 'Ba ennø, uutjïëthe 'moa bëët you cïŋŋö ka abëëbe kede man wø cek weny. Këël yi Øt Jwøk kiree, jiy atïmö ni män ki aani.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Uuna døny yïth raay døc, ni caala mana tïïc yi Giba; 'ba Jwøk wïïe opare ki rääö maru, ni jääl uuni kiper raay mou.",
+                    "ID": "9",
+                    "comment":"Raay moa tïïc Giba luumme di joodø yi wëël Pïëmme tiel 19 — 21."
+                },
+                {
+                    "text": "Wuuö Jwøk aköö, ni «Kanya kwøŋa jø Icriel joot, caala man wø joot nyïïomøki dïtëën; kanya jooda kwäcge, caala man wø joot nyo olaam mo okwøŋ ŋweelø. 'Ba kanya öge baŋ jwø wø cwøl ni Baal-Pëëgör, ni cïpge dëëtge køør gïn mo wïc laay ki gø, gena put tïmö ni ge määnö kaamar gïna mëërge ki gø.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba ge na jø tuuŋ Ipariem,  ajiem marge omääti kaamar wenyø. Ge ba nyöödö këët, ni bäŋ ŋat mo yie jïti ki dhaanhø këët, ni bäŋ jäc këët!",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba ge këël doo jïtö ko obwöre, ge poot nääa nääö, këël mano tïme ni bäŋgø mo dööŋ. 'Ba otïmö ni leth kiperge kanyo wiia geni!»",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba jø tuuŋ Ipariem ajooda ni ge bëëdö ni tietge okëët piny yi ŋöömö mo beer kaamar jø Tayar. 'Ba ennø, obwöre moge bwöthge wøk kuna nääi.",
+                    "ID": "13"
+                },
+                {
+                    "text": "?Wui Wuuö Jwøk, agïnaŋø noo ŋølï bäätge? Tïïc geni ni jiy bwönna wøk yïthge, ni wëëgï thurge talø.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba Wuuö Jwøk aköö, ni «Tïï gïï mo reyø atäkge Gëlgela; ni puta männö ki geni kaace! 'Ba kiper rääö mar japa tïïcge, ge riema wøk yi ŋöömö mara, ni ba mëëya ki geni këët; kwääri moge bëët gena jø ageem.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Jø tuuŋ Ipariem ge caala jaath mo lweedi moe otal. Ge ba jïti këët ko obwöre. 'Ba ge këël doo jïtö ko obwöre, obwöre moge na perge leth jïge nääa nääö.»",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba geni, ge kwier Jwøki mara kwierø, kiper gena kweer ki man cekge ïthge jï gø. 'Ba geno put bëëtö ni ge thääyö yïthakic wïth juurre.",
+                    "ID": "17"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.10",
+            "name": "Odheea 10",
+            "text": [
+                {
+                    "title": "Luum Raay Mar Jø Icriel Ki Mäk Mano Mak Ge Ki Tøŋ ",
+                    "text": "Jø Icriel atïmö kaamar jaath omøk mo oløth, ni jïte ki nyïëdi mo thööth. 'Ba kany wø tïm jammi moge ni thööth beeye kany wø tïïge ki gïï wø cïp olämme bäätge mo thööth; ni kany wø bëëny ŋöömö marge beeye kany wø cööthge piny ki kïte mo thööth mo wø lam.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Cwïnyge bëëdö ni tïïya cwøk. 'Ba ennø, gïno duu raay moge jootge joodø. Wuuö Jwøk, gïï wø cïp olämme moge bäätge tøye tøyø, ni raany kïte moge moa näk ege cwöth piny na gïï lam.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba ka adïëri møn geno köö, ni «Waani jïwa bäŋ nyeya, kiper Wuuö Jwøk kärwa lwäärö. 'Ba wa këël doo bëëdö ni jïwa da nyeya, ?agïnaŋø noo duu nyeya dëëtwa?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Geni, ge cäänö ki luup mo oballe jaak, ni tutge ki luup, ni kööŋge bäätge ki kööŋ mo bäŋ tiere; kiper manøgønø, bëët bäŋ adïëri marge wø tuula wøk kaamar luum mo ree da cïm mo tuy yi pwödhö mo opuurö.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Jø Cameria lwäyö kiper gïno tägi dëër gïna no otïïö na nyirøøa mar Bëëth-Awëën. Ka adïëri møn, jiye kïmmö kipere, ni ö dïlämme mo kït gïï wø lam ni gööge ko oduuru bääte kiper mano lwør ajiem mare baŋge noo kïthi paac mør.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Gïnögø ki dëëre jø Aciria aay ki gø ni käärge käärö na muuy jï nyenyge na dwøŋ. Ni ö jø tuuŋ Ipariem, ni beege jø Icriel, ni putge nipäät, ni put wïthge lääö ki køør kït gïnögø ni wø lamge.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Cameria ki nyeya mare ŋula wøk,  ni putge tïmö kaamar duul jaath mo thäärö bäät pïï.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kwör lam moa en bäät thuuri mo Awën, na näk bee kwör wø tïï jø Icrielli yïthge ki raay, di raanynyø. Koodhi ko otwel tuy yïthge ni uumge gïï wø cïp olämme moge bäätge. Køøre nø, ge köö jï kïte, ni «Rïëpu wa!» Ni köge jï thuuri, ni «Buŋŋu wa!»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Wuuö Jwøk aköö, ni «Jø Icriel, ki mana täge yi Giba, ge bëëdö ni ge temma raay, ni putge cääth nyïmge ki tïïc manøgø. ?Aŋø, bäŋ leny mo okëëlö ki jøøa tem raay yi Giba na bëëde?",
+                    "ID": "9"
+                },
+                {
+                    "text": "Kanyo manynya gø jaak, ge jääla jäälö; wïth juurre cooŋa cooŋø ki man tïïge ki gïn mo raac dëëtge, ni jääla ge kiper raay moge na thööth.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ipariem caala nyirøøa mo opwönynyö mo yie met ki dïn beel. 'Ba ŋute na mïërö okïtha ki gïr puur ni pura ki gø. Ni ö Juuda ni pure, ni Jeekap tøga pøl.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Piithu bëënynyö kiper dëëtu, ni kayu nyïëdi mo mëër mana näk ba jøøl, ni cäŋu pwöth mou puurru na akamme, kiper beeye kare ennø ki man many Wuuö Jwøk, këël kanyo ööe noo tïïc bëënynyö nee pädhe bäätu kaamar køth.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba uuna bëëdö nou piitha gïï mo reyø, ni kayu bäŋ ŋøl luup ma kare, ni cammu nyïëdi mo tööt. Kiper uuna bëëdö nou ŋäätha teek maru keeru, ki jø leny mou na thööth.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kiper manøgønø, okiera mar leny tägö dëët jø pou, ni ö kwör leny mou moa teek ni raanynyi, kaawat mana ö Calmen na raany Bëëth-Arbel ri leny, kanya ö mëëe na nyadhi na aciel ko obwöre moge.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Wui, ï na Bëthël, teeŋ gïnögø tägö dëërï, kiper raay moï atïmö ni thööth døc. Kanyo tïme na kur øw mar dïcäŋeca, nyeya mar Icriel wïïe puta dïdö na bäre bäre.",
+                    "ID": "15"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.11",
+            "name": "Odheea 11",
+            "text": [
+                {
+                    "title": "Luum Mëër Mar Wuuö Jwøk Ki Jø Icriel ",
+                    "text": "«Aani, kanya poot jø Icrielli na wï jur mo thiinh, a mëër ki geni, ni cwöla geni wøk ki Ijep ni caala wääda.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba kanya cwøla ge naa manynya geni døc, aputge tïïc ni beeye man wecge aani døc. Geni, ge poot cïpö ko olämme jï juu mo wø cøøri ni Baal, ni ge wääŋö ki gïï wø jïcge ŋwääi ni met jï kït gïï wø lam.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba beeye aani na pwöny geni ki wääth, ge na jø Ipariem, ni beege jø Icriel, ni maaŋŋa ge ki ceŋŋa naa thaaya geni; 'ba kucge ni bee aani na køny geni.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Gena käära ni ge yaa twöö ki mëër; ni tïma jïge ni beeye ŋata käl tëëra peek wøk göökge,  tëër wø caal jaath man wø rïï ŋut dhieŋ ri puur; ni caama geni ni dëëra yaa dwøk piny.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba kiper mana kweerge ki man luuge nyïmge baŋa, ge døøa yi laŋ kaawat mana bëëtge yi ŋööm Ijep, ni tïmge ni ge ena tier nyeny Aciria.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba leny nakwaar yïth päänye moge, ni ö dïdëëdi mo odhuule mo dhøk kiir marge ni nigenyaŋŋa piny, ni tïm aŋuun jammi bëët moa caarge ni bäŋgø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Gena reeth ri man løøge ŋäthge wøk ki aani, 'ba ge këël doo jwöŋö dëëra, a na Jwøa Dwøŋ ni en Maal, ge ba kønya.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«?Wui jø tuuŋ Ipariem, olønye nidïï ki man cïba uuni ceŋ jø møøk? ?Wui u na jø Icriel, olønye nidïï ki man wiia uuni nou aayu? ?Aŋø, løny ki man raanynya uuni kaamar jø Adama ki jø Dheböym? Cwïnya akweer ki man tïïa gïnögø, ni ö bäth eci mara ni jääny wøk ki mëër.",
+                    "ID": "8"
+                },
+                {
+                    "text": "U ba jääla këët ki wëër mara ni wø liel kaamar maac. Wïthu ba dïïra këët, u na jø tuuŋ Ipariem. Kiper aana Jwøk, naa patha dhaanhø, ni bee aani na Jwøa en kur keere na en dïïu. A ba ö baŋu këët ki wëër.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba uuno cäädhi køøra, a na Wuuö Jwøk, ni mära kaamar ŋuu. 'Ba kanyo mära, jiya oput öö ni dëëtge kwanynyi ki kur pänh-cäŋ.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Geno ööi ki Ijep kaamar weny, ni öge ki ya Aciria kaamar akuyi; ni ge ööi ni dëëtge kwanynyi. Køøre geno wëëga pïïn piny yïth mïëri moge. Luummögø caana aani, a na Wuuö Jwøk. ",
+                    "ID": "11"
+                },
+                {
+                    "title": "Luum Raay Mo Jø Icriel",
+                    "text": "«Jø tuuŋ Ipariem deŋŋa acielge ki tööt, ni ö jø dhi øt Icrielli ni cielge deŋŋa ki cwøk. 'Ba jø tuuŋ Juuda thuwø wïthge poot känni ki man jïëcge aani, a na Wuuö Jwøk, ni bee aani na Jwøa en kur keere na näk mare adïëri.»",
+                    "ID": "12"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.12",
+            "name": "Odheea 12",
+            "text": [
+                {
+                    "text": "Jø tuuŋ Ipariem ge ŋwieya køør jamø, ni ge rïïŋö cooth køør jam wø ööi ki kur tuul-cäŋ; ni tööt ki tïïc gïï mo reyø ege kaadhø. Ni geno tudö thuwø ki luubö ki jø Aciria, ni ge jwëëga Ijep ki mädhi mo wø cam.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Wuuö Jwøk ena bäät man lööe ki jø Juuda, eni nyïïkwaac Jeekap di jäälö ki køør uutjïëthe moge, ni cool kwör dëëtge ki køør tïïe moge.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Geni kwarge ma Jeekap kanya en ec, opuny tier coki amaae; 'ba kanya nywøli na døøŋŋe, ena ŋäbö ki Wuuö Jwøk.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Ena ŋäbö ki nyïïatwiel maal ni bööt gø, ni kwac gø nee met ec nyooth jïre. 'Ba Wuuö Jwøk ajoode Bëthël, ni beeye kaace thuwø na cään Wuuö Jwøki yie ki øøni.",
+                    "ID": "4"
+                },
+                {
+                    "text": "ni beeye Wuuö Jwøk, eni na wïth jammi bëët, na näk nyeŋŋe beeye Wuuö Jwøk.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper manøgønø, duu baŋ Jwøk maru; ni bëëdu nou tïïya mëër ki ŋøl luup na adïëri, nou koora Jwøk maru cooth.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ŋat gath man wø rumö ki gïr røm mo patha kare, yie met ki møt jiy.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Jø tuuŋ Ipariem ge töödö ni ge köö, ni «Waana jiy mo okwär; waana jïtö ki jammi kiper dëëtwa. 'Ba jammi bëët moa jootwa ki køør öölö marwa, bäŋ gïn mo nyoothge bäätwa ni waana jø raay.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Wuuö Jwøk aköö, ni «Aana Wuuö Jwøk, Jwøk maru, na käl uuni wøk ki Ijep; u tïïa tïïö nou cäŋu bëëtö yïth oduŋkaare, kaawat mana wara wøørru ajwöm mou.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Aani nyïïkuk Jwøk acäänna, ni nyuunhnha geni ki luup mo thööth mo wø nyooth ki yi wïc, ni cääna ki rege ki luup mo keda leere.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba pääny Gelät yie da raay; ka adïëri møn, jiy moe atïmö ni bäŋ karge. Ki yi Gëlgela dhäk moa näk rwädhe di cïbö no olämme. 'Ba gïï wø cïp olämme moge bäätge otïmö kaamar kïte mo ocooŋ yi pwödhö.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kwarø ma Jeekap apäär wøk ni ci yi ŋööm jø Aram. 'Ba eni na Icriel nee nyöömme ki dhaagø, ena tïïc ni kwaaya dïëk na kar gwel moa dee køølø.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba jiy moa öö ki ree, ni beege jø Icriel, gena käl Wuuö Jwøki wøk ki Ijep ki ri nyikuŋ Jwøk. Gena gwøk Wuuö Jwøki ki ri nyikuŋ Jwøk.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba jø tuuŋ Ipariem, ni poot na jø Icriel, Kwäärö Wuuö Jwøk atïïcge nee goote ki geni døc. Kiper manøgønø, kwör rem jiy moa kønyge piny odwøk Kwäärö Wuuö Jwøki bäätge; ni ö ajøøŋ mana tïïcge ni dwøgi wïthge.",
+                    "ID": "14"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.13",
+            "name": "Odheea 13",
+            "text": [
+                {
+                    "title": "Luum Wëër Mar Wuuö Jwøk Ki Jø Icriel ",
+                    "text": "'Ba kanya wara cään jø dhi øt Ipariem, jiy dëëtge puta tïmö ni kwanynyi; ni ge bëëdö no owøørø dï Icriel. 'Ba gena bääyö ki køør mana lamge jwøa cwøl ni Baal, ni ö thøø bäätge.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba ennø, jø dhi øt Ipariem raay atïmö ni meetge bäätge; geni, ge tïïö ki kït gïï wø lam kiper dëëtge, ni tïïcge ka gwel-bïrö, ni tïïya rëëmmö ki jöör riek waŋ. Ni ö luubö man ni caani kiperge na ennø nø, ni «Geni, ge jëëtö ki dhaanhø man cïp olämme, ni nuumge kït gïï wø lam moøgø na no otïïö ni caala nyïïrøøe.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kiper manøgønø, ge caala rwöc mar amöölla, ni ge caala thööy ni wø laar rwäänyö, ni ge caala lethø ni wø laar jamø køøl kar dïn beel,  ni ge caala jïrö ni wø duny wøk ki dha awëërnyeŋ.",
+                    "ID": "3"
+                },
+                {
+                    "text": "«'Ba bee aani na Wuuö Jwøk, na bëëdö na Jwøk maru, ki mana täge ki mana enu yi ŋööm Ijep. 'Ba uuni, u doo bëëdö ni bäŋ Jwøk mør mo ŋäyu këët, ni näk mo paa aani keera, kiper bäŋ pïëmi mør këët, 'ba bee aani keera.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Aana bëëdö nou yaa gwøø kanya enu dï paap, yi ŋöömma no otal.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kanya caama uuni, uuna jäŋ. 'Ba kanya jäŋŋu, cwïnynyu ajïtö ka atöör; køøre nø wïthu aput wïlö ki aani.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba ennø, aani, a tïmö kaamar ŋuu jïïu; ni tïma kaamar kwac mo omøør piny thääŋ jöö.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Aani, a päära bäätu kaamar cwieny mo nyïïe okälö, ni puta u cöötö ki kööthu. U cama camø ni puta u thöör, kaawat man wø tïïc ŋuuwi ma maath, ni puta u cöötö kaawat man wø tïïc cwienynyi.",
+                    "ID": "8"
+                },
+                {
+                    "text": "«Wui, jø Icriel, man bee ränynyö maru, kiper uuna tïmö nou gëëmö ki aani, a na kunyi maru.",
+                    "ID": "9"
+                },
+                {
+                    "text": "?Age nyeya maru ennø, mo løny jïre ki man piem uuni? ?Age dïbwöthe mou moa en yïth päänye mou bëët, na cäänu ki geni ni kööu, ni ‹Wa röönynyi ki nyeya ki kwääri›?",
+                    "ID": "10"
+                },
+                {
+                    "text": "Aana cïpö jïïu ki nyeya ni aano wëër, ni lwøra gø ki køør wëër mara.",
+                    "ID": "11"
+                },
+                {
+                    "text": "«Gïïa reyø na bac dhi øt Ipariem anø göör piny, ni ö wëëlö mana gööri yie ni nø kani kar kän.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Rääm mo leth mo caala man wø lwaarø ki nyilaal atägö dëër Ipariem. 'Ba eni caala nyilaal mo wïïe ba leer. Kiper kanya pïïc kar lwaar mare man lwaarø ki gø, wïïe käre nyuuth wøk.",
+                    "ID": "13"
+                },
+                {
+                    "text": "?Aŋø, a na Wuuö Jwøk, jø dhi øt Ipariem ge daa wïïla wøk cer teek thøø? ?Aŋø, ge daa käl wøk ki yi thøø? ?Wui, ï na thøø, age teek aranya marï? ?Wui, ï na thøø, age teek gïna leth ni wø tïïyï? Aani, cwïnya ba cïba piny këët.",
+                    "ID": "14"
+                },
+                {
+                    "text": "«'Ba jø dhi øt Ipariem këël doo bëëdö ni jammi bëët päŋ jïge dï nyïïmëëkge, jamø man wø ööi ki kur tuul-cäŋ jääŋŋa jääŋŋö bäätge, a na Wuuö Jwøk, ni kwönne ki dïtëën; ni ö jøør moge ni putge niŋul, ni ö aguule moge ni putge talø. Ni ö gïïa perge leth na en kwör kän moge ni puti twier bëët.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Jø Cameria ajäla marge døøa wïthge, kiper gena gëëmö ki aani, a na Jwøk marge. Geni, ge di nääö ko opëëllö. Obwöre moge moa therø di gøyø ki røk kïte ni petge, ni ö määrge moa näk yïthge da jiy ni riet yïthge.»",
+                    "ID": "16"
+                }
+            ]
+        },
+        {
+            "ID": "OT:HOS.14",
+            "name": "Odheea 14",
+            "text": [
+                {
+                    "title": "Luum Gwïëth Mano Tïïc Wuuö Jwøki Kiper Jø Icriel Ki Køør Mano Løkge Cwïnyge ",
+                    "text": "Wui, u na jø Icriel, duu baŋ Wuuö Jwøk, Jwøk maru, kiper uuna wëëk raayi mou pädhö. ",
+                    "ID": "1"
+                },
+                {
+                    "text": "Duu baŋ Wuuö Jwøk, ni kööu jïre, ni «Wëën raay mowa bëët, ni jïëyï waani ki met ec marï, nee wa cïpwa ki pwøc no olämme.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Nyeny Aciria wa ba kønye, wa ba eth bäät okwëëc leny këët; ni jammi moa tïïcwa ki ceŋwa ba cwølwa këët ni ‹Jwøk marwa,› kiper beeye ïïni ni wø nyooth bäth ec marï jï kïïe.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Wuuö Jwøk aköö, ni «Jiya 'duua baŋa, ni nyoodha mëër mara jïge ni yia met jaak, kiper wëër mara anø paanya bäätge.",
+                    "ID": "4"
+                },
+                {
+                    "text": "A tïmö naa caala thööy ki jï jø Icriel, ni ö jø Icrielli ni løthge ni ŋøøkge kaamar apiitø, ni këët lweetge piny kaamar jer lur Libaanø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni ö bäädi moge moa therø ni løthge ki bäädi møøk, ni tïm mïërö marge ni caala jer wø nyïïge wel na maaw, ni ö ŋwäänyge ni tïme ni met kaamar jer lur Libaanø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba jiy moo bëëdö tïpö marge, ge cäŋa løthø kaamar beel, ni tïmge kaamar jer omøki mo thiiw; ni ö wïny nyeŋ marge ni tïme kaamar kwøk nyïïomøki mo Libaanø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "?Wui jø Ipariem, agïnaŋø mør këët nø ni poot manynyu baŋ juuga reyø? Kiper beeye aani noo løk pïëc mou, noo gwøk uuni. Aani, a caala jaath mo bëëdö ni marr mo bøøge moe ba øc piny, ni bee aani noo jïtu ree ki nyïëdi.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni näk da ŋat mo wïïe leer, beerra man kwany tiet jammi moi; ni näk da ŋat mo tiet luup ŋääe, beerra man ŋäc ge, kiper jïëthe mo Wuuö Jwøk thïïŋ, ni jø wø marge beer wø cäädhö ki yïthge, 'ba jø wø tïïc raay ge pädhö yïthge.",
+                    "ID": "9"
+                }
+            ]
+        }
+    ]
+}

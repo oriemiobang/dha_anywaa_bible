@@ -1,0 +1,557 @@
+{
+    "textIntro": "Wëëlö man cwøl no Obeec Dudi, ni beeye duut mana pere letha eni mo cäänö kaper nywöm mana näk yie da mëër mana näk adïëri. Dhaagø-thiinh ge ki cwøre dëëtge pakge pagø ki luup mo käla yïth cwïnyge na adïëri, ni ge nyootha mëër marge ki dëëtge, ni ŋati man nø lääŋŋa wati ni per wati leth jïre døc, ni bäŋ dhaanhø mør mo manynye. 'Ba kiper nee nywöm marge gwøkge ki man put thur kare na adïëri, dhaagø-thiinh nyïïakuue møøk aköömme, ni kööe, ni «Kär mëër tuuŋŋu nee ö maal këël kanyo pïïc kare.» Wëëlö man ki kwör møøk di cwølø ni «Duut Cølöman,» ni tiere løny ki man tïme ni gööra Cølömanni wala göör kaper Cølöman (1:1). Kiper nyeŋ Cølöman ogöörö yie ki kwöre abïriiø. Acaara mar wëëlö man løny ki man tïme ni päära mëër man wø en yïthakic Jwøk ki jiye, ki mëër mar Krictø ka acooŋ Jwøk. (Odheea 2:19-20) ",
+    "introTitle": "Luubö Mo Cäänö Kaper Wëël Obeec Dudi",
+    "chapterName": "Obeec Dudi",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "OT:SNG.1",
+            "name": "Obeec Dudi 1",
+            "text": [
+                {
+                    "text": "Duut man beeye obeec dudi mo Cølöman.  ",
+                    "ID": "1",
+                    "comment":"Duut man løny ki man tïme ni gööra Cølömanni wala göör kaper Cøloman."
+                },
+                {
+                    "title": "Nyakøø Paaga Omëëye",
+                    "text": "Beerra man ööï ni nuumï dhaa ki yi nuum dhøk marï, kiper mëër marï cïpö ki met ec mo kaala køøŋ nyïïomøki.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Maar riia mana näk iï wïïrö, ŋwäänynye ec døøye mo met, ni wïny nyeŋ marï caala maaw mo ŋwäänynye met mo oøc piny ni muulö. Kiper manøgønø, nyïïakuue mëër ki ïïni.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Nyïï aani buutï, nøø putø aay ennø na aciel! Beerra man ö nyeya mara ni kïth aani yi øtø mare. Wa kanynyø kiperï ni yïthwa omïnnö; mëër marï pwøcwa pwøø ni kaala køøŋ nyïïomøki. Wui, mëër mar nyïïakuue ki ïïni kee kare møn!",
+                    "ID": "4"
+                },
+                {
+                    "text": "Wui, u na nyïïakuk Jerucalem, aani, aana dhaanhø maa cøl, 'ba kïta mïërö, naa cøl kaamar oduŋkaare mo jø Këdar, naa mïërö kaamar abïïk gëëŋŋe mo øt Cølöman.",
+                    "ID": "5"
+                },
+                {
+                    "text": "A kär neetu ni nyeŋŋu you këël dëëra kiper cøl mara; kiper aani, dëëra cuula cäŋŋi. Nyïïmera moa näk cwøw gena gootø ki aani, ni tïïcge aani nee pwöth jer omøki koora; 'ba aani pwöth jer omøki mara kära koorø. ",
+                    "ID": "6",
+                    "comment":"Pwöth jer omøki manøgø wäŋŋa dëëre."
+                },
+                {
+                    "text": "Wui, ï na mëëra ki ïïni, caanï jïra, ?A kaa ŋø ni wø kwaayï dïëk moï yie? ?Na kaa ŋø ni wø wëëgï dïëk moï jwöm yie ki dhöör? Caanï jïra, naa ba tïma kaamar dhaagø mo wïïe ee loobø kaamar kääbi, mo cäädhö yïthakic dïëk mo nyïïawäädi moï. ",
+                    "ID": "7"
+                },
+                {
+                    "title": "Dïcwøø Paaga Omëëye",
+                    "text": "Wui, ï na dhaagø mo mïërö døc dï mään, ni näk mo kar kwaath kuyï, løp køør tiet dïëk, ni wëëgï nyïï atëëe moï caam deŋ oduŋkaare mo dïkwääc dïëk.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba ki baŋa, ï no omëëya, ï caala okweeny ma maath mo ena dï okwëëc leny ma thwönhi mo Peerø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Täärnyïmï nëëni ni mïërö ki jap mïërö moa näk iï twöö, ni ö cwaagï ni bëëde ni mïërö ki tiik jëëthi moa en yie.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba waani, wa tïïö ki jap mïërö møøk jïrï mo tïïc ka warkey ki gwel-bïrö. ",
+                    "ID": "11"
+                },
+                {
+                    "title": "Nyakøø Paaga Omëëye",
+                    "text": "'Ba kanya bëët nyeya mara ni ena kar cam mare, maar riia mara na näk ŋwäänynye met aput kadhø ki ŋwääö døc.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Omëëya bëëdö jïra kaamar dwøø mo ŋwäänynye met mo okwøø yo opïr, ni wø but yïthakic thura.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Omëëya nëëni jïra kaamar jaath mo oŋøøk mo ŋwääö ni met yi pwöth jer omøki mar paana cwøl ni Ayn-Gadi. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Dïcwøø Paaga Omëëye",
+                    "text": "Omëëya, a teeŋ mïërö mo nyïëdi ni mïërï ki gø! Wui, a teeŋ mïëya ŋø ni en jïrï en! Nyeŋŋï nëëni ni mïërö kaamar akuuru. ",
+                    "ID": "15"
+                },
+                {
+                    "title": "Nyakøø Paaga Omëëye",
+                    "text": "Omëëya, a teeŋ mïërö mo nyïëdi ni mïërï ki gø en! Wui, ec mïnnö ki ï døc! Pëëm marø otïmö ni beeye luum mo pulli.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni ö jera perge leth ni tïmge ni beege cööthe mo øtø marø, ni tïm cuge mo øtø marø na teeŋ jera perge leth møga.",
+                    "ID": "17"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.2",
+            "name": "Obeec Dudi 2",
+            "text": [
+                {
+                    "text": "'Ba aani a caala jaath jaak mo oŋøøk ni mïërö yi ŋööm Carön, naa caala apiitø mar gool. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Dïcwøø Paaga Omëëye",
+                    "text": "Omëëya nëënö dï nyïïakuue kaamar apiitø mo oŋøøk ni mïërö yïthakic koodhi. ",
+                    "ID": "2"
+                },
+                {
+                    "title": "Nyakøø Paaga Omëëye",
+                    "text": "Omëëya nëënö dï obwöc cwøw kaamar jaath mo bääte oninøn ki nyïëdi yïthakic jenni mo paap. Aani yia met ki man pïïa piny tïpö mare, ni kany wø cama nyïëdi moe, put dhaa ka jwør ni met.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Eni aana kïth yi øtø mare kiper atïya mana näk ee jiiŋŋø kipera, ni gïna näk ee tïŋ maal bääta kaamar bëëra, beeye mëër mare ki aani.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Caam aani ki cam mo dëëra nathïk ki gø. Wëëk dëëra tëënnö ki nyïïjaadho cama, kiper dëëra bëëdö no oööl mëërri.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Beerra man ö cer caame ni thäänha ki gø, ni ö cer cwïïe ni gääm aani ki gø. ",
+                    "ID": "6"
+                },
+                {
+                    "text": "Wui, u na nyïïakuk Jerucalem, a cäänna uuni, nou kööŋŋu ŋëët aŋeri ki purre mo wø en yi pwöla, nee mëër ba tuuŋŋu nee ö maal këël kanyo pïïc kare.",
+                    "ID": "7",
+                    "comment":"Ki yi kööŋŋö mar jø Icriel, løny ki man tïme ni ge kööŋŋa ra aŋeri ki purre."
+                },
+                {
+                    "text": "Cegu ïthu! Man beeye dwør omëëya ni wïnyi en. Raŋŋu, ena rïŋŋö ki bäät kïte, ni ööi ni pärö ki yïthakic thuuri ni ööa baŋa.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Omëëya caala aŋer ki thwønh purra mo teek. Raŋŋu, eni cuŋŋö deŋ øtø marwa ni eni rääŋö ki dha awëërnyeŋ ki yïthakic rïwe.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Omëëya acäänö ki aani ni kööe, «Ö maal nø, omëëya, ni ööï baŋa, ni bee ï omëër mara na mïërö.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Raŋï, cwiir anø pöödhö, ni ö køthi ni cuŋŋe.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Jenni anø ŋøøk yi ŋööm pøø, ni ö caa man jwöŋ wenynyi yie ni ööe. Dööt akuyi aløny ni wïnyö yi ŋöömö marø.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Olämmi anø ŋweel ki nyïëdi, ni ö jer omøki moa no oŋøøk ni nø ŋwänyge ni met. Ö maal nø, omëëya, ni ööï baŋa, ni bee ï omëër mara na mïërö.» ",
+                    "ID": "13"
+                },
+                {
+                    "title": "Dïcwøø Paaga Omëëye",
+                    "text": "Wui, omëëya, ï ni caal akuuru mo ena yïth aleye ki yïth kïte, mo ree ee kanø kany mo diiny deŋ kïdi en, beerra man nyoothï täärnyïmï jïra, ni tïïyï dwørï nee wïnynya, kiper dwørï met ni täärnyïmï mïërö.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Magu othööe jïwa, ni beege nyïï othööe moa therø ni wø raany jer omøki, ni beege jer omøki mowa na näk oŋøøk. ",
+                    "ID": "15"
+                },
+                {
+                    "title": "Nyakøø Paaga Omëëye",
+                    "text": "Omëëya beeye mara, ni aana mare; eni dïëk moe wø caame yïth apiite.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Wui, ï no omëër mara, beerra man luuï riï baŋa ni bëëdï ki aani, këël kanyo ruu øwi noo pööth muudhö mar wäär. Beerra man tïmï kaamar aŋer ki nyi purra mo teek mo ena bäät kïte mo gwalli.",
+                    "ID": "17"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.3",
+            "name": "Obeec Dudi 3",
+            "text": [
+                {
+                    "text": "'Ba kanya ena kar niine mara, wäär bäre athööra naa cädö naa manynya ŋata mëëra ki gø ki cwïnya; aana bëëdö naa manynya gø, 'ba eni kära joodø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba ennø, a ööa maal naa cøøa nyeŋ jïëthe mo pääny, ka agääk jïëthe. Aani, a cøøa kuna manynya ŋata mëëra ki gø ki cwïnya. 'Ba kanya nø cøøa ni manynya gø, eni kära joodø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba jø wø kurö ni ge wïdö dï pääny, aana jootge; ni puta ge pëënynyö ni kööa, ni «?Ŋata mëëra ki gø ki cwïnya ajootu?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kanya pöödha ki buutge mo thiinh, ŋata mëëra ki gø ki cwïnya aputa joot, ni puta gø mak ni mäna gø ki wääth, ni kïtha gø po mera, yi øtø mare, eni na nywøl aani.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Wui! u na nyïïakuk Jerucalem, a cäänna uuni, nou kööŋŋu ŋëët aŋeri ki purre mo wø en yi pwöla, nee mëër ba tuuŋŋu nee ö maal këël kanyo pïïc kare. ",
+                    "ID": "5",
+                    "comment":"Ki yi kööŋŋö mar jø Icriel, løny ki man tïme ni ge kööŋŋa ra aŋeri ki purre."
+                },
+                {
+                    "text": "Wui! ?Man aŋøøni ni ööi ki dï paap, ni ree wenyø kaamar jïrö en, ni ŋwäänynye met kaamar teeŋ jer wø jïcge ŋwääi ni met ni wø jääp dïgäthe?",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ka adïëri møn, beeye pëëm man wø käär wälu ki gø mar Cølöman, no okoor jø lenynyi moa teek ma pïërabïciel røk jø leny moa teek mo Icriel.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ni ge bëët ceŋge do opëëlle, ni geno kwänynyö døc ki leny; no opëëlle moge ege twöö ŋäthge, ni rege ege jiiŋŋø kiper gïn mo leth mo tägö ki wäär.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Pëëm mana tïïc nyeya ma Cølömanni kiper dëëre, tïïe ka jaath mo käla yi lur Libaanø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Ni tïïc tiet abïla mar pëëm manøgø ki gwel-bïrö, ni tïïc kany wø jääŋ røk ki gø ki warkey, ni kïth kany wø pï yie ka abïï ma dïmuur, ni jammi moa tïïc nyïïakuk Jerucalemmi ki mëër marge opeeth dïëre.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Wui! u na nyïïakuk Jerucalem, ööu wøk, ni neennu nyeya ma Cølöman ni wïïe okïthö ka aduda en, ni beeye adun nywöm mana kïth menni wïïe dïcäŋa nyöömme, ni beeye dïcäŋa näk cäŋ met ec mare.",
+                    "ID": "11"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.4",
+            "name": "Obeec Dudi 4",
+            "text": [
+                {
+                    "title": "Dïcwøø Paaga Cïïe ",
+                    "text": "Omëëya, a teeŋ mïëyaŋø ni mïërï ki gø en! Wui, a teeŋ mïëyaŋø ni baŋï en! Nyeŋŋï nëëni ni mïërö kaamar akuuru tier abïï mana näk iï loop wïïï; ni jïëyï nëëni kaamar pïïth atëëe mo kööla piny ki bäät Kïn Gelät.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Lagï nëëni ni tar kaamar pïïth rööm mo jïëcge onyaarø mo ge ööi ki baŋ lwøk, ni gena cïp-jwøk, ni bäŋgø rege mo bëëdö na eni keere.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Buny dhiï ree atwøde ni kwaar kaamar waarø mo ocwääö na baap; ni dhiï nëëni ni mïërö. Pïtï nëënö tier abïï mana näk iï loop wïïï kaamar nya adikwala mo opääŋŋö na thäŋi ariiø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Ŋutï bäär kaamar øt koor mar Deebit, na näk ogeerø ni mïërö; ni kööt leny ma kuma olïër yie, ni beege kööde bëët mo jø leny moa teek.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Thurï moø na ariiø yøø mïërö ni caala nyïï purre ariiø ma cïp-jwøk, mo ge cämö yïthakic apiite.",
+                    "ID": "5"
+                },
+                {
+                    "text": "A bëëdö bäät kïnna näk bääte da dwøk, ni beeye bäät thuura näk bääte da jer wø ŋwääi ni met, këël kanyo ruu øwi, noo pööth muudhö mar wäär.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Wui, omëëya, dëërï mïërö bäre, ni bäŋ kany mo jøøŋŋi riï.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Wui, ï na dhaagø-thiinh mara, cøø piny na aciel ki bäät Kïn Libaanø. Wui, cøø piny na aciel ki bäät Kïn Libaanø. Løøyø piny ki bäät Kïn Amana, ni løøyø piny ki bäät Kïn Canër ki Armön, ni beege kwör bëëte mo ŋuuwe, na kïte mo wø bëët kwäänynye bäätge.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Wui coka, ni bee ï dhaagø-thiinh mara,  cwïnya atïmö ni pärö døc kiperï! Cwïnya atïmö ni pärö døc møn kiperï ki yi räŋŋö aciel mana raŋï jïra ki nyeŋŋï, ki tiin-jeth aciel mana jooda cwaagï.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Wui coka, ni bee ï dhaagø-thiinh mara, a teeŋ met ec mo nyïëdi na jooda ki køør mëër marï! Wui, mëër marï ko opöödhö ki met ni kaala køøŋ nyïïomøki, ni ö maar wïïr marï ni ŋwääe ni met ni kaala teeŋ gïï wø ŋwääi ni met møga bëët.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Wui, ï na dhaagø-thiinh mara, buny dhiï ŋweeth ni caala maar kïc; ni beege caak ki maar kïc ni en tier leebï. Abïïe moï ŋwääö ni met døc ni kaala ŋwääny jer wø ŋwääi ni met yi Lur Libaanø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Wui coka, ni bee ï dhaagø-thiinh mara, ï caala ajïniina mo dhee odëëdö, ni beeye ajïniina mo kal mare othørø ki kïte, niï caala iith mo dhee odëëdö.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ïïna ajïniina mo yie da jer adïkwäle mo oŋweel ki nyïëdi mo beyø, ki teeŋ jer wø ŋwääi ni met ni wø tïïc na mäth wïïr;",
+                    "ID": "13"
+                },
+                {
+                    "text": "ki teeŋ jer wø tïïc na mäth wïïr ki booya ma abäga, ki jer wø ŋwääi ni met ni wø kïth yi kadø, ki jaath man wø tïïc na maar wïïr, ki teeŋ jenni møøk mo ŋwääö ni met, ki jer dwøk, ki teeŋ jenni møøk thuwø mo perge leth mo ŋwääö ni met.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Ïïni, ï caala jøøro mo ena ya ajïniina, niï caala iith mo pïïe met, niï bëëdö kaamar waŋ naam mo kwönni ka yi Kïn Libaanø. ",
+                    "ID": "15"
+                },
+                {
+                    "title": "Luubö Mana Caan Dhaagø-Thiinh",
+                    "text": "Wui, ï na jam wø ööi ki jï løø wïpiny, ö maal! Wui, ï na jam wø ööi ki jï løø tier-piny, ööï! Ööu ni kwötu dëër ajïniina mara, nee ŋwäänynye na näk met nee kwöt kany mo bäär. Beerra man ö omëërri mara ni døny ya ajïniina mare, ni cam nyïïjenni na beyø na en yie.",
+                    "ID": "16"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.5",
+            "name": "Obeec Dudi 5",
+            "text": [
+                {
+                    "title": "Luubö Mana Caan Dïcwøø Jï Cïïe",
+                    "text": "Wui! coka, ni bee ï dhaagøthiinh mara, aana ö ya ajïniina mara, dwøk 'moa acooŋa, ki jenni 'moa mo wø ŋwääi ni met; aani, ogat kïc ki maar kïc mara acama, ni maadha køøŋ nyïïomøki ki caak 'moa. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luubö Mana Caan Nyïïawäädi Jï Dïcwøø Ki Cïïe",
+                    "text": "'Ba ni aano butö, cwïnya abëëdö ni nëënö. 'Ba dwøl aputa wïnynyö, no omëër mara dööŋö dhi øtø, ni kööe, «Wui coka, nyimëëc cwïnya, na bëëtö mare beer, na mwöl kaamar akuuru, jap dhi øtø jïra. Aani wïïa atïmö ni thec ki thööy, ni tïm jïëc wïïa ni thec ki thööc wäär.» ",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba aløøa, ni «Aani, abïï mara yaa nø gööny wøk; ?aŋø, cäŋa ka dwøk dëëra? Aani, tieta yaa nø lwøk; ?aŋø, ge cäŋa ka wëëk cullö?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba omëër mara cere aput rwää baŋa ki dhi øtø kanya ŋaam, ni put cwïnya tägö ki pärö kipere.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre aana päny maal nee dhi øtø jaba jï omëër mara, ni ceŋŋa onijwöc ki maar riia, ni lweeta thec ki gø, ni put tøøn bäät dïdëët.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kanya jaba dhi øtø kiper omëër mara, ree ee nø daak ni tøør këët; ni puta bëëtö ni cwïnya pärö ki køør mana cääne ki aani dïkwøŋ. Ni manynya gø døc, ni kära eni joodø, ni cwøla gø, 'ba eni kär duunnö jïra.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba jø koor mo wø kurö ni ge wïdö dï pääny, ni beege jø wø koor kiir, aana jootge ni putge aani pwöt, ni moocge dëëra ki ŋwiili, ni kälge aleeŋŋa mara ni aacge ki gø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Wui, nyïïakuk Jerucalem, a cäänna uuni, ni näk mo omëër mara jootu joodø, wär caannu jïre ni kööu, no «Omëër marï dëëre onøkiil ki mëër.» ",
+                    "ID": "8"
+                },
+                {
+                    "title": "Pïëc Moa Pëëny Nyïïakuk Jerucalemmi",
+                    "text": "Wui, ï na dhaaŋŋa mïërö døc dï mään, ?aŋø, omëër marï okadhø ka ŋø ni kaala cwøw bëët? ?Aŋø, omëër marï okadhø ka ŋø døc, ni bëëdï ni wa iï cemø kipere en? ",
+                    "ID": "9"
+                },
+                {
+                    "title": "Luubö Mana Løk Dhaagø-Thiinhnhi",
+                    "text": "Omëër mara kïte mïërö døc ni dëëre pulli, ni eni di ŋiiø yïthakic cwøw ma kume apaar.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Täärnyïme paŋŋi kaamar warkey mana tøŋ, ni jïëye na näynäy ni cøl kaamar okwör mo agaak.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Ni nyeŋŋe mïërö ni tar kaamar akuyi mo ena buut pïï mo kwödö, mo geno lwøk ki caak, ni ge mïërö kaamar nyeŋ kïte moa perge leth.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni mïërö mar pïte bëëdö kaamar pwöth jer wø ŋwääi ni met, ni buny dhee caala apiitø mo oŋøøk mo tøøn ki maar riia.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Bäädi moe nëëni kaamar athøc warkey mo otïïö ni mïërö ki nyeŋ kïte mo perge leth. Bäp yie mïërö kaamar lëëc liec mo otïïö ni pøøth, mo oŋwaŋŋø ni mïërö ki nyeŋ kïte mo perge leth.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Tiete nëëni kaamar were mo otïïö ki kïdi mo mïërö, mo ocwöth bäät warkey mana tøŋ, ni dëëre mïërö kaamar Lur Libaanø, ni leth pere rööma jenni mo gø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Eni buny dhee ŋweeth kiree, ni ena ŋat mo cwïny pärö kipere døc. Wui, nyïïakuk Jerucalem! Ŋatøgø beeye omëër mara, ni ŋatøgø beeye nyawatwa.",
+                    "ID": "16"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.6",
+            "name": "Obeec Dudi 6",
+            "text": [
+                {
+                    "title": "Pïëc Moa Pëëny Nyïïakuk Jerucalem ",
+                    "text": "?Wui, ï na dhaaŋŋa mïërö døc dï mään, omëëyï ocøøa kaa? ?Aŋø, omëëyï ocøra jööraŋø, nee eni manynyø na aciel? ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Luubö Mana Løk Dhaagø-Thiinhnhi",
+                    "text": "Omëëya aci ya ajïniina mare, dï jenni moa näk ŋwääi ni met. Ena ci kuna kwaac pïïth dïëk moe yïth jenni, na apiite moa no oŋøøk cooŋe.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Aani, aana mar omëëya, no omëëya beeye mara; bee eni ni wø kwaac pïïth dïëk moe dï apiite moa no oŋøøk. ",
+                    "ID": "3"
+                },
+                {
+                    "title": "Dïcwøø Paaga Cïïe",
+                    "text": "Wui, omëëya, ï mïërö kaamar pääny Tirja, niï mïërö døc kaamar pääny Jerucalem, ni ec thäŋŋö ki ïïni kaamar jø leny mo bëëre ege tïŋ maal.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Wec aani ki raŋŋø ki nyeŋŋï nø, kiper wïïa akierge. Jïër moï caala pïïth atëëe mo löönynya piny ki bäät Kïn Gelät.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Lagï nëëni ni tar kaamar pïïth rööm, mo ge käla baŋ lwøk; ni gena cïp-jwøk, ni bäŋgø rege mo bëëdö na eni keere.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Pïtï nëënö tier abïï mana näk iï loop wïïï kaamar nya adikwala mo opääŋŋö na thäŋi ariiø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Løny man bëët nyeya ni jïre da gwaae ma pïërabïciel, ki mään ma akwanye ma pïërabära, ki nyïïakuue mo dëët cwøw poot kucge mo ba kwaan.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba aani, dhaagø mara bee eni keere, ni bëëtö mare beer, ni mwöl kaamar akuuru, ni bee eni na nyakøø mana pere leth jï menni, ni menni na nywøl gø mëër ki gø døc. Eni, ena joot nyïïakuue møga ni köge no ogwïëdhö; ni jooti ya gwaae thuwø, ki mään moa näk akwanye, ni pwøcge gø, ni köge,",
+                    "ID": "9"
+                },
+                {
+                    "text": "na «A dhaaŋaŋø ni nëëni kaamar tiet-øw en, ni nëëni ni mïërö kaamar dwääy mo ena tar en, ni tøŋ kaamar cäŋ, ni ec thäŋŋö ki gø kaamar jø leny mo bëëre ege tïŋ maal!»",
+                    "ID": "10"
+                },
+                {
+                    "text": "Aana løøc piny dï pwöth jer athaloommi kuna raŋa jenni moa no oløth yi gool, nee jooda ki man näk mo jer omøki othiew, wala jer adïkwäle oŋøøk.",
+                    "ID": "11",
+                    "comment":"Athaloommø manøgø beeye teeŋ athaloommø mør mo døøŋŋø kaamar jaath, mo nyïïe nywøle bääte maal."
+                },
+                {
+                    "text": "Kanyøgø gïn mør aput tägö ni cwöba raa: jwïëy 'moa aana tïïcge keda aano pï piny bäät jään okweeny yïthakic jïëth okwëënyi mo jø powa mo kwörge døøŋŋø. ",
+                    "ID": "12"
+                },
+                {
+                    "title": "Luubö Mana Caan Nyïïawäädi Jï Dhaagø-Thiinh",
+                    "text": "Wui, nyijø Cunem, duuï, duuï! Duuï, duuï, niï raŋwa! ",
+                    "ID": "13"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.7",
+            "name": "Obeec Dudi 7",
+            "text": [
+                {
+                    "title": "Dïcwøø Paaga Cïïe ",
+                    "text": "Wui, ï na nyi ŋat mo kare dwøŋ! Tietï moø ni iï kïth yi war yøø mïërö marge ka akadhø døc, ni bathï pøøth ni caala jap mïërö mo wø tïïc jø wø nyeŋge reegø.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Peellï legø ni nëëni keda wïlli mo yie päŋ ki køøŋ nyïïomøki, ni yiï bäre nëëni ko omeenø ka apiite mo oŋøøk, ni caala acooŋ nyeŋ beel mo ogëëŋö.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Thunh moï moø na ariiø yøø mïërö ni caala nyïï purre ariiø ma cïp-jwøk.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Ŋutï nëëni keda øt koor mo otïïö ki lëëc liec, ni nyeŋŋï nëëni keda pulli mo wø en pääny Ëcbön ni beege moa en buut dhi kiir man wø cwøl ni Bath-Rabim. Umï nëëni ni mïërö keda øt koor man wø en Libaanø ni raŋŋa Damacka.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Wïïï nëëni ni mïërö kaamar Kïn Karmël, ni jïër moï rege døøllø ni mïërö, ni caala waare ma dïmuur, ni mïërö mar jïëyï, nyeya pute ka böötö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ïïni, ï mïërö døc ni ec mïnnö ki ïïni. Wui omëëya! Bëëtö mar dëërï bäre mïërö døc møn!",
+                    "ID": "6"
+                },
+                {
+                    "text": "Yi cwääc marï tiir kaamar jaath twöö, ni thunh moï nëëni keda jwale mo nyïï twöö.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ni kööa, na «A etha maal bäät twöö, nee nyïï gø lema.» Beerra man tïm thurï kaamar jwale mo nyïïomøki, ni tïm jam dhiï ni ŋwääö ni luy,",
+                    "ID": "8"
+                },
+                {
+                    "text": "ni tïm nuum dhøk marï kaamar køøŋ nyïïomøki mo nyään. ",
+                    "ID": "9"
+                },
+                {
+                    "title": "Luubö Mana Caan Dhaagø-Thiinhnhi Jï Cwøre",
+                    "text": "Aani, aana mar omëër mara, ni eni cwïnye lääŋŋa aani.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Omëëya, ööï, nøø aa wøk ki dï pääny; ö waa cøø yïth atude moa en wøk, ni thöörø wäär kunece.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Beerra man laarø møøl yi pwöth omøki nee neenø; kanymør geno nø ŋøø, wala geno nø nipäta, wala adïkwäle geno nø ŋøø. Køøre nø, mëër onyoodha jïrï kaace.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Nyïï ocøøk ŋwäänyge ajääŋge wøk; ni dhi øtø marø päŋ ki nyïëdi mo nyärö ki mo oruu, mo yaa cooŋ piny kiperï, ï no omëër mara.",
+                    "ID": "13"
+                }
+            ]
+        },
+        {
+            "ID": "OT:SNG.8",
+            "name": "Obeec Dudi 8",
+            "text": [
+                {
+                    "title": "Dhaagø-Thiinh Poot Paaga Cwøre ",
+                    "text": "Wui, doo naa ï caala coka ma dïcwøø mana dhøøth thunh mera; aani ni näk miï yaa joodø wøk, dhiï daa nuumö, ni bäŋ ŋat mo jääl aani.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Aani, ï daa kälö ni kïtha ïïni yi øt mera na pwöny aani. Aani, ï daa mooø ki køøŋø mo ŋwääi ni met nee maathï, ni beeye køøŋø mo tïïc ka pï nyïï adïkwäle 'moa.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Beerra man ö cer caamï ni thäänha ki gø, ni ö cer cwïïï ni gäämï aani ki gø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Wui, u na nyïïakuk Jerucalem, a cäänna uuni, nee mëër ba tuuŋŋu nee ö maal këël kanyo pïïc kare. ",
+                    "ID": "4"
+                },
+                {
+                    "title": "Luubö Mana Caan Nyïïawäädi",
+                    "text": "?Aŋø, man aŋa ni ööi ki dïtëën en, ni cäädhi ni ree ee nyaaŋ bäät omëër mare en? ",
+                    "ID": "5"
+                },
+                {
+                    "title": "Luubö Mana Caan Dhaagø- Thiinhnhi Jï Cwøre",
+                    "text": "Gum aani cwïnyï kaamar ogut lweedø mar ŋïï mo pere leth jïrï, ni tïïyï aani kaamar ogut lweedø mar ŋïï mo ena cerï; kiper mëër teek døc kaamar thøø, ni këëyö mare leth ni caala yi bwörö, ni mëër liel kaamar maac, ni nitära ni caala leep maa Jwøk.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Pïï mo thööth maa-mëër ba jwöe; ni bäŋe näm mo wëëga gø køøl. Ni näk mo da dhaanhø mo cïpa jap kwärö mo paare bëët kiper nyeŋ mëër, jammi moe bëët di taa. ",
+                    "ID": "7"
+                },
+                {
+                    "title": "Luubö Mana Caan Nyïïmii Dhaagø Moa Näk Cwøw",
+                    "text": "Waani, jïwa da cöökwa ma nyakøø mo poot thiinh, mo thure poot kär døøŋŋø. ?Agïnaŋø noo tïïcwa kiper cöökwa nø, kiper cäŋ mano pëënynyi yie ki nywöm?",
+                    "ID": "8"
+                },
+                {
+                    "text": "Doo naa ena kal, dewa gëënnö ki øt koor mo teek mo tïïc ka gwel-bïrö. 'Ba doo naa ena dhi øtø, dewa gëëŋö ko opäp jaadha teek. ",
+                    "ID": "9"
+                },
+                {
+                    "title": "Luubö Mana Caan Dhaagø-Thiinhnhi",
+                    "text": "Aani, a caala kal mo teek, ni ö thunhnhi 'moa ni caalge uut koor moa no ogeerø ni ena maal; ni ö omëërri mara ni jïte ki met ec baŋa.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Cølöman da pwöth omøki jïre kanya cwøl ni Baal-Amön. 'Ba eni pwöth omøki manøgø ee cïp ceŋ jiy mo gwøga gø jïre, ni ŋati man nø kännö jïre ki gwet-bïrö ma kuma ki røk nyïëdi mo wø gath.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba pwöth omøki mara beeye kipera; ni gwet-bïrö ma kuma beeye kiperï, ï na Cølöman. 'Ba gwet-bïrö ma dïpe ariiø beeye kiper jøøa gwøk nyïïjenni. ",
+                    "ID": "12"
+                },
+                {
+                    "title": "Luubö Mana Caan Dïcwøø Jï Cïïe",
+                    "text": "Wui, ï ni en yïth ajïniine, nyïïawääta yïthge ege ciiø ki dwørï; beerra man wïnynya dwørï. ",
+                    "ID": "13"
+                },
+                {
+                    "title": "Luubö Mana Caan Dhaagø-Thiinhnhi Jï Cwøre",
+                    "text": "Wui, omëëya, laar ö baŋa, ni tïmï kaamar purra wala thwønh aŋer mo ena bäät kïte moa näk bäätge da jer wø ŋwääi ni met.",
+                    "ID": "14"
+                }
+            ]
+        }
+    ]
+}

@@ -66,11 +66,13 @@ class Verse {
 class EnglishVerses {
   String text;
   String id;
+  String? reference;
   List? comment;
-  EnglishVerses(this.text, this.id, this.comment);
+  String? title;
+  EnglishVerses(this.text, this.id, this.comment, this.reference, this.title);
   factory EnglishVerses.fromJson(Map<String, dynamic> json) {
-    return EnglishVerses(
-        json['text'] ?? '', json['ID'] ?? '', json['comments'] ?? []);
+    return EnglishVerses(json['text'] ?? '', json['ID'] ?? '',
+        json['comments'] ?? [], json['reference'] ?? "", json['title'] ?? "");
   }
 }
 
@@ -154,19 +156,63 @@ class AmharicChapters {
   }
 }
 
+// ================= anywaa =====================
+class AnywaaVerse {
+  String text;
+  String id;
+  String? reference;
+  String? comment;
+  String? title;
+  AnywaaVerse(this.text, this.id, this.comment, this.reference, this.title);
+  factory AnywaaVerse.fromJson(Map<String, dynamic> json) {
+    return AnywaaVerse(json['text'] ?? '', json['ID'] ?? '',
+        json['comment'] ?? '', json['reference'] ?? "", json['title'] ?? "");
+  }
+}
 
+class AnywaaChapter {
+  List<AnywaaVerse> verses;
+  String id;
+  String name;
+  String? title;
 
+  AnywaaChapter(
+      {required this.verses, required this.id, required this.name, this.title});
 
-// class EnglishBible {
-//   List<EnglishBook> books;
-//   EnglishBible({required this.books});
-//   factory EnglishBible.fromJson(List<dynamic> json) {
-//     var books = json.map((book) => EnglishBook.fromJson(book)).toList();
-//     return EnglishBible(books: books);
-//   }
-// }
+  factory AnywaaChapter.fromJson(Map<String, dynamic> json) {
+    var list = json['text'] as List;
+    List<AnywaaVerse> chaptersList =
+        list.map((verses) => AnywaaVerse.fromJson(verses)).toList();
+    return AnywaaChapter(
+      name: json['name'] ?? '',
+      id: json['ID'] ?? '',
+      verses: chaptersList,
+      title: json['title'] ?? '',
+    );
+  }
+}
 
-// class BibleEnglish {
-//   EnglishBible? englishBible;
-//   BibleEnglish({this.englishBible});
-// }
+class AnywaaBook {
+  List<AnywaaChapter> chapters;
+  String id;
+  String version;
+  String name;
+
+  AnywaaBook({
+    required this.chapters,
+    required this.id,
+    required this.version,
+    required this.name,
+  });
+
+  factory AnywaaBook.fromJson(Map<String, dynamic> json) {
+    var list = json['text'] as List;
+    List<AnywaaChapter> chaptersList =
+        list.map((chapters) => AnywaaChapter.fromJson(chapters)).toList();
+    return AnywaaBook(
+        name: json['name'] ?? '',
+        id: json['ID'] ?? '',
+        version: json['version'] ?? '',
+        chapters: chaptersList);
+  }
+}

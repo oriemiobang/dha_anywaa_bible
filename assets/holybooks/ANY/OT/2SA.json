@@ -1,0 +1,3016 @@
+{
+    "textIntro": "Ki yi Wëël Jwøk mana no ogöörö ki dhi Ibaru, Camiel Wëëlö Aciel ki Camiel Weeli Ariiø bëëdö na wëëlö aciel. 'Ba jiy moa løk Wëël Jwøk ya acääŋŋe na løø gø baŋ dhi Gïrïïk, wëëlö man apääŋge na weeli ariiø. Camiel Weeli Ariiø poot lama luum jø Icriel ni kuube ka dhøk gïïa tägö yi Camiel Wëëlö Aciel, ni rwöpa ruun bëët moa beet Deebiti ni ena nyeya bäät jø Juuda ki jø Icriel bëët. Camiel Weeli Ariiø cäänö kaper mana ö nyeya ma Deebit na ŋäbe ki nyïïmän yi paac mar akwöm nyec mare, këël lenye moa këële ki wïth juurre moa teek, kiper nee akwöm nyec mare tïïe ni teek. Wëëlö man thuwø cäänö kaper cïp cwïny mare jï Jwøk, ki leth pere jï jiy, ki raay mana tïïe thuwø na käl ajäla mo dwøŋ bääte ki bäät paac bäre. Pwöc mana dwøŋ noo kwany yi wëëlö man beeye ni gïno tïïc dhaanhe da gïn mo öö ki køøre. Wïny luubö (tiel 1-7) duua gwïëth mar Jwøk (tiel 8-10); ni bäŋ wïny luubö (tiel 11) duua ajäl Jwøk (tiel 12-24). Deebit beeye dhaanhø mo mëër ki Jwøk ni laar cwïnye løk ki raay mana tïïe. Mana caan Jwøki kipere beeye ni ena dhaanhø mo cwïnye ena køøre. (1 Camiel 13:14; Moa Tïïc Nyïïatwieli 13:22) ",
+    "introTitle": "Luubö Mo Cäänö Kaper Riet Wëël Camiel",
+    "chapterName": "Riet Wëël Camiel",
+    "version": "anyuaB",
+    "text": [
+        {
+            "ID": "OT:2SA.1",
+            "name": "2 Camiel 1",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Wïny Thøw Cøøl",
+                    "text": "'Ba ni Cøøl onø thøø ri leny, Deebit aduuö ki kuna dïïr wïth jø Amalëk, ni duu pääny mare Ciklak, ni bëëde ki nïne ariiø.",
+                    "ID": "1",
+                    "reference":"(1 Camiel 31:1-13; 1 Luup Nyeye 10:1-12)"
+                },
+                {
+                    "text": "'Ba na tïme na dää nïne, ka adïëri møn, nyen mør aöö ki twïër mar Cøøl na abïïe moe ee jeeyø ni wïïe ee jööpö ki tør ki pänh cwïny. 'Ba kanya pïïe baŋ Deebit, cøŋŋe aput këël piny ni kuul wïïe piny ni määtha gø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre Deebit aköö jïgø, ni «?Ï kälï kaa?» Ni kö nyenøgø jï Deebit, ni «Aani, a rïŋŋi ki twïër mar jø Icriel.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba Deebit aköö jïgø, ni «?Leny bëëde nidïï? Caanï jïra nø.» Ni kö nyenøgø, ni «Jiy abwøk kanya tïme na ri leny, ni ö jiyi mo thööth thuwø ni thøwge; këël Cøøl ki wääde ma Jönathan gena thøw thuwø.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aköö jï nyena caan luummögø jïre, «?Aŋø, iï ŋääö nidïï ni Cøøl ki wääde ma Jönathan geno thøw?»",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba nyenøgø aköö, ni «Aana cwöp ri Kïn Gilböa; 'ba ka adïëri møn, Cøøl ajooda no oööl døc ni ree ee piemø ki thiir tøŋ mare. 'Ba kar kaagø, jïëthe mo wø tut okwëënyi, ki jø wø rïïŋi ki bäät okwëënyi, ge ŋwieya køør Cøøl ni karge oløny ni cään ki gø døc.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba kanya ö Cøølli na lwïthe ŋääe, aana joode ni cwøl aani. 'Ba aana köö, ni ‹Aani en.›",
+                    "ID": "7"
+                },
+                {
+                    "text": "«Køøre aana pëënynye ni kööe, ni ‹?Ïïna ŋa?› «Ni løøa gø jïre, ni ‹Aana nyï Amalëk.›",
+                    "ID": "8"
+                },
+                {
+                    "text": "«Ni cäŋ köö ki aani, ni ‹Nyie, nyänh buuta ni 'nägï aani, kiper dëëra oløny ni da ŋwellø mo leth døc, maa ba laar 'näk.›",
+                    "ID": "9"
+                },
+                {
+                    "text": "Kanyøgønø, aana put nyiik buute ni nääa gø kiper yaa nø ŋäc ni eni ba kwøw këët ki køør gïna leth na pïï dëëre. Ni ö aduda na en wïïe ko ogut na en bade ni wø nyooth nyec mare, ni lwøra ge, ni beege ni käla baŋï ennø, ï na kwäärö mara.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre Deebit abïïe moe na en dëëre aput jeeyø ki pänh cwïny, ni ö jiyi moa en buute kaagø ni putge abïïe moge jeeyø thuwø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kanyøgønø, gena kïmmö ni jwöŋge ni putge kweer ki cam këël mana tïm pinynyi na wïthïënhö. Gïnögø atïïcge kiper thøw Cøøl, ki wääde ma Jönathan, këël jic Wuuö Jwøk, ni beege jø leny mo jø Icriel, kiper mana ö jøøgø bëët na nääi ri leny.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba Deebit aköö jï nyena öö na wääny eni, ni «?Ïïna nyï kaa?» Ni løgi ya nyenøgø, ni «Aana nyï Amalëk o nyena bëëdö na jur po jø Icriel.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï nyenøgø, «?Aperŋø na kärï lwäyö ki man 'nägï nyeya na näk otïïc Wuuö Jwøki nee wïïe thïïmmi ki maaw?»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit nyen mør røk jiye aput cwøl ni kööe, ni «Ö maal ni 'nägï nyenøgø.» Ni ö nyenøgø ni put nyï Amalëk manøgø cwøp ni 'näk gø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï nyï Amalëk mana thøw enø, ni «Beeye ï na käl thøø manøgø bäätï keerï, kiper mana ö wøk ki dhiï beeye na käl ajäla manøgø bäätï, ki køør mana kööï, ni ‹Aani, nyeya na näk otïïc Wuuö Jwøki nee wïïe thïïmmi ki maaw anääa.› » ",
+                    "ID": "16"
+                },
+                {
+                    "title": "Duut Mana Wär Deebiti Ni Jwøga Cøøl Ki Jönathan",
+                    "text": "Køøre Deebit duut man acaae ni wär gø ni jwøga Cøøl ki wääde ma Jönathan,",
+                    "ID": "17"
+                },
+                {
+                    "text": "ni caan gø nee jø tuuŋ Juuda rege pwönyge ki duut manøgø; 'ba ka adïëri møn, duut manøgø nut no ogöör piny yi wëëlö mana cwøl ni Jacar. 'Ba duut man awär Deebiti ni kööe,",
+                    "ID": "18"
+                },
+                {
+                    "text": "«Wui, Icriel, dïbwöthe moa jiem ï ki køørge athum ki thøø kwöra en maal bäät thuuri moï. Ka adïëri møn, jø leny moa teek døc athøw ri leny.",
+                    "ID": "19"
+                },
+                {
+                    "text": "«Beerra man ö luubö manøgø ni ba caani Gëth, ni ö awaaci manøgø ni ba gøøi piny nyeŋ jïëthe mo Ackelön; kiper ni näk mo wïny määr jø Pilitinni wïnynyö, ge kanynyø døc, ni tïm yïthge ni met, ge na määr jøøgø ni Jwøk kucge ni kär daŋø yøø.",
+                    "ID": "20"
+                },
+                {
+                    "text": "«Wui, ï na Kïn Gilböa, beerra man tïme ni bäŋ thööy wala køth bäätï, ni ö pwöthi moa en bäätï ni bäŋe caammi mo ciek yïthge. Kiper kööde mo leny mo jøøa teek adööŋ piny bäätï kaace no onipäät jaak, ni ö kwöt leny mar Cøøl ni käri wïïrö ki maaw këët.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba atheeny Jönathan ko opëël Cøøl bäŋ wø duui jaak ni bäŋ rem jiy mo ege køny piny, ni kär gutö ki rïŋ dëët jøøa teek.",
+                    "ID": "22"
+                },
+                {
+                    "text": "«Ka adïëri møn, Cøøl ki wääde ma Jönathan gena bëëdö ni di mëërö ki ge, ni yïth jøw met ki ge; 'ba na tïme na ri thøø, gena thøw na aciel. Gena jiy mo rïïŋö døc ni kaala olwiith mana näk agweec, ni ge teek døc ni kaala cïgïï ŋuu.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Wui, u na määr jø Icriel, jwøgu Cøøl døc, na tïïc uuni nou ruu ka abïïe mo mïërö mo perge leth, na tïïc uuni na abïïe mou dëëtge kïthi ki jap mïërö mo tïïc ka warkey.",
+                    "ID": "24"
+                },
+                {
+                    "text": "«Wui, ka adïëri møn, jø leny moa teek døc athøø ri leny, ni ö Jönathanni ni nääi kwöra en maal bäät thuuri moï.",
+                    "ID": "25"
+                },
+                {
+                    "text": "Nyie coka ma Jönathan, a jwöŋö naa keeya yia kiperï; ïïna bëëdö ni perï leth jïra. Mëër marï ki aani, beeye mëër mo pere leth døc ni kaala mëëc mïïö.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Wui, ka adïëri møn, jø leny mo teek døc athøø ri leny, ni ö jap leny moge ni putge dööŋŋe piny jaak ni bäŋ gïn mo kønyge.»",
+                    "ID": "27"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.2",
+            "name": "2 Camiel 2",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Røønyi Na Nyeya Bäät Jø Tuuŋ Juuda ",
+                    "text": "'Ba na tïme na køøre cään, Deebit Wuuö Jwøk apëënynye ni kööe, ni «?Cøøa pääny aciel røk päänye mo jø tuuŋ Juuda naa bëëda yie?» Køøre Wuuö Jwøk aköö jïre, ni «Ciï.» 'Ba Deebit acäŋ köö, na «?A cøøa yi mane?» Ni kö Wuuö Jwøki, ni «Ci Keeprön.»",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput ci kunece ki määre karge riet, ni beege Akinaam nyi jø Jedhriel ka Abigël cï Nabal nyï Karmël, dhaaŋŋa näk odööŋ na cï thøø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Ni ö Deebiti ni aae ki jø leny moe moa bëëdö ki eni, ni ŋati man nø rege aay ka jøøa en paare; ni putge pï piny, ni bëëtge yïth päänye mo Keeprön.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre jø døøŋŋø mo jø tuuŋ Juuda gena öö ni thïïmge wï Deebit ki maaw ni ge røønya gø na nyeya bäät jø tuuŋ Juuda. 'Ba acaange jï Deebit ni köge, ni «Beege jø Jabic-Gelät na koony Cøøl.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre Deebit ajääk baŋ jø Jabic-Gelät ki jiy, ni kööe jïge, ni «Uuno gwïëth Wuuö Jwøki kiper mana nyoothu mëër maru jï nyenynyu ma Cøøl ki køør mana koonynyu eni.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba ennø, beerra man ö Wuuö Jwøki ni nyooth adïëri mare ki mëër mare ni wø ba jøøl jïïu; këël aani thuwø, gïn mo beer otïïa kiperu, ki køør gïna nø tïïyu.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ennø, beerra man magu rou ni bëëdu nou teek; këël na bëëde ni nyenynyu ma Cøøl othøw, jø tuuŋ Juuda aana nø røønyge na nyeya bäätge ni thïïmge wïïa ki maaw.» ",
+                    "ID": "7"
+                },
+                {
+                    "title": "Kanya Ö Abinërri Na Røøny Icböcëth Na Nyeya Bäät Jø Icriel",
+                    "text": "'Ba kar kaagø, Abinër o Nër na näk kwääy lwaa leny mar Cøøl, Icböcëth o Cøøl ee nø käl ni kïth gø løø Naam Jördan løøga, yi pääny mana cwøl ni Maanayim.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni røøny Icböcëth na nyeya bäät jø Gelät, ki jø Acër, ki jø Jedhriel, ki jø tuuŋ Ipariem, ki jø tuuŋ Benjamen, këël bäät jø Icriel bëët.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba kanya tïm Icböcëthi o Cøøl na nyeya bäät jø Icriel, cwiiye oløny na pïëraŋween, ni bëëde na nyeya ki cwiiri ariiø. 'Ba jø tuuŋ Juuda gena bëëdö ni ge bëënna Deebit.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba cwiiri moa beet Deebiti ni ena nyeya Keeprön bäät jø tuuŋ Juuda beege cwiiri abïriiø ki dwäde abïciel. ",
+                    "ID": "11"
+                },
+                {
+                    "title": "Luum Leny Mana Tägö Yïthakic Jic Abinër Ki Jic Jöap",
+                    "text": "'Ba Abinër o Nër atïŋŋö ki Maanayim ni ci Gibien ki jø leny mo Icböcëth o Cøøl.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni ö Jöapi o Dheruya ki jø leny mo Deebit ni tïŋge, ni røømge bäät puul mana en Gibien; ni pïge piny, ni jø leny mo Icböcëth ge ena løø puul løøk maya ni jø leny mo Deebit ge ena løøk maya.",
+                    "ID": "13",
+                    "comment":"Dheruya mii Jöap beeye cöök Deebiti."
+                },
+                {
+                    "text": "Køøre Abinër aköö jï Jöap, ni «Beerra man ö jiyi moa dëëtge teek røk jø leny 'moø ni öge maal nee këëtge nyïmmø.» Ni put Jöapi jïëy ni kööe, «Wøp, öge maal.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø, jiy apaar kurriiø røk jø tuuŋ Benjamen aput ö maal røk jø leny mo Icböcëth o Cøøl, ni ö jiyi apaar kurriiø thuwø ni öge maal røk jø leny mo Deebit.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Ni ö ŋati man nø ni put nyimänne mak ki wï gø ni cööpge dëëtge ki caakïïne ki tiet butge, këël mana putge pädhö na aciel ni marge thøø. Kanyøgønø, pwöl Gibien manøgø aput cwøl ni Këlkath-Adhurim, na näk tiere beeye pwöl caakïïne.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba ki dïcäŋögø, leny aput tïmö ni teek døc, ni ö jø lenynyi mo Deebit ni böötge Abinër ki jø leny mo jø Icriel møga.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba kar kaagø, wäät Dheruya karge dääi ge ena kaagø, ni beege Jöap, ka Abicay, ka Acaël; 'ba Acaël ena dhaanhø mo rïïŋö døc ni caala aŋer.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre Acaël køør Abinër aŋwiee døc ni ba gaa bäät cwïïe wala bäät caame.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba Abinër alwïthö køøre ni kööe, na «?Aŋø, ïïna Acaël, ni rïïŋï køøra en?» Køøre aløk Acaël, ni «Beeye aani.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba Abinër aköö jïgø, ni «Gaa bäät cwïï wala bäät caamï, ni ŋwieyï køør dhaanhø aciel røk jø leny moø ni rïïŋi yøø, ni magï gø, ni kälï jape moa en dëëre kiper dëërï.» 'Ba Acaël yie kär tïmö ni met ki man gaae ni wec køør Abinër ki ŋwiec.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba acäŋ Abinërri nwøyø jï Acaël ni kööe, ni «Gagï. Wec køøra ki ŋwiec. ?Aŋø, ï manynya gø niï nääa? ?A ni näk miï yaa nääø, waano bëëtwa nidïï ki coku ma Jöap?»",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba Acaël akweer ki man gaae; køøre Abinër Acaël aput cwøp ki thiir tøŋ ki yi gø, ni ö thiir tøŋŋi ni put tuny wøk ki dïŋääe. Ni put pädhö kaace ni put thøø. 'Ba jø leny bëët mo wø pïï kanya näk Acaël opädhö yie no othøw, ge wø puta cuŋŋö kaace.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba Jöap ka Abicay køør Abinër aputge ŋwiec; 'ba kanya tïm cäŋŋi ni pätha piny, gena pïï bäät thuura cwøl na Amma, na en buut Giia, waŋjöör dï paap Gibien.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Kanyøgønø, jø leny mo jø tuuŋ Benjamen rege acooŋge dëër Abinër ni tïmge na dhøk aciel, ni cuŋge bäät thuur mør kaace.",
+                    "ID": "25"
+                },
+                {
+                    "text": "Køøre Abinër Jöap arwaae ni kööe, na «?Aŋø, dëëtø putø ka thöör na bäre bäre møn ennø? ?Aŋø, kuyï ni ya aŋuunne, luubö man tïmö ni keec? ?A këël yi wäne nø noo bëëdï ni ba caanï jï jiyï ki man døøkge ni wecge køør nyïïmëëkge?»",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba Jöap aköö, ni «Ŋëët Jwøa kwøw, doo na bäŋ gïn mo iï caanø ennø, ka adïëri møn, wa doo puta rïïŋö køøru, u na nyïïmëëkwa, këël diøø ka amöölla.»",
+                    "ID": "27"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap tuuŋ aput kooth; ni ö jiye bëët ni putge cuŋŋö ni kärge køør jø Icriel møga ŋwieø këët, këël mana putge leny wec.",
+                    "ID": "28"
+                },
+                {
+                    "text": "'Ba Abinër ki jø leny moe gena aay ni ge cøra goor Jördan ni wø cwøl na Araaba, ni cääthge ki yi wäär bäre; køøre Naam Jördan aŋølge, ni cääthge ka amöölla bäre, ni pïïcge Maanayim.",
+                    "ID": "29"
+                },
+                {
+                    "text": "Køøre Jöap aduuö ki kuna ŋwiec køør Abinër; 'ba kanya cooŋ jø leny bëët kanya aciel, da jø leny mo Deebit ma apaar ka abïŋween mo tøør; 'ba Acaël kär kwaan rege.",
+                    "ID": "30"
+                },
+                {
+                    "text": "'Ba jø leny mo Deebit, jiy moa 'näkge røk jø leny mo Abinër beege jiy mo thööth ma dïpe adäk ki pïërabïciel, ni jøøgø käla ri jø tuuŋ Benjamen.",
+                    "ID": "31"
+                },
+                {
+                    "text": "Køøre Jöap ki jiye dëër Acaël akälge, ni kïthge gø yi bwöc wänni na en Bethelem. 'Ba gena aay ni cääthge ki yi wäär bäre këël mana ruu øwi bäätge Keeprön.",
+                    "ID": "32"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.3",
+            "name": "2 Camiel 3",
+            "text": [
+                {
+                    "text": "'Ba kar kaagø, män mana en yïthakic jøøa en ri Cøøl ki jøøa en ri Deebit akän wøk ki kany mo bäär. Ni ö teeki mar Deebit ni bëëde ni cäätha maal; 'ba jøøa en ri Cøøl, gena bëëdö ni jäk marge cäätha maal thuwø. ",
+                    "ID": "1"
+                },
+                {
+                    "title": "Nyeŋ Wäät Deebit",
+                    "text": "Moi beege wäät Deebit moa nywøle Keeprön; kanynye beeye Amnön na nywøle ki cïïe ma Akinaam nyi jø Jedhriel;",
+                    "ID": "2",
+                    "reference":"(1 Luup Nyeye 3:1-4)"
+                },
+                {
+                    "text": "'ba rietge beeye Kiliap, na nywøle ki cïïe ma Abigël cï Nabal nyï Karmël, dhaaŋŋa näk odööŋ na cï thøø; ni dääge beeye Abëcëlöm, o cïïe ma Maika nyi Thalmay nyeny Gëcur;",
+                    "ID": "3"
+                },
+                {
+                    "text": "ni ŋweerge beeye Adöniya o cïïe ma Agith; ni bïïge beeye Cepathiya o cïïe ma Abital;",
+                    "ID": "4"
+                },
+                {
+                    "text": "ni bïcierge beeye Ithriam o cïïe ma Ëgla. Obwöre moøgø beege wäät Deebit moa nywøle Keeprön. ",
+                    "ID": "5"
+                },
+                {
+                    "title": "Kanya Ö Abinërri Na Dwäte Ki Deebit",
+                    "text": "'Ba kanya bëëde ni da män yïthakic jøøa en ri Cøøl ki jøøa en ri Deebit, Abinër bëëdö ni dëëre ee tïïö ni eno kadhø ki teek røk jøøa en ri Cøøl.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba Cøøl da cïïe mo odööŋ wï paare mo nyeŋŋe cwøl ni Ricpa nyi Aya; køøre Icböcëth Abinër apëënynye ni kööe, na «?Aŋø na ciï baŋ cï wära ni butï ki gø na dhaagø?»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kar kaagø Abinër aput wëër døc kiper luubö mana caan Icböcëthi, ni kööe, na «?Aŋø, ki jïrï a bëëdö kaamar gwök, naa iï kwaan kur jø tuuŋ Juuda? Neenï, këël kar kany ennø, aana bëëdö naa nyootha mëër jï wäru ma Cøøl, ki tuuŋge, ki jiye, ni gwøa ïïni, ni kära ï cïp cer Deebit; 'ba dïcäŋi ennø, ïïna tïmö niï kïtha bääta ka ajäla kiper luum dhaagø jaak.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba ennø møn, ni näk mo kööŋ mar Wuuö Jwøk kiper nyec mar Deebit ba tïïa ni thur kare, beerra man ö Wuuö Jwøki ni raany aani.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Kiper dwør Wuuö Jwøk beeye ni nyec cööde wøk dhi øt Cøøl ni cïp gø jï Deebit nee put bëëtö na nyeya bäät jø Icriel bëët ki nyïïmëëkge ma jø tuuŋ Juuda, ki mana täge ki Daan këël mana këët Bëërcïïba.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba kar kaagø, Icböcëth aput bëëtö ni bäŋ luubö mo ee dwøgø këët jï Abinër kiper ena lwäyö.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Køøre Abinër ajääk baŋ Deebit ki jiy kanya bëëde yie ni kööe, na «?Aŋø, ŋöömö man bäre en a mar ŋa? 'Ba ennø, tudï ki luubö ki aani; ka adïëri møn, a puta dwätö ki ïïni, ni kuura jø Icriel bëët dëërï.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba Deebit aköö, «Beer, aani a tudö ki luubö ki ïïni møn. 'Ba da gïrpiny aciel keere maa manynya gø nee tïïyï; ni näk mo gïnögø kärï tïïö, täärnyïma ba diï joodø na bäre. 'Ba gïno tïïyï kiree beeye ki man kälï Mikal nyi Cøøl kanyo ööï baŋa.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput jääk baŋ Icböcëth o Cøøl ki jiy ni kööe, ni «Cïïa ma Mikal, dhaaŋŋa nywøma ki buyi mo jer dëët jø Pilitin ma dïpa moa daaŋa, duuï jïra.»",
+                    "ID": "14",
+                    "comment":"Luummögø løny ki man kwaani yi 1 Camiel 18:25-27."
+                },
+                {
+                    "text": "Køøre Icböcëth aput jääk baŋ Mikal kanya bëëde yie po cwøre ma Paltiel o Laaic, ni käl gø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba cø Mikal manøgø aay ki gø na aciel, ni cäädhi ni jwöŋö këël mana pïïcge paana cwøl ni Baurim. Køøre Abinër aköö jï Paltiel, «Ci døøgï.» Kanyøgønø, Paltiel aput døø paare.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba Abinër ajïtö ka acooŋa ki jø døøk Icriel ni kööe, ni «Ki kany mo bäär, u manynya Deebit nee tïme na nyeya maru.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba ennø, røønynyu nø. Kiper Wuuö Jwøk anø cäänö kiper Deebit ni kööe, ni ‹Jiya ma jø Icriel opiema ceŋ jø Pilitin këël nyïïmän moge bëët ki ri dhaanhnha ma Deebit.› »",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba Abinër thuwø luummögø acaane ni wïnyö jï jø tuuŋ Benjamen. Kanyøgønø, ena put tïŋŋö ni ci baŋ Deebit kanya bëëde yie Keeprön, nee luubö mana näk nëëni ni beer ki jï jø Icriel bëët ki jø tuuŋ Benjamen nee caane jïgø.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Køøre Abinër ki jiy ma pïërariiø na cäädhe ki ge, gena pïï Keeprön baŋ Deebit. Ni ö Deebiti ni tïïe ki cam kiper Abinër ki jiy moa cäädhö ki eni.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba na tïme na køøre cään, Abinër aköö jï Deebit, na «A kwaya ïïni naa tïŋŋa naa cøøa kuna cooŋa jø Icriel bëët kanya aciel jïrï, ï na nyeya mara, nee tïme ni løny jïge ki man tutge ki luubö ki ïïni, niï tïmï ni ïïna nyeya marge bëët, ni gïno manynyï jaak thura kare.» Køøre Deebit, Abinër aput wëëk wääth, ni put aay ki jööt dëël. ",
+                    "ID": "21"
+                },
+                {
+                    "title": "Kanya Ö Abinërri Na Nääi",
+                    "text": "'Ba na tïme na kaagø, ka adïëri møn, jø leny mo Deebit ki kwääc lwaa leny marge ma Jöap gena duuö ki baŋ twëër ni ge käädö ki jammi mo thööth døc. 'Ba kanya pïïcge, Abinër onø aay buut Deebit Keeprön kaagø, kiper ee nø wëëk wääth ni aae ki jööt dëël.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba kanya ö Jöapi ki jø leny bëët moa cäädhö ki eni na pïïcge ennø, aput caan jï Jöap ni køp, ni «Neenï, Abinër o Nër aö baŋ nyeya, ni ö nyeya ni wëëk gø wääth, ni nø aae ki jööt dëël.»",
+                    "ID": "23"
+                },
+                {
+                    "text": "Køøre Jöap aci baŋ nyeya ni kööe, «?Wui nyeya, agïne ni iï tïïö en? Ka adïëri møn, Abinër anø ö baŋï. ?'Ba aperŋø na wëëgï eni wääth ni put aay?",
+                    "ID": "24"
+                },
+                {
+                    "text": "?Aŋø, kuyï na Abinër o Nër, ö baŋï ka atade kiper nee bëëtö marï bäre këël gïï wø tïïyï bëët kwaane?»",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba kanya ö Jöapi na ö wøk ki baŋ Deebit, ena put jääk køør Abinër ki jiy, ni ö jøøa jääŋŋi ni duuge eni ki bäät iith Cira; 'ba gïnögø kuc Deebiti.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba kanya ö Abinërri na duu Keeprön, ena put Jöapi kïth kur keere dhi kiir ni nëëni kede manynya man cääne ki gø na eni keere. Køøre Jöap Abinër aput cwøp ki yi gø ni put thøø, ni eni coola kwör rem coki ma Acaël.",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na wïny gïnögø cään, ena köö, ni «Aani ki jøøa bëëdö tier nyec mara, ki man näk mo karwa bäär ki kwör rem Abinër o Nër, ŋäc Wuuö Jwøki.",
+                    "ID": "28"
+                },
+                {
+                    "text": "Beerra man ö ajäla manøgø ni päth bäät Jöap ki jø dhi øt wänni bëët; ni bäŋ dhaanhø mo dööŋ dhi øt Jöap ni dëëre ba jïti ki teeŋ täwe mo wø leth, wala ge tïmö ni jägö ni geno kwaan kur mään, wala ge tïmö ni ge di nääŋŋö ko opëëlle, wala ge tïmö ni bäŋ cam jïge.»",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba Jöap ki coki ma Abicay Abinër anäkge kiper mana ö Abinërri na 'näk cokge ma Acaël ri leny mana en Gibien. ",
+                    "ID": "30"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Jwøk Abinër",
+                    "text": "Køøre Deebit aköö jï Jöap ki jiy bëët moa nut buutge kaagø, ni «Jwøgu Abinër, ni jeeyu abïïe mou ni røøu keece dëëtu na abïïe ni nyoothu pänh cwïny maru.» Kanyøgønø, nyeya ma Deebit aput wääth køør pëëm mana käär dëër dhaanhø ki gø.",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba Abinër aputge koony Keeprön; ni ö nyeya ni jwöŋe ni dwøre ee tïŋ maal døc bäät bwöc Abinër, ni ö jiyi bëët ni jwöŋge thuwø.",
+                    "ID": "32"
+                },
+                {
+                    "text": "Køøre nyeya duut man acaae ni wär gø ni jwøga Abinër ni kööe, «?Aŋø, Abinër doo thøw møn ni jääk jaak?",
+                    "ID": "33"
+                },
+                {
+                    "text": "Wui Abinër, ceŋŋï kee kär twöö, ni tietï thuwø kär kïth yo orøgø; 'ba ïïna put 'näk kaamar dhaanhø mo 'näga jiyi mo wïthge reyø.» Kanyøgønø, jiy bëët acäŋ jwøk kiper Abinër.",
+                    "ID": "34"
+                },
+                {
+                    "text": "'Ba ni poot na dïcäŋögø, jiy bëët aö kuna kwaacge Deebit nee cäme; 'ba Deebit akööŋ ni kööe, «Ni näk mo da cam këël gïn mo thiinh jaak mo ya belø ni cäŋ poot kär päth piny, beerra man ö Wuuö Jwøki ni raany aani.»",
+                    "ID": "35"
+                },
+                {
+                    "text": "Kanyøgønø, jiy bëët gïnögø aputge kïth cwïnyge, ni jootge gø ni beeye gïn mo beer. Këël jammi bëët mo wø tïïc nyeya obëëde, ajootge ni beege gïï mo beyø thuwø.",
+                    "ID": "36"
+                },
+                {
+                    "text": "'Ba jic Deebit bëët këël jø Icriel bëët aputge ŋäc dïcäŋeca ni nyeya ma Deebit tøør ri thøø mar Abinër o Nër. ",
+                    "ID": "37"
+                },
+                {
+                    "text": "Køøre nyeya ma Deebit aköö jï jiye, na «?Aŋø, kuyu ni kwäärö mo kare dwøŋ athøw dïcäŋi Icriel?",
+                    "ID": "38"
+                },
+                {
+                    "text": "'Ba aani, këël na bëëda ni aana nyeya mo wïïe othïïmmö ki maaw, dïcäŋi aana tïmö naa jääk; ni ö Jöap ka Abicay, wäät Dheruya, ni tïmge ni teeka geni ki aani. 'Ba ennø, beerra man ö Wuuö Jwøki ni cun ŋat raay ki køør raay mo wø tïïe.»",
+                    "ID": "39"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.4",
+            "name": "2 Camiel 4",
+            "text": [
+                {
+                    "title": "Luum Thøw Icböcëth ",
+                    "text": "'Ba kanya ö Icböcëthi o Cøøl na wïny gø na Abinër anø thøø Keeprön, eni bääte aput pädhö, ni ö jø Icrielli bëët ni jït wïthge ko okiera.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba Icböcëth o Cøøl jïre da jiy ariiø mo gena kwääc lwaae mo dhøgi mo leny. Ni nyeŋ dhaanhø aciel beeye Baanaa ni nyeŋ dhaanhø maya beeye Rëkap. 'Ba jagøgø beege wäät Rimön nyï Bëëröth na käl ri jø tuuŋ Benjamen, kiper Bëëröth okwaan kur jø tuuŋ Benjamen.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba jø Bëëröth geno reŋ Gitayim ni bëëtge kunece ni gena wëëlle këël dïcäŋi en.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kar kaagø, Jönathan o Cøøl, da wääde ma ŋwøl. 'Ba tier ŋöödö mare beeye en. Kanya ö waac thøw Cøølli ki wääde ma Jönathan na tägö Jedhriel na wïnye, o Jönathan manøgø cwiiye oløny na abïïc. 'Ba kanya wïny waac moøgø, ŋata pïr gø, nyilaarøgø alwøre ni reŋge ki gø. 'Ba gïna tägö, kanya reŋge ni eni läädö, nyilaal manøgø apädhö ni put tïmö na ŋwøl. 'Ba nyeŋ nyilaarøgø beeye Mepiböcëth.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba Rëkap ki Baanaa, wäät Rimön nyï Bëëröth, gena aay ni pïïcge po Icböcëth ki dhöör ni cäŋ kwaar. 'Ba kar kaagø, Icböcëth ree ee jwömö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Køøre gena døny dï øtø kede ge ummö ki beel, ni putge Icböcëth cwøp ki yi gø; køøre Rëkap ki coki ma Baanaa gena put reeŋø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba kanya ö Rëkapi ki Baanaa na dønyge yi øt Icböcëth, Icböcëth obutö bäät pëëm yi øt niine mare, ni putge Icböcëth cööbö ni 'näkge gø, ni ŋulge wï gø wøk. Køøre wï gø aputge lwør ni aacge, ni cääthge ki yi wäär bäre ni ge cøra waŋjöör dï goor Jördan ni wø cwøl na Araaba.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgønø, wï Icböcëth akälge Keeprön baŋ Deebit, ni köge jï nyeya ma Deebit, ni «Neenï, Icböcëth o Cøøl, nyimännï, ŋata many jwïëyï nee raanynye, wïïe beeye en. 'Ba dïcäŋi Wuuö Jwøk kwör marï, ï na nyeya marwa, atïïe nee cool dëër Cøøl ki nyïïkwaaye.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba aløk Deebiti jï Rëkap ki coki ma Baanaa, wäät Rimön nyï Bëëröth, ni kööe jïge, «Ŋëët Wuuö Jwøk Jwøa kwøw na køny aani yïth gïïa leth bëët,",
+                    "ID": "9"
+                },
+                {
+                    "text": "neennu, kar kaaca da dhaanhø ma aöö ni wäänynya aani ni kööe, ni ‹Neenï, Cøøl athøw›, ni ki jïre ni eni käla waac mo beer. 'Ba ŋatøca amaa ni nääa gø Ciklak, ni beeye gïna ŋada gø ki gø na kar waac mare.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Ennø møn, u na wïthu reyø, dhaanhø mo bëëtö mare beer anø 'nägu yi øde bäät pëëm mare. ?Aŋø, gïno tïïa dëëtu ba tïmö ni kadha eni ki mana tïïa dëër ŋata wääny aani? Aani kwör rem Icböcëth coola coolø dëëtu ni dïïra wïthu bäät pinyi en.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit jø leny moe aput köömmö, ni ö jagøgø ni putge Rëkap ki Baanaa 'näk ni ŋulge ceŋge ki tietge wøk, ni lïërge dëëtge buut puul na en Keeprön. 'Ba wï Icböcëth alwørge ni kïthge gø yi bwöc Abinër na en Keeprön.",
+                    "ID": "12"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.5",
+            "name": "2 Camiel 5",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Tïme Na Nyeya Mar Jø Icriel Bëët",
+                    "text": "Køøre wïth tuŋi bëët mo jø Icriel aö baŋ Deebit kanya bëëde yie Keeprön ni köge, ni «Ka adïëri møn, ïïna dhaanhø ma rem dëëtwa, niï käla dëëtwa.",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 11:1-3)"
+                },
+                {
+                    "text": "Dïkwøŋ kanya bëët Cøølli na nyeya marwa, beeye ïïni na bwøth jø Icriel kany wø näk ri leny. 'Ba Wuuö Jwøk aköö jïrï, ni ‹Ï doo bëëdö ni ïïna dïkwääy mar jiya ma jø Icriel, ni tïmï ni ïïna wïth jø Icriel.› »",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgønø, jø døøk Icriel bëët gena ö baŋ nyeya ma Deebit kanya en yie Keeprön, ni ö nyeya ni tude ki luubö ki geni Keeprön kaagø nyïm Wuuö Jwøk; ni ö geni ni thïïmge wï Deebit ki maaw ni ge røønya gø na nyeya mar jø Icriel bëët.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na røønyi na nyeya, cwiiye oløny na pïëradäk, ni bëëde na nyeya ki cwiiri ma pïëraŋween.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Ni cwiiri moa beet Deebiti ni ena nyeya mar jø tuuŋ Juuda Keeprön, beege cwiiri abïriiø ki dwäde abïciel, ni cwiiri moa beede Jerucalem ni ena nyeya mar jø Icriel ki jø tuuŋge ma jø tuuŋ Juuda bëët, beege cwiiri ma pïëradäk kurdäk. ",
+                    "ID": "5"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Mac Pääny Jerucalem",
+                    "text": "'Ba nyeya ma Deebit ki jø leny moe gena ci Jerucalem baŋ leny ki jø Jeebuc, na bëëdö yi ŋöömö manøgø. 'Ba jø Jeebuc aköö jï Deebit, ni «Ba løny jïrï ki man dunynyï yi kiir kany; këël cööye ki ŋööte jïge da teek ki man riemge ïïni,» ni köge, ni «Deebit ba duny kany na bäre.»",
+                    "ID": "6",
+                    "reference":"(1 Luup Nyeye 11:4-9)"
+                },
+                {
+                    "text": "'Ba Deebit, kanya näk kar gwøk røk mar paanøgø na en bäät Kïn Dhayan aput mak; ni beeye päänya put cwøl na Pääny Deebit.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba dïcäŋögø Deebit aköö, ni «Ŋat mo yie met ki man 'näk jø Jeebuc, beerra man døny kar gwøk røk marge ki jöör pïï, ni 'näk nyïïmänna, ni beege jøøa køp ni cööye ki ŋööte.» Kiper manøgønø akøp, ni «Cwør wala ŋwøl ba doo dunynya yi øtø.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Køøre Deebit abëëdö kanya näk kar gwøk røk, ni cwøl gø ni Pääny Deebit. Ni ö Deebiti ni put pääny manøgø bäre geer ni teek, ni tägi ki kanya no othørø ni wø cwøl ni Milø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba teek mar Deebit aput bëëtö ni cäätha maal, kiper Wuuö Jwøk, Jwø wïth jammi bëët, bëëdö ka eni.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre Kiram nyeny Tayar ajääk baŋ Deebit ki jiy ni ge käädö ki jer øtø moa perge leth, ki jiy ma dïjëëth opämi ki jø wø gëëdö ki kïte; ni ö jøøgø ni gëëtge ki øtø jï Deebit.",
+                    "ID": "11",
+                    "reference":"(1 Luup Nyeye 3:5-9; 14:1-7)"
+                },
+                {
+                    "text": "'Ba aput Deebiti ŋäc ni beeye Wuuö Jwøk na këël tier nyec mare piny, nee put bëëte na nyeya mar jø Icriel; ni ŋäc gø thuwø ni beeye Wuuö Jwøk na tïŋ nyec mare maal kiper jiye ma jø Icriel.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba ki køør mana ö Deebiti na nø wec Keeprön ni ö Jerucalem, ena cäŋ jïtö ki mään møøk; ni ö Deebiti ni jïte ko obwöre møøk ma cwøw ki mään.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba nyeŋ obwöre moa nywøl Deebiti kanya bëëde Jerucalem beege Cimia, ki Cöbap, ki Nathan, ki Cølöman,",
+                    "ID": "14"
+                },
+                {
+                    "text": "ki Ibar, ki Elicua, ki Napëk, ki Japia,",
+                    "ID": "15"
+                },
+                {
+                    "text": "ki Elicama, ki Eliada, ki Elipelet. ",
+                    "ID": "16"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Bööt Jø Pilitin Yi Goor Rapayim",
+                    "text": "'Ba kanya wïnynyi jø Pilitinni ni Deebit onø røøny na nyeya mar jø Icriel, jø leny mo jø Pilitin bëët atïŋŋö ni cige kuna määnyge baŋ Deebit; 'ba kanya ö Deebiti na wïny gø, ena cøø ni døny kanya näk kar gwøk røk.",
+                    "ID": "17",
+                    "reference":"(1 Luup Nyeye 14:8-17)"
+                },
+                {
+                    "text": "'Ba jø leny mo jø Pilitin apïï ni putge dï Goor Rapayim gääbö.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre Deebit Wuuö Jwøk apëënynye ni kööe, «?Aŋø, cøøa baŋ leny baŋ jø Pilitin? ?A ni näk mo aano ci baŋge, ge cïbï cera?» 'Ba Wuuö Jwøk aköö jï Deebit, ni «Ciï; ka adïëri møn, jø Pilitin ge cïba cerï.»",
+                    "ID": "19"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput ci kanya caae ni Baal-Peradhim, ni put jø Pilitin böötö kaace; ni kööe, ni «Wuuö Jwøk nyïïmän 'moa abööte nyïma, ni caala pänh jwïëö kany wø räänye.» Kiper manøgønø, Deebit nyeŋ kaace aput cak ni Baal-Peradhim.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba jø Pilitin juu moge adööŋ piny kaace, ni ö Deebiti ki jø leny moe ni kälge juu moøgø.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba jø leny mo jø Pilitin acäŋ duuö ni cäŋge dï Goor Rapayim gääbö.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na pëëny Wuuö Jwøk, Wuuö Jwøk aköö, ni «Ïïni, ï ba doo cøøa baŋge ni tiir jaak; 'ba ge diï ŋøønya piny ni cääthï bäätge kanya enge yie, deŋ lul.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba kanyo tïme ni da dwøl mo caala tiet jø leny mo wïnynyï wïnynyö ki bäät lul, ge diï puta tuk, kiper nyootha gø ni Wuuö Jwøk onø ci nyïmmu ki man këëde ki jø leny mo jø Pilitin.»",
+                    "ID": "24"
+                },
+                {
+                    "text": "Køøre gïnögø aput Deebiti tïïc na kare, kaawat mana ö Wuuö Jwøki na kööm eni, ni put jø leny mo jø Pilitin 'näk ki mana täge ki Gëba këël mana këët Gëdher.",
+                    "ID": "25"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.6",
+            "name": "2 Camiel 6",
+            "text": [
+                {
+                    "title": "Kanya Kïth Acanduk Mar Wuuö Jwøk Jerucalem",
+                    "text": "'Ba Deebit jiy bëët moa no ojierø røk jø Icriel acäŋ cooŋ kanya aciel, ni beege jiy ma kume ma pïëradäk.",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 13:1-14)"
+                },
+                {
+                    "text": "Køøre Deebit aö maal ni tïŋŋe ki jiy bëët moa en buute ni ge cøøa Baala na en Juuda na acanduk mar Jwøk nee kälge, ni beeye acanduk mana no ocaa ri nyeŋ Wuuö Jwøk, eni na wïth jammi bëët, ni wø nyooth ajiem nyec mare ki yïthakic gïïa no otïïö ni caala nyïïatwiet maal moa cwøl ni kirubël ni wø en bäät acanduk manøgø.",
+                    "ID": "2",
+                    "comment":"Baala ki kwör møøk cwøl ni Kiriat-Jeerim. Kwaan 1 Camiel 7:1-2."
+                },
+                {
+                    "text": "'Ba gena öö ni lwørge acanduk mar Jwøk po Abinadap na en bäät thuur, ni cïpge acanduk bäät jääy mo nyään man wø tut dhäki, nee käärge ki bääte; ni ö Udha ka Akïïö, ni beege wäät Abinadap, ni bwøthge maal nyïm jääy.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Ni lwørge jääy manøgø ka acanduk mar Jwøk na en yie, ni aacge na Akïïö cäädhö maal nyïm acanduk manøgø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba kanyøgønø, Deebit ki jø Icriel bëët gena put miel døc ni yïthge met ni ge wär ki dudi ni ge pwøya Wuuö Jwøk, ni jøw pöödö ki thøme mo wø pwöt ni di roodø, ni jøw pöödö ki thøp-othïënhö, ka anëët, ka adijeege, ka athiliiŋŋi.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kanya pïïcge ri laara mar Nakön, dhäk moa käär acanduk, tietge aceec ni tïmge ni manynya pädhö; ni ö Udha ni put cere tïŋ maal baŋ acanduk mar Jwøk ni jøl gø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kanyøgønø, Wuuö Jwøk aput wëër døc ki Udha, ni put gø 'näk kaace kiper mana tïŋ cere maal bäät acanduk; ni ö Udha ni put thøø buut acanduk mar Jwøk kaace.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba Deebit agootø døc kiper mana ö wëëc Wuuö Jwøki na päth bäät Udha ni jääla gø. Kiper manøgønø, nyeŋ kaace aput cwøl ni Peereth-Udha këël dïcäŋi en.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput lwäyö ki Wuuö Jwøk dïcäŋögø. Køøre ena köö, «?Aŋø, acanduk mar Wuuö Jwøk ö baŋa nidïï këët nø?»",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba Deebit alwäyö ki man kïth acanduk mar Wuuö Jwøk yi Pääny Deebit; 'ba acanduk manøgø akïth Deebiti yi øt Obet-Idöm nyï Gëth.",
+                    "ID": "10",
+                    "comment":"Pääny mana cwøl ni Pääny Deebit beeye Jerucalem."
+                },
+                {
+                    "text": "Kanyøgønø, acanduk mar Wuuö Jwøk aput bëëte yi øt Obet-Idöm nyï Gëth ki dwäde adäk, ni ö Wuuö Jwøki ni put Obet-Idöm gwïëth ki jøøa en paare bëët.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba acaan jï nyeya ma Deebit ni køp, ni «Wuuö Jwøk Obet-Idöm anø gwïëdhe ki jøøa en paare këël gïïa en jïre bëët, ki køør acanduk mar Jwøk.» Kanyøgønø, Deebit aput cøø ni lwør acanduk mar Jwøk po Obet-Idöm, ni kïth gø yi Pääny Deebit, ni yie met døc.",
+                    "ID": "12",
+                    "reference":"(1 Luup Nyeye 15:25 — 16:3)"
+                },
+                {
+                    "text": "'Ba gïna tägö beeye en, kanya ö jøøa käär acanduk mar Wuuö Jwøk na nø cääthge ki kääte abïciel, Deebit aput cïpö ki dhieŋ ma rwaath ki nyirøøa mo olør no olämi.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kar kaagø, Deebit aput tägö ki meeŋ ki cwïnye bäre nyïm Wuuö Jwøk, ni eno ruyö ka abïïn wø cwøl ni ëëput na näk cwääc ka waac lïïna.",
+                    "ID": "14",
+                    "comment":"Teeŋ ëëput man beeye abïï mo otïïö ni ena kur keere ni wø røc dïlämi kany wø tïïe Øt Jwøk, 'ba teeŋ ëëput manøgø ciek."
+                },
+                {
+                    "text": "Kanyøgønø, Deebit ki jø Icriel bëët acanduk mar Wuuö Jwøk aputge kälö ni ge kwöŋŋö ni yïthge met døc, ni ge kudhö ki tuŋi.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba gïna tägö, kanya tïme na acanduk mar Wuuö Jwøk pïï dï Pääny Deebit, Mikal nyi Cøøl, na näk cï Deebit, aräŋŋö ki dha awëërnyeŋ ni joot nyeya ma Deebit ni pärö ni miel nyïm Wuuö Jwøk; ni put nyeya taak ki cwïnye.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre acanduk mar Wuuö Jwøk aputge kälö ni cïpge gø kare yo oduŋkaara mana no onø cwöth Deebiti piny kiper gø. Ni ö Deebiti ni cïpe ko olämme mo wø waaŋ bäre ko olämme mo wø duunni ki mëër nyïm Wuuö Jwøk.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba kanya løny Deebiti ki cïp olämme mo wø waaŋ bäre ko olämme mo wø duunni ki mëër, jiy agwïëdhe ki nyeŋ Wuuö Jwøk, eni na wïth jammi bëët.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre, eni dääpe ki nyïïomøki mo omiinynyø na dhøgi apääŋŋe jï jø Icriel moa thööth kaagø, ni beege cwøw ki mään, ni pääŋŋe jï ŋati man nø ki ŋati man nø. Køøre jiy bëët adøø mïëcge ni ŋati man nø døøa paare.",
+                    "ID": "19",
+                    "comment":"Dääpe ki dha Araba cwøl ni jiraya."
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na duu paan dwøŋ kuna gwïëth jø paare, Mikal nyi Cøøl aöö nee røømge ki Deebit, ni cääne ki luum apääda ni kööe, na «Aŋø, nyeny Icriel, riï ka arunynyï ka abïï miï di wøørø kipere dïcäŋi. ?Aŋø, ï bëënnï ŋø ki dëërï dïcäŋi nyïm mään mo wø tïïö jï jø tïïc moï niï nëëni keda dhaanhø ma bøøl mo wïïe ba laay ki man cäädhe ki dëëre?»",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba Deebit aköö jï Mikal, ni «Gïna tïïa, mara beeye meeŋ nyïm Wuuö Jwøk na jier aani bäät wäru ki dhi øtø mare, na tïïc aani ni aana wïth jø Icriel ni beege jiye, eni na Wuuö Jwøk. 'Ba aani a poot bëëdö naa miel ni yia met naa pwøya Wuuö Jwøk.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba aani, a poot tïmö naa jööt ni kaala man, ni tïm kara ni nëëni ni thiinh ki jïra; 'ba ki jï mään moø ni cäänï kiperge yøø, a wøørge wøørø.»",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba Mikal nyi Cøøl aput bëëtö ni bäŋ nyilaal jïre këël mana thøøe.",
+                    "ID": "23"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.7",
+            "name": "2 Camiel 7",
+            "text": [
+                {
+                    "title": "Luubö Mana Caan Jwøki Kiper Dhi Øt Deebit",
+                    "text": "'Ba kanya tïme ni nyeya ma Deebit bëëdö paan dwøŋ yi øde mana geer jïre, ni eno nø mooc Wuuö Jwøki ki jwöm, ni lenye moa këële ki nyïïmän moe moa en deŋŋe bëët oløny nikwöc,",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 17:1-15)"
+                },
+                {
+                    "text": "ena köö jï nyikuŋ Jwøk ma Nathan, ni «Neenï, aani a bëëdö yi øtø mo geer ka jenni mo perge leth; 'ba acanduk mar Jwøk bëëdö yo oduŋkaara jaak.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre Nathan aköö jï nyeya, «Wui nyeya, beerra man tïïyï jammi bëët moa manynyï ki cwïnyï, kiper Wuuö Jwøk ena buutï.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba na tïme na dïwäänögø, dwør Wuuö Jwøk aö bäät Nathan ni kööe,",
+                    "ID": "4"
+                },
+                {
+                    "text": "ni «Ci baŋ dhaanhnha ma Deebit ni caanï luumma jïre, ni kööï ni man beeye dwør Wuuö Jwøk, ena köö, na ‹?Aŋø, beeye ïïni noo gëëdö ki øtø jïra mo bëëda yie?",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper aani, a kär bëëdö yi øtø ki mana täge ki kanya käla jø Icriel wøk ki Ijep këël dïcäŋi ennø; 'ba a bëëdö naa wïdö ni kar bëëtö mara beeye oduŋkaara.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba kwöra caadha ki jø Icriel bëët, da gïn mo yaa maar caan jï dïbwöthe mo jø Icriel, moa köömma ni käärge jiya ma jø Icriel, mo aano köö, na «?Aperŋø, ni ba gëëdu ki øtø jïra en, mo geer ka jenni mo perge leth?»?›",
+                    "ID": "7"
+                },
+                {
+                    "text": "«'Ba ennø, caanï jï dhaanhnha ma Deebit, ni man beeye dwør Wuuö Jwøk, eni na wïth jammi bëët, ena köö, ni ‹Aani, ïïna jiera kanya enï pwöl kwaath niï kwaaya dïëk, niï tïmï ni ïïna dïbwödhi mar jiya ma jø Icriel.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba aana bëëdö ki ïïni ki yïth kwöra caathï bëët ni dïïra wïth nyïïmän moï nyïmï; 'ba nyeŋŋï poot tïïa tïïö nee wïnye, ni caala nyeŋ jiy moa no owïnyö døc bäät piny.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Aani thuwø da kany mo jiera jierø kiper jiya ma jø Icriel nee tietge këëtge piny yie, ni beeye kany bëëtge yie na poge, ni tïme ni bäŋ jiy mo kiera wïthge këët, ni bäŋe jiy mo wïthge reyø mo caara ge këët kaawat mana dïkwøŋ,",
+                    "ID": "10"
+                },
+                {
+                    "text": "ni beeye ki mana täge ki dïcäŋa thïïŋa pïëmme jï jiya ma jø Icriel. 'Ba aani, ï mooa mooø ki jwöm ni tïme ni bäŋ leny yïthakiyu ki nyïïmän moï bëët. 'Ba ennø, a na Wuuö Jwøk, a caana mara jïrï ki man näk beeye a na Wuuö Jwøk noo tïïc dhi ødï ni teek.",
+                    "ID": "11"
+                },
+                {
+                    "text": "« ‹'Ba kanyo päŋ nïne moï noo thøwï noo läpï køør kwäyu, aani, da ŋat mo käla dëërï mo thïïŋa thïïŋö køørï; 'ba aani tier nyec mare këëlla piny.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni ö eni ni gëëde ki øtø kiper nyeŋŋa, ni këëlla tier wälu mar nyec mare piny na bäre bäre.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba aano bëëdö ni aana wuuö jïre, ni bëëde na wäädö jïra. 'Ba kanyo näk eno bääyö, pwönynya pwönynyö kaawat man wø ö dhaanhe wø pwöny wääde, ni jääla gø kaawat man wø ö dhaanhe wø jääl wääde,",
+                    "ID": "14"
+                },
+                {
+                    "text": "'ba mëër mara ni wø ba jøøl, na paanya bäät Cøøl, ŋata käla wøk niï läwï kare, ba paanya bäät ŋataca.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba dhi øtø marï ki nyec marï puta ruuö køørï; ni këëlla tier wälu marï piny na bäre bäre.› »",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre Nathan luup bëët, këël gïïa nyooth Jwøki bëët jïre, acaane jï Deebit. ",
+                    "ID": "17"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Läme Jï Jwøk Ni Pwøya Gø",
+                    "text": "Køøre nyeya ma Deebit aci kar lam ni pï piny nyïm Wuuö Jwøk ni läme ni kööe, «?Wui Kwäärö Wuuö Jwøk, aana ŋa? ?A dhi øtø mara thuwø, nyïëdi, ni tïïyï gïïögø bëët yøø kipera?",
+                    "ID": "18",
+                    "reference":"(1 Luup Nyeye 17:16-27)"
+                },
+                {
+                    "text": "?Wui, Kwäärö Wuuö Jwøk, ki jïrï, gïna nø tïïyï enø beeye gïn mo thiinh jaak? 'Ba ïïna cäŋ cäänö kiper gïno tïïyï kiper dhi øtø mara yi nyïme kunece. ?Wui, Kwäärö Wuuö Jwøk, teeŋ gïnögø putï ka tïïc kiper dhaanhø møn en?",
+                    "ID": "19"
+                },
+                {
+                    "text": "«Wui, Kwäärö Wuuö Jwøk, ?agïnaŋø noo caana jïrï këët nø mo kaala man, a na Deebit en? Kiper a na dhaanhnhï en, cwïnya oløny ni ŋäyï døc.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba kiper luupï bëët moa nø carï nee thurge karge, ki køør mana caarï ki cwïnyï, beeye ni tïïyï tier luubö man ni pere leth en nee bëëde ni ŋääa.",
+                    "ID": "21"
+                },
+                {
+                    "text": "«Wui, Kwäärö Wuuö Jwøk, ïïna Jwøk niï dwøŋ. Ka adïëri møn, bäŋ jwøk mør mo caala ïïni, ni bäŋ jwøk mør këët, 'ba bee ï keerï, kaa mana wïnywa gø ki ïthwa.",
+                    "ID": "22"
+                },
+                {
+                    "text": "?Aŋø, da wï jur bäät piny kany mo caala jiyï ma jø Icriel? Kiper beeye ï na Jwøk marwa na ö baŋ jiyï ma jø Icriel, ni kälï wa wøk ceŋ jø Ijep, nee wa bëëtwa na jiyï, ni tïïyï nyeŋŋï nee wïnye. Ïïna tïïö ki gïï mo døøŋŋø mo di lwäärö dëët wïth juurre ki juu moge, ni riemï ge wøk nyïmwa, wa na jiyï.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, beeye ïïni na këël tiet jiyï piny ma jø Icriel, nee putge bëëtö na jiyï na bäre bäre, ni tïmï ni ïïna Jwøk marge.",
+                    "ID": "24"
+                },
+                {
+                    "text": "«'Ba ennø, ï na Wuuö Jwøk, luubö mana nø caanï kipera, a na dhaanhnhï, ki dhi øtø mara, beerra man putï gø wëëk thur kare na bäre, ni tïïyï gø kaawat mana nø caanï gø.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba nyeŋŋï obëëdö ni dwøŋ na bäre bäre, ni kö jiyi, ni ‹Wuuö Jwøk, eni na wïth jammi bëët, beeye Jwøka eni mar jø Icriel›; 'ba a na dhaanhnhï ma Deebit en, put dhi øtø mara tïïc ni teek nyïmï.",
+                    "ID": "26"
+                },
+                {
+                    "text": "«Wui, Wuuö Jwøk ï na wïth jammi bëët, ï na Jwø Icriel, gïnögø anø nyoothï jïra, a na dhaanhnhï, ni kööï, ni ‹Aani dhi øtø marï otïïa ni teek.› Kiper manøgønø, a na dhaanhnhï, cwïnya ajïtö ki cer ki man läma jïrï.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Wui, Kwäärö Wuuö Jwøk, bee ï na Jwøk, ni luup moï beege adïëri, ni bee ï na buuk luummi en na beer jïra, a na dhaanhnhï.",
+                    "ID": "28"
+                },
+                {
+                    "text": "'Ba ennø møn, a kwaya ïïni nee dhi øtø mara gwïëthï, a na dhaanhnhï, ni tïme ni puta bëëte ni nut na bäre bäre nyïmï. Wui Kwäärö Wuuö Jwøk, gïnögø anø caanï; 'ba ki køør gwïëth mano gwïëthï dhi øtø mara ki gø, a na dhaanhnhï, gwïëth manøgø put bëëte ni nut na bäre bäre. Enøgønø.»",
+                    "ID": "29"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.8",
+            "name": "2 Camiel 8",
+            "text": [
+                {
+                    "title": "Luum Wïth Juurre Moa Bööt Deebiti",
+                    "text": "'Ba na tïme na køøre cään, Deebit akëëdö ki jø Pilitin ni dwøk wïthge piny; ni ö Deebiti ni lwør pääny mana dwøŋ ceŋ jø Pilitin.",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 18:1-13)"
+                },
+                {
+                    "text": "Køøre Deebit jø Möap abööte thuwø, ni ö jiyi moa maae ki tøŋ ri leny ni cïïm geni na tëëŋŋe, ni wëëk geni but piny. Køøre eni tëëŋŋe ariiø moa cïïmme røk jøøgø anääe, ni wec tëëŋŋö aciel bäre ni kwøw. Køøre, jø Möap aput tïmö ni ge bëënna Deebit ni ge cïpö ka ajwäk jïre.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba Deebit Adadëdher o Reeyöp nyeny jø Dhöba abööte thuwø kanya ö Adadëdherri na aae ni cøøa kuna cäŋ nyec mare dwøk kare bäät Naam Upareeti.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba Deebit jø leny mo wø cäädhi ki bäät okwëënyi ma kuma aciel ki dïpe abïriiø ki jø leny mo wø cäädhi ki tietge ma kume ma pïërariiø amaae cer Adadëdher; ni ö Deebiti ni ŋøør ojwönyi mo tiet okwëënyi bëët mo wø tut jïëthe. 'Ba møøk mo orømø awiie kiper jïëthe mo wø tut okwëënyi ma dïpa.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba kanya ö jø Aram moa en Damacka na öge kuna kønyge Adadëdher nyeny jø Dhöba, Deebit anääö ki jø Aram ma kume ma pïërariiø kurriiø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput tïïö ki kwör koor dï mïëc jø Aram moa en tier Damacka, ni ö jø Arammi ni putge tïmö ni ge bëënna Deebit ni ge cïpö ka ajwäk jïre. 'Ba Wuuö Jwøk aput bëëte ni køønynya Deebit kany wø tuge yie jaak.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba Deebit kööde mo leny moa käär jø lenynyi mo Adadëdher na näk otïïö ki warkey aput lwør, ni käl ge yi Jerucalem.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba nyeya ma Deebit akädö ki nywïëny ma jwëëlli mo thööth døc ki yïth päänye mo nyeya ma Adadëdher, ni beege Bëtha ki Bëröthay.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kanya ö Töi nyeny jø Amath na wïny gø ni Deebit jø leny mo Adadëdher bëët ee nø böötö,",
+                    "ID": "9"
+                },
+                {
+                    "text": "Töi wääde ma Jöram aput jääŋŋö baŋ nyeya ma Deebit nee määdhe mare ki gwïëth mare caan jï Deebit, kiper mana ö Deebiti na këëde ka Adadëdher ni bööt gø; kiper Adadëdher bëëdö ni këëdö ki Töi. 'Ba Jöram o Töi aay ni käädö ki gïï mo tïïc ka warkey ki gwel-bïrö ki nywïënyö ma jwïël jï Deebit.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba Deebit gïïögø aput cïp kur keerge jï Wuuö Jwøk, ni dwal ge bäät warkey ki gwel-bïrö moa näk ee kwøŋ cïp kur keerge jï Wuuö Jwøk, ni beege moa käle baŋ wïth juurre bëët moa näk wïthge ee dwøk piny;",
+                    "ID": "11"
+                },
+                {
+                    "text": "ni wïth juurre moa käl gïïögø baŋge beege jø Ëdöm, ki jø Möap, ki jø Amön, ki jø Pilitin, ki jø Amalëk. 'Ba gïïa twier baŋ Adadëdher o Reeyöp, nyeny jø Dhöba, ee nø cïp kur keerge jï Wuuö Jwøk thuwø.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit nyeŋŋe aput wïnyö kanya duue ni jø Ëdöm ma kume apaar ka abära ee nääö Goor Acäbö.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Køøre Deebit dï Ëdöm bäre aput kïthö ki kwör koor, ni ö jø Ëdömmi bëët ni putge tïmö ni ge bëënna Deebit. 'Ba Wuuö Jwøk aput bëëte ni køønynya Deebit kany wø tuge yie jaak. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Jic Deebit Moa Kwörge Døøŋŋø",
+                    "text": "Køøre Deebit aput bëëdö na nyeya mar jø Icriel bëët; ni luup ŋøle na karge, ni tïïya adïëri jï jø Icriel bëët.",
+                    "ID": "15",
+                    "reference":"(1 Luup Nyeye 18:14-17)"
+                },
+                {
+                    "text": "'Ba Jöap o Dheruya beeye kwääy lwaa leny, ni ö Jøcapati wär Akilut ni bëëde na nyikugö.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba Dhadök wär Akitöp ka Ayemëlëk wär Abiethaar beege dïlämme moa døøŋŋø, ni ö Ceraya ni bëëde ni beeye ŋat wø göör luup akwöma piny.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba Benaya o Jööda beeye kwääy lwaak mar jø leny mo wø koor nyeya, ni beege jø Kelita ki jø Pelita. 'Ba wäät Deebit gena jø wø køny nyeya ka acaara.",
+                    "ID": "18"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.9",
+            "name": "2 Camiel 9",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Nyooth Mëër Mare Jï Mepiböcëth ",
+                    "text": "'Ba dïcäŋ aciel, Deebit apëëö ni kööe, na «?Aŋø, da dhaanhø mo odööŋ ni kwøw røk nyïïkwaac Cøøl, nee mëër mara nyoodha jïre ki køør mëër mana en yïthakicwa ki Jönathan?»",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba kar kaagø, da dhaanhø mo bëëdö na ŋat tïïc jï jø dhi øt Cøøl mo nyeŋŋe Dhiba; ni cwøli, ni ö baŋ nyeya ma Deebit. Ni kö nyeya jïgø, na «?Aŋø, beeye ï Dhiba møn en?» Ni kö Dhiba, ni «Beeye aani, a na dhaanhnhï.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre nyeya aköö, na «?Aŋø, da dhaanhø mo poot no odööŋ ni kwøw røk nyïïkwaac Cøøl nee mëër mar Jwøk nyoodha jïre?» 'Ba Dhiba aköö jï nyeya, ni «Da wär Jönathan mo tiete karge riet otøyø, mo odööŋ ni poot kwøw.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jï Dhiba, «?Eni en kaa ennø?» Ni løgi ya Dhiba jï nyeya, «Ka adïëri møn, eni nutö po Makir wär Amiel paana cwøl ni Lödebaar.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre nyeya aput jääk baŋe Lödebaar po Makir wär Amiel, ni put öö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kanya ö Mepiböcëthi o Jönathan, nyikwaar Cøøl, na pïïe baŋ Deebit, cøŋŋe aput këël piny ni kuul wïïe piny ni määtha gø. Ni cwøli ya Deebiti, ni «Mepiböcëth.» Ni løk gø, ni «Aani en, a na dhaanhnhï.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Køøre Deebit aköö jïgø, ni «Kärï lwäyö; ka adïëri møn, mëër mara nyoodha nyoodhø jïrï ki køør mëër mana en yïthakicwa ki wäru ma Jönathan; ni ö pwöthi bëët moa näk mo kwaru ma Cøøl ni duua ge jïrï. 'Ba ïïno put bëëtö niï cämö ki aani cooth.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgønø, Mepiböcëth cøŋŋe acäŋ këël piny ni kuul wïïe piny ni kööe, «?Wui nyeya, a na dhaanhnhï, a ba caal gwök mo othøw? ?A mëër man ni dwøŋ bäre en, orømø ki man nyoothï gø jïra?»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Køøre nyeya, Dhiba na bëëdö na ŋat tïïc mar Cøøl acwøle, ni kööe jïgø, ni «Jammi bëët moa näk mo Cøøl, këël moa näk mo jø dhi øde bëët, anø cïba jï nyikwaar ŋata bëënnï na kwäärö marï.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba ïïni ki wäätï ki jø tïïc moï, u doo purö ki pwödhö jï Mepiböcëth, ni ö caammi mo ociek ni kälu ge jï nyikwaar ŋata bëënnï na kwäärö marï, nee jïte ki cam. 'Ba Mepiböcëth puta bëëtö ni cämö ki aani cooth.» 'Ba kar kaagø, Dhiba jïre da wääte ma apaar kurbïïc ki jø tïïc ma pïërariiø.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre Dhiba aköö jï nyeya, ni «Ki køør luup bëët moa nø carï, ï na nyeya mara, na köömmï aani, a na dhaanhnhï, tïïa tïïö na karge.» Kanyøgønø, Mepiböcëth aput bëëtö ni cämö ka nyeya ma Deebit ni caala o nyeya aciel røk wääte.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba Mepiböcëth jïre da wääde mo poot thiinh mo nyeŋŋe Mika. 'Ba jiy bëët moa bëëdö po Dhiba gena put bëëtö na jø tïïc mo Mepiböcëth.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Mepiböcëth aput bëëtö yi Jerucalem, ni eni cämö ka nyeya cooth. 'Ba ena ŋwøl ni tiete karge riet otøyø.",
+                    "ID": "13"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.10",
+            "name": "2 Camiel 10",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Riem Jø Amön",
+                    "text": "'Ba køøre cään gïna tägö, nyeya mar jø Amön athøw, ni ö wääde ma Anun ni ci kar wänni na nyeya.",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 19:1-19)"
+                },
+                {
+                    "text": "Køøre Deebit aköö, ni «Aani mëër mara nyoodha nyoodhø jï Anun o Naøc, kaawat mana ö wänni na nyooth mëër mare jïra.» Kanyøgønø, Deebit aput jääk baŋ Anun ki jiy nee cwïny Anun cømge kiper thøø mar wänni. 'Ba kanya ö jic Deebiti na pïïcge yi ŋööm jø Amön,",
+                    "ID": "2"
+                },
+                {
+                    "text": "jø Amön moa kwörge døøŋŋø aköö jï nyenyge ma Anun, na «?Aŋø, ki jïrï ni Deebit wøøra wäru, na jääŋ baŋï ki jiy mo cøm cwïnyï? ?Aŋø, Deebit jiye ba jääŋŋe baŋï kaper nee pääny raŋge ni marge lïëw nee tukge yi nyïme?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgønø, Anun, jic Deebit aput mak ni liel thäk jïëc tïkge, ni ö abïïe moge moa näk caala jalabiiye ni ŋøør ge ni cëëgö ni ena dhøk wödhi, ni wëëk ge wääth.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre jøøgø atïŋŋö ni cääthge ni wïthge olääö døc kiree. 'Ba kanya caan gïnögø jï Deebit, ena jääk baŋge ki jiy nee ge jøli, ni kööe jï jøøa jääŋŋi, ni «Caannu jïge, ni ‹Putu bëëte Jerikö këël mano tuc jïëc tïgu; køøre nø, uuno duui.› »",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kanya ö jø Amönni na jootge gø ni geno nø tïmö ni caala gïn mo ŋwäänynye raac ki jï Deebit, gena jäägö ki jiy nee määnyge ki jø leny mo këëdi jïge ki gwel, ni jøøa jääkge baŋge beege jø Aram moa bëëdö Bëëth-Reyap ki moa bëëdö Dhöba, ni jïtge ki jø leny mo wø cäädhi ki tietge ma kume ma pïërariiø, ki nyeny Maika ki jø leny moe ma kuma aciel, ni jïtge ki jø leny ma kume apaar kurriiø baŋ jø Thöp.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na wïny gïnögø, eni Jöap ki jø leny moa teek bëët ajääŋŋe.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ni ö jø Amönni ni öge wøk ni cïïmge rege kiper leny dhi kiir mar pääny marge. 'Ba jø leny mo jø Aram moa käl Dhöba ki moa käl Reeyöp, ki jø leny moa käl Thöp, ki moa käl Maika, ge ena kur keerge dï pwöla.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kanya ö Jöapi na joot gø ni leny oløny ni ööa bääte ki nyïme ki ŋääe, ena jëëdö ki jiy moa teek røk jø leny mo Icriel, ni cïïm ge na dhøgi nee këëtge ki jø Aram.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba jø leny moa dööŋ acïp cer coki ma Abicay, ni ö Abicay ni cïïm ge na dhøgi nee këëtge ki jø Amön.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Køøre Jöap aköö jï coki ma Abicay, «Ni näk mo jø Aram tïmö ni ge teek bääta, a wär kønyï; 'ba ni näk mo jø Amön tïmö ni ge teek bäätï, ï kønya kønyø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Mak riï nø, ni këëdø ni ø teek kiper jø pøø ki päänye mo Jwøk marø. Beerra man ö Wuuö Jwøki ni tïïc mana beerra eni ki jïre.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap ki jø leny moe na en buute, gena ci baŋ leny ki jø Aram, ni ö jø Arammi ni bwøkge nyïm Jöap.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kanya ö jø Amönni na jootge gø ni jø Aram obwøk, gena put bwøk thuwø nyïm Abicay, ni dønyge yi pääny. Køøre Jöap aput duuö ki baŋ leny mana këël ki jø Amön ni duu Jerucalem.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba kanya ö jø Arammi na jootge gø ni gena nø bööt jø Icrielli, rege acooŋge kanya ciel.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Køøre Adadëdher ajäägö ki jiy nee jø Aram moa en løø Naam Upareeti løøga öge, ni öge kanya cwøl ni Ëlam; 'ba Cöbak kwääy lwaa leny mar Adadëdher beeye eni na bwøth geni.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba kanya ö gïnögø na caani jï Deebit, Deebit jø leny mo jø Icriel bëët acooŋ kanya ciel, ni aacge ni ŋutge løø Naam Jördan løøga, ni öge Ëlam. 'Ba jø leny mo jø Aram rege acïïmge na dhøgi ni këëtge ki Deebit.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba jø Aram gena bwøk nyïm jø Icriel, ni ö Deebiti ni nääe ki jø Aram ma dïpe abïriiø mo wø këëdi ki bäät jïëthe mo wø tut okwëënyi, ki jø leny ma kume ma pïëraŋween mo wø cäädhi ki bäät okwëënyi, ni cwøp Cöbak kwääy lwaa leny mar jø Aram, ni put Cöbaki thøø kaace.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba kanya ö nyeye bëët moa en tier Adadëdher na jootge gø ni geno nø bööt jø Icrielli, gena tudö ki luubö nee bëëtge ki bëët mëër ki jø Icriel, ni bëënge jø Icriel. Kanyøgønø, jø Aram gena put lwäyö ki man kønyge jø Amön këët.",
+                    "ID": "19"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.11",
+            "name": "2 Camiel 11",
+            "text": [
+                {
+                    "title": "Luum Bääyö Mana Dwøŋ Na Tïïc Deebiti ",
+                    "text": "'Ba kanya tïme ni piny otal ni bäŋ køth këët, ni beeye kany wø ci nyeye baŋ mäny, nyeya ma Deebit, Jöap ki kwääc lwaae mo leny møga këël jø leny mo jø Icriel bëët, ajääŋŋe baŋ leny; ni ö jøøgø ni cige ni raanyge jø Amön, ni putge päänya dwøŋ na cwøl ni Raaba tii dïër. 'Ba Deebit odööŋ paac yi Jerucalem.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba dïcäŋ aciel ki kur abøøya, nyeya aö maal ki bäät pëëm mare ni caath tiete yi øtø mare mana en bäät øtø maal; 'ba kanya cäädhe kaace, ena lwïthö piny ni jïte ki dhaagø mo lwøk. 'Ba dhaagø manøgø beeye dhaagø mo kïte mïërö døc.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit ajäägö ki dhaanhø nee bëët dhaagø manøgø pëënynye. 'Ba akøp, na «?Aŋø, dhaagø manøgø paa Bathcïba nyi Eliam, ni beeye cï Uria nyï Këth?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba Deebit aput jääk baŋ dhaagø manøgø ki jiy, nee öge ki gø; ni ö dhaagø manøgø ni pïïe baŋ Deebit. Køøre Deebit aci baŋ gø ni bute ki gø na dhaagø, ni ö nyaanøgø ni put døø paare. 'Ba kar kaagø, dhaagø manøgø onø gööc wøk ki gïr mään.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre dhaagø manøgø yie ajïtö ki dhaanhø, ni jääk baŋ Deebit nee caan jïre, ni «Yia da dhaanhø.»",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba Deebit ajääk baŋ Jöap pwöl leny, ni kööe, ni «Uria nyï Këth jääŋŋï baŋa.» Kanyøgønø Jöap, Uria aput jääŋŋö baŋ Deebit.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba kanya pïïc Uria baŋ Deebit, ena pëëny Deebiti ki jööt dëël mar Jöap ki jööt dëël mar jø leny, këël luum leny bäre.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï Uria, ni «Ci paarï, ni jwömï riï.» Kanyøgønø, Uria aput døny wøk yi øt nyeya, ni ö cam mana cïp nyeya jïre ni jääŋŋi køøre.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba Uria aput but dhi øt nyeya ki jø tïïc mo nyeya møga bëët, ni käre ci paare këët.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba kanya caani jï Deebit ni køp, ni «Uria kär ci paare,» Deebit aköö jï Uria, «?Aŋø, ï ba käl jöö? ?Aperŋø na kärï ci paarï en?»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba aløk Uria jï Deebit ni kööe, na «Acanduk mar Wuuö Jwøk, ki jø leny mo jø Icriel, ki tuuŋge ma jø tuuŋ Juuda, ge bëëdö yïth abïle; ni këël kwääy lwaa leny mara ma Jöap ki kwääc lwaae mo leny møga, twïër marge ege tïïö pwöla jaak. ?A aani nø, a doo cøøa paara ni cäma ni mädha ni yia met, ni cøøa baŋ dhaagø mara ni buta ki gø? Aani, a kööŋŋa riï kiree, teeŋ gïnögø ba daa tïïö na bäre bäre.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï Uria, ni «Wøp nø, ï bëëdö kany dïcäŋi thuwø, 'ba diøø ï wëëga wääth niï aayï.» Kanyøgønø, Uria aput bëëtö yi Jerucalem dïcäŋögø këël riet nïne.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba ena cwøl Deebiti ni cäme ni mädhe ki eni na aciel, ni puti Deebiti tïïc nee meere. 'Ba na tïm pinynyi na wäär, Uria adøny wøk ni cäŋ ci baŋ jø tïïc mo nyeya, ni but kaace; 'ba eni kär ci paare.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba na tïme na amöölla, Deebit agööt baŋ Jöap ki wëëlö ni cïp gø cer Uria nee kïth baŋ Jöap.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba luubö mana no ogöör Deebiti yi wëëlö, ena köö, ni «Uria wär tïïc nee ci nyïm, kanyo en lenynyi mana teek yie, ni døøu ŋää cään, nee tïme ni løny ki man këëli ni thøøe.»",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba kanya bëëde ni pääny onø rum Jöapi dïër, Uria aput Jöapi tïïc nee ci kanya en jø leny moa teek mo jøøgø yie.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Kanyøgønø, jø leny mo paanøgø aput ö wøk, ni këëtge ki Jöap, ni ö jø møøki røk jø leny mo Deebit ni thøwge ri leny kaagø; 'ba Uria nyï Këth thuwø athøw.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Køøre Jöap ajääk baŋ Deebit ni caan gïna tägö ri leny bäre.",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba acaan Jöapi jï ŋata jääŋŋe, ni kööe, ni «Kanyo nø thöörï jammi bëët moa tägö ri leny ki caan jï nyeya,",
+                    "ID": "19"
+                },
+                {
+                    "text": "kanymør nyeya wëër ki ïïni, ni kööe, na ‹?Aperŋø na nyiigu buut kiir nou këëdu ki geni? ?Aŋø, kuyu nou thööcge thööyö ki ri kiir?",
+                    "ID": "20"
+                },
+                {
+                    "text": "?Aŋø, Abimëlëk o Gidien othøw nidïï na bëëde? ?Paa dhaagø jaak na lëëŋ kïn guur ki bäät kiir maal, ni päth wïïe, ni put thøø Tëbët kaace? ?Aperŋø nø na nyiigu buut kiir mar jøøgø?› Køøre nø, wärï put köö, ni ‹Dhaanhnhï ma Uria nyï Këth, athøw thuwø.› »",
+                    "ID": "21"
+                },
+                {
+                    "text": "Kanyøgønø, ŋata jääŋ Jöapi atïŋŋö, ni pïïe baŋ Deebit ni caan luup bëët moa jääŋŋi Jöapi kiperge.",
+                    "ID": "22"
+                },
+                {
+                    "text": "Ni kö ŋata jääŋŋi jï Deebit, ni «Jøøke atïmö ni teek, ni öge baŋ leny ki waani yi pwöla; 'ba gena ŋaacwa ni putwa pïï dhi kiir marge.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Kar kaagønø, jø wø këëdi ka athëëre moa en røk jøøke, jø leny moï aputge këërö ki ri kiir; ni ö jø møøk røk jø leny ni putge thøø, këël dhaanhnhï ma Uria nyï Këth thuwø aput thøø.»",
+                    "ID": "24"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï ŋata jääŋŋi, ni «Ciï ni caanï gø jï Jöap, ni ‹Cwïnyï kär ränynyö kiper gïna tägö enøgø, kiper kany wø näk ri leny, thøø dagø løøk man ki løøk maya; 'ba ennø, tïïc leny marï ni teek døc ni mayï pääny manøgø.› 'Ba luubö manøgø wär caanï jïre, nee cwïnye jïte ki cer.»",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba kanya ö cï Uria na wïny gø ni cwøre ma Uria athøw nyïm leny, ena jwöŋö ni kïmme kiper thøw cwøre.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba kanya thum nïr kïmmö, Deebit ajääk baŋe ni käl gø paare, ni put tïmö na cïïe. Køøre dhaagø manøgø alwaar ki dhaanhø ma dïcwøø ni beeye nyilaal mar Deebit. 'Ba gïna tïïc Deebiti beeye gïn mo nëëni ni raac døc ki jï Wuuö Jwøk.",
+                    "ID": "27"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.12",
+            "name": "2 Camiel 12",
+            "text": [
+                {
+                    "title": "Luum Ajäla Mana Caan Wuuö Jwøki Ki Dhi Nathan",
+                    "text": "'Ba dïcäŋ aciel Wuuö Jwøk, Nathan na näk nyikuŋ Jwøk ajääŋŋe baŋ Deebit. Ni ö Nathanni ni ci baŋ Deebit ni cääne ki eni ki luup mo keda leer, ni kööe jïgø, ni «Da jiy ariiø mo bëëdö paac aciel; dhaanhø aciel okwär, ni dhaanhø maya can.",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 20:1-3)"
+                },
+                {
+                    "text": "'Ba ŋata no okwär jïre da pïïth dïëk ki dhäk mo thööth.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba ŋata can bäŋ gïrpiny jïre, 'ba beeye nyidiel aciel keere ma røømmø ma nyakøø mo poot thiinh, mo ee ŋeeø ni piith gø; ni ö nyidierøgø ni put piith na aciel ko obwöre moe. 'Ba gïn wø cam ŋatøgø beeye wø cam nyidierøgø, ni ge mädhö ki gïrpiny aciel. 'Ba nyidierøgø bëëdö kööre,",
+                    "ID": "3"
+                },
+                {
+                    "text": "«'Ba dïcäŋ aciel ŋat mo käla jöö apïï na wëëllö po ŋata no okwär. 'Ba ŋatøgø no okwär enø, yie kär met ki man lwöte ri pïïth dïëk wala ri dhäk moe, kiper nee jiiŋŋe na cam jï ŋata käl jöö na pïï baŋe na wëëllö. 'Ba gïna tïïe, nyidier ŋata can alwøre ni jiiŋ gø na cam jï ŋata pïï paare na wëëllö.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre Deebit aput wëër døc ki gïr ŋatøgø, ni kööe jï Nathan, ni «Ŋëët Wuuö Jwøk kiree, ka adïëri møn, ŋata tïïc gïnögø enø, rømi ka 'näk.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba ŋatøgø nyidier ŋata can dee coolø ki dïëk aŋween, kiper gïnögø atïïe ni cwïnye kär pädhö.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba Nathan aköö jï Deebit, ni «Beeye ï ŋateca. Man beeye dwør Wuuö Jwøk, Jwø Icriel, ena köö, ni ‹Beeye aani na tïïc ïïni nee wïïï thïïmmi ki maaw naa røønya ïïni na nyeya mar jø Icriel, ni beeye aani na piem ïïni cer Cøøl.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Aani thuwø, po nyeya marï ma Cøøl ki määre acïba jïrï nee neetï; ni ö jø Icrielli bëët, këël tuuŋge ma jø tuuŋ Juuda, ni cïba ge cerï. 'Ba doo na moøgø nøk kiperï, daa meedø jïrï ki møøk mo perge leth mo kaala moøgø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "?Aperŋø nø, na taagï dwøra, a na Wuuö Jwøk, ni tïï ki gïn mo nëëni ni raac ki jïra? Ïïni, Uria nyï Këth anø 'nägï ri leny, ni nø kälï cïïe, ni tïme na cïïï; 'ba Uria anääï ri leny møn ni jääk jaak, ni beeye leny mana këëllu ki jø Amön.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba ennø, thøw tøŋ ree ba paanye dhi ødï, kiper aana taagï, ni nø kälï cï Uria nyï Këth, ni tïïyï gø na cïïï.›",
+                    "ID": "10"
+                },
+                {
+                    "text": "«Man poot na dwør Wuuö Jwøk, ena köö, ni ‹Ka adïëri møn, aani, a känna bäätï ki gïn mo leth, ni ŋato tïïc gø käla ri jø dhi ødï. Këël määrï kiree, paanya paanyø buutï ni cïba ge jï dhaanhnhï mør, ni ö ŋatøgø ni ci baŋ määrï ni bute ki ge ko okaan cäŋ.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Bääyö marï, atïïyï ni tiere ba nëëni; 'ba gïno tïïa, tïïa tïïö ko okaan cäŋ ni nëënö jï jø Icriel bëët.› »",
+                    "ID": "12"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï Nathan, ni «Aana nø bääyö dëër Wuuö Jwøk møn.» 'Ba Nathan aköö jï Deebit, ni «Wuuö Jwøk thuwø bääyö marï anø wëënne. Ïïni, ï ba thøw.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kiper gïna baayï ni dwøŋ enø, na taagï Wuuö Jwøk, nyilaal marï kiree mana lwaar dhaagø manøgø ki gø puta thøø.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø, Nathan aput døø paare. ",
+                    "ID": "15"
+                },
+                {
+                    "title": "Luum Thøw Nyilaal Mar Deebit",
+                    "text": "Kanyøgønø, Deebit Jwøk akwaaye kiper täw nyilaal; 'ba Deebit aput kweer ki cam, ni but piny yïth ŋøøm jaak ki dïwäär bäre.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba jø døøŋŋø moa en paare kaagø, gena öö ni cuŋge buute nee eni tïŋge maal ki yïth ŋøøm nee cäme ki geni; 'ba ena kweer.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba gïna tägö, na tïme na bïriet nïne, nyilaal athøw. Ni ö jø tïïci mo Deebit ni lwäcge ki man caange gø jï Deebit ni nyilaal othøw, kiper gena köö, ni «Ka adïëri møn, kanya poot nyilaalli ni kwøw, øøna cäänö ki Deebit, ni käre döötø leŋø. ?'Ba ennø, ocaanø gø jïre nidïï ni nyilaal athøw? Kiper dëëre tïïe tïïö ki gïn mo leth.»",
+                    "ID": "18"
+                },
+                {
+                    "text": "'Ba kanya jooti ya Deebiti ni jø tïïc moe wïthge ege kuur kanya aciel ni ge muuŋö, aput ŋäc ni nyilaal othøw. Kanyøgønø, Deebit aköö jï jø tïïc moe, «?Aŋø, nyilaal athøw?» Ni løgi ya jøøgø ni köge, ni «Yaa, athøw.»",
+                    "ID": "19"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput ö maal ki yïth ŋøøm, ni lwøk dëëre, ni wïïr dëëre ki maaw, ni wiil abïïe moa en dëëre; ni put ci kar lam mar Wuuö Jwøk ni läme. Køøre ena duu paare, ni pëëe ki cam, ni ö jøøgø ni putge cam cïp nyïme, ni cäme.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Køøre jø tïïc moe aköö jïgø, «?Wui nyeya, a teeŋ gïnaŋø na tïïyï en? Kanya bëëde ni nyilaal poot kwøw, ïïna kweer ki cam ni jwöŋï; 'ba kanya thøw nyilaalli, ïïna ö maal ni cämï.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba aløk Deebiti ni kööe, ni «Kanya bëëde ni nyilaal poot kwøw, aana kweer ki cam ni jwöŋa møn; kiper aana cädö, ni kööa, no ‹Oŋäya ŋa, kanymør Wuuö Jwøk met ec mare nyoodhe nyoodhø jïra, ni wec nyilaal nee put bëëtö ni kwøw.›",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba ennø, nyilaal anø thøw. ?Agïnaŋø noo kweera ki cam kipere këët nø? ?Aŋø, nyilaal løny jïra ki man tïŋa gø maal ki yi thøø? Beeye aani noo läp køøre, 'ba eni ba løny ki man duu wøk baŋa këët.» ",
+                    "ID": "23"
+                },
+                {
+                    "title": "Kanya Lwaarø Ki Cølöman",
+                    "text": "Køøre Deebit cwïny cïïe ma Bathcïba acøme; 'ba ena ci baŋ gø ni bute ki gø; køøre Bathcïba ajïtö ki dhaanhø ni lwaare ki gø na dïcwøø, ni ö Deebiti ni cak nyeŋ nyilaal ni Cølöman. 'Ba Wuuö Jwøk mëër ki nyilaarøgø.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba kiper mana ö Wuuö Jwøki na mëëre ki nyilaarøgø, dwøre ajääŋŋe ki dhi nyikuŋ Jwøk ma Nathan, ni cak nyeŋ nyilaal ni Jididiya, ni tiere beeye ni ŋata mëër Wuuö Jwøki ki gø. ",
+                    "ID": "25"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Mac Raaba",
+                    "text": "'Ba Jöap acäŋ këëdö ki jø Amön moa en Raaba, ni mac thääŋ pääny manøgø. 'Ba Raaba beeye pääny mana dwøŋ mar jø Amön ni wø bëët nyeya marge yie.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Ni ö Jöapi ni jääk baŋ Deebit ki jiy, ni kööe, ni «Aana nø këëdö ki jøøa bëëdö Raaba; këël kar pïï marge mana en dï pääny anø maa thuwø.",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba ennø, cooŋ jø leny moa no odööŋ ni ööu ki ge ni tugu pääny man, nee tïme ni maya ïïni; kiper ni näk maya aani, tïmö ni wïnya nyeŋŋa jaak.»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit jø leny moa no odööŋ aput cooŋ ni ci Raaba, ni këëde ki jøøa bëëdö yie, ni put pääny manøgø mac.",
+                    "ID": "29"
+                },
+                {
+                    "text": "Køøre Deebit aduda mar nyeya mar jøøgø aput lwør wï gø. 'Ba aduda manøgø tïïc ka warkey mo peek døc ma rumi ma kikar aciel, ni yie da waŋ kïdi mo pere leth. Ni ö aduda manøgø ni puti kïth wï Deebit. 'Ba Deebit gïïa twiere pääny manøgø beege gïï mo thööth døc.",
+                    "ID": "30"
+                },
+                {
+                    "text": "Deebit thuwø jøøa bøth yi pääny manøgø amaae, ni kïth ceŋge ki lïge ki teeŋ jap tïïc mo tïïc ka nywïëny, nee ge tïïge ki ge, ni tïïc møøk na mo wø budö ki thuube. Ni ö Deebiti ni tïïc teeŋ gïnögø dëët jøøa en yïth päänye bëët mo jø Amön. Køøre Deebit ki jø leny moe bëët gena put døø Jerucalem.",
+                    "ID": "31"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.13",
+            "name": "2 Camiel 13",
+            "text": [
+                {
+                    "title": "Luum Amnön Ki Tamar ",
+                    "text": "'Ba kar kaagø, Abëcëlöm o Deebit da coki ma dhaagø mo mïërö døc mo nyeŋŋe cwøl ni Tamar; 'ba Amnön o Deebit mëër ki nyiwänni ma Tamar døc.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba Amnön yie ocwat acaac nyiwänni døc, ni put tïmö ni tuu. 'Ba Tamar ena nyakøø mo dëëre poot kuc dïcwøø, ni ki jï Amnön beeye gïn mo teek ki man tïïe ki gïrpiny dëër gø.",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba Amnön do owänni mo nyeŋŋe cwøl ni Jönadap o Cimia cöök Deebiti; 'ba Jönadap ena dhaanhø mo waŋe riek døc.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre Jönadap aköö jï Amnön, «Wui o nyeya, ?aŋø ni bëëdï niï dwada nyïme jaak en? ?Aŋø, gïnögø ni dwaat ïïni enø ba caanï jïra?» 'Ba Amnön aköö jïre, ni «Aani, a mëër ki Tamar døc, cöök owära ma Abëcëlöm.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba Jönadap aköö jï Amnön, ni «Ci but piny bäät pëëmï ni cøøgï riï keda täw okadhø; 'ba kanyo ö wäru noo lïïm ïïni, wärï kööï jïre, na ‹Awuuö, beerra man ö nyiwära ma Tamar ni ööe nee tïïe ki cam jïra nee cama, ni cam manøgø jiiŋŋe ni nëënö jïra, naa caame.› »",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kanyøgønø, Amnön aput but piny ni cøøk dëëre ni kere täw okadhø. 'Ba kanya ö nyeya na lïïm eni, ena köö jï nyeya, na «Awuuö, beerra man ö nyiwära ma Tamar ni ööe nee bude ki dääpe ariiø ni nëënö jïra naa caame.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba Deebit aput jääk paac baŋ Tamar, ni kööe, ni «Ci baŋ owäru ma Amnön yi øtø mare, ni tïï ki cam jïre.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgønø, Tamar aput ci baŋ owänni ma Amnön yi øtø mare. 'Ba kar kaagø, Amnön obut piny. 'Ba kanya ööe, eni käädö ki møø mo okudö, ni coot gø ni bul gø na dääpe, ni nëënö jï Amnön.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni ö Tamarri ni lwør dääpe yi gïna budö ki gø ni cïp gø nyïm Amnön; 'ba Amnön akweer ki cam. Køøre Amnön aköö, «Beerra man ö jøøi ni en kany en ni cige wøk.» Kanyøgønø, jiy bëët aput aa wøk buute.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Køøre Amnön aköö jï Tamar, ni «Käl cam kar niine mara, naa caamï.» Kanyøgønø, Tamar dääpe moa bule aput lwør ni kïth ge kar niine baŋ owänni ma Amnön.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba kanya ö Tamarri na käl dääpe jï Amnön nee cäme, Amnön nyiwänni ma Tamar aput mak ki teek ni kööe jïgø, «Nya nyiwära, ööï naa buta ki ïïni.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba aløk Tamar jïre, «Nyie owära, ba løny. Kär a magï ki teek; kiper gïn mo caala man poot kär tïïö dï Icriel cøøn en. Kär niï tïïya gïn ni duunni ka apääda en.",
+                    "ID": "12"
+                },
+                {
+                    "text": "?Aŋø, apään gïnögø ööa wøk bääta këët? Këël ïïni thuwø, ï tïmö kaamar dhaanhø ma bøøl dï bøøre mo Icriel. 'Ba ennø, nyie owära, pëëny nyeya, kiper eni a ba mäne ki man nywømï aani.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba Amnön ïthe käre ciiø ki luum nyiwänni; 'ba kiper mana näk dëëre teeka eni ki nyiwänni, nyiwänni aput mak ki teek ni put butö ki gø na dhaagø.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre Amnön aput männö ki nyiwänni ma Tamar ki män mo dwøŋ døc; 'ba män mana männe ki nyiwänni ki gø aput tïmö ni dwøŋ døc ni kaala mëër mana mëëre ki gø. 'Ba Amnön aköö jï nyiwänni, ni «Ö maal; ci wøk.»",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba Tamar aköö jïre, ni «Jïra bäär; ki man riemmï aani, ï meeta gïna raac na nø tïïyï dëëra.» 'Ba Amnön ïthe käre ciiø ki dwør nyiwänni.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre Amnön, nyen wø bëëdö buute ni tïnynya eni acwøle ni kööe jïgø, ni «Ennø, riem nyaanøgø wøk buuta, ni cïëgï dhi øtø.»",
+                    "ID": "17"
+                },
+                {
+                    "text": "Kanyøgønø, nyenøgø Tamar akïth wøk ni cïëk dhi øtø. 'Ba kar kaagø, Tamar oruyö ka abïï mo pere leth mo caala jalabiiya; kiper nyïï nyeya moa näk dëëtge poot kuc cwøwi, dëëtge wø runyge runynyö ki teeŋ abïïnögø.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre Tamar tør ajøøp wïïe, ni ö abïïne na näk ee røø dëëre ni jeec gø ki pänh cwïny, ni kwaa ceŋŋe wïïe ni aae, ni cäädhi ni göö ko oduuru.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Køøre coki ma Abëcëlöm aköö jïgø, na «?Aŋø, owäru ma Amnön anø tïïö ki gïn mo raac dëërï nø? 'Ba ennø, nya coka, lïŋï nø, Amnön ka owäru; luubö man kär kïth cwïnyï døc.» Køøre, Tamar aput bëëtö no owii kare po coki ma Abëcëlöm.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba kanya ö nyeya ma Deebit na wïny luummögø bäre, ena put gootø døc.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba Abëcëlöm aput bëëtö ni bäŋ gïn mo ee caanø ka Amnön; kiper Abëcëlöm amännö døc ka Amnön kiper mana ö Amnönni na mak coki ma Tamar ki teek ni bute ki gø na dhaagø. ",
+                    "ID": "22"
+                },
+                {
+                    "title": "Kanya Ö Abëcëlömmi Na 'Näk Amnön",
+                    "text": "'Ba na tïme na køør cwiiri ariiø, ni jïëc dïëk mo Abëcëlöm di nyaarø paac mana cwøl ni Baal-Adhör buut ŋööm jø tuuŋ Ipariem, Abëcëlöm wäät nyeya bëët acwøle nee öge baŋ cam.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba Abëcëlöm aö baŋ nyeya ni kööe, «Wui nyeya, jïëc dïëk 'moa di nyaarø; beerra man ööï ki jø kööre moï, nou cämu ki aani.»",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba aløk nyeya jï Abëcëlöm, «Nyie wääda, ba løny, wa ba cii bëët, kiper wa tïmö ni wa thööth bäätï.» 'Ba këël na ö Abëcëlömmi na cwaat yi nyeya, nyeya kär jïëy ki man aae; 'ba Abëcëlöm agwïëdhe.",
+                    "ID": "25"
+                },
+                {
+                    "text": "Køøre, Abëcëlöm aköö jï nyeya, «Ni näk miï ba ciï nø, a kwaya ïïni nee wa aacwa ko owära ma Amnön.» 'Ba nyeya aköö jï Abëcëlöm, na «?Aŋø, Amnön aae ki uuni aperŋø?»",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba kanya ö Abëcëlömmi na cwaat yi wänni ma nyeya, nyeya Amnön ki uutwänni bëët aput cïp nee aacge ka Abëcëlöm.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Køøre Abëcëlöm jiye aköömme ni kööe, ni «Ennø, kanyo ö Amnönni noo meere ki køøŋ nyïïomøki, kanyo kööa, ni ‹'Nägu eni›, eni wär putu 'näk. Kär nou lwäyö. ?Aŋø, u ba köömma aani? Magu rou, ni bëëdu nou teek.»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Køøre jic Abëcëlöm, Amnön aputge 'näk kaawat mana ö Abëcëlömmi na kööm geni. Køøre wäät nyeya bëët aput päny maal, ni ö ŋati man nø ni eth bäät gääŋŋö mare ni putge reeŋø.",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba kanya pootge ni ge ena øtjöö, waac apïï baŋ nyeye ma Deebit ni køp, na «Abëcëlöm wäätï bëët anø nääe, ni bäŋ aciel mo dööŋ ni kwøw.»",
+                    "ID": "30"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aput päny maal ni jeec abïïge, ni gøø ree piny ki pänh cwïny; ni ö jø kööre bëët moa en buute kaagø ni putge abïïkge jeeyø thuwø.",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba Jönadap o Cimia, ni beeye Cimia cöök Deebiti, mare acaane ni kööe, «Wui nyeya, kärï cädö ni wäätï ge bëët geno nääö. Beeye Amnön keere na thøw; kiper beeye gïna en cwïny Abëcëlöm ki mana täge ki dïcäŋa ö coki ma Tamar na magi ya owänni ma Amnön ki teek ni bute ki gø na dhaagø.",
+                    "ID": "32"
+                },
+                {
+                    "text": "'Ba ennø, ï na nyeya, waac moa køp yøø, ni ‹Wäät nyeya ge bëët athøw,› kär kïth cwïnyï na adïëri, kiper beeye Amnön keere na thøw.»",
+                    "ID": "33"
+                },
+                {
+                    "text": "'Ba kar kaagø, Abëcëlöm onø reeŋø. 'Ba kanya ö nyena kurö buut nyeya na tïŋ wïïe maal na lwïthe, ka adïëri møn, jiy mo thööth aput joot ni ge öö ni ge cura waŋjöö mana en jï løø kur pänh-cäŋ ni ge lööny piny ka bäät kïdi. Ni ö ŋat koorri ni cøøe ni caan gø jï nyeya.",
+                    "ID": "34"
+                },
+                {
+                    "text": "Kanyøgønø, Jönadap aköö jï nyeya, ni «Neenï, ka adïëri møn, wäätï aöö; gïna caana, a na dhaanhnhï, athur kare.»",
+                    "ID": "35"
+                },
+                {
+                    "text": "'Ba kanya ö Jönadapi na leeŋ dhee piny ennø, ka adïëri møn, wäät nyeya aput nicäär, ni ge jwöŋö døc; ni ö nyeya ki jø kööre bëët ni putge jwøk døc thuwø.",
+                    "ID": "36"
+                },
+                {
+                    "text": "'Ba Abëcëlöm onø reeŋø ni ci baŋ Thalmay wär Ammiyut, nyeny jø Gëcur. 'Ba Deebit aput bëëtö ni kïmmö cooth kiper wääde.",
+                    "ID": "37"
+                },
+                {
+                    "text": "'Ba Abëcëlöm aput bëëtö Gëcur ki cwiiri adäk.",
+                    "ID": "38"
+                },
+                {
+                    "text": "Køøre nyeya ma Deebit atïmö ni cädö kiper wääde ma Abëcëlöm; kiper cwïnye acøme ki thøw wääde ma Amnön.",
+                    "ID": "39"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.14",
+            "name": "2 Camiel 14",
+            "text": [
+                {
+                    "title": "Luum Duun Abëcëlöm Jerucalem ",
+                    "text": "'Ba aŋäc Jöapi o Dheruya ni nyeya cwïnye ena køør Abëcëlöm døc.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Køøre Jöap ajääk baŋ dhaagø mo ena Tëköa mo waŋe riek, ni put dhaaŋŋøgø öö. Ni kö Jöapi jïgø, ni «Nyijøøe, tïïc riï niï kïmmö keda ï ena bäät thøø, ni kïthï dëërï ka abïïk thøø, ni ba wïïrï dëërï ki maaw; 'ba tïïc dëërï kaamar dhaagø mo oruu ni kïmmö kiper dhaanhø mo othøw.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre nø, wärï ci baŋ nyeya ni caanï luup jïre moo caana jïrï ennø.» Køøre Jöap luup moøgø aput cïp dhi nyijøøgø.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kanya ö nyijø Tëköa na ci baŋ nyeya, cøŋŋe akëël piny ni kuul wïïe piny ni määtha gø, ni kööe, «Wui nyeya, køny aani.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba nyeya aköö jïre, na «?Agïnaŋø na tägö riï?» 'Ba aløk nyijøøgø jïre, na «Adïëri møn, aani, cwøra othøw, naa bëëdö ni aana cï thøø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba a na dhaanhnhï da wääta ariiø. 'Ba obwöre moø na ariiø yøø, gena këëdö paap; 'ba bäŋ dhaanhø mo othääk ge. Kanyøgønø, dhaanhø aciel rege, coki agøøe ni 'näk gø.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba ennø, jø paara bëët gena ö maal bääta, a na dhaanhnhï, ni köge, ni ‹Cïp wäädï mana 'näk coki nee 'näkwa na kwör coki na nääe. Waani, wäädï manøgø na lwiidhø enøgø, 'näkwa nääö.› 'Ba geni, ge raanynya wïïa mana no odööŋ, nee cwøra dööŋe ni bäŋ wïïe mo dööŋ bäät piny.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Køøre nyeya aköö jï nyijøøgø, ni «Beerra man ciï paarï. Aani da gïn mo tïïa tïïö kiper luubö marï.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba nyijø Tëköa manøgø aköö jï nyeya, «Wui nyeya, ni näk mo luummögø tïmö ni raac, ajäla mar luummögø puta tïmö ni ena bääta ki dhi øt wära; 'ba ï na nyeya këël ki nyec marï bäŋ ajäla bäätï.»",
+                    "ID": "9"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö, ni «Ŋat mo poot bëëdö ni cwaata yiï kiper luummögø, wär käl baŋa, nee yiï ba cwaade këët.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba nyijøøgø aköö, «Wui nyeya, beerra man kööŋï ŋëët Wuuö Jwøk, Jwøk marï, kiper nee jøø ni many gø nee kwör remø coolge enø nee ge ba cutge këët, ni ba raanyge jwïëc wääda.» 'Ba aløk nyeya jïre, ni «Ŋëët Wuuö Jwøk, Jwøa kwøw, bäŋ jëën wï wäädï aciel kiree mo päth piny.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba nyijøøgø aköö, «Wui nyeya, naa cäänna ki luubö aciel keere.» Køøre nyeya aköö, ni «Caanï nø.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, nyijøøgø aköö, «?Wui nyeya, aŋø, teeŋ luum caana jïrï en tïmmï gø ŋø dëët jic Jwøk ni beege jø Icriel? ?A ki køør luubö mana nø caanï kawaane ennø, ï na nyeya, ï ba jääl dëërï keerï? Kiper wäädï mana reeŋø kärï wëënnö nee duu paac.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Ka adïëri møn, øøni ø thøw kaawat man bëëde ni pïï mo oøøc piny ba løny ki jøøp këët. 'Ba Wuuö Jwøk jwïëc dhaanhø ba raanynye; eni määnyö ki jöö nee dhaanhø mo oreeŋø ki køør gïna baae nee duu baŋe, ni ba bëëde ni tøør dëëre.",
+                    "ID": "14"
+                },
+                {
+                    "text": "«'Ba ennø, gïna ööa kany kipere nee luummi en caana jïrï, ï na nyenynya, beeye ni jø paara aana tïïcge naa lwäya; ni beeye ni kööa ennø, ni ‹Beerra man cøøa nee luummi caana jï nyeya. Kanymør nyeya gïno pëënynya eni ki gø tïïe tïïö jïra.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kiper nyeya luummi wïnynye wïnynyö ni piem aani ceŋ jøøa many jwïëcwa ki wääda, nee raanyge, nee wa tïmwa ni wa tøør bäät ŋöömma cïp Wuuö Jwøki.›",
+                    "ID": "16"
+                },
+                {
+                    "text": "«'Ba a na dhaanhnhï, aana köö, ni ‹Beerra man ö dwør nyenynya ni cøm cwïnya, kiper leec wïc mar nyeya caala leec wïc mar nyïïatwiel maal mar Wuuö Jwøk, ni løny jïre ki man ŋøl luubö mana beer ki mana raac. 'Ba ennø, ï na nyeya, Wuuö Jwøk, Jwøk marï, bëëde ki ïïni na aciel.› »",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba aløk nyeya ni kööe jï nyijøøgø, ni «Nyijøøe, gïno pëënynya ïïni ki gø en, kär mooŋï.» Ni kö nyijøøgø, «Wui nyeya, pëëï.»",
+                    "ID": "18"
+                },
+                {
+                    "text": "Ni kö nyeya, ni «?Luubö man bäre en, cer Jöap ba en yie wän?» 'Ba aløk nyijøøgø ni kööe, «Wui nyeya, ŋëëtï keerï, mana caanï enøgø beeye kare. Ka adïëri møn, beeye dhaanhnhï ma Jöap na kööm aani, ni beeye eni na cïp luubö man bäre en dhaa, a na dhaanhnhï.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Dhaanhnhï ma Jöap gïn en atïïe ni tiira luubö man. 'Ba ï na nyeya mara, wïïï leer kaamar nyïïatwiel maal mar Jwøk, ni jammi bëët mo wø en bäät piny ŋäyï.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "Køøre nyeya, Jöap acwøle ni kööe jïgø, ni «Neenï, ka adïëri møn, gïnögø ni manynyï enø tïïa tïïö; ennø, ci baŋ Abëcëlöm ni duuï gø paac.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap cøŋŋe aput këël piny ni kuul wïïe piny ni pwøc nyeya; køøre Jöap aköö, «Wui nyeya, dïcäŋi aŋääa ni yiï met ki aani møn, a na dhaanhnhï, kiper na nø jïëyï gïna pëënynya ïïni ki gø.»",
+                    "ID": "22"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap aput ö maal ni ci Gëcur baŋ Abëcëlöm, ni duu gø Jerucalem.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba nyeya aköö, ni «Beerra man døø Abëcëlömmi paare, 'ba kär täärnyïme jooda kany.» Kanyøgønø Abëcëlöm aput døø paare; 'ba täärnyïm nyeya käre joodø.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba ki dï Icriel bäre bäŋ ŋat mo kïte mïërö mo opwøc jiyi døc mo caala Abëcëlöm. Ki mana täge ki tiete këël mana pïïe wïïe bäŋ gïn mo di jøøŋŋø dëëre.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba Abëcëlöm jïëye thööth døc; 'ba ki yi cwiir cooth wø di nyaarø kiper man wø tïmge ni thööth ni peek. 'Ba kany wø rømi, tïmö na rumme ma dïpe ariiø mar rumi mana cwøl ni cekel. ",
+                    "ID": "26",
+                    "comment":"Cekelli moøgø na dïpe ariiø yøø kaala kïïle ariiø."
+                },
+                {
+                    "text": "'Ba Abëcëlöm jïre da wääte adäk ki nyaare aciel mo nyeŋŋe cwøl ni Tamar; 'ba Tamar beeye nyaan mo kïte mïërö.",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba Abëcëlöm abëëdö Jerucalem ki cwiiri ariiø, ni täärnyïm nyeya käre joodø.",
+                    "ID": "28"
+                },
+                {
+                    "text": "Køøre Abëcëlöm ajääk baŋ Jöap, nee Jöap jääŋŋe baŋ nyeya; 'ba Jöap yie kär met ki man ö baŋe. Køøre ena cäŋ jääk bäŋ Jöap ri rietge; 'ba Jöap yie poot ba met ki man ööe.",
+                    "ID": "29"
+                },
+                {
+                    "text": "Kanyøgønø, Abëcëlöm aköö jï jiye, ni «Neennu, pwöth Jöap ena buut pwötha, ni eni jïre da gäbci yi pwöthe kaace; cou ni waaŋŋu pwöthe.» Køøre jic Abëcëlöm pwöth Jöap aputge waaŋ.",
+                    "ID": "30",
+                    "comment":"Gäbci ki dha Araba cwøl na agarbu."
+                },
+                {
+                    "text": "Kanyøgønø, Jöap aö maal, ni ci baŋ Abëcëlöm paare ni kööe jïgø, na «?Aŋø, jiyï waaŋge pwödhö mara aperŋø?»",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba aløk Abëcëlömmi jï Jöap, ni «Neenï, aana jääk baŋï ki dhaanhø kiper niï ööï, niï jääŋŋa baŋ nyeya, nee caanï jïre na Abëcëlöm aköö, ni ‹Aano ööma ŋø ki Gëcur? ?Aŋø, ba beerra mana daa poodø naa ena kunece na bëëde?› 'Ba ennø, ï na Jöap en, a manynya man jooda täärnyïm nyeya; ni näk mo da gïn mo yaa baaø, beerra man ö nyeya ni 'näk aani.»",
+                    "ID": "32"
+                },
+                {
+                    "text": "'Ba kanya ö Jöapi na ö baŋ nyeya na caan luummögø jïgø, nyeya Abëcëlöm aput cwøl. Ni ö Abëcëlömmi baŋ nyeya ni këël cøŋŋe piny ni kuul wïïe piny nyïm nyeya; ni ö nyeya ni nuum dha Abëcëlöm ni määtha gø.",
+                    "ID": "33"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.15",
+            "name": "2 Camiel 15",
+            "text": [
+                {
+                    "title": "Luum Ageem Mar Abëcëlöm",
+                    "text": "'Ba na tïme na køøre cään, Abëcëlöm amäänyö ki jääy man wø tut okweenynyi, ko okwëënyi, ni määnye ki jiy ma pïërabïïc nee bëëtge na jiy mo wø rïïŋi nyïm jääy mare man wø tut okweenynyi.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba Abëcëlöm wø laara päny maal ka amöölla cøøn, ni ci waŋ jöör kar løøk ni cuŋŋe kaace. 'Ba kany wø näk da dhaanhø mo öö mo lööŋŋö baŋ nyeya, Abëcëlöm ŋateca wø pute ka cwøl, ni kööe jïgø, «?Aŋø, ïïno käla yi päänye mane?» 'Ba ŋateca wø puta köö, «Wui o nyeya, aana dhaanhø aciel røk wïth tuŋi mo jø Icriel.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre Abëcëlöm wø köö jï ŋateca, ni «Neenï, luubö marï beer ni tiir. 'Ba bäŋ dhaanhø aciel mo cega ïthe ki marï røk jø wø ŋøl luup jï nyeya.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre thuwø, Abëcëlöm wø köö, ni «Doo na aano tïïö na dïŋut luup yi paani en, doo beer. Ŋata wø doo öö ni jïre da luum løøk, doo na ööa baŋa. Køøre aani luum ŋateca wø daa puta ŋøl ni tiir kiree.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba gïn wø tägi, kany wø näk mo da dhaanhø mo ööa buute ni manynya man këël cøŋŋe piny ni kuul wïïe piny nyïme ni määtha eni, eni cere wø pute ka rwaak baŋ ŋateca ni gääm gø ni nuum dhi gø.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba Abëcëlöm aput bëëtö ni tïïya teeŋ tïïc manøgø jï jø Icriel bëët mo wø ö kar ŋøl luup mar nyeya; ni ö Abëcëlömmi ni put cwïny jø Icriel løø baŋe.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba na tïme na køør cwiiri aŋween, Abëcëlöm aköö jï nyeya, na «A kwaya ïïni naa cøøa Keeprön, nee kööŋ mara mana nø kööŋa kipere jï Wuuö Jwøk, nee wëëga thur kare.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kiper aano kööŋ jï Wuuö Jwøk kanya bëëda Gëcur na en Aram, ni kööa, ‹Ni näk mo Wuuö Jwøk a dwøge Jerucalem ni dëëra jööt, ka adïëri møn, a puta ci Keeprön ni cïpa ko olämi jï Wuuö Jwøk.› »",
+                    "ID": "8"
+                },
+                {
+                    "text": "Køøre nyeya aköö jï Abëcëlöm, ni «Ciï ki jööt dëël.» Kanyøgønø, Abëcëlöm aput tïŋŋö ni aae ni ci Keeprön.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba Abëcëlöm jiy ajääŋŋe ki piny ni cige baŋ wïth tuŋi mo jø Icriel bëët, ni kööe, ni «Kanyo wïnynyu dwør tuuŋ kiree ennø, wäru putu kwöŋŋö ni kööu, ni ‹Abëcëlöm atïmö na nyeya yi Keeprön.› »",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba kanya tïŋ Abëcëlömmi ki yi Jerucalem, eni cäädhi ki jiy ma dïpe ariiø mo ee cwølø kiper cam kar lam, ni jøøgø cäädhi ni bäŋ gïn lääŋge, ni bäŋ gïn mo ŋäcge na bäre kiper acaara mar Abëcëlöm.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba kanya bëëde na Abëcëlöm cïpö ko olämme, ena jääk baŋ Akithöpël poge Gilø, ni beeye nyen wø køny nyeya ma Deebit ka acaare. 'Ba ageem manøgø aput tïmö ni teek, kiper jiy moa caath køør Abëcëlöm rege ameetge ni tïmge ni ge thööth. ",
+                    "ID": "12"
+                },
+                {
+                    "title": "Kanya ö Deebiti Na Päär Wøk Ki Yi Jerucalem",
+                    "text": "Køøre dhaanhø mør mo di jääŋŋö aö baŋ Deebit, ni kööe, ni «Jø Icriel cwïnyge anø løøge baŋ Abëcëlöm.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aköö jï jø kööre moe bëët moa bëëdö ki eni Jerucalem kaagø, ni «Laaru ö maal, ø waa reeŋø; kiper ni näk mo ø ba reŋi, bäŋ ŋat mo bøth dëëtø ki gïno tïïc Abëcëlömmi. Läädu; kanymør eni laara rïŋŋö ni maa øøni kany, ni put tïïö ki gïn mo leth dëëtø, ni put jiy mo thööth 'näk dï pääny jaak.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre jø kööre mo nyeya aköö jï nyeya, «Neenï, wa na jiyï, dëëtwa ewa nø jek ki gïno jierï jaak, ï na nyeya marwa.»",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya adøny wøk, ni jøøa en paan dwøŋ bëët cäädhi ka eni. 'Ba nyeya, määre apaar awiie nee paan dwøŋ koorge.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni ö nyeya ni døny wøk, ni jiy bëët moa en buute cäädhi ka eni; 'ba kanya pïïcge buut øtø mana en deŋ kiir, gena cuŋŋö.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba Deebit jø kööre moe bëët atïïe nee pöönhge ki nyïme; këël jø leny bëët mo wø koor eni, ni beege jø Kelita, ki jø Pelita, ki jø leny moa näk dïpe abïciel moa cäädhe ki geni kanya ööe ki Gëth, atïïe nee pöönhge ki nyïme thuwø.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre nyeya aköö jï Itay nyï Gëth, «?Aŋø, ïïni thuwø, ï aay ki waani? Døøgï ni bëëdï ki nyeya ma Abëcëlöm, kiper ïïna jur ni pou iï nø wec. Døøgï nø ni pïï piny kar bëëtö marï.",
+                    "ID": "19"
+                },
+                {
+                    "text": "?Aŋø, ï ba ööï ka awääre jaak en? ?A aani, dïcäŋi ennø a doo köö niï wïdö ki waani na aciel, ni mara thääyö jaak? Ennø, døøgï ki jø tuuŋu ni pïïu piny paac; Jwøk mëër mare ni wø ba jøøl ka adïëri mare obëëdö ki ïïni.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba aløk Itay jï nyeya, ni kööe, ni «Ŋëët Wuuö Jwøk, ki ŋëëtï ï na nyeya; ka adïëri møn, kanyo bëëdï yie, ï na nyeya mara, niï bëëdö ki bëët kwøw wala bëët thøø, aano bëëdö yie thuwø, a na dhaanhnhï.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "Køøre Deebit aköö jï Itay nyï Gëth, «Wøp, pöödhï nø.» Ni ö Itayi ni put pöödhö ni cäädhi ka jiye bëët këël mään ko obwöre moge bëët.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba kanya ö nyeya na tïïc jiy bëët moa cäädhö ki eni nee pöönhge ki nyïme, jiy bëët moa en yi pääny kaagø ge bëëdö ni ge göö ko oduuru. 'Ba nyeya thuwø aput läp køørge ni ŋølge naam mana cwøl ni Kidaran, ni ö jiyi bëët ni putge aay ni ge cøra jööra näk coonya dï paap.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba kar kaagø, Dhadök ka Abiethaar na näk Dïlämme Moa Døøŋŋø, ge nut kaagø ki jø tuuŋ Libay bëët; ni jø tuuŋ Libay acanduk man wø nyooth luumma tuut Jwøki ki jiy käärge käärö. 'Ba geni acanduk mar Jwøk acïpge piny, ni bëët acanduki kaagø këël mana thum jiyi bëët ki ööny wøk ki yi pääny.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jï Dhadök, na «Acanduk mar Jwøk dwøk yi pääny. Kanymør Wuuö Jwøk met ec mare nyoodhe nyoodhø jïra, ni cäŋ aani duu kany, ni cäŋ a tïïyö na acanduk mare ki kar bëëtö mare jooda.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba ni näk mo eno köö ni yie ba met ki aani, ka adïëri møn, a nutö; beerra man ö Wuuö Jwøki ni tïïc gïna manynye dëëra.»",
+                    "ID": "26"
+                },
+                {
+                    "text": "Ni cäŋ nyeya köö jï Dhadök na näk Kwääy Lam Mana Dwøŋ, na «?Aŋø, ï paa ŋat wø joot jammi ki køør man wø nyooth Jwøki? Ïïni ki wäädï ma Akimaath ki Jönathan wär Abiethaar døøu pääny ki jööt dëël.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Neenï, aani, a kurö dï paap bäät naam kanya näk dïët ki caara këël kanyo dee dwøl mo wïnynya wïnynyö baŋï.»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kanyøgønø, Dhadök ka Abiethaar, acanduk mar Jwøk aputge dwøk yi Jerucalem ni putge bëëtö kaace.",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba Deebit aput aay ni cør jöör Kïn Ølip, ni cäädhi ni jwöŋö, ni wïïe ee loobø, ni cäädhi ka thäny tiete jaak. Køøre jiy bëët moa cäädhö ki eni, ŋati man nø wïïe aput loop, ni cääthge ni ge jwöŋö.",
+                    "ID": "30"
+                },
+                {
+                    "text": "'Ba acaan dhaanhe mørri jï Deebit ni kööe, na «Akithöpël, ena dhaanhø aciel røk jøøa tuut dhøkge bäätï na no odwätö ka Abëcëlöm.» Kanyøgønø, Deebit aput lämö jï Jwøk ni kööe, «Wui, Wuuö Jwøk, akwaya ïïni, tïïc acaara mar Akithöpël ni bäŋ tiere.»",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba gïna tägö, kanya tïme ni Deebit pïï wï kïdi, buut kany wø wøør Jwøk yie, ka adïëri møn, gena put røømmø ki Ucay nyï Arki, na abïï mare ee jeeyø, ni wïïe ee jööpö ki tør ki pänh cwïny.",
+                    "ID": "32"
+                },
+                {
+                    "text": "'Ba Deebit aköö jï Ucay, «Ni näk miï cäädhö køøra ni aayï ki aani, ï tïmö niï caala tëër mo peek kipera.",
+                    "ID": "33"
+                },
+                {
+                    "text": "'Ba ni näk miï døøa yi pääny, ni cäänï ka Abëcëlöm, ni kööï, ‹Wui, nyeya, aani a manynya man tïma ni aana dhaanhnhï; kaawat mana bëëda ni aana dhaanh wäru ki yïth nïra pöödhö, ennø a manynya man tïma ni aana dhaanhnhï møn;› køøre nø, otïmö ni løny jïrï ki man kønyï aani, ni tïïyï acaara mar Akithöpël nee ba thur kare.",
+                    "ID": "34"
+                },
+                {
+                    "text": "?A Dhadök ka Abiethaar na näk Dïlämme Moa Døøŋŋø, u ba bëëdö ka geni paac kunece? Kanyo dee gïn mo wïnynyï wïnynyö jaak paan dwøŋ mar nyeya, ï doo puta cøø ni caanï gø jï Dhadök ka Abiethaar na näk Dïlämme Moa Døøŋŋø.",
+                    "ID": "35"
+                },
+                {
+                    "text": "Neenï, wäätge karge riet nut buutge paac kunece, ni beege Akimaath o Dhadök ki Jönathan wär Abiethaar; 'ba gïno wïnynyï jaak løny jïrï ki man cïbï dwøl maneca dhøkge ni jääŋŋï geni baŋa.»",
+                    "ID": "36"
+                },
+                {
+                    "text": "Kanyøgønø, Ucay nyawat Deebiti aput døø yi pääny. 'Ba kar kaagø, Abëcëlöm aput pïï paac yi Jerucalem.",
+                    "ID": "37"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.16",
+            "name": "2 Camiel 16",
+            "text": [
+                {
+                    "title": "Kanya Ö Dhiba Na Cøøk Deebit ",
+                    "text": "'Ba kanya ö Deebiti na løøc piny ki wï Kïn Ølip, Dhiba ŋat tïïc mar Mepiböcëth onø møør piny nee røømge ki Deebit ni eni käädö ka arëëni ariiø mo ee jiiŋŋø nee cäädhö ki bäätge, ni dïŋäthge ee töönynyö ki jammi; ni jammi moa en bäätge beege dääpe ma dïpe ariiø, ki nyïïomøki moa no otal mo omiiø na dhøgi ma dïpa, ki teeŋ nyïï jenni møøk mo otal mo omiiø na dhøgi ma dïpa, ki køøŋ nyïïomøki mo ena ya agwäy.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jï Dhiba, «?Aŋø, gïï bëët ii kïthï ge kaa?» 'Ba Dhiba aköö, na «Arëëni beege kiper jø paarï, ï na nyeya, nee ge cääthge ki bäätge. 'Ba dääpe ki nyïï jenni beege kiper jaay moa cäädhö ki ïïni nee camge. 'Ba køøŋ nyïïomøki beeye kiper ŋato ööl waŋjöö dï paap nee mäthe.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba aløk nyeya jï Dhiba ni kööe, na «?Aŋø, Mepiböcëth, nyikwaar ŋata bëënnï, en kaa?» Køøre Dhiba aköö jï nyeya ma Deebit, ni «Ka adïëri møn, ena dööŋ Jerucalem, kiper ena köö, ni ‹Yïth nïri, jø Icriel nyec mar wära dwøkge kare jïra.› »",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jï Dhiba, ni «Ka adïëri møn, jammi bëët mo Mepiböcëth cøøa jïrï.» 'Ba Dhiba aköö, «Wui nyeya, aana dhaanhnhï møn; beerra man bëët iï ni met ki aani.» ",
+                    "ID": "4"
+                },
+                {
+                    "title": "Kanya Ö Cimiy Na Jany Deebit",
+                    "text": "'Ba kanya ö nyeya ma Deebit na pïïe buut Baurim, ka adïëri møn, nyen mør mo nyeŋŋe cwøl ni Cimiy o Gëra, mo käla ri jø dhi øt Cøøl, aput ö wøk ki kaace, ni cäädhi ni janynya Deebit.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba eni, Deebit ki jø kööre moe bëët athööye ki kïte; 'ba kar kaagø, jø leny bëët ge cäädhi ni nyeya ege kïth dïër, ni jøw møøk ena bäät cwïïc ni møøk ena bäät caam.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba luup moa car Cimiy kanya jany Deebit beege ii, ena köö, «Nyie dïnääy, ŋata wïïe raac, ciï, put aay nø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kwör rem jiy moa køny piny acool Wuuö Jwøki dëërï, ni beege jiy moa käl ri dhi øt Cøøl na läwï kare na tïmï ni ïïna nyeya. 'Ba ennø, Wuuö Jwøk nyec marï anø cïbe jï wäädï ma Abëcëlöm. 'Ba ka adïëri møn, ï ränynyö ennø, kiper ïïna dïnääy.»",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kanyøgønø, Abicay o Dheruya aköö jï nyeya, na «?Aŋø, nyen caal gwök mo othøw en jany ï aperŋø? Wëëk a naa cøøa baŋe kaace, nee wïïe ŋula wøk.»",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba aløk nyeya jï Abicay ni kööe, «?Nyie wäät Dheruya, agïnaŋø noo tïïa ki uuni nø? Këël eni doo jädö, kanymør caana Wuuö Jwøki jïre, ni ‹Ci jany Deebit.› ?Aŋø, aŋa noo köö ki eni, ni ‹?Ï tïmmï ŋø ki gïn?› »",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba Deebit acäŋ köö jï Abicay ki jï jø kööre moe bëët, ni «Neennu, këël wääda na käl dëëra kiree manynya man raany jwïëya. ?A nyï tuuŋ Benjamen man, kääŋe ki man tïïe ki gïrpiny dëëra nidïï? Wiiu eni kare nee jäde; kanymør caana Wuuö Jwøki jïre.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kanymør thuwø Wuuö Jwøk caannø man caan a ki gø en di neenø ni tïïe ki gïn mo beer jïra na kar ajaany man jany aani ki gø dïcäŋi en.»",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit ki jiye gena put aay; 'ba Cimiy aput aay ni cäädhi ka deŋ kïdi ni dïët ki Deebit. 'Ba eni cäädhi ni janynya Deebit, ni di thööyö ki kïte, ni di jørø ki ŋøøm.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Køøre nyeya ki jiy bëët moa cäädhö ki eni, gena pïï kanya cige yie ni geno ööl. Køøre Deebit dëëre ajwöme kaace. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Gïïa Tägö Kanya Pïïc Abëcëlömmi Jerucalem",
+                    "text": "'Ba Abëcëlöm ki jø Icriel bëët moa näk ee käl dëëre, gena pïï Jerucalem. 'Ba kar kaagø, Akithöpël ena dï jøøgø thuwø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba kanya ö nyawat Deebiti ma Ucay nyï Arki na ö baŋ Abëcëlöm, ena köö jï Abëcëlöm, ni «Nyeya puta bëëtö na bäre bäre!»",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba Abëcëlöm aköö jï Ucay, «?Aŋø, beeye mëër man wø nyoothï jï nyawadu enø obëëde? ?Aperŋø na ba aayï ki nyawadu?»",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba Ucay aköö jï Abëcëlöm, ni «Ba løny. Kiper ŋat mo ojier Wuuö Jwøki, ki jøøi, këël jø Icriel bëët, beeye ŋat ena løøe, ni puta bëëtö ki eni.",
+                    "ID": "18"
+                },
+                {
+                    "text": "?A aani, aana da tïnynya ŋa cøøn? ?Aŋø, paa o nyeya mara cøøn na da tïnynyö? Kaawat mana tïnynya wäru, ennø, a puta bëëtö ki ïïni thuwø.»",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba kar kaagø, Abëcëlöm acäänö ka Akithöpël kiper bëët paac ni kööe, na «?Agïnaŋø noo tïïø ennø? Caan acaara marï.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba Akithöpël aköö jï Abëcëlöm, ni «Ci baŋ määr wäru, moa no odööŋ ni ge koora paac, ni buudï ki geni; køøre wïny jø Icrielli bëët wïnynyö ni ïïni riï iï nø tïïc kaamar gïn mo ŋwäänynye raac jï wäru. Køøre nø, jiy moi bëët ni bëëdö ki ïïni en, ge puta tëënnö thuwø.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "Kanyøgønø, oduŋkaara aput maa piny jï Abëcëlöm wï øtø maal, ni ö Abëcëlömmi ni ci baŋ määr wänni ni buude ki geni ni nëënö jï jø Icriel bëët.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba ki yïth nïrögø, acaare mo wø cïp Akithöpëlli di jïëö ni nëëni keda luubö mo opëënynyö baŋ Jwøk. 'Ba Deebit ki wääde ma Abëcëlöm ge ŋäätha acaare mo Akithöpël.",
+                    "ID": "23"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.17",
+            "name": "2 Camiel 17",
+            "text": [
+                {
+                    "title": "Kanya Ö Ucay Na Cïp Acaara Mare Ni Nøøna Abëcëlöm ",
+                    "text": "'Ba na tïme na kaagø, Akithöpël aköö jï Abëcëlöm, «A jëëdö ki jø leny ma kume apaar kurriiø naa läpa køør Deebit dïwääni.",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba kanyo pïïa ree ni eno ööl ni dëëre ba løny køny jïre, eni puta lwäyö døc, ni ö jiyi bëët moa en buute ni putge bwøk. Køøre nø, eni puta dööŋŋö keere ni puta gø 'näk;",
+                    "ID": "2"
+                },
+                {
+                    "text": "ni ö jiyi bëët ni puta ge duu baŋï. 'Ba kanyo nø thøw ŋata manynyï keere, jiy bëët duuö møn; ni jït paaci ki bëët mëër.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgønø, Abëcëlöm ki jø døøk Icriel bëët yïthge aput tïmö ni met ka acaara manøgø.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Køøre Abëcëlöm aköö, ni «Ucay nyï Arki cwøl thuwø, nee dwøre mano caane nee wïnynyø.»",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba kanya ö Ucayi na ö baŋ Abëcëlöm, Abëcëlöm aköö jïgø, na «Akithöpël acaara man anø caane jïwa. ?Ennø, kïthwa acaara man bäät tïïc? Ni näk mo paa kare, caan marï.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kanyøgønø, Ucay aköö jï Abëcëlöm, «Acaara mana cïp Akithöpëlli yie man keere, paa acaara ma wøp.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Ni cäŋ Ucayi köö, ni «Ïïni, bëët wäru ki jø leny moe ŋäyï døc, ki man näk mo gena jø leny mo teek ni cwïnyge keec kaamar ŋuu mo nyïïe okälö ki teek dï paap. Këël wäru thuwø, beeye ŋat mo oŋïyö ki leny, ni ba løny ki man but dï jiy jaak.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Neenï, kawaane en, kanymør wäru ree ee nø kan yi øt kïdi aciel røk uut kïte moa en kunece, wala ree ee kanø kany mør jaak mo kuc. 'Ba ni näk mo jø leny moï okwøŋ Deebiti tuk møn, jøw owïny gø bëët ge puta köö, ni ‹Jiy mo thööth athøw røk jøøa cäädhö køør Abëcëlöm.›",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba këël da ŋat leny mo teek, mo thwønh mare caala thwønh mar ŋuu, eni cwïnye puta bwøk døc; kiper ŋäc jø Icrielli bëët ni wäru beeye ŋat leny mo teek, ni jø leny moe beege jiy mo teek døc ki leny.",
+                    "ID": "10"
+                },
+                {
+                    "text": "«'Ba ennø møn, acaara mara beeye ki man cwölï jø Icriel bëët baŋï, ki mano täge ki Daan këël mano këët Bëërcïïba, nee jiy tïmge ni thööth døc kaamar nyeŋ akwöny deŋ naama dwøŋ, ni ö ïïni ki dëërï kiree ni ciï baŋ leny ni jøøgø bwøtha ïïni.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Køøre nø, ø puta pïï ree ni joodø eni kanyo näk ree ee kanø yie, ni putø eni tuk ni ø thööth døc kaawat man wø ö rwöci wø ö piny; 'ba eni ki jø leny moa en buute bëët, puta tïmö ni bäŋ dhaanhø mo bøth këël dhaanhø aciel.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba ni näk mo da pääny mo eni reŋŋa yie, ø na jø Icriel bëët en, pääny maneca putø ka wïr ki thøøli ni gøø gø piny, këël mano leeŋø gø ya agäm-kïdi mano en buute kaace, ni ö kar pääny manøgø ni dööŋe ni leer ni bäŋ waŋ kïdi mo joot yie këël mo thiinh.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Køøre Abëcëlöm ki jø Icriel bëët gena köö, na «Acaara mar Ucay nyï Arki beerra eni døc ni kaala acaara mar Akithöpël.» 'Ba gïnögø bäre tïïya Wuuö Jwøki na acaara mar Akithöpël na beer tïme ni bäŋ tiere, nee eni na Wuuö Jwøk gïn mo leth tïïe dëër Abëcëlöm. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Wäänynyi, Ni Put Päär Wøk Ki Kanya En Yie",
+                    "text": "Køøre Ucay aci baŋ Dhadök ka Abiethaar na näk Dïlämme Moa Døøŋŋø, ni caan acaara mar Akithöpël mana caane jï Abëcëlöm ki jø døøk Icriel, ni caan acaara mare thuwø.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kanyøgønø, ena köö, ni «Ennø, laaru jääk baŋ Deebit, ni caannu gø jïre ni kööu, ni ‹Dïwääni kärï but dï paap bäät naam kanya näk dïët ki caara, 'ba ï na nyeya, ï doo ŋuta løøga, kiper ni näk miï kär ŋut løøga, ïïni ki jø leny bëët moø en buutï yøø, wïthu dïdö.› »",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba Jönathan ka Akimaath, ge na wäät Dïlämme Moa Døøŋŋø, ge bëëdö ni ge kurö bäät jøøro mana cwøl na Ayn-Rögëël, kiper ge ba many gø nee ge joot ni ge dønynya yi pääny. 'Ba da ŋat tïïc ma dhaagø mo wø cøø ni caan gïïa tägö jïge, nee tïme ni løny jï jagøgø ki man cige ni caange gø jï Deebit.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba da nyen mo jagøgø ee joodø, ni cøøe ni waac gø jï Abëcëlöm. Kanyøgønø, jagøgø karge riet gena laar reeŋø ni cige Baurim baŋ nyen mør mo jïre da iith yi kal mare, ni putge døny yie ni ge kana rege.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre dhaagø mana en kaace, rëëbi alwøre ni rïëp gø bäät iith, ni määc beel yi rëëbi manøgø kiper nee bäŋe ŋat mo dïëta gø.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Køøre jic Abëcëlöm aö baŋ dhaagø manøgø paare ni köge, «?Aŋø, Akimaath ki Jönathan enge kaa?» 'Ba dhaagø manøgø aköö jïge, ni «Gena nø kath løøga ni aacge.» 'Ba kanya ö jic Abëcëlömmi na määnyge, Jönathan ka Akimaath kärge joodø, ni putge døø paac yi Jerucalem.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba kanya tïme ni jic Abëcëlöm onø aay, Jönathan ka Akimaath gena put duny wøk ki yi iith ni cige ni caange dwøl jï nyeya ma Deebit, ni köge, ni «Ö maal ni laarï ŋut løø naam løøga, kiper Akithöpël acaara mo raac anø caane kiperï.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "Køøre Deebit ki jiy bëët moa cäädhe ki geni, gena put ö maal ni ŋølge Naam Jördan. 'Ba na tïm pinynyi na amöölla, bäŋ dhaanhø mo odööŋ ni Naam Jördan käre ŋølø.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba kanya jooti ya Akithöpëlli ni køør acaara mare kär caadhø, arëën mare ajiiŋŋe ni tïŋŋe ni ci paare na en pääny poge, ni jiiŋ jap paare na karge, ni put ree lïër ni thøøe. Køøre ena kïth yi bwörö mar wänni.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba kar kaagø, Deebit onø pïï pääny mana cwøl ni Maanayim. Ni ö Abëcëlömmi ni put Naam Jördan ŋøl, ni beeye eni ki jø leny mo jø Icriel bëët.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba Abëcëlöm Amaaca acuume na kwääy lwaa leny na kar Jöap. 'Ba Amaaca wänni beeye Jëtër nyï Icmiel, ni beeye Jëtër na ci baŋ Abigël nyi Naøc na dhaagø. 'Ba Abigël beeye cöök Dheruya mana näk dhaagø, ni beeye Dheruya mii Jöapi.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba Abëcëlöm ki jø leny mo jø Icriel twïër marge atïïcge yi ŋööm Gelät.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na pïïe Maanayim, Cööbi o Naøc, ŋat mo käla pääny jø Amön mana cwøl ni Raaba, ki Makir wär Amiel, ŋat mo käla pääny mana cwøl ni Lödebaar, ki Bardhilay nyï Gelät, mo käla pääny mana cwøl ni Rögelim,",
+                    "ID": "27"
+                },
+                {
+                    "text": "gena kännö ki jap niine, ka athääe, ki dääe, ki beel, ni beege cïndë ki gäbci, ki muunni, ki beel mo omuuö, ki ŋööri, ka adaci,",
+                    "ID": "28",
+                    "comment":"Gäbci ki dha Araba cwøl na agarbu."
+                },
+                {
+                    "text": "ki maar kïc, ki caak ma dïïle, ki dïëk, ki mäth dhäk. 'Ba caammi moøgø bëët kälge jï Deebit ki jøøa cäädhe ki geni nee camge. Kiper gena köö, ni «Jiy oööl, ni geno 'näk käci ki riew dï paap.»",
+                    "ID": "29"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.18",
+            "name": "2 Camiel 18",
+            "text": [
+                {
+                    "title": "Luum Thøø Mar Abëcëlöm ",
+                    "text": "'Ba Deebit jø leny moa en buute kaagø akwaane ni röönye jïge ki kwääc lwaae mo wø käär jiy ma kume ki mo wø käär jiy ma dïpe.",
+                    "ID": "1"
+                },
+                {
+                    "text": "Køøre Deebit jø leny moe apääŋŋe na dhøgi adäk. Ni mooc kwääy lwaa leny ma Jöap ki dhøk aciel, ni mooc kwääy lwaa leny ma Abicay, cöök Jöapi o Dheruya, ki dhøk aciel, ni mooc kwääy lwaa leny ma Itay nyï Gëth ki dhøk aciel. 'Ba nyeya ma Deebit aköö jï jø leny, ni «Ka adïëri møn, aani ki dëëra a aa baŋ leny ki uuni na aciel.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba jø leny aköö, ni «Ïïni, ï ba ci baŋ leny; kiper ni näk mo wa reeŋø, jøw këëdø ki geni, ge ba cädö kiperwa. Këël mo ge 'näga jiy mo thööth døc dëëtwa, ge ba cädö kiperwa na bäre. 'Ba ïïni, perï leth døc ni kaala jiy ma kume apaar røkwa. 'Ba ennø, beerra man kønyï waani niï ena yi pääny kany.»",
+                    "ID": "3"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jïge, ni «Gïna beerra eni ki jïïu jaak, tïïa tïïö.» Køøre nyeya acuŋŋö dhi kiir, ni ö jø lenynyi bëët ni cige wøk ni ge cäädhi na lwaae ma dïpe ki ma kume.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba nyeya ma Deebit, Jöap ka Abicay ki Itay aköömme, ni kööe, ni «Cädu kipera; kär nou tïïya wääda ma Abëcëlöm ki gïn mo leth.» 'Ba jø leny bëët luubö mana ö nyeya na kööm kwääc lwaae mo leny ki gø kiper Abëcëlöm wïnyö jïge.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Køøre jø leny gena aa wøk baŋ leny ki jø Icriel, ni ö lenynyi ni këëli yi lur Ipariem.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba jø leny mo jø Icriel gena put jø lenynyi mo Deebit böötö. 'Ba jiy moa 'näk kaace dïcäŋeca thööth, ni beege jiy ma kume ma pïërariiø.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba leny mana en kaace aput nyaa wøk, ni ö jø lenynyi mo thööth ni thøøge yi lul dïcäŋeca ni kaala jiy moa thøw ri leny.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba gïna tägö, Abëcëlöm anigäk ki jø leny mo Deebit. 'Ba kar kaagø, Abëcëlöm cäädhi ka bäät gääŋŋö mare. Køøre gääŋŋö areeŋø ni dønye ki tier jaath mo dwøŋ mo bääte onilway piny. Ni ö wï Abëcëlömmi ni puti ya bäät jaadhøgø mak, ni put dööŋŋö ni lïërö kaace. 'Ba gääŋŋö mana cäädhe ki bäät gø aput reeŋø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba kanya ö dhaanhø aciel na joot Abëcëlöm, acaane jï Jöap ni kööe, ni «Ka adïëri møn, Abëcëlöm ajooda ni lïërö tier jaath kaace.»",
+                    "ID": "10"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap aköö jï ŋata caan luummögø jïre, ni «?Ka adïëri møn, Abëcëlöm ajootï? ?Aŋø na ba putï gø 'näk kaace en? Aani, gwet-bïrö ma apaar ki kaw mar leny doo na yaa cïbö jïrï en.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba nyenøgø aköö jï Jöap, ni «Këël mo gwet-bïrö ma kuma ocïp cera cøøn, aani, cera ba daa kïtha dëër o nyeya; kiper ïïni ka Abicay ki Itay uuna kööm nyeya ni wïnyö jïwa, ni kööe, ni ‹Gwøgu wääda ma Abëcëlöm jïra.›",
+                    "ID": "12"
+                },
+                {
+                    "text": "A ni näk mo aano tïïö ki gïn mo raac dëëre nø, ni ö nyeya ni wïny gïnögø, kiper bäŋ gïn mooŋ ki nyeya, ïïni ki dëërï, karï tïïyï tïïö ni bäär ki aani.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba Jöap aköö, ni «Piny ba dhïëra ki ïïni këët.» Kanyøgønø, theri adäk aput lwør ni ci baŋ Abëcëlöm ni këër gø ki bäät wenynye na Abëcëlöm poot kwøw bäät jaath kaace.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba jaga na apaar ni wø käär jap leny jï Jöap rege aput cooŋ deŋ Abëcëlöm ni cööpge gø ni putge gø 'näk.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Køøre Jöap tuuŋ aput kooth, ni ö jø lenynyi ni duuge ki kuna ŋwiecge køør jø Icriel, kiper gena män Jöapi ki man ŋwiecge køørge.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Køøre jø leny mo Deebit dëër Abëcëlöm alwørge ni leeŋge gø yi buur mo bäär kaace yi lul, ni löörge kïte mo thööth bääte. 'Ba jø leny mo jø Icriel moa cäädhö køør Abëcëlöm gena bwøk, ni ö ŋati man nø ni reŋ paare.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba Abëcëlöm, kanya poode ni kwøw, okwøŋ cööth piny ki kïdi na nyuudhi kiper dëëre yi gool mar nyeya, kiper ena köö, ni «Aani, bäŋ wääda mo cwøl nyeŋŋa ree.» Kanyøgønø, eni kïdi manøgø na nyuudhi enø aput caa ri nyeŋŋe, ni puti cwøl ni Kïn Abëcëlöm këël dïcäŋi en.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Køøre Akimaath o Dhadök aköö, ni «Beerra man reeŋa nee waac caana jï nyeya ki man näk mo eno piem Wuuö Jwøki ceŋ nyïïmän moe.»",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba Jöap aköö jïgø, ni «Ŋato cii nee waac man caane dïcäŋi paa ïïni; ïïno jïti ki waac mør mo waayï yi nyïme. Kär dee gïn mo waayï dïcäŋi, kiper o nyeya othøw.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "Køøre Jöap aköö jï nyï Kuuc, ni «Ci kuna caanï gïna jootï jï nyeya.» Kanyøgønø, nyï Kuuc cøŋŋe aput këël piny nyïm Jöap, ni put ö maal ni reeŋe.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba Akimaath o Dhadök acäŋ köö jï Jöap, na «A kwaya ïïni naa reŋŋa køør nyï Kuuc. Nee da gïn mo tägö, bäŋ gïre.» 'Ba Jöap aköö, na «?Aŋø nyie wääda, ï reŋŋï baŋ ŋø? Ï këël doo cøø, kee bäŋ gïn mo magï ree.»",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba Akimaath aköö, ni «Bäŋ gïre jaak, gïno tägi täge, aani, a reeŋø.» Kanyøgønø, Jöap aköö jïgø, ni «Ci reŋï nø.» Køøre Akimaath aput reeŋø ki waŋjöör Goor Jördan, ni put nyï Kuuc kaal.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba kar kaagø, Deebit opï piny dhi kiir. Køøre ŋat wø kurö aeth bäät kiir, ni tïŋ wïïe maal ni räŋŋe. 'Ba ka adïëri møn, dhaanhø mo rïïŋa eni keere aput joot ni rïŋŋö.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Kanyøgønø, ŋat koor manøgø aput cwötö ni caan gø jï nyeya. Køøre nyeya aköö, «Ni näk mo ŋatøgø rïŋŋa eni keere, beeye waac mo beer noo käle.» Kanyøgønø, ŋata rïŋŋö aput tïmö ni cäänhnha baŋge.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba ŋat koor acäŋ jïtö ki dhaanhø mør mo rïŋŋö; 'ba ŋat koor manøgø ŋat wø koor dhi kiir acwøle ni kööe, ni «Neenï, dhaanhø mør acäŋ rïŋŋö ni rïïŋa eni keere.» 'Ba nyeya aköö, ni «Ŋatøgø thuwø poot käla waac mo beer.»",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba ŋat koor aköö, ni «Ŋata kwøŋ rïŋŋö, rïïŋi keda Akimaath o Dhadök kiree.» 'Ba nyeya aköö, ni «Nyenøgø beeye dhaanhø mo beer, ni waac mano käle beeye waac mo beer.»",
+                    "ID": "27"
+                },
+                {
+                    "text": "'Ba Akimaath acwötö ni kööe jï nyeya, «Wui nyeya, jammi bëët beyø.» Køøre cøŋŋe akëël piny ni kuul wïïe piny nyïm nyeya ni määtha gø. Køøre Akimaath aköö, «Pwøc en jï Wuuö Jwøk, Jwøk marï, na cïp nyimännï cerï, jøøa gëëmö ki ïïni, ï na nyeya.»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Køøre nyeya apëëö, «?A wääda ma Abëcëlöm, ba bäŋ gïn mo otägö dëëre?» 'Ba aløk Akimaathi jïre, ni «Kanya ö Jöapi na jääŋ aani, ajooda ni jøw ŋurö døc; 'ba aani gïna ŋur jøwi kipere, tiere kära kwanyø.»",
+                    "ID": "29"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö, ni «Nyiik kaace ni cuŋŋï yie.» Ni ö Akimaathi ni ci kaace ni put bëëtö ni cuŋŋö yie.",
+                    "ID": "30"
+                },
+                {
+                    "text": "'Ba ka adïëri møn, nyï Kuuc aput pïï, ni kööe, «Wui nyeya, beerra man wïnynyï luummi ni beer en, kiper dïcäŋi Wuuö Jwøk ïïna pieme ceŋ jøøa ö maal bäätï.»",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba nyeya nyï Kuuc apëënynye, «?A wääda ma Abëcëlöm, ba bäŋ gïn mo otägö dëëre?» 'Ba aløk nyï Kuuc jï nyeya, «Wui nyeya, beerra man ö nyïïmännï, këël jiy bëët mo ö maal bäätï nee tïïge ki gïn mo raac dëërï, ni tïmge ni caala nyenøgø.»",
+                    "ID": "32"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya cwïnye apädhö døc, ni put eth maal ni døny yi øtø mo ogeerø bäät kiir ni jwöŋe. 'Ba jwøk mana jwøk nyeya ni eni cäädhö yi øtø maal beeye en, ena köö, «Wui wääda ma Abëcëlöm, wääda, wääda ma Abëcëlöm. Beerra mana daa thøw na karï, wui Abëcëlöm wääda, wui wääda.»",
+                    "ID": "33"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.19",
+            "name": "2 Camiel 19",
+            "text": [
+                {
+                    "title": "Kanya Ö Jöapi Na Jääl Deebit ",
+                    "text": "Køøre acaan jï Jöap ni køp, ni «Neenï, nyeya bëëdö ni jwöŋö, ni kïmmö kiper thøw Abëcëlöm.»",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba met ec mana di yïth jø leny mïnnö ki gø dïcäŋeca kiper mana kääthge, ree awiile na kïmmö jï jø leny bëët, kiper awïny jø lenynyi dïcäŋeca ni køp, ni «Nyeya kïmmö kiper wääde.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba dïcäŋeca jø leny gena put ci yi pääny ni rege kwaalge kwaalø, kaamar jiy mo ceŋge okaadhø ri leny ni reŋge ni wïthge olääö.",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba kar kaagø, nyeya nyeŋŋe ee rïëbö, ni jwöŋö ni dwøre ee tïŋ maal ni kööe, «Wui wääda ma Abëcëlöm, wui Abëcëlöm, wääda, wui wääda.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba Jöap aö baŋ nyeya yi øtø mana en yie, ni kööe, ni «Dïcäŋi wïth jø leny moï bëët anø lääï, ni beege jøøa piem ïïni, ki wäätï, ki nyïï, ki määrï bëët dïcäŋi en,",
+                    "ID": "5"
+                },
+                {
+                    "text": "ni tïmï niï mëër ki jøøa män ki ïïni, ni männï ki jøøa mëër ki ïïni. Kiper dïcäŋi marï anyoothï ni kwääc lwaae ki jø leny moï bäŋ karge ki jïrï. 'Ba aani, ŋääa dïcäŋi ni doo na Abëcëlöm kwøw ennø, ni waani bëët waano thøw, yiï doo met.",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba ennø, ö maal ni ciï wøk baŋ jiyï, ni cäänï ki geni ni täärnyïmï leer, kiper aana kööŋ ŋëët Wuuö Jwøk, ni näk miï ba ci baŋge, ka adïëri møn, bäŋ ŋat mo dööŋ ki ïïni kany këël dïwääni. 'Ba luubö man tïmö ni leth døc kiperï ni kaala moa leth na nø pïï bäätï ki mana täge ki thïnhö marï këël kawaane ennø.»",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aput ö maal ni ci kuna pï piny dhi kiir kar acooŋa. 'Ba kanya caani jï jø leny bëët, ni køp, ni «Neennu, nyeya opï piny dhi kiir kar acooŋa», jø leny bëët gena put ö nyïm nyeya. ",
+                    "ID": "8"
+                },
+                {
+                    "title": "Luum Duun Deebit Paac",
+                    "text": "'Ba wïth tuŋi mo jø Icriel bëët geno løny ni ge jälla rege keerge, ni ge köö, ni «Nyeya ma Deebit øøna pieme ceŋ nyïïmän moø, ni køny øøni ceŋ jø Pilitin; 'ba ennø, ena nø reeŋø paac ni ŋwieya Abëcëlöm.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba Abëcëlöm na wïïe thïïmmø ki maaw na røønyø na nyeya bäätø, anø thøø ri leny. ?'Ba ennø, u lïŋu aperŋø ni nyeya ma Deebit ba duu paac?»",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba luup moa car jø Icrielli awïny nyeya ma Deebit kanya bëëde yie. Køøre ena jääk baŋ Dhadök ka Abiethaar na näk Dïlämme Moa Døøŋŋø, ni kööe jïge, ni «Cäänu ki jø døøk Juuda, ni kööu, na ‹?Aŋø, u ba tïmu aperŋø ni uuna jiy moo kwøŋ nyeya duu paare?",
+                    "ID": "11"
+                },
+                {
+                    "text": "Kee uuna nyïïmera, ni øøna remø aciel, ni ø käla ri dëël aciel. ?Aŋø nø, ni dööŋu cään en ki man dwøgu nyeya paare?›",
+                    "ID": "12"
+                },
+                {
+                    "text": "Køøre thuwø wär caannu jï Amaaca, ni kööu, ‹?Aŋø, ø paa remø aciel, ni ø käla ri dëël aciel? Ennø, beerra man ö Jwøki ni tïïe ki gïn mo raac dëëra, ni näk miï ba tïmö na kwääy lwaa leny jïra na kar Jöap ki mano täge ennø.› »",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kanyøgønø, luup moa car Deebiti aput ci cwïny jø tuuŋ Juuda bëët, ni putge cwïnyge løø køør Deebit ni tïmge kaamar dhaanhø aciel. Køøre, jø tuuŋ Juuda gena put jääk baŋ nyeya ma Deebit ki dwøl, ni köge, ni «Duu paac, ni beeye ïïni ki jø kööre moï bëët.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Køøre nyeya aput duuö ni pïïe bäät Naam Jördan. 'Ba jø tuuŋ Juuda gena put ci Gëlgela ni ge cii kaper nee nyeya jølge, nee eni ŋølge løø Naam Jördan løøga.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba Cimiy o Gëra, nyï tuuŋ Benjamen mo käla Baurim, alaar öö ki jø tuuŋ Juuda nee ge røømge ki nyeya ma Deebit.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba Cimiy ööi ka jø tuuŋ Benjamen ma kuma, ni Dhiba ŋat tïïc mar dhi øt Cøøl ööi ka wääte ma apaar kurbïïc ki jø tïïc moe ma pïërariiø; ni laarge reŋ bäät Naam Jördan ni nyeya poot kär pïï kaace.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Køøre naam aŋørge ni ge kaadha jø po nyeya løøga, ni ge tïïya yi nyeya ni met. ",
+                    "ID": "18"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Wëën Bääyö Mar Cimiy",
+                    "text": "ni kööe jïgø, «Wui nyeya, bääyö mara kär kan cwïnyï, ni ba caarï wïïï ki jammi moa reyø na tïïa dïcäŋa ööï wøk ki Jerucalem; 'ba ennø, ï na nyeya mara, kär gïnögø kïth cwïnyï.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Kiper aani, a na dhaanhnhï, ŋääa ni aano bääyö; ni ka adïëri møn, beeye tiere gø na ööa dïcäŋi en, ni aana ŋata dïkwøŋ røk jø Icriel bëët na kwøŋ pïï nee røømme ki ïïni, ï na nyeya mara.»",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba Abicay o Dheruya ajutö ni kööe, na «?Aŋø, Cimiy ba doo nääö kiper ajaany mana jany Deebit, ŋata näk otïïc Wuuö Jwøki nee wïïe thïïmmi ki maaw nee røøny na nyeya?»",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba Deebit aköö, «?Wui, wäät Dheruya, a tïïa ŋø ki uuni nø? ?Aŋø, u bëëdö kaamar nyïïmän aperŋø? Kiper u bëëdö na acaara maru ki mara patha aciel. ?Aŋø, dïcäŋi doo da dhaanhø mo di nääö dï Icriel? ?Aŋø, kuua ni aana nyeya dïcäŋi bäät jø Icriel?»",
+                    "ID": "22"
+                },
+                {
+                    "text": "Kanyøgønø nyeya akööŋ jï Cimiy ni kööe, ni «Ïïni, ï ba thøw.» ",
+                    "ID": "23"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Nyooth Bäth Ec Mare Jï Mepiböcëth",
+                    "text": "'Ba Mepiböcëth nyikwaar Cøøl aöö nee røømge ki nyeya; ni ööi ni tiete käre lwøø, ni jïëc dhee käre nyaarø, na abïïe moe käre penyø ki mana täge ki dïcäŋ mana ö nyeya ma Deebit na päär wøk yie këël dïcäŋ mana duu nyeya paac yie ni dëëre jööt.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba kanya ö Mepiböcëthi na ööe ki Jerucalem nee røømge ki nyeya, nyeya aköö jïgø, na «?Aŋø Mepiböcëth, aperŋø na kärï aay ki aani?»",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba aløk Mepiböcëthi jï nyeya ni kööe, «Wui nyeya, ŋäyï ni aani, a na dhaanhnhï, aana ŋwøl. Neenï, acaana jï ŋat tïïc mara ma Dhiba na arëën mara jiiŋŋe naa aa ki ïïni naa cäädhi ka bääte na bëëde; 'ba aana cøøge.",
+                    "ID": "26"
+                },
+                {
+                    "text": "'Ba eni thuwø, nyeŋŋa anø waae ki ïïni, ï na nyeya. 'Ba ennø, beerra man tïïyï mana beerra eni ki jïrï jaak dëëra; kiper ï na nyeya, leec wïc marï caala leec wïc mar nyïïatwiel maal mar Jwøk.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Wui nyeya, jø dhi øt wära bëët doo na rømi ka thøø nyïmï; 'ba aani, a na dhaanhnhï, aana tïïyï naa tïma naa ena røk jø wø cämö ki ïïni na aciel. ?Agïnaŋø noo dööŋ këët nø, noo cäŋa köö ni yiï cwaada cwaadø ki gø?»",
+                    "ID": "28"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya aköö jïgø, ni «Kär dee gïn caanï këët nø. Aani mara anø ŋøla, ni ïïni ki Dhiba, pääŋŋu ŋøøm.»",
+                    "ID": "29"
+                },
+                {
+                    "text": "'Ba Mepiböcëth aköö jï nyeya, ni «Beerra man ö Dhiba ni käl ŋøøm bëët; kiper ï na nyeya mara, ïïna nø duu paac ni dëërï jööt.» ",
+                    "ID": "30"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Nyooth Met Ec Mare Jï Bardhilay",
+                    "text": "'Ba kar kaagø, Bardhilay nyï Gelät onø öö ki pääny mana cwøl ni Rögelim; ni ci bäät Naam Jördan ki nyeya na aciel ni eni jiedha gø løø Naam Jördan løøga.",
+                    "ID": "31"
+                },
+                {
+                    "text": "'Ba Bardhilay oløny na jaal mo dwøŋ, ni cwiiye oløny na pïërabära; 'ba eni, ena bëëdö ni cïpö ki cam jï nyeya kanya bëët nyeya Maanayim, kiper Bardhilay beeye dhaanhø mo okwär døc.",
+                    "ID": "32"
+                },
+                {
+                    "text": "'Ba nyeya aköö jï Bardhilay, ni «Ï ŋuta løøga ki aani na aciel niï bëëdï buuta Jerucalem.»",
+                    "ID": "33"
+                },
+                {
+                    "text": "'Ba Bardhilay aköö jï nyeya, «?Aŋø, a poot cøøa Jerucalem ki ï na nyeya këët ennø? ?A da cwiiri mo poot beeda beedø naa kwøw?",
+                    "ID": "34"
+                },
+                {
+                    "text": "Ennø, cwiiya oløny na pïërabära, ni bäŋ gïn mo beer wala gïn mo raac mo ŋääa këët. Këël cam mo met ki køøŋø mo met ba løny ŋec jïra ennø, ni dööt cwøw ki mään mo wø wär ki dudi bäŋgø mo met mo wïnyi jïra këët. ?Aŋø, a na dhaanhnhï, a cäŋï gø meet bäätï na tëër mør en kiperŋø?",
+                    "ID": "35"
+                },
+                {
+                    "text": "Wui nyeya, bäŋ gïn mo manynya këët baŋï mo diï cïbö jïra cøøn. A ööi naa jiedha ïïni løø Naam Jördan løøga keere.",
+                    "ID": "36"
+                },
+                {
+                    "text": "Wui nyeya, beerra man døøa, a na dhaanhnhï, naa thøøa yi pääny mar powa buut bwöc wära ki mera. 'Ba ennø, dhaanhnhï ma Kimiam enø, beerra man aayu ki gø, ï na nyeya mara, ni tïïyï gïna beerra eni jïre.»",
+                    "ID": "37"
+                },
+                {
+                    "text": "'Ba aløk nyeya jï Bardhilay, ni kööe, ni «Kimiam, wa aay ki gø møn, ni tïïa jïre ki gïn mo nëëni ni beer ki jïrï. 'Ba gïno pëënynyï aani ki gø jaak ni tïïa, puta ka tïïc jïrï.»",
+                    "ID": "38"
+                },
+                {
+                    "text": "Kanyøgønø, jiy bëët aput kath løø Naam Jördan løøga, ni ö nyeya ni kadhe thuwø. Køøre nyeya dhi Bardhilay anuume ni gwïëth gø, ni ö Bardhilay ni put døø kanya bëëde yie. ",
+                    "ID": "39"
+                },
+                {
+                    "title": "Kanya Ö Jø Icrielli Ki Jø Tuuŋ Juuda Na Läärge Nyeya Ma Deebit",
+                    "text": "Køøre nyeya aci Gëlgela, ni ge aay ki Kimiam na aciel. 'Ba jø tuuŋ Juuda bëët, ki jø Icriel mo nøk, ge cäädhi ki nyeya thuwø.",
+                    "ID": "40"
+                },
+                {
+                    "text": "Køøre jø Icriel bëët, gena ö baŋ nyeya ni köge, «?Aŋø, nyïïmëëkwa ma jø tuuŋ Juuda ï tïïcge gø ni ïïna nyeya marge keerge en aperŋø, ni öge baŋï ni ŋulge ïïni løø Naam Jördan løøi, ni beeye ïïni ki jø paarï, ki jø leny moï bëët moa bëëdö ki ïïni?»",
+                    "ID": "41"
+                },
+                {
+                    "text": "Kanyøgønø, aløk jø tuuŋ Juuda jï jø Icriel ni köge, ni «Beeye kiper mana näk mo nyeya tuuŋwa døc. ?Aŋø, u gootu kiper luubö man aperŋø? ?Aŋø, waani cam nyeya mo ewa camø wala gïn mo ewa kälö baŋe, dagø?»",
+                    "ID": "42"
+                },
+                {
+                    "text": "'Ba aløk jø Icrielli jï jø tuuŋ Juuda ni köge, ni «Waani, da kurwa mo jïtö ki kwöre apaar dëër nyeya, kiper waana wïth tuŋi apaar, ni løny jïwa ki man köwa ni Deebit beeye nyeya marwa ni pöödha waani ki uuni. ?Aŋø, wa taagu gø aperŋø? ?Aŋø, paa wa na kwøŋ köö dïkwøŋ ni nyeya duu paac?» 'Ba jø tuuŋ Juuda adwögö ki luubö mo teek døc ni kaala mar jø Icriel.",
+                    "ID": "43"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.20",
+            "name": "2 Camiel 20",
+            "text": [
+                {
+                    "title": "Luum Ageem Mar Cïïba ",
+                    "text": "'Ba da nyen mo wïïe raac mo nut Gëlgela kaace mo nyeŋŋe Cïïba o Bëkri nyï Benjamen. Eni tuuŋ akoodhe ni kööe, «U jø Icriel bëët, ŋati man nø døø paare. Kiper øøni ø ba en ri Deebit, ni øøni bäŋ kurø dëëre, eni na o Jeci enø, kiper eni paa tuuŋø.»",
+                    "ID": "1"
+                },
+                {
+                    "text": "Kanyøgønø, jø Icriel bëët køør Deebit aputge wec ki caath, ni tïme ni ge caatha køør Cïïba o Bëkri; 'ba jø tuuŋ Juuda keerge, gena put bëëtö ri nyeya marge ma Deebit, ki mana tïŋge ki Naam Jördan këël mana pïïcge Jerucalem.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Køøre nyeya ma Deebit apïï paare Jerucalem, ni lwør määre karge paari na näk ee wiiø nee paac koorge, ni tïïc ge nee ge koor, ni ge di caamø; 'ba nyeya kär ci baŋge na mään. Kanyøgønø, gena put bëëtö ni bäŋ dïcwøø mo ci baŋge këël mana päŋ nïr thøø moge, ni ge bëëdö kaamar määr thuunhnhi.",
+                    "ID": "3"
+                },
+                {
+                    "text": "Køøre nyeya aköö jï Amaaca, ni «Ï cøø ni cwølï jø tuuŋ Juuda jïra ki yïth nïne adäk keerge. 'Ba ïïni ki dëërï thuwø, ï doo nut kany.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kanyøgønø, Amaaca aay nee jø tuuŋ Juuda cwøle; 'ba ena ruu ni kaal nïne moa no okwaan nyeya jïre.",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba Deebit aköö jï Abicay, ni «Neenï, ennø Cïïba o Bëkri manynya man tïïe ki gïn mo leth dëëtø ni kaala mana tïïc Abëcëlömmi. Lwør jø leny 'moa, a na nyeya marï, ni reŋŋï køør Cïïba, kiper nee ba jïte ki päänye moa no ogeerø ni teek ni tïme ni ba løny mak jïïø.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kanyøgønø, Abicay aput aay ki jø leny moa käär Jöapi, ki jø leny mo wø koor nyeya, ni beege jø Kelita ki jø Pelita, këël jø leny bëët moa teek. 'Ba gena put tïŋŋö ki Jerucalem ni aacge ni ge ŋwieya køør Cïïba o Bëkri.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kanya enge ri kïnna dwøŋ na en Gibien, Amaaca aputge joot ni cäänhnha baŋge. 'Ba kar kaagø, Jöap jap leny ee twöö dëëre, no opëëllö ee twöö ri kaw piere ni ena yi købe. 'Ba kanya cääth nyïme, opëëllö apäth piny ki yi køp, ni kwany gø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap, Amaaca amäädhe, ni kööe, «?Dëël jööt nø, omara?» Ni ö Jöapi ni tïme ni keda nuuma dha Amaaca ni mak jïëc tïï gø.",
+                    "ID": "9"
+                },
+                {
+                    "text": "'Ba kar kaagø, Amaaca bäŋ gïn ee caarø kiper opëëllö mana en cer Jöap. Ni ö Jöapi ni put Amaaca cwøp ko opëëllö ki yi gø, ni 'näga gø, ni put cïïre øc piny yïth ŋøøm. 'Ba Jöap, Amaaca käre cäŋ cwøpø këët. Køøre Jöap ki coki ma Abicay gena put pöödhö ni ge ŋwieya køør Cïïba o Bëkri.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba da nyen ma dhaanh Jöap mo odööŋ ni cuŋŋö bäät Amaaca ni cäänö ni dwøre ee tïŋ maal ni kööe, «Ni näk mo da ŋat mo yie met ki Jöap ni manynya man bëëde na dhaanh Deebit, beerra man caath køør Jöap.»",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba Amaaca bäädö dï jöö kaagø ni dëëre ogääbö ki remø. 'Ba kanya ö nyenøgø na joot jiy ni ge poot cuŋŋö kaagø, Amaaca aput daak dï jöö, ni jwaa gø thääŋ jöö ni rïëp gø ka abïï.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba kanya nø paany dëër Amaaca dï jöö, jiy bëët moa cuŋŋö kaagø aput läp køør Jöap, ni ge ŋwieya køør Cïïba o Bëkri.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba Cïïba onø aay ni caath bäät wïth tuŋi mo jø Icriel bëët, ni pïïe Abël-Bëëth- Maika ni cøra dï jiy bëët moa bëëdö Bërët; ni ö jø paanøgø ni putge rege cooŋ ni tïmge ni ge caatha køøre thuwø.",
+                    "ID": "14"
+                },
+                {
+                    "text": "'Ba Jöap ki jø leny bëët, Cïïba aputge maa Abël-Bëëth-Maika, ni putge deŋ kiir wïr, ni tïïge ri kiir ki gïrpiny man ethge ki gø. Ni ö jø lenynyi bëët moa cäädhö ki Jöap ni putge tägö ki koony tier kiir nee pädhe.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Køøre dhaagø mo waŋe riek acwötö ki yi kiir, ni kööe, «Nyie, nyie, wïnynyu gïn. Akwaya uuni, caannu jï Jöap nee ö kany naa cääna ki gø.»",
+                    "ID": "16"
+                },
+                {
+                    "text": "Kanyøgønø, Jöap aput nyiik buut kanya dïët ki dhaagø manøgø, ni kö dhaagø manøgø, «?Beeye ï Jöap?» Ni kö Jöapi, «Yaa, beeye aani.» Køøre ena köö jï Jöap, ni «Cek ïthï ki dwøra, a na dhaanhnhï.» Ni kö Jöapi, ni «Ïtha yaa ciiø.»",
+                    "ID": "17"
+                },
+                {
+                    "text": "Køøre dhaagø manøgø acäänö ni kööe, na «Acääŋŋe jiy wø köö, ni ‹Cou baŋ jø Abël ni pëënynyu geni ka acaara mo beer›, 'ba acaara maneca wø puta thur kare.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Aani, aana dhaanhø aciel røk jø bëëdö yi pääny man en, ni wa wø manynya bëët-mëër ni waano ŋäädhö dï Icriel. 'Ba ennø, ï manynya man raanynyï pääny man ni caal mïïö dï Icriel en. ?Aŋø, jic Wuuö Jwøk putï ka thöör ennø møn?»",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba Jöap mare aløøe ni kööe, ni «Beerra man tïm kara ni bäär ka acaara manøgø. A ba ööi kiper nee jiy thööra, wala nee pääny raanynya.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Manøgø paa tier gïna ööa kipere. 'Ba nyen ma nyï paac aciel røk mïëya en bäät kïte na en kur jø tuuŋ Ipariem, mo nyeŋŋe Cïïba o Bëkri, atïmö ni gëëmö ki nyeya ma Deebit. Cïpu eni keere jïra. Køøre nø, a puta tïŋŋö ni wiia pääny man.» Kanyøgønø, dhaagø manøgø aköö jï Jöap, ni «Ka adïëri møn, wïïe lëëŋa baŋï ki bäät kiir.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "Køøre dhaagø manøgø aay ni cïpe ka acaara mo beer jï jø poge bëët. 'Ba geni wï Cïïba o Bëkri aputge ŋul wøk ni leeŋge gø baŋ Jöap. Kanyøgønø, Jöap tuuŋ aput tïïc nee kooth, ni ö jø lenynyi ni putge keethø buut kiir manøgø, ni ö ŋati man nø ni døø paare. Køøre Jöap thuwø adøø Jerucalem baŋ nyeya. ",
+                    "ID": "22"
+                },
+                {
+                    "title": "Jic Deebit Moa Kwörge Døøŋŋø",
+                    "text": "'Ba Jöap beeye kwääy lwaa leny bäre mar jø leny mo jø Icriel, ni Benaya o Jööda beeye kwääy lwaak mar jø leny mo wø koor nyeya, ni beege jø Kelita ki jø Pelita.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba Adöram beeye ŋata no ocuumö na wïth jø wø tïïö ni mak ka teek, ni Jøcapat wär Akilut beeye nyikugö.",
+                    "ID": "24"
+                },
+                {
+                    "text": "'Ba Ceraya beeye ŋat wø göör luup akwöma piny, ni Dhadök ka Abiethaar beege dïlämme moa døøŋŋø.",
+                    "ID": "25"
+                },
+                {
+                    "text": "'Ba Ira nyï Jayer ena dïlämi thuwø mar Deebit.",
+                    "ID": "26"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.21",
+            "name": "2 Camiel 21",
+            "text": [
+                {
+                    "title": "Luum Kwör Mar Jø Gibien ",
+                    "text": "'Ba kanya bëët Deebiti na nyeya, da käc ma atägö ni bëëde ki cwiiri adäk. Køøre Deebit alämö ni pëëny Wuuö Jwøk kiper käc manøgø. 'Ba aløk Wuuö Jwøki ni kööe, ni «Cøøl ki dhi øde bäätge da ajäl kwör rem jiy; kiper Cøøl jø Gibien anääe.»",
+                    "ID": "1"
+                },
+                {
+                    "text": "'Ba jø Gibien ge paa jø Icriel; gena jø Amör moa no odööŋ ni kwøw. 'Ba kar kaace, jø Icriel geno tudö ki luubö ki jø Gibien nee jø Gibien ba 'näkge. 'Ba Cøøl apääre ki man dïïr wïthge ki køør këëny mana en cwïnye ki geni, ni ge näänne jø Icriel ki jø tuuŋ Juuda.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya ma Deebit jø Gibien aput cwøl ni cääne ki geni ni kööe, na «Agïnaŋø noo tïïa jïïu ennø? ?Agïne noo wïïra kwör ki gø nø, nee tïme ni løny jïïu ki man gwïëthu jic Wuuö Jwøk, ni beege jø Icriel?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba jø Gibien aköö jï nyeya, ni «Waani, bäŋ gïn manywa ri warkey wala gwel-bïrö mar Cøøl wala mar jø dhi øde, ni ba løny jïwa ki man 'näkwa ki dhaanhø røk jø Icriel.» 'Ba nyeya aköö, «Caannu gïna manynyu jaak; tïïa tïïö jïïu.»",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kanyøgønø, gena köö jï nyeya, ni «Ŋata many waani nee wa thööre na dïïr wïthwa, nee bäŋe dhaanhø mo dööŋ ni kwøw røkwa dï Icriel,",
+                    "ID": "5"
+                },
+                {
+                    "text": "beerra man ö cwøw abïriiø røk jø dhi øde ni wëëgï waani, nee ge lïërwa nyïm Wuuö Jwøk yi Giba, pääny mar Cøøl, ni beeye Cøøl na näk ojier Wuuö Jwøki na nyeya.» Køøre nyeya aköö jïge, ni «Aani, ge cïba cïbö jïïu.»",
+                    "ID": "6"
+                },
+                {
+                    "text": "'Ba nyeya, Mepiböcëth o Jönathan nyïkwaar Cøøl awiie ni kwøw, kiper kööŋ mana kööŋe ki gø nyïm Wuuö Jwøk na en yïthakicge ki Jönathan o Cøøl.",
+                    "ID": "7"
+                },
+                {
+                    "text": "Kanyøgønø, nyeya wäät Ricpa nyi Aya karge riet, na nywølge ki Cøøl, ni beege Armöni ki Mepiböcëth mør, ki wäät Mërap nyi Cøøl karge bïï, na nywølge ka Adariel o Bardhilay nyï Meyöla, aput lwør.",
+                    "ID": "8"
+                },
+                {
+                    "text": "Ni ö nyeya ni cïp ge ceŋ jø Gibien, ni ö jø Gibienni ni lïërge geni bäät kïdi nyïm Wuuö Jwøk. Kanyøgønø, jøøgø na abïriiø yøø, gena put thøø na aciel; 'ba geni, ge 'näk ka kany wø täk beek wø cwøl ni gäbci  ki kac yie.",
+                    "ID": "9",
+                    "comment":"Gäbci ki dha Araba cwøl na agarbu."
+                },
+                {
+                    "text": "'Ba Ricpa nyi Aya keeca alwøre, ni aae ki gø ni peeth gø piny bäät kïdi kanya en dëët jiy yie, ni bëëde ni koora geni, nee bäŋe wec maal mo pï bäätge ki waŋcäŋ wala lääc paap mo ööa baŋge ki wäär. 'Ba koor tääe ka dïcäŋ mana täk kaci yie këël mana päth køthi.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba gïna tïïc cï Cøølli ma Ricpa nyi Aya, acaan jï Deebit.",
+                    "ID": "11"
+                },
+                {
+                    "text": "Køøre Deebit aa baŋ jø Jabic-Gelät ni lwør cuu mo Cøøl ki mo Jönathan o Cøøl na no okwøŋ jø Jabic-Geläti kwal ki piny mëëth bura mar päänya cwøl ni Bëëth-Can, ni beeye kanya ö jø Pilitinni na lïërge geni yie dïcäŋa ö jø Pilitinni na 'näkge Cøøl bäät Kïn Gilböa.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit cuu mo Cøøl ki mo Jönathan o Cøøl aput kälö ki kaace; ni cooŋge cuu jiy moa na abïriiø na no olïërö, ni koonyge ge.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba cuu mo Cøøl ki mo Jönathan o Cøøl akïthge yi bwöc Kic wää Cøølli pääny mana cwøl ni Cëëla po jø tuuŋ Benjamen. 'Ba luup bëët moa ö nyeya na kööm geni ki ge aputge tïïc. Køøre lam mana lam jiyi kiper paac aput Jwøki løk. ",
+                    "ID": "14"
+                },
+                {
+                    "title": "Kanya Ö Jø Pilitinni Moa DëëtgeDøøŋŋø Na Nääi Ri Leny",
+                    "text": "'Ba kanya ö jø Pilitinni na cäŋge këëdö ki jø Icriel, Deebit aci baŋ leny ni cäädhi ka jø leny moe. 'Ba kanya këëtge ki jø Pilitin, Deebit aööl.",
+                    "ID": "15",
+                    "reference":"(1 Luup Nyeye 20:4-8)"
+                },
+                {
+                    "text": "Køøre Icbi-Banöp, nyen mo käla ri tuuŋ jøøa dëëtge døøŋŋø, mo otööyö ko opëëllö mo nyään, mo käädö ki tøŋ mo tïïc ka nywïënyö ma jwïël mo peege beeye rumme ma dïpe adäk ki yi rumi mana cwøl ni cekel, atïmö ni manynya man 'näk Deebit.",
+                    "ID": "16",
+                    "comment":"Cekelli moøgø na dïpe adäk yøø röömi ka kïïle adäk ki thääŋö."
+                },
+                {
+                    "text": "'Ba Abicay o Dheruya, Deebit aput piem cer nyï Pilitin manøgø, ni gøøc gø ni put gø 'näk. Køøre jø leny mo Deebit aput kööŋ jï Deebit, ni köge, ni «Ïïni, ï na nyeya en, ï ba cäädhi baŋ leny këët ki waani, kiper niï ba thøwï, kiper ïïna tar jï jø Icriel.»",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba na tïme na køøre cään, leny mør acäŋ këëllö ki jø Pilitin Gøp. Kanyøgønø, Cibekay nyï Uca, nyen mo nyeŋŋe cwøl ni Caap mo käla ri tuuŋ jøøa dëëtge døøŋŋø aput 'näk.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Ni ö lenynyi mør ni cäŋi këëllö ki jø Pilitin Gøp kaace thuwø. 'Ba El-Anan o Jayer nyï Bethelem, Göliat nyï Gëth, nyen mo thiir tøŋ mare caala athøra, anääe.",
+                    "ID": "19"
+                },
+                {
+                    "text": "Køøre leny mør acäŋ këëllö Gëth; 'ba da dhaanhø kaaca mo bäär døc ni dëëre dwøŋ, mo lweet ceŋŋe abïciel abïciel ni lweet tiete thuwø abïciel abïciel, ni lweete ge bëët beege pïërariiø kurŋween; 'ba eni thuwø nywöli ka ri tuuŋ jøøa bäyö døc ni dëëtge døøŋŋø.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba kanya ö nyenøgø na ŋwöe bäät jø Icriel, Jönathan o Cimiy, ni beeye Cimiy cöök Deebiti, nyenøgø anääe.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba jø Pilitin moøgø bëët na aŋween yøø, ge nywöli ka ri tuuŋ jøøa bäyö døc ni dëëtge døøŋŋø na en Gëth, 'ba geni, gena 'näk Deebiti ki jø leny moe.",
+                    "ID": "22"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.22",
+            "name": "2 Camiel 22",
+            "text": [
+                {
+                    "title": "Duut Deebit Mana Pwøc Jwøk Ki Gø",
+                    "text": "'Ba Deebit duut man acaae ni wär gø jï Wuuö Jwøk ni pwøya gø, ki køør pïëm mana piemi ya Wuuö Jwøki ceŋ nyïïmänne bëët, këël cer Cøøl.",
+                    "ID": "1",
+                    "reference":"(Dut Pwøc 18:1-50)"
+                },
+                {
+                    "text": "Ni kööe, «Wui Wuuö Jwøk, ïïna teek mara, ni ïïna kar gwøk røk kipera, ni beeye ïïni wø piem aani.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Ïïna Jwøk mara møn, ni teek mara wø jooda baŋï, ni beeye ï wø kana raa buutï. Ï caala kwöt leny naa gëëŋŋï gëëŋŋö ki gïï mo leth, ni beeye ï na pïëmi mara, niï caala kiir mo ogeerø ni teek kipera, ni beeye ï wø kana raa buute; ïïna pïëmi mara, ni beeye ï wø køny aani yïth gïï mo leth.",
+                    "ID": "3"
+                },
+                {
+                    "text": "«Wui Wuuö Jwøk, ï na näk orømø ki pwøc, kany wø kwaa ïïni, a wø putï ka køny ceŋ nyïïmänna.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper aana bëëdö ni aano ciel thøø dïër kaamar dhaanhø mo omaa athage dï naam, ni ö ränynyö mo päl ni pïïe bääta kaamar naam mo pänhnhö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kar thøø atïmö ni cään ki aani, naa ee meenø kaamar thøøl, ni thøø bëëdö naa ee ciiø kaamar abïëp.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, kanya ena yïth gïï mo leth, aana jwöŋö dëërï; aana jwöŋö dëërï møn, ï na Jwøk mara, ni ö dwøra ni wïnynyï gø niï ena kar bëëtö marï. Aana jwöŋö kiper køny, ni putï gø wïnynyö møn.",
+                    "ID": "7"
+                },
+                {
+                    "text": "«'Ba ki køør teegï, piny aput tïmö ni kwanynyi ni jäŋŋi, ni ö kwöra näk maal ocwää rege ni putge rege tuk, ni putge tïmö ni jäŋŋi ki køør wëër marï.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kanya jwïëyï ki jwïëy mo dwøŋ, jïrö mo päl aput nitul ki ummï, ni ö maaci ki cuk mo oäpö mo jiy di thöörö ni öge wøk ki dhiï.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, maal ajapï ni ööï piny, ni kanya cäädhï, kuna näk da tietï piny da pöölö mo cøl døc.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba ïïna put mäännö niï ena bäät nyïïatwiel maal mana cwøl ni kirubël; niï määnni ka yi jamø.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba deŋŋï bäre atïïyï na muudhö, ni ö pøølli mo nëëni na køth ni put maal gääbö.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Ni ö agaackøthi mana mal nyïmï ni put liel na maac.",
+                    "ID": "13"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, dwørï awïnyö kaamar køth mo pöödö maal, ni caanï marï, ï na Jwøa Dwøŋ ni en Maal.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Ni tïïyï køth nee pööde bäät nyïïmän, ni caala man wø thöödhö ka athëëre, ni ö nyïïmän ni putge keethø, ni putï wïthge kier ka agaackøth.",
+                    "ID": "15"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, kanya wëërï ki nyïïmännï niï jooga geni, kanya jwïëyï ki jwïëy mo dwøŋ, tiet ŋøøm aput nëënö, ni ö pï naama dwøŋ ni pääŋge rege këël mana nëën ŋøømmi.",
+                    "ID": "16"
+                },
+                {
+                    "text": "«Ï na Wuuö Jwøk, cerï arwääï niï ena maal, ni lwørï aani; ni kälï aani wøk ki yi bëëtö mo leth, ni caala man wø lääm dhaanhø wøk ki tiet pïï.",
+                    "ID": "17"
+                },
+                {
+                    "text": "Aana piemï ceŋ nyïïmänna moa bëëdö ni teeka ge bääta, ni beege nyïïmänna moa no okadhø ki teek døc, ni beege jøøa bëëdö ni män ki aani.",
+                    "ID": "18"
+                },
+                {
+                    "text": "Kanya bëëda ni aano ränynyö, nyïïmänna aö maal bääta, 'ba ï na Wuuö Jwøk, ïïna bëëdö niï køønynya aani;",
+                    "ID": "19"
+                },
+                {
+                    "text": "ni kälï aani wøk ki kany mo diiny mo jwïëya omiiø yie; ni japï jöö jïra ni dunynya wøk ki yïth gïï mo leth, ni kønyï aani kiper mana bëëdï niï mëër ki aani.",
+                    "ID": "20"
+                },
+                {
+                    "text": "«Ï na Wuuö Jwøk, aana cunnï ki køør bëëtö mara na beer; ni ŋatï aani ki køør mana waany dëëra ni bäŋ raay.",
+                    "ID": "21"
+                },
+                {
+                    "text": "Kiper aana bëëdö ni luupï yaa gwøø, ï na Wuuö Jwøk; ni bäŋ gïn mo raac mo yaa tïïö mo pää aani ki ïïni, ï na Jwøa;",
+                    "ID": "22"
+                },
+                {
+                    "text": "kiper aani luup ŋøl moï bëët ena nyïma, ni kära gaa wøk ki ciik moï.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Aana bëëdö ni bäŋ gïn jøøŋŋi ri bëëtö mara nyïmï, ni bëëda ni raa yaa gwøø ki raay.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Kiper manøgønø, ï na Wuuö Jwøk, aana cunnï ki køør bëëtö mara na beer, ki køør bëëtö mara na bëëda ni dëëra waany nyïmï, ni bääta bäŋ raay.",
+                    "ID": "25"
+                },
+                {
+                    "text": "«Wui Wuuö Jwøk, mëër marï ni wø ba jøøl wø nyoothï nyoodhø jï jø wø bëëdö ki bëët-mëër, ni nyoothï bëëtö marï na näk kare jï jø wø bëëdö ki bëëtö ma kare.",
+                    "ID": "26"
+                },
+                {
+                    "text": "Tac cwïny marï wø nyoothï nyoodhø jï jø wø bëëdö ni cwïnyge tar; 'ba ï wø bëëdö ni waŋï riek bäät jø wø bëëtö marge ba tiir.",
+                    "ID": "27"
+                },
+                {
+                    "text": "Jøøa no ocaarø wø kønyï kønyø; 'ba jø wø töödö, waŋï wø këëta rege ki man dwøgï wïthge piny.",
+                    "ID": "28"
+                },
+                {
+                    "text": "«Wui Wuuö Jwøk, ïïna tar mara; ni beeye ï na Wuuö Jwøk wø wiil muudhö mara na tar.",
+                    "ID": "29"
+                },
+                {
+                    "text": "Ki køør teek marï, a wø reŋŋa baŋ jø wø ö baŋ twëër; ni beeye ï na Jwøa ni wø mooc aani ki teek mo päära yi kiir mar nyïïmän ki gø.",
+                    "ID": "30"
+                },
+                {
+                    "text": "«'Ba ï na Jwøk, bäŋ gïn jøøŋŋi ri bëëtö marï, ni luubö marï adïëri; niï bëëdö niï caala kwöt leny jï jiy bëët mo wø kan rege buutï.",
+                    "ID": "31"
+                },
+                {
+                    "text": "?Aŋø, da jwøk mør këët mo caala ïïni, ï na Wuuö Jwøk? ?A da ŋat mo teek mo caala ïïni, ï na Jwøwa?",
+                    "ID": "32"
+                },
+                {
+                    "text": "Beeye ï Jwøk na näk kar gwøk røk mara mo otïïö ni teek; ni beeye ï wø tïïc bëëtö mara ni bäŋ gïn jøøŋŋi ree.",
+                    "ID": "33"
+                },
+                {
+                    "text": "Tieta akwathï ni tïmge ni jööt ni caala tiet aŋer, ni tïïyï aani naa cuŋŋa naa teek kwöra perge leth na en bäät thuuri.",
+                    "ID": "34"
+                },
+                {
+                    "text": "Aana pwönynyï ki jïëth leny, ni tïme ni løny jïra ki man thöödha ka atheerø ma atum mare tïïc ka nywïënyö ma jwïël.",
+                    "ID": "35"
+                },
+                {
+                    "text": "'Ba ï caala kwöt leny jïra ni wø piem aani, ni ö kønynyi marï ni put kara tïïc ni dwøŋ.",
+                    "ID": "36"
+                },
+                {
+                    "text": "Waŋjöö ajapï ni dwøŋ nyïma, ni kära tiera cwaanyø.",
+                    "ID": "37"
+                },
+                {
+                    "text": "«Aani, køør nyïïmän 'moa aŋwiea ni puta wïthge dïïr, ni kära duu ŋääa këël mana ö nyïïmänna na thumge.",
+                    "ID": "38"
+                },
+                {
+                    "text": "Nyïïmän 'moa wïthge adïïra møn, ni puta ge nyath na bäre, ni tïme ni ba løny jïge ki man öge maal këët; ni putge bëëtö ni geno pädhö tieta.",
+                    "ID": "39"
+                },
+                {
+                    "text": "Ï na Wuuö Jwøk, aana mooyï ki teek mo këëda ki gø ri leny, ni ö jøøa ö maal bääta ni putï wïthge dwøk piny jïra.",
+                    "ID": "40"
+                },
+                {
+                    "text": "Ïïni, nyïïmänna atïïyï nee ŋäthge luuge baŋa ni reŋge, ni ö jøøa bëëdö ni män ki aani, ni puta ge thöör.",
+                    "ID": "41"
+                },
+                {
+                    "text": "'Ba kanya nëënge, bäŋ ŋat mo okøny geni. Këël mana kwacge ïïni, ï na Wuuö Jwøk, bäŋ gïn mo iï løø jïge.",
+                    "ID": "42"
+                },
+                {
+                    "text": "Køøre nø, gena puta nyath këël mana tïmge ni caala tør, ni nyøra geni kaamar odhöönh mo ena dï jöö.",
+                    "ID": "43"
+                },
+                {
+                    "text": "«Aana kønyï ceŋ jø powa moa bëëdö ni gëëmö ki aani; ni tïïyï aani nee wïth juurre tïmge ni ena tiera; këël wïth juurre mo kuua, ge puta bëëtö ni ge bëënna aani.",
+                    "ID": "44"
+                },
+                {
+                    "text": "Juurre mo path, a wø wøørge wøørø ni dëëtge rïïŋö ki lwär, ni kany wø cääna ki ge, dwøra wø leŋge leŋø.",
+                    "ID": "45"
+                },
+                {
+                    "text": "'Ba geni, bäätge wø pädhö, ni öge wøk yïth kiiri moge moa no ogeerø ni teek ni dëëtge kwanynyi.",
+                    "ID": "46"
+                },
+                {
+                    "text": "«Wui Wuuö Jwøk, ï nut niï kwøw møn. Pwøc en jïrï, ï na teek mara; beerra man ö nyeŋŋï ni wïnye, ï na Jwøa teek ni wø piem aani.",
+                    "ID": "47"
+                },
+                {
+                    "text": "Beeye ï na Jwø wø cool kwöra dëët nyïïmänna, ni wø tïïc wïth juurre nee bëëtge ni ena tiera.",
+                    "ID": "48"
+                },
+                {
+                    "text": "Beeye ï thuwø ni wø køny aani ceŋ nyïïmänna; ni tïïyï jøøa ö maal bääta nee bëëtge ni ena tiera; ni kälï aani wøk ceŋ jø kwöri.",
+                    "ID": "49"
+                },
+                {
+                    "text": "Wui Wuuö Jwøk, ï pwøa pwøø dï wïth juurre kiper gïïa tïïyï bëët, ni wära ki duut naa pwøya nyeŋŋï.",
+                    "ID": "50"
+                },
+                {
+                    "text": "Beeye ï wø køny aani, a na tïïyï na nyeya; ni ö mëërri marï na näk ba jøøl ni putï gø nyooth jïra, a na tïïyï nee wïïa thïïmmi ki maaw niï røønya aani; ni ö mëërri manøgø ni put bëëtö ni nut kipera, a na Deebit en. 'Ba put mëër manøgø tïïc nee pïïe baŋ nyïïkwaaya ni ba cuŋ.»",
+                    "ID": "51"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.23",
+            "name": "2 Camiel 23",
+            "text": [
+                {
+                    "title": "Luup Moa Car Deebiti Na Aŋuudi ",
+                    "text": "'Ba moi beege luup moa car Deebiti na aŋuudi, ena köö, na «A caana dwør Jwøk, a na Deebit o Jeci; a caana dwør Jwøk møn, na tïïc kara ni dwøŋ; ni beeye Jwø Jeekap na tïïc aani nee wïïa thïïmmi ki maaw ni røønya aani; 'ba beeye aani wø cääö ki dudi mo met jï jø Icriel.",
+                    "ID": "1"
+                },
+                {
+                    "text": "«Jwïëc Wuuö Jwøk aö bääta ni cääne ki raa, ni tïm luupe ni ena dhaa.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Jwø Icriel mare anø caane, ni beeye Jwø Icriel na teek na cäänö ki aani ni kööe, ni ‹Ŋato bëëdö na nyeya ni käär jiy ki jöö ma kare, ni jiy kääre ni eni lwäära aani, a na Jwøk,",
+                    "ID": "3"
+                },
+                {
+                    "text": "eni tïmö kaamar tiet øw kany wø bëëde ni cäŋ tuulö, ni tïme ni caala maal mo bäŋ pøøl kany wø bëët pinynyi na amöölla, ni tïme ni nëëni ni mïërö ni caala luum mo pulli mo tuya piny, kany wø rieny cäŋŋi køør køth.›",
+                    "ID": "4"
+                },
+                {
+                    "text": "«?Aŋø, nyec mar dhi øtø mara ba tïmö ni caala nyec manøgø nyïm Jwøk? Kiper eno tudö ki luubö ki aani mo bëëdö na bäre bäre, ni beeye luubö mana näk ee cïp piny ni ba wiil. ?A ni näk mo enøgønø, Wuuö Jwøk a ba put piem, këël dhi øtø mara, ni wëëk gïï wø mïn eci ki ge bëët thur karge?",
+                    "ID": "5"
+                },
+                {
+                    "text": "'Ba jøøa wïthge reyø bëët, ge di wetø kaamar koodhi, kiper koodhi bäŋ wø mak ki cenø;",
+                    "ID": "6"
+                },
+                {
+                    "text": "'ba ŋat wø cooŋ ge wø cooŋe ka thiir tøŋ, ni putge waaŋ na bäre bäre karge na enge yie.» ",
+                    "ID": "7"
+                },
+                {
+                    "title": "Luum Jø Leny Mo Deebit Moa Teek Na Näk Nyeŋge Owïnyö",
+                    "text": "Moi beege nyeŋ jø leny mo Deebit moa teek. Dhaanhø mana dïkwøŋ beeye Jöcëp- Baacëbët nyï Taakmön, na bëëdö na wïth jø leny moa na adäk. Ena këëdö ki tøŋ ni nääe ki jiy ma dïpe abära ki yi leny aciel keere.",
+                    "ID": "8",
+                    "reference":"(1 Luup Nyeye 11:10-41)"
+                },
+                {
+                    "text": "'Ba riet jiy beeye Eliedhar o Dödö nyï Aköki. Ena dhaanhø aciel dëët jø leny moa teek moa na adäk na en buut Deebit, ni beege na ŋwöö bäät jø Pilitin moa näk rege ege cooŋ kanya aciel kaace kiper leny. 'Ba kar kaagø, jø leny møøk mo jø Icriel geno nø døø ŋäthge.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Køøre Eliedhar acuŋŋö ni 'näk jø Pilitin këël mana ööl cere no opëëllö poot ee maaø ni teek. 'Ba dïcäŋeca Wuuö Jwøk atïïö ki køny mo dwøŋ døc jï jø Icriel. Kanyøgønø, jø leny mo jø Icriel aduu baŋ nyenøgø; 'ba ge duui kiper twëër keere.",
+                    "ID": "10"
+                },
+                {
+                    "text": "'Ba dää jiy beeye Cimia wär Agë nyï Arar. Dïcäŋ aciel jø leny mo jø Pilitin rege acooŋge yi pwödhö ma adaci thööth yie døc. Ni ö jø lenynyi mo jø Icriel ni bwøkge ki jø leny mo jø Pilitin.",
+                    "ID": "11"
+                },
+                {
+                    "text": "'Ba Cimia acuŋŋö dï pwödhö ni mäna pwödhö ki jø Pilitin, ni 'näk ge. Ni ö Wuuö Jwøki ni tïïe ki køny mo dwøŋ jï jø Icriel.",
+                    "ID": "12"
+                },
+                {
+                    "text": "'Ba da jø leny adäk møøk røk jø leny moa näk pïëradäk na perge leth. 'Ba jø leny moøgø na adäk yøø, gena ci baŋ Deebit yi øt kïdi mana en ya Adulam kanya tïme na kar kac ki beel. 'Ba kar kaagø, jø leny mo jø Pilitin twïër marge ege tïïö yi Goor Rapayim.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba kar kaaca, Deebit ena kanya näk kar gwøk røk, ni jø leny mo jø Pilitin ge ena kar koor marge Bethelem.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit pï poge apare ni kööe, «Wui, doo na da ŋat mooc aani ki pïï mo maadha mo käla yi iith mana en dhi kiir Bethelem, doo beer.»",
+                    "ID": "15"
+                },
+                {
+                    "text": "Kanyøgønø, jø leny moa na adäk na teek, gena put aay ni dønyge dï twïër mar jø leny mo jø Pilitin ki teek, ni putge lwötö ki pïï yi iith mana en dhi kiir Bethelem, ni öge ni käärge käärö, ni kälge gø baŋ Deebit. 'Ba Deebit akweer ki man maath pïï moøgø, ni put gø køny piny jï Wuuö Jwøk.",
+                    "ID": "16"
+                },
+                {
+                    "text": "Ni kööe, «Wui Wuuö Jwøk, kara tïme ni bäär ki pïïögø. Kiper pïï moøgø caala rem jiy moa cøø na cïp dëëtge.» Kiper manøgønø, Deebit akweer ki man maath pïï moøgø. 'Ba man beeye gïrpiny aciel røk jammi moa tïïc jø lenynyi moa teek na näk adäk.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba Abicay cöök Jöapi o Dheruya beeye wïth jø leny moa teek moa näk pïëradäk. Ena këëdö ki tøŋ ki jiy ma dïpe adäk ni 'näk geni, ni put tïmö na ŋat mo nyeŋŋe owïnyö ni caala nyeŋ jøøa na adäk.",
+                    "ID": "18",
+                    "comment":"Jøøa na adäk beege Jöcëp-Baacëbët ki Eliedhar ki Cimia, ni beege na cäänö kiperge yi täk luup 8 këël 12."
+                },
+                {
+                    "text": "'Ba ena dhaanhø mo owøørø døc ki røk jø leny moa näk pïëradäk, ni put tïmö ni ena kwääy lwaak marge. 'Ba eni kär pïï kar jøøa na adäk.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba ŋat leny mør mo teek beeye Benaya o Jööda nyï Kapcël. 'Ba ena tïïö ki jap thwønh mo thööth døc. Eni jø Möap ariiø ma jø leny mo teek anääe. Eni thuwø, ena ci yi buur ni 'näge ki ŋuu dïcäŋ aciel ni piny da pey.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Ni ö nyï Ijepi mo dëëre dwøŋ ni 'näk gø thuwø. 'Ba nyï Ijep mana nääe enø, cere da tøŋ kar kaace. 'Ba Benaya aci baŋ gø ni eni käära athøra, ni cööt tøŋ wøk cer nyï Ijep, ni put gø 'näk ki tøŋ mar gø.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba jammi moøgø beege moa tïïc Benaya o Jööda, ni put tïmö ni nyeŋŋe owïnyö ni caala nyeŋ jøøa na adäk na teek døc.",
+                    "ID": "22"
+                },
+                {
+                    "text": "'Ba ena bëëdö ni ena dhaanhø mo owøørø ki røk jø leny moa näk pïëradäk. 'Ba eni kär pïï kar jøøa na adäk. 'Ba ena røøny Deebiti na wïth jø koor moe.",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba jø møøk mo ge ena røk jøøa näk pïëradäk na teek beege Acaël cöök Jöapi, ki El-Anan o Dödö nyï Bethelem,",
+                    "ID": "24"
+                },
+                {
+                    "text": "ki Cimia ki Elieka jø Aaröt,",
+                    "ID": "25"
+                },
+                {
+                    "text": "ki Këleth nyï Bëëth-Pëlët, ki Ira wär Ikëc nyï Tëköa,",
+                    "ID": "26"
+                },
+                {
+                    "text": "ka Abiedhar nyï Anathöth, ki Mabunay nyï Uca,",
+                    "ID": "27"
+                },
+                {
+                    "text": "ki Jaalmön nyï Aköki, ki Maaray nyï Nethöpa,",
+                    "ID": "28"
+                },
+                {
+                    "text": "ki Këlëp o Baanaa nyï Nethöpa, ki Itay o Ribay nyï Giba na en kur jø tuuŋ Benjamen,",
+                    "ID": "29"
+                },
+                {
+                    "text": "ki Benaya nyï Pirathön, ki Iday nyï waŋ naam Geäc,",
+                    "ID": "30"
+                },
+                {
+                    "text": "ka Abi-Albön nyï Arba, ka Adhemawët nyï Baurim,",
+                    "ID": "31"
+                },
+                {
+                    "text": "ki Eliaba nyï Caalbön, ki Jacen nyï Gidhön,",
+                    "ID": "32"
+                },
+                {
+                    "text": "ki Jönathan o Cimia nyï Arar, ka Akiam o Carar nyï Arar,",
+                    "ID": "33"
+                },
+                {
+                    "text": "ki Elipelet wär Acbay nyï Maika, ki Eliam wär Akithöpël nyï Gilö,",
+                    "ID": "34"
+                },
+                {
+                    "text": "ki Edharø nyï Karmël, ki Paaray nyï Araba,",
+                    "ID": "35"
+                },
+                {
+                    "text": "ki Igal o Nathan nyï Dhöba, ki Bani nyï Gaat,",
+                    "ID": "36"
+                },
+                {
+                    "text": "ki Cëlëk nyï Amön, ki Nakaray nyï Bëëröth, nyen wø käär jap leny jï Jöap o Dheruya,",
+                    "ID": "37"
+                },
+                {
+                    "text": "ki Ira nyï Jëtër, ki Garëp nyï Jëtër,",
+                    "ID": "38"
+                },
+                {
+                    "text": "ko Uria nyï Këth. 'Ba ge bëët gena jiy ma pïëradäk ka abïriiø.",
+                    "ID": "39"
+                }
+            ]
+        },
+        {
+            "ID": "OT:2SA.24",
+            "name": "2 Camiel 24",
+            "text": [
+                {
+                    "title": "Kanya Ö Deebiti Na Kwaan Jø Icriel",
+                    "text": "'Ba Wuuö Jwøk acäŋ wëër døc ki jø Icriel, ni tïïc Deebit nee tïïe ki gïn mo duunnö ki gïn mo raac bäätge. Ni kööe jï Deebit, ni «Ciï ni kwaanï jø Icriel ki tuuŋge ma jø tuuŋ Juuda.»",
+                    "ID": "1",
+                    "reference":"(1 Luup Nyeye 21:1-17)"
+                },
+                {
+                    "text": "Køøre nyeya ma Deebit aköö jï Jöap, kwääy lwaa leny na en buute, ni «Ennø, ï cøø ni caathï bäät wïth tuŋi mo jø Icriel bëët, ki mano täge ki Daan këël mano këët Bëërcïïba, ni kwaanï jø leny, kiper nee kwäänge ŋääa.»",
+                    "ID": "2"
+                },
+                {
+                    "text": "'Ba Jöap aköö jï nyeya, ni «Beerra man ö Wuuö Jwøki na näk Jwøï ni meet jiyï kwöre ma dïpa ni kaala moi ni nut ii, ni putï gø joot ki waŋï, ï na nyeya. ?'Ba ennø, Awuuö, ï na nyeya mara, jiy manynyï gø kiper ŋø nee ge kwaan?»",
+                    "ID": "3"
+                },
+                {
+                    "text": "'Ba luum nyeya atïmö ni teek bäät Jöap ki kwääc lwaae mo leny. Kanyøgønø, Jöap ki kwääc lwaae mo leny gena put ö wøk ki baŋ nyeya, ni putge aay ni ge cøøa kuna kwaange jø Icriel.",
+                    "ID": "4"
+                },
+                {
+                    "text": "'Ba gena tïŋŋö ni ŋølge Naam Jördan, ni tïïcge twïër marge buut Aröör, pääny mana en dï gool mana en ŋööm jø tuuŋ Gaat. Køøre gena pööth Jadher.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Ni pööthge Gelät ki Kadëc na en ŋööm jø Këth, ni pööthge Daan Jaan, ni løøge rege bäät caam, ni cige Caydan jï løø kur pänh-cäŋ.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Ni cige pääny mana cwøl ni Tayar, na näk ogeerø ni teek, ni cige yïth päänye mo jø Ëwi ki päänye mo jø Keenan bëët, këël mana putge pïï Bëërcïïba na en Juuda jï kuna näk da tier-piny.",
+                    "ID": "7"
+                },
+                {
+                    "text": "'Ba kanya nø caathge dï ŋöömö bäre, gena duu Jerucalem køør dwäde abïŋween ki nïne ma pïërariiø.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba Jöap kwään jiy moa kwaane acïbe jï nyeya ma Deebit; ni jiy moa teek na näk leny løny jïge dï Icriel beege jiy ma kume ma dïpe abära; 'ba jø tuuŋ Juuda beege jiy ma kume ma dïpe abïïc.",
+                    "ID": "9"
+                },
+                {
+                    "text": "Køøre Deebit cwïnye apädhö ki køør mana nø kwaan jiy. Kanyøgønø, Deebit alämö jï Wuuö Jwøk ni kööe, «Wui Wuuö Jwøk, aana nø bääyö døc ki køør gïna tïïa. 'Ba ennø, beerra man wëënnï raay 'moa, a na dhaanhnhï, kiper aani gïnögø atïïa ni wïïa kära caarø.» ",
+                    "ID": "10"
+                },
+                {
+                    "title": "Luum Ajäla Mar Wuuö Jwøk",
+                    "text": "'Ba kanya ö Deebiti maal ka amöölla, dwør Wuuö Jwøk onø ö bäät nyikuŋ Jwøk ma Gaat, ŋat wø car jammi jï Deebit ki køør man wø nyooth Jwøki jïre, ni kööe,",
+                    "ID": "11",
+                    "comment":"Gaat man paa mana cwøl jø tuuŋ Gaat ree."
+                },
+                {
+                    "text": "ni «Ci baŋ Deebit ni caanï luumma jïre, ni kööï ni man beeye dwør Wuuö Jwøk, ena köö, ni ‹Aani, luup adäk cïba nyïmï, niï jëëtï ki luubö aciel rege, mo tïïa tïïö dëërï.› »",
+                    "ID": "12"
+                },
+                {
+                    "text": "Kanyøgønø, Gaat aö baŋ Deebit ni caan luummögø jï Deebit, ni kööe jïgø, «?A luubö mane ni beer røk moi? ?Beerra man ö käci paarï ki cwiiri adäk? ?Wala beerra man ö nyïïmän moï ni ŋwiecge køøru ki dwäde adäk nou rïïŋö? ?Wala beerra man ö täwi mo leth døc ni ö bäätu yi ŋöömmu ki nïne adäk? Ennø, cädï ni jierï gïno døøa ki gø jï Jwøk na jääŋ aani.»",
+                    "ID": "13"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aköö jï Gaat, ni «Gïïögø bëët duua bëëtö mo teek kipera. Beerra man tïmwa ni wa pätha cer Wuuö Jwøk, kiper mëër mare dwøŋ; 'ba kär wa tïmö ni wa pätha cer dhaanhø.»",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanyøgønø, Wuuö Jwøk täw mo leth døc aput jääŋŋö bäät jø Icriel ki mana täge ka amöölla maneca këël mana pääŋ kanya many Wuuö Jwøki; ni ö jø Icrielli ma kume ma pïërabïriiø ni putge thøø, ki mana täge ki Daan këël mana këët Bëërcïïba.",
+                    "ID": "15"
+                },
+                {
+                    "text": "'Ba kanya ö nyïïatwiel maalli na rwiec cere nee Jerucalem raanynye, Wuuö Jwøk cwïnye apädhö kiper gïna leth na tägö dëët jiy, ni kööe jï nyïïatwiel maal mana 'näk jiy, «Manøgø rømø nø. Ennø, jook cerï nø.» 'Ba kar kaagø, nyïïatwiel maal mar Wuuö Jwøk ena buut laara mar Arawna nyï Jeebuc.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba kanya ö Deebiti na joot nyïïatwiel maal mana 'näk jiy, ena lämö jï Wuuö Jwøk ni kööe, ni «Ka adïëri møn, beeye aani na bääyö, na tïïc gïn mo raac. ?'Ba jiy moi ni caal rööm ii, agïnaŋø na baacge? Wui Wuuö Jwøk, beerra man tïm cerï ni ena dëëra ki jø dhi øt wära.» ",
+                    "ID": "17"
+                },
+                {
+                    "title": "Kanya Ö Deebiti Na Tïïe Ki Gïn Wø Cïp Olämme Bääte",
+                    "text": "Kanyøgønø, Gaat aput ö baŋ Deebit dïcäŋögø ni kööe jïgø, ni «Ciï ni tïï jï Wuuö Jwøk ki gïn wø cïp olämme bääte kaace yi laara mar Arawna nyï Jeebuc.»",
+                    "ID": "18",
+                    "reference":"(1 Luup Nyeye 21:18-26)"
+                },
+                {
+                    "text": "Køøre Deebit aput aay ki køør mana caan Gaati jïre, kaawat mana caani ya Wuuö Jwøki.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba Arawna alwïthö piny ni joot nyeya ma Deebit ki jø kööre moe ni ge ŋunna jï kuna näk da eni; ni ö Arawna ni aa wøk baŋ nyeya ni këël cøŋŋe piny ni kuul wïïe piny ni määtha gø.",
+                    "ID": "20"
+                },
+                {
+                    "text": "Køøre Arawna aköö, «?Wui nyeya, u öömu ŋø baŋa?» 'Ba aløk Deebiti, na «A ööi kaper nee laara marï ŋeea, kiper naa tïïa jï Wuuö Jwøk ki gïn wø cïp olämme bääte, kiper nee täwa leth na nø tägö ki køør ajäl Jwøk nee aae bäät jiy.»",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba Arawna aköö jï Deebit, «Wui Awuuö, ï na nyeya, beerra man kälï gïna manynyï jaak, ni cïpï gø jï Wuuö Jwøk. Neenï, dhäk mo løny jïrï ki man cïpï ge no olämi man wø waaŋ bäre nut yøø. Këël jer dïn ki jer puur mo wø rïï ŋut dhäk yøøgø thuwø. Løny jïrï ki man wääŋï ki geni.",
+                    "ID": "22"
+                },
+                {
+                    "text": "Wui nyeya, jammi bëët yøønø, acïba jïrï.» 'Ba Arawna acäŋ köö jï nyeya, ni «Beerra man ö Wuuö Jwøki ni wëëk gïna manynyï thur kare.»",
+                    "ID": "23"
+                },
+                {
+                    "text": "'Ba nyeya aköö jï Arawna, ni «Ba løny; japï ba käla ki wat jaak. Ka adïëri møn, gïïögø ŋeea ŋeeø baŋï ki gwel, kiper aani a ba cïpi jï Wuuö Jwøk, Jwøk mara, ko olämme mo wø waaŋ bäre mo bäŋ gïn mo yaa coolø kiperge.» Kanyøgønø, Deebit laara ki dhäk aput ŋeew ki gwet-bïrö ma pïërabïïc.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Kanyøgønø, Deebit aput tïïö jï Wuuö Jwøk kaace ki gïn wø cïp olämme bääte, ni put cïpö ko olämme mo wø waaŋ bäre, ko olämme mo wø duunni ki mëër. Køøre nø, Wuuö Jwøk lam mar Deebit, mana läme ki gø kiper paac, aløøe, ni ö täwa leth na tägö bäät jø Icriel ki køør ajäl Jwøk ni put cuŋŋö.",
+                    "ID": "25"
+                }
+            ]
+        }
+    ]
+}

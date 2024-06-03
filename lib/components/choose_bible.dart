@@ -113,15 +113,61 @@ class _ChooseBibleState extends State<ChooseBible> {
         print(splitVersion[1]);
 
         for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
-          if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1].toString()) {
-            print('${chapAbbrev[chapIndex]['amharic']}  fff');
-            selectedFontStyle
-                .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
-            print('${chapAbbrev[chapIndex]['amharic']}  fff');
+          if (splitVersion[0] == 'ANY') {
+            if (chapAbbrev[chapIndex]['abbrev'] ==
+                splitVersion[2].split('.')[0].toString()) {
+              print('${chapAbbrev[chapIndex]['amharic']}  fff');
+              selectedFontStyle
+                  .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
+              print('${chapAbbrev[chapIndex]['amharic']}  fff');
+            }
+          } else {
+            if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1].toString()) {
+              print('${chapAbbrev[chapIndex]['amharic']}  fff');
+              selectedFontStyle
+                  .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
+              print('${chapAbbrev[chapIndex]['amharic']}  fff');
+            }
           }
         }
       } else if (value == 'ANY') {
-        print(value);
+        if (currentVersion.contains('_')) {
+          for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
+            if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
+                chapIndex < 39) {
+              print('1 problem');
+              selectedFontStyle.setBibleVersion(
+                  'OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
+              print('OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json jkj');
+            } else if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
+                chapIndex >= 39) {
+              // assets\holybooks\ANY\NT\1CO.json
+              print('3 probelm');
+              selectedFontStyle.setBibleVersion(
+                  'ANY/NT/${chapAbbrev[chapIndex]['abbrev']}.json');
+              print('ANY/NT/${chapAbbrev[chapIndex]['abbrev']}.json here');
+            }
+          }
+        } else {
+          for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
+            if (chapAbbrev[chapIndex]['abbrev'] == currentAbbrev &&
+                chapIndex < 39) {
+            } else if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1] &&
+                chapIndex >= 39) {
+              selectedFontStyle.setBibleVersion(
+                  'ANY/${splitVersion[0]}/${splitVersion[1]}.json');
+              print('ANY/${splitVersion[0]}/${splitVersion[1]}.json blah balh');
+            }
+          }
+
+          // selectedFontStyle.setBibleVersion(
+          //     '${splitVersion[0]}/${splitVersion[1]}/$value.json');
+          print('${splitVersion[0]}/${splitVersion[1]}.json');
+          print(currentAbbrev);
+        }
+
+        print('ghghggh');
+        // print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
       } else {
         print('english $splitVersion');
         print(value);
@@ -142,13 +188,19 @@ class _ChooseBibleState extends State<ChooseBible> {
               print('NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json here');
             }
           }
+        } else if (splitVersion[0] == 'ANY') {
+          print('$splitVersion here already');
+          selectedFontStyle.setBibleVersion(
+              '${splitVersion[1]}/${splitVersion[2].split('.')[0]}/$value.json');
         } else {
           selectedFontStyle.setBibleVersion(
               '${splitVersion[0]}/${splitVersion[1]}/$value.json');
           print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
         }
 
-        print('ghghggh');
+        print(' $currentVersion jdklfjdkfjdkfdj');
+        print(
+            '${splitVersion[1]}/${splitVersion[2].split('.')[0]}/$value.json');
         // print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
       }
     } catch (e) {
