@@ -11,10 +11,6 @@ class Pray extends StatefulWidget {
 
   @override
   State<Pray> createState() => _PrayState();
-  // int index = 0;
-  // void updateVerses() {
-
-  // }
 }
 
 class _PrayState extends State<Pray> {
@@ -37,27 +33,8 @@ class _PrayState extends State<Pray> {
   @override
   void initState() {
     getLang();
-    // TODO: implement initState
     super.initState();
   }
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   updateVerses();
-  // }
-
-  // void updateVerses() {
-  //   if (index < prayer.length) {
-  //     setState(() {
-  //       selectedVerse = prayer[index]['verse']!;
-  //       selectedText = prayer[index]['text']!;
-  //     });
-  //     index++;
-  //   } else {
-  //     index = 0;
-  //   }
-  // }
 
   void getLang() async {
     String language = await style.getLanguageVersion();
@@ -245,7 +222,7 @@ class _PrayState extends State<Pray> {
                   : _language == 'ANY'
                       ? 'Lam mar dïcängï'
                       : 'Today\'s prayer',
-              style: TextStyle(fontSize: 28),
+              style: const TextStyle(fontSize: 28),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 35),
@@ -255,7 +232,7 @@ class _PrayState extends State<Pray> {
                 children: [
                   Text(
                     prayer[currentIndex]['verse']!,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.grey, fontStyle: FontStyle.italic),
                   ),
                   const SizedBox(

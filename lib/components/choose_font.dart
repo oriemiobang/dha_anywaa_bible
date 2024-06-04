@@ -37,9 +37,8 @@ class _ChooseBibleState extends State<ChooseFont> {
         title: const Text('Select font type'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          // Text('Choose a language'),
           ListTile(
             onTap: () {
               setState(() {
@@ -48,9 +47,9 @@ class _ChooseBibleState extends State<ChooseFont> {
               });
             },
             leading: selectedFont == 'UntitledSerif'
-                ? Icon(Icons.check)
-                : Icon(null),
-            title: Text(
+                ? const Icon(Icons.check)
+                : const Icon(null),
+            title: const Text(
               'Untitled Serif',
               style: TextStyle(fontFamily: 'UntitledSerif', fontSize: 17),
             ),
@@ -64,7 +63,7 @@ class _ChooseBibleState extends State<ChooseFont> {
             },
             leading:
                 selectedFont == 'Garamond' ? Icon(Icons.check) : Icon(null),
-            title: Text(
+            title: const Text(
               'Garamond',
               style: TextStyle(fontFamily: 'Garamond', fontSize: 17),
             ),
@@ -76,9 +75,10 @@ class _ChooseBibleState extends State<ChooseFont> {
                 setFontStyle('RobotoSerif');
               });
             },
-            leading:
-                selectedFont == 'RobotoSerif' ? Icon(Icons.check) : Icon(null),
-            title: Text(
+            leading: selectedFont == 'RobotoSerif'
+                ? const Icon(Icons.check)
+                : const Icon(null),
+            title: const Text(
               'Roboto Serif',
               style: TextStyle(fontFamily: 'RobotoSerif', fontSize: 17),
             ),
@@ -91,9 +91,9 @@ class _ChooseBibleState extends State<ChooseFont> {
               });
             },
             leading: selectedFont == 'RobotoRegular'
-                ? Icon(Icons.check)
-                : Icon(null),
-            title: Text(
+                ? const Icon(Icons.check)
+                : const Icon(null),
+            title: const Text(
               'Roboto Sans',
               style: TextStyle(fontFamily: 'RobotoRegular', fontSize: 17),
             ),
@@ -105,9 +105,10 @@ class _ChooseBibleState extends State<ChooseFont> {
                 setFontStyle('RobotoMono');
               });
             },
-            leading:
-                selectedFont == 'RobotoMono' ? Icon(Icons.check) : Icon(null),
-            title: Text(
+            leading: selectedFont == 'RobotoMono'
+                ? const Icon(Icons.check)
+                : const Icon(null),
+            title: const Text(
               'Roboto Sans Mono',
               style: TextStyle(fontFamily: 'RobotoMono', fontSize: 17),
             ),

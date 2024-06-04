@@ -1,15 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
-// import 'dart:ffi';
-
-// import 'package:dha_anywaa_bible/choose_bible.dart';
-// import 'package:dha_anywaa_bible/choose_font.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-// import 'package:shared_preferences/shared_preferences.dart';
 
 class Setting extends StatefulWidget {
   const Setting({super.key});
@@ -19,9 +12,6 @@ class Setting extends StatefulWidget {
 }
 
 class _SettingState extends State<Setting> {
-  // void changeTheme() {
-
-  // }
   double _currentSliderValue = 15;
   FontSize fontSize = FontSize();
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
@@ -57,13 +47,6 @@ class _SettingState extends State<Setting> {
     print('the font is saved');
   }
 
-  // void getFont() async {
-  //   setState(() async {
-  //     _currentSliderValue = await fontSize.getFontSize();
-  //   });
-  //   print('the font is saved');
-  // }
-
   void setFont(double font) async {
     await fontSize.setFontSize(font);
   }
@@ -78,8 +61,6 @@ class _SettingState extends State<Setting> {
     setState(() {
       versionAbbrev = version[0];
       versionName = languageVersion.substring(versionAbbrev.length + 1);
-      print(versionAbbrev);
-      print(versionName);
     });
   }
 
@@ -95,7 +76,7 @@ class _SettingState extends State<Setting> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
+        title: const Text('Settings'),
         forceMaterialTransparency: true,
       ),
       body: SafeArea(
@@ -110,7 +91,7 @@ class _SettingState extends State<Setting> {
                 ListTile(
                   leading: Icon(
                       notifier.isDark ? Icons.dark_mode : Icons.light_mode),
-                  title: Text('Dark Theme'),
+                  title: const Text('Dark Theme'),
                   trailing: Transform.scale(
                     scale: 0.8,
                     child: Switch(
@@ -119,12 +100,11 @@ class _SettingState extends State<Setting> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text('Select Bible'),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text('Select a Bible'),
                 ),
                 ListTile(
-                  // leading: Icon(Icons.book),
                   title: Text(versionAbbrev),
                   onTap: () {
                     setState(() {
@@ -135,40 +115,38 @@ class _SettingState extends State<Setting> {
                   },
                   subtitle: Text(
                     versionName,
-                    style: TextStyle(color: Colors.grey),
+                    style: const TextStyle(color: Colors.grey),
                   ),
-                  trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  trailing: const Icon(Icons.arrow_forward_ios_rounded),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Text('Select font type'),
                 ),
                 ListTile(
                   // leading: Icon(Icons.book),
                   title: Text(
                     fontName,
-                    style: TextStyle(fontFamily: 'UntitledSerif'),
+                    style: const TextStyle(fontFamily: 'UntitledSerif'),
                   ),
                   onTap: () {
                     setState(() {
                       Navigator.pushNamed(context, '/chooseFont').then((_) {
                         setState(() {
                           getFont();
-
-                          print('back');
                         });
                       });
                     });
                   },
 
-                  trailing: Icon(Icons.arrow_forward_ios_rounded),
+                  trailing: const Icon(Icons.arrow_forward_ios_rounded),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Text('font size'),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(15, 5, 15, 0),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(15, 5, 15, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -189,16 +167,14 @@ class _SettingState extends State<Setting> {
                       setState(() {
                         setFont(value);
                         getFont();
-
-                        print(_currentSliderValue);
                       });
                     }),
                 Padding(
-                  padding: EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15),
                   child: Container(
                     height: 200,
                     width: double.infinity,
-                    decoration: BoxDecoration(color: Colors.transparent),
+                    decoration: const BoxDecoration(color: Colors.transparent),
                     child: Text(
                       "Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
                       " kanya ciel ki Jwøk, ni Dwørøgøøni"

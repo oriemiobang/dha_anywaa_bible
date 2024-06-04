@@ -1,6 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_final_fields
-
-// import 'package:dha_anywaa_bible/components/numbers.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:flutter/material.dart';
 
@@ -8,8 +5,6 @@ class Chapter {
   final String title;
   bool isExpanded;
   final int number;
-
-  //  ø     ö     ï    ë  ä
 
   Chapter(
       {required this.title, required this.number, required this.isExpanded});
@@ -25,273 +20,273 @@ class _ChapterListState extends State<ChapterList> {
     {
       'title': 'Genesis',
       'amharic': '01_ኦሪት ዘፍጥረት.json',
-      'anywaa': '',
+      'anywaa': 'Wïlöölö',
       'number': '50',
       'abbrev': 'GEN'
     },
     {
       'title': 'Exodus',
       'amharic': '02_ኦሪት ዘጸአት.json',
-      'anywaa': '',
+      'anywaa': 'Bwøth Wøk',
       'number': '40',
       'abbrev': 'EXO'
     },
     {
       'title': 'Leviticus',
       'amharic': '03_ኦሪት ዘሌዋውያን.json',
-      'anywaa': '',
+      'anywaa': 'Ciik Kiper Dïlämme',
       'number': '27',
       'abbrev': 'LEV'
     },
     {
       'title': 'Numbers',
       'amharic': '04_ኦሪት ዘኍልቍ.json',
-      'anywaa': '',
+      'anywaa': 'Kwään Jiy',
       'number': '36',
       'abbrev': 'NUM'
     },
     {
       'title': 'Deuteronomy',
       'amharic': '05_ኦሪት ዘዳግም.json',
-      'anywaa': '',
+      'anywaa': 'Tiet Ciik',
       'number': '34',
       'abbrev': 'DEU'
     },
     {
       'title': 'Joshua',
       'amharic': '06_መጽሐፈ ኢያሱ ወልደ ነዌ.json',
-      'anywaa': '',
+      'anywaa': 'Jøcua',
       'number': '24',
       'abbrev': 'JOS'
     },
     {
       'title': "Judges",
       'amharic': '07_መጽሐፈ መሣፍንት.json',
-      'anywaa': '',
+      'anywaa': 'Pïëmme',
       'number': '21',
       'abbrev': 'JDG'
     },
     {
       'title': "Ruth",
       'amharic': '08_መጽሐፈ ሩት.json',
-      'anywaa': '',
+      'anywaa': 'Ruuth',
       'number': '4',
       'abbrev': 'RUT'
     },
     {
       'title': "1 Samuel",
       'amharic': '09_መጽሐፈ ሳሙኤል ቀዳማዊ.json',
-      'anywaa': '',
+      'anywaa': '1 Camiel',
       'number': '31',
       'abbrev': '1SA'
     },
     {
       'title': "2 Samuel",
       'amharic': '10_መጽሐፈ ሳሙኤል ካል.json',
-      'anywaa': '',
+      'anywaa': '2 Camiel',
       'number': '24',
       'abbrev': '2SA'
     },
     {
       'title': "1 Kings",
       'amharic': '11_መጽሐፈ ነገሥት ቀዳማዊ.json',
-      'anywaa': '',
+      'anywaa': '1 Nyeye',
       'number': '22',
       'abbrev': '1KI'
     },
     {
       'title': "2 Kings",
       'amharic': '12_መጽሐፈ ነገሥት ካልዕ.json',
-      'anywaa': '',
+      'anywaa': '2 Nyeye',
       'number': '25',
       'abbrev': '2KI'
     },
     {
       'title': "1 Chronicles",
       'amharic': '13_መጽሐፈ ዜና መዋዕል ቀዳማዊ.json',
-      'anywaa': '',
+      'anywaa': '1 Luup Nyeye',
       'number': '29',
       'abbrev': '1CH'
     },
     {
       'title': "2 Chronicles",
       'amharic': '14_መጽሐፈ ዜና መዋዕል ካልዕ.json',
-      'anywaa': '',
+      'anywaa': '2 Luup Nyeye',
       'number': '36',
       'abbrev': '2CH'
     },
     {
       'title': "Ezra",
       'amharic': '15_መጽሐፈ ዕዝራ.json',
-      'anywaa': '',
+      'anywaa': 'Edhera',
       'number': '10',
       'abbrev': 'EZR'
     },
     {
       'title': "Nehemiah",
       'amharic': '16_መጽሐፈ ነህምያ.json',
-      'anywaa': '',
+      'anywaa': 'Neemiya',
       'number': '13',
-      'abbrev': 'NAM'
+      'abbrev': 'NEH'
     },
     {
       'title': "Esther",
       'amharic': '17_መጽሐፈ አስቴር.json',
-      'anywaa': '',
+      'anywaa': 'Acther',
       'number': '10',
       'abbrev': 'EST'
     },
     {
       'title': "Job",
       'amharic': '18_መጽሐፈ ኢዮብ.json',
-      'anywaa': '',
+      'anywaa': 'Jööp',
       'number': '42',
       'abbrev': 'JOB'
     },
     {
       'title': "Psalms",
       'amharic': '19_መዝሙረ ዳዊት.json',
-      'anywaa': '',
+      'anywaa': 'Dut Pwøc',
       'number': '150',
       'abbrev': 'PSA'
     },
     {
       'title': "Proverbs",
       'amharic': '20_መጽሐፈ ምሳሌ.json',
-      'anywaa': '',
+      'anywaa': 'Pwöc Leec Wïc',
       'number': '31',
       'abbrev': 'PRO'
     },
     {
       'title': "Ecclesiastes",
       'amharic': '21_መጽሐፈ መክብብ.json',
-      'anywaa': '',
+      'anywaa': 'Luup Dïpööy',
       'number': '12',
       'abbrev': 'ECC'
     },
     {
       'title': "Song of Solomon",
       'amharic': '22_መኃልየ መኃልይ ዘሰሎሞን.json',
-      'anywaa': '',
+      'anywaa': 'Obeec Dudi',
       'number': '8',
       'abbrev': 'SNG'
     },
     {
       'title': 'Isaiah',
       'amharic': '23_ትንቢተ ኢሳይያስ.json',
-      'anywaa': '',
+      'anywaa': 'Aydheea',
       'number': '66',
       'abbrev': 'ISA'
     },
     {
       'title': 'Jeremiah',
       'amharic': '24_ትንቢተ ኤርምያስ.json',
-      'anywaa': '',
+      'anywaa': 'Jeremaya',
       'number': '52',
       'abbrev': 'JER'
     },
     {
       'title': 'Lamentations',
       'amharic': '25_ሰቆቃው ኤርምያስ.json',
-      'anywaa': '',
+      'anywaa': 'Wëël Kïmmö',
       'number': '5',
       'abbrev': 'LAM'
     },
     {
       'title': 'Ezekiel',
       'amharic': '26_ትንቢተ ሕዝቅኤል.json',
-      'anywaa': '',
+      'anywaa': 'Edhikiel',
       'number': '48',
       'abbrev': 'EZK'
     },
     {
       'title': 'Daniel',
       'amharic': '27_ትንቢተ ዳንኤል.json',
-      'anywaa': '',
+      'anywaa': 'Daniel',
       'number': '12',
       'abbrev': 'DAN'
     },
     {
       'title': 'Hosea',
       'amharic': '28_ትንቢተ ሆሴዕ.json',
-      'anywaa': '',
+      'anywaa': 'Odheea',
       'number': '14',
       'abbrev': 'HOS'
     },
     {
       'title': 'Joel',
       'amharic': '29_ትንቢተ ኢዮኤል.json',
-      'anywaa': '',
+      'anywaa': 'Jool',
       'number': '3',
       'abbrev': 'JOL'
     },
     {
       'title': 'Amos',
       'amharic': '30_ትንቢተ አሞጽ.json',
-      'anywaa': '',
+      'anywaa': 'Amøc',
       'number': '9',
       'abbrev': 'AMO'
     },
     {
       'title': 'Obadiah',
       'amharic': '31_ትንቢተ አብድዩ.json',
-      'anywaa': '',
+      'anywaa': 'Obadiya',
       'number': '1',
       'abbrev': 'OBA'
     },
     {
       'title': 'Jonah',
       'amharic': '32_ትንቢተ ዮናስ.json',
-      'anywaa': '',
+      'anywaa': 'Joona',
       'number': '4',
       'abbrev': 'JON'
     },
     {
       'title': 'Micah',
       'amharic': '33_ትንቢተ ሚክያስ.json',
-      'anywaa': '',
+      'anywaa': 'Mikiya',
       'number': '7',
       'abbrev': 'MIC'
     },
     {
       'title': 'Nahum',
       'amharic': '34_ትንቢተ ናሆም.json',
-      'anywaa': '',
+      'anywaa': 'Neeyam',
       'number': '3',
       'abbrev': 'NAH'
     },
     {
       'title': 'Habakkuk',
       'amharic': '35_ትንቢተ ዕንባቆም.json',
-      'anywaa': '',
+      'anywaa': 'Abakuk',
       'number': '3',
       'abbrev': 'HAB'
     },
     {
       'title': 'Zephaniah',
       'amharic': '36_ትንቢተ ሶፎንያስ.json',
-      'anywaa': '',
+      'anywaa': 'Jepaniya',
       'number': '3',
       'abbrev': 'ZEP'
     },
     {
       'title': 'Haggai',
       'amharic': '37_ትንቢተ ሐጌ.json',
-      'anywaa': '',
+      'anywaa': 'Agëë',
       'number': '2',
       'abbrev': 'HAG'
     },
     {
       'title': 'Zechariah',
       'amharic': '38_ትንቢተ ዘካርያስ.json',
-      'anywaa': '',
+      'anywaa': 'Dhekaraya',
       'number': '14',
       'abbrev': 'ZEC'
     },
     {
       'title': 'Malachi',
       'amharic': '39_ትንቢተ ሚልክያ.json',
-      'anywaa': '',
+      'anywaa': 'Milkiya',
       'number': '4',
       'abbrev': 'MAL'
     },
@@ -552,9 +547,7 @@ class _ChapterListState extends State<ChapterList> {
     if (enteredKeyword.isEmpty) {
       result = newTestList;
       oldTestResult = oldTestList;
-      print('no change');
     } else {
-      print('change');
       oldTestResult = oldTestList
           .where((book) => book['title']!
               .toLowerCase()
@@ -578,25 +571,13 @@ class _ChapterListState extends State<ChapterList> {
     return DefaultTabController(
       animationDuration: Duration.zero,
       initialIndex: 0,
-      length: version == 'ANY' ? 1 : 2,
+      length: 2,
       child: Scaffold(
           appBar: AppBar(
             automaticallyImplyLeading: false,
-            // leading: IconButton(
-
-            //     onPressed: () {
-            //       setState(() {
-            //         Navigator.pop(context);
-            //       });
-            //     },
-            //     icon: Icon(
-            //       Icons.arrow_back_rounded,
-            //       color: Colors.white,
-            //     )),
             toolbarHeight: 100,
             forceMaterialTransparency: true,
             title: Column(
-              // mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
@@ -607,11 +588,16 @@ class _ChapterListState extends State<ChapterList> {
                             Navigator.pop(context);
                           });
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_back_rounded,
                         )),
-                    Text('weeli',
-                        style: TextStyle(
+                    Text(
+                        version == 'ANY'
+                            ? 'Nyeŋ Weet Jwøk'
+                            : version == 'AMH'
+                                ? 'መጻሕፍት'
+                                : 'Holy bible books',
+                        style: const TextStyle(
                           fontSize: 19,
                         )),
                   ],
@@ -621,52 +607,36 @@ class _ChapterListState extends State<ChapterList> {
                     Container(
                         height: 50,
                         width: 50,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Color.fromARGB(155, 75, 75, 75),
                             borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(20),
                                 topLeft: Radius.circular(20))),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.search,
                             size: 30,
                           ),
                         )),
                     Expanded(
-                      child: Container(
+                      child: SizedBox(
                         height: 50,
                         width: double.infinity,
                         child: TextField(
                           onChanged: (value) => _runFilter(value),
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             border: OutlineInputBorder(
                                 borderSide: BorderSide.none,
                                 borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(20),
                                     bottomRight: Radius.circular(20))),
-                            // labelText: 'Search',
                             filled: true,
-                            // enabledBorder: InputBorder.none,
                             focusedBorder: InputBorder.none,
                             fillColor: Color.fromARGB(155, 75, 75, 75),
                             label: Text(
                               '',
-                              style: TextStyle(
-                                  // color: Color.fromARGB(217, 193, 190, 190)
-                                  ),
+                              style: TextStyle(),
                             ),
-                            // icon: Container(
-                            //     height: 50,
-                            //     width: 30,
-                            //     decoration: BoxDecoration(
-                            //         color: Color.fromARGB(155, 75, 75, 75),
-                            //         borderRadius: BorderRadius.only(
-                            //             bottomLeft: Radius.circular(20),
-                            //             topLeft: Radius.circular(20))),
-                            //     child: Icon(Icons.search))
-                            // icon: Icon(Icons.search),
-                            // label: Icon(Icons.search)
-                            // icon: Icon(Icons.search)
                           ),
                         ),
                       ),
@@ -675,66 +645,48 @@ class _ChapterListState extends State<ChapterList> {
                 ),
               ],
             ),
-            bottom: version == 'ANY'
-                ? TabBar(tabs: [
-                    Tab(
-                      height: 80,
-                      child: ListTile(
-                        title: Text(
-                          'Lumma nyaan ni met',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 19),
-                        ),
-                        subtitle: version == 'AMH'
-                            ? Text('ብሉይ ኪዳን',
-                                style:
-                                    TextStyle(fontSize: 15, color: Colors.grey))
-                            : version == 'ANY'
-                                ? Text('New testement')
-                                : Text(''),
+            bottom: TabBar(
+                labelColor: Colors.amber,
+                indicatorColor: Colors.amber,
+                tabs: <Widget>[
+                  Tab(
+                    height: 80,
+                    child: ListTile(
+                      title: const Text(
+                        'Old Testement',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 18),
                       ),
+                      subtitle: version == 'AMH'
+                          ? const Text('ብሉይ ኪዳን',
+                              style: TextStyle(fontSize: 15))
+                          : version == 'ANY'
+                              ? const Text('Wëël Luumma Kwøŋ Tuut')
+                              : const Text(''),
                     ),
-                  ])
-                : TabBar(
-                    labelColor: Colors.amber,
-                    indicatorColor: Colors.amber,
-                    tabs: <Widget>[
-                        Tab(
-                          height: 80,
-                          child: ListTile(
-                            title: Text(
-                              'Old Testement',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 18),
-                            ),
-                            subtitle: version == 'AMH'
-                                ? Text('ብሉይ ኪዳን',
-                                    style: TextStyle(fontSize: 15))
-                                : Text(''),
-                          ),
-                        ),
-                        Tab(
-                          height: 80,
-                          child: ListTile(
-                            title: Text(
-                              'New Testement',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 17.7),
-                            ),
-                            subtitle: version == 'AMH'
-                                ? Text('አዲስ ኪዳን',
-                                    style: TextStyle(fontSize: 15))
-                                : Text(''),
-                          ),
-                        ),
-                      ]),
+                  ),
+                  Tab(
+                    height: 80,
+                    child: ListTile(
+                      title: const Text(
+                        'New Testement',
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 17.7),
+                      ),
+                      subtitle: version == 'AMH'
+                          ? const Text('አዲስ ኪዳን',
+                              style: TextStyle(fontSize: 15))
+                          : version == 'ANY'
+                              ? const Text('Wëël Luumma Nyään Na Tuut')
+                              : const Text(''),
+                    ),
+                  ),
+                ]),
           ),
-          body: version == "ANY"
-              ? newTestement()
-              : TabBarView(children: <Widget>[
-                  oldTestement(),
-                  newTestement(),
-                ])),
+          body: TabBarView(children: <Widget>[
+            oldTestement(),
+            newTestement(),
+          ])),
     );
   }
 
@@ -747,14 +699,27 @@ class _ChapterListState extends State<ChapterList> {
             key: ValueKey(_foundOldBook[listviewindex]['title']),
             trailing: version == 'AMH'
                 ? Text(
-                    '${_foundOldBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}',
-                    style: TextStyle(fontSize: 16),
+                    _foundOldBook[listviewindex]['amharic']!
+                        .split('_')[1]
+                        .split('.')[0],
+                    style: const TextStyle(fontSize: 16),
                   )
-                : Text(''),
-            title: Text(
-              '${_foundOldBook[listviewindex]['title']}',
-              style: TextStyle(fontSize: 19.5),
-            ),
+                : version == 'ANY'
+                    ? Text(
+                        '${_foundOldBook[listviewindex]['title']}',
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.grey),
+                      )
+                    : const Text(''),
+            title: version == 'ANY'
+                ? Text(
+                    '${_foundOldBook[listviewindex]['anywaa']}',
+                    style: const TextStyle(fontSize: 19.5),
+                  )
+                : Text(
+                    '${_foundOldBook[listviewindex]['title']}',
+                    style: const TextStyle(fontSize: 19.5),
+                  ),
             onTap: () {
               showModalBottomSheet(
                   context: context,
@@ -764,15 +729,17 @@ class _ChapterListState extends State<ChapterList> {
                         title: Text(
                           version == 'AMH'
                               ? '${_foundOldBook[listviewindex]['title']} | ${_foundOldBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}'
-                              : '${_foundOldBook[listviewindex]['title']} ',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                              : version == 'ANY'
+                                  ? '${_foundOldBook[listviewindex]['title']} | ${_foundOldBook[listviewindex]['anywaa']}'
+                                  : '${_foundOldBook[listviewindex]['title']} ',
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
                       body: Padding(
                         padding: const EdgeInsets.only(
                             top: 20, left: 10, right: 10, bottom: 40),
                         child: GridView.count(
-                          physics: ScrollPhysics(
+                          physics: const ScrollPhysics(
                               parent: AlwaysScrollableScrollPhysics()),
                           shrinkWrap: true,
                           crossAxisCount: 6,
@@ -787,14 +754,17 @@ class _ChapterListState extends State<ChapterList> {
                                       style: TextStyle(
                                           fontSize: 16,
                                           color: currentTheme == Brightness.dark
-                                              ? Color.fromARGB(
+                                              ? const Color.fromARGB(
                                                   255, 250, 219, 124)
-                                              : Color.fromARGB(255, 0, 4, 17))),
+                                              : const Color.fromARGB(
+                                                  255, 0, 4, 17))),
                                   onPressed: () async {
                                     getLanguageVersion();
-                                    bibleVersion = version != 'AMH'
-                                        ? 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json'
-                                        : '${_foundOldBook[listviewindex]['amharic']}';
+                                    bibleVersion = version == 'AMH'
+                                        ? '${_foundOldBook[listviewindex]['amharic']}'
+                                        : version == 'ANY'
+                                            ? 'ANY/OT/${_foundOldBook[listviewindex]['abbrev']}.json'
+                                            : 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json';
 
                                     style.setBibleVersion(bibleVersion);
                                     setState(() {
@@ -820,7 +790,6 @@ class _ChapterListState extends State<ChapterList> {
   Widget newTestement() {
     return ListView.builder(
         shrinkWrap: true,
-        // key: ValueKey(_foundBook[index]['title']),
         itemCount: _foundBook.length,
         itemBuilder: (context, listviewindex) {
           return ListTile(
@@ -828,26 +797,29 @@ class _ChapterListState extends State<ChapterList> {
             title: version == 'AMH'
                 ? Text(
                     '${_foundBook[listviewindex]['title']}',
-                    style: TextStyle(fontSize: 19.5),
+                    style: const TextStyle(fontSize: 19.5),
                   )
                 : version == 'ANY'
                     ? Text(
                         '${_foundBook[listviewindex]['anyTitle']}',
-                        style: TextStyle(fontSize: 19.5),
+                        style: const TextStyle(fontSize: 19.5),
                       )
                     : Text(
                         '${_foundBook[listviewindex]['title']}',
-                        style: TextStyle(fontSize: 19.5),
+                        style: const TextStyle(fontSize: 19.5),
                       ),
             trailing: version == 'AMH'
                 ? Text(
-                    '${_foundBook[listviewindex]['amharic']!.split('_')[1].split('.')[0]}',
-                    style: TextStyle(fontSize: 16),
+                    _foundBook[listviewindex]['amharic']!
+                        .split('_')[1]
+                        .split('.')[0],
+                    style: const TextStyle(fontSize: 16),
                   )
                 : version == 'ANY'
                     ? Text(
                         '${_foundBook[listviewindex]['title']}',
-                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.grey),
                       )
                     : Text(''),
             onTap: () {
@@ -860,25 +832,26 @@ class _ChapterListState extends State<ChapterList> {
                         title: version == 'ANY'
                             ? Text(
                                 '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['anyTitle']}',
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                                style: const TextStyle(
+                                    fontWeight: FontWeight.bold),
                               )
-                            : version == 'ANY'
+                            : version == 'AMH'
                                 ? Text(
                                     '${_foundBook[listviewindex]['title']} | ${_foundBook[listviewindex]['amharic']?.split('_')[1].split('.')[0]}',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
                                   )
                                 : Text(
                                     '${_foundBook[listviewindex]['title']}',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
                                   ),
                       ),
                       body: Padding(
                         padding: const EdgeInsets.only(
                             top: 20, left: 10, right: 10, bottom: 40),
                         child: GridView.count(
-                          physics: ScrollPhysics(
+                          physics: const ScrollPhysics(
                               parent: AlwaysScrollableScrollPhysics()),
                           shrinkWrap: true,
                           crossAxisCount: 6,
@@ -887,32 +860,25 @@ class _ChapterListState extends State<ChapterList> {
                                   '${_foundBook[listviewindex]['number']}'),
                               (index) {
                             return Card(
-                              // color: Color.fromARGB(136, 67, 65, 58),
                               child: Center(
                                 child: TextButton(
                                   child: Text('${index + 1}',
                                       style: TextStyle(
                                           fontSize: 16,
-                                          color: currentTheme ==
-                                                  Brightness.light
-                                              ? Color.fromARGB(255, 0, 4, 17)
-                                              : Color.fromARGB(
-                                                  255, 250, 219, 124))),
+                                          color:
+                                              currentTheme == Brightness.light
+                                                  ? const Color.fromARGB(
+                                                      255, 0, 4, 17)
+                                                  : const Color.fromARGB(
+                                                      255, 250, 219, 124))),
                                   onPressed: () async {
                                     getLanguageVersion();
-                                    bibleVersion =
-                                        // = listviewindex > 38
-                                        // dha_anywaa_bible\assets\holybooks\ANY\NT\MRK.json
-                                        // ?
-                                        version != 'AMH'
-                                            ? version == 'ANY'
-                                                ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
-                                                : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                            : '${_foundBook[listviewindex]['amharic']}';
-                                    print(bibleVersion);
-                                    // : version != 'AMH'
-                                    // ? 'OT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                    // : '${_foundBook[listviewindex]['amharic']}';
+                                    bibleVersion = version != 'AMH'
+                                        ? version == 'ANY'
+                                            ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
+                                            : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                        : '${_foundBook[listviewindex]['amharic']}';
+
                                     style.setBibleVersion(bibleVersion);
                                     setState(() {
                                       chapter = index;

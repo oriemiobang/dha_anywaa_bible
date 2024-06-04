@@ -15,9 +15,14 @@ class DifferentVerse extends StatefulWidget {
 class _DifferentVerseState extends State<DifferentVerse> {
   String englishJsonString = 'assets/holybooks/$bibleVersion';
   String amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+  String anywaaJsonString = 'assets/holybooks/ANY/$anywaaBibleVersion';
 
   Future<String> _engLoadData() async {
     return await rootBundle.loadString(englishJsonString);
+  }
+
+  Future<String> _anywaaLoadData() async {
+    return await rootBundle.loadString(anywaaJsonString);
   }
 
   Future<String> _amhLoadData() async {
@@ -25,6 +30,7 @@ class _DifferentVerseState extends State<DifferentVerse> {
   }
 
   EnglishBook? englishBook;
+  AnywaaBook? anywaaBook;
   AmharicChapters? amharicBook;
   SelectedFontStyle style = SelectedFontStyle()..init();
   static String bibleVersion = '';
@@ -32,6 +38,7 @@ class _DifferentVerseState extends State<DifferentVerse> {
   String verseTitle = '';
   int currentChapter = 0;
   String currentVerse = '';
+  static String anywaaBibleVersion = '';
 
 // load english bible
   Future engLoadData(args, myCurrentVersion) async {
@@ -101,9 +108,51 @@ class _DifferentVerseState extends State<DifferentVerse> {
     }
   }
 
+  Future anywaaLoadData(args) async {
+    try {
+      String anyJsonString = await _anywaaLoadData();
+      final anyJsonResponse = json.decode(anyJsonString);
+      setState(() {
+        anywaaBook = AnywaaBook.fromJson(anyJsonResponse);
+
+        print(args[0]['pageIndex']);
+        int pageIndex = args[0]['pageIndex'];
+        int listIndex = args[0]['listIndex'];
+        String title = args[0]['title'];
+
+        // ignore: unnecessary_null_comparison
+        if (anywaaBook!.chapters[pageIndex].verses != null) {
+          for (var verse in anywaaBook!.chapters[pageIndex].verses) {
+            if ("${listIndex + 1}" == verse.id) {
+              versionsList.add({
+                'text': verse.text,
+                'version': 'ANY',
+                'chapter': pageIndex + 1,
+                'verse': listIndex + 1,
+                'title': title
+              });
+
+              setState(() {
+                currentVerse = verse.id;
+                verseTitle = args[0]['title'];
+                currentChapter = args[0]['pageIndex'] + 1;
+              });
+
+              break;
+            }
+          }
+        }
+      });
+    } catch (e) {
+      print('dha anywaa problem');
+      print(e);
+    }
+  }
+
   void _refresher(args) async {
     bibleVersion = await style.getBibleVersion();
     List splitVersion = bibleVersion.split('/');
+    print('this is bible version $bibleVersion');
 
     for (String version in versions) {
       if (version == "AMH") {
@@ -121,6 +170,54 @@ class _DifferentVerseState extends State<DifferentVerse> {
           // print('amh: $amhBibleVersion');
           amhLoadData(arguments);
         }
+      } else if (version == 'ANY') {
+        if (bibleVersion.contains('_')) {
+          int myListIndex = int.parse(bibleVersion.split('_')[0]);
+          for (var chapIndex = 0; chapIndex < bookList.length; chapIndex++) {
+            if (bookList[chapIndex]['amharic'] == bibleVersion &&
+                chapIndex < 39) {
+              print('1 problem');
+              setState(() {
+                anywaaBibleVersion =
+                    'OT/${bookList[myListIndex - 1]['abbrev']}.json';
+              });
+
+              anywaaLoadData(arguments);
+            } else if (bookList[chapIndex]['amharic'] == bibleVersion &&
+                chapIndex >= 39) {
+              setState(() {
+                anywaaBibleVersion =
+                    'NT/${bookList[myListIndex - 1]['abbrev']}.json';
+              });
+              anywaaLoadData(arguments);
+            }
+          }
+        } else {
+          if (splitVersion[0] == 'ANY') {
+            setState(() {
+              anywaaBibleVersion = bibleVersion;
+            });
+            anywaaLoadData(arguments);
+          } else {
+            for (var chapIndex = 0; chapIndex < bookList.length; chapIndex++) {
+              if (bookList[chapIndex]['abbrev'] == splitVersion[1] &&
+                  chapIndex < 39) {
+                setState(() {
+                  anywaaBibleVersion =
+                      '${splitVersion[0]}/${splitVersion[1]}.json';
+                });
+                anywaaLoadData(arguments);
+              } else if (bookList[chapIndex]['abbrev'] == splitVersion[1] &&
+                  chapIndex >= 39) {
+                setState(() {
+                  anywaaBibleVersion =
+                      '${splitVersion[0]}/${splitVersion[1]}.json';
+                });
+                anywaaLoadData(arguments);
+              }
+            }
+          }
+        }
       } else {
         String currentVersion = '';
         if (bibleVersion.contains('_')) {
@@ -130,18 +227,23 @@ class _DifferentVerseState extends State<DifferentVerse> {
               : 'NT/${bookList[myListIndex - 1]['abbrev']}/$version.json';
           englishJsonString = 'assets/holybooks/$currentVersion';
           engLoadData(arguments, version);
+        } else if (splitVersion[0] == 'ANY') {
+          currentVersion =
+              '${splitVersion[1]}/${splitVersion[2].split('.')[0]}/$version.json';
+          setState(() {
+            bibleVersion = currentVersion;
+            englishJsonString = 'assets/holybooks/$currentVersion';
+            engLoadData(arguments, version);
+          });
         } else {
           currentVersion =
               '${splitVersion[0]}/${splitVersion[1]}/$version.json';
           setState(() {
             bibleVersion = currentVersion;
             englishJsonString = 'assets/holybooks/$currentVersion';
-
-            // print(currentVersion);
-            engLoadData(arguments, version);
-            // var currentText = englishBook?.chapters[0].verses[0].text;
-            // print(currentText);
           });
+
+          engLoadData(arguments, version);
         }
       }
     }
@@ -159,6 +261,7 @@ class _DifferentVerseState extends State<DifferentVerse> {
     "NASB",
     "WEB",
     "AMH",
+    "ANY"
   ];
   Object? arguments;
   @override
@@ -637,8 +740,6 @@ class _DifferentVerseState extends State<DifferentVerse> {
   Widget build(BuildContext context) {
     var args = ModalRoute.of(context)?.settings.arguments;
     arguments = args;
-    // _refresher(args);
-
     return Scaffold(
       appBar: AppBar(
         title: Text('$verseTitle $currentChapter :$currentVerse'),

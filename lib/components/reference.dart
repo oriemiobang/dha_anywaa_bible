@@ -11,12 +11,12 @@ class Reference extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: currentTheme == Brightness.dark
-            ? Color.fromARGB(255, 0, 4, 17)
+            ? const Color.fromARGB(255, 0, 4, 17)
             : Colors.white,
       ),
-      padding: EdgeInsets.only(top: 35, right: 20, left: 20, bottom: 30),
+      padding: const EdgeInsets.only(top: 35, right: 20, left: 20, bottom: 30),
       // color: Colors.amber,
-      child: SingleChildScrollView(
+      child: const SingleChildScrollView(
         child: Text(
           " 1. Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
           " kanya ciel ki Jwøk, ni Dwørøgøøni"

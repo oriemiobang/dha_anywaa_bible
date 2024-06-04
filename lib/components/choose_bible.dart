@@ -103,30 +103,20 @@ class _ChooseBibleState extends State<ChooseBible> {
     try {
       final currentVersion = await selectedFontStyle.getBibleVersion();
 
-      // String v = currentVersion
       var splitVersion = currentVersion.split('/');
-      print(splitVersion);
-      print(value);
-      if (value == 'AMH') {
-        print('_ is present');
-        print(currentVersion);
-        print(splitVersion[1]);
 
+      if (value == 'AMH') {
         for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
           if (splitVersion[0] == 'ANY') {
             if (chapAbbrev[chapIndex]['abbrev'] ==
                 splitVersion[2].split('.')[0].toString()) {
-              print('${chapAbbrev[chapIndex]['amharic']}  fff');
               selectedFontStyle
                   .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
-              print('${chapAbbrev[chapIndex]['amharic']}  fff');
             }
           } else {
             if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1].toString()) {
-              print('${chapAbbrev[chapIndex]['amharic']}  fff');
               selectedFontStyle
                   .setBibleVersion('${chapAbbrev[chapIndex]['amharic']}');
-              print('${chapAbbrev[chapIndex]['amharic']}  fff');
             }
           }
         }
@@ -135,23 +125,21 @@ class _ChooseBibleState extends State<ChooseBible> {
           for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
             if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
                 chapIndex < 39) {
-              print('1 problem');
               selectedFontStyle.setBibleVersion(
-                  'OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
-              print('OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json jkj');
+                  'ANY/OT/${chapAbbrev[chapIndex]['abbrev']}.json');
+              print('ANY/OT/${chapAbbrev[chapIndex]['abbrev']}.json jkj');
             } else if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
                 chapIndex >= 39) {
-              // assets\holybooks\ANY\NT\1CO.json
-              print('3 probelm');
               selectedFontStyle.setBibleVersion(
                   'ANY/NT/${chapAbbrev[chapIndex]['abbrev']}.json');
-              print('ANY/NT/${chapAbbrev[chapIndex]['abbrev']}.json here');
             }
           }
         } else {
           for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
-            if (chapAbbrev[chapIndex]['abbrev'] == currentAbbrev &&
+            if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1] &&
                 chapIndex < 39) {
+              selectedFontStyle.setBibleVersion(
+                  'ANY/${splitVersion[0]}/${splitVersion[1]}.json');
             } else if (chapAbbrev[chapIndex]['abbrev'] == splitVersion[1] &&
                 chapIndex >= 39) {
               selectedFontStyle.setBibleVersion(
@@ -159,49 +147,27 @@ class _ChooseBibleState extends State<ChooseBible> {
               print('ANY/${splitVersion[0]}/${splitVersion[1]}.json blah balh');
             }
           }
-
-          // selectedFontStyle.setBibleVersion(
-          //     '${splitVersion[0]}/${splitVersion[1]}/$value.json');
-          print('${splitVersion[0]}/${splitVersion[1]}.json');
-          print(currentAbbrev);
         }
-
-        print('ghghggh');
-        // print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
       } else {
-        print('english $splitVersion');
-        print(value);
-
         if (currentVersion.contains('_')) {
           for (var chapIndex = 0; chapIndex < chapAbbrev.length; chapIndex++) {
             if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
                 chapIndex < 39) {
-              print('1 problem');
               selectedFontStyle.setBibleVersion(
                   'OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
-              print('OT/${chapAbbrev[chapIndex]['abbrev']}/$value.json jkj');
             } else if (chapAbbrev[chapIndex]['amharic'] == currentVersion &&
                 chapIndex >= 39) {
-              print('3 probelm');
               selectedFontStyle.setBibleVersion(
                   'NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json');
-              print('NT/${chapAbbrev[chapIndex]['abbrev']}/$value.json here');
             }
           }
         } else if (splitVersion[0] == 'ANY') {
-          print('$splitVersion here already');
           selectedFontStyle.setBibleVersion(
               '${splitVersion[1]}/${splitVersion[2].split('.')[0]}/$value.json');
         } else {
           selectedFontStyle.setBibleVersion(
               '${splitVersion[0]}/${splitVersion[1]}/$value.json');
-          print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
         }
-
-        print(' $currentVersion jdklfjdkfjdkfdj');
-        print(
-            '${splitVersion[1]}/${splitVersion[2].split('.')[0]}/$value.json');
-        // print('${splitVersion[0]}/${splitVersion[1]}/$value.json');
       }
     } catch (e) {
       print('Error $e');
@@ -319,7 +285,7 @@ class _ChooseBibleState extends State<ChooseBible> {
       'amharic': '16_መጽሐፈ ነህምያ.json',
       'anywaa': '',
       'number': '13',
-      'abbrev': 'NAM'
+      'abbrev': 'NEH'
     },
     {
       'title': "Esther",
@@ -687,9 +653,6 @@ class _ChooseBibleState extends State<ChooseBible> {
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text('    Choose your bible version'),
             ExpansionPanelList(
-              // expandIconColor: _currentLanguageVersion == currentAbbrev
-              //     ? Colors.amber
-              //     : null,
               dividerColor: Colors.transparent,
               expansionCallback: (int index, bool isExpanded) {
                 setState(() {

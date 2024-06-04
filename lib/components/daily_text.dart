@@ -3,10 +3,10 @@ import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 // import 'package:dha_anywaa_bible/main.dart';
-import 'package:dha_anywaa_bible/components/pray.dart';
+// import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:share_plus/share_plus.dart';
+// import 'package:share_plus/share_plus.dart';
 // import 'package:once/once.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:workmanager/workmanager.dart';
@@ -89,30 +89,14 @@ class _DailyTextState extends State<DailyText>
       _languages = languages.split(' ')[0];
     });
   }
-  // void _referesher() async {
-  //   final item = await SQLHelper.getItem(2);
-  //   final items = await SQLHelper.getItems();
-  //   print('$items');
-  //   print(' the item ${item[0]['counter']}');
-
-  //   myIndex = item[0]['counter'];
-  //   SQLHelper.updateItem(1, 3);
-  // }
 
   void info() async {
     try {
       dailyText = DailyVerse();
-      // print('object');
-      // await SQLHelper.updateItem(1, 0);
-      // print('anoher obeject');
-      // getLang();
       int myIndex = await _getItem();
-      // print('third object');
 
-      // print('my index: $myIndex');
       currentText = dailyText.dailyVerseList[myIndex]['text']!;
-      // print(' blala ${currentText}');
-      // print(currentText.length);
+
       currentVerse = dailyText.dailyVerseList[myIndex]['verse']!;
       currentShortText = dailyText.dailyVerseList[myIndex]['shortText']!;
     } catch (e) {
@@ -124,7 +108,7 @@ class _DailyTextState extends State<DailyText>
   build(BuildContext context) {
     info();
 
-    Brightness currentTheme = Theme.of(context).brightness;
+    // Brightness currentTheme = Theme.of(context).brightness;
     return ListView(
       physics: const NeverScrollableScrollPhysics(),
       children: [
@@ -141,7 +125,7 @@ class _DailyTextState extends State<DailyText>
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 10, bottom: 60),
+                  padding: const EdgeInsets.only(top: 10, bottom: 60),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -155,11 +139,11 @@ class _DailyTextState extends State<DailyText>
                               children: [
                                 Text(
                                   _opacity.value < 0.5 ? " " : currentVerse,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Color.fromARGB(255, 133, 130, 130),
                                       fontSize: 20),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Text(

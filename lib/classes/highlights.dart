@@ -8,7 +8,8 @@ class Highlight {
       id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
       verse TEXT,
       name TEXT,
-      date TEXT
+      date TEXT,
+      version TEXT
     );
 """);
   }
@@ -20,9 +21,15 @@ class Highlight {
     });
   }
 
-  static Future<int> createItem(String verse, String name, String date) async {
+  static Future<int> createItem(
+      String verse, String name, String date, String version) async {
     final db = await Highlight.db();
-    final data = {'name': name, 'verse': verse, 'date': date};
+    final data = {
+      'name': name,
+      'verse': verse,
+      'date': date,
+      'version': version
+    };
     final id = await db.insert('highlight', data,
         conflictAlgorithm: sql.ConflictAlgorithm.replace);
     return id;

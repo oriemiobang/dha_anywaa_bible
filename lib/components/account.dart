@@ -15,7 +15,6 @@ class _AccountState extends State<Account> {
 
   Future<void> refresher() async {
     final highlight = await Highlight.gethighlight();
-    // print(highlight[0]);
     setState(() {
       _highlights = highlight.reversed.toList();
     });
@@ -64,15 +63,16 @@ class _AccountState extends State<Account> {
                             trailing: TextButton(
                               onPressed: () {
                                 Highlight.createItem(
-                                    hold['verse'], hold['name'], hold['date']);
+                                    hold['verse'],
+                                    hold['name'],
+                                    hold['date'],
+                                    hold['version']);
                                 refresher();
                               },
                               child: Text('undo'),
                             ),
                             title: Text('Bookmark removed'),
                           )));
-
-                      // if (delete) {
                       Highlight.deleteItem(_highlights[index]['id']);
                       refresher();
                       // }
@@ -81,13 +81,9 @@ class _AccountState extends State<Account> {
                       tileColor: currentTheme == Brightness.dark
                           ? Color.fromARGB(255, 0, 4, 17)
                           : Colors.white,
-                      // onTap: () {
-                      //   Highlight.deleteItem(_highlights[index]['id']);
-                      //   refresher();
-                      // },
                       title: Text('${_highlights[index]['verse']}'),
                       subtitle: Text(
-                        '${_highlights[index]['name']}        ${_highlights[index]['date']}',
+                        '${_highlights[index]['name']}  |   ${_highlights[index]['date']}   |  ${_highlights[index]['version']}',
                         style: TextStyle(
                             color: Colors.grey, fontStyle: FontStyle.italic),
                       ),
@@ -97,10 +93,7 @@ class _AccountState extends State<Account> {
               );
             })
         : Center(
-            child: Text('You highlight appears here'),
+            child: Text('Your bookmarks appear here'),
           );
-    // appBar: AppBar(
-    //   title: Text('demo'),
-    // ),
   }
 }
