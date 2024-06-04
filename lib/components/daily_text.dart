@@ -117,7 +117,8 @@ class _DailyTextState extends State<DailyText>
           decoration: const BoxDecoration(
               // color: Colors.amber,
               image: DecorationImage(
-                  image: AssetImage('assets/bg2.png'), fit: BoxFit.cover)),
+                  image: AssetImage('assets/images/bg2.png'),
+                  fit: BoxFit.cover)),
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(

@@ -151,7 +151,9 @@ class _DifferentVerseState extends State<DifferentVerse> {
 
   void _refresher(args) async {
     bibleVersion = await style.getBibleVersion();
+    String currentBibleVersion = bibleVersion;
     List splitVersion = bibleVersion.split('/');
+    print(splitVersion);
     print('this is bible version $bibleVersion');
 
     for (String version in versions) {
@@ -161,12 +163,22 @@ class _DifferentVerseState extends State<DifferentVerse> {
           amhLoadData(arguments);
         } else {
           for (var book in bookList) {
-            if (book['abbrev'] == splitVersion[1]) {
-              amhBibleVersion = book['amharic']!;
-              break;
+            if (splitVersion[0] == 'ANY') {
+              if (book['abbrev'] == splitVersion[2].split('.')[0]) {
+                print('here in amaharic');
+                amhBibleVersion = book['amharic']!;
+                break;
+              }
+            } else {
+              if (book['abbrev'] == splitVersion[1]) {
+                amhBibleVersion = book['amharic']!;
+                break;
+              }
             }
           }
+
           amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+
           // print('amh: $amhBibleVersion');
           amhLoadData(arguments);
         }
@@ -195,7 +207,7 @@ class _DifferentVerseState extends State<DifferentVerse> {
         } else {
           if (splitVersion[0] == 'ANY') {
             setState(() {
-              anywaaBibleVersion = bibleVersion;
+              anywaaBibleVersion = '${splitVersion[1]}/${splitVersion[2]}';
             });
             anywaaLoadData(arguments);
           } else {
@@ -233,8 +245,8 @@ class _DifferentVerseState extends State<DifferentVerse> {
           setState(() {
             bibleVersion = currentVersion;
             englishJsonString = 'assets/holybooks/$currentVersion';
-            engLoadData(arguments, version);
           });
+          engLoadData(arguments, version);
         } else {
           currentVersion =
               '${splitVersion[0]}/${splitVersion[1]}/$version.json';

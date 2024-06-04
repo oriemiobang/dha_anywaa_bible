@@ -176,7 +176,7 @@ class _MyHomePageState extends State<HomePage> {
       if (_selectedIndex != 1) {
         markedText = [];
       }
-      print(_highlight);
+      // print(_highlight);
       info();
       getBibleVersion();
     });
@@ -1171,7 +1171,11 @@ class _MyHomePageState extends State<HomePage> {
                                                               .isNotEmpty &&
                                                           thereIsComment,
                                                       child: Text(
-                                                        '${chapter.comment![0]}',
+                                                        chapter.comment!
+                                                                    .isNotEmpty &&
+                                                                thereIsComment
+                                                            ? '${chapter.comment![0]}'
+                                                            : '',
                                                         style: const TextStyle(
                                                             color: Colors.grey,
                                                             fontStyle: FontStyle
