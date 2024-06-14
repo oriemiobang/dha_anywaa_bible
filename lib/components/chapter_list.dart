@@ -1,5 +1,6 @@
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Chapter {
   final String title;
@@ -513,32 +514,46 @@ class _ChapterListState extends State<ChapterList> {
 
   int currentOpenedPanelIndex = -1;
 
-  SelectedFontStyle style = SelectedFontStyle();
+  SelectedFontStyle style = SelectedFontStyle()..init();
   String bibleVersion = '';
   int chapter = 0;
   Brightness currentTheme = Brightness.dark;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle()..init();
+  int? testementNumber;
+  int tabIndex = 0;
+  ScrollController scrollController = ScrollController();
 
   List<Map<String, String>> _foundBook = [];
   List<Map<String, String>> _foundOldBook = [];
 
   @override
   void initState() {
+    refresh();
+    getLanguageVersion();
+
     // TODO: implement initState
     _foundBook = newTestList;
     _foundOldBook = oldTestList;
-    getLanguageVersion();
+
     super.initState();
   }
 
-  String version = '';
+  static String version = '';
+  int listIndex = 0;
   void getLanguageVersion() async {
     final languageVersion = await style.getLanguageVersion();
+
     String currentVersion = languageVersion.split(' ')[0];
+    final myListIndex = await style.getBookIndex();
 
     setState(() {
       version = currentVersion;
+      listIndex = myListIndex;
     });
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      scrollController.jumpTo(myListIndex * 50);
+    });
+    // print(testementNumber);
   }
 
   void _runFilter(String enteredKeyword) {
@@ -565,133 +580,162 @@ class _ChapterListState extends State<ChapterList> {
     });
   }
 
+  void refresh() async {
+    final myTestemetNum = await style.getTestementNum();
+    setState(() {
+      testementNumber = myTestemetNum;
+    });
+  }
+
+  // List<Widget> myTabs =;
+
   @override
   Widget build(BuildContext context) {
+    // getLanguageVersion();
+    print('initila index: $testementNumber');
     currentTheme = Theme.of(context).brightness;
-    return DefaultTabController(
-      animationDuration: Duration.zero,
-      initialIndex: 0,
-      length: 2,
-      child: Scaffold(
-          appBar: AppBar(
-            automaticallyImplyLeading: false,
-            toolbarHeight: 100,
-            forceMaterialTransparency: true,
-            title: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    IconButton(
-                        onPressed: () {
-                          setState(() {
-                            Navigator.pop(context);
-                          });
-                        },
-                        icon: const Icon(
-                          Icons.arrow_back_rounded,
-                        )),
-                    Text(
-                        version == 'ANY'
-                            ? 'Nyeŋ Weet Jwøk'
-                            : version == 'AMH'
-                                ? 'መጻሕፍት'
-                                : 'Holy bible books',
-                        style: const TextStyle(
-                          fontSize: 19,
-                        )),
-                  ],
-                ),
-                Row(
-                  children: [
-                    Container(
-                        height: 50,
-                        width: 50,
-                        decoration: const BoxDecoration(
-                            color: Color.fromARGB(155, 75, 75, 75),
-                            borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(20),
-                                topLeft: Radius.circular(20))),
-                        child: const Center(
-                          child: Icon(
-                            Icons.search,
-                            size: 30,
-                          ),
-                        )),
-                    Expanded(
-                      child: SizedBox(
-                        height: 50,
-                        width: double.infinity,
-                        child: TextField(
-                          onChanged: (value) => _runFilter(value),
-                          decoration: const InputDecoration(
-                            border: OutlineInputBorder(
-                                borderSide: BorderSide.none,
-                                borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(20),
-                                    bottomRight: Radius.circular(20))),
-                            filled: true,
-                            focusedBorder: InputBorder.none,
-                            fillColor: Color.fromARGB(155, 75, 75, 75),
-                            label: Text(
-                              '',
-                              style: TextStyle(),
+    return testementNumber == null
+        ? const Center(
+            child: SpinKitWaveSpinner(
+              color: Color.fromARGB(255, 13, 33, 65),
+              size: 50.0,
+            ),
+          )
+        : DefaultTabController(
+            animationDuration: Duration.zero,
+            initialIndex: testementNumber!,
+            length: 2,
+            child: Scaffold(
+                appBar: AppBar(
+                  automaticallyImplyLeading: false,
+                  toolbarHeight: 100,
+                  forceMaterialTransparency: true,
+                  title: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  Navigator.pop(context);
+                                });
+                              },
+                              icon: const Icon(
+                                Icons.arrow_back_rounded,
+                              )),
+                          Text(
+                              version == 'ANY'
+                                  ? 'Nyeŋ Weet Jwøk'
+                                  : version == 'AMH'
+                                      ? 'መጻሕፍት'
+                                      : 'Holy bible books',
+                              style: const TextStyle(
+                                fontSize: 19,
+                              )),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                              height: 50,
+                              width: 50,
+                              decoration: const BoxDecoration(
+                                  color: Color.fromARGB(155, 75, 75, 75),
+                                  borderRadius: BorderRadius.only(
+                                      bottomLeft: Radius.circular(20),
+                                      topLeft: Radius.circular(20))),
+                              child: const Center(
+                                child: Icon(
+                                  Icons.search,
+                                  size: 30,
+                                ),
+                              )),
+                          Expanded(
+                            child: SizedBox(
+                              height: 50,
+                              width: double.infinity,
+                              child: TextField(
+                                onChanged: (value) => _runFilter(value),
+                                decoration: const InputDecoration(
+                                  border: OutlineInputBorder(
+                                      borderSide: BorderSide.none,
+                                      borderRadius: BorderRadius.only(
+                                          topRight: Radius.circular(20),
+                                          bottomRight: Radius.circular(20))),
+                                  filled: true,
+                                  focusedBorder: InputBorder.none,
+                                  fillColor: Color.fromARGB(155, 75, 75, 75),
+                                  label: Text(
+                                    '',
+                                    style: TextStyle(),
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  bottom: TabBar(
+                      // controller: tabController,
+                      // physics: NeverScrollableScrollPhysics(),
+                      onTap: (index) {
+                        setState(() {
+                          tabIndex = index;
+                        });
+                      },
+                      labelColor: Colors.amber,
+                      indicatorColor: Colors.amber,
+                      tabs: [
+                        Tab(
+                          height: 80,
+                          child: ListTile(
+                            title: const Text(
+                              'Old Testement',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
+                            subtitle: version == 'AMH'
+                                ? const Text('ብሉይ ኪዳን',
+                                    style: TextStyle(fontSize: 15))
+                                : version == 'ANY'
+                                    ? const Text('Wëël Luumma Kwøŋ Tuut')
+                                    : const Text(''),
+                          ),
                         ),
-                      ),
-                    ),
-                  ],
+                        Tab(
+                          height: 80,
+                          child: ListTile(
+                            title: const Text(
+                              'New Testement',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 17.7),
+                            ),
+                            subtitle: version == 'AMH'
+                                ? const Text('አዲስ ኪዳን',
+                                    style: TextStyle(fontSize: 15))
+                                : version == 'ANY'
+                                    ? const Text('Wëël Luumma Nyään Na Tuut')
+                                    : const Text(''),
+                          ),
+                        ),
+                      ]),
                 ),
-              ],
-            ),
-            bottom: TabBar(
-                labelColor: Colors.amber,
-                indicatorColor: Colors.amber,
-                tabs: <Widget>[
-                  Tab(
-                    height: 80,
-                    child: ListTile(
-                      title: const Text(
-                        'Old Testement',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18),
-                      ),
-                      subtitle: version == 'AMH'
-                          ? const Text('ብሉይ ኪዳን',
-                              style: TextStyle(fontSize: 15))
-                          : version == 'ANY'
-                              ? const Text('Wëël Luumma Kwøŋ Tuut')
-                              : const Text(''),
-                    ),
-                  ),
-                  Tab(
-                    height: 80,
-                    child: ListTile(
-                      title: const Text(
-                        'New Testement',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 17.7),
-                      ),
-                      subtitle: version == 'AMH'
-                          ? const Text('አዲስ ኪዳን',
-                              style: TextStyle(fontSize: 15))
-                          : version == 'ANY'
-                              ? const Text('Wëël Luumma Nyään Na Tuut')
-                              : const Text(''),
-                    ),
-                  ),
-                ]),
-          ),
-          body: TabBarView(children: <Widget>[
-            oldTestement(),
-            newTestement(),
-          ])),
-    );
+                body: TabBarView(
+                    physics: const NeverScrollableScrollPhysics(),
+                    // controller: tabController,
+                    children: <Widget>[
+                      oldTestement(),
+                      newTestement(),
+                    ])),
+          );
   }
 
   Widget oldTestement() {
     return ListView.builder(
+        controller: scrollController,
         shrinkWrap: true,
         itemCount: _foundOldBook.length,
         itemBuilder: (context, listviewindex) {
@@ -702,23 +746,42 @@ class _ChapterListState extends State<ChapterList> {
                     _foundOldBook[listviewindex]['amharic']!
                         .split('_')[1]
                         .split('.')[0],
-                    style: const TextStyle(fontSize: 16),
+                    style: TextStyle(
+                        fontSize: 16,
+                        color:
+                            (listviewindex == listIndex && testementNumber == 0)
+                                ? Colors.amber
+                                : null),
                   )
                 : version == 'ANY'
                     ? Text(
                         '${_foundOldBook[listviewindex]['title']}',
-                        style:
-                            const TextStyle(fontSize: 16, color: Colors.grey),
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: (listviewindex == listIndex &&
+                                    testementNumber == 0)
+                                ? Colors.amber
+                                : Colors.grey),
                       )
                     : const Text(''),
             title: version == 'ANY'
                 ? Text(
                     '${_foundOldBook[listviewindex]['anywaa']}',
-                    style: const TextStyle(fontSize: 19.5),
+                    style: TextStyle(
+                        fontSize: 19.5,
+                        color:
+                            (listviewindex == listIndex && testementNumber == 0)
+                                ? Colors.amber
+                                : null),
                   )
                 : Text(
                     '${_foundOldBook[listviewindex]['title']}',
-                    style: const TextStyle(fontSize: 19.5),
+                    style: TextStyle(
+                        fontSize: 19.5,
+                        color:
+                            (listviewindex == listIndex && testementNumber == 0)
+                                ? Colors.amber
+                                : null),
                   ),
             onTap: () {
               showModalBottomSheet(
@@ -765,13 +828,16 @@ class _ChapterListState extends State<ChapterList> {
                                         : version == 'ANY'
                                             ? 'ANY/OT/${_foundOldBook[listviewindex]['abbrev']}.json'
                                             : 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json';
+                                    style.setBookIndex(listviewindex);
 
                                     style.setBibleVersion(bibleVersion);
+                                    style.setTestementNum(0);
+                                    selectedFontStyle.setPage(index);
                                     setState(() {
                                       chapter = index;
                                     });
-                                    selectedFontStyle.setPage(chapter);
-                                    Navigator.pop(context);
+
+                                    Navigator.pop(context, chapter);
                                     Navigator.pop(context, chapter);
                                   },
                                 ),
@@ -789,6 +855,7 @@ class _ChapterListState extends State<ChapterList> {
 
   Widget newTestement() {
     return ListView.builder(
+        controller: scrollController,
         shrinkWrap: true,
         itemCount: _foundBook.length,
         itemBuilder: (context, listviewindex) {
@@ -797,31 +864,55 @@ class _ChapterListState extends State<ChapterList> {
             title: version == 'AMH'
                 ? Text(
                     '${_foundBook[listviewindex]['title']}',
-                    style: const TextStyle(fontSize: 19.5),
+                    style: TextStyle(
+                        fontSize: 19.5,
+                        color:
+                            (listviewindex == listIndex && testementNumber == 1)
+                                ? Colors.amber
+                                : null),
                   )
                 : version == 'ANY'
                     ? Text(
                         '${_foundBook[listviewindex]['anyTitle']}',
-                        style: const TextStyle(fontSize: 19.5),
+                        style: TextStyle(
+                            fontSize: 19.5,
+                            color: (listviewindex == listIndex &&
+                                    testementNumber == 1)
+                                ? Colors.amber
+                                : null),
                       )
                     : Text(
                         '${_foundBook[listviewindex]['title']}',
-                        style: const TextStyle(fontSize: 19.5),
+                        style: TextStyle(
+                            fontSize: 19.5,
+                            color: (listviewindex == listIndex &&
+                                    testementNumber == 1)
+                                ? Colors.amber
+                                : null),
                       ),
             trailing: version == 'AMH'
                 ? Text(
                     _foundBook[listviewindex]['amharic']!
                         .split('_')[1]
                         .split('.')[0],
-                    style: const TextStyle(fontSize: 16),
+                    style: TextStyle(
+                        fontSize: 16,
+                        color:
+                            (listviewindex == listIndex && testementNumber == 1)
+                                ? Colors.amber
+                                : null),
                   )
                 : version == 'ANY'
                     ? Text(
                         '${_foundBook[listviewindex]['title']}',
-                        style:
-                            const TextStyle(fontSize: 16, color: Colors.grey),
+                        style: TextStyle(
+                            fontSize: 16,
+                            color: (listviewindex == listIndex &&
+                                    testementNumber == 1)
+                                ? Colors.amber
+                                : Colors.grey),
                       )
-                    : Text(''),
+                    : const Text(''),
             onTap: () {
               showModalBottomSheet(
                   context: context,
@@ -878,13 +969,15 @@ class _ChapterListState extends State<ChapterList> {
                                             ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
                                             : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
                                         : '${_foundBook[listviewindex]['amharic']}';
-
+                                    style.setBookIndex(listviewindex);
                                     style.setBibleVersion(bibleVersion);
+                                    style.setTestementNum(1);
+                                    selectedFontStyle.setPage(index);
                                     setState(() {
                                       chapter = index;
                                     });
-                                    selectedFontStyle.setPage(chapter);
-                                    Navigator.pop(context);
+
+                                    Navigator.pop(context, chapter);
                                     Navigator.pop(context, chapter);
                                   },
                                 ),

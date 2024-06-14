@@ -8,6 +8,8 @@ class SelectedFontStyle {
   String get bibleVersion => _bibleVersion;
   int _page = 0;
   int get page => _page;
+  int testmentNum = 0;
+  int _bookIndex = 0;
   // String _languageVersion = '';
 
   late SharedPreferences preference;
@@ -31,6 +33,20 @@ class SelectedFontStyle {
     final prefs = await SharedPreferences.getInstance();
     prefs.setString('fontStyle', value);
   }
+
+  // ============== testementNum ===============
+
+  Future<int> getTestementNum() async {
+    final prefs = await SharedPreferences.getInstance();
+    testmentNum = prefs.getInt('testementNum')!;
+
+    return testmentNum;
+  }
+
+  Future<void> setTestementNum(int value) async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setInt('testementNum', value);
+  }
   // ============== bible version ===============
 
   Future<String> getLanguageVersion() async {
@@ -42,6 +58,20 @@ class SelectedFontStyle {
   Future<void> setLanguageVersion(String value) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.setString('languageVersion', value);
+  }
+
+  // ================  book index ========
+
+  Future<int> getBookIndex() async {
+    final prefs = await SharedPreferences.getInstance();
+    _bookIndex = prefs.getInt('bookIndex')!;
+
+    return _bookIndex;
+  }
+
+  Future<void> setBookIndex(int value) async {
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setInt('bookIndex', value);
   }
 
 // ===========page number ============
@@ -73,6 +103,8 @@ class SelectedFontStyle {
     final prefs = await SharedPreferences.getInstance();
     _selectedFont = prefs.getString('fontStyle') ?? 'UntitledSerif';
     _bibleVersion = prefs.getString('bibleVersion') ?? 'NT/MAT/KJV.json';
+    testmentNum = prefs.getInt('testementNum') ?? 0;
+    _bookIndex = prefs.getInt('bookIndex') ?? 0;
     _page = prefs.getInt('page') ?? 0;
   }
 }

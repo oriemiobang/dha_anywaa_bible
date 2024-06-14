@@ -75,6 +75,8 @@ class _MyAppState extends State<MyApp> {
       style.setPage(0);
       fontSize.setFontSize(16);
       style.setLanguageVersion('ERV');
+      style.setBookIndex(0);
+      style.setTestementNum(0);
     });
   }
 
@@ -96,7 +98,7 @@ class _MyAppState extends State<MyApp> {
             '/pray': (context) => const Pray(),
             '/chapterList': (context) => ChapterList(),
             '/chooseBible': (context) => const ChooseBible(),
-            '/differentVerse': (context) => const DifferentVerse(),
+            '/differentVerse': (context) => DifferentVerse(),
           },
           title: 'Weel jwok',
           debugShowCheckedModeBanner: false,

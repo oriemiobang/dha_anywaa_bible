@@ -1,188 +1,117 @@
 {
-    "textIntro": "Man beeye wëëlö mana göör Pøølli baŋ Piliiman. Piliiman beeye dhaanhø mo okwär mo jïre da laaŋe mo tïïö jïre, ni eni øtø mare mana dwøŋ paare ee tïïö na øt lam jï acooŋ Jwøk (1:2). Eni bëëdö Köløcia kanya ö Pøølli na gööt baŋ jø Köløcia ki wëëlö na caan nyeŋ Onecima ki Arcipa (Köløcia 4:9, 17). Onecima beeye laŋ Piliiman mo opäär wøk ki po Piliiman. 'Ba kanya en Pøølli øt twöc, Onecima manøgø na bëëdö na laŋ Piliiman ena bëëdö ni kønya Pøøl no odwätö ki Pøøl ni tïme na nyawat mo pere leth døc jï Pøøl; ni put tïmö na dhaanh Krictø ki køør Pøøl. Ni beeye tiere na ö Pøølli na göör wëëlö man jï Piliiman ni cøga gø ni kwaaya gø kiper nee lønye jï Piliiman ki man wëën Onecima, ni paa ki man wëën gø keere kaawat man wø wëën laŋŋø, 'ba nee jïëe ni ena cöögö ki ri Krictø.",
+    "textIntro": "Man beeye wëëlö mana göör Pøølli baŋ Piliiman. Piliiman beeye dhaanhø mo okwär mo jïre da laaŋe mo tïïö jïre, ni eni øtø mare mana dwøŋ paare ee tïïö na øt lam jï acooŋ Jwøk (1:2). Eni bëëdö Köløcia kanya ö Pøølli na gööt baŋ jø Köløcia ki wëëlö na caan nyeŋ Onecima ki Arcipa (Köløcia 4:9, 17). Onecima beeye laŋ Piliiman mo opäär wøk ki po Piliiman. 'Ba kanya en Pøølli øt twöc, Onecima manøgø na bëëdö na laŋ Piliiman ena bëëdö ni kønya Pøøl no odwätö ki Pøøl ni tïme na nyawat mo pere leth døc jï Pøøl; ni put tïmö na dhaanh Krictø ki køør Pøøl. Ni beeye tiere na ö Pøølli na göör wëëlö man jï Piliiman ni cøga gø ni kwaaya gø kiper nee lønye jï Piliiman ki man wëën Onecima, ni paa ki man wëën gø keere kaawat man wø wëën laŋŋø, 'ba nee jïëe ni ena cöögö ki ri Krictø. ",
     "introTitle": "Luubö Mo Cäänö Kaper Wëël Piliiman",
     "chapterName": "Piliiman",
     "version": "anyuaB",
     "text": [
         {
-            "ID": "NT:PHM.1",
-            "name": "Piliman 1",
+            "ID": "OT:PHM.1",
+            "name": "Piliiman 1",
             "text": [
-                
-                    {
-                        "title": "Määdhe ",
-                        "text": "Aana Pøøl na tööny Krictø Jecu, ki Timöthi na näk cöögø. A määtha ïïni, Piliiman, ï na näk omëër marwa na tïïö ki waani na aciel,",
-                        "ID": 1
-                    }
-                ,
-                
-                   {
-                        "title": "",
-                        "text": "ki nyijøøa na Apia na näk cöögø, ki Arcipa na näk ŋat len y ŋäädhe ki øøni na aciel, ka acooŋ Jwøk mana en paarï.",
-                        "ID": 2
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Met ec ki bëët -mëër man wø ööi ki baŋ Jwøk na näk Wääø, ki Kwäärö ma Jecu Krictø, bëëde",
-                        "ID": 3
-                    }
-                ,
-                
-                    {
-                        "title": "Luum Mëër Mar Piliiman  Ki Ŋäädhe Mare ",
-                        "text": "'Ba aani, Jwøa wø pwøa pwøø cooth, kany wø para gïrï ki yïth l aam 'moa.",
-                        "ID": 4
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Kiper ŋäädhe marï na en jïrï kiper Kwäärö ma Jecu, ki mëër marï man wø mëërï ki jø Jwøk bëët, wø wïnynya wïnynyö.",
-                        "ID": 5
-                    }
-            ,
-                
-                    {
-                        "title": "",
-                        "text": "Kiper aani, a wø lämö nee ŋäädhe marï nywaagï ki jø møga, nee gïïa beyø bëët na näk 'moø ri Krictø, nee wëëk ŋäc.",
-                        "ID": 6
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Kiper aana jïtö ki met ec mo dwøŋ ki cøm cwïny ki køør mëër marï, coka. Kiper cwïny jø Jwøk amïnnö ki",
-                        "ID": 7
-                    }
-                ,
-                
-                    {
-                        "title": "Kwac Mar Pøøl Kiper Onecima ",
-                        "text": "Kiper manøgønø, doo løny jïra ki ri Krictø ki man köömma ïïni ki man tïïyï gïna diï tïïö.",
-                        "ID": 8
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba kiper nyeŋ mëër keere doo beerra mana daa ï kwaa, a na Pøøl, ni aana ŋat dwøŋ, a no otööny Krictø Jecu en.",
-                        "ID": 9
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "A kwaya ïïni kiper wääda ma Onecima, ŋata tïma ni aana wänni yi øt twöc en.",
-                        "ID": 10
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Dïkwøŋ eni bäŋ gïn mo ee kønyø dëërï, 'ba kawaane atïmö niï maare ka køny, ki aani bëët.",
-                        "ID": 11
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "A duua eni baŋï, keda a jääŋŋa cwïnya kiree.",
-                        "ID": 12
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Aani yia doo met døc ki mana dee bëëdö kany buuta, naa tïnynye na karï, kany ena øt twöc en kiper luumma nyään na met.",
-                        "ID": 13
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba manøgø ba daa tïïö ni dwørï poot kära wïnynyö, kiper nee met ec marï nee ba tïme ke da gïn mo mak ka teek, 'ba doo beerra mana diï gø tïïö ki met cwïnyï.",
-                        "ID": 14
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Kanymør gïna tøøre buutï en dïciel, beeye kiper nee duu baŋï nee put bëëte buutï na bäre bäre,",
-                        "ID": 15
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "ni ba bëëdö kaamar laŋŋø këët, 'ba tïmö na cöögö ni wø mëërö ki gø, ni beeye gïna beerra eni. Ni ena coka møn maa mëër ki gø, 'ba kadha marï røk, kiper ena dhaanhnhï, ni beeye cöögu ki ri Wuuö.",
-                        "ID": 16
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba ni näk maa iï ŋäädhö døøc ni aana nyawadu, pänh eni keda mana diï aani pänhnhö.",
-                        "ID": 17
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba ni näk da gïn mo raac mo ee tïïö dëërï, wala da gï n mo manynyï manynyø baŋe, pëëny aani ki gø,",
-                        "ID": 18
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "coola coolø jïrï. 'Ba luubö man gööra aani ki cera, a na Pøøl. 'Ba marï na mayï baŋa ba caana nø, këël dëërï kiree.",
-                        "ID": 19
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba ka adïëri møn, coka, a manynya met yiï nee jooda ki ri Wuuö. Wëëk cwïnya mïnnö ki ri Krictø.",
-                        "ID": 20
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba kiper mana ŋäädha ïïni døc ni luumma leŋï leŋø, beeye na göönna baŋï en, ni ŋääa ni manøgø tïïyï tïïö ni kaala cer mana caana jïrï.",
-                        "ID": 21
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "'Ba maya thuwø, øt wëël wär jiiŋŋï kipera. Kiper yaa ŋäädhö ni aano wëëk ööny baŋu ki køør laam",
-                        "ID": 22
-                    }
-                ,
-                
-                    {
-                        "title": "Aŋuun Määdhe ",
-                        "text": "'Ba ïïna määth Epapara, ni en øt twöc ki aani na aciel en ki køør Krictø Jecu.",
-                        "ID": 23
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Ïïna määth Maaki thuwø, ki Aritarka, ki Diima, ki Luk, jø wø tïïö ki aani na aciel.",
-                        "ID": 24
-                    }
-                ,
-                
-                    {
-                        "title": "",
-                        "text": "Ba met ec mar Kwääyø ma Jecu Krictø bëëde",
-                        "ID": 25
-                    }
-                
+                {
+                    "title": "Määdhe",
+                    "text": "Aana Pøøl na tööny Krictø Jecu, ki Timöthi na näk cöögø. A määtha ïïni, Piliiman, ï na näk omëër marwa na tïïö ki waani na aciel,",
+                    "ID": "1"
+                },
+                {
+                    "text": "ki nyijøøa na Apia na näk cöögø, ki Arcipa na näk ŋat leny ŋäädhe ki øøni na aciel, ka acooŋ Jwøk mana en paarï.",
+                    "ID": "2"
+                },
+                {
+                    "text": "Met ec ki bëët-mëër man wø ööi ki baŋ Jwøk na näk Wääø, ki Kwäärö ma Jecu Krictø, bëëde bäätï. ",
+                    "ID": "3"
+                },
+                {
+                    "title": "Luum Mëër Mar Piliiman Ki Ŋäädhe Mare",
+                    "text": "'Ba aani, Jwøa wø pwøa pwøø cooth, kany wø para gïrï ki yïth laam 'moa.",
+                    "ID": "4"
+                },
+                {
+                    "text": "Kiper ŋäädhe marï na en jïrï kiper Kwäärö ma Jecu, ki mëër marï man wø mëërï ki jø Jwøk bëët, wø wïnynya wïnynyö.",
+                    "ID": "5"
+                },
+                {
+                    "text": "Kiper aani, a wø lämö nee ŋäädhe marï nywaagï ki jø møga, nee gïïa beyø bëët na näk 'moø ri Krictø, nee wëëk ŋäc.",
+                    "ID": "6"
+                },
+                {
+                    "text": "Kiper aana jïtö ki met ec mo dwøŋ ki cøm cwïny ki køør mëër marï, coka. Kiper cwïny jø Jwøk amïnnö ki køørï. ",
+                    "ID": "7"
+                },
+                {
+                    "title": "Kwac Mar Pøøl Kiper Onecima",
+                    "text": "Kiper manøgønø, doo løny jïra ki ri Krictø ki man köömma ïïni ki man tïïyï gïna diï tïïö.",
+                    "ID": "8"
+                },
+                {
+                    "text": "'Ba kiper nyeŋ mëër keere doo beerra mana daa ï kwaa, a na Pøøl, ni aana ŋat dwøŋ, a no otööny Krictø  Jecu en.",
+                    "ID": "9"
+                },
+                {
+                    "text": "A kwaya ïïni kiper wääda ma Onecima, ŋata tïma ni aana wänni yi øt twöc en.",
+                    "ID": "10"
+                },
+                {
+                    "text": "Dïkwøŋ eni bäŋ gïn mo ee kønyø dëërï, 'ba kawaane atïmö niï maare ka køny, ki aani bëët.",
+                    "ID": "11"
+                },
+                {
+                    "text": "A duua eni baŋï, keda a jääŋŋa cwïnya kiree.",
+                    "ID": "12"
+                },
+                {
+                    "text": "Aani yia doo met døc ki mana dee bëëdö kany buuta, naa tïnynye na karï, kany ena øt twöc en kiper luumma nyään na met.",
+                    "ID": "13"
+                },
+                {
+                    "text": "'Ba manøgø ba daa tïïö ni dwørï poot kära wïnynyö, kiper nee met ec marï nee ba tïme keda gïn mo mak ka teek, 'ba doo beerra mana diï gø tïïö ki met cwïnyï.",
+                    "ID": "14"
+                },
+                {
+                    "text": "Kanymør gïna tøøre buutï en dïciel, beeye kiper nee duu baŋï nee put bëëte buutï na bäre bäre,",
+                    "ID": "15"
+                },
+                {
+                    "text": "ni ba bëëdö kaamar laŋŋø këët, 'ba tïmö na cöögö ni wø mëërö ki gø, ni beeye gïna beerra eni. Ni ena coka møn maa mëër ki gø, 'ba kadha marï røk, kiper ena dhaanhnhï, ni beeye cöögu ki ri Wuuö.",
+                    "ID": "16"
+                },
+                {
+                    "text": "'Ba ni näk maa iï ŋäädhö døøc ni aana nyawadu, pänh eni keda mana diï aani pänhnhö.",
+                    "ID": "17"
+                },
+                {
+                    "text": "'Ba ni näk da gïn mo raac mo ee tïïö dëërï, wala da gïn mo manynyï manynyø baŋe, pëëny aani ki gø,",
+                    "ID": "18"
+                },
+                {
+                    "text": "coola coolø jïrï. 'Ba luubö man gööra aani ki cera, a na Pøøl. 'Ba marï na mayï baŋa ba caana nø, këël dëërï kiree.",
+                    "ID": "19"
+                },
+                {
+                    "text": "'Ba ka adïëri møn, coka, a manynya met yiï nee jooda ki ri Wuuö. Wëëk cwïnya mïnnö ki ri Krictø.",
+                    "ID": "20"
+                },
+                {
+                    "text": "'Ba kiper mana ŋäädha ïïni døc ni luumma leŋï leŋø, beeye na göönna baŋï en, ni ŋääa ni manøgø tïïyï tïïö ni kaala cer mana caana jïrï.",
+                    "ID": "21"
+                },
+                {
+                    "text": "'Ba maya thuwø, øt wëël wär jiiŋŋï kipera. Kiper yaa ŋäädhö ni aano wëëk ööny baŋu ki køør laam mou. ",
+                    "ID": "22"
+                },
+                {
+                    "title": "Aŋuun Määdhe",
+                    "text": "'Ba ïïna määth Epapara, ni en øt twöc ki aani na aciel en ki køør Krictø Jecu.",
+                    "ID": "23"
+                },
+                {
+                    "text": "Ïïna määth Maaki thuwø, ki Aritarka, ki Diima, ki Luk, jø wø tïïö ki aani na aciel.",
+                    "ID": "24"
+                },
+                {
+                    "text": "Ba met ec mar Kwääyø ma Jecu Krictø bëëde cwïnynyu.",
+                    "ID": "25"
+                }
             ]
         }
     ]
