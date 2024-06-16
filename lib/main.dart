@@ -1,3 +1,4 @@
+import 'package:dha_anywaa_bible/components/about.dart';
 import 'package:dha_anywaa_bible/components/chapter_list.dart';
 import 'package:dha_anywaa_bible/components/choose_bible.dart';
 import 'package:dha_anywaa_bible/components/choose_font.dart';
@@ -6,6 +7,7 @@ import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/components/differentVerse.dart';
+import 'package:dha_anywaa_bible/components/loading.dart';
 import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
@@ -14,7 +16,6 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:once/once.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanager/workmanager.dart';
-import 'HomePage.dart';
 
 DailyVerse dailyVerse = DailyVerse();
 int currentIndex = 0;
@@ -70,11 +71,11 @@ class _MyAppState extends State<MyApp> {
         frequency: const Duration(minutes: 15),
         constraints: Constraints(networkType: NetworkType.not_required));
     Once.runOnce('key', callback: () {
-      style.setBibleVersion('OT/GEN/ERV.json');
+      style.setBibleVersion('ANY/OT/GEN.json');
       style.setFontStyle('UntitledSerif');
       style.setPage(0);
-      fontSize.setFontSize(16);
-      style.setLanguageVersion('ERV');
+      fontSize.setFontSize(18);
+      style.setLanguageVersion('ANY');
       style.setBookIndex(0);
       style.setTestementNum(0);
     });
@@ -92,13 +93,14 @@ class _MyAppState extends State<MyApp> {
           darkTheme: notifier.isDark ? notifier.darkTheme : notifier.lightTheme,
           initialRoute: '/',
           routes: {
-            '/': (context) => const HomePage(),
+            '/': (context) => const Loading(),
             '/setting': (context) => const Setting(),
             '/chooseFont': (context) => const ChooseFont(),
             '/pray': (context) => const Pray(),
             '/chapterList': (context) => ChapterList(),
             '/chooseBible': (context) => const ChooseBible(),
             '/differentVerse': (context) => DifferentVerse(),
+            '/about': (context) => const About(),
           },
           title: 'Weel jwok',
           debugShowCheckedModeBanner: false,

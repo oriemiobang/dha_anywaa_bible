@@ -724,7 +724,7 @@ class _ChapterListState extends State<ChapterList> {
                       ]),
                 ),
                 body: TabBarView(
-                    physics: const NeverScrollableScrollPhysics(),
+                    // physics: const NeverScrollableScrollPhysics(),
                     // controller: tabController,
                     children: <Widget>[
                       oldTestement(),

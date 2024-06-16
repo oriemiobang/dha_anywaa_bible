@@ -10,12 +10,12 @@ import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/classes/highlights.dart';
-import 'package:dha_anywaa_bible/components/daily_text.dart';
+import 'package:dha_anywaa_bible/daily_text.dart';
 import 'package:dha_anywaa_bible/components/differentVerse.dart';
-import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<HomePage> {
       final engJsonResponse = json.decode(engJsonString);
       setState(() {
         englishBook = EnglishBook.fromJson(engJsonResponse);
-        title = englishBook!.name;
+        // title = englishBook!.name;
       });
     } catch (e) {
       print('english problem');
@@ -120,6 +120,8 @@ class _MyHomePageState extends State<HomePage> {
     if (fromChoosing == true) {
       pageController.jumpToPage(currentPage);
     }
+    print(bibleVersion);
+    print(language);
 
     if (language.split(' ')[0] == 'AMH') {
       setState(() {
@@ -134,12 +136,15 @@ class _MyHomePageState extends State<HomePage> {
       });
       anywaaLoadData();
     } else {
-      {
-        setState(() {
-          englishJsonString = 'assets/holybooks/$bibleVersion';
-        });
-        engLoadData();
-      }
+      setState(() {
+        englishJsonString = 'assets/holybooks/$bibleVersion';
+        for (var nowVersion in bookList) {
+          if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
+            title = nowVersion['title']!;
+          }
+        }
+      });
+      engLoadData();
     }
 
     setState(() {
@@ -194,6 +199,7 @@ class _MyHomePageState extends State<HomePage> {
   bool isVisible = true;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
   UniqueKey key = UniqueKey();
+  final Uri webUrl = Uri.parse('https://oriemiobangoriemi.netlify.app');
 
   @override
   void dispose() {
@@ -421,6 +427,419 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
+  List<Map<String, String>> bookList = [
+    {
+      'title': 'Genesis',
+      'amharic': '01_ኦሪት ዘፍጥረት.json',
+      'number': '50',
+      'abbrev': 'GEN'
+    },
+    {
+      'title': 'Exodus',
+      'amharic': '02_ኦሪት ዘጸአት.json',
+      'number': '40',
+      'abbrev': 'EXO'
+    },
+    {
+      'title': 'Leviticus',
+      'amharic': '03_ኦሪት ዘሌዋውያን.json',
+      'number': '27',
+      'abbrev': 'LEV'
+    },
+    {
+      'title': 'Numbers',
+      'amharic': '04_ኦሪት ዘኍልቍ.json',
+      'number': '36',
+      'abbrev': 'NUM'
+    },
+    {
+      'title': 'Deuteronomy',
+      'amharic': '05_ኦሪት ዘዳግም.json',
+      'number': '34',
+      'abbrev': 'DEU'
+    },
+    {
+      'title': 'Joshua',
+      'amharic': '06_መጽሐፈ ኢያሱ ወልደ ነዌ.json',
+      'number': '24',
+      'abbrev': 'JOS'
+    },
+    {
+      'title': "Judges",
+      'amharic': '07_መጽሐፈ መሣፍንት.json',
+      'number': '21',
+      'abbrev': 'JDG'
+    },
+    {
+      'title': "Ruth",
+      'amharic': '08_መጽሐፈ ሩት.json',
+      'number': '4',
+      'abbrev': 'RUT'
+    },
+    {
+      'title': "1 Samuel",
+      'amharic': '09_መጽሐፈ ሳሙኤል ቀዳማዊ.json',
+      'number': '31',
+      'abbrev': '1SA'
+    },
+    {
+      'title': "2 Samuel",
+      'amharic': '10_መጽሐፈ ሳሙኤል ካል.json',
+      'number': '24',
+      'abbrev': '2SA'
+    },
+    {
+      'title': "1 Kings",
+      'amharic': '11_መጽሐፈ ነገሥት ቀዳማዊ.json',
+      'number': '22',
+      'abbrev': '1KI'
+    },
+    {
+      'title': "2 Kings",
+      'amharic': '12_መጽሐፈ ነገሥት ካልዕ.json',
+      'number': '25',
+      'abbrev': '2KI'
+    },
+    {
+      'title': "1 Chronicles",
+      'amharic': '13_መጽሐፈ ዜና መዋዕል ቀዳማዊ.json',
+      'number': '29',
+      'abbrev': '1CH'
+    },
+    {
+      'title': "2 Chronicles",
+      'amharic': '14_መጽሐፈ ዜና መዋዕል ካልዕ.json',
+      'number': '36',
+      'abbrev': '2CH'
+    },
+    {
+      'title': "Ezra",
+      'amharic': '15_መጽሐፈ ዕዝራ.json',
+      'number': '10',
+      'abbrev': 'EZR'
+    },
+    {
+      'title': "Nehemiah",
+      'amharic': '16_መጽሐፈ ነህምያ.json',
+      'number': '13',
+      'abbrev': 'NEH'
+    },
+    {
+      'title': "Esther",
+      'amharic': '17_መጽሐፈ አስቴር.json',
+      'number': '10',
+      'abbrev': 'EST'
+    },
+    {
+      'title': "Job",
+      'amharic': '18_መጽሐፈ ኢዮብ.json',
+      'number': '42',
+      'abbrev': 'JOB'
+    },
+    {
+      'title': "Psalms",
+      'amharic': '19_መዝሙረ ዳዊት.json',
+      'number': '150',
+      'abbrev': 'PSA'
+    },
+    {
+      'title': "Proverbs",
+      'amharic': '20_መጽሐፈ ምሳሌ.json',
+      'number': '31',
+      'abbrev': 'PRO'
+    },
+    {
+      'title': "Ecclesiastes",
+      'amharic': '21_መጽሐፈ መክብብ.json',
+      'number': '12',
+      'abbrev': 'ECC'
+    },
+    {
+      'title': "Song of Solomon",
+      'amharic': '22_መኃልየ መኃልይ ዘሰሎሞን.json',
+      'number': '8',
+      'abbrev': 'SNG'
+    },
+    {
+      'title': 'Isaiah',
+      'amharic': '23_ትንቢተ ኢሳይያስ.json',
+      'number': '66',
+      'abbrev': 'ISA'
+    },
+    {
+      'title': 'Jeremiah',
+      'amharic': '24_ትንቢተ ኤርምያስ.json',
+      'number': '52',
+      'abbrev': 'JER'
+    },
+    {
+      'title': 'Lamentations',
+      'amharic': '25_ሰቆቃው ኤርምያስ.json',
+      'number': '5',
+      'abbrev': 'LAM'
+    },
+    {
+      'title': 'Ezekiel',
+      'amharic': '26_ትንቢተ ሕዝቅኤል.json',
+      'number': '48',
+      'abbrev': 'EZK'
+    },
+    {
+      'title': 'Daniel',
+      'amharic': '27_ትንቢተ ዳንኤል.json',
+      'number': '12',
+      'abbrev': 'DAN'
+    },
+    {
+      'title': 'Hosea',
+      'amharic': '28_ትንቢተ ሆሴዕ.json',
+      'number': '14',
+      'abbrev': 'HOS'
+    },
+    {
+      'title': 'Joel',
+      'amharic': '29_ትንቢተ ኢዮኤል.json',
+      'number': '3',
+      'abbrev': 'JOL'
+    },
+    {
+      'title': 'Amos',
+      'amharic': '30_ትንቢተ አሞጽ.json',
+      'number': '9',
+      'abbrev': 'AMO'
+    },
+    {
+      'title': 'Obadiah',
+      'amharic': '31_ትንቢተ አብድዩ.json',
+      'number': '1',
+      'abbrev': 'OBA'
+    },
+    {
+      'title': 'Jonah',
+      'amharic': '32_ትንቢተ ዮናስ.json',
+      'number': '4',
+      'abbrev': 'JON'
+    },
+    {
+      'title': 'Micah',
+      'amharic': '33_ትንቢተ ሚክያስ.json',
+      'number': '7',
+      'abbrev': 'MIC'
+    },
+    {
+      'title': 'Nahum',
+      'amharic': '34_ትንቢተ ናሆም.json',
+      'number': '3',
+      'abbrev': 'NAH'
+    },
+    {
+      'title': 'Habakkuk',
+      'amharic': '35_ትንቢተ ዕንባቆም.json',
+      'number': '3',
+      'abbrev': 'HAB'
+    },
+    {
+      'title': 'Zephaniah',
+      'amharic': '36_ትንቢተ ሶፎንያስ.json',
+      'number': '3',
+      'abbrev': 'ZEP'
+    },
+    {
+      'title': 'Haggai',
+      'amharic': '37_ትንቢተ ሐጌ.json',
+      'number': '2',
+      'abbrev': 'HAG'
+    },
+    {
+      'title': 'Zechariah',
+      'amharic': '38_ትንቢተ ዘካርያስ.json',
+      'number': '14',
+      'abbrev': 'ZEC'
+    },
+    {
+      'title': 'Malachi',
+      'amharic': '39_ትንቢተ ሚልክያ.json',
+      'number': '4',
+      'abbrev': 'MAL'
+    },
+    {
+      'title': 'Matthew',
+      'amharic': '40_የማቴዎስ ወንጌል.json',
+      'number': '28',
+      'abbrev': 'MAT'
+    },
+    {
+      'title': 'Mark',
+      'amharic': '41_የማርቆስ ወንጌል.json',
+      'number': '16',
+      'abbrev': 'MRK'
+    },
+    {
+      'title': 'Luke',
+      'amharic': '42_የሉቃስ ወንጌል.json',
+      'number': '24',
+      'abbrev': 'LUK'
+    },
+    {
+      'title': 'John',
+      'amharic': '43_የዮሐንስ ወንጌል.json',
+      'number': '21',
+      'abbrev': 'JHN'
+    },
+    {
+      'title': 'Acts',
+      'amharic': '44_የሐዋርያት ሥራ.json',
+      'number': '28',
+      'abbrev': 'ACT'
+    },
+    {
+      'title': 'Romans',
+      'amharic': '45_ወደ ሮሜ ሰዎች.json',
+      'number': '16',
+      'abbrev': 'ROM'
+    },
+    {
+      'title': '1 Corinthians',
+      'amharic': '46_1ኛ ወደ ቆሮንቶስ ሰዎች.json',
+      'number': '16',
+      'abbrev': '1CO'
+    },
+    {
+      'title': '2 Corinthians',
+      'amharic': '47_2ኛ ወደ ቆሮንቶስ ሰዎች.json',
+      'number': '13',
+      'abbrev': '2CO'
+    },
+    {
+      'title': 'Galatians',
+      'amharic': '48_ወደ ገላትያ ሰዎች.json',
+      'number': '6',
+      'abbrev': 'GAL'
+    },
+    {
+      'title': 'Ephesians',
+      'amharic': '49_ወደ ኤፌሶን ሰዎች.json',
+      'number': '6',
+      'abbrev': 'EPH'
+    },
+    {
+      'title': 'Philippians',
+      'amharic': '50_ወደ ፊልጵስዩስ ሰዎች.json',
+      'number': '4',
+      'abbrev': 'PHP'
+    },
+    {
+      'title': 'Colossians',
+      'amharic': '51_ወደ ቆላስይስ ሰዎች.json',
+      'number': '4',
+      'abbrev': 'COL'
+    },
+    {
+      'title': '1 Thessalonians',
+      'amharic': '52_1ኛ ወደ ተሰሎንቄ ሰዎች.json',
+      'number': '5',
+      'abbrev': '1TH'
+    },
+    {
+      'title': '2 Thessalonians',
+      'amharic': '53_2ኛ ወደ ተሰሎንቄ ሰዎች.json',
+      'number': '3',
+      'abbrev': '2TH'
+    },
+    {
+      'title': '1 Timothy',
+      'amharic': '54_1ኛ ወደ ጢሞቴዎስ.json',
+      'number': '6',
+      'abbrev': '1TI'
+    },
+    {
+      'title': '2 Timothy',
+      'amharic': '55_2ኛ ወደ ጢሞቴዎስ.json',
+      'number': '4',
+      'abbrev': '2TI'
+    },
+    {
+      'title': 'Titus',
+      'amharic': '56_ወደ ቲቶ.json',
+      'number': '3',
+      'abbrev': 'TIT'
+    },
+    {
+      'title': 'Philemon',
+      'amharic': '57_ወደ ፊልሞና.json',
+      'number': '1',
+      'abbrev': 'PHM'
+    },
+    {
+      'title': 'Hebrews',
+      'amharic': '58_ወደ ዕብራውያን.json',
+      'number': '13',
+      'abbrev': 'HEB'
+    },
+    {
+      'title': 'James',
+      'amharic': '59_የያዕቆብ መልእክት.json',
+      'number': '5',
+      'abbrev': 'JAS'
+    },
+    {
+      'title': '1 Peter',
+      'amharic': '60_1ኛ የጴጥሮስ መልእክት.json',
+      'number': '5',
+      'abbrev': '1PE'
+    },
+    {
+      'title': '2 Peter',
+      'amharic': '61_2ኛ የጴጥሮስ መልእክት.json',
+      'number': '3',
+      'abbrev': '2PE'
+    },
+    {
+      'title': '1 John',
+      'amharic': '62_1ኛ የዮሐንስ መልእክት.json',
+      'number': '5',
+      'abbrev': '1JN'
+    },
+    {
+      'title': '2 John',
+      'amharic': '63_2ኛ የዮሐንስ መልእክት.json',
+      'number': '1',
+      'abbrev': '2JN'
+    },
+    {
+      'title': '3 John',
+      'amharic': '64_3ኛ የዮሐንስ መልእክት.json',
+      'number': '1',
+      'abbrev': '3JN'
+    },
+    {
+      'title': 'Jude',
+      'amharic': '65_የይሁዳ መልእክት.json',
+      'number': '1',
+      'abbrev': 'JUD'
+    },
+    {
+      'title': 'Revelation',
+      'amharic': '66_የዮሐንስ ራእይ.json',
+      'number': '22',
+      'abbrev': 'REV'
+    }
+  ];
+
+  Future<void> _openUrl() async {
+    try {
+      await launchUrl(
+        webUrl,
+        webOnlyWindowName: '_blank',
+        mode: LaunchMode.externalApplication,
+        webViewConfiguration:
+            const WebViewConfiguration(enableJavaScript: true),
+      );
+    } catch (e) {
+      print('error $e');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Brightness currentTheme = Theme.of(context).brightness;
@@ -458,28 +877,28 @@ class _MyHomePageState extends State<HomePage> {
                 ),
               )
             ],
-            title: TextButton(
-                onPressed: () {
-                  setState(() {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Pray()),
-                    );
-                  });
-                },
-                child: Text(
-                  _language == 'AMH'
-                      ? 'ፀልይ'
-                      : _language == 'ANY'
-                          ? 'Lämï'
-                          : 'Pray',
-                  style: TextStyle(
-                    fontSize: 20.5,
-                    color: currentTheme == Brightness.light
-                        ? const Color.fromARGB(255, 1, 11, 36)
-                        : const Color.fromARGB(255, 243, 179, 83),
-                  ),
-                )),
+            // title: TextButton(
+            //     onPressed: () {
+            //       setState(() {
+            //         Navigator.push(
+            //           context,
+            //           MaterialPageRoute(builder: (context) => const Pray()),
+            //         );
+            //       });
+            //     },
+            //     child: Text(
+            //       _language == 'AMH'
+            //           ? 'ፀልይ'
+            //           : _language == 'ANY'
+            //               ? 'Lämï'
+            //               : 'Pray',
+            //       style: TextStyle(
+            //         fontSize: 20.5,
+            //         color: currentTheme == Brightness.light
+            //             ? const Color.fromARGB(255, 1, 11, 36)
+            //             : const Color.fromARGB(255, 243, 179, 83),
+            //       ),
+            //     )),
             forceMaterialTransparency: true,
           );
         case 1:
@@ -517,13 +936,13 @@ class _MyHomePageState extends State<HomePage> {
                         : Colors.black),
               ),
             ),
-            IconButton(
-              icon: const Icon(
-                Icons.search,
-                color: Color.fromARGB(255, 227, 171, 2),
-              ),
-              onPressed: () {},
-            ),
+            // IconButton(
+            //   icon: const Icon(
+            //     Icons.search,
+            //     color: Color.fromARGB(255, 227, 171, 2),
+            //   ),
+            //   onPressed: () {},
+            // ),
           ]);
         case 2:
           return AppBar(
@@ -547,7 +966,18 @@ class _MyHomePageState extends State<HomePage> {
                 padding: EdgeInsets.zero,
                 children: [
                   const DrawerHeader(
-                    child: Text(''),
+                    child: Column(
+                      children: [
+                        Image(
+                            height: 110,
+                            image: AssetImage('assets/images/weel_jwok.png')),
+                        Text(
+                          "Wëël Jwøk",
+                          style: TextStyle(
+                              color: Colors.grey, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
                   ),
                   ListTile(
                     leading: const Icon(Icons.settings),
@@ -559,7 +989,6 @@ class _MyHomePageState extends State<HomePage> {
                               builder: (context) => const Setting()),
                         ).then((value) {
                           getBibleVersion();
-                          print(value);
                         });
                       });
                     },
@@ -574,25 +1003,31 @@ class _MyHomePageState extends State<HomePage> {
                       style: TextStyle(),
                     ),
                   ),
-                  const ListTile(
-                    leading: Icon(Icons.help_outline),
-                    title: Text(
-                      'Get help',
-                      style: TextStyle(),
-                    ),
-                  ),
-                  const ListTile(
-                    leading: Icon(Icons.attribution_outlined),
-                    title: Text(
+                  // const ListTile(
+                  //   leading: Icon(Icons.help_outline),
+                  //   title: Text(
+                  //     'Help',
+                  //     style: TextStyle(),
+                  //   ),
+                  // ),
+                  ListTile(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/about');
+                    },
+                    leading: const Icon(Icons.menu_book_rounded),
+                    title: const Text(
                       'About the app',
                       style: TextStyle(),
                     ),
                   ),
-                  const ListTile(
-                    leading: Icon(
-                      Icons.menu_book_rounded,
+                  ListTile(
+                    onTap: () {
+                      _openUrl();
+                    },
+                    leading: const Icon(
+                      Icons.person,
                     ),
-                    title: Text(
+                    title: const Text(
                       'About the developer',
                       style: TextStyle(),
                     ),
@@ -777,258 +1212,244 @@ class _MyHomePageState extends State<HomePage> {
                               }),
                         );
                       })
-              : (anywaaBook == null && englishBook == null)
-                  ? const Center(
-                      child: SpinKitWaveSpinner(
-                        color: Color.fromARGB(255, 13, 33, 65),
-                        size: 50.0,
-                      ),
-                    )
-                  : _language == 'ANY'
-                      ? anywaaBook == null
-                          ? const Center(
-                              child: SpinKitWaveSpinner(
-                                color: Color.fromARGB(255, 13, 33, 65),
-                                size: 50.0,
-                              ),
-                            )
-                          : PageView.builder(
-                              key: key,
-                              onPageChanged: (index) {
-                                setPageIndex(index: index);
-                                print('onPageChanged 2');
-                                markedText = [];
-                                setState(() {
-                                  getBibleVersion();
-                                });
-                              },
-                              itemCount: anywaaBook!.chapters.length,
-                              controller: pageController,
-                              itemBuilder: (BuildContext context, int index) {
-                                var book = anywaaBook!.chapters[index];
-                                return Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: ListView.builder(
-                                      key: key,
-                                      itemCount: book.verses.length,
-                                      shrinkWrap: true,
-                                      controller: controller,
-                                      itemBuilder: (BuildContext context,
-                                          int listindex) {
-                                        var chapter = book.verses[listindex];
-                                        var chapterNumber = book.name
-                                                .split(' ')[
-                                            book.name.split(' ').length - 1];
-                                        String first =
-                                            book.name.split(' ').length > 2
-                                                ? book.name.split(' ')[0]
-                                                : '';
-                                        print(book.name.split(' '));
-                                        var chapterName =
-                                            '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
-                                        return Column(
-                                          children: [
-                                            listindex == 0
-                                                ? Text(
-                                                    chapterName,
-                                                    style: const TextStyle(
-                                                        fontSize: 22,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        color: Colors.grey),
-                                                  )
-                                                : const SizedBox(),
-                                            Visibility(
-                                                visible: listindex == 0,
+              : _language == 'ANY'
+                  ? anywaaBook == null
+                      ? const Center(
+                          child: SpinKitWaveSpinner(
+                            color: Color.fromARGB(255, 13, 33, 65),
+                            size: 50.0,
+                          ),
+                        )
+                      : PageView.builder(
+                          key: key,
+                          onPageChanged: (index) {
+                            setPageIndex(index: index);
+                            print('onPageChanged 2');
+                            markedText = [];
+                            setState(() {
+                              getBibleVersion();
+                            });
+                          },
+                          itemCount: anywaaBook!.chapters.length,
+                          controller: pageController,
+                          itemBuilder: (BuildContext context, int index) {
+                            var book = anywaaBook!.chapters[index];
+                            return Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: ListView.builder(
+                                  key: key,
+                                  itemCount: book.verses.length,
+                                  shrinkWrap: true,
+                                  controller: controller,
+                                  itemBuilder:
+                                      (BuildContext context, int listindex) {
+                                    var chapter = book.verses[listindex];
+                                    var chapterNumber = book.name.split(
+                                        ' ')[book.name.split(' ').length - 1];
+                                    // String first =
+                                    //     book.name.split(' ').length > 2
+                                    //         ? book.name.split(' ')[0]
+                                    //         : '';
+                                    // print(book.name.split(' '));
+                                    List splittedName = book.name.split(' ');
+                                    splittedName.removeWhere((element) =>
+                                        int.tryParse(element) != null);
+                                    String chapterName = splittedName.join(' ');
+
+                                    return Column(
+                                      children: [
+                                        listindex == 0
+                                            ? Text(
+                                                chapterName,
+                                                style: const TextStyle(
+                                                    fontSize: 22,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.grey),
+                                              )
+                                            : const SizedBox(),
+                                        Visibility(
+                                            visible: listindex == 0,
+                                            child: Text(
+                                              chapterNumber,
+                                              style: const TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 72),
+                                            )),
+                                        listindex == 0
+                                            ? const SizedBox(
+                                                height: 20,
+                                              )
+                                            : const Visibility(
+                                                visible: false,
+                                                child: Text('')),
+                                        (book.verses[listindex].title!
+                                                .isNotEmpty)
+                                            ? Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 30,
+                                                    right: 30,
+                                                    bottom: 6),
                                                 child: Text(
-                                                  chapterNumber,
+                                                  '\n${book.verses[listindex].title}',
                                                   style: const TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: 72),
-                                                )),
-                                            listindex == 0
-                                                ? const SizedBox(
-                                                    height: 20,
+                                                    fontStyle: FontStyle.italic,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              )
+                                            : const Visibility(
+                                                visible: false,
+                                                child: Text(''),
+                                              ),
+                                        Padding(
+                                          padding:
+                                              const EdgeInsets.only(bottom: 9),
+                                          child: Visibility(
+                                              visible: book.verses[listindex]
+                                                  .reference!.isNotEmpty,
+                                              child: Text(
+                                                '${book.verses[listindex].reference}',
+                                                style: const TextStyle(
+                                                    fontSize: 15.5,
+                                                    color: Colors.grey),
+                                              )),
+                                        ),
+                                        Row(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            chapter.text != ''
+                                                ? Text(
+                                                    chapter.id,
+                                                    style: const TextStyle(
+                                                        color: Colors.grey),
                                                   )
                                                 : const Visibility(
                                                     visible: false,
                                                     child: Text('')),
-                                            (book.verses[listindex].title!
-                                                    .isNotEmpty)
-                                                ? Padding(
-                                                    padding:
-                                                        const EdgeInsets.only(
-                                                            left: 30,
-                                                            right: 30,
-                                                            bottom: 6),
-                                                    child: Text(
-                                                      '\n${book.verses[listindex].title}',
-                                                      style: const TextStyle(
-                                                        fontStyle:
-                                                            FontStyle.italic,
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
-                                                    ),
-                                                  )
-                                                : const Visibility(
-                                                    visible: false,
-                                                    child: Text(''),
-                                                  ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  bottom: 9),
-                                              child: Visibility(
-                                                  visible: book
-                                                      .verses[listindex]
-                                                      .reference!
-                                                      .isNotEmpty,
-                                                  child: Text(
-                                                    '${book.verses[listindex].reference}',
-                                                    style: const TextStyle(
-                                                        fontSize: 15.5,
-                                                        color: Colors.grey),
-                                                  )),
-                                            ),
-                                            Row(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                chapter.text != ''
-                                                    ? Text(
-                                                        chapter.id,
-                                                        style: const TextStyle(
-                                                            color: Colors.grey),
-                                                      )
-                                                    : const Visibility(
-                                                        visible: false,
-                                                        child: Text('')),
-                                                const SizedBox(
-                                                  width: 10,
-                                                ),
-                                                Visibility(
-                                                  visible: chapter.text != '',
-                                                  child: Expanded(
-                                                    child: Column(
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        GestureDetector(
-                                                          onTap: () {
-                                                            // print(_highlight);
-                                                            currentBibleVerse =
-                                                                '${book.id}${chapter.id}';
-
-                                                            setState(() {
-                                                              currentVerseIndex =
-                                                                  int.parse(
-                                                                      chapter
-                                                                          .id);
-                                                              selectedColorIndex =
-                                                                  listindex;
-                                                            });
-
-                                                            markText(
-                                                                index:
-                                                                    listindex,
-                                                                chapterName:
-                                                                    chapterName,
-                                                                text: chapter
-                                                                    .text,
-                                                                chapterNumber:
-                                                                    chapterNumber,
-                                                                chapterId:
-                                                                    chapter.id,
-                                                                textId:
-                                                                    currentBibleVerse);
-                                                          },
-                                                          child: RichText(
-                                                              text: TextSpan(
-                                                                  style: DefaultTextStyle.of(
-                                                                          context)
-                                                                      .style,
-                                                                  children: [
-                                                                TextSpan(
-                                                                  text: chapter
-                                                                      .text,
-                                                                  style:
-                                                                      TextStyle(
-                                                                    backgroundColor: _highlight
-                                                                        .map((verse) => verse['id'] ==
-                                                                                '${book.id}${chapter.id}'
-                                                                            ? colorList[verse[
-                                                                                'color']]
-                                                                            : null)
-                                                                        .firstWhere(
-                                                                            (color) =>
-                                                                                color !=
-                                                                                null,
-                                                                            orElse: () =>
-                                                                                Colors.transparent),
-                                                                    fontFamily:
-                                                                        currentFont,
-                                                                    fontSize:
-                                                                        _currentFontSize,
-                                                                    decoration: markedText.any((dic) =>
-                                                                            dic['text'] ==
-                                                                            chapter
-                                                                                .text)
-                                                                        ? TextDecoration
-                                                                            .underline
-                                                                        : null,
-                                                                    decorationStyle: markedText.any((dic) =>
-                                                                            dic['text'] ==
-                                                                            chapter
-                                                                                .text)
-                                                                        ? TextDecorationStyle
-                                                                            .dashed
-                                                                        : null,
-                                                                  ),
-                                                                )
-                                                              ])),
-                                                        ),
-                                                        Visibility(
-                                                          visible: chapter
-                                                                  .comment!
-                                                                  .isNotEmpty &&
-                                                              thereIsComment,
-                                                          child: Text(
-                                                            '${chapter.comment}',
-                                                            style: const TextStyle(
-                                                                color:
-                                                                    Colors.grey,
-                                                                fontStyle:
-                                                                    FontStyle
-                                                                        .italic),
-                                                          ),
-                                                        )
-                                                      ],
-                                                    ),
-                                                  ),
-                                                )
-                                              ],
-                                            ),
                                             const SizedBox(
-                                              height: 0,
+                                              width: 10,
                                             ),
-                                            listindex ==
-                                                    (book.verses.length - 1)
-                                                ? const Padding(
-                                                    padding: EdgeInsets.only(
-                                                        bottom: 100),
-                                                  )
-                                                : const Visibility(
-                                                    visible: false,
-                                                    child: Text(''),
-                                                  ),
+                                            Visibility(
+                                              visible: chapter.text != '',
+                                              child: Expanded(
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    GestureDetector(
+                                                      onTap: () {
+                                                        // print(_highlight);
+                                                        currentBibleVerse =
+                                                            '${book.id}${chapter.id}';
+
+                                                        setState(() {
+                                                          currentVerseIndex =
+                                                              int.parse(
+                                                                  chapter.id);
+                                                          selectedColorIndex =
+                                                              listindex;
+                                                        });
+
+                                                        markText(
+                                                            index: listindex,
+                                                            chapterName:
+                                                                chapterName,
+                                                            text: chapter.text,
+                                                            chapterNumber:
+                                                                chapterNumber,
+                                                            chapterId:
+                                                                chapter.id,
+                                                            textId:
+                                                                currentBibleVerse);
+                                                      },
+                                                      child: RichText(
+                                                          text: TextSpan(
+                                                              style: DefaultTextStyle
+                                                                      .of(context)
+                                                                  .style,
+                                                              children: [
+                                                            TextSpan(
+                                                              text:
+                                                                  chapter.text,
+                                                              style: TextStyle(
+                                                                backgroundColor: _highlight
+                                                                    .map((verse) => verse['id'] ==
+                                                                            '${book.id}${chapter.id}'
+                                                                        ? colorList[verse[
+                                                                            'color']]
+                                                                        : null)
+                                                                    .firstWhere(
+                                                                        (color) =>
+                                                                            color !=
+                                                                            null,
+                                                                        orElse: () =>
+                                                                            Colors.transparent),
+                                                                fontFamily:
+                                                                    currentFont,
+                                                                fontSize:
+                                                                    _currentFontSize,
+                                                                decoration: markedText.any((dic) =>
+                                                                        dic['text'] ==
+                                                                        chapter
+                                                                            .text)
+                                                                    ? TextDecoration
+                                                                        .underline
+                                                                    : null,
+                                                                decorationStyle: markedText.any((dic) =>
+                                                                        dic['text'] ==
+                                                                        chapter
+                                                                            .text)
+                                                                    ? TextDecorationStyle
+                                                                        .dashed
+                                                                    : null,
+                                                              ),
+                                                            )
+                                                          ])),
+                                                    ),
+                                                    Visibility(
+                                                      visible: chapter.comment!
+                                                              .isNotEmpty &&
+                                                          thereIsComment,
+                                                      child: Text(
+                                                        '${chapter.comment}',
+                                                        style: const TextStyle(
+                                                            color: Colors.grey,
+                                                            fontStyle: FontStyle
+                                                                .italic),
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            )
                                           ],
-                                        );
-                                      }),
-                                );
-                              })
+                                        ),
+                                        const SizedBox(
+                                          height: 0,
+                                        ),
+                                        listindex == (book.verses.length - 1)
+                                            ? const Padding(
+                                                padding: EdgeInsets.only(
+                                                    bottom: 100),
+                                              )
+                                            : const Visibility(
+                                                visible: false,
+                                                child: Text(''),
+                                              ),
+                                      ],
+                                    );
+                                  }),
+                            );
+                          })
+                  : englishBook == null
+                      ? const Center(
+                          child: SpinKitWaveSpinner(
+                            color: Color.fromARGB(255, 13, 33, 65),
+                            size: 50.0,
+                          ),
+                        )
                       : PageView.builder(
                           key: key,
                           onPageChanged: (index) {
@@ -1056,17 +1477,11 @@ class _MyHomePageState extends State<HomePage> {
                                     var chapter = book.verses[listindex];
                                     var chapterNumber = book.name.split(
                                         ' ')[book.name.split(' ').length - 1];
-                                    String first =
-                                        book.name.split(' ').length > 2
-                                            ? book.name.split(' ')[0]
-                                            : '';
-                                    var chapterName =
-                                        '$first ${book.name.split(' ')[book.name.split(' ').length - 2]}';
                                     return Column(
                                       children: [
                                         listindex == 0
                                             ? Text(
-                                                chapterName,
+                                                title,
                                                 style: const TextStyle(
                                                     fontSize: 22,
                                                     fontWeight: FontWeight.bold,
@@ -1147,8 +1562,7 @@ class _MyHomePageState extends State<HomePage> {
 
                                                         markText(
                                                             index: listindex,
-                                                            chapterName:
-                                                                chapterName,
+                                                            chapterName: title,
                                                             text: chapter.text,
                                                             chapterNumber:
                                                                 chapterNumber,

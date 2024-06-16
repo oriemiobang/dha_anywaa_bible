@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UiProvider extends ChangeNotifier {
-  bool _isDark = true;
+  bool _isDark = false;
   // int _currentIndex = 0;
   bool get isDark => _isDark;
 
@@ -17,34 +17,35 @@ class UiProvider extends ChangeNotifier {
 
   final darkTheme = ThemeData(
     textTheme: const TextTheme(
-        bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
-        bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
+      bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
+      bodyMedium: TextStyle(fontFamily: 'UntitledSerif'),
+    ),
     fontFamily: 'UntitledSerif',
-    appBarTheme: AppBarTheme(color: Colors.transparent),
+    appBarTheme: const AppBarTheme(color: Colors.transparent),
 
     buttonTheme: const ButtonThemeData(buttonColor: Colors.white),
     // fontFamily: 'UntitledSerif',
     // scrollbarTheme: ScrollbarThemeData(color),
-    primaryColor: Color.fromARGB(255, 0, 4, 17),
+    primaryColor: const Color.fromARGB(255, 0, 4, 17),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       backgroundColor: Color.fromARGB(255, 0, 4, 17),
-
       //  Color.fromARGB(255, 1, 11, 36)
     ),
-    scaffoldBackgroundColor: Color.fromARGB(255, 0, 4, 17),
+    scaffoldBackgroundColor: const Color.fromARGB(255, 0, 4, 17),
 
     //  const Color.fromARGB(255, 1, 11, 36)
 
     brightness: Brightness.dark,
-    primaryColorDark: Color.fromARGB(255, 0, 4, 17),
+    primaryColorDark: const Color.fromARGB(255, 0, 4, 17),
   );
   //  const Color.fromARGB(255, 1, 11, 36));
   final lightTheme = ThemeData(
       textTheme: const TextTheme(
-          bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
-          bodyMedium: TextStyle(fontFamily: 'UntitledSerif')),
+        bodyLarge: TextStyle(fontFamily: 'UntitledSerif'),
+        bodyMedium: TextStyle(fontFamily: 'UntitledSerif'),
+      ),
       fontFamily: 'UntitledSerif',
-      primaryColor: Colors.white,
+      // primaryColor: Colors.white,
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: Colors.white,
       ),
@@ -52,7 +53,7 @@ class UiProvider extends ChangeNotifier {
       primaryColorDark: Colors.white);
   init() async {
     storage = await SharedPreferences.getInstance();
-    _isDark = storage.getBool('isDark') ?? true;
+    _isDark = storage.getBool('isDark') ?? false;
     notifyListeners();
   }
 }

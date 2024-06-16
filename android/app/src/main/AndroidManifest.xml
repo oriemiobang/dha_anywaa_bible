@@ -2,7 +2,7 @@
     <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
 
     <application
-        android:label="Bella Holy Bible"
+        android:label="Weel Jwok"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
