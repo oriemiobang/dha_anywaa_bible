@@ -116,7 +116,9 @@ class About extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/privacy_policy');
+              },
               child: const Text('Privacy Policy'),
             )
           ],

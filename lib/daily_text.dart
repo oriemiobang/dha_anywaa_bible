@@ -2,14 +2,8 @@ import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
 import 'package:dha_anywaa_bible/classes/font_size.dart';
 import 'package:dha_anywaa_bible/classes/font_style.dart';
-// import 'package:dha_anywaa_bible/main.dart';
-// import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
-// import 'package:share_plus/share_plus.dart';
-// import 'package:once/once.dart';
-// import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:workmanager/workmanager.dart';
 
 class DailyText extends StatefulWidget {
   const DailyText({super.key});
@@ -68,12 +62,10 @@ class _DailyTextState extends State<DailyText>
     final items = await SQLHelper.getItems();
     if (items.isEmpty) {
       _addItem();
-      // print('there is an issue');
     }
 
     final item = await SQLHelper.getItem(1);
 
-    // print('inner index: $item');
     return item[0]['counter'];
   }
 

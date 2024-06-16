@@ -82,9 +82,10 @@ class DailyVerse {
     //  ø     ö     ï    ë  ä
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'ሁሉ በእርሱ ሆነ'
           : _language == 'ANY'
-              ? "Jwøk nut piny bärë!"
+              ? "jammi bëët cwääc"
+                  "ki ri jecu"
               : 'God is everywhere!',
       "verse": _language == 'AMH'
           ? 'የዮሐንስ ወንጌል 1: 1-5'
@@ -98,26 +99,26 @@ class DailyVerse {
               'በእርሱ ሕይወት ነበረች፥ ሕይወትም የሰው ብርሃን ነበረች። '
               'ብርሃንም በጨለማ ይበራል፥ ጨለማም አላሸነፈውም።'
           : _language == 'ANY'
-              ? " 1. Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
+              ? " Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
                   " kanya ciel ki Jwøk, ni Dwørøgøøni"
-                  " beeye Jwøk.\n 2. Wïlöölö eni ena kanya"
-                  " ciel ki Jwøk. 3 Ni jammi bëët cwääc"
+                  " beeye Jwøk. Wïlöölö eni ena kanya"
+                  " ciel ki Jwøk. Ni jammi bëët cwääc"
                   " ka ree, ni bäŋ gïn mo ocwääö ri moa"
-                  " cwääc bëët, ni eni tøør ree.\n 4. Ni kwøw"
+                  " cwääc bëët, ni eni tøør ree. Ni kwøw"
                   " ena ree, ni kwøwøgøøni beeye na cïp"
-                  " tar jï jiy.\n 5. Ni tayøgø meenya muudhö,"
+                  " tar jï jiy. Ni tayøgø meenya muudhö,"
                   " ni käri ya muudhe nää."
               : ' In the beginning was the Word, '
                   'and the Word was with God, and the Word was God. '
-                  '2 He was with God in the beginning. 3 Through him '
+                  'He was with God in the beginning. Through him '
                   'all things were made; without him nothing was made '
-                  'that has been made. 4 In him was life, and that life '
-                  'was the light of all mankind. 5 The light shines in the darkness, '
+                  'that has been made. In him was life, and that life '
+                  'was the light of all mankind. The light shines in the darkness, '
                   'and the darkness has not overcome it.',
     },
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'እግዚአብሔር ከአንተ ጋር ነው።'
           : _language == 'ANY'
               ? "jwøk nuttö ki ïnï cooth"
               : 'God is always with you!',
@@ -141,10 +142,10 @@ class DailyVerse {
     },
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'እግዚአብሔር ዓለምን አሸንፌዋል'
           : _language == 'ANY'
-              ? "Jwøk amëër."
-              : 'God is love.',
+              ? "Jecu peny ee böötö"
+              : 'God have overcome the world',
       "verse": _language == 'AMH'
           ? 'የዮሐንስ ወንጌል 16:33'
           : _language == 'ANY'
@@ -165,8 +166,8 @@ class DailyVerse {
       "shortText": _language == 'AMH'
           ? ''
           : _language == 'ANY'
-              ? "Yïnu cwøl jwøki"
-              : 'God wants you',
+              ? "Ki yïth jammi bëët dwøk met ec baŋ Jwøk."
+              : 'Always give thanks to God',
       "verse": _language == 'AMH'
           ? 'ወደ ፊልጵስዩስ ሰዎች 4:6-7'
           : _language == 'ANY'
@@ -176,25 +177,25 @@ class DailyVerse {
           ? 'ጌታ ቅርብ ነው። በነገር ሁሉ በጸሎትና በምልጃ ከምስጋና ጋር በእግዚአብሔር ዘንድ ልመናችሁን አስታውቁ እንጂ በአንዳች አትጨነቁ። '
               'አእምሮንም ሁሉ የሚያልፍ የእግዚአብሔር ሰላም ልባችሁንና አሳባችሁን በክርስቶስ ኢየሱስ ይጠብቃል።'
           : _language == 'ANY'
-              ? "6 Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
+              ? "Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
                   "ki yïth jammi bëët, gïn wäro manynyu "
                   "wäru pëënynyu ki Jwøk nou lämö, nou "
-                  "kwaya eni, nou dwøga met ec baŋe.\n"
-                  "7 'Ba leec cwïny man wø cïp Jwøki, na "
+                  "kwaya eni, nou dwøga met ec baŋe. "
+                  "'Ba leec cwïny man wø cïp Jwøki, na "
                   "näk ba løny ki par, cwïnynyu ogwøe "
                   "ka acaayu ki ri Krictø Jecu."
-              : '6 Do not be anxious about anything, '
+              : 'Do not be anxious about anything, '
                   'but in every situation, by prayer and petition, '
                   'with thanksgiving, present your requests to God. '
-                  '7 And the peace of God, which transcends all understanding, '
+                  'And the peace of God, which transcends all understanding, '
                   'will guard your hearts and your minds in Christ Jesus.'
     },
     {
       "shortText": _language == 'AMH'
           ? ''
           : _language == 'ANY'
-              ? "Jwøk mëër ki ïnï"
-              : 'God loves you',
+              ? "Jwøk bëëdö ki uni"
+              : 'God will be with you',
       "verse": _language == 'AMH'
           ? 'የዮሐንስ ራእይ 21:4'
           : _language == 'ANY'
@@ -203,7 +204,7 @@ class DailyVerse {
       "text": _language == 'AMH'
           ? 'እንባዎችንም ሁሉ ከዓይኖቻቸው ያብሳል፥ ሞትም ከእንግዲህ ወዲህ አይሆንም፥ ኀዘንም ቢሆን ወይም ጩኸት ወይም ሥቃይ ከእንግዲህ ወዲህ አይሆንም፥ የቀደመው ሥርዓት አልፎአልና ብሎ ሲናገር ሰማሁ።'
           : _language == 'ANY'
-              ? "Ba Jwøk ki dëëre obëëdö ki geni,\n 4 ni "
+              ? "Ba Jwøk ki dëëre obëëdö ki geni, ni "
                   "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe "
                   "gø këët. Ni bäŋ kïmmö, wala oduuru "
                   "mo di gøø, wala rääm këët. Kiper japa "
@@ -213,65 +214,147 @@ class DailyVerse {
                   'There will be no more death’ or mourning or '
                   'crying or pain, for the old order of things has passed away.”'
     },
-    // {
-    //   "shortText": "Yïnu cwøl jwøki",
-    //   "verse": "1 Piter 5:6-7",
-    //   "text": "6 Kiper manøgønø, døøyu dëëtu mo"
-    //       "mwöl nou ena cer Jwøk na teek, kiper"
-    //       "nee u røønye kanya näk kare.\n 7 Cïbu"
-    //       "gïï wø pär cwïnynyu ki geni cere,"
-    //       "kiper eni lääŋŋa uuni"
-    // },
-    // {
-    //   "shortText": "Jwøk mëër ki ïnï",
-    //   "verse": "Pilipay 2:3-4",
-    //   "text": "atöör, 'ba beerra man caarru"
-    //       "gïr jiy møga, ni beyø geni ki uuni, nou"
-    //       "mwöl.\n 4 'Ba kär dee ŋat ŋäc dëëre keere."
-    //       "'Ba uuni, beerra man ŋäyu jiy møga"
-    //       "thuwø."
-    // },
-    // {
-    //   "shortText": "Yïnu cwøl jwøki",
-    //   "verse": "Röm 8:28",
-    //   "text": "'Ba ŋääø ni Jwøk tïïö ri jammi bëët"
-    //       "nee bëënyge jï jøw wø mëër ki eni, jøøa"
-    //       "näk ee cwølø keda mana manynye."
-    // },
-    // {
-    //   "shortText": "Jwøk mëër ki ïnï",
-    //   "verse": "Jøcua 1:9",
-    //   "text": "9 Ennø, a köömma"
-    //       "ïïni. Mak riï ni bëëdï niï teek; ni ba"
-    //       "bwøk cwïnyï ni ba lwäyï, kiper a na"
-    //       "Wuuö Jwøk na näk Jwøk marï, a ena"
-    //       "buutï kany wø ciï yie jaak."
-    // },
-    // {
-    //   "shortText": "Yïnu cwøl jwøki",
-    //   "verse": "Mathiew 6:31-34",
-    //   "text": "31 Kiper manøgønø, kär"
-    //       "dee gïn lääŋŋu, nou köö, na ‹?Agïnaŋø"
-    //       "noo camø?› Nou köö, na ‹?Agïnaŋø noo"
-    //       "maadhø?› Nou köö, na ‹?Agïnaŋø noo"
-    //       "røø dëëtø?›\n 32 Kiper gïïögø bëët cac"
-    //       "juurre cayø. 'Ba Wääu ni en maal ŋääe"
-    //       "nou can ki gïïögø bëët.\n 33 'Ba kwøŋu buc"
-    //       "Jwøk ki beeny Jwøk cayø. Køøre nø,"
-    //       "gïïögø bëët owëëk uuni thuwø.\n"
-    //       "34 «Kiper manøgønø, kär dee gïn"
-    //       "lääŋŋu kiper diøø. Kiper diøø dëëre"
-    //       "olääŋŋe keere. Cäŋ man nø da moe."
-    // },
-
-    // {
-    //   "shortText": "Jwøk mëër ki ïnï",
-    //   "verse": "Röm 15:13",
-    //   "text": "13 'Ba Jwøk ni wø cïp ŋäädhe, cwïnynyu"
-    //       "opääŋe ki met ec mo päl ki mëër ki"
-    //       "køør mana jïëyu, kiper nee ŋäädhe"
-    //       "maru pälle ki køør teek Jwïëc Jwøk"
-    //       "na en kur keere"
-    // },
+    {
+      "shortText": _language == 'ANY'
+          ? "Jwøk lääŋŋa uuni"
+          : _language == 'AMH'
+              ? 'ከእግዚአብሔር ስለ እናንተ ያስባል'
+              : 'God cares for you',
+      "verse": _language == 'ANY'
+          ? "1 Piter 5:6-7"
+          : _language == 'AMH'
+              ? '1ኛ የጴጥሮስ መልእክት 5:6-7'
+              : '1 Peter 5:6-7',
+      "text": _language == 'ANY'
+          ? "Kiper manøgønø, døøyu dëëtu mo "
+              "mwöl nou ena cer Jwøk na teek, kiper "
+              "nee u røønye kanya näk kare. Cïbu "
+              "gïï wø pär cwïnynyu ki geni cere, "
+              "kiper eni lääŋŋa uuni"
+          : _language == 'AMH'
+              ? "እንግዲህ በጊዜው ከፍ እንዲያደርጋችሁ ከኃይለኛው ከእግዚአብሔር እጅ በታች ራሳችሁን አዋርዱ፤"
+                  "እርሱ ስለ እናንተ ያስባልና የሚያስጨንቃችሁን ሁሉ በእርሱ ላይ ጣሉት።"
+              : "So be humble under God’s powerful hand. Then he will lift you up when the right time comes."
+                  "Give all your worries to him, because he cares for you."
+    },
+    {
+      "shortText": _language == 'ANY'
+          ? "Kär dee ŋat ŋäc dëëre keere"
+          : _language == 'AMH'
+              ? 'እያንዳንዱ ለራሱ የሚጠቅመውን አይመልከት'
+              : 'Don’t be interested only in your own life',
+      "verse": _language == 'ANY'
+          ? "Pilipay 2:3-4"
+          : _language == 'AMH'
+              ? 'ወደ ፊልጵስዩስ ሰዎች 2: 3-4'
+              : 'Philippians 2:3-4',
+      "text": _language == 'ANY'
+          ? "atöör, 'ba beerra man caarru "
+              "gïr jiy møga, ni beyø geni ki uuni, nou "
+              "mwöl. 'Ba kär dee ŋat ŋäc dëëre keere. "
+              "'Ba uuni, beerra man ŋäyu jiy møga "
+              "thuwø."
+          : _language == 'AMH'
+              ? "ለወገኔ ይጠቅማል በማለት ወይም በከንቱ ውዳሴ ምክንያት አንድ እንኳ አታድርጉ፥ ነገር ግን እያንዳንዱ ባልንጀራው ከራሱ ይልቅ እንዲሻል በትሕትና ይቍጠር፤"
+                  "እያንዳንዱ ለራሱ የሚጠቅመውን አይመልከት፥ ለባልንጀራው ደግሞ እንጂ።"
+              : "In whatever you do, don’t let selfishness or pride be your guide. Be humble, and honor others more than yourselves."
+                  "Don’t be interested only in your own life, but care about the lives of others too."
+    },
+    {
+      "shortText": _language == 'ANY'
+          ? "Jwøk tïïö ri jammi bëët nee bëënyge"
+          : _language == 'AMH'
+              ? ''
+              : 'In everything God works for the good',
+      "verse": _language == 'ANY'
+          ? "Röm 8:28"
+          : _language == 'AMH'
+              ? 'ወደ ሮሜ ሰዎች 8:28'
+              : 'Romans 8:28',
+      "text": _language == 'ANY'
+          ? "'Ba ŋääø ni Jwøk tïïö ri jammi bëët "
+              "nee bëënyge jï jøw wø mëër ki eni, jøøa "
+              "näk ee cwølø keda mana manynye."
+          : _language == 'AMH'
+              ? "እግዚአብሔርንም ለሚወዱት እንደ አሳቡም ለተጠሩት ነገር ሁሉ ለበጎ እንዲደረግ እናውቃለን።"
+              : "We know that in everything God works for the good of those who love him. These are the people God chose, because that was his plan."
+    },
+    {
+      "shortText": _language == 'ANY'
+          ? "Jwøk ena buutï"
+          : _language == 'AMH'
+              ? 'እግዚአብሔር ከአንተ ጋር ነው'
+              : 'The lord is with you.',
+      "verse": _language == 'ANY'
+          ? "Jøcua 1:9"
+          : _language == "AMH"
+              ? 'መጽሐፈ ኢያሱ ወልደ ነዌ 1:9'
+              : 'Joshua 1:9',
+      "text": _language == 'ANY'
+          ? "Ennø, a köömma"
+              "ïïni. Mak riï ni bëëdï niï teek; ni ba"
+              "bwøk cwïnyï ni ba lwäyï, kiper a na"
+              "Wuuö Jwøk na näk Jwøk marï, a ena"
+              "buutï kany wø ciï yie jaak."
+          : _language == 'AMH'
+              ? "በምትሄድበት ሁሉ አምላክህ እግዚአብሔር ከአንተ ጋር ነውና ጽና፥ አይዞህ፤ አትፍራ፥ አትደንግጥ ብዬ አላዘዝሁህምን?"
+              : "Remember, I commanded you to be strong and brave. Don’t be afraid, because the Lord your God will be with you wherever you go.”"
+    },
+    {
+      "shortText": _language == 'ANY'
+          ? "kär dee gïn "
+              "lääŋŋu kiper diøø"
+          : _language == 'AMH'
+              ? 'ለነገ አትጨነቁ'
+              : 'Don’t worry about tomorrow.',
+      "verse": _language == 'ANY'
+          ? "Mathiew 6:31-34"
+          : _language == 'AMH'
+              ? 'የማቴዎስ ወንጌል 6:31-34'
+              : "Mathew 6:31-34",
+      "text": _language == 'ANY'
+          ? "Kiper manøgønø, kär "
+              "dee gïn lääŋŋu, nou köö, na ‹?Agïnaŋø "
+              "noo camø?› Nou köö, na ‹?Agïnaŋø noo "
+              "maadhø?› Nou köö, na ‹?Agïnaŋø noo "
+              "røø dëëtø?› Kiper gïïögø bëët cac "
+              "juurre cayø. 'Ba Wääu ni en maal ŋääe "
+              "nou can ki gïïögø bëët.'Ba kwøŋu buc "
+              "Jwøk ki beeny Jwøk cayø. Køøre nø, "
+              "gïïögø bëët owëëk uuni thuwø. "
+              " «Kiper manøgønø, kär dee gïn "
+              "lääŋŋu kiper diøø. Kiper diøø dëëre "
+              "olääŋŋe keere. Cäŋ man nø da moe."
+          : _language == 'AMH'
+              ? "እንግዲህ። ምን እንበላለን? ምንስ እንጠጣለን? ምንስ እንለብሳለን? ብላችሁ አትጨነቁ፤"
+                  " ይህንስ ሁሉ አሕዛብ ይፈልጋሉ፤ ይህ ሁሉ እንዲያስፈልጋችሁ የሰማዩ አባታችሁ ያውቃልና።"
+                  " ነገር ግን አስቀድማችሁ የእግዚአብሔርን መንግሥት ጽድቁንም ፈልጉ፥ ይህም ሁሉ ይጨመርላችኋል።"
+                  " ነገ ለራሱ ይጨነቃልና ለነገ አትጨነቁ፤ ለቀኑ ክፋቱ ይበቃዋል።"
+              : "“Don’t worry and say, ‘What will we eat?’ or ‘What will we drink?’ or ‘What will we wear?’"
+                  "That’s what those people who don’t know God are always thinking about. Don’t worry, because your Father in heaven knows that you need all these things."
+                  "What you should want most is God’s kingdom and doing what he wants you to do. Then he will give you all these other things you need."
+                  "So don’t worry about tomorrow. Each day has enough trouble of its own. Tomorrow will have its own worries."
+    },
+    {
+      "shortText": _language == 'ANY'
+          ? "Cwïnynyu opääŋ Jwøki ki mëër"
+          : _language == 'AMH'
+              ? 'የተስፋ አምላክም ደስታንና ሰላምን ሁሉ ይሙላባችሁ'
+              : 'God will fill you with joy and peace',
+      "verse": _language == "ANY"
+          ? "Röm 15:13"
+          : _language == "AMH"
+              ? 'ወደ ሮሜ ሰዎች 15:13'
+              : "Romans 15:13",
+      "text": _language == "ANY"
+          ? "'Ba Jwøk ni wø cïp ŋäädhe, cwïnynyu"
+              "opääŋe ki met ec mo päl ki mëër ki"
+              "køør mana jïëyu, kiper nee ŋäädhe"
+              "maru pälle ki køør teek Jwïëc Jwøk"
+              "na en kur keere"
+          : _language == 'AMH'
+              ? "የተስፋ አምላክም በመንፈስ ቅዱስ ኃይል በተስፋ እንድትበዙ በማመናችሁ ደስታንና ሰላምን ሁሉ ይሙላባችሁ።"
+              : "I pray that the God who gives hope will fill you with much joy and peace as you trust in him. Then you will have more and more hope, and it will flow out of you by the power of the Holy Spirit."
+    },
   ];
 }

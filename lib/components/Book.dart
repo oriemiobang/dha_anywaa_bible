@@ -112,9 +112,14 @@ class AnywaaChapter {
   String id;
   String name;
   String? title;
+  String? author;
 
   AnywaaChapter(
-      {required this.verses, required this.id, required this.name, this.title});
+      {required this.verses,
+      required this.id,
+      required this.name,
+      this.title,
+      this.author});
   factory AnywaaChapter.fromJson(Map<String, dynamic> json) {
     var list = json['text'] as List;
     List<AnywaaVerse> chaptersList =
@@ -124,6 +129,7 @@ class AnywaaChapter {
       id: json['ID'] ?? '',
       verses: chaptersList,
       title: json['title'] ?? '',
+      author: json['author'] ?? '',
     );
   }
 }

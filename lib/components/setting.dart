@@ -60,7 +60,12 @@ class _SettingState extends State<Setting> {
 
     setState(() {
       versionAbbrev = version[0];
-      versionName = languageVersion.substring(versionAbbrev.length + 1);
+
+      if (languageVersion != "ANY") {
+        versionName = languageVersion.substring(versionAbbrev.length + 1);
+      } else {
+        versionName = languageVersion;
+      }
     });
   }
 
@@ -176,9 +181,17 @@ class _SettingState extends State<Setting> {
                     width: double.infinity,
                     decoration: const BoxDecoration(color: Colors.transparent),
                     child: Text(
-                      "Wïlöölö Dwøl nutö, ni Dwørøgøøni ena"
-                      " kanya ciel ki Jwøk, ni Dwørøgøøni"
-                      " beeye Jwøk.",
+                      versionAbbrev == "ANY"
+                          ? "Wïlöölö Dwøl nutö, ni Dwørøgøøni ena kanya ciel ki Jwøk, ni Dwørøgøøni beeye Jwøk."
+                              "Wïlöölö eni ena kanya ciel ki Jwøk."
+                              "Ni jammi bëët cwääc ka ree, ni bäŋ gïn mo ocwääö ri moa cwääc bëët, ni eni tøør ree."
+                          : versionAbbrev == "AMH"
+                              ? "በመጀመሪያው ቃል ነበረ፥ ቃልም በእግዚአብሔር ዘንድ ነበረ፥ ቃልም እግዚአብሔር ነበረ።"
+                                  "ይህ በመጀመሪያው በእግዚአብሔር ዘንድ ነበረ።"
+                                  "ሁሉ በእርሱ ሆነ፥ ከሆነውም አንዳች ስንኳ ያለ እርሱ አልሆነም።"
+                              : "Before the world began, the Word was there. The Word was with God, and the Word was God."
+                                  "He was there with God in the beginning."
+                                  "Everything was made through him, and nothing was made without him.",
                       style: TextStyle(
                           fontSize: _currentSliderValue,
                           fontFamily: currentFontStyle),

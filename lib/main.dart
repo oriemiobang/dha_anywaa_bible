@@ -9,6 +9,7 @@ import 'package:dha_anywaa_bible/classes/font_style.dart';
 import 'package:dha_anywaa_bible/components/differentVerse.dart';
 import 'package:dha_anywaa_bible/components/loading.dart';
 import 'package:dha_anywaa_bible/components/pray.dart';
+import 'package:dha_anywaa_bible/components/privacy_policy.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
@@ -101,6 +102,7 @@ class _MyAppState extends State<MyApp> {
             '/chooseBible': (context) => const ChooseBible(),
             '/differentVerse': (context) => DifferentVerse(),
             '/about': (context) => const About(),
+            '/privacy_policy': (context) => PrivacyPolicy(),
           },
           title: 'Weel jwok',
           debugShowCheckedModeBanner: false,

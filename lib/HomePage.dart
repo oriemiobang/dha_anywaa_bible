@@ -840,6 +840,8 @@ class _MyHomePageState extends State<HomePage> {
     }
   }
 
+  // share the app
+
   @override
   Widget build(BuildContext context) {
     Brightness currentTheme = Theme.of(context).brightness;
@@ -996,13 +998,13 @@ class _MyHomePageState extends State<HomePage> {
                       'Settings',
                     ),
                   ),
-                  const ListTile(
-                    leading: Icon(Icons.share),
-                    title: Text(
-                      'Share',
-                      style: TextStyle(),
-                    ),
-                  ),
+                  // const ListTile(
+                  //   leading: Icon(Icons.share),
+                  //   title: Text(
+                  //     'Share',
+                  //     style: TextStyle(),
+                  //   ),
+                  // ),
                   // const ListTile(
                   //   leading: Icon(Icons.help_outline),
                   //   title: Text(
@@ -1418,6 +1420,32 @@ class _MyHomePageState extends State<HomePage> {
                                                             color: Colors.grey,
                                                             fontStyle: FontStyle
                                                                 .italic),
+                                                      ),
+                                                    ),
+                                                    Visibility(
+                                                      visible: book.author!
+                                                              .isNotEmpty &&
+                                                          (listindex ==
+                                                              (book.verses
+                                                                      .length -
+                                                                  1)),
+                                                      child: Column(
+                                                        children: [
+                                                          const SizedBox(
+                                                              height: 20),
+                                                          Text(
+                                                            book.author!,
+                                                            style: const TextStyle(
+                                                                fontStyle:
+                                                                    FontStyle
+                                                                        .italic,
+                                                                color:
+                                                                    Colors.grey,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                        ],
                                                       ),
                                                     )
                                                   ],
