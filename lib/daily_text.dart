@@ -31,7 +31,7 @@ class _DailyTextState extends State<DailyText>
     super.initState();
     _getItem();
     _controller =
-        AnimationController(vsync: this, duration: Duration(seconds: 7));
+        AnimationController(vsync: this, duration: const Duration(seconds: 7));
 
     _opacity = Tween<double>(begin: 0, end: 1).animate(_controller);
     // TODO: implement initState
@@ -71,7 +71,7 @@ class _DailyTextState extends State<DailyText>
 
   Future<void> _addItem() async {
     await SQLHelper.createItem(0);
-    final items = await SQLHelper.getItems();
+    // final items = await SQLHelper.getItems();
     // print(' items: $items');
   }
 
@@ -150,7 +150,7 @@ class _DailyTextState extends State<DailyText>
                                           currentText.length <= 125
                                               ? _languages == 'AMH'
                                                   ? 25
-                                                  : 50
+                                                  : 30
                                               : currentText.length > 310
                                                   ? 18
                                                   : _languages == 'AMH'

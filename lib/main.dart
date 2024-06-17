@@ -36,6 +36,7 @@ Future<void> getItem() async {
   }
 }
 
+@pragma('vm:entry-point')
 void callbackDispatcher() {
   Workmanager().executeTask((taskName, inputData) async {
     await getItem();
@@ -67,19 +68,34 @@ class _MyAppState extends State<MyApp> {
   SelectedFontStyle style = SelectedFontStyle()..init();
   @override
   void initState() {
+    Duration initialDelay = _calculateInitialDelay();
     super.initState();
     Workmanager().registerPeriodicTask('uniqueName', 'taskName',
-        frequency: const Duration(minutes: 15),
+        frequency: const Duration(days: 1),
+        initialDelay: initialDelay,
         constraints: Constraints(networkType: NetworkType.not_required));
     Once.runOnce('key', callback: () {
       style.setBibleVersion('ANY/OT/GEN.json');
       style.setFontStyle('UntitledSerif');
       style.setPage(0);
-      fontSize.setFontSize(18);
+      fontSize.setFontSize(20);
       style.setLanguageVersion('ANY');
       style.setBookIndex(0);
       style.setTestementNum(0);
     });
+  }
+
+  Duration _calculateInitialDelay() {
+    final now = DateTime.now();
+    final nextMorning =
+        DateTime(now.year, now.month, now.day, 7, 0, 0); // Next 7:00 AM
+    if (now.isAfter(nextMorning)) {
+      // If it's already past 7:00 AM today, set for 7:00 AM tomorrow
+      return nextMorning.add(const Duration(days: 1)).difference(now);
+    } else {
+      // Otherwise, set for 7:00 AM today
+      return nextMorning.difference(now);
+    }
   }
 
   // This widget is the root of your application.

@@ -37,7 +37,30 @@ class DailyVerse {
     //  ø     ö     ï    ë  ä
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'ሁልጊዜ በጌታ ደስ ይበላችሁ'
+          : _language == 'ANY'
+              ? "Yïthu mïnge ki ri Wuuö cooth"
+              : 'Rejoice in the Lord alway',
+      "verse": _language == 'AMH'
+          ? 'ወደ ፊልጵስዩስ ሰዎች 4:4, 6, 7'
+          : _language == 'ANY'
+              ? "Pilipay 4:4, 6, 7"
+              : 'Philippians 4 : 4, 6, 7',
+      "text": _language == 'AMH'
+          ? "ሁልጊዜ በጌታ ደስ ይበላችሁ፤ ደግሜ እላለሁ፥ ደስ ይበላችሁ። "
+              "ጌታ ቅርብ ነው። በነገር ሁሉ በጸሎትና በምልጃ ከምስጋና ጋር በእግዚአብሔር ዘንድ ልመናችሁን አስታውቁ እንጂ በአንዳች አትጨነቁ። "
+              "አእምሮንም ሁሉ የሚያልፍ የእግዚአብሔር ሰላም ልባችሁንና አሳባችሁን በክርስቶስ ኢየሱስ ይጠብቃል።"
+          : _language == 'ANY'
+              ? "Yïthu mïnge ki ri Wuuö cooth, naa cäŋa gø caannø jïïu, ni yïthu mïnge. "
+                  "Kär dee gïn lääŋŋu ki cwïnynyu, 'ba ki yïth jammi bëët, gïn wäro manynyu wäru pëënynyu ki Jwøk nou lämö, nou kwaya eni, nou dwøga met ec baŋe. "
+                  "'Ba leec cwïny man wø cïp Jwøki, na näk ba løny ki par, cwïnynyu ogwøe ka acaayu ki ri Krictø Jecu."
+              : "Rejoice in the Lord alway: and again I say, Rejoice. "
+                  "Let your moderation be known unto all men. The Lord is at hand. "
+                  "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God."
+    },
+    {
+      "shortText": _language == 'AMH'
+          ? 'እነሆ በደጅ ቆሜ አንኳኳለሁ'
           : _language == 'ANY'
               ? "Yïnu cwøl jwøki"
               : 'God wants you!',
@@ -60,7 +83,7 @@ class DailyVerse {
     },
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'ድል ለነሣው ከእኔ ጋር በዙፋኔ ላይ ይቀመጥ ዘንድ እሰጠዋለሁ'
           : _language == 'ANY'
               ? "Ciri kir cïppï"
               : 'Never give up!',
@@ -86,7 +109,8 @@ class DailyVerse {
           : _language == 'ANY'
               ? "jammi bëët cwääc"
                   "ki ri jecu"
-              : 'God is everywhere!',
+              : 'Through him '
+                  'all things were made;',
       "verse": _language == 'AMH'
           ? 'የዮሐንስ ወንጌል 1: 1-5'
           : _language == 'ANY'
@@ -164,7 +188,7 @@ class DailyVerse {
     },
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'አትጨነቁ።'
           : _language == 'ANY'
               ? "Ki yïth jammi bëët dwøk met ec baŋ Jwøk."
               : 'Always give thanks to God',
@@ -190,9 +214,10 @@ class DailyVerse {
                   'And the peace of God, which transcends all understanding, '
                   'will guard your hearts and your minds in Christ Jesus.'
     },
+
     {
       "shortText": _language == 'AMH'
-          ? ''
+          ? 'እግዚአብሔርም እርሱ ራሱ ከእነርሱ ጋር ሆኖ አምላካቸው ይሆናል፤'
           : _language == 'ANY'
               ? "Jwøk bëëdö ki uni"
               : 'God will be with you',
@@ -202,7 +227,7 @@ class DailyVerse {
               ? "Mana Nyooth 21:4"
               : 'Revelation 21 : 4',
       "text": _language == 'AMH'
-          ? 'እንባዎችንም ሁሉ ከዓይኖቻቸው ያብሳል፥ ሞትም ከእንግዲህ ወዲህ አይሆንም፥ ኀዘንም ቢሆን ወይም ጩኸት ወይም ሥቃይ ከእንግዲህ ወዲህ አይሆንም፥ የቀደመው ሥርዓት አልፎአልና ብሎ ሲናገር ሰማሁ።'
+          ? 'እግዚአብሔርም እርሱ ራሱ ከእነርሱ ጋር ሆኖ አምላካቸው ይሆናል፤ እንባዎችንም ሁሉ ከዓይኖቻቸው ያብሳል፥ ሞትም ከእንግዲህ ወዲህ አይሆንም፥ ኀዘንም ቢሆን ወይም ጩኸት ወይም ሥቃይ ከእንግዲህ ወዲህ አይሆንም፥ የቀደመው ሥርዓት አልፎአልና ብሎ ሲናገር ሰማሁ።'
           : _language == 'ANY'
               ? "Ba Jwøk ki dëëre obëëdö ki geni, ni "
                   "pooc pï nyeŋge bëët, ni ö thøøe ni bäŋe "
@@ -249,11 +274,8 @@ class DailyVerse {
               ? 'ወደ ፊልጵስዩስ ሰዎች 2: 3-4'
               : 'Philippians 2:3-4',
       "text": _language == 'ANY'
-          ? "atöör, 'ba beerra man caarru "
-              "gïr jiy møga, ni beyø geni ki uuni, nou "
-              "mwöl. 'Ba kär dee ŋat ŋäc dëëre keere. "
-              "'Ba uuni, beerra man ŋäyu jiy møga "
-              "thuwø."
+          ? "Ni bäŋe gïn mo tïïyu ki cøl cwïny wala atöör, 'ba beerra man caarru gïr jiy møga, ni beyø geni ki uuni, nou mwöl."
+              "'Ba kär dee ŋat ŋäc dëëre keere. 'Ba uuni, beerra man ŋäyu jiy møga thuwø."
           : _language == 'AMH'
               ? "ለወገኔ ይጠቅማል በማለት ወይም በከንቱ ውዳሴ ምክንያት አንድ እንኳ አታድርጉ፥ ነገር ግን እያንዳንዱ ባልንጀራው ከራሱ ይልቅ እንዲሻል በትሕትና ይቍጠር፤"
                   "እያንዳንዱ ለራሱ የሚጠቅመውን አይመልከት፥ ለባልንጀራው ደግሞ እንጂ።"
@@ -264,7 +286,7 @@ class DailyVerse {
       "shortText": _language == 'ANY'
           ? "Jwøk tïïö ri jammi bëët nee bëënyge"
           : _language == 'AMH'
-              ? ''
+              ? 'እግዚአብሔርንም ነገር ሁሉ ለበጎ እንዲደረግ እናውቃለን።'
               : 'In everything God works for the good',
       "verse": _language == 'ANY'
           ? "Röm 8:28"
