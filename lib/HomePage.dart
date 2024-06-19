@@ -1,9 +1,12 @@
 import 'dart:convert';
 
+import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
+import 'package:dha_anywaa_bible/classes/position_data.dart';
 import 'package:dha_anywaa_bible/components/Book.dart';
 import 'package:dha_anywaa_bible/components/account.dart';
 import 'package:dha_anywaa_bible/components/chapter_list.dart';
 
+// import 'package:audioplayers/audioplayers.dart';
 import 'package:dha_anywaa_bible/classes/SQLHelper.dart';
 import 'package:dha_anywaa_bible/classes/color_highlight.dart';
 import 'package:dha_anywaa_bible/classes/dailyText.dart';
@@ -15,6 +18,8 @@ import 'package:dha_anywaa_bible/components/differentVerse.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:rxdart/rxdart.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
@@ -62,6 +67,9 @@ class _MyHomePageState extends State<HomePage> {
         englishBook = EnglishBook.fromJson(engJsonResponse);
         // title = englishBook!.name;
       });
+      if (player.playing) {
+        player.stop();
+      }
     } catch (e) {
       print('english problem');
       print(e);
@@ -76,6 +84,11 @@ class _MyHomePageState extends State<HomePage> {
         anywaaBook = AnywaaBook.fromJson(anyJsonResponse);
         title = anywaaBook!.chapters[pageIndex].name;
       });
+
+      var link = anywaaBook!.chapters[pageIndex].audioLink;
+      if (link != null) {
+        player.setUrl(link);
+      }
     } catch (e) {
       print('dha anywaa problem ghgh');
       print(e);
@@ -90,6 +103,9 @@ class _MyHomePageState extends State<HomePage> {
         amharicBook = AmharicChapters.fromJson(amhJsonResponse);
         title = amharicBook!.title;
       });
+      if (player.playing) {
+        player.stop();
+      }
     } catch (e) {
       print('amharic problem');
       print(e);
@@ -104,6 +120,10 @@ class _MyHomePageState extends State<HomePage> {
   static String amhBibleVersion = '';
   String _language = '';
   static int mypage = 0;
+  bool isPlaying = false;
+  bool showPlay = false;
+  late int bookIndex;
+  late AudioPlayer player;
   void getFontSize() async {
     var fontsize = await fontSize.getFontSize();
     var fontStyle = await style.getFontStyle();
@@ -113,7 +133,9 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
-  void getBibleVersion({bool? fromChoosing}) async {
+  void getBibleVersion(
+      {bool? fromChoosing, bool? fromInState, bool? load}) async {
+    bookIndex = await style.getTestementNum();
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
     int currentPage = await style.getPage();
@@ -123,30 +145,31 @@ class _MyHomePageState extends State<HomePage> {
     print(bibleVersion);
     print(language);
 
-    if (language.split(' ')[0] == 'AMH') {
-      setState(() {
-        amhBibleVersion = bibleVersion;
-        // print(amhBibleVersion);
-        amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
-      });
-      amhLoadData();
-    } else if (language.split(' ')[0] == 'ANY') {
-      setState(() {
-        anywaaJsonString = 'assets/holybooks/$bibleVersion';
-      });
-      anywaaLoadData();
-    } else {
-      setState(() {
-        englishJsonString = 'assets/holybooks/$bibleVersion';
-        for (var nowVersion in bookList) {
-          if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
-            title = nowVersion['title']!;
+    if (load != null) {
+      if (language.split(' ')[0] == 'AMH') {
+        setState(() {
+          amhBibleVersion = bibleVersion;
+          // print(amhBibleVersion);
+          amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+        });
+        amhLoadData();
+      } else if (language.split(' ')[0] == 'ANY') {
+        setState(() {
+          anywaaJsonString = 'assets/holybooks/$bibleVersion';
+        });
+        anywaaLoadData();
+      } else {
+        setState(() {
+          englishJsonString = 'assets/holybooks/$bibleVersion';
+          for (var nowVersion in bookList) {
+            if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
+              title = nowVersion['title']!;
+            }
           }
-        }
-      });
-      engLoadData();
+        });
+        engLoadData();
+      }
     }
-
     setState(() {
       pageIndex = currentPage;
       getFontSize();
@@ -166,13 +189,27 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
+  Stream<PositionData> get _positionDataStream =>
+      Rx.combineLatest3<Duration, Duration, Duration?, PositionData>(
+        player.positionStream,
+        player.bufferedPositionStream,
+        player.durationStream,
+        (position, bufferedPosition, duration) => PositionData(
+          position,
+          bufferedPosition,
+          duration ?? Duration.zero,
+        ),
+      );
+
   @override
   void initState() {
+    player = AudioPlayer();
+
     refresher();
     super.initState();
     controller.addListener(listen);
     info();
-    getBibleVersion();
+    getBibleVersion(fromInState: true, load: true);
   }
 
   Color selectedColor = Colors.blue;
@@ -199,6 +236,7 @@ class _MyHomePageState extends State<HomePage> {
   bool isVisible = true;
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
   UniqueKey key = UniqueKey();
+
   final Uri webUrl = Uri.parse('https://oriemiobangoriemi.netlify.app');
 
   @override
@@ -208,6 +246,7 @@ class _MyHomePageState extends State<HomePage> {
     controller.dispose();
     pageController.dispose();
     super.dispose();
+    player.dispose();
   }
 
   show() {
@@ -842,6 +881,14 @@ class _MyHomePageState extends State<HomePage> {
 
   // share the app
 
+  void playSong() async {
+    if (!player.playing) {
+      await player.play();
+    } else {
+      await player.pause();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Brightness currentTheme = Theme.of(context).brightness;
@@ -927,7 +974,7 @@ class _MyHomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.pushNamed(context, '/chooseBible').then((_) {
                   languageVerson();
-                  getBibleVersion();
+                  getBibleVersion(load: true);
                 });
               },
               child: Text(
@@ -961,1269 +1008,1443 @@ class _MyHomePageState extends State<HomePage> {
       }
     }
 
-    return Scaffold(
-      drawer: _selectedIndex == 2
-          ? Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: [
-                  const DrawerHeader(
-                    child: Column(
+    return StreamBuilder<PlayerState>(
+        stream: player.playerStateStream,
+        builder: (context, snapshot) {
+          final playerState = snapshot.data;
+          final processingState = playerState?.processingState;
+          final playing = playerState?.playing;
+          if (playing != null) {
+            isPlaying = playing;
+          }
+
+          return Scaffold(
+            drawer: _selectedIndex == 2
+                ? Drawer(
+                    child: ListView(
+                      padding: EdgeInsets.zero,
                       children: [
-                        Image(
-                            height: 110,
-                            image: AssetImage('assets/images/weel_jwok.png')),
-                        Text(
-                          "Wëël Jwøk",
-                          style: TextStyle(
-                              color: Colors.grey, fontWeight: FontWeight.bold),
-                        )
+                        const DrawerHeader(
+                          child: Column(
+                            children: [
+                              Image(
+                                  height: 110,
+                                  image: AssetImage(
+                                      'assets/images/weel_jwok.png')),
+                              Text(
+                                "Wëël Jwøk",
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.settings),
+                          onTap: () {
+                            setState(() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const Setting()),
+                              ).then((value) {
+                                getBibleVersion();
+                              });
+                            });
+                          },
+                          title: const Text(
+                            'Settings',
+                          ),
+                        ),
+                        // const ListTile(
+                        //   leading: Icon(Icons.share),
+                        //   title: Text(
+                        //     'Share',
+                        //     style: TextStyle(),
+                        //   ),
+                        // ),
+                        // const ListTile(
+                        //   leading: Icon(Icons.help_outline),
+                        //   title: Text(
+                        //     'Help',
+                        //     style: TextStyle(),
+                        //   ),
+                        // ),
+                        ListTile(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/about');
+                          },
+                          leading: const Icon(Icons.menu_book_rounded),
+                          title: const Text(
+                            'About the app',
+                            style: TextStyle(),
+                          ),
+                        ),
+                        ListTile(
+                          onTap: () {
+                            _openUrl();
+                          },
+                          leading: const Icon(
+                            Icons.person,
+                          ),
+                          title: const Text(
+                            'About the developer',
+                            style: TextStyle(),
+                          ),
+                        ),
                       ],
                     ),
-                  ),
-                  ListTile(
-                    leading: const Icon(Icons.settings),
-                    onTap: () {
-                      setState(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Setting()),
-                        ).then((value) {
-                          getBibleVersion();
-                        });
-                      });
-                    },
-                    title: const Text(
-                      'Settings',
-                    ),
-                  ),
-                  // const ListTile(
-                  //   leading: Icon(Icons.share),
-                  //   title: Text(
-                  //     'Share',
-                  //     style: TextStyle(),
-                  //   ),
-                  // ),
-                  // const ListTile(
-                  //   leading: Icon(Icons.help_outline),
-                  //   title: Text(
-                  //     'Help',
-                  //     style: TextStyle(),
-                  //   ),
-                  // ),
-                  ListTile(
-                    onTap: () {
-                      Navigator.pushNamed(context, '/about');
-                    },
-                    leading: const Icon(Icons.menu_book_rounded),
-                    title: const Text(
-                      'About the app',
-                      style: TextStyle(),
-                    ),
-                  ),
-                  ListTile(
-                    onTap: () {
-                      _openUrl();
-                    },
-                    leading: const Icon(
-                      Icons.person,
-                    ),
-                    title: const Text(
-                      'About the developer',
-                      style: TextStyle(),
-                    ),
-                  ),
-                ],
-              ),
-            )
-          : null,
-      body: _selectedIndex == 1
-          ? _language == 'AMH'
-              ? amharicBook == null
-                  ? const Center(
-                      child: SpinKitWaveSpinner(
-                        color: Color.fromARGB(255, 13, 33, 65),
-                        size: 50.0,
-                      ),
-                    )
-                  : PageView.builder(
-                      key: key,
-                      controller: pageController,
-                      onPageChanged: (index) {
-                        setPageIndex(index: index);
-                        print('onPageChanged');
-                        setState(() {
-                          getBibleVersion();
-                          if (amharicBook!.chapters.length - 1 == index) {
-                            atEnd = true;
-                            // print('end');
-                          } else if (index == 0) {
-                            // print('beginning');
-                            atBeggining = true;
-                          } else {
-                            atEnd = false;
-                            atBeggining = false;
-                          }
-                        });
-                      },
-                      itemCount: amharicBook!.chapters.length,
-                      itemBuilder: (BuildContext context, int pageIndex) {
-                        var amhbook = amharicBook!.chapters[pageIndex];
-
-                        return Padding(
-                          padding: const EdgeInsets.only(
-                              top: 8, left: 10, bottom: 0, right: 9),
-                          child: ListView.builder(
-                              key: key,
-                              controller: controller,
-                              itemCount: amharicBook!
-                                  .chapters[pageIndex].verses.length,
-                              itemBuilder:
-                                  (BuildContext context, int listIndex) {
-                                var amhchapters = amharicBook!
-                                    .chapters[pageIndex].verses[listIndex];
-                                var nextAmhChapter = amhchapters;
-                                if (amhbook.verses.length - 1 > listIndex) {
-                                  nextAmhChapter = amharicBook!
-                                      .chapters[pageIndex]
-                                      .verses[listIndex + 1];
+                  )
+                : null,
+            body: _selectedIndex == 1
+                ? _language == 'AMH'
+                    ? amharicBook == null
+                        ? const Center(
+                            child: SpinKitWaveSpinner(
+                              color: Color.fromARGB(255, 13, 33, 65),
+                              size: 50.0,
+                            ),
+                          )
+                        : PageView.builder(
+                            key: key,
+                            controller: pageController,
+                            onPageChanged: (index) {
+                              setPageIndex(index: index);
+                              print('onPageChanged');
+                              setState(() {
+                                getBibleVersion();
+                                if (amharicBook!.chapters.length - 1 == index) {
+                                  atEnd = true;
+                                  // print('end');
+                                } else if (index == 0) {
+                                  // print('beginning');
+                                  atBeggining = true;
+                                } else {
+                                  atEnd = false;
+                                  atBeggining = false;
                                 }
-                                return Column(
-                                  children: [
-                                    listIndex == 0
-                                        ? Text(
-                                            amharicBook!.title,
-                                            style: const TextStyle(
-                                                fontSize: 22,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.grey),
-                                          )
-                                        : const Visibility(
-                                            visible: false, child: Text('')),
-                                    listIndex == 0
-                                        ? Text(
-                                            amhbook.chapter,
-                                            style: const TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 72),
-                                          )
-                                        : const Visibility(
-                                            visible: false,
-                                            child: Text('data')),
-                                    Padding(
-                                      padding: amhbook.verses.length - 1 ==
-                                              listIndex
-                                          ? const EdgeInsets.only(bottom: 80)
-                                          : EdgeInsets.zero,
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          currentBibleVerse = amhchapters;
-                                          currentVerseIndex = listIndex;
-                                          markText(
-                                              index: listIndex,
-                                              chapterName: amharicBook!.title,
-                                              text: amhchapters,
-                                              chapterNumber: amhbook.chapter,
-                                              chapterId: '${listIndex + 1}',
-                                              textId: currentBibleVerse);
-                                        },
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            amhchapters == '' ||
-                                                    amhchapters == '-'
-                                                ? const Visibility(
-                                                    visible: false,
-                                                    child: Text(''))
-                                                : Text(
-                                                    '${listIndex + 1}  ',
-                                                    style: TextStyle(
-                                                        fontFamily: currentFont,
-                                                        fontSize:
-                                                            _currentFontSize,
-                                                        color: Colors.grey),
-                                                  ),
-                                            amhchapters == '' ||
-                                                    amhchapters == '-'
-                                                ? const Visibility(
-                                                    visible: false,
-                                                    child: Text(''))
-                                                : Expanded(
-                                                    child: RichText(
-                                                      text: TextSpan(
-                                                        style:
-                                                            DefaultTextStyle.of(
-                                                                    context)
-                                                                .style,
-                                                        children: [
-                                                          TextSpan(
-                                                            text: amhchapters,
-                                                            style: TextStyle(
+                              });
+                            },
+                            itemCount: amharicBook!.chapters.length,
+                            itemBuilder: (BuildContext context, int pageIndex) {
+                              var amhbook = amharicBook!.chapters[pageIndex];
+
+                              return Padding(
+                                padding: const EdgeInsets.only(
+                                    top: 8, left: 10, bottom: 0, right: 9),
+                                child: ListView.builder(
+                                    key: key,
+                                    controller: controller,
+                                    itemCount: amharicBook!
+                                        .chapters[pageIndex].verses.length,
+                                    itemBuilder:
+                                        (BuildContext context, int listIndex) {
+                                      var amhchapters = amharicBook!
+                                          .chapters[pageIndex]
+                                          .verses[listIndex];
+                                      var nextAmhChapter = amhchapters;
+                                      if (amhbook.verses.length - 1 >
+                                          listIndex) {
+                                        nextAmhChapter = amharicBook!
+                                            .chapters[pageIndex]
+                                            .verses[listIndex + 1];
+                                      }
+                                      return Column(
+                                        children: [
+                                          listIndex == 0
+                                              ? Text(
+                                                  amharicBook!.title,
+                                                  style: const TextStyle(
+                                                      fontSize: 22,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.grey),
+                                                )
+                                              : const Visibility(
+                                                  visible: false,
+                                                  child: Text('')),
+                                          listIndex == 0
+                                              ? Text(
+                                                  amhbook.chapter,
+                                                  style: const TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 72),
+                                                )
+                                              : const Visibility(
+                                                  visible: false,
+                                                  child: Text('data')),
+                                          Padding(
+                                            padding:
+                                                amhbook.verses.length - 1 ==
+                                                        listIndex
+                                                    ? const EdgeInsets.only(
+                                                        bottom: 80)
+                                                    : EdgeInsets.zero,
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                currentBibleVerse = amhchapters;
+                                                currentVerseIndex = listIndex;
+                                                markText(
+                                                    index: listIndex,
+                                                    chapterName:
+                                                        amharicBook!.title,
+                                                    text: amhchapters,
+                                                    chapterNumber:
+                                                        amhbook.chapter,
+                                                    chapterId:
+                                                        '${listIndex + 1}',
+                                                    textId: currentBibleVerse);
+                                              },
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  amhchapters == '' ||
+                                                          amhchapters == '-'
+                                                      ? const Visibility(
+                                                          visible: false,
+                                                          child: Text(''))
+                                                      : Text(
+                                                          '${listIndex + 1}  ',
+                                                          style: TextStyle(
                                                               fontFamily:
                                                                   currentFont,
                                                               fontSize:
                                                                   _currentFontSize,
-                                                              backgroundColor: _highlight
-                                                                  .map((verse) => verse[
-                                                                              'id'] ==
-                                                                          amhchapters
-                                                                      ? colorList[
-                                                                          verse[
-                                                                              'color']]
-                                                                      : null)
-                                                                  .firstWhere(
-                                                                      (color) =>
-                                                                          color !=
-                                                                          null,
-                                                                      orElse: () =>
-                                                                          Colors
-                                                                              .transparent),
-                                                              decoration: markedText
-                                                                      .any((dic) =>
-                                                                          dic['text'] ==
-                                                                          amhchapters)
-                                                                  ? TextDecoration
-                                                                      .underline
-                                                                  : null,
-                                                              decorationStyle: markedText
-                                                                      .any((dic) =>
-                                                                          dic['text'] ==
-                                                                          amhchapters)
-                                                                  ? TextDecorationStyle
-                                                                      .dashed
-                                                                  : null,
+                                                              color:
+                                                                  Colors.grey),
+                                                        ),
+                                                  amhchapters == '' ||
+                                                          amhchapters == '-'
+                                                      ? const Visibility(
+                                                          visible: false,
+                                                          child: Text(''))
+                                                      : Expanded(
+                                                          child: RichText(
+                                                            text: TextSpan(
+                                                              style: DefaultTextStyle
+                                                                      .of(context)
+                                                                  .style,
+                                                              children: [
+                                                                TextSpan(
+                                                                  text:
+                                                                      amhchapters,
+                                                                  style:
+                                                                      TextStyle(
+                                                                    fontFamily:
+                                                                        currentFont,
+                                                                    fontSize:
+                                                                        _currentFontSize,
+                                                                    backgroundColor: _highlight
+                                                                        .map((verse) => verse['id'] ==
+                                                                                amhchapters
+                                                                            ? colorList[verse[
+                                                                                'color']]
+                                                                            : null)
+                                                                        .firstWhere(
+                                                                            (color) =>
+                                                                                color !=
+                                                                                null,
+                                                                            orElse: () =>
+                                                                                Colors.transparent),
+                                                                    decoration: markedText.any((dic) =>
+                                                                            dic['text'] ==
+                                                                            amhchapters)
+                                                                        ? TextDecoration
+                                                                            .underline
+                                                                        : null,
+                                                                    decorationStyle: markedText.any((dic) =>
+                                                                            dic['text'] ==
+                                                                            amhchapters)
+                                                                        ? TextDecorationStyle
+                                                                            .dashed
+                                                                        : null,
+                                                                  ),
+                                                                )
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            height: 7,
+                                          )
+                                        ],
+                                      );
+                                    }),
+                              );
+                            })
+                    : _language == 'ANY'
+                        ? anywaaBook == null
+                            ? const Center(
+                                child: SpinKitWaveSpinner(
+                                  color: Color.fromARGB(255, 13, 33, 65),
+                                  size: 50.0,
+                                ),
+                              )
+                            : PageView.builder(
+                                key: key,
+                                onPageChanged: (index) {
+                                  var book = anywaaBook!.chapters[index];
+
+                                  if (book.audioLink!.isNotEmpty) {
+                                    if (player.playing) {
+                                      player.stop();
+                                    }
+                                    player.setUrl(book.audioLink!);
+                                  }
+                                  setPageIndex(index: index);
+                                  print('onPageChanged 2');
+                                  markedText = [];
+                                  setState(() {
+                                    getBibleVersion();
+                                  });
+                                },
+                                itemCount: anywaaBook!.chapters.length,
+                                controller: pageController,
+                                itemBuilder: (BuildContext context, int index) {
+                                  var book = anywaaBook!.chapters[index];
+                                  return Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: ListView.builder(
+                                        key: key,
+                                        itemCount: book.verses.length,
+                                        shrinkWrap: true,
+                                        controller: controller,
+                                        itemBuilder: (BuildContext context,
+                                            int listindex) {
+                                          var chapter = book.verses[listindex];
+                                          var chapterNumber = book.name
+                                                  .split(' ')[
+                                              book.name.split(' ').length - 1];
+                                          // String first =
+                                          //     book.name.split(' ').length > 2
+                                          //         ? book.name.split(' ')[0]
+                                          //         : '';
+                                          // print(book.name.split(' '));
+                                          List splittedName =
+                                              book.name.split(' ');
+                                          splittedName.removeWhere((element) =>
+                                              int.tryParse(element) != null);
+                                          String chapterName =
+                                              splittedName.join(' ');
+
+                                          return Column(
+                                            children: [
+                                              listindex == 0
+                                                  ? Text(
+                                                      chapterName,
+                                                      style: const TextStyle(
+                                                          fontSize: 22,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color: Colors.grey),
+                                                    )
+                                                  : const SizedBox(),
+                                              Visibility(
+                                                  visible: listindex == 0,
+                                                  child: Text(
+                                                    chapterNumber,
+                                                    style: const TextStyle(
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 72),
+                                                  )),
+                                              listindex == 0
+                                                  ? const SizedBox(
+                                                      height: 20,
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text('')),
+                                              (book.verses[listindex].title!
+                                                      .isNotEmpty)
+                                                  ? Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                              left: 30,
+                                                              right: 30,
+                                                              bottom: 6),
+                                                      child: Text(
+                                                        '\n${book.verses[listindex].title}',
+                                                        style: const TextStyle(
+                                                          fontStyle:
+                                                              FontStyle.italic,
+                                                          fontSize: 18,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
+                                                    ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    bottom: 9),
+                                                child: Visibility(
+                                                    visible: book
+                                                        .verses[listindex]
+                                                        .reference!
+                                                        .isNotEmpty,
+                                                    child: Text(
+                                                      '${book.verses[listindex].reference}',
+                                                      style: const TextStyle(
+                                                          fontSize: 15.5,
+                                                          color: Colors.grey),
+                                                    )),
+                                              ),
+                                              Row(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  chapter.text != ''
+                                                      ? Text(
+                                                          chapter.id,
+                                                          style:
+                                                              const TextStyle(
+                                                                  color: Colors
+                                                                      .grey),
+                                                        )
+                                                      : const Visibility(
+                                                          visible: false,
+                                                          child: Text('')),
+                                                  const SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Visibility(
+                                                    visible: chapter.text != '',
+                                                    child: Expanded(
+                                                      child: Column(
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          GestureDetector(
+                                                            onTap: () {
+                                                              // print(_highlight);
+                                                              currentBibleVerse =
+                                                                  '${book.id}${chapter.id}';
+
+                                                              setState(() {
+                                                                currentVerseIndex =
+                                                                    int.parse(
+                                                                        chapter
+                                                                            .id);
+                                                                selectedColorIndex =
+                                                                    listindex;
+                                                              });
+
+                                                              markText(
+                                                                  index:
+                                                                      listindex,
+                                                                  chapterName:
+                                                                      chapterName,
+                                                                  text: chapter
+                                                                      .text,
+                                                                  chapterNumber:
+                                                                      chapterNumber,
+                                                                  chapterId:
+                                                                      chapter
+                                                                          .id,
+                                                                  textId:
+                                                                      currentBibleVerse);
+                                                            },
+                                                            child: RichText(
+                                                                text: TextSpan(
+                                                                    style: DefaultTextStyle.of(
+                                                                            context)
+                                                                        .style,
+                                                                    children: [
+                                                                  TextSpan(
+                                                                    text: chapter
+                                                                        .text,
+                                                                    style:
+                                                                        TextStyle(
+                                                                      backgroundColor: _highlight.map((verse) => verse['id'] == '${book.id}${chapter.id}' ? colorList[verse['color']] : null).firstWhere(
+                                                                          (color) =>
+                                                                              color !=
+                                                                              null,
+                                                                          orElse: () =>
+                                                                              Colors.transparent),
+                                                                      fontFamily:
+                                                                          currentFont,
+                                                                      fontSize:
+                                                                          _currentFontSize,
+                                                                      decoration: markedText.any((dic) =>
+                                                                              dic['text'] ==
+                                                                              chapter.text)
+                                                                          ? TextDecoration.underline
+                                                                          : null,
+                                                                      decorationStyle: markedText.any((dic) =>
+                                                                              dic['text'] ==
+                                                                              chapter.text)
+                                                                          ? TextDecorationStyle.dashed
+                                                                          : null,
+                                                                    ),
+                                                                  )
+                                                                ])),
+                                                          ),
+                                                          Visibility(
+                                                            visible: chapter
+                                                                    .comment!
+                                                                    .isNotEmpty &&
+                                                                thereIsComment,
+                                                            child: Text(
+                                                              '${chapter.comment}',
+                                                              style: const TextStyle(
+                                                                  color: Colors
+                                                                      .grey,
+                                                                  fontStyle:
+                                                                      FontStyle
+                                                                          .italic),
+                                                            ),
+                                                          ),
+                                                          Visibility(
+                                                            visible: book
+                                                                    .author!
+                                                                    .isNotEmpty &&
+                                                                (listindex ==
+                                                                    (book.verses
+                                                                            .length -
+                                                                        1)),
+                                                            child: Column(
+                                                              children: [
+                                                                const SizedBox(
+                                                                    height: 20),
+                                                                Text(
+                                                                  book.author!,
+                                                                  style: const TextStyle(
+                                                                      fontStyle:
+                                                                          FontStyle
+                                                                              .italic,
+                                                                      color: Colors
+                                                                          .grey,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .bold),
+                                                                ),
+                                                              ],
                                                             ),
                                                           )
                                                         ],
                                                       ),
                                                     ),
-                                                  ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 7,
-                                    )
-                                  ],
-                                );
-                              }),
-                        );
-                      })
-              : _language == 'ANY'
-                  ? anywaaBook == null
-                      ? const Center(
-                          child: SpinKitWaveSpinner(
-                            color: Color.fromARGB(255, 13, 33, 65),
-                            size: 50.0,
-                          ),
-                        )
-                      : PageView.builder(
-                          key: key,
-                          onPageChanged: (index) {
-                            setPageIndex(index: index);
-                            print('onPageChanged 2');
-                            markedText = [];
-                            setState(() {
-                              getBibleVersion();
-                            });
-                          },
-                          itemCount: anywaaBook!.chapters.length,
-                          controller: pageController,
-                          itemBuilder: (BuildContext context, int index) {
-                            var book = anywaaBook!.chapters[index];
-                            return Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: ListView.builder(
-                                  key: key,
-                                  itemCount: book.verses.length,
-                                  shrinkWrap: true,
-                                  controller: controller,
-                                  itemBuilder:
-                                      (BuildContext context, int listindex) {
-                                    var chapter = book.verses[listindex];
-                                    var chapterNumber = book.name.split(
-                                        ' ')[book.name.split(' ').length - 1];
-                                    // String first =
-                                    //     book.name.split(' ').length > 2
-                                    //         ? book.name.split(' ')[0]
-                                    //         : '';
-                                    // print(book.name.split(' '));
-                                    List splittedName = book.name.split(' ');
-                                    splittedName.removeWhere((element) =>
-                                        int.tryParse(element) != null);
-                                    String chapterName = splittedName.join(' ');
-
-                                    return Column(
-                                      children: [
-                                        listindex == 0
-                                            ? Text(
-                                                chapterName,
-                                                style: const TextStyle(
-                                                    fontSize: 22,
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.grey),
-                                              )
-                                            : const SizedBox(),
-                                        Visibility(
-                                            visible: listindex == 0,
-                                            child: Text(
-                                              chapterNumber,
-                                              style: const TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 72),
-                                            )),
-                                        listindex == 0
-                                            ? const SizedBox(
-                                                height: 20,
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text('')),
-                                        (book.verses[listindex].title!
-                                                .isNotEmpty)
-                                            ? Padding(
-                                                padding: const EdgeInsets.only(
-                                                    left: 30,
-                                                    right: 30,
-                                                    bottom: 6),
-                                                child: Text(
-                                                  '\n${book.verses[listindex].title}',
-                                                  style: const TextStyle(
-                                                    fontStyle: FontStyle.italic,
-                                                    fontSize: 18,
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                                ),
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text(''),
-                                              ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(bottom: 9),
-                                          child: Visibility(
-                                              visible: book.verses[listindex]
-                                                  .reference!.isNotEmpty,
-                                              child: Text(
-                                                '${book.verses[listindex].reference}',
-                                                style: const TextStyle(
-                                                    fontSize: 15.5,
-                                                    color: Colors.grey),
-                                              )),
-                                        ),
-                                        Row(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            chapter.text != ''
-                                                ? Text(
-                                                    chapter.id,
-                                                    style: const TextStyle(
-                                                        color: Colors.grey),
                                                   )
-                                                : const Visibility(
-                                                    visible: false,
-                                                    child: Text('')),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Visibility(
-                                              visible: chapter.text != '',
-                                              child: Expanded(
-                                                child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    GestureDetector(
-                                                      onTap: () {
-                                                        // print(_highlight);
-                                                        currentBibleVerse =
-                                                            '${book.id}${chapter.id}';
-
-                                                        setState(() {
-                                                          currentVerseIndex =
-                                                              int.parse(
-                                                                  chapter.id);
-                                                          selectedColorIndex =
-                                                              listindex;
-                                                        });
-
-                                                        markText(
-                                                            index: listindex,
-                                                            chapterName:
-                                                                chapterName,
-                                                            text: chapter.text,
-                                                            chapterNumber:
-                                                                chapterNumber,
-                                                            chapterId:
-                                                                chapter.id,
-                                                            textId:
-                                                                currentBibleVerse);
-                                                      },
-                                                      child: RichText(
-                                                          text: TextSpan(
-                                                              style: DefaultTextStyle
-                                                                      .of(context)
-                                                                  .style,
-                                                              children: [
-                                                            TextSpan(
-                                                              text:
-                                                                  chapter.text,
-                                                              style: TextStyle(
-                                                                backgroundColor: _highlight
-                                                                    .map((verse) => verse['id'] ==
-                                                                            '${book.id}${chapter.id}'
-                                                                        ? colorList[verse[
-                                                                            'color']]
-                                                                        : null)
-                                                                    .firstWhere(
-                                                                        (color) =>
-                                                                            color !=
-                                                                            null,
-                                                                        orElse: () =>
-                                                                            Colors.transparent),
-                                                                fontFamily:
-                                                                    currentFont,
-                                                                fontSize:
-                                                                    _currentFontSize,
-                                                                decoration: markedText.any((dic) =>
-                                                                        dic['text'] ==
-                                                                        chapter
-                                                                            .text)
-                                                                    ? TextDecoration
-                                                                        .underline
-                                                                    : null,
-                                                                decorationStyle: markedText.any((dic) =>
-                                                                        dic['text'] ==
-                                                                        chapter
-                                                                            .text)
-                                                                    ? TextDecorationStyle
-                                                                        .dashed
-                                                                    : null,
-                                                              ),
-                                                            )
-                                                          ])),
+                                                ],
+                                              ),
+                                              const SizedBox(
+                                                height: 0,
+                                              ),
+                                              listindex ==
+                                                      (book.verses.length - 1)
+                                                  ? const Padding(
+                                                      padding: EdgeInsets.only(
+                                                          bottom: 100),
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
                                                     ),
-                                                    Visibility(
-                                                      visible: chapter.comment!
-                                                              .isNotEmpty &&
-                                                          thereIsComment,
-                                                      child: Text(
-                                                        '${chapter.comment}',
-                                                        style: const TextStyle(
-                                                            color: Colors.grey,
-                                                            fontStyle: FontStyle
-                                                                .italic),
+                                            ],
+                                          );
+                                        }),
+                                  );
+                                })
+                        : englishBook == null
+                            ? const Center(
+                                child: SpinKitWaveSpinner(
+                                  color: Color.fromARGB(255, 13, 33, 65),
+                                  size: 50.0,
+                                ),
+                              )
+                            : PageView.builder(
+                                key: key,
+                                onPageChanged: (index) {
+                                  setPageIndex(index: index);
+
+                                  print('onpagechanged 3 $index');
+                                  markedText = [];
+                                  setState(() {
+                                    getBibleVersion();
+                                  });
+                                },
+                                itemCount: englishBook!.chapters.length,
+                                controller: pageController,
+                                itemBuilder: (BuildContext context, int index) {
+                                  var book = englishBook!.chapters[index];
+                                  return Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: ListView.builder(
+                                        key: key,
+                                        itemCount: book.verses.length,
+                                        shrinkWrap: true,
+                                        controller: controller,
+                                        itemBuilder: (BuildContext context,
+                                            int listindex) {
+                                          var chapter = book.verses[listindex];
+                                          var chapterNumber = book.name
+                                                  .split(' ')[
+                                              book.name.split(' ').length - 1];
+                                          return Column(
+                                            children: [
+                                              listindex == 0
+                                                  ? Text(
+                                                      title,
+                                                      style: const TextStyle(
+                                                          fontSize: 22,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          color: Colors.grey),
+                                                    )
+                                                  : const SizedBox(),
+                                              listindex == 0
+                                                  ? Text(
+                                                      chapterNumber,
+                                                      style: const TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 72),
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text('')),
+                                              listindex == 0
+                                                  ? const SizedBox(
+                                                      height: 20,
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text('')),
+                                              (book.title!.isNotEmpty &&
+                                                      listindex == 0)
+                                                  ? Text(
+                                                      '${book.title}\n',
+                                                      style: const TextStyle(
+                                                        fontStyle:
+                                                            FontStyle.italic,
+                                                        fontSize: 17,
+                                                        fontWeight:
+                                                            FontWeight.bold,
                                                       ),
+                                                    )
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
                                                     ),
-                                                    Visibility(
-                                                      visible: book.author!
-                                                              .isNotEmpty &&
-                                                          (listindex ==
-                                                              (book.verses
-                                                                      .length -
-                                                                  1)),
+                                              Row(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  chapter.text != ''
+                                                      ? Text(
+                                                          chapter.id,
+                                                          style:
+                                                              const TextStyle(
+                                                                  color: Colors
+                                                                      .grey),
+                                                        )
+                                                      : const Visibility(
+                                                          visible: false,
+                                                          child: Text('')),
+                                                  const SizedBox(
+                                                    width: 10,
+                                                  ),
+                                                  Visibility(
+                                                    visible: chapter.text != '',
+                                                    child: Expanded(
                                                       child: Column(
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
                                                         children: [
-                                                          const SizedBox(
-                                                              height: 20),
-                                                          Text(
-                                                            book.author!,
-                                                            style: const TextStyle(
-                                                                fontStyle:
-                                                                    FontStyle
-                                                                        .italic,
-                                                                color:
-                                                                    Colors.grey,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .bold),
+                                                          GestureDetector(
+                                                            onTap: () {
+                                                              // print(_highlight);
+                                                              currentBibleVerse =
+                                                                  '${book.id}${chapter.id}';
+                                                              print(chapter.id);
+                                                              print(listindex);
+
+                                                              setState(() {
+                                                                currentVerseIndex =
+                                                                    int.parse(
+                                                                        chapter
+                                                                            .id);
+                                                                selectedColorIndex =
+                                                                    listindex;
+                                                              });
+                                                              print(
+                                                                  'current verse index: ${chapter.id}');
+
+                                                              markText(
+                                                                  index:
+                                                                      listindex,
+                                                                  chapterName:
+                                                                      title,
+                                                                  text: chapter
+                                                                      .text,
+                                                                  chapterNumber:
+                                                                      chapterNumber,
+                                                                  chapterId:
+                                                                      chapter
+                                                                          .id,
+                                                                  textId:
+                                                                      currentBibleVerse);
+                                                            },
+                                                            child: RichText(
+                                                                text: TextSpan(
+                                                                    style: DefaultTextStyle.of(
+                                                                            context)
+                                                                        .style,
+                                                                    children: [
+                                                                  TextSpan(
+                                                                    text: chapter
+                                                                        .text,
+                                                                    style:
+                                                                        TextStyle(
+                                                                      backgroundColor: _highlight.map((verse) => verse['id'] == '${book.id}${chapter.id}' ? colorList[verse['color']] : null).firstWhere(
+                                                                          (color) =>
+                                                                              color !=
+                                                                              null,
+                                                                          orElse: () =>
+                                                                              Colors.transparent),
+                                                                      fontFamily:
+                                                                          currentFont,
+                                                                      fontSize:
+                                                                          _currentFontSize,
+                                                                      decoration: markedText.any((dic) =>
+                                                                              dic['text'] ==
+                                                                              chapter.text)
+                                                                          ? TextDecoration.underline
+                                                                          : null,
+                                                                      decorationStyle: markedText.any((dic) =>
+                                                                              dic['text'] ==
+                                                                              chapter.text)
+                                                                          ? TextDecorationStyle.dashed
+                                                                          : null,
+                                                                    ),
+                                                                  )
+                                                                ])),
                                                           ),
+                                                          Visibility(
+                                                            visible: chapter
+                                                                    .comment!
+                                                                    .isNotEmpty &&
+                                                                thereIsComment,
+                                                            child: Text(
+                                                              chapter.comment!
+                                                                          .isNotEmpty &&
+                                                                      thereIsComment
+                                                                  ? '${chapter.comment![0]}'
+                                                                  : '',
+                                                              style: const TextStyle(
+                                                                  color: Colors
+                                                                      .grey,
+                                                                  fontStyle:
+                                                                      FontStyle
+                                                                          .italic),
+                                                            ),
+                                                          )
                                                         ],
                                                       ),
-                                                    )
-                                                  ],
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 0,
-                                        ),
-                                        listindex == (book.verses.length - 1)
-                                            ? const Padding(
-                                                padding: EdgeInsets.only(
-                                                    bottom: 100),
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text(''),
-                                              ),
-                                      ],
-                                    );
-                                  }),
-                            );
-                          })
-                  : englishBook == null
-                      ? const Center(
-                          child: SpinKitWaveSpinner(
-                            color: Color.fromARGB(255, 13, 33, 65),
-                            size: 50.0,
-                          ),
-                        )
-                      : PageView.builder(
-                          key: key,
-                          onPageChanged: (index) {
-                            setPageIndex(index: index);
-
-                            print('onpagechanged 3 $index');
-                            markedText = [];
-                            setState(() {
-                              getBibleVersion();
-                            });
-                          },
-                          itemCount: englishBook!.chapters.length,
-                          controller: pageController,
-                          itemBuilder: (BuildContext context, int index) {
-                            var book = englishBook!.chapters[index];
-                            return Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: ListView.builder(
-                                  key: key,
-                                  itemCount: book.verses.length,
-                                  shrinkWrap: true,
-                                  controller: controller,
-                                  itemBuilder:
-                                      (BuildContext context, int listindex) {
-                                    var chapter = book.verses[listindex];
-                                    var chapterNumber = book.name.split(
-                                        ' ')[book.name.split(' ').length - 1];
-                                    return Column(
-                                      children: [
-                                        listindex == 0
-                                            ? Text(
-                                                title,
-                                                style: const TextStyle(
-                                                    fontSize: 22,
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.grey),
-                                              )
-                                            : const SizedBox(),
-                                        listindex == 0
-                                            ? Text(
-                                                chapterNumber,
-                                                style: const TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 72),
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text('')),
-                                        listindex == 0
-                                            ? const SizedBox(
-                                                height: 20,
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text('')),
-                                        (book.title!.isNotEmpty &&
-                                                listindex == 0)
-                                            ? Text(
-                                                '${book.title}\n',
-                                                style: const TextStyle(
-                                                  fontStyle: FontStyle.italic,
-                                                  fontSize: 17,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text(''),
-                                              ),
-                                        Row(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            chapter.text != ''
-                                                ? Text(
-                                                    chapter.id,
-                                                    style: const TextStyle(
-                                                        color: Colors.grey),
-                                                  )
-                                                : const Visibility(
-                                                    visible: false,
-                                                    child: Text('')),
-                                            const SizedBox(
-                                              width: 10,
-                                            ),
-                                            Visibility(
-                                              visible: chapter.text != '',
-                                              child: Expanded(
-                                                child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    GestureDetector(
-                                                      onTap: () {
-                                                        // print(_highlight);
-                                                        currentBibleVerse =
-                                                            '${book.id}${chapter.id}';
-                                                        print(chapter.id);
-                                                        print(listindex);
-
-                                                        setState(() {
-                                                          currentVerseIndex =
-                                                              int.parse(
-                                                                  chapter.id);
-                                                          selectedColorIndex =
-                                                              listindex;
-                                                        });
-                                                        print(
-                                                            'current verse index: ${chapter.id}');
-
-                                                        markText(
-                                                            index: listindex,
-                                                            chapterName: title,
-                                                            text: chapter.text,
-                                                            chapterNumber:
-                                                                chapterNumber,
-                                                            chapterId:
-                                                                chapter.id,
-                                                            textId:
-                                                                currentBibleVerse);
-                                                      },
-                                                      child: RichText(
-                                                          text: TextSpan(
-                                                              style: DefaultTextStyle
-                                                                      .of(context)
-                                                                  .style,
-                                                              children: [
-                                                            TextSpan(
-                                                              text:
-                                                                  chapter.text,
-                                                              style: TextStyle(
-                                                                backgroundColor: _highlight
-                                                                    .map((verse) => verse['id'] ==
-                                                                            '${book.id}${chapter.id}'
-                                                                        ? colorList[verse[
-                                                                            'color']]
-                                                                        : null)
-                                                                    .firstWhere(
-                                                                        (color) =>
-                                                                            color !=
-                                                                            null,
-                                                                        orElse: () =>
-                                                                            Colors.transparent),
-                                                                fontFamily:
-                                                                    currentFont,
-                                                                fontSize:
-                                                                    _currentFontSize,
-                                                                decoration: markedText.any((dic) =>
-                                                                        dic['text'] ==
-                                                                        chapter
-                                                                            .text)
-                                                                    ? TextDecoration
-                                                                        .underline
-                                                                    : null,
-                                                                decorationStyle: markedText.any((dic) =>
-                                                                        dic['text'] ==
-                                                                        chapter
-                                                                            .text)
-                                                                    ? TextDecorationStyle
-                                                                        .dashed
-                                                                    : null,
-                                                              ),
-                                                            )
-                                                          ])),
                                                     ),
-                                                    Visibility(
-                                                      visible: chapter.comment!
-                                                              .isNotEmpty &&
-                                                          thereIsComment,
-                                                      child: Text(
-                                                        chapter.comment!
-                                                                    .isNotEmpty &&
-                                                                thereIsComment
-                                                            ? '${chapter.comment![0]}'
-                                                            : '',
-                                                        style: const TextStyle(
-                                                            color: Colors.grey,
-                                                            fontStyle: FontStyle
-                                                                .italic),
-                                                      ),
+                                                  )
+                                                ],
+                                              ),
+                                              const SizedBox(
+                                                height: 4.5,
+                                              ),
+                                              listindex ==
+                                                      (book.verses.length - 1)
+                                                  ? const Padding(
+                                                      padding: EdgeInsets.only(
+                                                          bottom: 100),
                                                     )
-                                                  ],
-                                                ),
-                                              ),
-                                            )
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 4.5,
-                                        ),
-                                        listindex == (book.verses.length - 1)
-                                            ? const Padding(
-                                                padding: EdgeInsets.only(
-                                                    bottom: 100),
-                                              )
-                                            : const Visibility(
-                                                visible: false,
-                                                child: Text(''),
-                                              ),
-                                      ],
-                                    );
-                                  }),
-                            );
-                          })
-          : (_selectedIndex == 0 ? const DailyText() : const Account()),
-      appBar: buildAppBar(),
-      bottomNavigationBar: AnimatedContainer(
-        height: isVisible
-            ? _selectedIndex == 1
-                ? 129
-                : 53
-            : 53,
-        duration: const Duration(milliseconds: 0),
-        child: Wrap(children: [
-          Visibility(
-            visible: _selectedIndex == 1,
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: !isVisible
-                      ? Colors.transparent
-                      : const Color.fromARGB(125, 71, 68, 68),
+                                                  : const Visibility(
+                                                      visible: false,
+                                                      child: Text(''),
+                                                    ),
+                                            ],
+                                          );
+                                        }),
+                                  );
+                                })
+                : (_selectedIndex == 0 ? const DailyText() : const Account()),
+            appBar: buildAppBar(),
+            bottomNavigationBar: AnimatedContainer(
+              height: isVisible
+                  ? _selectedIndex == 1
+                      ? showPlay
+                          ? (_language == 'ANY' && bookIndex == 1) &&
+                                  _selectedIndex == 1
+                              ? 220
+                              : _selectedIndex == 1
+                                  ? 113
+                                  : 55
+                          : (_language == 'ANY' && bookIndex == 1) &&
+                                  _selectedIndex == 1
+                              ? 165
+                              : _selectedIndex == 1
+                                  ? 113
+                                  : 55
+                      : (_language == 'ANY' && bookIndex == 1) &&
+                              _selectedIndex == 1
+                          ? 165
+                          : _selectedIndex == 1
+                              ? 120
+                              : 55
+                  : 45,
+              duration: const Duration(milliseconds: 0),
+              child: Wrap(children: [
+                Center(
+                  child: Visibility(
+                    visible: _selectedIndex == 1 &&
+                        isVisible &&
+                        (_language == 'ANY' && bookIndex == 1),
+                    child: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          showPlay = !showPlay;
+                        });
+                      },
+                      icon: Icon(
+                          showPlay
+                              ? Icons.keyboard_arrow_down_outlined
+                              : Icons.keyboard_arrow_up_rounded,
+                          size: 30),
+                    ),
+                  ),
                 ),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Visibility(
+                  visible: _selectedIndex == 1 &&
+                      showPlay &&
+                      isVisible &&
+                      (_language == 'ANY' && bookIndex == 1),
+                  child: Row(
+                    // mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      isVisible
-                          ? IconButton(
-                              onPressed: () {
-                                pageController.previousPage(
-                                    duration: const Duration(microseconds: 1),
-                                    curve: Curves.linear);
-                              },
-                              icon: const Icon(
-                                Icons.chevron_left_sharp,
-                                size: 40,
-                              ),
-                            )
-                          : const Visibility(visible: false, child: Text('')),
-                      TextButton(
-                        onPressed: () async {
-                          var refresh = await Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => ChapterList()))
-                              .then((value) {
-                            print('the value from choosing: $value');
-                          });
-
-                          if (refresh != null) {
-                            // setState(() {
-                            //   mypage = refresh;
-                            // });
-
-                            // pageController.jumpToPage(mypage);
-                            setPageIndex(index: mypage, fromChoosing: true);
-                          }
-                          getBibleVersion(fromChoosing: true);
-                          print('the page index from: $mypage');
-                        },
-                        child: Text(
-                          title,
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                              color: currentTheme == Brightness.dark
-                                  ? Colors.white
-                                  : Colors.black),
-                        ),
-                      ),
                       Visibility(
-                          visible: isVisible,
+                        visible: _selectedIndex == 1,
+                        child: Visibility(
                           child: IconButton(
                             onPressed: () {
-                              pageController.nextPage(
-                                  duration: const Duration(microseconds: 1),
-                                  curve: Curves.linear);
+                              playSong();
                             },
-                            icon: const Icon(
-                              Icons.chevron_right,
-                              size: 40,
+                            icon: Icon(
+                              player.playing
+                                  ? Icons.pause_circle
+                                  : Icons.play_circle_filled_outlined,
+                              size: 37,
+                              color: const Color.fromARGB(255, 4, 74, 131),
                             ),
-                          ))
-                    ]),
-              ),
-            ),
-          ),
-          BottomNavigationBar(
-            useLegacyColorScheme: true,
-            elevation: 0,
-            items: <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: Icon(
-                  currentTheme == Brightness.light
-                      ? Icons.wb_sunny_outlined
-                      : Icons.nights_stay_outlined,
-                ),
-                label: _language == 'AMH'
-                    ? 'ዛሬ'
-                    : _language == 'ANY'
-                        ? 'Dïcängï'
-                        : 'Today',
-              ),
-              BottomNavigationBarItem(
-                  icon: const Icon(
-                    Icons.menu_book_rounded,
-                  ),
-                  label: _language == 'AMH'
-                      ? 'መጽሃፍ ቅዱስ'
-                      : _language == 'ANY'
-                          ? 'Wëël Jwøk'
-                          : 'Bible'),
-              BottomNavigationBarItem(
-                  icon: const Icon(
-                    Icons.bookmark,
-                  ),
-                  label: _language == 'AMH'
-                      ? 'ቡክማርክ'
-                      : _language == 'ANY'
-                          ? 'Buk maak'
-                          : 'Bookmark'),
-            ],
-            currentIndex: _selectedIndex,
-            selectedItemColor: const Color.fromARGB(255, 227, 171, 2),
-            onTap: _onItemTapped,
-          ),
-        ]),
-      ),
-      bottomSheet: markedText.isNotEmpty
-          ? Container(
-              height: 110,
-              width: double.infinity,
-              color: currentTheme == Brightness.dark
-                  ? const Color.fromARGB(255, 0, 4, 17)
-                  : Colors.white,
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          IconButton(
-                            onPressed: () {
-                              addBookmark(markedText);
-                              setState(() {
-                                markedText = [];
-                              });
-                            },
-                            icon: const Icon(Icons.bookmark_add),
                           ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              copyVerse(markedText);
-                              setState(() {
-                                markedText = [];
-                              });
-                            },
-                            icon: const Icon(Icons.copy),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              shareVerse(markedText);
-                              setState(() {
-                                markedText = [];
-                              });
-                            },
-                            icon: const Icon(Icons.share),
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              setState(() {
-                                markedText = [];
-                              });
-                              // Navigator.pushNamed(context, '/differentVerse',
-                              //     arguments: [
-                              //       {
-                              //         "pageIndex": pageIndex,
-                              //         "listIndex": currentVerseIndex,
-                              //         "title": title,
-                              //         'version': _currentVersion
-                              //       }
-                              //     ]);
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => DifferentVerse(
-                                      title: title,
-                                      pageIndex: pageIndex,
-                                      listIndex: currentVerseIndex,
-                                      version: _currentVersion),
-                                ),
-                              );
-                            },
-                            icon: const Icon(Icons.table_rows_outlined),
-                          ),
-                        ],
+                        ),
                       ),
-
-                      // SizedBox(
-                      //   width: 10,
-                      // ),
-                      IconButton(
-                          onPressed: () {
-                            setState(() {
-                              markedText = [];
-                            });
-                          },
-                          icon: const Icon(
-                            Icons.cancel_outlined,
-                            color: Color.fromARGB(229, 238, 122, 113),
-                          ))
+                      const SizedBox(width: 10),
+                      SizedBox(
+                        height: 20,
+                        width: 280,
+                        child: StreamBuilder<PositionData>(
+                            stream: _positionDataStream,
+                            builder: (context, snapshot) {
+                              final positionData = snapshot.data;
+                              return ProgressBar(
+                                bufferedBarColor: Colors.grey,
+                                barHeight: 5,
+                                baseBarColor:
+                                    const Color.fromARGB(105, 158, 158, 158),
+                                progressBarColor:
+                                    Color.fromARGB(255, 4, 74, 131),
+                                timeLabelTextStyle: const TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.w600),
+                                progress:
+                                    positionData?.position ?? Duration.zero,
+                                buffered: positionData?.bufferedPosition ??
+                                    Duration.zero,
+                                total: positionData?.duration ?? Duration.zero,
+                                onSeek: player.seek,
+                              );
+                            }),
+                      ),
                     ],
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
+                ),
+                Visibility(
+                  visible: _selectedIndex == 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Container(
+                      height: 47,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: !isVisible
+                            ? Colors.transparent
+                            : const Color.fromARGB(125, 71, 68, 68),
+                      ),
+                      child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            isVisible
+                                ? IconButton(
+                                    onPressed: () {
+                                      pageController.previousPage(
+                                          duration:
+                                              const Duration(microseconds: 1),
+                                          curve: Curves.linear);
+                                    },
+                                    icon: const Icon(
+                                      Icons.chevron_left_sharp,
+                                      size: 35,
+                                    ),
+                                  )
+                                : const Visibility(
+                                    visible: false, child: Text('')),
+                            TextButton(
+                              onPressed: () async {
+                                var refresh = await Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ChapterList())).then((value) {
+                                  print('the value from choosing: $value');
+                                });
+
+                                if (refresh != null) {
+                                  // setState(() {
+                                  //   mypage = refresh;
+                                  // });
+                                  getBibleVersion(
+                                      fromChoosing: true, load: true);
+
+                                  // pageController.jumpToPage(mypage);
+                                  setPageIndex(
+                                      index: mypage, fromChoosing: true);
+                                } else {
+                                  getBibleVersion(fromChoosing: true);
+                                }
+
+                                print('the page index from: $mypage');
+                              },
+                              child: Text(
+                                title,
+                                style: TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.bold,
+                                    color: currentTheme == Brightness.dark
+                                        ? Colors.white
+                                        : Colors.black),
+                              ),
+                            ),
+                            Visibility(
+                                visible: isVisible,
+                                child: IconButton(
+                                  onPressed: () {
+                                    pageController.nextPage(
+                                        duration:
+                                            const Duration(microseconds: 1),
+                                        curve: Curves.linear);
+                                  },
+                                  icon: const Icon(
+                                    Icons.chevron_right,
+                                    size: 35,
+                                  ),
+                                ))
+                          ]),
+                    ),
+                  ),
+                ),
+                BottomNavigationBar(
+                  useLegacyColorScheme: true,
+                  elevation: 0,
+                  items: <BottomNavigationBarItem>[
+                    BottomNavigationBarItem(
+                      icon: Icon(
+                        currentTheme == Brightness.light
+                            ? Icons.wb_sunny_outlined
+                            : Icons.nights_stay_outlined,
+                      ),
+                      label: _language == 'AMH'
+                          ? 'ዛሬ'
+                          : _language == 'ANY'
+                              ? 'Dïcängï'
+                              : 'Today',
+                    ),
+                    BottomNavigationBarItem(
+                        icon: const Icon(
+                          Icons.menu_book_rounded,
+                        ),
+                        label: _language == 'AMH'
+                            ? 'መጽሃፍ ቅዱስ'
+                            : _language == 'ANY'
+                                ? 'Wëël Jwøk'
+                                : 'Bible'),
+                    BottomNavigationBarItem(
+                        icon: const Icon(
+                          Icons.bookmark,
+                        ),
+                        label: _language == 'AMH'
+                            ? 'ቡክማርክ'
+                            : _language == 'ANY'
+                                ? 'Buk maak'
+                                : 'Bookmark'),
+                  ],
+                  currentIndex: _selectedIndex,
+                  selectedItemColor: const Color.fromARGB(255, 4, 74, 131),
+                  onTap: _onItemTapped,
+                ),
+              ]),
+            ),
+            bottomSheet: markedText.isNotEmpty
+                ? Container(
+                    height: 110,
+                    width: double.infinity,
+                    color: currentTheme == Brightness.dark
+                        ? const Color.fromARGB(255, 0, 4, 17)
+                        : Colors.white,
+                    child: Column(
                       children: [
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (Map currentMarkedText in markedText) {
-                                ColorHighlight.deleteItem(
-                                    currentMarkedText['textId']);
-                              }
-                            } else {
-                              ColorHighlight.deleteItem(currentBibleVerse);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: Colors.transparent,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {
+                                    addBookmark(markedText);
+                                    setState(() {
+                                      markedText = [];
+                                    });
+                                  },
+                                  icon: const Icon(Icons.bookmark_add),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                IconButton(
+                                  onPressed: () {
+                                    copyVerse(markedText);
+                                    setState(() {
+                                      markedText = [];
+                                    });
+                                  },
+                                  icon: const Icon(Icons.copy),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                IconButton(
+                                  onPressed: () {
+                                    print('the book index: $bookIndex');
+                                    shareVerse(markedText);
+                                    setState(() {
+                                      markedText = [];
+                                    });
+                                  },
+                                  icon: const Icon(Icons.share),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      markedText = [];
+                                    });
+                                    // Navigator.pushNamed(context, '/differentVerse',
+                                    //     arguments: [
+                                    //       {
+                                    //         "pageIndex": pageIndex,
+                                    //         "listIndex": currentVerseIndex,
+                                    //         "title": title,
+                                    //         'version': _currentVersion
+                                    //       }
+                                    //     ]);
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => DifferentVerse(
+                                            title: title,
+                                            pageIndex: pageIndex,
+                                            listIndex: currentVerseIndex,
+                                            version: _currentVersion),
+                                      ),
+                                    );
+                                  },
+                                  icon: const Icon(Icons.table_rows_outlined),
+                                ),
+                              ],
                             ),
-                            child: const Icon(
-                              Icons.cancel,
-                              size: 40,
-                              color: Color.fromARGB(207, 158, 158, 158),
-                            ),
+
+                            // SizedBox(
+                            //   width: 10,
+                            // ),
+                            IconButton(
+                                onPressed: () {
+                                  setState(() {
+                                    markedText = [];
+                                  });
+                                },
+                                icon: const Icon(
+                                  Icons.cancel_outlined,
+                                  color: Color.fromARGB(229, 238, 122, 113),
+                                ))
+                          ],
+                        ),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            children: [
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (Map currentMarkedText in markedText) {
+                                      ColorHighlight.deleteItem(
+                                          currentMarkedText['textId']);
+                                    }
+                                  } else {
+                                    ColorHighlight.deleteItem(
+                                        currentBibleVerse);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color: Colors.transparent,
+                                  ),
+                                  child: const Icon(
+                                    Icons.cancel,
+                                    size: 40,
+                                    color: Color.fromARGB(207, 158, 158, 158),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 0);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 0);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(102, 244, 67, 54),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 1);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 1);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(88, 233, 30, 98),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 2);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 2);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(93, 158, 158, 158),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 3);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 3);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(99, 76, 175, 79),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 4);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 4);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(106, 79, 33, 243),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 5);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 5);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(123, 159, 30, 233),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 6);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 6);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(113, 30, 142, 233),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 7);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 7);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(125, 255, 153, 0),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 8);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 8);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(146, 255, 193, 7),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 9);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 9);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                  height: 40,
+                                  width: 40,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(25),
+                                    color:
+                                        const Color.fromARGB(84, 130, 243, 134),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  if (markedText.length > 1) {
+                                    for (var currentMarkedText in markedText) {
+                                      ColorHighlight.createItem(
+                                          currentMarkedText['textId'], 10);
+                                    }
+                                  } else {
+                                    ColorHighlight.createItem(
+                                        currentBibleVerse, 10);
+                                  }
+                                  setState(() {
+                                    markedText = [];
+                                    refresher();
+                                  });
+                                },
+                                child: Container(
+                                    height: 40,
+                                    width: 40,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(25),
+                                        color: const Color.fromARGB(
+                                            94, 201, 125, 245))),
+                              ),
+                            ],
                           ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 0);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 0);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(102, 244, 67, 54),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 1);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 1);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(88, 233, 30, 98),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 2);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 2);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(93, 158, 158, 158),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 3);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 3);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(99, 76, 175, 79),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 4);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 4);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(106, 79, 33, 243),
-                            ),
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 5);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 5);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(123, 159, 30, 233),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 5,
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 6);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 6);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(113, 30, 142, 233),
-                            ),
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 7);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 7);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(125, 255, 153, 0),
-                            ),
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 8);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 8);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(146, 255, 193, 7),
-                            ),
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 9);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 9);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                            height: 40,
-                            width: 40,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
-                              color: const Color.fromARGB(84, 130, 243, 134),
-                            ),
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            if (markedText.length > 1) {
-                              for (var currentMarkedText in markedText) {
-                                ColorHighlight.createItem(
-                                    currentMarkedText['textId'], 10);
-                              }
-                            } else {
-                              ColorHighlight.createItem(currentBibleVerse, 10);
-                            }
-                            setState(() {
-                              markedText = [];
-                              refresher();
-                            });
-                          },
-                          child: Container(
-                              height: 40,
-                              width: 40,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(25),
-                                  color:
-                                      const Color.fromARGB(94, 201, 125, 245))),
-                        ),
+                        )
                       ],
                     ),
                   )
-                ],
-              ),
-            )
-          : null,
-    );
+                : null,
+          );
+        });
   }
 }

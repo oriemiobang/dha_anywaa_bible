@@ -7,6 +7,7 @@
         {
             "ID": "NT:PHP.1",
             "name": "Pilipay 1",
+            "audioLink":"https://firebasestorage.googleapis.com/v0/b/dha-anywaa-bible-47f57.appspot.com/o/dha_anywaa_bible_audios%2FNew%20testement%2Fpilipay%2F11_philippians_01.mp3?alt=media&token=df2b582e-ade4-4f0f-8600-105ad7645019",
             "text": [
                 {
                     "title": "Määdhe",
@@ -136,6 +137,7 @@
         {
             "ID": "NT:PHP.2",
             "name": "Pilipay 2",
+            "audioLink":"https://firebasestorage.googleapis.com/v0/b/dha-anywaa-bible-47f57.appspot.com/o/dha_anywaa_bible_audios%2FNew%20testement%2Fpilipay%2F11_philippians_02.mp3?alt=media&token=196de790-b4dc-417a-8aa9-fbf65873c365",
             "text": [
                 {
                     "title": "Krictø Dëëre Adwøk Piny ",
@@ -265,6 +267,7 @@
         {
             "ID": "NT:PHP.3",
             "name": "Pilipay 3",
+            "audioLink":"https://firebasestorage.googleapis.com/v0/b/dha-anywaa-bible-47f57.appspot.com/o/dha_anywaa_bible_audios%2FNew%20testement%2Fpilipay%2F11_philippians_03.mp3?alt=media&token=2e925b8f-caa5-4e62-9dc4-70ce8ddff02a",
             "text": [
                 {
                     "title": "Luum Bëënynyö Mana Näk Adïëri ",
@@ -356,6 +359,7 @@
         {
             "ID": "NT:PHP.4",
             "name": "Pilipay 4",
+            "audioLink":"https://firebasestorage.googleapis.com/v0/b/dha-anywaa-bible-47f57.appspot.com/o/dha_anywaa_bible_audios%2FNew%20testement%2Fpilipay%2F11_philippians_04.mp3?alt=media&token=6af5611a-0915-46f4-99b8-11fa03891fc1",
             "text": [
                 {
                     "title": "Met Ec Man Wø Joot Ki Ri Jecu ",

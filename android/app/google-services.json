@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "412919557356",
+    "project_id": "dha-anywaa-bible-47f57",
+    "storage_bucket": "dha-anywaa-bible-47f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412919557356:android:4be68587c39c0d16f0c9c9",
+        "android_client_info": {
+          "package_name": "com.example.dha_anywaa_bible"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7MGV7TjxGhTvG9HVdfZh_hKWrgV8zP9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

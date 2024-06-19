@@ -11,12 +11,15 @@ import 'package:dha_anywaa_bible/components/loading.dart';
 import 'package:dha_anywaa_bible/components/pray.dart';
 import 'package:dha_anywaa_bible/components/privacy_policy.dart';
 import 'package:dha_anywaa_bible/components/setting.dart';
+import 'package:dha_anywaa_bible/firebase_options.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:just_audio_background/just_audio_background.dart';
 import 'package:once/once.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanager/workmanager.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 DailyVerse dailyVerse = DailyVerse();
 int currentIndex = 0;
@@ -49,6 +52,19 @@ void callbackDispatcher() {
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Workmanager().initialize(callbackDispatcher);
+
+  // await JustAudioBackground.init(
+  //     androidNotificationChannelId: 'com.ryanheise.bg_demo.channel.audio',
+  //     androidNotificationChannelName: 'Audio playback',
+  //     androidNotificationOngoing: true);
+
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } on Exception catch (_, exe) {
+    print(exe);
+  }
   await Hive.initFlutter();
   await Hive.openBox('highlightText');
   runApp(
@@ -78,7 +94,7 @@ class _MyAppState extends State<MyApp> {
       style.setBibleVersion('ANY/OT/GEN.json');
       style.setFontStyle('UntitledSerif');
       style.setPage(0);
-      fontSize.setFontSize(20);
+      fontSize.setFontSize(18);
       style.setLanguageVersion('ANY');
       style.setBookIndex(0);
       style.setTestementNum(0);
@@ -88,12 +104,12 @@ class _MyAppState extends State<MyApp> {
   Duration _calculateInitialDelay() {
     final now = DateTime.now();
     final nextMorning =
-        DateTime(now.year, now.month, now.day, 7, 0, 0); // Next 7:00 AM
+        DateTime(now.year, now.month, now.day, 1, 0, 0); // Next 1:00 AM
     if (now.isAfter(nextMorning)) {
-      // If it's already past 7:00 AM today, set for 7:00 AM tomorrow
+      // If it's already past 1:00 AM today, set for 1:00 AM tomorrow
       return nextMorning.add(const Duration(days: 1)).difference(now);
     } else {
-      // Otherwise, set for 7:00 AM today
+      // Otherwise, set for 1:00 AM today
       return nextMorning.difference(now);
     }
   }

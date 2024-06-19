@@ -113,11 +113,13 @@ class AnywaaChapter {
   String name;
   String? title;
   String? author;
+  String? audioLink;
 
   AnywaaChapter(
       {required this.verses,
       required this.id,
       required this.name,
+      this.audioLink,
       this.title,
       this.author});
   factory AnywaaChapter.fromJson(Map<String, dynamic> json) {
@@ -125,12 +127,12 @@ class AnywaaChapter {
     List<AnywaaVerse> chaptersList =
         list.map((verses) => AnywaaVerse.fromJson(verses)).toList();
     return AnywaaChapter(
-      name: json['name'] ?? '',
-      id: json['ID'] ?? '',
-      verses: chaptersList,
-      title: json['title'] ?? '',
-      author: json['author'] ?? '',
-    );
+        name: json['name'] ?? '',
+        id: json['ID'] ?? '',
+        verses: chaptersList,
+        title: json['title'] ?? '',
+        author: json['author'] ?? '',
+        audioLink: json['audioLink'] ?? '');
   }
 }
 
