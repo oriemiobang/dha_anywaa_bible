@@ -714,7 +714,7 @@ class _ChooseBibleState extends State<ChooseBible> {
                         _currentLanguageVersion = item['abbrev'];
                       });
 
-                      Navigator.pop(context);
+                      Navigator.pop(context, _currentLanguageVersion);
                     },
                   ),
                   body: ListTile(

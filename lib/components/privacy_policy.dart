@@ -13,22 +13,22 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
     {
       "title": "Information Collection",
       "subtitle":
-          "Weel jwok does not collect any personal information or data from users. The app operates entirely offline, meaning it does not connect to the internet or use any servers to gather user data."
+          "Weel jwok does not collect any personal information or data from users. The app operates primarily offline, except for accessing audio files of the Bible, which are stored in Firebase Storage."
     },
     {
       "title": "Usage of Information",
       "subtitle":
-          "Since we do not collect any information, there is no usage of such information either. Your usage of the app, including bookmarks or notes you create within the app, remains entirely private and stored locally on your device."
+          "Since we do not collect any personal information, there is no usage of such information either. The only interaction with external servers is to retrieve audio files of the Bible from Firebase Storage."
     },
     {
       "title": "Data Storage",
       "subtitle":
-          "All data generated within Weel jwok, such as bookmarks, notes, or reading history, is stored locally on your device. We do not have access to or store any of this data externally."
+          "All user-generated data within Weel Jwok, such as bookmarks, notes, or reading history, is stored locally on your device. We do not have access to or store any of this data externally. The Bible's audio files are stored in Firebase Storage, but no user-specific data is stored or transmitted."
     },
     {
       "title": "Third-party Access",
       "subtitle":
-          "Weel jwok does not integrate with any third-party services, including Firebase or similar analytics or advertising platforms. Your usage of the app is not shared with any external parties."
+          "Weel Jwok uses Firebase Storage solely to store and retrieve the Bible's audio files. No personal user data is shared with or collected by Firebase or any other third-party service."
     },
     {
       "title": "Children's Privacy",
@@ -43,7 +43,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
     {
       "title": "Contact Us",
       "subtitle":
-          "If you have any questions or concerns about this privacy policy or our practices, please contact us at oriemiobango@gmail.com \n\nThis privacy policy was last updated on June 16 2024"
+          "If you have any questions or concerns about this privacy policy or our practices, please contact us at oriemiobango@gmail.com \n\nThis privacy policy was last updated on June 21 2024"
     },
   ];
 

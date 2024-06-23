@@ -133,8 +133,7 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
-  void getBibleVersion(
-      {bool? fromChoosing, bool? fromInState, bool? load}) async {
+  void getBibleVersion({bool? fromChoosing, bool? fromInState}) async {
     bookIndex = await style.getTestementNum();
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
@@ -142,34 +141,31 @@ class _MyHomePageState extends State<HomePage> {
     if (fromChoosing == true) {
       pageController.jumpToPage(currentPage);
     }
-    print(bibleVersion);
-    print(language);
 
-    if (load != null) {
-      if (language.split(' ')[0] == 'AMH') {
-        setState(() {
-          amhBibleVersion = bibleVersion;
-          // print(amhBibleVersion);
-          amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
-        });
-        amhLoadData();
-      } else if (language.split(' ')[0] == 'ANY') {
-        setState(() {
-          anywaaJsonString = 'assets/holybooks/$bibleVersion';
-        });
-        anywaaLoadData();
-      } else {
-        setState(() {
-          englishJsonString = 'assets/holybooks/$bibleVersion';
-          for (var nowVersion in bookList) {
-            if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
-              title = nowVersion['title']!;
-            }
+    if (language.split(' ')[0] == 'AMH') {
+      setState(() {
+        amhBibleVersion = bibleVersion;
+        // print(amhBibleVersion);
+        amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+      });
+      amhLoadData();
+    } else if (language.split(' ')[0] == 'ANY') {
+      setState(() {
+        anywaaJsonString = 'assets/holybooks/$bibleVersion';
+      });
+      anywaaLoadData();
+    } else {
+      setState(() {
+        englishJsonString = 'assets/holybooks/$bibleVersion';
+        for (var nowVersion in bookList) {
+          if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
+            title = nowVersion['title']!;
           }
-        });
-        engLoadData();
-      }
+        }
+      });
+      engLoadData();
     }
+
     setState(() {
       pageIndex = currentPage;
       getFontSize();
@@ -209,7 +205,7 @@ class _MyHomePageState extends State<HomePage> {
     super.initState();
     controller.addListener(listen);
     info();
-    getBibleVersion(fromInState: true, load: true);
+    getBibleVersion(fromInState: true);
   }
 
   Color selectedColor = Colors.blue;
@@ -226,7 +222,7 @@ class _MyHomePageState extends State<HomePage> {
       }
       // print(_highlight);
       info();
-      getBibleVersion();
+      // getBibleVersion();
     });
   }
 
@@ -972,9 +968,11 @@ class _MyHomePageState extends State<HomePage> {
                 : const Visibility(visible: false, child: Text('')),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/chooseBible').then((_) {
-                  languageVerson();
-                  getBibleVersion(load: true);
+                Navigator.pushNamed(context, '/chooseBible').then((value) {
+                  if (value != null) {
+                    languageVerson();
+                    getBibleVersion();
+                  }
                 });
               },
               child: Text(
@@ -1293,7 +1291,6 @@ class _MyHomePageState extends State<HomePage> {
                                 key: key,
                                 onPageChanged: (index) {
                                   var book = anywaaBook!.chapters[index];
-
                                   if (book.audioLink!.isNotEmpty) {
                                     if (player.playing) {
                                       player.stop();
@@ -1301,7 +1298,7 @@ class _MyHomePageState extends State<HomePage> {
                                     player.setUrl(book.audioLink!);
                                   }
                                   setPageIndex(index: index);
-                                  print('onPageChanged 2');
+                                  print('onPageChanged 2 index: $index');
                                   markedText = [];
                                   setState(() {
                                     getBibleVersion();
@@ -1548,7 +1545,7 @@ class _MyHomePageState extends State<HomePage> {
                                                       (book.verses.length - 1)
                                                   ? const Padding(
                                                       padding: EdgeInsets.only(
-                                                          bottom: 100),
+                                                          bottom: 200),
                                                     )
                                                   : const Visibility(
                                                       visible: false,
@@ -1912,27 +1909,23 @@ class _MyHomePageState extends State<HomePage> {
                                     visible: false, child: Text('')),
                             TextButton(
                               onPressed: () async {
-                                var refresh = await Navigator.push(
+                                Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
                                             ChapterList())).then((value) {
+                                  if (value != null) {
+                                    setState(() {
+                                      mypage = value;
+                                    });
+
+                                    // pageController.jumpToPage(mypage);
+                                    setPageIndex(
+                                        index: mypage, fromChoosing: true);
+                                  }
+                                  getBibleVersion(fromChoosing: true);
                                   print('the value from choosing: $value');
                                 });
-
-                                if (refresh != null) {
-                                  // setState(() {
-                                  //   mypage = refresh;
-                                  // });
-                                  getBibleVersion(
-                                      fromChoosing: true, load: true);
-
-                                  // pageController.jumpToPage(mypage);
-                                  setPageIndex(
-                                      index: mypage, fromChoosing: true);
-                                } else {
-                                  getBibleVersion(fromChoosing: true);
-                                }
 
                                 print('the page index from: $mypage');
                               },

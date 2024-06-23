@@ -40,7 +40,7 @@ class _AccountState extends State<Account> {
                   decoration: BoxDecoration(
                       border: Border(
                           left: BorderSide(
-                              color: Color.fromARGB(255, 184, 141, 3),
+                              color: const Color.fromARGB(255, 4, 74, 131),
                               width: 3))),
                   child: Dismissible(
                     background: Container(
