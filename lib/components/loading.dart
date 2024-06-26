@@ -38,7 +38,7 @@ class _LoadingState extends State<Loading> {
             ),
             Center(
               child: Image(
-                image: AssetImage('assets/images/weel_jwok.png'),
+                image: AssetImage("assets/images/weel_jwok_icon.png"),
                 height: 230,
               ),
             ),

@@ -16,7 +16,7 @@ class About extends StatelessWidget {
         child: ListView(
           children: [
             const Image(
-              image: AssetImage('assets/images/weel_jwok.png'),
+              image: AssetImage("assets/images/weel_jwok_icon.png"),
               height: 150,
             ),
             const Text(
@@ -145,7 +145,7 @@ class About extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'Version: 1.0.0',
+                  'Version: 1.0.1',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -171,7 +171,7 @@ class About extends StatelessWidget {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20))),
         child: const Padding(
-          padding: EdgeInsets.only(left: 95),
+          padding: EdgeInsets.only(left: 100),
           child: Text(
             'Developed by BellaTech 2024',
             style: TextStyle(color: Colors.white),

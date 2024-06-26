@@ -591,8 +591,6 @@ class _ChapterListState extends State<ChapterList> {
 
   @override
   Widget build(BuildContext context) {
-    // getLanguageVersion();
-    print('initila index: $testementNumber');
     currentTheme = Theme.of(context).brightness;
     return testementNumber == null
         ? const Center(
@@ -801,50 +799,51 @@ class _ChapterListState extends State<ChapterList> {
                       body: Padding(
                         padding: const EdgeInsets.only(
                             top: 20, left: 10, right: 10, bottom: 40),
-                        child: GridView.count(
-                          physics: const ScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
-                          shrinkWrap: true,
-                          crossAxisCount: 6,
-                          children: List.generate(
-                              int.parse(
-                                  '${_foundOldBook[listviewindex]['number']}'),
-                              (index) {
-                            return Card(
-                              child: Center(
-                                child: TextButton(
-                                  child: Text('${index + 1}',
-                                      style: TextStyle(
-                                          fontSize: 16,
-                                          color: currentTheme == Brightness.dark
-                                              ? const Color.fromARGB(
-                                                  255, 250, 219, 124)
-                                              : const Color.fromARGB(
-                                                  255, 0, 4, 17))),
-                                  onPressed: () async {
-                                    getLanguageVersion();
-                                    bibleVersion = version == 'AMH'
-                                        ? '${_foundOldBook[listviewindex]['amharic']}'
-                                        : version == 'ANY'
-                                            ? 'ANY/OT/${_foundOldBook[listviewindex]['abbrev']}.json'
-                                            : 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json';
-                                    style.setBookIndex(listviewindex);
+                        child: GridView.builder(
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 5, // Number of columns
+                              mainAxisSpacing: 4.0,
+                              crossAxisSpacing: 4.0,
+                            ),
+                            itemCount: int.parse(
+                                '${_foundOldBook[listviewindex]['number']}'),
+                            itemBuilder: (context, index) {
+                              return Card(
+                                child: Center(
+                                  child: TextButton(
+                                    child: Text('${index + 1}',
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            color:
+                                                currentTheme == Brightness.dark
+                                                    ? const Color.fromARGB(
+                                                        255, 250, 219, 124)
+                                                    : const Color.fromARGB(
+                                                        255, 0, 4, 17))),
+                                    onPressed: () async {
+                                      getLanguageVersion();
+                                      bibleVersion = version == 'AMH'
+                                          ? '${_foundOldBook[listviewindex]['amharic']}'
+                                          : version == 'ANY'
+                                              ? 'ANY/OT/${_foundOldBook[listviewindex]['abbrev']}.json'
+                                              : 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json';
+                                      style.setBookIndex(listviewindex);
 
-                                    style.setBibleVersion(bibleVersion);
-                                    style.setTestementNum(0);
-                                    selectedFontStyle.setPage(index);
-                                    setState(() {
-                                      chapter = index;
-                                    });
+                                      style.setBibleVersion(bibleVersion);
+                                      style.setTestementNum(0);
+                                      selectedFontStyle.setPage(index);
+                                      setState(() {
+                                        chapter = index;
+                                      });
 
-                                    Navigator.pop(context, chapter);
-                                    Navigator.pop(context, chapter);
-                                  },
+                                      Navigator.pop(context, chapter);
+                                      Navigator.pop(context, chapter);
+                                    },
+                                  ),
                                 ),
-                              ),
-                            );
-                          }),
-                        ),
+                              );
+                            }),
                       ),
                     );
                   });
@@ -941,50 +940,64 @@ class _ChapterListState extends State<ChapterList> {
                       body: Padding(
                         padding: const EdgeInsets.only(
                             top: 20, left: 10, right: 10, bottom: 40),
-                        child: GridView.count(
-                          physics: const ScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
-                          shrinkWrap: true,
-                          crossAxisCount: 6,
-                          children: List.generate(
-                              int.parse(
-                                  '${_foundBook[listviewindex]['number']}'),
-                              (index) {
-                            return Card(
-                              child: Center(
-                                child: TextButton(
-                                  child: Text('${index + 1}',
-                                      style: TextStyle(
-                                          fontSize: 16,
-                                          color:
-                                              currentTheme == Brightness.light
-                                                  ? const Color.fromARGB(
-                                                      255, 0, 4, 17)
-                                                  : const Color.fromARGB(
-                                                      255, 250, 219, 124))),
-                                  onPressed: () async {
-                                    getLanguageVersion();
-                                    bibleVersion = version != 'AMH'
-                                        ? version == 'ANY'
-                                            ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
-                                            : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
-                                        : '${_foundBook[listviewindex]['amharic']}';
-                                    style.setBookIndex(listviewindex);
-                                    style.setBibleVersion(bibleVersion);
-                                    style.setTestementNum(1);
-                                    selectedFontStyle.setPage(index);
-                                    setState(() {
-                                      chapter = index;
-                                    });
+                        child: GridView.builder(
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 5, // Number of columns
+                              mainAxisSpacing: 4.0,
+                              crossAxisSpacing: 4.0,
+                            ),
+                            itemCount: int.parse(
+                                '${_foundBook[listviewindex]['number']}'),
+                            itemBuilder: (context, index) {
+                              print(
+                                  'chapters count ${_foundBook[listviewindex]['number']}');
 
-                                    Navigator.pop(context, chapter);
-                                    Navigator.pop(context, chapter);
-                                  },
+                              // physics: const ScrollPhysics(
+                              //     parent: AlwaysScrollableScrollPhysics()),
+                              // shrinkWrap: true,
+                              // crossAxisCount: 6,
+                              // children: List.generate(
+                              //     int.parse(
+                              //         '${_foundBook[listviewindex]['number']}'),
+                              //     (index) {
+                              return Card(
+                                child: Center(
+                                  child: TextButton(
+                                    child: Text('${index + 1}',
+                                        style: TextStyle(
+                                            fontSize: 16,
+                                            color:
+                                                currentTheme == Brightness.light
+                                                    ? const Color.fromARGB(
+                                                        255, 0, 4, 17)
+                                                    : const Color.fromARGB(
+                                                        255, 250, 219, 124))),
+                                    onPressed: () async {
+                                      getLanguageVersion();
+                                      bibleVersion = version != 'AMH'
+                                          ? version == 'ANY'
+                                              ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
+                                              : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
+                                          : '${_foundBook[listviewindex]['amharic']}';
+                                      style.setBookIndex(listviewindex);
+                                      style.setBibleVersion(bibleVersion);
+                                      style.setTestementNum(1);
+                                      selectedFontStyle.setPage(index);
+                                      print(listviewindex);
+                                      print('page index: $index');
+
+                                      setState(() {
+                                        chapter = index;
+                                      });
+
+                                      Navigator.pop(context, chapter);
+                                      Navigator.pop(context, chapter);
+                                    },
+                                  ),
                                 ),
-                              ),
-                            );
-                          }),
-                        ),
+                              );
+                            }),
                       ),
                     );
                   });
