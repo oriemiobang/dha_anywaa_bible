@@ -137,48 +137,51 @@ class _MyHomePageState extends State<HomePage> {
     });
   }
 
-  void getBibleVersion({bool? fromChoosing, bool? fromInState}) async {
+  void getBibleVersion(
+      {bool? fromChoosing, bool? fromInState, bool? noLoad}) async {
     bookIndex = await style.getTestementNum();
     bibleVersion = await style.getBibleVersion();
     final language = await style.getLanguageVersion();
     int currentPage = await style.getPage();
 
-    if (language.split(' ')[0] == 'AMH') {
-      setState(() {
-        amhBibleVersion = bibleVersion;
-        // print(amhBibleVersion);
-        amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
-      });
-      amhLoadData();
-    } else if (language.split(' ')[0] == 'ANY') {
-      anywaaJsonString = 'assets/holybooks/$bibleVersion';
+    if (noLoad == null) {
+      if (language.split(' ')[0] == 'AMH') {
+        setState(() {
+          amhBibleVersion = bibleVersion;
+          // print(amhBibleVersion);
+          amharicJsonString = 'assets/holybooks/AM/$amhBibleVersion';
+        });
+        amhLoadData();
+      } else if (language.split(' ')[0] == 'ANY') {
+        anywaaJsonString = 'assets/holybooks/$bibleVersion';
 
-      englishJsonString = 'assets/holybooks/$bibleVersion';
-
-      for (int myIndex = 0; myIndex < bookList.length; myIndex++) {
-        var nowVersion = bookList[myIndex];
-        if (nowVersion['abbrev'] == bibleVersion.split('/')[2].split('.')[0]) {
-          title =
-              myIndex < 39 ? nowVersion['anywaa']! : nowVersion['anyTitle']!;
-          break;
-        }
-      }
-      setState(() {});
-
-      anywaaLoadData();
-    } else {
-      setState(() {
         englishJsonString = 'assets/holybooks/$bibleVersion';
-        for (var nowVersion in bookList) {
-          if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
-            title = nowVersion['title']!;
+
+        for (int myIndex = 0; myIndex < bookList.length; myIndex++) {
+          var nowVersion = bookList[myIndex];
+          if (nowVersion['abbrev'] ==
+              bibleVersion.split('/')[2].split('.')[0]) {
+            title =
+                myIndex < 39 ? nowVersion['anywaa']! : nowVersion['anyTitle']!;
             break;
           }
         }
-      });
-      engLoadData();
-    }
+        setState(() {});
 
+        anywaaLoadData();
+      } else {
+        setState(() {
+          englishJsonString = 'assets/holybooks/$bibleVersion';
+          for (var nowVersion in bookList) {
+            if (nowVersion['abbrev'] == bibleVersion.split('/')[1]) {
+              title = nowVersion['title']!;
+              break;
+            }
+          }
+        });
+        engLoadData();
+      }
+    }
     setState(() {
       pageIndex = currentPage;
       getFontSize();
@@ -231,7 +234,7 @@ class _MyHomePageState extends State<HomePage> {
       }
       // print(_highlight);
       info();
-      getBibleVersion();
+      getBibleVersion(noLoad: true);
     });
   }
 
@@ -2019,7 +2022,7 @@ class _MyHomePageState extends State<HomePage> {
                   Visibility(
                     visible: _selectedIndex == 1,
                     child: Padding(
-                      padding: const EdgeInsets.all(6.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: 47,
                         // width: 50,

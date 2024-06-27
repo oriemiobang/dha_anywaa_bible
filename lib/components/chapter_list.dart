@@ -688,7 +688,11 @@ class _ChapterListState extends State<ChapterList> {
                       indicatorColor: Colors.amber,
                       tabs: [
                         Tab(
-                          height: 80,
+                          height: version == 'ANY'
+                              ? 130
+                              : version == 'AMH'
+                                  ? 90
+                                  : 80,
                           child: ListTile(
                             title: const Text(
                               'Old Testement',
@@ -704,7 +708,11 @@ class _ChapterListState extends State<ChapterList> {
                           ),
                         ),
                         Tab(
-                          height: 80,
+                          height: version == 'ANY'
+                              ? 130
+                              : version == 'AMH'
+                                  ? 90
+                                  : 80,
                           child: ListTile(
                             title: const Text(
                               'New Testement',
