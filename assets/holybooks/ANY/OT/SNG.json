@@ -295,9 +295,13 @@
                     "title": "Luubö Mana Caan Dïcwøø Jï Cïïe",
                     "text": "Wui! coka, ni bee ï dhaagøthiinh mara, aana ö ya ajïniina mara, dwøk 'moa acooŋa, ki jenni 'moa mo wø ŋwääi ni met; aani, ogat kïc ki maar kïc mara acama, ni maadha køøŋ nyïïomøki ki caak 'moa. ",
                     "ID": "1"
+                },{
+                    "title":"Luubö Mana Caan Nyïïawäädi Jï Dïcwøø Ki Cïïe",
+                    "text":"Wui! nyïïawäätwa, cämu ni mädhu. Wui! omëërri, mädhu ni rømmu.",
+                    "ID":" "
                 },
                 {
-                    "title": "Luubö Mana Caan Nyïïawäädi Jï Dïcwøø Ki Cïïe",
+                    "title": "Luubö Mana Lääŋ Dhaagø-Thiinhnhi Ki Yi Cwïnye",
                     "text": "'Ba ni aano butö, cwïnya abëëdö ni nëënö. 'Ba dwøl aputa wïnynyö, no omëër mara dööŋö dhi øtø, ni kööe, «Wui coka, nyimëëc cwïnya, na bëëtö mare beer, na mwöl kaamar akuuru, jap dhi øtø jïra. Aani wïïa atïmö ni thec ki thööy, ni tïm jïëc wïïa ni thec ki thööc wäär.» ",
                     "ID": "2"
                 },
@@ -421,6 +425,11 @@
                     "title": "Luubö Mana Caan Nyïïawäädi Jï Dhaagø-Thiinh",
                     "text": "Wui, nyijø Cunem, duuï, duuï! Duuï, duuï, niï raŋwa! ",
                     "ID": "13"
+                },
+                {
+                    "title": "Luubö Mana Løk Dïcwøø",
+                    "text": "?Aŋø, aperŋø ni raŋŋu nyijø Cunem en kaamar meeŋ jø Maanayim?",
+                    "ID": " "
                 }
             ]
         },
@@ -467,6 +476,11 @@
                 },
                 {
                     "title": "Luubö Mana Caan Dhaagø-Thiinhnhi Jï Cwøre",
+                    "text": "Beerra man ö køøŋ nyïïomøki manøgø ni put aay ni coonya baŋ omëëya,ni møle ki bäät buny dhee ki lage.",
+                    "ID": " "
+                },
+                {
+
                     "text": "Aani, aana mar omëër mara, ni eni cwïnye lääŋŋa aani.",
                     "ID": "10"
                 },
@@ -511,7 +525,12 @@
                     "ID": "5"
                 },
                 {
-                    "title": "Luubö Mana Caan Dhaagø- Thiinhnhi Jï Cwøre",
+                    "title": "Luubö Mana Caan Dhaagø Thiinhnhi Jï Cwøre",
+                    "text": "Aani, mëër mara anyoodha jïrï tier jaath;ni beeye tier jaadha ö meru ni put cäädhö yie ki mäc lwaar, ni put lwaar ki ïïni.",
+                    "ID": " "
+                },
+                {
+                    
                     "text": "Gum aani cwïnyï kaamar ogut lweedø mar ŋïï mo pere leth jïrï, ni tïïyï aani kaamar ogut lweedø mar ŋïï mo ena cerï; kiper mëër teek døc kaamar thøø, ni këëyö mare leth ni caala yi bwörö, ni mëër liel kaamar maac, ni nitära ni caala leep maa Jwøk.",
                     "ID": "6"
                 },

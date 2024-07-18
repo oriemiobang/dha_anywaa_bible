@@ -1424,12 +1424,12 @@
                     "ID": "51"
                 },
                 {
-                    "text": "Ni løkge gø, «?A ïïni, ïïna nyï Galili thuwø? Noo manynyï yïth weet Jwøk døøc, diï joodø ni doo bäŋ nyikuŋ Jwøk mo doo öö ki yi Galili.» [53",
+                    "text": "Ni løkge gø, «?A ïïni, ïïna nyï Galili thuwø? Noo manynyï yïth weet Jwøk døøc, diï joodø ni doo bäŋ nyikuŋ Jwøk mo doo öö ki yi Galili.»",
                     "ID": "52"
                 },
                 {
                     "text": "Ni ö ŋati man nø ni døø paare.",
-                    "ID": "[53"
+                    "ID": "53"
                 }
             ]
         },
@@ -2427,11 +2427,16 @@
                     "ID": "35"
                 },
                 {
-                    "text": "Kany poode ni tar ena buutu en, jïëyu ki tayøgø ni ŋääthu gø, kiper nou tïmu ni uuna nyïï tayøgøøni.» ",
+                    "text": "Kany poode ni tar ena buutu en, jïëyu ki tayøgø ni ŋääthu gø, kiper nou tïmu ni uuna nyïï tayøgøøni.»",
                     "ID": "36"
                 },
                 {
                     "title": "Luum Teek Cwïny Mar Jø Juuth",
+                    "text": "'Ba na løny Jecu ki caan luummögøøni, ena aay ni kan ree ki ge.",
+                    "ID": " "
+                },
+                {
+        
                     "text": "'Ba këël na bëët Jecu ni tïïö ki ŋïïce mo thööth, jø Juuth kär jïëy ki eni ni ŋääthge gø.",
                     "ID": "37"
                 },
@@ -2923,11 +2928,16 @@
                     "ID": "3"
                 },
                 {
-                    "text": "'Ba luup moi bëët acaana jïïu, kiper kanyo täk gïnögø, nee wïthu parru, ni gïïögøøni yaa kwøŋ caan jïïu. ",
+                    "text": "'Ba luup moi bëët acaana jïïu, kiper kanyo täk gïnögø, nee wïthu parru, ni gïïögøøni yaa kwøŋ caan jïïu.",
                     "ID": "4"
                 },
                 {
                     "title": "Luum Tïïc Mar Jwïëc Jwøk",
+                    "text": "«'Ba dïkwøŋ luummögøøni kära kwøŋ caan jïïu, kiper na pooda naa ena buutu.",
+                    "ID": " "
+                },
+                {
+
                     "text": "'Ba kawaane a døøa baŋ Ŋata jääŋ aani. 'Ba poot bäŋ dhaanhø dïïu mo opëëny aani en, ni ‹?Ï ciï kaa ŋø cøøn?›",
                     "ID": "5"
                 },
@@ -3326,14 +3336,20 @@
                     "ID": "37"
                 },
                 {
-                    "text": "'Ba Paylat aköö jïre, na «?Adïëri agïnaŋø?» 'Ba Paylat na nø caan gïïögø, acäŋ døø wøk baŋ jø Juuth ni caan gø jïge, ni kööe, ni «Bäŋ gïn mo obøth mo yaa joodø baŋe.",
+                    "text": "'Ba Paylat aköö jïre, na «?Adïëri agïnaŋø?»",
                     "ID": "38"
                 },
                 {
                     "title": "Luubö Mana Ŋøl Paylati Piny",
-                    "text": "'Ba jïïu da kööŋŋö mo dhaanhø aciel wø päda pädö jïïu, kany wø näk ra ajwöm-cam mar Cäŋa Pööth Thøøe Yie. ?Yïthu ba met nø, ki man päda nyeny jø Juuth jïïu?»",
-                    "ID": "39",
+                    "text": " 'Ba Paylat na nø caan gïïögø, acäŋ døø wøk baŋ jø Juuth ni caan gø jïge, ni kööe, ni «Bäŋ gïn mo obøth mo yaa joodø baŋe.",
+                    "ID": " ",
                     "reference":"(Mathiew 27:15-26; Maak 15:6-15; Luk 23:13-25)"
+                },
+                {
+          
+                    "text": "'Ba jïïu da kööŋŋö mo dhaanhø aciel wø päda pädö jïïu, kany wø näk ra ajwöm-cam mar Cäŋa Pööth Thøøe Yie. ?Yïthu ba met nø, ki man päda nyeny jø Juuth jïïu?»",
+                    "ID": "39"
+   
                 },
                 {
                     "text": "'Ba gena cäŋ rëëdö døc, ni köge, ni «Patha ŋatøgøøni, 'ba beeye Baraba.» 'Ba Baraba beeye nyen ma ŋat ageem.",

@@ -1978,47 +1978,11 @@ class _MyHomePageState extends State<HomePage> {
               bottomNavigationBar: AnimatedContainer(
                 height: isVisible
                     ? _selectedIndex == 1
-                        ? showPlay
-                            ? (_language == 'ANY' && bookIndex == 1) &&
-                                    _selectedIndex == 1
-                                ? 117
-                                : _selectedIndex == 1
-                                    ? 117
-                                    : 55
-                            : (_language == 'ANY' && bookIndex == 1) &&
-                                    _selectedIndex == 1
-                                ? 117
-                                : _selectedIndex == 1
-                                    ? 117
-                                    : 55
-                        : (_language == 'ANY' && bookIndex == 1) &&
-                                _selectedIndex == 1
-                            ? 117
-                            : _selectedIndex == 1
-                                ? 117
-                                : 55
+                        ? 117
+                        : 55
                     : 0,
                 duration: const Duration(milliseconds: 0),
                 child: Wrap(children: [
-                  // Center(
-                  //   child: Visibility(
-                  //     visible: _selectedIndex == 1 &&
-                  //         isVisible &&
-                  //         (_language == 'ANY' && bookIndex == 1),
-                  //     child: IconButton(
-                  //       onPressed: () {
-                  //         setState(() {
-                  //           showPlay = !showPlay;
-                  //         });
-                  //       },
-                  //       icon: Icon(
-                  //           showPlay
-                  //               ? Icons.keyboard_arrow_down_outlined
-                  //               : Icons.keyboard_arrow_up_rounded,
-                  //           size: 30),
-                  //     ),
-                  // ),
-                  // ),
                   Visibility(
                     visible: _selectedIndex == 1,
                     child: Padding(
@@ -2028,9 +1992,6 @@ class _MyHomePageState extends State<HomePage> {
                         // width: 50,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
-                          // color: !isVisible
-                          //     ? Colors.transparent
-                          //     : Color.fromARGB(39, 71, 68, 68),
                         ),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2053,13 +2014,15 @@ class _MyHomePageState extends State<HomePage> {
                                       ),
                                     )
                                   : const Visibility(
-                                      visible: false, child: Text('')),
+                                      visible: false,
+                                      child: Text(''),
+                                    ),
                               Visibility(
                                 visible: _selectedIndex == 1 &&
-                                    isVisible &&
                                     (_language == 'ANY' && bookIndex == 1),
                                 child: Row(
-                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Visibility(
@@ -2084,7 +2047,7 @@ class _MyHomePageState extends State<HomePage> {
                                     const SizedBox(width: 5),
                                     SizedBox(
                                       height: 20,
-                                      width: 210,
+                                      width: 200,
                                       child: StreamBuilder<PositionData>(
                                           stream: _positionDataStream,
                                           builder: (context, snapshot) {

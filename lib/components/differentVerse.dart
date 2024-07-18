@@ -598,11 +598,11 @@ class _DifferentVerseState extends State<DifferentVerse> {
     return Scaffold(
       appBar: AppBar(
         title: Text(myCurrentVersion == 'ANY'
-            ? '$title : $listIndex'
+            ? '$title ${pageIndex + 1} : $listIndex'
             : '$title ${pageIndex + 1} : $listIndex'),
       ),
       body: _isLoading
-          ? Center(
+          ? const Center(
               child: SpinKitCircle(
                 color: Colors.blue,
                 size: 50.0,

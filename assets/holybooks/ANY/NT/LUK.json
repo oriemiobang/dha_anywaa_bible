@@ -1918,11 +1918,16 @@
                     "ID": "42"
                 },
                 {
-                    "text": "'Ba jiy bëët yïthge athäŋŋö ki teek Jwøk. ",
+                    "text": "'Ba jiy bëët yïthge athäŋŋö ki teek Jwøk.",
                     "ID": "43"
                 },
                 {
                     "title": "Kanya Ö Jecu Na Cäŋ Thøø Mare Caannø Jï Bääge",
+                    "text": "'Ba kanya pootge ni yïthge othäŋŋö ki gïïa tïïe bëët, ena köö jï bääge, ",
+                    "ID": " "
+                },
+                {
+    
                     "text": "«Uuni, cegu ïthu ki luum caana en, kiper Wär Dhaanhø ocïp ceŋ jiy.»",
                     "ID": "44"
                 },
@@ -3393,12 +3398,12 @@
                     "ID": "34"
                 },
                 {
-                    "text": "Ni da mään ariiø mo öödö na aciel. Aciel okäl, ni wec maya. [36",
+                    "text": "Ni da mään ariiø mo öödö na aciel. Aciel okäl, ni wec maya.",
                     "ID": "35"
                 },
                 {
                     "text": "Ni cwøw ariiø oen yi pwödhö. Aciel okäl, ni wec maya.»]",
-                    "ID": "[36"
+                    "ID": "36"
                 },
                 {
                     "text": "'Ba gena köö jïgø, «?A kaa, Kwäärö?» Ni kööe jïge, ni «Kany wø näk da dëël mo othøw yie, cøre wø kuuta yie.»",
@@ -4527,12 +4532,12 @@
                     "ID": "15"
                 },
                 {
-                    "text": "Kiper manøgønø, eni wëëga pwöt ka alaŋŋe, ni päda gø.» [17",
+                    "text": "Kiper manøgønø, eni wëëga pwöt ka alaŋŋe, ni päda gø.» 17",
                     "ID": "16"
                 },
                 {
                     "text": "'Ba kany wø näk ra ajwöm-cam mar cäŋ Cäŋa Pööth Thøøe Yie, eni wø pätö jïge ki dhaanhø aciel røk jøøa en øt twöc.]",
-                    "ID": "[17"
+                    "ID": "17"
                 },
                 {
                     "text": "'Ba gena put rëëdö bëët ki dwøl aciel, ni «Aayï ki nyeni, ni pännï wa Baraba.»",

@@ -1332,11 +1332,16 @@
                     "ID": "18"
                 },
                 {
-                    "text": "Ni cäme ni tëën dëëre. ",
+                    "text": "Ni cäme ni tëën dëëre.",
                     "ID": "19"
                 },
                 {
                     "title": "Kanya En Cøølli Yi Damacka",
+                    "text": "Kanyøgø Cøøl abëëdö ki bääŋi yi Damacka ki nïne mo boop.",
+                    "ID": " "
+                },
+                {
+
                     "text": "Ni put gïr nyeŋ Jecu køp yïth uut acook lam, ni caana gø, ni Jecu beeye O Jwøk.",
                     "ID": "20"
                 },
@@ -4293,12 +4298,12 @@
                     "ID": "27"
                 },
                 {
-                    "text": "«Kiper manøgø nø, wär ŋäyu nø, ni luum pïëm man piem jiy ki gø man en, na öö ki baŋ Jwøk, awëëk kïth baŋ juurre. Kiper geni ïthge cekge ciiø.» [29",
+                    "text": "«Kiper manøgø nø, wär ŋäyu nø, ni luum pïëm man piem jiy ki gø man en, na öö ki baŋ Jwøk, awëëk kïth baŋ juurre. Kiper geni ïthge cekge ciiø.»",
                     "ID": "28"
                 },
                 {
                     "text": "'Ba na nø caan luummögøøni, jø Juuth gena aay buute, ni ge pïëmö døc yïthakicge keerge.]",
-                    "ID": "[29"
+                    "ID": "29"
                 },
                 {
                     "text": "Ni ö Pøølli ni put bëëtö kaace ki cwiiri ariiø bëët, ni dëëre caama eni keere. Ni pänh jiy mo wø ö baŋe bëët.",

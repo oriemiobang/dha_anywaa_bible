@@ -1229,11 +1229,15 @@
                     "ID": "14"
                 },
                 {
-                    "text": "Kanyøgønø, Nathan aput døø paare. ",
+                    "text": "Kanyøgønø, Nathan aput døø paare.",
                     "ID": "15"
                 },
                 {
                     "title": "Luum Thøw Nyilaal Mar Deebit",
+                    "text": "Køøre Wuuö Jwøk nyilaal mana lwaar cï Uria ki gø jï Deebit, atïïe nee mak täwi, ni put nyilaalli tïmö ni tuu døc.",
+                    "ID": " "
+                },
+                {
                     "text": "Kanyøgønø, Deebit Jwøk akwaaye kiper täw nyilaal; 'ba Deebit aput kweer ki cam, ni but piny yïth ŋøøm jaak ki dïwäär bäre.",
                     "ID": "16"
                 },
@@ -2161,11 +2165,16 @@
                     "ID": "7"
                 },
                 {
-                    "text": "Kanyøgønø, nyeya aput ö maal ni ci kuna pï piny dhi kiir kar acooŋa. 'Ba kanya caani jï jø leny bëët, ni køp, ni «Neennu, nyeya opï piny dhi kiir kar acooŋa», jø leny bëët gena put ö nyïm nyeya. ",
+                    "text": "Kanyøgønø, nyeya aput ö maal ni ci kuna pï piny dhi kiir kar acooŋa. 'Ba kanya caani jï jø leny bëët, ni køp, ni «Neennu, nyeya opï piny dhi kiir kar acooŋa», jø leny bëët gena put ö nyïm nyeya.",
                     "ID": "8"
                 },
                 {
                     "title": "Luum Duun Deebit Paac",
+                    "text": "'Ba kar kaagø jø Icriel moa en dëër Abëcëlöm geno nø bwøk, ni ö ŋati man nø ni reŋ paare.",
+                    "ID": " "
+                },
+                {
+                    
                     "text": "'Ba wïth tuŋi mo jø Icriel bëët geno løny ni ge jälla rege keerge, ni ge köö, ni «Nyeya ma Deebit øøna pieme ceŋ nyïïmän moø, ni køny øøni ceŋ jø Pilitin; 'ba ennø, ena nø reeŋø paac ni ŋwieya Abëcëlöm.",
                     "ID": "9"
                 },
@@ -2207,6 +2216,11 @@
                 },
                 {
                     "title": "Kanya Ö Deebiti Na Wëën Bääyö Mar Cimiy",
+                    "text": "Ba kanya ö nyeya na tïme keda ŋuta løø Naam Jördan ennø, Cimiy o Gëra, ree aput gøø piny nyïm nyeya,",
+                    "ID": " "
+                },
+                {
+                    
                     "text": "ni kööe jïgø, «Wui nyeya, bääyö mara kär kan cwïnyï, ni ba caarï wïïï ki jammi moa reyø na tïïa dïcäŋa ööï wøk ki Jerucalem; 'ba ennø, ï na nyeya mara, kär gïnögø kïth cwïnyï.",
                     "ID": "19"
                 },

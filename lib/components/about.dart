@@ -145,7 +145,7 @@ class About extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'Version: 1.0.1',
+                  'Version: 1.0.3',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
