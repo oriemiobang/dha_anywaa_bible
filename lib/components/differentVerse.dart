@@ -12,7 +12,7 @@ class DifferentVerse extends StatefulWidget {
   final String? title;
   final String? version;
 
-  DifferentVerse(
+  const DifferentVerse(
       {super.key, this.pageIndex, this.listIndex, this.title, this.version});
 
   @override

@@ -12,6 +12,8 @@ class Chapter {
 }
 
 class ChapterList extends StatefulWidget {
+  const ChapterList({super.key});
+
   @override
   _ChapterListState createState() => _ChapterListState();
 }
@@ -563,15 +565,46 @@ class _ChapterListState extends State<ChapterList> {
       result = newTestList;
       oldTestResult = oldTestList;
     } else {
+      // oldTestResult = oldTestList
+      //     .where((book) => book['title']!
+      //         .toLowerCase()
+      //         .contains(enteredKeyword.toLowerCase()))
+      //     .toList();
       oldTestResult = oldTestList
-          .where((book) => book['title']!
-              .toLowerCase()
-              .contains(enteredKeyword.toLowerCase()))
+          .where((book) =>
+              (book['title'] != null &&
+                  book['title']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())) ||
+              (book['anywaa'] != null &&
+                  book['anywaa']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())) ||
+              (book['amharic'] != null &&
+                  book['amharic']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())))
           .toList();
+
+      // result = newTestList
+      //     .where((book) => book['title']!
+      //         .toLowerCase()
+      //         .contains(enteredKeyword.toLowerCase()))
+      //     .toList();
       result = newTestList
-          .where((book) => book['title']!
-              .toLowerCase()
-              .contains(enteredKeyword.toLowerCase()))
+          .where((book) =>
+              (book['title'] != null &&
+                  book['title']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())) ||
+              (book['anyTitle'] != null &&
+                  book['anyTitle']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())) ||
+              (book['amharic'] != null &&
+                  book['amharic']!
+                      .toLowerCase()
+                      .contains(enteredKeyword.toLowerCase())))
           .toList();
     }
     setState(() {
@@ -836,11 +869,22 @@ class _ChapterListState extends State<ChapterList> {
                                           : version == 'ANY'
                                               ? 'ANY/OT/${_foundOldBook[listviewindex]['abbrev']}.json'
                                               : 'OT/${_foundOldBook[listviewindex]['abbrev']}/$version.json';
-                                      style.setBookIndex(listviewindex);
 
                                       style.setBibleVersion(bibleVersion);
                                       style.setTestementNum(0);
                                       selectedFontStyle.setPage(index);
+                                      int resultIndex = listviewindex;
+                                      // if (_foundOldBook.length == 1) {
+                                      //   resultIndex = oldTestList
+                                      //       .indexOf(_foundOldBook[0]);
+                                      //   print("result index $resultIndex");
+                                      // } else if
+                                      if (_foundOldBook.length <
+                                          oldTestList.length) {
+                                        resultIndex = oldTestList.indexOf(
+                                            _foundOldBook[resultIndex]);
+                                      }
+                                      style.setBookIndex(resultIndex);
                                       setState(() {
                                         chapter = index;
                                       });
@@ -988,13 +1032,24 @@ class _ChapterListState extends State<ChapterList> {
                                               ? 'ANY/NT/${_foundBook[listviewindex]['abbrev']}.json'
                                               : 'NT/${_foundBook[listviewindex]['abbrev']}/$version.json'
                                           : '${_foundBook[listviewindex]['amharic']}';
-                                      style.setBookIndex(listviewindex);
+
                                       style.setBibleVersion(bibleVersion);
                                       style.setTestementNum(1);
                                       selectedFontStyle.setPage(index);
-                                      print(listviewindex);
-                                      print('page index: $index');
+                                      // print(listviewindex);
+                                      // print('page index: $index');
 
+                                      int resultIndex = listviewindex;
+                                      // if (_foundBook.length == 1) {
+                                      //   resultIndex =
+                                      //       newTestList.indexOf(_foundBook[0]);
+                                      // }
+                                      if (_foundBook.length <
+                                          newTestList.length) {
+                                        resultIndex = newTestList
+                                            .indexOf(_foundBook[resultIndex]);
+                                      }
+                                      style.setBookIndex(resultIndex);
                                       setState(() {
                                         chapter = index;
                                       });

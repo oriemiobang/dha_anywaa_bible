@@ -34,8 +34,8 @@ if (keystorePropertiesFile.exists()) {
 android {
     
     compileSdkVersion 34
-    namespace "com.example.dha_anywaa_bible"
-    compileSdkVersion flutter.compileSdkVersion
+    namespace "com.oriemiobangoriemi.dha_anywaa_bible"
+    // compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
 //       defaultConfig {                                                                             │
@@ -57,13 +57,14 @@ android {
 
     defaultConfig {
         minSdkVersion 21
+        targetSdkVersion 34
         
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.dha_anywaa_bible"
+        applicationId "com.oriemiobangoriemi.dha_anywaa_bible"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         // minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        // targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
        

@@ -5,7 +5,7 @@
 
 
     <application
-        android:label="Weel Jwok"
+        android:label="Wëël jwøk"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon"
         android:usesCleartextTraffic="true">

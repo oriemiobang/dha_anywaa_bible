@@ -61,8 +61,9 @@ class _ChooseBibleState extends State<ChooseFont> {
                 setFontStyle('Garamond');
               });
             },
-            leading:
-                selectedFont == 'Garamond' ? Icon(Icons.check) : Icon(null),
+            leading: selectedFont == 'Garamond'
+                ? const Icon(Icons.check)
+                : const Icon(null),
             title: const Text(
               'Garamond',
               style: TextStyle(fontFamily: 'Garamond', fontSize: 17),

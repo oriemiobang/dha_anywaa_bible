@@ -15,7 +15,6 @@ import 'package:dha_anywaa_bible/firebase_options.dart';
 import 'package:dha_anywaa_bible/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:just_audio_background/just_audio_background.dart';
 import 'package:once/once.dart';
 import 'package:provider/provider.dart';
 import 'package:workmanager/workmanager.dart';

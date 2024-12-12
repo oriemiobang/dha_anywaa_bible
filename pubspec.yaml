@@ -12,11 +12,11 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In Android, build-name is used as versionName while build-number used as versionCode.
 # Read more about Android versioning at https://developer.android.com/studio/publish/versioning
 # In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
+# Read more about iOS versioning at 
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.3+4
+version: 1.0.4+5
 
 environment:
   sdk: '>=2.17.0 <3.0.0'
@@ -54,10 +54,6 @@ dependencies:
   rxdart: ^0.27.7
   just_audio: ^0.9.38
   just_audio_background: ^0.0.1-beta.12
-  
-
-
-  
   
   # share_plus: ^7.2.2
   # share_plus: ^7.2.2

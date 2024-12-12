@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class About extends StatelessWidget {
@@ -145,7 +144,7 @@ class About extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'Version: 1.0.3',
+                  'Version: 1.0.4',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -166,12 +165,15 @@ class About extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Container(
+        height: 25,
         decoration: const BoxDecoration(
-            color: Colors.grey,
-            borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20), topRight: Radius.circular(20))),
-        child: const Padding(
-          padding: EdgeInsets.only(left: 100),
+          color: Colors.grey,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20),
+            topRight: Radius.circular(20),
+          ),
+        ),
+        child: Center(
           child: Text(
             'Developed by BellaTech 2024',
             style: TextStyle(color: Colors.white),

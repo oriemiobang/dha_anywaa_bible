@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class PrivacyPolicy extends StatefulWidget {
-  PrivacyPolicy({super.key});
+  const PrivacyPolicy({super.key});
 
   @override
   State<PrivacyPolicy> createState() => _PrivacyPolicyState();

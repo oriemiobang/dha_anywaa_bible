@@ -24,7 +24,6 @@ import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:flutter/rendering.dart';
@@ -245,7 +244,7 @@ class _MyHomePageState extends State<HomePage> {
   SelectedFontStyle selectedFontStyle = SelectedFontStyle();
   UniqueKey key = UniqueKey();
 
-  final Uri webUrl = Uri.parse('https://oriemiobangoriemi.netlify.app');
+  final Uri webUrl = Uri.parse('https://oriemioriemi.netlify.app');
 
   @override
   void dispose() {
@@ -1164,7 +1163,7 @@ class _MyHomePageState extends State<HomePage> {
                                 Image(
                                     height: 110,
                                     image: AssetImage(
-                                        'assets/images/weel_jwok.png')),
+                                        'assets/images/weel_jwok_icon.png')),
                                 Text(
                                   "Wëël Jwøk",
                                   style: TextStyle(

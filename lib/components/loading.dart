@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:dha_anywaa_bible/HomePage.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class Loading extends StatefulWidget {

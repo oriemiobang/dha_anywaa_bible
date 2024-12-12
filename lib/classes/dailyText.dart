@@ -1,5 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'dart:ffi';
 
 // import 'package:
 //
@@ -35,6 +34,58 @@ class DailyVerse {
   int get getIndex => _currentIndex;
   var dailyVerseList = [
     //  ø     ö     ï    ë  ä
+
+    {
+      "shortText": _language == 'AMH'
+          ? 'አትጨነቁ።'
+          : _language == 'ANY'
+              ? "Ki yïth jammi bëët dwøk met ec baŋ Jwøk."
+              : 'Always give thanks to God',
+      "verse": _language == 'AMH'
+          ? 'ወደ ፊልጵስዩስ ሰዎች 4:6-7'
+          : _language == 'ANY'
+              ? "Pilipay 4:6-7"
+              : 'Philippians 4:6-7',
+      "text": _language == 'AMH'
+          ? 'ጌታ ቅርብ ነው። በነገር ሁሉ በጸሎትና በምልጃ ከምስጋና ጋር በእግዚአብሔር ዘንድ ልመናችሁን አስታውቁ እንጂ በአንዳች አትጨነቁ። '
+              'አእምሮንም ሁሉ የሚያልፍ የእግዚአብሔር ሰላም ልባችሁንና አሳባችሁን በክርስቶስ ኢየሱስ ይጠብቃል።'
+          : _language == 'ANY'
+              ? "Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
+                  "ki yïth jammi bëët, gïn wäro manynyu "
+                  "wäru pëënynyu ki Jwøk nou lämö, nou "
+                  "kwaya eni, nou dwøga met ec baŋe. "
+                  "'Ba leec cwïny man wø cïp Jwøki, na "
+                  "näk ba løny ki par, cwïnynyu ogwøe "
+                  "ka acaayu ki ri Krictø Jecu."
+              : 'Do not be anxious about anything, '
+                  'but in every situation, by prayer and petition, '
+                  'with thanksgiving, present your requests to God. '
+                  'And the peace of God, which transcends all understanding, '
+                  'will guard your hearts and your minds in Christ Jesus.'
+    },
+
+    {
+      "shortText": _language == 'AMH'
+          ? 'እግዚአብሔር ዓለምን አሸንፌዋል'
+          : _language == 'ANY'
+              ? "Jecu peny ee böötö"
+              : 'God have overcome the world',
+      "verse": _language == 'AMH'
+          ? 'የዮሐንስ ወንጌል 16:33'
+          : _language == 'ANY'
+              ? "Jøøn 16:33"
+              : 'John 16:33',
+      "text": _language == 'AMH'
+          ? 'በእኔ ሳላችሁ ሰላም እንዲሆንላችሁ ይህን ተናግሬአችኋለሁ። በዓለም ሳላችሁ መከራ አለባችሁ፤ ነገር ግን አይዞአችሁ፤ እኔ ዓለምን አሸንፌዋለሁ።'
+          : _language == 'ANY'
+              ? "Man en a caana jïïu, nee bëët-mëër nee "
+                  "jootu baŋa. Uuni, gïï mo leth ojwørru "
+                  "yi pinyi en. 'Ba magu cwïnynyu, kiper "
+                  "piny yaa nø böötö."
+              : '“I have told you these things, so that in me '
+                  'you may have peace. In this world you will have trouble. '
+                  'But take heart! I have overcome the world.”'
+    },
     {
       "shortText": _language == 'AMH'
           ? 'ሁልጊዜ በጌታ ደስ ይበላችሁ'
@@ -154,65 +205,11 @@ class DailyVerse {
       "text": _language == 'AMH'
           ? ' እኔ ከአንተ ጋር ነኝና አትፍራ፤ እኔ አምላክህ ነኝና አትደንግጥ፤ አበረታሃለሁ፥ እረዳህማለሁ፥ በጽድቄም ቀኝ ደግፌ እይዝሃለሁ።'
           : _language == 'ANY'
-              ? "Kärï lwäyö, kiper a nut buutï, "
-                  "ni ba bwøk cwïnyï, kiper aana "
-                  "Jwøk marï. "
-                  "Ï tïïa tïïö niï teek, ni kønya ïïni, "
-                  "ni jøla ïïni ki cer"
+              ? "Kärï lwäyö, kiper a nut buutï, ni ba bwøk cwïnyï, kiper aana Jwøk marï. Ï tïïa tïïö niï teek, ni kønya ïïni, ni jøla ïïni ki cer cwïïa ni wø tïïya adïëri."
               : 'So do not fear, for I am with you; '
                   'do not be dismayed, for I am your God. '
                   'I will strengthen you and help you; '
                   'I will uphold you with my righteous right hand.'
-    },
-    {
-      "shortText": _language == 'AMH'
-          ? 'እግዚአብሔር ዓለምን አሸንፌዋል'
-          : _language == 'ANY'
-              ? "Jecu peny ee böötö"
-              : 'God have overcome the world',
-      "verse": _language == 'AMH'
-          ? 'የዮሐንስ ወንጌል 16:33'
-          : _language == 'ANY'
-              ? "Jøøn 16:33"
-              : 'John 16:33',
-      "text": _language == 'AMH'
-          ? 'በእኔ ሳላችሁ ሰላም እንዲሆንላችሁ ይህን ተናግሬአችኋለሁ። በዓለም ሳላችሁ መከራ አለባችሁ፤ ነገር ግን አይዞአችሁ፤ እኔ ዓለምን አሸንፌዋለሁ።'
-          : _language == 'ANY'
-              ? "Man en a caana jïïu, nee bëët-mëër nee "
-                  "jootu baŋa. Uuni, gïï mo leth ojwørru "
-                  "yi pinyi en. 'Ba magu cwïnynyu, kiper "
-                  "piny yaa nø böötö."
-              : '“I have told you these things, so that in me '
-                  'you may have peace. In this world you will have trouble. '
-                  'But take heart! I have overcome the world.”'
-    },
-    {
-      "shortText": _language == 'AMH'
-          ? 'አትጨነቁ።'
-          : _language == 'ANY'
-              ? "Ki yïth jammi bëët dwøk met ec baŋ Jwøk."
-              : 'Always give thanks to God',
-      "verse": _language == 'AMH'
-          ? 'ወደ ፊልጵስዩስ ሰዎች 4:6-7'
-          : _language == 'ANY'
-              ? "Pilipay 4:6-7"
-              : 'Philippians 4:6-7',
-      "text": _language == 'AMH'
-          ? 'ጌታ ቅርብ ነው። በነገር ሁሉ በጸሎትና በምልጃ ከምስጋና ጋር በእግዚአብሔር ዘንድ ልመናችሁን አስታውቁ እንጂ በአንዳች አትጨነቁ። '
-              'አእምሮንም ሁሉ የሚያልፍ የእግዚአብሔር ሰላም ልባችሁንና አሳባችሁን በክርስቶስ ኢየሱስ ይጠብቃል።'
-          : _language == 'ANY'
-              ? "Kär dee gïn lääŋŋu ki cwïnynyu, 'ba "
-                  "ki yïth jammi bëët, gïn wäro manynyu "
-                  "wäru pëënynyu ki Jwøk nou lämö, nou "
-                  "kwaya eni, nou dwøga met ec baŋe. "
-                  "'Ba leec cwïny man wø cïp Jwøki, na "
-                  "näk ba løny ki par, cwïnynyu ogwøe "
-                  "ka acaayu ki ri Krictø Jecu."
-              : 'Do not be anxious about anything, '
-                  'but in every situation, by prayer and petition, '
-                  'with thanksgiving, present your requests to God. '
-                  'And the peace of God, which transcends all understanding, '
-                  'will guard your hearts and your minds in Christ Jesus.'
     },
 
     {
@@ -274,7 +271,7 @@ class DailyVerse {
               ? 'ወደ ፊልጵስዩስ ሰዎች 2: 3-4'
               : 'Philippians 2:3-4',
       "text": _language == 'ANY'
-          ? "Ni bäŋe gïn mo tïïyu ki cøl cwïny wala atöör, 'ba beerra man caarru gïr jiy møga, ni beyø geni ki uuni, nou mwöl."
+          ? "Ni bäŋe gïn mo tïïyu ki cøl cwïny wala atöör, 'ba beerra man caarru gïr jiy møga, ni beyø geni ki uuni, nou mwöl. "
               "'Ba kär dee ŋat ŋäc dëëre keere. 'Ba uuni, beerra man ŋäyu jiy møga thuwø."
           : _language == 'AMH'
               ? "ለወገኔ ይጠቅማል በማለት ወይም በከንቱ ውዳሴ ምክንያት አንድ እንኳ አታድርጉ፥ ነገር ግን እያንዳንዱ ባልንጀራው ከራሱ ይልቅ እንዲሻል በትሕትና ይቍጠር፤"
@@ -314,9 +311,9 @@ class DailyVerse {
               : 'Joshua 1:9',
       "text": _language == 'ANY'
           ? "Ennø, a köömma"
-              "ïïni. Mak riï ni bëëdï niï teek; ni ba"
-              "bwøk cwïnyï ni ba lwäyï, kiper a na"
-              "Wuuö Jwøk na näk Jwøk marï, a ena"
+              "ïïni. Mak riï ni bëëdï niï teek; ni ba "
+              "bwøk cwïnyï ni ba lwäyï, kiper a na "
+              "Wuuö Jwøk na näk Jwøk marï, a ena "
               "buutï kany wø ciï yie jaak."
           : _language == 'AMH'
               ? "በምትሄድበት ሁሉ አምላክህ እግዚአብሔር ከአንተ ጋር ነውና ጽና፥ አይዞህ፤ አትፍራ፥ አትደንግጥ ብዬ አላዘዝሁህምን?"
@@ -369,10 +366,10 @@ class DailyVerse {
               ? 'ወደ ሮሜ ሰዎች 15:13'
               : "Romans 15:13",
       "text": _language == "ANY"
-          ? "'Ba Jwøk ni wø cïp ŋäädhe, cwïnynyu"
-              "opääŋe ki met ec mo päl ki mëër ki"
-              "køør mana jïëyu, kiper nee ŋäädhe"
-              "maru pälle ki køør teek Jwïëc Jwøk"
+          ? "'Ba Jwøk ni wø cïp ŋäädhe, cwïnynyu "
+              "opääŋe ki met ec mo päl ki mëër ki "
+              "køør mana jïëyu, kiper nee ŋäädhe "
+              "maru pälle ki køør teek Jwïëc Jwøk "
               "na en kur keere"
           : _language == 'AMH'
               ? "የተስፋ አምላክም በመንፈስ ቅዱስ ኃይል በተስፋ እንድትበዙ በማመናችሁ ደስታንና ሰላምን ሁሉ ይሙላባችሁ።"
